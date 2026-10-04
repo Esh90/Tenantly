@@ -22,6 +22,7 @@ from pathlib import Path
 from typing import Any
 
 from engine import config
+from engine.compile import groq_fallback
 from engine.io import atomic_write_json
 
 log = logging.getLogger("tenantly.llm")
@@ -195,7 +196,51 @@ class LLM:
         max_tokens: int = 16000,
         ref: str | None = None,
     ) -> Result:
-        """Run one forced-output call. ``tool`` is {name, description, input_schema}."""
+        """Run one forced-output call. ``tool`` is {name, description, input_schema}.
+
+        If the paid budget is spent, or the paid API fails, and a free Groq key is configured,
+        the call is repeated on the free model (cached and audited under its own model name)."""
+        try:
+            return self._call(stage=stage, model=model, system=system, user=user, tool=tool,
+                              prompt_version=prompt_version, stage_version=stage_version,
+                              effort=effort, max_tokens=max_tokens, ref=ref)  # fmt: skip
+        except (BudgetExceeded, NoToolCall, Exception) as exc:  # noqa: BLE001
+            if self.dry or not groq_fallback.available() or model.startswith("groq:"):
+                raise
+            log.warning("paid call failed (%s); trying the free backup model", type(exc).__name__)
+            fb = groq_fallback.model_name()
+            key = self.key(stage, stage_version, fb, prompt_version, system, user, tool, None)
+            hit = self.cached(stage, key)
+            out = (
+                hit["output"]
+                if hit
+                else groq_fallback.call_tool(system, user, tool, min(max_tokens, 8000))
+            )
+            if out is None:
+                raise
+            if not hit:
+                atomic_write_json(self._path(stage, key), {"output": out, "usage": {}, "cost_usd": 0.0,
+                                                           "model": fb, "prompt_version": prompt_version})  # fmt: skip
+            self._audit({"ts": datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ"), "stage": stage, "model": fb,
+                         "prompt_version": prompt_version, "input_sha": sha(system + "\n" + user), "ref": ref,
+                         "key": key, "cache_hit": bool(hit), "output_sha": sha(canonical(out)),
+                         "cost_usd": 0.0, "verifier": None, "fallback_for": model})  # fmt: skip
+            return Result(out, bool(hit), 0.0, key)
+
+    def _call(
+        self,
+        *,
+        stage: str,
+        model: str,
+        system: str,
+        user: str,
+        tool: dict,
+        prompt_version: int,
+        stage_version: int = 1,
+        effort: str | None = "low",
+        max_tokens: int = 16000,
+        ref: str | None = None,
+    ) -> Result:
         key = self.key(stage, stage_version, model, prompt_version, system, user, tool, effort)
         hit = self.cached(stage, key)
         base = {

@@ -132,3 +132,27 @@ def test_truncated_output_is_an_error_not_a_partial_result(tmp_path):
     llm = make(tmp_path, [ok({"a": 1}, stop="max_tokens")])
     with pytest.raises(NoToolCall):
         call(llm)
+
+
+def test_free_backup_model_takes_over_when_the_budget_is_spent(tmp_path, monkeypatch):
+    from engine.compile import groq_fallback
+
+    monkeypatch.setattr(groq_fallback, "available", lambda: True)
+    monkeypatch.setattr(groq_fallback, "call_tool", lambda *a, **k: {"a": "from-backup"})
+    llm = make(tmp_path, [ok({"a": 1})], cap=0.0001)
+    r = call(llm, user="x" * 3000)
+    assert r.output == {"a": "from-backup"} and r.cost == 0.0
+    assert llm.client.calls == []  # nothing was sent to the paid API
+    rows = [json.loads(line) for line in (tmp_path / "audit.jsonl").read_text().splitlines()]
+    assert rows[-1]["model"].startswith("groq:") and rows[-1]["fallback_for"] == "claude-sonnet-5-5"
+    again = call(llm, user="x" * 3000)  # the backup answer is cached too
+    assert again.cache_hit is True
+
+
+def test_backup_is_not_used_when_unconfigured(tmp_path, monkeypatch):
+    from engine.compile import groq_fallback
+
+    monkeypatch.setattr(groq_fallback, "available", lambda: False)
+    llm = make(tmp_path, [ok({"a": 1})], cap=0.0001)
+    with pytest.raises(BudgetExceeded):
+        call(llm, user="x" * 3000)
