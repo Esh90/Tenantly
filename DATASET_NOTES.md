@@ -72,3 +72,14 @@ Recorded when PLAN.md is silent (PLAN.md section 21).
 
 ## Cuts
 Optional items cut to keep a phase on time.
+5. **Geocoding result (Phase 3 geography).** 499 of 500 addresses geocode (485 Census batch,
+   7 Census one-line, 7 Nominatim). A0295 ("Harvard ST LOT 2A-13", Dorchester) is a parcel lot with
+   no house number and stays unresolved: its state is known from the data, local results are
+   `unknown` with `missing_facts=["location"]`. Legal-city counts match the atlas except Boston
+   (59 resolved of 60). Mailing mismatches: 37 (36 Boston neighborhoods plus San Ysidro; the
+   37th neighborhood row is A0295). The postal city is never used to decide the legal city.
+   SF assessor streets such as "05TH AV" are normalized to "5TH AVE" before geocoding.
+6. **TIGER GEOIDs.** All ten GEOIDs in PLAN.md 10.1 were verified against TIGER2025
+   (`artifacts/eval/geo_boundaries.json`); the NJ and MA county-subdivision polygons match the
+   Census place polygons (IoU 1.0 for the NJ cities).
+

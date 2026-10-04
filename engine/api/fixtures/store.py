@@ -18,6 +18,7 @@ from functools import lru_cache
 
 from engine import config
 from engine.api.errors import ApiError
+from engine.geo.jurisdictions import CITIES, STATES
 from engine.models import CATEGORIES, RESULTS
 
 DATA_VERSION = "fixture0"
@@ -36,21 +37,9 @@ CATEGORY_LABELS = {
     "algorithmic_rent_setting": ("Algorithmic rent setting", "Fijación algorítmica de rentas"),
 }
 
-# (id, level, name, label, state, geoid)
-JURISDICTIONS = [
-    ("CA", "state", "California", "CA", "CA", None),
-    ("NJ", "state", "New Jersey", "NJ", "NJ", None),
-    ("MA", "state", "Massachusetts", "MA", "MA", None),
-    ("CA-0644000", "city", "Los Angeles", "Los Angeles, CA", "CA", "0644000"),
-    ("CA-0667000", "city", "San Francisco", "San Francisco, CA", "CA", "0667000"),
-    ("CA-0666000", "city", "San Diego", "San Diego, CA", "CA", "0666000"),
-    ("CA-0606000", "city", "Berkeley", "Berkeley, CA", "CA", "0606000"),
-    ("CA-0669000", "city", "Santa Ana", "Santa Ana, CA", "CA", "0669000"),
-    ("NJ-3436000", "city", "Jersey City", "Jersey City, NJ", "NJ", "3436000"),
-    ("NJ-3432250", "city", "Hoboken", "Hoboken, NJ", "NJ", "3432250"),
-    ("NJ-3451000", "city", "Newark", "Newark, NJ", "NJ", "3451000"),
-    ("MA-2507000", "city", "Boston", "Boston, MA", "MA", "2507000"),
-    ("MA-2511000", "city", "Cambridge", "Cambridge, MA", "MA", "2511000"),
+# (id, level, name, label, state, geoid), derived from the single jurisdiction table
+JURISDICTIONS = [(code, "state", name, code, code, None) for code, (_, name) in STATES.items()] + [
+    (c.id, "city", c.name, c.label, c.state, c.place_geoid) for c in CITIES
 ]
 
 _RANGE_RE = re.compile(r"^(\d+)(?:\.\d+)?\s*-\s*\d+(?:\.\d+)?\s")

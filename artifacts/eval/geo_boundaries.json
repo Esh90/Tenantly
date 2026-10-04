@@ -1,0 +1,152 @@
+{
+  "cities": [
+    {
+      "geo_source": "tiger2025",
+      "geoid": "0644000",
+      "id": "CA-0644000",
+      "layer": "PLACE",
+      "tiger_name": "Los Angeles"
+    },
+    {
+      "geo_source": "tiger2025",
+      "geoid": "0667000",
+      "id": "CA-0667000",
+      "layer": "PLACE",
+      "tiger_name": "San Francisco"
+    },
+    {
+      "geo_source": "tiger2025",
+      "geoid": "0666000",
+      "id": "CA-0666000",
+      "layer": "PLACE",
+      "tiger_name": "San Diego"
+    },
+    {
+      "geo_source": "tiger2025",
+      "geoid": "0606000",
+      "id": "CA-0606000",
+      "layer": "PLACE",
+      "tiger_name": "Berkeley"
+    },
+    {
+      "geo_source": "tiger2025",
+      "geoid": "0669000",
+      "id": "CA-0669000",
+      "layer": "PLACE",
+      "tiger_name": "Santa Ana"
+    },
+    {
+      "geo_source": "tiger2025",
+      "geoid": "3436000",
+      "id": "NJ-3436000",
+      "layer": "COUSUB",
+      "place_iou": 1.0,
+      "tiger_name": "Jersey City"
+    },
+    {
+      "geo_source": "tiger2025",
+      "geoid": "3432250",
+      "id": "NJ-3432250",
+      "layer": "COUSUB",
+      "place_iou": 1.0,
+      "tiger_name": "Hoboken"
+    },
+    {
+      "geo_source": "tiger2025",
+      "geoid": "3451000",
+      "id": "NJ-3451000",
+      "layer": "COUSUB",
+      "place_iou": 1.0,
+      "tiger_name": "Newark"
+    },
+    {
+      "geo_source": "tiger2025",
+      "geoid": "2507000",
+      "id": "MA-2507000",
+      "layer": "COUSUB",
+      "place_iou": 1.0,
+      "tiger_name": "Boston"
+    },
+    {
+      "geo_source": "tiger2025",
+      "geoid": "2511000",
+      "id": "MA-2511000",
+      "layer": "COUSUB",
+      "place_iou": 1.0,
+      "tiger_name": "Cambridge"
+    }
+  ],
+  "counties": [
+    {
+      "geoid": "06001",
+      "name": "Alameda County",
+      "tiger_name": "Alameda County"
+    },
+    {
+      "geoid": "06037",
+      "name": "Los Angeles County",
+      "tiger_name": "Los Angeles County"
+    },
+    {
+      "geoid": "06059",
+      "name": "Orange County",
+      "tiger_name": "Orange County"
+    },
+    {
+      "geoid": "06073",
+      "name": "San Diego County",
+      "tiger_name": "San Diego County"
+    },
+    {
+      "geoid": "06075",
+      "name": "San Francisco County",
+      "tiger_name": "San Francisco County"
+    },
+    {
+      "geoid": "25017",
+      "name": "Middlesex County",
+      "tiger_name": "Middlesex County"
+    },
+    {
+      "geoid": "25025",
+      "name": "Suffolk County",
+      "tiger_name": "Suffolk County"
+    },
+    {
+      "geoid": "34013",
+      "name": "Essex County",
+      "tiger_name": "Essex County"
+    },
+    {
+      "geoid": "34017",
+      "name": "Hudson County",
+      "tiger_name": "Hudson County"
+    }
+  ],
+  "files": {
+    "tl_2025_06_place.zip": "tiger2025",
+    "tl_2025_25_cousub.zip": "tiger2025",
+    "tl_2025_25_place.zip": "tiger2025",
+    "tl_2025_34_cousub.zip": "tiger2025",
+    "tl_2025_34_place.zip": "tiger2025",
+    "tl_2025_us_county.zip": "tiger2025",
+    "tl_2025_us_state.zip": "tiger2025"
+  },
+  "states": [
+    {
+      "geoid": "06",
+      "id": "CA",
+      "name": "California"
+    },
+    {
+      "geoid": "34",
+      "id": "NJ",
+      "name": "New Jersey"
+    },
+    {
+      "geoid": "25",
+      "id": "MA",
+      "name": "Massachusetts"
+    }
+  ]
+}

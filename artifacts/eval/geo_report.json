@@ -1,0 +1,44 @@
+{
+  "addresses": 500,
+  "census_disagreement_ids": [],
+  "census_disagreements": 0,
+  "geocode_variants": {
+    "batch": 486,
+    "with_zip": 10,
+    "without_zip": 4
+  },
+  "legal_city_counts": {
+    "(outside the ten cities)": 1,
+    "Berkeley": 40,
+    "Boston": 59,
+    "Cambridge": 50,
+    "Hoboken": 40,
+    "Jersey City": 50,
+    "Los Angeles": 80,
+    "Newark": 50,
+    "San Diego": 50,
+    "San Francisco": 80
+  },
+  "mailing_mismatch_by_postal_city": {
+    "Allston": 3,
+    "Brighton": 4,
+    "Dorchester": 12,
+    "East Boston": 6,
+    "Hyde Park": 1,
+    "Jamaica Plain": 1,
+    "Mattapan": 1,
+    "Roxbury": 7,
+    "San Ysidro": 1,
+    "South Boston": 1
+  },
+  "mailing_mismatches": 37,
+  "matched_batch": 485,
+  "matched_nominatim": 7,
+  "matched_oneline": 7,
+  "outside_known_cities_ids": [],
+  "unmatched": 1,
+  "unmatched_ids": [
+    "A0295"
+  ],
+  "zip_suspect": 83
+}

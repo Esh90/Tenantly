@@ -41,6 +41,35 @@ def facts() -> None:
 
 
 @app.command()
+def geo() -> None:
+    """Download TIGER boundaries and write artifacts/geo/*."""
+    import logging
+
+    from engine.geo.boundaries import build
+
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(name)s %(message)s")
+    report = build()
+    typer.echo(f"geo: {len(report['cities'])} cities, {len(report['counties'])} counties")
+
+
+@app.command()
+def resolve() -> None:
+    """Facts + geocode + point-in-polygon -> artifacts/addresses.resolved.json."""
+    import logging
+
+    from engine.geo.resolve import write
+
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(name)s %(message)s")
+    r = write()
+    typer.echo(
+        f"resolve: {r['addresses']} addresses; batch {r['matched_batch']}, oneline "
+        f"{r['matched_oneline']}, nominatim {r['matched_nominatim']}, unmatched {r['unmatched']}; "
+        f"mailing mismatches {r['mailing_mismatches']}; census disagreements "
+        f"{r['census_disagreements']}"
+    )
+
+
+@app.command()
 def serve(port: int = 8000, reload: bool = False) -> None:
     """Run the API locally."""
     import uvicorn
