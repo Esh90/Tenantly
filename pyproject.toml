@@ -12,6 +12,7 @@ dependencies = [
   "typer>=0.12",
   "python-dateutil>=2.9",
   "shapely>=2.1.2",
+  "anthropic>=1.11.0",
 ]
 
 [dependency-groups]
@@ -36,6 +37,7 @@ select = ["E", "F", "I", "UP", "B"]
 "engine/rules/explain.py" = ["E501"]
 "engine/rules/render.py" = ["E501"]
 "engine/rules/engine.py" = ["E501"]
+"engine/compile/*.py" = ["E501"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
