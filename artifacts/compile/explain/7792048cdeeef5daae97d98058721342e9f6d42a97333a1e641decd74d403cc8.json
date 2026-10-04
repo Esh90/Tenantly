@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002241,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "A landlord can only evict a tenant for not paying rent if the tenant owes at least one month of the Fair Market Rent for that unit size. This amount is set by HUD.",
+    "summary_es": "Un arrendador solo puede desalojar a un inquilino por falta de pago si el inquilino debe al menos un mes de la Renta de Mercado Justo para ese tamaño de unidad. Esta cantidad es establecida por HUD.",
+    "who_en": "This rule applies to fully or partially covered units under the Berkeley Rent Ordinance.",
+    "who_es": "Esta regla se aplica a unidades total o parcialmente cubiertas bajo la Ordenanza de Renta de Berkeley."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 981,
+    "output_tokens": 252
+  }
+}

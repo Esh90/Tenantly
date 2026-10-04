@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001393,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "detail_es": "La nueva fórmula de RSO de Los Ángeles tiene dos fechas efectivas publicadas: 2026-02-02 según LAHD, 2026-01-24 según una asociación de propietarios.",
+    "title_es": "Nueva fórmula de RSO de Los Ángeles"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 693,
+    "output_tokens": 140
+  }
+}

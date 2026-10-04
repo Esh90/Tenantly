@@ -1,0 +1,34 @@
+{
+  "cost_usd": 0.009489,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "algorithmic_rent_setting",
+        "cite": "H.5222",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Applies to the rental housing market generally, as indicated by the bill title.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "pending",
+        "penalty": null,
+        "quote": "An Act relative to preventing algorithmic rent fixing in the rental housing market",
+        "requirement": "The bill, as titled, concerns preventing algorithmic rent fixing in the rental housing market. The status page gives no operative text, so specific requirements are not stated.",
+        "title": "Bill H.5222: Preventing algorithmic rent fixing",
+        "uncertain_fields": [
+          "penalty",
+          "effective_date"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 2362,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 357,
+    "output_tokens": 287
+  }
+}

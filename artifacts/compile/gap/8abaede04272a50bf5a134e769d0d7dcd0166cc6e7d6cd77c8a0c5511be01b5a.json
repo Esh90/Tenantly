@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002297,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "Newark is in New Jersey, which has enacted comprehensive just cause eviction protections at the state level. The jurisdiction has multiple rules in this category (NJ-JCE-01 through NJ-JCE-05) that are all marked as enacted, indicating that just cause eviction protections exist for Newark through state law. These rules cover good cause eviction requirements, warrant procedures, stay of eviction, and specific protections for owner-occupied properties.",
+    "quote": "Good cause eviction",
+    "result": "found",
+    "section_id": "NJ-JCE-01"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1222,
+    "output_tokens": 215
+  }
+}

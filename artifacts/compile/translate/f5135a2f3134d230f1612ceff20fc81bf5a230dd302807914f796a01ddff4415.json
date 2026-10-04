@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001219,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "detail_es": "El límite de tarifa de verificación de California no tiene una cifra oficial única en dólares para 2026.",
+    "title_es": "Límite de tarifa de verificación de California"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 669,
+    "output_tokens": 110
+  }
+}

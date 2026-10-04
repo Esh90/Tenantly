@@ -1,0 +1,120 @@
+# Silver key: team reading of the corpus for evaluation only. Not used by the pipeline.
+# Source: CORPUS_ATLAS.md section 6 (our own reading of the supplied documents, not an official key).
+# kind: R = rule expected from supplied text | C = Tier C (text not supplied) | F = finding expected
+#       P = pending bill | X = failed measure
+# cites: normalized section numbers (digits and punctuation) that must appear in the rule's cite.
+# conf: h/m/l = how sure we are of the cell.
+cells:
+  # ---- California (state) ----
+  - {j: CA, cat: rent_increase_limits, kind: R, cites: ["1947.12"], status: in_force, effective: "2024-04-01", conf: h}
+  - {j: CA, cat: just_cause_eviction, kind: R, cites: ["1946.2"], status: in_force, effective: "2026-01-01", conf: h}
+  - {j: CA, cat: security_deposits, kind: R, cites: ["1950.5"], status: in_force, effective: "2026-01-01", conf: h}
+  - {j: CA, cat: application_screening_fees, kind: R, cites: ["1950.6"], status: in_force, effective: "2026-01-01", conf: h}
+  - {j: CA, cat: screening_restrictions, kind: R, cites: ["12955"], status: in_force, effective: "2024-01-01", conf: h}
+  - {j: CA, cat: algorithmic_rent_setting, kind: R, cites: ["16729"], status: in_force, effective: "2026-01-01", conf: h}
+  # ---- Los Angeles ----
+  - {j: LA, cat: rent_increase_limits, kind: R, cites: [], status: in_force, conf: h}
+  - {j: LA, cat: just_cause_eviction, kind: R, cites: [], status: in_force, conf: h}
+  - {j: LA, cat: security_deposits, kind: R, cites: [], status: in_force, conf: m}
+  - {j: LA, cat: application_screening_fees, kind: F, conf: m}
+  - {j: LA, cat: screening_restrictions, kind: F, conf: m}
+  - {j: LA, cat: algorithmic_rent_setting, kind: F, reason: motion_only, conf: h}
+  # ---- San Francisco ----
+  - {j: SF, cat: rent_increase_limits, kind: R, cites: [], status: in_force, conf: h}
+  - {j: SF, cat: just_cause_eviction, kind: R, cites: ["37.9"], status: in_force, conf: h}
+  - {j: SF, cat: security_deposits, kind: R, cites: [], status: in_force, conf: m}
+  - {j: SF, cat: application_screening_fees, kind: F, conf: m}
+  - {j: SF, cat: screening_restrictions, kind: R, cites: [], status: in_force, conf: m}
+  - {j: SF, cat: algorithmic_rent_setting, kind: R, cites: ["37.10"], status: in_force, effective: "2024-10-14", conf: h}
+  # ---- San Diego ----
+  - {j: SD, cat: rent_increase_limits, kind: F, conf: h}
+  - {j: SD, cat: just_cause_eviction, kind: R, cites: ["98.0704"], status: in_force, conf: h}
+  - {j: SD, cat: security_deposits, kind: F, conf: m}
+  - {j: SD, cat: application_screening_fees, kind: F, conf: m}
+  - {j: SD, cat: screening_restrictions, kind: C, conf: l}
+  - {j: SD, cat: algorithmic_rent_setting, kind: R, cites: ["98.1103"], status: in_force, effective: "2025", conf: m}
+  # ---- Berkeley ----
+  - {j: BRK, cat: rent_increase_limits, kind: R, cites: [], status: in_force, conf: h}
+  - {j: BRK, cat: just_cause_eviction, kind: R, cites: [], status: in_force, conf: h}
+  - {j: BRK, cat: security_deposits, kind: R, cites: [], status: in_force, conf: m}
+  - {j: BRK, cat: application_screening_fees, kind: R, cites: ["13.78"], status: in_force, conf: h}
+  - {j: BRK, cat: screening_restrictions, kind: R, cites: ["13.106"], status: in_force, conf: h}
+  - {j: BRK, cat: algorithmic_rent_setting, kind: R, cites: ["13.63"], status: in_force, conf: h}
+  # ---- Santa Ana (laws only) ----
+  - {j: SNA, cat: rent_increase_limits, kind: R, cites: [], status: in_force, effective: "2021-11-19", conf: h}
+  - {j: SNA, cat: just_cause_eviction, kind: R, cites: [], status: in_force, effective: "2021-11-19", conf: h}
+  - {j: SNA, cat: security_deposits, kind: F, conf: m}
+  - {j: SNA, cat: application_screening_fees, kind: F, conf: m}
+  - {j: SNA, cat: screening_restrictions, kind: F, conf: m}
+  - {j: SNA, cat: algorithmic_rent_setting, kind: C, conf: m}
+  # ---- New Jersey (state) ----
+  - {j: NJ, cat: just_cause_eviction, kind: R, cites: ["2a:18-61.1"], status: in_force, conf: h}
+  - {j: NJ, cat: security_deposits, kind: R, cites: ["46:8-21.2"], status: in_force, conf: h}
+  - {j: NJ, cat: application_screening_fees, kind: R, cites: ["46:8-18.1"], status: in_force, effective: "2026-05-01", conf: h}
+  - {j: NJ, cat: screening_restrictions, kind: R, cites: ["2021", "110"], status: in_force, effective: "2022-01-01", conf: h}
+  - {j: NJ, cat: algorithmic_rent_setting, kind: R, cites: ["2026", "43"], status: not_yet_effective, effective: "2027-07-01", conf: h}
+  # ---- Jersey City / Hoboken / Newark ----
+  - {j: JC, cat: rent_increase_limits, kind: R, cites: ["260"], status: in_force, conf: h}
+  - {j: JC, cat: just_cause_eviction, kind: F, conf: m}
+  - {j: JC, cat: security_deposits, kind: F, conf: m}
+  - {j: JC, cat: application_screening_fees, kind: F, conf: m}
+  - {j: JC, cat: screening_restrictions, kind: F, conf: m}
+  - {j: JC, cat: algorithmic_rent_setting, kind: C, cites: ["218-12"], status: in_force, conf: h}
+  - {j: HOB, cat: just_cause_eviction, kind: F, conf: m}
+  - {j: HOB, cat: security_deposits, kind: F, conf: m}
+  - {j: HOB, cat: application_screening_fees, kind: F, conf: m}
+  - {j: HOB, cat: screening_restrictions, kind: F, conf: m}
+  - {j: HOB, cat: algorithmic_rent_setting, kind: C, cites: ["158"], status: in_force, conf: h}
+  - {j: NWK, cat: just_cause_eviction, kind: F, conf: m}
+  - {j: NWK, cat: security_deposits, kind: F, conf: m}
+  - {j: NWK, cat: application_screening_fees, kind: F, conf: m}
+  - {j: NWK, cat: screening_restrictions, kind: F, conf: m}
+  - {j: NWK, cat: algorithmic_rent_setting, kind: F, conf: h}
+  # ---- Massachusetts (state) ----
+  - {j: MA, cat: rent_increase_limits, kind: R, cites: ["40p", "4"], status: in_force, conf: h}
+  - {j: MA, cat: rent_increase_limits, kind: X, cites: ["25-21"], status: failed, conf: h}
+  - {j: MA, cat: just_cause_eviction, kind: R, cites: ["186"], status: in_force, conf: m}
+  - {j: MA, cat: security_deposits, kind: R, cites: ["186", "15b"], status: in_force, conf: h}
+  - {j: MA, cat: application_screening_fees, kind: R, cites: ["15b"], status: in_force, conf: h}
+  - {j: MA, cat: application_screening_fees, kind: R, cites: ["112"], status: in_force, conf: h}
+  - {j: MA, cat: screening_restrictions, kind: R, cites: ["151b"], status: in_force, conf: h}
+  - {j: MA, cat: algorithmic_rent_setting, kind: P, cites: ["2983"], status: pending, conf: h}
+  - {j: MA, cat: algorithmic_rent_setting, kind: P, cites: ["5222"], status: pending, conf: h}
+  # ---- Boston / Cambridge ----
+  - {j: BOS, cat: rent_increase_limits, kind: F, reason: barred_by_state, conf: h}
+  - {j: BOS, cat: rent_increase_limits, kind: X, cites: ["3744"], status: failed, conf: m}
+  - {j: BOS, cat: just_cause_eviction, kind: R, cites: [], status: in_force, conf: m}
+  - {j: BOS, cat: security_deposits, kind: F, conf: m}
+  - {j: BOS, cat: application_screening_fees, kind: F, conf: m}
+  - {j: BOS, cat: screening_restrictions, kind: R, cites: [], status: in_force, conf: m}
+  - {j: BOS, cat: algorithmic_rent_setting, kind: F, conf: h}
+  - {j: CAM, cat: rent_increase_limits, kind: F, reason: barred_by_state, conf: h}
+  - {j: CAM, cat: just_cause_eviction, kind: R, cites: ["8.71"], status: in_force, conf: m}
+  - {j: CAM, cat: security_deposits, kind: F, conf: m}
+  - {j: CAM, cat: application_screening_fees, kind: F, conf: m}
+  - {j: CAM, cat: screening_restrictions, kind: R, cites: ["14.04"], status: in_force, conf: m}
+  - {j: CAM, cat: algorithmic_rent_setting, kind: F, conf: h}
+
+# Per-address expectations on 2026-10-01 for 20 trap-covering addresses.
+# result: the result of the named rule cell's governing rule, or "omitted" when no rule is shown.
+addresses:
+  A0001: {note: "LA 1927, 32 units", expect: [[LA, rent_increase_limits, applies], [CA, rent_increase_limits, superseded], [CA, algorithmic_rent_setting, applies]]}
+  A0107: {note: "LA built 1978: cutoff year", expect: [[LA, rent_increase_limits, unknown]]}
+  A0022: {note: "LA built 2012", expect: [[CA, rent_increase_limits, omitted]]}
+  A0016: {note: "SF 1926, 21 units", expect: [[SF, rent_increase_limits, applies], [CA, rent_increase_limits, superseded], [SF, just_cause_eviction, applies], [CA, just_cause_eviction, superseded], [SF, algorithmic_rent_setting, applies]]}
+  A0106: {note: "SF missing year built", expect: [[SF, rent_increase_limits, unknown]]}
+  A0019: {note: "San Diego, no year built", expect: [[SD, just_cause_eviction, unknown]]}
+  A0322: {note: "San Ysidro mailed, legally San Diego", expect: [[SD, just_cause_eviction, unknown]]}
+  A0005: {note: "Berkeley, no year built", expect: [[BRK, algorithmic_rent_setting, applies]]}
+  A0012: {note: "Jersey City built 1900", expect: [[JC, rent_increase_limits, applies], [JC, algorithmic_rent_setting, applies], [NJ, algorithmic_rent_setting, not_yet_effective]]}
+  A0008: {note: "Jersey City missing year", expect: [[JC, rent_increase_limits, unknown]]}
+  A0002: {note: "Hoboken 2001, 20 units from description", expect: [[HOB, algorithmic_rent_setting, applies], [NJ, algorithmic_rent_setting, not_yet_effective]]}
+  A0003: {note: "Newark, ZIP 11219 dropped", expect: [[NJ, algorithmic_rent_setting, not_yet_effective], [NWK, algorithmic_rent_setting, omitted]]}
+  A0028: {note: "Newark record conflict on units", expect: [[NJ, algorithmic_rent_setting, not_yet_effective]]}
+  A0049: {note: "Hoboken affordable", expect: [[HOB, algorithmic_rent_setting, applies]]}
+  A0118: {note: "Boston mailed as Dorchester", expect: [[BOS, rent_increase_limits, omitted], [MA, algorithmic_rent_setting, pending]]}
+  A0006: {note: "Boston subsidized", expect: [[BOS, rent_increase_limits, omitted]]}
+  A0036: {note: "Boston built 2019", expect: [[BOS, rent_increase_limits, omitted]]}
+  A0009: {note: "Cambridge", expect: [[CAM, rent_increase_limits, omitted], [CAM, just_cause_eviction, applies]]}
+  A0199: {note: "Cambridge built 2012 or later", expect: [[CAM, rent_increase_limits, omitted]]}
+  A0398: {note: "SF TIC with a record conflict", expect: [[SF, rent_increase_limits, unknown]]}

@@ -1,0 +1,210 @@
+{
+  "cost_usd": 0.009453,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "sections": [
+      {
+        "categories": [],
+        "keep": false,
+        "refs": [],
+        "role": "other",
+        "section_id": "D073-S001"
+      },
+      {
+        "categories": [],
+        "keep": false,
+        "refs": [],
+        "role": "other",
+        "section_id": "D073-S002"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "findings",
+        "section_id": "D073-S003"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "definition",
+        "section_id": "D073-S004"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "definition",
+        "section_id": "D073-S005"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "exemption",
+        "section_id": "D073-S006"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [
+          "D073-S006"
+        ],
+        "role": "exemption",
+        "section_id": "D073-S007"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [
+          "D073-S006",
+          "D073-S007"
+        ],
+        "role": "exemption",
+        "section_id": "D073-S008"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [
+          "D073-S006",
+          "D073-S008"
+        ],
+        "role": "exemption",
+        "section_id": "D073-S009"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D073-S010"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [
+          "D073-S010"
+        ],
+        "role": "operative",
+        "section_id": "D073-S011"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [
+          "D073-S010"
+        ],
+        "role": "operative",
+        "section_id": "D073-S012"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [
+          "D073-S010",
+          "D073-S012"
+        ],
+        "role": "operative",
+        "section_id": "D073-S013"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [
+          "D073-S010"
+        ],
+        "role": "effective_date",
+        "section_id": "D073-S014"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "procedural",
+        "section_id": "D073-S015"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [
+          "D073-S010"
+        ],
+        "role": "operative",
+        "section_id": "D073-S016"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D073-S017"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D073-S018"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "penalty",
+        "section_id": "D073-S019"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "penalty",
+        "section_id": "D073-S020"
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 3458,
+    "output_tokens": 1199
+  }
+}

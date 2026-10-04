@@ -1,0 +1,45 @@
+{
+  "cost_usd": 0.0104504,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "rent_increase_limits",
+        "cite": "Jersey City Municipal Code ch. 260",
+        "coverage": {
+          "fact": "units",
+          "op": ">=",
+          "value": 5
+        },
+        "coverage_text": "Rental properties with five or more units are covered by Jersey City rent control.",
+        "exemptions": [
+          {
+            "description": "Properties with 1-4 units are exempt",
+            "predicate": {
+              "fact": "units",
+              "op": "<=",
+              "value": 4
+            },
+            "quote": "(Please Note: All 1-4 Unit Properties are exempt from rent control)"
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "(Please Note: All 1-4 Unit Properties are exempt from rent control)",
+        "requirement": "Jersey City's Rent Control Ordinance does not apply to properties with 1-4 units. The Office of Landlord/Tenant Relations administers and enforces the ordinance.",
+        "title": "Rent control exemption for 1-4 unit properties",
+        "uncertain_fields": [
+          "penalty",
+          "effective_date"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 3094,
+    "output_tokens": 379
+  }
+}

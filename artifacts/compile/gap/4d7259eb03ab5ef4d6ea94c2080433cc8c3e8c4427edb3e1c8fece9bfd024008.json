@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002674,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The documents and link-only signals provided do not contain text or substantive information addressing screening restrictions for Santa Ana, CA at the city level. The guidance documents (D084, D085) focus on rent stabilization and just cause eviction ordinances. The state-level rules (CA-SCR-01 and CA-SCR-02) relate to property appraisals and screening fee disclosures/refunds but no actual text or specific provisions are supplied for Santa Ana's local screening restrictions. The link-only items reference federal/state fair housing compliance, California civil code sections, algorithmic pricing, and AI rent-setting software bans, but provide no accessible text content regarding screening restrictions. No city ordinance text, motion, pending measure, or failed measure addressing screening restrictions for Santa Ana was located in the provided sources.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1429,
+    "output_tokens": 249
+  }
+}

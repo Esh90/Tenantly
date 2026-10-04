@@ -1,0 +1,242 @@
+[
+  {
+    "category": "rent_increase_limits",
+    "jurisdiction": "NJ",
+    "note": "The documents provided contain only partial text snippets from statutes (D065, D066, D069) that are truncated and do not display substantive content about rent increase limits. Document D067 and D068 appear to be guidance documents with only header/contact information visible. Multiple link-only references (D060-D064) exist but contain no actual text to evaluate. None of the provided document text contains substantive information about state-level rent increase limits for New Jersey.",
+    "reason": "text_not_supplied"
+  },
+  {
+    "category": "application_screening_fees",
+    "jurisdiction": "MA",
+    "note": "The triaged documents provided only include headers/titles of statutes (General Laws sections from Chapters 40P, 151B, 186, and 112) and bills (H.5222 and S.2983 about algorithmic rent setting), without supplying the actual text content. The link-only sources (D054-D056, D059) contain no text. Without substantive text from these sources, it is impossible to determine whether Massachusetts has a state-level rule regarding application screening fees.",
+    "reason": "text_not_supplied"
+  },
+  {
+    "category": "algorithmic_rent_setting",
+    "jurisdiction": "MA",
+    "note": "",
+    "reason": "only_pending"
+  },
+  {
+    "category": "application_screening_fees",
+    "jurisdiction": "Los Angeles, CA",
+    "note": "The triaged documents provided (D039-D043) relate to Just Cause For Eviction Ordinance, RSO overview, rent increase calculator, and relocation assistance - none of which directly address application screening fees. The link-only sources include references to California civil code sections and fair housing issues, but no specific text about Los Angeles city-level application screening fee regulations is present in the provided document excerpts. The category rules CA-FEE-01 and CA-FEE-02 are noted as existing but no corresponding city-level ordinance text implementing these rules at the Los Angeles level was supplied in the source materials.",
+    "reason": "none_in_sources"
+  },
+  {
+    "category": "screening_restrictions",
+    "jurisdiction": "Los Angeles, CA",
+    "note": "The documents provided for Los Angeles, CA contain guidance on Just Cause For Eviction Ordinance, RSO (Rent Stabilization Ordinance), and relocation assistance, but do not contain any substantive text addressing screening_restrictions at the city level. The motion (D039) is incomplete and does not address screening restrictions. The link-only signals reference state-level laws (CA Civil Code sections related to eviction, fair housing, and screening) and one reference to Section 8 acceptance and criminal background checks, but no actual text is available from these sources. The identified state rules (CA-SCR-01 and CA-SCR-02) are state-level enactments, not city-level. None of the provided documents contain city-level rules or ordinances specifically restricting screening practices in Los Angeles.",
+    "reason": "none_in_sources"
+  },
+  {
+    "category": "algorithmic_rent_setting",
+    "jurisdiction": "Los Angeles, CA",
+    "note": "The only document with substantive text addressing algorithmic rent setting in Los Angeles is D039, which is a motion from September 3, 2024 instructing the Los Angeles Housing Department to report on ownership and management entities. This is a pending motion requesting analysis/reporting, not an enacted rule. The other guidance documents (D040-D043) address the Just Cause for Eviction Ordinance and RSO rent increase calculations through traditional means, not algorithmic pricing. The state-level rules CA-ALG-01 and CA-ALG-02 apply to common pricing algorithms and Cartwright Act pleading standards but do not create a specific Los Angeles city-level rule on algorithmic rent setting. No adopted ordinance or regulation prohibiting or regulating algorithmic rent setting at the city level is found in the provided sources.",
+    "reason": "none_in_sources"
+  },
+  {
+    "category": "application_screening_fees",
+    "jurisdiction": "San Francisco, CA",
+    "note": "The documents provided contain only guidance pages and link-only signals. The guidance documents (D078-D083) appear to be index pages or summaries from SF.gov covering topics like Human Rights Commission, evictions, rent increases, and algorithmic devices, but do not contain substantive text addressing application screening fees. The link-only references (D015-D021, D028) point to external resources including California civil code sections and fair housing guidance, but no actual text content is provided. While rules CA-FEE-01 and CA-FEE-02 exist in this category, no specific city ordinance text or local regulation text addressing application screening fees at the San Francisco city level has been supplied to analyze.",
+    "reason": "text_not_supplied"
+  },
+  {
+    "category": "screening_restrictions",
+    "jurisdiction": "San Francisco, CA",
+    "note": "The documents provided contain guidance on tenant protections, evictions, rent increases, and algorithmic rent-setting prohibitions in San Francisco, but do not include any text or substantive content addressing screening restrictions specifically. The category \"screening_restrictions\" at the city level for San Francisco is not covered by the triaged documents or link-only sources. While CA-SCR-02 relates to \"Screening Fee Disclosures and Refunds,\" the actual text of this rule is not supplied in the materials provided. The documents focus on other rental housing topics but contain no information about screening restrictions or screening practices.",
+    "reason": "none_in_sources"
+  },
+  {
+    "category": "rent_increase_limits",
+    "jurisdiction": "San Diego, CA",
+    "note": "",
+    "reason": "barred_by_state"
+  },
+  {
+    "category": "security_deposits",
+    "jurisdiction": "San Diego, CA",
+    "note": "San Diego, CA (city level) has no ordinance or municipal code text supplied for security deposit rules. Document D073 is a truncated header from SDMC Chapter 9 Article 8 Division 7 on Housing with no substantive security deposit provisions provided. Documents D076 and D077 are draft materials and staff reports without text. D015-D021, D028, D074-D075 are link-only citations to state law (California Civil Code sections 1950.6, 1950-5, etc.) and federal fair housing law, which address state-level and federal requirements, not city-specific rules. The three state-level rules (CA-DEP-01, CA-DEP-02, CA-DEP-03) are California state law, not San Diego city ordinances. No city-level security deposit ordinance text is available in the sources provided.",
+    "reason": "none_in_sources"
+  },
+  {
+    "category": "application_screening_fees",
+    "jurisdiction": "San Diego, CA",
+    "note": "The provided documents include an incomplete ordinance excerpt (D073) from San Diego Municipal Code Chapter 9 that does not contain substantive provisions on application screening fees, and a draft staff report (D076) with only its header visible. The link-only signals reference related housing and tenant protection topics but provide no actual text. While CA-FEE-01 and CA-FEE-02 rules exist at the state level, no specific city-level ordinance provisions regarding application screening fees for San Diego are presented in the source materials. The incomplete document excerpts do not supply sufficient text to identify or quote any relevant provisions.",
+    "reason": "none_in_sources"
+  },
+  {
+    "category": "screening_restrictions",
+    "jurisdiction": "San Diego, CA",
+    "note": "The documents provided do not contain text substantive enough to identify a rule regarding screening_restrictions at the city level for San Diego. Document D073 is truncated and incomplete (cutting off mid-text at \"Resi\"). Document D076 is a draft staff report with only the header visible. The link-only sources (D015, D017-D021, D028, D074-D077) cannot be evaluated as they contain no text. While D075 references Division 8 prohibition based on source of income (matching the enacted rule SD-SCR-01), and D074 references Division 11 on algorithmic pricing, neither provides substantive text to establish screening_restrictions policy. No actual screening restriction rules are documented in the available text.",
+    "reason": "none_in_sources"
+  },
+  {
+    "category": "algorithmic_rent_setting",
+    "jurisdiction": "San Diego, CA",
+    "note": "",
+    "reason": "only_pending"
+  },
+  {
+    "category": "security_deposits",
+    "jurisdiction": "Santa Ana, CA",
+    "note": "The jurisdiction documents (D084, D085) are guidance materials providing only high-level information about Santa Ana's rent stabilization and just cause eviction ordinances, with no actual text content of the security deposit rules. The link-only sources (D017, D020) reference California state law on security deposits (Civil Code §1950.5), but no actual text from Santa Ana's specific ordinance or California law is provided in the documents. While three rules in this category are listed as enacted (CA-DEP-01, CA-DEP-02, CA-DEP-03), the actual ordinance text for Santa Ana's implementation of security deposit requirements is not supplied in the available materials.",
+    "reason": "text_not_supplied"
+  },
+  {
+    "category": "application_screening_fees",
+    "jurisdiction": "Santa Ana, CA",
+    "note": "The jurisdiction documents (D084, D085) are guidance materials that contain no specific text regarding application screening fees. The link-only signals (D015-D021, D028, D086, D087) reference external sources without providing the actual document text needed to verify whether application screening fee rules exist at the city level. While the state rules CA-FEE-01 and CA-FEE-02 address application screening fees, the city-level documentation necessary to determine if Santa Ana has enacted its own rules on this category has not been supplied.",
+    "reason": "text_not_supplied"
+  },
+  {
+    "category": "screening_restrictions",
+    "jurisdiction": "Santa Ana, CA",
+    "note": "The documents and link-only signals provided do not contain text or substantive information addressing screening restrictions for Santa Ana, CA at the city level. The guidance documents (D084, D085) focus on rent stabilization and just cause eviction ordinances. The state-level rules (CA-SCR-01 and CA-SCR-02) relate to property appraisals and screening fee disclosures/refunds but no actual text or specific provisions are supplied for Santa Ana's local screening restrictions. The link-only items reference federal/state fair housing compliance, California civil code sections, algorithmic pricing, and AI rent-setting software bans, but provide no accessible text content regarding screening restrictions. No city ordinance text, motion, pending measure, or failed measure addressing screening restrictions for Santa Ana was located in the provided sources.",
+    "reason": "none_in_sources"
+  },
+  {
+    "category": "just_cause_eviction",
+    "jurisdiction": "Jersey City, NJ",
+    "note": "MODEL SUGGESTS A RULE EXISTS (review): Jersey City has enacted just cause eviction rules, as evidenced by the multiple enacted rules in this category (NJ-JCE-01 through NJ-JCE-05). The rule NJ-JCE-01 \"Good cause eviction (enacted)\" directly addresses the just_cause_eviction category at the city level.",
+    "reason": "none_in_sources"
+  },
+  {
+    "category": "security_deposits",
+    "jurisdiction": "Jersey City, NJ",
+    "note": "Jersey City has no specific city-level security deposit rules in the provided documents. The triaged section D036 is only partial guidance text about Landlord/Tenant Relations with no substantive security deposit policy. The security deposit rules identified (NJ-DEP-01, NJ-DEP-02, NJ-DEP-03) are enacted state-level rules from New Jersey, not Jersey City ordinances. The link-only documents provided do not contain accessible text and appear to reference state-level laws and algorithmic rent pricing matters rather than city-level security deposit regulations. No city ordinance text establishing security deposit rules for Jersey City was found in the sources provided.",
+    "reason": "none_in_sources"
+  },
+  {
+    "category": "application_screening_fees",
+    "jurisdiction": "Jersey City, NJ",
+    "note": "Document D036 is truncated/incomplete (ends with \"Landlord/ Tenant Relations - City of Jersey City...Birth, Mar\") and does not contain substantive text about application screening fees. The link-only documents (D035, D037, D060-D064) have no text provided for review. While a state rule exists (NJ-FEE-01), no city-level ordinance text or explicit local application screening fee rule is available in the supplied documents.",
+    "reason": "text_not_supplied"
+  },
+  {
+    "category": "screening_restrictions",
+    "jurisdiction": "Jersey City, NJ",
+    "note": "The provided document D036 is incomplete (truncated guidance text about Landlord/Tenant Relations for Jersey City) and does not contain specific screening restrictions rules. While four state-level NJ screening restriction rules are noted (NJ-SCR-01 through NJ-SCR-04), no city-level ordinance or rule for Jersey City implementing or going beyond these state rules is found in the supplied text. The link-only sources cannot be reviewed for their content. The incomplete guidance document does not provide the necessary text to identify a city-specific screening restrictions rule.",
+    "reason": "none_in_sources"
+  },
+  {
+    "category": "rent_increase_limits",
+    "jurisdiction": "Hoboken, NJ",
+    "note": "",
+    "reason": "barred_by_state"
+  },
+  {
+    "category": "just_cause_eviction",
+    "jurisdiction": "Hoboken, NJ",
+    "note": "The jurisdiction has enacted rules in the just_cause_eviction category (NJ-JCE-01 through NJ-JCE-05), but only link-only signals are available without accompanying text. No actual document text has been supplied to verify the content of these rules or to identify specific section IDs and exact quotes.",
+    "reason": "text_not_supplied"
+  },
+  {
+    "category": "security_deposits",
+    "jurisdiction": "Hoboken, NJ",
+    "note": "While there are three enacted rules in the security_deposits category for Hoboken, NJ (NJ-DEP-01, NJ-DEP-02, NJ-DEP-03), and multiple link-only sources are provided (D032-D034 and D060-D064), the actual text content from these sources has not been supplied. Without the document text or quoted material from these links, it is not possible to verify whether a specific rule exists, is barred by state law, or meets any other classification criteria.",
+    "reason": "text_not_supplied"
+  },
+  {
+    "category": "application_screening_fees",
+    "jurisdiction": "Hoboken, NJ",
+    "note": "All available sources are link-only with no text supplied. The documents referenced (D032-D064) appear to be external links to ecode360.com, daypitney.com, and law.justia.com that cannot be accessed for review. Without the actual text content from these sources, it is impossible to determine whether there is a specific rule for application screening fees at the city level in Hoboken, NJ.",
+    "reason": "text_not_supplied"
+  },
+  {
+    "category": "screening_restrictions",
+    "jurisdiction": "Hoboken, NJ",
+    "note": "MODEL SUGGESTS A RULE EXISTS (review): New Jersey state-level screening restrictions rules (NJ-SCR-01 through NJ-SCR-04) enacted under the N.J. Fair Chance in Housing Act apply statewide and govern screening practices in Hoboken and all other municipalities. These rules prohibit criminal record inquiries before conditional offer, require individualized assessment factors for criminal record withdrawal, prohibit discriminatory housing advertisements regarding criminal records, and prohibit drug or alcohol testing requirements. No separate city-level ordinance is required as state law preempts and governs this category.",
+    "reason": "none_in_sources"
+  },
+  {
+    "category": "rent_increase_limits",
+    "jurisdiction": "Newark, NJ",
+    "note": "",
+    "reason": "barred_by_state"
+  },
+  {
+    "category": "just_cause_eviction",
+    "jurisdiction": "Newark, NJ",
+    "note": "MODEL SUGGESTS A RULE EXISTS (review): Newark is in New Jersey, which has enacted comprehensive just cause eviction protections at the state level. The jurisdiction has multiple rules in this category (NJ-JCE-01 through NJ-JCE-05) that are all marked as enacted, indicating that just cause eviction protections exist for Newark through state law. These rules cover good cause eviction requirements, warrant procedures, stay of eviction, and specific protections for owner-occupied properties.",
+    "reason": "none_in_sources"
+  },
+  {
+    "category": "security_deposits",
+    "jurisdiction": "Newark, NJ",
+    "note": "The jurisdiction (Newark, NJ at city level) has no rule in the security_deposits category. While there are three enacted rules at the state level (NJ-DEP-01, NJ-DEP-02, NJ-DEP-03), the query specifically requests city-level rules for Newark. Multiple link-only sources are provided without accompanying text, preventing verification of whether they contain city-level security deposit regulations for Newark. Without accessible document text from these sources, and without state preemption/limitation sections provided to determine if state rules bar local regulation, the city-level gap cannot be resolved from available sources.",
+    "reason": "none_in_sources"
+  },
+  {
+    "category": "application_screening_fees",
+    "jurisdiction": "Newark, NJ",
+    "note": "Multiple link-only documents provided without text content (D060-D064, D070-D072). Unable to verify whether any sources contain an application screening fee rule for Newark, NJ at the city level that would implement or relate to NJ-FEE-01. The actual text of these sources must be supplied to determine if a rule exists.",
+    "reason": "text_not_supplied"
+  },
+  {
+    "category": "screening_restrictions",
+    "jurisdiction": "Newark, NJ",
+    "note": "Newark, NJ city-level screening restriction rules have been identified for the state level (NJ-SCR-01 through NJ-SCR-04), but no Newark-specific ordinances or local implementations of screening restriction rules were found in the provided sources. The link-only citations provided (D060-D064, D070-D072) lack actual text content that could confirm Newark city-level screening restriction regulations, and no specific Newark municipal code sections addressing screening restrictions beyond state law were included in the triaged documents.",
+    "reason": "none_in_sources"
+  },
+  {
+    "category": "algorithmic_rent_setting",
+    "jurisdiction": "Newark, NJ",
+    "note": "The category algorithmic_rent_setting at the city level (Newark, NJ) shows a rule exists (NJ-ALG-01 Ban on algorithmic rent coordination - enacted). Multiple links to legal sources are provided (D060-D064, D070-D072) referencing New Jersey statutes and code sections related to algorithmic rent setting, but the actual text of these sources has not been supplied. Without the text content from these linked documents, it is impossible to verify the rule, extract exact quotes, or confirm applicability to Newark specifically.",
+    "reason": "text_not_supplied"
+  },
+  {
+    "category": "rent_increase_limits",
+    "jurisdiction": "Boston, MA",
+    "note": "",
+    "reason": "barred_by_state"
+  },
+  {
+    "category": "security_deposits",
+    "jurisdiction": "Boston, MA",
+    "note": "The documents provided (D010-D014) focus on Boston Fair Chance Tenant Selection, Fair Housing Regulations, and Housing Stability Notification Act - none of which address security deposit rules. The rule MA-DEP-01 Maximum Security Deposit Amount exists at the state level, but no city-level rule for Boston on security deposits is found in the provided document texts. The link-only sources (D054-D059) do not contain text and appear to address application fees, criminal records, and rent control rather than security deposits specifically. No source material contains relevant text on Boston's security deposit requirements.",
+    "reason": "none_in_sources"
+  },
+  {
+    "category": "application_screening_fees",
+    "jurisdiction": "Boston, MA",
+    "note": "The documents provided for Boston, MA regarding application_screening_fees at the city level contain only partial text snippets from policies, bills, and guidance documents about fair housing, fair chance tenant selection, and housing stability notification. None of the supplied document text contains specific information about application screening fees. The link-only signals (D054-D056, D059) do not provide text content that could be evaluated. The available documents do not supply sufficient text to determine whether a rule on application screening fees exists at the city level.",
+    "reason": "text_not_supplied"
+  },
+  {
+    "category": "algorithmic_rent_setting",
+    "jurisdiction": "Boston, MA",
+    "note": "The jurisdiction has two pending rules in this category: MA-ALG-P1 (Act prohibiting algorithmic rent setting) and MA-ALG-P2 (Bill H.5222: Preventing algorithmic rent fixing). Both are explicitly marked as pending, indicating proposed legislation that has not yet been enacted. The documents provided (D010-D014) relate to fair housing, tenant selection, and housing stability notification, but do not contain text addressing algorithmic rent setting. No enacted rule for algorithmic rent setting at the Boston city level was found in the sources.",
+    "reason": "none_in_sources"
+  },
+  {
+    "category": "rent_increase_limits",
+    "jurisdiction": "Cambridge, MA",
+    "note": "",
+    "reason": "barred_by_state"
+  },
+  {
+    "category": "just_cause_eviction",
+    "jurisdiction": "Cambridge, MA",
+    "note": "The triaged documents (D029 and D031) are truncated guidance/overview pages with no substantive text provided about just cause eviction requirements. The link-only signals (D030, D054, D055, D056, D059) provide no text content and do not appear to address just cause eviction standards. While a state-level rule (MA-JCE-01) exists regarding notice requirements, no city-level just cause eviction rule was found in the available source materials for Cambridge, MA.",
+    "reason": "none_in_sources"
+  },
+  {
+    "category": "security_deposits",
+    "jurisdiction": "Cambridge, MA",
+    "note": "The jurisdiction is Cambridge, MA at the city level, seeking a rule for security_deposits. The state rule MA-DEP-01 (Maximum Security Deposit Amount) exists at the state level but this search is for city-level rules. The provided documents D029 and D031 are guidance materials without specific security deposit rule text. The link-only documents cannot be verified as containing relevant city-level security deposit rules. No actual city ordinance text or rule for security deposits at the Cambridge city level is present in the supplied sources.",
+    "reason": "none_in_sources"
+  },
+  {
+    "category": "application_screening_fees",
+    "jurisdiction": "Cambridge, MA",
+    "note": "The available documents (D029 and D031) are incomplete guidance pages with truncated text that does not contain substantive information about application screening fees. The link-only sources (D030, D054, D055, D056, D059) provide no retrievable text. Therefore, no actual regulatory text regarding application screening fees at the Cambridge, MA city level can be assessed.",
+    "reason": "text_not_supplied"
+  },
+  {
+    "category": "algorithmic_rent_setting",
+    "jurisdiction": "Cambridge, MA",
+    "note": "Cambridge, MA has no city-level rule on algorithmic rent setting. However, there are two pending rules at the state level (MA-ALG-P1 and MA-ALG-P2) that address this category. The provided documents (D029, D031) are guidance materials that do not contain substantive rules on algorithmic rent setting. The link-only documents lack text content for evaluation. No adopted or implemented city or state rules currently exist on this topic.",
+    "reason": "none_in_sources"
+  }
+]

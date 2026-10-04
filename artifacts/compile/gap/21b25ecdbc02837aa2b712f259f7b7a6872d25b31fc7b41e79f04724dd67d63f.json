@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.00202,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The only rule identified for algorithmic rent setting at the city level for Cambridge, MA is MA-ALG-P1, which corresponds to MA S.2983 / H.5222. This is a pending measure at the state level, not a city-level rule. The provided documents (D029, D031) contain only fragmentary guidance text that does not address algorithmic rent setting specifically. The link-only sources do not provide substantive text to determine if they contain relevant rules.",
+    "result": "only_pending"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1140,
+    "output_tokens": 176
+  }
+}

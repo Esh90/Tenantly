@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002157,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Security deposits for most units in multifamily buildings built before 1980 must earn interest. The landlord holds and grows the money over time.",
+    "summary_es": "Los depósitos de seguridad para la mayoría de unidades en edificios multifamiliares construidos antes de 1980 deben ganar interés. El arrendador mantiene y hace crecer el dinero con el tiempo.",
+    "who_en": "This rule applies to most units in multifamily properties built before 1980 in Berkeley.",
+    "who_es": "Esta regla se aplica a la mayoría de unidades en propiedades multifamiliares construidas antes de 1980 en Berkeley."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 937,
+    "output_tokens": 244
+  }
+}

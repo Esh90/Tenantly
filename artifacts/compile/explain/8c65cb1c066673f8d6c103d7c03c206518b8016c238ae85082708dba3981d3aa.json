@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002351,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords may add a monthly surcharge to rent equal to 1/12 of 50% of the annual Systematic Code Enforcement Fee. This surcharge started January 1, 2022.",
+    "summary_es": "Los arrendadores pueden agregar una cuota mensual a la renta igual a 1/12 del 50% de la Cuota Anual de Cumplimiento Sistemático de Código. Esta cuota comenzó el 1 de enero de 2022.",
+    "who_en": "This applies to rental properties in Los Angeles that were first built on or before October 1, 1978.",
+    "who_es": "Esto se aplica a las propiedades de alquiler en Los Ángeles que fueron construidas por primera vez en o antes del 1 de octubre de 1978."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 971,
+    "output_tokens": 276
+  }
+}

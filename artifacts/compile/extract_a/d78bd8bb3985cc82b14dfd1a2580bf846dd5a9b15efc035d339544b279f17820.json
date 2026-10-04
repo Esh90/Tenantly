@@ -1,0 +1,57 @@
+{
+  "cost_usd": 0.0087184,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "application_screening_fees",
+        "cite": "Cal. Civ. Code § 1950.6",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental applications in Berkeley.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "max_screening_fee_2026",
+            "text": "$68.96",
+            "unit": "usd",
+            "valid_from": "2026-01-01",
+            "valid_to": "2026-12-31",
+            "value": 68.96
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The maximum tenant screening fee for 2026 is\n$68.96",
+        "requirement": "Landlords may not charge a tenant screening fee above the stated annual maximum. Fees may be used for items such as a consumer credit report, and unused portions must be refunded.",
+        "title": "Maximum tenant screening fee 2026",
+        "uncertain_fields": [
+          "effective_date"
+        ]
+      },
+      {
+        "category": "application_screening_fees",
+        "cite": "BMC 13.78.016",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental property in Berkeley.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "An owner of residential rental property (or the owner’s agent) cannot charge a non-refundable fee to any existing tenant for the purpose of renewing a tenancy, in whole or in part, including any fee associated with the departure of a roommate or to request to add or replace a roommate in a pre-existing household.",
+        "requirement": "Owners cannot charge existing tenants a non-refundable fee for renewing a tenancy or for roommate changes.",
+        "title": "No non-refundable fees for existing tenancies"
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 1148,
+    "output_tokens": 595
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002296,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Starting July 1, 2025, landlords must take photos of the rental unit right before or when a new tenant moves in. These photos show what condition the unit is in.",
+    "summary_es": "A partir del 1 de julio de 2025, los arrendadores deben tomar fotos del departamento justo antes o cuando un nuevo inquilino se muda. Estas fotos muestran en qué condición está el departamento.",
+    "who_en": "This rule applies to all residential rental units when a new tenancy begins on or after July 1, 2025.",
+    "who_es": "Esta regla se aplica a todos los departamentos de alquiler residencial cuando comienza una nueva tenencia el 1 de julio de 2025 o después."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 981,
+    "output_tokens": 263
+  }
+}

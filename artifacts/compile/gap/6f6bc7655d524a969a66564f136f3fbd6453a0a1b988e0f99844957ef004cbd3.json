@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002871,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The only document with substantive text addressing algorithmic rent setting in Los Angeles is D039, which is a motion from September 3, 2024 instructing the Los Angeles Housing Department to report on ownership and management entities. This is a pending motion requesting analysis/reporting, not an enacted rule. The other guidance documents (D040-D043) address the Just Cause for Eviction Ordinance and RSO rent increase calculations through traditional means, not algorithmic pricing. The state-level rules CA-ALG-01 and CA-ALG-02 apply to common pricing algorithms and Cartwright Act pleading standards but do not create a specific Los Angeles city-level rule on algorithmic rent setting. No adopted ordinance or regulation prohibiting or regulating algorithmic rent setting at the city level is found in the provided sources.",
+    "result": "motion_only"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1621,
+    "output_tokens": 250
+  }
+}

@@ -7,5 +7,5 @@ __pycache__/
 .ruff_cache/
 # bulky regenerable caches
 artifacts/cache/
-artifacts/compile/
 build/
+artifacts/web/

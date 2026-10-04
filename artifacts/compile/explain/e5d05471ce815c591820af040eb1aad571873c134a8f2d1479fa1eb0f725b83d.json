@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002226,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Jersey City's rent control limits do not apply to rental properties with 1, 2, 3, or 4 units. Only properties with 5 or more units must follow these rent control rules.",
+    "summary_es": "El control de rentas de Jersey City no se aplica a propiedades de alquiler con 1, 2, 3 o 4 unidades. Solo las propiedades con 5 o más unidades deben seguir estas reglas de control de rentas.",
+    "who_en": "This rule applies to rental properties with five or more units in Jersey City.",
+    "who_es": "Esta regla se aplica a propiedades de alquiler con cinco o más unidades en Jersey City."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 971,
+    "output_tokens": 251
+  }
+}

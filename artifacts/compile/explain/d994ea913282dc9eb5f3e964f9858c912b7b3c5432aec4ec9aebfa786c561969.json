@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002568,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "When a landlord ends a tenancy in a single-family home, the tenant gets one month's rent as relocation help. The landlord can pay this as money or as a rent credit.",
+    "summary_es": "Cuando un arrendador termina un arrendamiento en una casa unifamiliar, el inquilino recibe un mes de renta como ayuda de reubicación. El arrendador puede pagar esto en efectivo o como crédito de renta.",
+    "who_en": "This rule applies to single-family dwellings in Los Angeles where the owner is one person who owns no more than 4 rental units plus one single-family home on a separate lot.",
+    "who_es": "Esta regla se aplica a viviendas unifamiliares en Los Ángeles donde el propietario es una persona que posee no más de 4 unidades de alquiler más una casa unifamiliar en un lote separado."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1058,
+    "output_tokens": 302
+  }
+}

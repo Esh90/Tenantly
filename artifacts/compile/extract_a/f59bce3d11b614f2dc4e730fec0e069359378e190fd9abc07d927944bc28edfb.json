@@ -1,0 +1,75 @@
+{
+  "cost_usd": 0.015486399999999999,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "approval_date": null,
+        "category": "algorithmic_rent_setting",
+        "cite": "BMC § 13.63.030(A)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential dwelling units in Berkeley.",
+        "effective_date": null,
+        "exemptions": [
+          {
+            "description": "Excluded products: aggregated anonymous reports, affordable housing rent/income limit tools, market research for financing, appraisal, or software research/testing/training.",
+            "predicate": {
+              "const": true
+            },
+            "quote": null
+          }
+        ],
+        "key_values": [
+          {
+            "name": "competitor_data_age_limit",
+            "text": "when such data is less than 90 days old",
+            "unit": "days",
+            "value": 90
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "Civil action by City Attorney: damages, injunctive relief, restitution, civil penalties up to $1,000 per violation, plus attorney's fees.",
+        "quote": "It shall be unlawful to sell, license, or otherwise provide to City of Berkeley landlords any coordinated pricing algorithm that sets or recommends rents or occupancy levels that may be achieved for residential dwelling units in the City of Berkeley.",
+        "requirement": "It is unlawful to sell, license, or otherwise provide to Berkeley landlords a coordinated pricing algorithm that sets or recommends rents or occupancy levels for residential units in Berkeley.",
+        "title": "Sale of coordinated pricing algorithms prohibited",
+        "uncertain_fields": [
+          "effective_date"
+        ]
+      },
+      {
+        "category": "algorithmic_rent_setting",
+        "cite": "BMC § 13.63.030(B)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All Berkeley landlords of residential dwelling units.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "civil_penalty_max",
+            "text": "civil penalties of up to $1,000 per violation",
+            "unit": "usd",
+            "value": 1000
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "Civil penalties of up to $1,000 per violation; tenant may seek injunctive relief, damages, and attorney's fees.",
+        "quote": "It shall be unlawful for a landlord to use a coordinated pricing algorithm described in subsection A when setting rents or occupancy levels for residential dwelling units in the City of Berkeley.",
+        "requirement": "Landlords may not use a coordinated pricing algorithm when setting rents or occupancy levels for Berkeley residential units. Each month and each unit is a separate violation.",
+        "title": "Landlord use of coordinated pricing algorithms prohibited",
+        "uncertain_fields": [
+          "effective_date"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 3012,
+    "output_tokens": 899
+  }
+}

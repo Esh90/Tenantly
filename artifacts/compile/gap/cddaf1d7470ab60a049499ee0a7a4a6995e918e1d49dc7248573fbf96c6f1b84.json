@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001943,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "All available sources are link-only with no text supplied. The documents referenced (D032-D064) appear to be external links to ecode360.com, daypitney.com, and law.justia.com that cannot be accessed for review. Without the actual text content from these sources, it is impossible to determine whether there is a specific rule for application screening fees at the city level in Hoboken, NJ.",
+    "result": "text_not_supplied"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1113,
+    "output_tokens": 166
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "cost_usd": 0.0116464,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "just_cause_eviction",
+        "cite": "Los Angeles Just Cause Ordinance (LAMC ch. XVI, art. 5)",
+        "coverage": {
+          "not": {
+            "fact": "year_built",
+            "op": "<",
+            "value": 1
+          }
+        },
+        "coverage_text": "Most residential properties in the City of Los Angeles not regulated by the Rent Stabilization Ordinance.",
+        "exemptions": [
+          {
+            "description": "Transient hotels, licensed care facilities, fraternity/sorority houses, owner's roommate, certain cooperatives, some nonprofit facilities, some HACLA/government properties",
+            "predicate": {
+              "const": true
+            },
+            "quote": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government."
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "It prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions.",
+        "requirement": "Landlords may not terminate tenancies without just cause and must provide relocation assistance for no-fault evictions.",
+        "tenancy_conditions": [
+          "Tenant has lived in the unit at least six months or original lease expired, whichever comes first"
+        ],
+        "title": "LA Just Cause for Eviction",
+        "uncertain_fields": [
+          "coverage",
+          "penalty"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 2782,
+    "output_tokens": 561
+  }
+}

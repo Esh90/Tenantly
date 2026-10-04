@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002279,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Housing owners cannot evict, harass, or treat tenants unfairly if the main reason is punishment for reporting illegal practices or standing up for their rights. This rule protects tenants who speak up against violations of housing laws.",
+    "summary_es": "Los arrendadores no pueden desalojar, acosar ni tratar a los inquilinos injustamente si la razón principal es castigarlos por denunciar prácticas ilegales o defender sus derechos. Esta regla protege a los inquilinos que hablan en contra de violaciones de las leyes de vivienda.",
+    "who_en": "This rule applies to all housing accommodations in California.",
+    "who_es": "Esta regla se aplica a todas las viviendas en California."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 989,
+    "output_tokens": 258
+  }
+}

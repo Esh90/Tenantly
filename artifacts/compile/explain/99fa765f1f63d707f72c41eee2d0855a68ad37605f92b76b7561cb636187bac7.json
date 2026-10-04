@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002422,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "A landlord can end a lease to fix habitability problems required by a government agency or court order. The rental property must be vacant for at least 30 days to comply with these requirements.",
+    "summary_es": "Un arrendador puede terminar un contrato de arrendamiento para reparar problemas de habitabilidad requeridos por una agencia gubernamental u orden judicial. La propiedad de alquiler debe estar desocupada durante al menos 30 días para cumplir con estos requisitos.",
+    "who_en": "This rule covers all residential rental properties subject to SDMC Chapter 9, Article 8, Division 7.",
+    "who_es": "Esta regla aplica a todas las propiedades residenciales de alquiler sujetas a SDMC Capítulo 9, Artículo 8, División 7."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1027,
+    "output_tokens": 279
+  }
+}

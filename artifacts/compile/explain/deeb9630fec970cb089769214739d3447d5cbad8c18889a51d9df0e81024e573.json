@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002309,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Under RPO Option 1, the City's Relocation Consultant decides if tenants get relocation help. The owner pays upfront fees to the city. Low-income tenants get more money than other tenants.",
+    "summary_es": "Bajo la Opción RPO 1, el Consultor de Reubicación de la ciudad decide si los inquilinos reciben ayuda. El arrendador paga las cuotas por adelantado a la ciudad. Los inquilinos de bajos ingresos reciben más dinero que otros inquilinos.",
+    "who_en": "This rule covers protected rental units being demolished for new construction.",
+    "who_es": "Esta regla cubre unidades de alquiler protegidas que serán demolidas para nueva construcción."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 999,
+    "output_tokens": 262
+  }
+}

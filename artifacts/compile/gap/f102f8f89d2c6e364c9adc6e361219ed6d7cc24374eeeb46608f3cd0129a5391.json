@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002571,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The provided documents include an incomplete ordinance excerpt (D073) from San Diego Municipal Code Chapter 9 that does not contain substantive provisions on application screening fees, and a draft staff report (D076) with only its header visible. The link-only signals reference related housing and tenant protection topics but provide no actual text. While CA-FEE-01 and CA-FEE-02 rules exist at the state level, no specific city-level ordinance provisions regarding application screening fees for San Diego are presented in the source materials. The incomplete document excerpts do not supply sufficient text to identify or quote any relevant provisions.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1536,
+    "output_tokens": 207
+  }
+}

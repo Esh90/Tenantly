@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import contextvars
+import os
 import time
 from contextlib import contextmanager
 from functools import lru_cache
@@ -22,6 +23,12 @@ engine_cell: contextvars.ContextVar[list[float]] = contextvars.ContextVar(
 
 @lru_cache(maxsize=1)
 def get_store() -> FixtureStore:
+    """The real store when compiled artifacts exist, else fixtures (or when forced for tests)."""
+    if os.environ.get("TENANTLY_STORE") != "fixture":
+        from engine.api import store
+
+        if store.available():
+            return store.load_store()
     return FixtureStore()
 
 

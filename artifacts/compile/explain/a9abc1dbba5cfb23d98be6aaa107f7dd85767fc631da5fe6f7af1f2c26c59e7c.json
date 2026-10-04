@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002043,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "A person cannot use or distribute a common pricing algorithm to restrain trade or commerce. This applies whether the algorithm is part of a contract, combination, or conspiracy.",
+    "summary_es": "Una persona no puede usar o distribuir un algoritmo de precios común para restringir el comercio. Esto aplica si el algoritmo es parte de un contrato, combinación o conspiración.",
+    "who_en": "This rule applies to any person using or distributing a common pricing algorithm.",
+    "who_es": "Esta regla aplica a cualquier persona que use o distribuya un algoritmo de precios común."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 948,
+    "output_tokens": 219
+  }
+}

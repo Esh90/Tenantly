@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002671,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords cannot raise rent by more than 5 percent plus inflation, or 10 percent, whichever is lower, in any 12-month period. No more than 2 increases are allowed in 12 months for the same tenant.",
+    "summary_es": "Los arrendadores no pueden aumentar la renta más de 5 por ciento más inflación, o 10 por ciento, el que sea menor, en cualquier período de 12 meses. No se permiten más de 2 aumentos en 12 meses para el mismo inquilino.",
+    "who_en": "This rule covers all homes and apartments in California unless they are deed-restricted, newly built, small owner-occupied duplexes, or subsidized housing.",
+    "who_es": "Esta regla cubre todas las casas y apartamentos en California a menos que sean con restricción de escritura, recién construidos, pequeños dúplex ocupados por el propietario, o viviendas subsidiadas."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1091,
+    "output_tokens": 316
+  }
+}

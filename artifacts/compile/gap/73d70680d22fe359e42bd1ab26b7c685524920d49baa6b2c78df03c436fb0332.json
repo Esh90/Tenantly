@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002676,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The jurisdiction is Jersey City, NJ at the city level, and the category is screening_restrictions. The document D036 provided is only a header/navigation snippet from a Jersey City Landlord/Tenant Relations page with no substantive content. While there are seven enacted state-level rules (NJ-SCR-01 through NJ-SCR-07) referenced for this category, these are New Jersey state rules, not Jersey City city-level rules. The link-only sources (D035, D037, D060, D061, D062, D063, D064) provide no actual text to review. The single text document provided (D036) does not contain any ordinance text, specific Jersey City screening restriction rules, or policy language. There is insufficient documentation to determine whether Jersey City has enacted any city-specific screening restriction rules beyond state law.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1386,
+    "output_tokens": 258
+  }
+}

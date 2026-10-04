@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002204,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "A landlord may evict a tenant to demolish the building, change it to a business, or stop renting it out. This must follow Ellis Act rules for rent-controlled units.",
+    "summary_es": "Un arrendador puede desalojar a un inquilino para demoler el edificio, cambiarlo a un negocio, o dejar de alquilarlo. Esto debe seguir las reglas de la Ley Ellis para unidades controladas de renta.",
+    "who_en": "This applies to all homes covered by the RSO or JCO.",
+    "who_es": "Esto aplica a todas las casas cubiertas por el RSO o JCO."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 999,
+    "output_tokens": 241
+  }
+}

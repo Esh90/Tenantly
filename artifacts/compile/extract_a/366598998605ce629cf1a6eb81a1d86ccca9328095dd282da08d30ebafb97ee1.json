@@ -1,0 +1,57 @@
+{
+  "cost_usd": 0.011092399999999999,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "rent_increase_limits",
+        "cite": "LAMC § 151.00 et seq. (RSO)",
+        "coverage": {
+          "all": [
+            {
+              "fact": "co_date",
+              "op": "<=",
+              "value": "1978-10-01"
+            }
+          ]
+        },
+        "coverage_text": "Rental properties first built on or before October 1, 1978 (plus replacement units) in the City of Los Angeles.",
+        "exemptions": [
+          {
+            "description": "Condominiums and townhomes: rent not regulated for tenancies commencing after December 31, 1995",
+            "predicate": {
+              "fact": "property_type",
+              "op": "==",
+              "value": "condo"
+            },
+            "quote": null
+          }
+        ],
+        "key_values": [
+          {
+            "name": "increase_frequency",
+            "text": "once every 12 months",
+            "unit": "months",
+            "value": 12
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "Rent may be increased once every 12 months by the allowable rent increase percentage (click here to\nview the allowable rent increase PDF\n).",
+        "requirement": "Landlords of RSO units may increase rent only once every 12 months, by the allowable percentage set by the city.",
+        "tenancy_conditions": [],
+        "title": "RSO annual allowable rent increase",
+        "uncertain_fields": [
+          "exemptions",
+          "effective_date"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 3085,
+    "output_tokens": 445
+  }
+}

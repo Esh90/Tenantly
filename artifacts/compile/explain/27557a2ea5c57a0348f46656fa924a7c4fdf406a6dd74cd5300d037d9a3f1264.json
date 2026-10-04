@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002245,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "If a landlord accidentally collects multiple application screening fees from one applicant, they must refund the extra fee within seven days. The applicant can also choose to use the refunded fee for a different rental unit.",
+    "summary_es": "Si un arrendador accidentalmente cobra múltiples cuotas de solicitud de un inquilino, debe reembolsar la cuota extra dentro de siete días. El inquilino también puede optar por usar el reembolso para una unidad de alquiler diferente.",
+    "who_en": "This rule applies to all residential rental properties in California.",
+    "who_es": "Esta regla aplica a todas las propiedades residenciales de alquiler en California."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1010,
+    "output_tokens": 247
+  }
+}

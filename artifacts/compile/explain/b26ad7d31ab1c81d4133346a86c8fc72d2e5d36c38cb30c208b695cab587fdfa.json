@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002612,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Housing providers must look at each applicant's case one by one. They cannot refuse someone just because they have an old criminal record. They cannot consider arrests, records wiped off by a judge, or convictions over 5 years old.",
+    "summary_es": "Los proveedores de vivienda deben revisar el caso de cada solicitante por separado. No pueden rechazar a alguien solo porque tiene un registro criminal antiguo. No pueden considerar arrestos, antecedentes eliminados por un juez, o condenas de más de 5 años.",
+    "who_en": "This applies to housing providers that get funding from DND or use DND land, or have income-restricted units under the BPDA Inclusionary Development Policy.",
+    "who_es": "Esto se aplica a los proveedores de vivienda que reciben fondos de DND o usan tierra de DND, o tienen unidades con alquiler restringido bajo la Política de Desarrollo Inclusionario de BPDA."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1027,
+    "output_tokens": 317
+  }
+}

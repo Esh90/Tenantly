@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002267,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "A landlord can end a lease if a tenant breaks an important lease rule. The tenant must get written notice to fix the problem first.",
+    "summary_es": "Un arrendador puede terminar un contrato de arrendamiento si un inquilino incumple una regla importante del contrato. El inquilino debe recibir un aviso escrito para corregir el problema primero.",
+    "who_en": "This rule applies to all residential rental properties in San Diego covered by SDMC Chapter 9, Article 8, Division 7.",
+    "who_es": "Esta regla se aplica a todas las propiedades residenciales de alquiler en San Diego cubiertas por SDMC Capítulo 9, Artículo 8, División 7."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 967,
+    "output_tokens": 260
+  }
+}

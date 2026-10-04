@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002668,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The provided documents and sources do not contain any information about application screening fees at the city level for San Francisco. The triaged guidance documents (D078-D083) address topics such as Human Rights Commission, just cause evictions, rent increases, algorithmic rent-setting, and relocation rates, but none specifically address application screening fees or related fees. The link-only sources reference state-level housing laws and fair housing provisions, but do not provide text related to application screening fees. The rule CA-FEE-01 addresses refunds for inadvertent concurrent fee collection but does not appear to be sourced in these documents and does not specifically establish an application screening fee requirement at the city level.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1568,
+    "output_tokens": 220
+  }
+}

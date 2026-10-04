@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002085,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Application screening fees cannot exceed actual costs plus reasonable time value. The maximum fee is $30 per applicant, adjusted yearly by CPI.",
+    "summary_es": "Las cuotas de evaluación de inquilinos no pueden exceder los costos reales más el valor razonable del tiempo. La cuota máxima es $30 por solicitante, ajustada anualmente por IPC.",
+    "who_en": "This rule covers all residential rental property owners and their agents.",
+    "who_es": "Esta regla cubre a todos los propietarios de propiedades residenciales de alquiler y sus agentes."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 955,
+    "output_tokens": 226
+  }
+}

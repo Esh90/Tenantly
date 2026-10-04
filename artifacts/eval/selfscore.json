@@ -1,0 +1,674 @@
+{
+  "components": [
+    {
+      "max": 25,
+      "name": "Extraction",
+      "note": "41 of 48 expected rules matched by jurisdiction, category and cite; mean field accuracy 0.85",
+      "score": 21.35
+    },
+    {
+      "max": 20,
+      "name": "Address coverage",
+      "note": "26 of 32 address expectations exactly right; a missed 'applies' costs 2, unknown earns half",
+      "score": 11.88
+    },
+    {
+      "max": 15,
+      "name": "Citations",
+      "note": "6890 of 6980 'applies' answers cite a quote found at its stored offsets in the corpus (98.7%)",
+      "score": 14.81
+    },
+    {
+      "max": 15,
+      "name": "Change tracking",
+      "note": "4 of 5 tests match the expected sets exactly (Jaccard mean 1.00)",
+      "score": 14.95
+    }
+  ],
+  "coverage_detail": [
+    {
+      "address": "A0001",
+      "cell": "LA/rent_increase_limits",
+      "expected": "applies",
+      "got": [
+        "applies"
+      ],
+      "points": 1.0
+    },
+    {
+      "address": "A0001",
+      "cell": "CA/rent_increase_limits",
+      "expected": "superseded",
+      "got": [
+        "applies"
+      ],
+      "points": -1.0
+    },
+    {
+      "address": "A0001",
+      "cell": "CA/algorithmic_rent_setting",
+      "expected": "applies",
+      "got": [
+        "applies"
+      ],
+      "points": 1.0
+    },
+    {
+      "address": "A0107",
+      "cell": "LA/rent_increase_limits",
+      "expected": "unknown",
+      "got": [
+        "applies",
+        "unknown"
+      ],
+      "points": 1.0
+    },
+    {
+      "address": "A0022",
+      "cell": "CA/rent_increase_limits",
+      "expected": "omitted",
+      "got": [],
+      "points": 1.0
+    },
+    {
+      "address": "A0016",
+      "cell": "SF/rent_increase_limits",
+      "expected": "applies",
+      "got": [
+        "applies"
+      ],
+      "points": 1.0
+    },
+    {
+      "address": "A0016",
+      "cell": "CA/rent_increase_limits",
+      "expected": "superseded",
+      "got": [
+        "applies"
+      ],
+      "points": -1.0
+    },
+    {
+      "address": "A0016",
+      "cell": "SF/just_cause_eviction",
+      "expected": "applies",
+      "got": [
+        "applies"
+      ],
+      "points": 1.0
+    },
+    {
+      "address": "A0016",
+      "cell": "CA/just_cause_eviction",
+      "expected": "superseded",
+      "got": [
+        "applies",
+        "superseded"
+      ],
+      "points": 1.0
+    },
+    {
+      "address": "A0016",
+      "cell": "SF/algorithmic_rent_setting",
+      "expected": "applies",
+      "got": [
+        "applies"
+      ],
+      "points": 1.0
+    },
+    {
+      "address": "A0106",
+      "cell": "SF/rent_increase_limits",
+      "expected": "unknown",
+      "got": [
+        "applies"
+      ],
+      "points": -1.0
+    },
+    {
+      "address": "A0019",
+      "cell": "SD/just_cause_eviction",
+      "expected": "unknown",
+      "got": [
+        "applies",
+        "unknown"
+      ],
+      "points": 1.0
+    },
+    {
+      "address": "A0322",
+      "cell": "SD/just_cause_eviction",
+      "expected": "unknown",
+      "got": [
+        "applies",
+        "unknown"
+      ],
+      "points": 1.0
+    },
+    {
+      "address": "A0005",
+      "cell": "BRK/algorithmic_rent_setting",
+      "expected": "applies",
+      "got": [
+        "applies"
+      ],
+      "points": 1.0
+    },
+    {
+      "address": "A0012",
+      "cell": "JC/rent_increase_limits",
+      "expected": "applies",
+      "got": [
+        "applies"
+      ],
+      "points": 1.0
+    },
+    {
+      "address": "A0012",
+      "cell": "JC/algorithmic_rent_setting",
+      "expected": "applies",
+      "got": [
+        "applies"
+      ],
+      "points": 1.0
+    },
+    {
+      "address": "A0012",
+      "cell": "NJ/algorithmic_rent_setting",
+      "expected": "not_yet_effective",
+      "got": [
+        "not_yet_effective"
+      ],
+      "points": 1.0
+    },
+    {
+      "address": "A0008",
+      "cell": "JC/rent_increase_limits",
+      "expected": "unknown",
+      "got": [
+        "applies"
+      ],
+      "points": -1.0
+    },
+    {
+      "address": "A0002",
+      "cell": "HOB/algorithmic_rent_setting",
+      "expected": "applies",
+      "got": [
+        "applies"
+      ],
+      "points": 1.0
+    },
+    {
+      "address": "A0002",
+      "cell": "NJ/algorithmic_rent_setting",
+      "expected": "not_yet_effective",
+      "got": [
+        "not_yet_effective"
+      ],
+      "points": 1.0
+    },
+    {
+      "address": "A0003",
+      "cell": "NJ/algorithmic_rent_setting",
+      "expected": "not_yet_effective",
+      "got": [
+        "not_yet_effective"
+      ],
+      "points": 1.0
+    },
+    {
+      "address": "A0003",
+      "cell": "NWK/algorithmic_rent_setting",
+      "expected": "omitted",
+      "got": [],
+      "points": 1.0
+    },
+    {
+      "address": "A0028",
+      "cell": "NJ/algorithmic_rent_setting",
+      "expected": "not_yet_effective",
+      "got": [
+        "not_yet_effective"
+      ],
+      "points": 1.0
+    },
+    {
+      "address": "A0049",
+      "cell": "HOB/algorithmic_rent_setting",
+      "expected": "applies",
+      "got": [
+        "applies"
+      ],
+      "points": 1.0
+    },
+    {
+      "address": "A0118",
+      "cell": "BOS/rent_increase_limits",
+      "expected": "omitted",
+      "got": [],
+      "points": 1.0
+    },
+    {
+      "address": "A0118",
+      "cell": "MA/algorithmic_rent_setting",
+      "expected": "pending",
+      "got": [
+        "pending"
+      ],
+      "points": 1.0
+    },
+    {
+      "address": "A0006",
+      "cell": "BOS/rent_increase_limits",
+      "expected": "omitted",
+      "got": [],
+      "points": 1.0
+    },
+    {
+      "address": "A0036",
+      "cell": "BOS/rent_increase_limits",
+      "expected": "omitted",
+      "got": [],
+      "points": 1.0
+    },
+    {
+      "address": "A0009",
+      "cell": "CAM/rent_increase_limits",
+      "expected": "omitted",
+      "got": [],
+      "points": 1.0
+    },
+    {
+      "address": "A0009",
+      "cell": "CAM/just_cause_eviction",
+      "expected": "applies",
+      "got": [],
+      "points": -2.0
+    },
+    {
+      "address": "A0199",
+      "cell": "CAM/rent_increase_limits",
+      "expected": "omitted",
+      "got": [],
+      "points": 1.0
+    },
+    {
+      "address": "A0398",
+      "cell": "SF/rent_increase_limits",
+      "expected": "unknown",
+      "got": [
+        "applies"
+      ],
+      "points": -1.0
+    }
+  ],
+  "extraction_detail": [
+    {
+      "cell": "CA/rent_increase_limits/R",
+      "cites": [
+        "1947.12"
+      ],
+      "matched": "CA-RENT-01",
+      "score": 1.0
+    },
+    {
+      "cell": "CA/just_cause_eviction/R",
+      "cites": [
+        "1946.2"
+      ],
+      "matched": "CA-JCE-02",
+      "score": 1.0
+    },
+    {
+      "cell": "CA/security_deposits/R",
+      "cites": [
+        "1950.5"
+      ],
+      "matched": "CA-DEP-02",
+      "score": 1.0
+    },
+    {
+      "cell": "CA/application_screening_fees/R",
+      "cites": [
+        "1950.6"
+      ],
+      "matched": "CA-FEE-02",
+      "score": 1.0
+    },
+    {
+      "cell": "CA/screening_restrictions/R",
+      "cites": [
+        "12955"
+      ],
+      "matched": "CA-SCR-01",
+      "score": 1.0
+    },
+    {
+      "cell": "CA/algorithmic_rent_setting/R",
+      "cites": [
+        "16729"
+      ],
+      "matched": "CA-ALG-01",
+      "score": 1.0
+    },
+    {
+      "cell": "LA/rent_increase_limits/R",
+      "cites": [],
+      "matched": "LA-RENT-01",
+      "score": 1.0
+    },
+    {
+      "cell": "LA/just_cause_eviction/R",
+      "cites": [],
+      "matched": "LA-JCE-01",
+      "score": 1.0
+    },
+    {
+      "cell": "LA/security_deposits/R",
+      "cites": [],
+      "matched": "LA-DEP-01",
+      "score": 1.0
+    },
+    {
+      "cell": "SF/rent_increase_limits/R",
+      "cites": [],
+      "matched": "SF-RENT-01",
+      "score": 1.0
+    },
+    {
+      "cell": "SF/just_cause_eviction/R",
+      "cites": [
+        "37.9"
+      ],
+      "matched": "SF-JCE-01",
+      "score": 1.0
+    },
+    {
+      "cell": "SF/security_deposits/R",
+      "cites": [],
+      "matched": "SF-DEP-01",
+      "score": 1.0
+    },
+    {
+      "cell": "SF/screening_restrictions/R",
+      "cites": [],
+      "matched": null,
+      "score": 0.0
+    },
+    {
+      "cell": "SF/algorithmic_rent_setting/R",
+      "cites": [
+        "37.10"
+      ],
+      "matched": "SF-ALG-01",
+      "score": 1.0
+    },
+    {
+      "cell": "SD/just_cause_eviction/R",
+      "cites": [
+        "98.0704"
+      ],
+      "matched": "SD-JCE-01",
+      "score": 1.0
+    },
+    {
+      "cell": "SD/screening_restrictions/C",
+      "cites": null,
+      "matched": "SD-SCR-01",
+      "score": 1.0
+    },
+    {
+      "cell": "SD/algorithmic_rent_setting/R",
+      "cites": [
+        "98.1103"
+      ],
+      "matched": null,
+      "score": 0.0
+    },
+    {
+      "cell": "BRK/rent_increase_limits/R",
+      "cites": [],
+      "matched": "BRK-RENT-01",
+      "score": 1.0
+    },
+    {
+      "cell": "BRK/just_cause_eviction/R",
+      "cites": [],
+      "matched": "BRK-JCE-01",
+      "score": 1.0
+    },
+    {
+      "cell": "BRK/security_deposits/R",
+      "cites": [],
+      "matched": "BRK-DEP-01",
+      "score": 1.0
+    },
+    {
+      "cell": "BRK/application_screening_fees/R",
+      "cites": [
+        "13.78"
+      ],
+      "matched": "BRK-FEE-01",
+      "score": 1.0
+    },
+    {
+      "cell": "BRK/screening_restrictions/R",
+      "cites": [
+        "13.106"
+      ],
+      "matched": "BRK-SCR-01",
+      "score": 1.0
+    },
+    {
+      "cell": "BRK/algorithmic_rent_setting/R",
+      "cites": [
+        "13.63"
+      ],
+      "matched": "BRK-ALG-01",
+      "score": 1.0
+    },
+    {
+      "cell": "SNA/rent_increase_limits/R",
+      "cites": [],
+      "matched": "SNA-RENT-01",
+      "score": 1.0
+    },
+    {
+      "cell": "SNA/just_cause_eviction/R",
+      "cites": [],
+      "matched": "SNA-JCE-01",
+      "score": 1.0
+    },
+    {
+      "cell": "SNA/algorithmic_rent_setting/C",
+      "cites": null,
+      "matched": "SNA-ALG-01",
+      "score": 1.0
+    },
+    {
+      "cell": "NJ/just_cause_eviction/R",
+      "cites": [
+        "2a:18-61.1"
+      ],
+      "matched": "NJ-JCE-04",
+      "score": 1.0
+    },
+    {
+      "cell": "NJ/security_deposits/R",
+      "cites": [
+        "46:8-21.2"
+      ],
+      "matched": "NJ-DEP-03",
+      "score": 1.0
+    },
+    {
+      "cell": "NJ/application_screening_fees/R",
+      "cites": [
+        "46:8-18.1"
+      ],
+      "matched": "NJ-FEE-01",
+      "score": 1.0
+    },
+    {
+      "cell": "NJ/screening_restrictions/R",
+      "cites": [
+        "2021",
+        "110"
+      ],
+      "matched": null,
+      "score": 0.0
+    },
+    {
+      "cell": "NJ/algorithmic_rent_setting/R",
+      "cites": [
+        "2026",
+        "43"
+      ],
+      "matched": "NJ-ALG-01",
+      "score": 1.0
+    },
+    {
+      "cell": "JC/rent_increase_limits/R",
+      "cites": [
+        "260"
+      ],
+      "matched": "JC-RENT-01",
+      "score": 1.0
+    },
+    {
+      "cell": "JC/algorithmic_rent_setting/C",
+      "cites": [
+        "218-12"
+      ],
+      "matched": "JC-ALG-01",
+      "score": 1.0
+    },
+    {
+      "cell": "HOB/algorithmic_rent_setting/C",
+      "cites": [
+        "158"
+      ],
+      "matched": "HOB-ALG-01",
+      "score": 1.0
+    },
+    {
+      "cell": "MA/rent_increase_limits/R",
+      "cites": [
+        "40p",
+        "4"
+      ],
+      "matched": "MA-RENT-01",
+      "score": 1.0
+    },
+    {
+      "cell": "MA/rent_increase_limits/X",
+      "cites": [
+        "25-21"
+      ],
+      "matched": null,
+      "score": 0.0
+    },
+    {
+      "cell": "MA/just_cause_eviction/R",
+      "cites": [
+        "186"
+      ],
+      "matched": "MA-JCE-01",
+      "score": 1.0
+    },
+    {
+      "cell": "MA/security_deposits/R",
+      "cites": [
+        "186",
+        "15b"
+      ],
+      "matched": "MA-DEP-01",
+      "score": 1.0
+    },
+    {
+      "cell": "MA/application_screening_fees/R",
+      "cites": [
+        "15b"
+      ],
+      "matched": null,
+      "score": 0.0
+    },
+    {
+      "cell": "MA/application_screening_fees/R",
+      "cites": [
+        "112"
+      ],
+      "matched": null,
+      "score": 0.0
+    },
+    {
+      "cell": "MA/screening_restrictions/R",
+      "cites": [
+        "151b"
+      ],
+      "matched": "MA-SCR-01",
+      "score": 1.0
+    },
+    {
+      "cell": "MA/algorithmic_rent_setting/P",
+      "cites": [
+        "2983"
+      ],
+      "matched": "MA-ALG-P1",
+      "score": 1.0
+    },
+    {
+      "cell": "MA/algorithmic_rent_setting/P",
+      "cites": [
+        "5222"
+      ],
+      "matched": "MA-ALG-P2",
+      "score": 1.0
+    },
+    {
+      "cell": "BOS/rent_increase_limits/X",
+      "cites": [
+        "3744"
+      ],
+      "matched": "BOS-RENT-P1",
+      "score": 1.0
+    },
+    {
+      "cell": "BOS/just_cause_eviction/R",
+      "cites": [],
+      "matched": "BOS-JCE-01",
+      "score": 1.0
+    },
+    {
+      "cell": "BOS/screening_restrictions/R",
+      "cites": [],
+      "matched": "BOS-SCR-01",
+      "score": 1.0
+    },
+    {
+      "cell": "CAM/just_cause_eviction/R",
+      "cites": [
+        "8.71"
+      ],
+      "matched": null,
+      "score": 0.0
+    },
+    {
+      "cell": "CAM/screening_restrictions/R",
+      "cites": [
+        "14.04"
+      ],
+      "matched": "CAM-SCR-01",
+      "score": 1.0
+    }
+  ],
+  "findings": {
+    "cells_with_finding": 31,
+    "expected_cells": 31,
+    "reason_codes_expected": 3,
+    "reason_codes_matched": 2
+  },
+  "key": "silver",
+  "raw_report": "Tenantly self-score against the silver key (not the official scorer)\n\nExtraction          21.35 / 25  41 of 48 expected rules matched by jurisdiction, category and cite; mean field accuracy 0.85\nAddress coverage    11.88 / 20  26 of 32 address expectations exactly right; a missed 'applies' costs 2, unknown earns half\nCitations           14.81 / 15  6890 of 6980 'applies' answers cite a quote found at its stored offsets in the corpus (98.7%)\nChange tracking     14.95 / 15  4 of 5 tests match the expected sets exactly (Jaccard mean 1.00)\n\nAutomatic components total 62.99 / 75\nJudged components (plain language, responsible design, scalability) are not scored here."
+}

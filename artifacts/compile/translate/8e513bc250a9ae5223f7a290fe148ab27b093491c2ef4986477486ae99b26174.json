@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001353,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "detail_es": "La copia guardada de D083 es principalmente navegación del sitio, por lo que los detalles de cobertura para la Tasa de Interés del Depósito de Garantía pueden estar incompletos.",
+    "title_es": "Captura parcial de la fuente D083"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 678,
+    "output_tokens": 135
+  }
+}

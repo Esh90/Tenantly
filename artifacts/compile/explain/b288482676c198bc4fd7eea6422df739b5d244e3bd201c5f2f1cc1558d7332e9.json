@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002313,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords cannot ask about or consider criminal history when advertising rentals, reviewing applications, or choosing tenants. If taking action based on criminal history, landlords must provide written notice and let the tenant respond.",
+    "summary_es": "Los arrendadores no pueden preguntar ni considerar el historial criminal al publicar anuncios de alquiler, revisar solicitudes ni elegir inquilinos. Si toman medidas basadas en el historial criminal, deben dar notificación escrita y permitir que el inquilino responda.",
+    "who_en": "This rule covers most rental housing in Berkeley.",
+    "who_es": "Esta regla cubre la mayoría de los alquileres de viviendas en Berkeley."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1068,
+    "output_tokens": 249
+  }
+}

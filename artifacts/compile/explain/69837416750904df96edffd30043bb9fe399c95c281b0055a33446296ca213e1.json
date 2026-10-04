@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002165,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "A landlord can evict tenants to demolish a building or change it to condos, co-ops, hotels, or businesses. This applies even if the property has rent control protections.",
+    "summary_es": "Un arrendador puede desalojar a los inquilinos para demoler un edificio o convertirlo en condominios, cooperativas, hoteles o negocios. Esto aplica aunque la propiedad tenga protecciones de control de renta.",
+    "who_en": "This rule covers all residential rental units in Los Angeles.",
+    "who_es": "Esta regla cubre todas las unidades de alquiler residencial en Los Ángeles."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 980,
+    "output_tokens": 237
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.003007,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The documents provided are guidance pages from SF.gov and link-only signals related to rent increases, eviction procedures, relocation rates, and algorithmic pricing in rental housing. While the triaged documents (D078-D083) relate to tenant protections and rental housing, none contain specific text addressing screening restrictions for rental applicants. The category \"screening_restrictions\" would typically address rules about background checks, credit history requirements, or other tenant screening criteria. Although one link (D015) references Section 8 and criminal background checks as fair housing issues, and another (D017) points to California Civil Code Section 1950.6, these are link-only with no text supplied. The existing rules in this category (CA-SCR-01 through CA-SCR-03) address income standards, credit history alternatives, and appraisal discrimination, but no actual text from San Francisco ordinances or regulations establishing city-level screening restrictions appears in the provided sources.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1617,
+    "output_tokens": 278
+  }
+}

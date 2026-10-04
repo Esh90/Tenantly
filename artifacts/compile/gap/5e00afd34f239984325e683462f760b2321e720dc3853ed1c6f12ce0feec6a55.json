@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002689,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The provided documents (D078-D083) are guidance pages from SF.gov related to evictions, rent increases, relocation payments, and the Human Rights Commission. None of these documents contain text addressing application screening fees at the city level. The link-only documents reference state law provisions and fair housing guidance, but no specific city ordinance or regulation text regarding application screening fees is supplied in the triaged sections. While the category rules indicate that CA-FEE-01, CA-FEE-02, and CA-FEE-03 exist and are enacted, no actual regulatory text from San Francisco is provided in the document excerpts to fulfill this gap.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1614,
+    "output_tokens": 215
+  }
+}

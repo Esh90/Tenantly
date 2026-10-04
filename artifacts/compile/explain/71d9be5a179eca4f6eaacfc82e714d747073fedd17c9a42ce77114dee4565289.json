@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002507,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Massachusetts cities and towns generally cannot create rent control laws. A city or town can adopt limited rent control only if owners voluntarily comply after six months, the rules don't affect buildings with fewer than ten rental units or units renting above $400, and the city compensates owners.",
+    "summary_es": "Las ciudades y pueblos de Massachusetts generalmente no pueden crear leyes de control de rentas. Una ciudad o pueblo solo puede adoptar un control de rentas limitado si los arrendadores aceptan voluntariamente después de seis meses, las reglas no afectan edificios con menos de diez unidades de alquiler o unidades que cotizan por encima de $400, y la ciudad compensa a los arrendadores.",
+    "who_en": "This rule applies to all residential rentals across Massachusetts municipalities.",
+    "who_es": "Esta regla se aplica a todos los alquileres residenciales en los municipios de Massachusetts."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1027,
+    "output_tokens": 296
+  }
+}

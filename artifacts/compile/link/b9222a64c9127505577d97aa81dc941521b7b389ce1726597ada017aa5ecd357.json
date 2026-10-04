@@ -1,0 +1,29 @@
+{
+  "cost_usd": 0.0166698,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "relations": [
+      {
+        "active_from": null,
+        "condition": null,
+        "doc_id": "D069",
+        "effect": "conflict_flag",
+        "quote": "A municipality shall be prohibited from enacting\nan ordinance that conflicts with this act.",
+        "source_rule_id": "NJ-ALG-01",
+        "target_rule_id": null,
+        "target_scope": {
+          "category": "algorithmic_rent_setting",
+          "level": "city"
+        },
+        "type": "conflicts_with"
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 809,
+    "input_tokens": 7314,
+    "output_tokens": 188
+  }
+}

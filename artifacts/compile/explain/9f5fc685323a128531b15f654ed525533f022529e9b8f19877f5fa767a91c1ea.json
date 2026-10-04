@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002534,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "When a landlord makes a buyout offer, they must give each tenant a signed copy within three days. The landlord must keep a copy of each signed form for five years, along with the date it was given to each tenant.",
+    "summary_es": "Cuando un arrendador hace una oferta de compra, debe entregar a cada inquilino una copia firmada dentro de tres días. El arrendador debe guardar una copia de cada formulario firmado durante cinco años, junto con la fecha en que se entregó a cada inquilino.",
+    "who_en": "This rule applies to all residential rental properties in San Diego where buyout offers are made under SDMC Chapter 9, Article 8, Division 7.",
+    "who_es": "Esta regla se aplica a todas las propiedades residenciales de alquiler en San Diego donde se hacen ofertas de compra bajo SDMC Capítulo 9, Artículo 8, División 7."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 999,
+    "output_tokens": 307
+  }
+}

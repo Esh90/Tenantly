@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002118,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords cannot add extra charges for utilities when raising rent. Any rent increase cannot include an extra percentage for utilities.",
+    "summary_es": "Los arrendadores no pueden agregar cargos adicionales por servicios cuando suben la renta. Cualquier aumento de renta no puede incluir un porcentaje adicional por servicios.",
+    "who_en": "This rule applies to rental units under the City of Los Angeles Rent Stabilization Ordinance.",
+    "who_es": "Esta regla se aplica a unidades de alquiler bajo la Ordenanza de Estabilización de Rentas de la Ciudad de Los Ángeles."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 958,
+    "output_tokens": 232
+  }
+}

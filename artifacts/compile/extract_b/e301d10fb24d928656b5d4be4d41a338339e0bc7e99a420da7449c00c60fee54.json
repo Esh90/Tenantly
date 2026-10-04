@@ -1,0 +1,105 @@
+{
+  "cost_usd": 0.01452,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "algorithmic_rent_setting",
+        "cite": "SDMC § 98.1103(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties in San Diego.",
+        "effective_expression": "thirtieth day from and after final passage",
+        "exemptions": [
+          {
+            "description": "Software that publishes reports on rental rates or occupancy levels from aggregated historical nonpublic competitor data more than 90 days old, or from public information, and does not recommend rates or occupancy levels for future leases or renewals",
+            "predicate": {
+              "const": true
+            },
+            "quote": "A software or product used by a person to publish reports regarding rental rates or occupancy levels from aggregated historical nonpublic competitor data that is more than 90 days old, or from information available to the general public, and does not recommend rental rates or occupancy levels for future residential rental property leases or renewals."
+          },
+          {
+            "description": "Software used to establish rental rates or income limits in accordance with local, state, or federal affordable housing program guidelines",
+            "predicate": {
+              "const": true
+            },
+            "quote": "A software or product used by a person to establish rental rates or income limits in accordance with local, state, or federal affordable housing program guidelines."
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "pending",
+        "penalty": "Civil penalties of up to $1,000 per violation; injunctive relief; damages; attorney's fees and costs for prevailing tenant",
+        "quote": "It is unlawful for a person to sell, license, or otherwise provide an algorithmic device to a landlord.",
+        "relations_hint": [],
+        "requirement": "No person may sell, license, or otherwise provide an algorithmic device to a landlord.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Prohibition of Sale and Licensing of Algorithmic Devices",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "algorithmic_rent_setting",
+        "cite": "SDMC § 98.1103(b)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties in San Diego.",
+        "effective_expression": "thirtieth day from and after final passage",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "pending",
+        "penalty": "Civil penalties of up to $1,000 per violation; injunctive relief; damages; attorney's fees and costs for prevailing tenant",
+        "quote": "It is unlawful for a landlord to use an algorithmic device to set rental rates or occupancy levels for residential rental property.",
+        "relations_hint": [],
+        "requirement": "A landlord may not use an algorithmic device to set rental rates or occupancy levels for residential rental property. Each month a violation exists and each residential rental property for which an algorithmic device is used constitutes a separate violation.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Prohibition of Landlord Use of Algorithmic Devices",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "algorithmic_rent_setting",
+        "cite": "SDMC § 98.1104(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties in San Diego.",
+        "effective_expression": "thirtieth day from and after final passage",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "Civil penalty per violation",
+            "text": "up to $1,000 per violation",
+            "unit": "usd",
+            "valid_from": null,
+            "valid_to": null,
+            "value": 1000
+          }
+        ],
+        "lifecycle": "pending",
+        "penalty": null,
+        "quote": "A tenant may seek injunctive relief, damages, or civil penalties of up to $1,000 per violation of this Division, in a civil action against a landlord. In an action brought under this Division, a prevailing tenant shall recover costs and reasonable attorney's fees.",
+        "relations_hint": [],
+        "requirement": "A tenant may seek injunctive relief, damages, or civil penalties of up to $1,000 per violation against a landlord. A prevailing tenant recovers costs and reasonable attorney's fees, and lease provisions limiting attorney's fees recovery are unenforceable for claims under this Division.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Tenant Remedies for Algorithmic Rent-Setting Violations",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 8180,
+    "output_tokens": 1268
+  }
+}

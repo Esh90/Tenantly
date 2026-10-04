@@ -1,0 +1,38 @@
+{
+  "cost_usd": 0.004326,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "algorithmic_rent_setting",
+        "cite": "S.F. Admin. Code § 37.10C",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential units in San Francisco.",
+        "effective_date": "2024-10-14",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": "Civil action by tenant or City Attorney",
+        "quote": "The law prohibits the sale or use of algorithmic devices to set rents or manage occupancy levels for residential units in San Francisco. The law prohibits the sale or use of such algorithmic devices and allows a tenant or the City Attorney to bring a civil action if they believe an entity is in violation of the law.",
+        "relations_hint": [],
+        "requirement": "The sale or use of algorithmic devices to set rents or manage occupancy levels for residential units in San Francisco is prohibited. A tenant or the City Attorney may bring a civil action if they believe an entity is in violation of the law.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Prohibition on Sale or Use of Algorithmic Rent-Setting Devices",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2386,
+    "output_tokens": 388
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002448,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The documents provided (D084, D085) contain only guidance and general information about Santa Ana's rent stabilization and just cause eviction ordinances, without specific text addressing application screening fees. The link-only sources reference state law provisions and general housing compliance matters, but do not provide text content related to the application_screening_fees category. While CA-FEE-01, CA-FEE-02, and CA-FEE-03 are listed as enacted rules in this category, no actual ordinance text from Santa Ana implementing or addressing these rules was supplied in the provided documents.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1448,
+    "output_tokens": 200
+  }
+}

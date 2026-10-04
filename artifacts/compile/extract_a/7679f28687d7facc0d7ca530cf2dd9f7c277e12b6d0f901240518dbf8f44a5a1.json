@@ -1,0 +1,53 @@
+{
+  "cost_usd": 0.012688399999999999,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "just_cause_eviction",
+        "cite": "Boston City Ordinances § 10-11.7",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All landlords and foreclosing owners intending to end a tenancy or post-foreclosure occupancy in Boston.",
+        "effective_date": "2020-11-06",
+        "exemptions": [
+          {
+            "description": "Residences in hospitals, skilled nursing or health facilities, or non-profit short-term substance abuse treatment facilities.",
+            "predicate": {
+              "fact": "property_type",
+              "op": "==",
+              "value": "other"
+            },
+            "quote": null
+          }
+        ],
+        "key_values": [
+          {
+            "name": "second_and_subsequent_offense_fine",
+            "text": "2nd and Subsequent Offenses: $300 per day",
+            "unit": "usd",
+            "value": 300
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "1st offense: warning; 2nd and subsequent offenses: $300 per day",
+        "quote": "The Notice of Tenants’ Rights and Resources must be delivered at the same time as the Notice to Quit.",
+        "relations_hint": [],
+        "requirement": "Landlords ending a tenancy or not renewing a lease must give the tenant a Notice of Tenants’ Rights and Resources with the Notice to Quit, and send a copy of the notice with a Certificate of Compliance to the Office of Housing Stability.",
+        "tenancy_conditions": [],
+        "title": "Housing Stability Notification Act notice",
+        "uncertain_fields": [
+          "category"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 2183,
+    "output_tokens": 785
+  }
+}

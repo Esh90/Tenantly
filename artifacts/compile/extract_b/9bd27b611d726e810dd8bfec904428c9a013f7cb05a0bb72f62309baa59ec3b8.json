@@ -1,0 +1,469 @@
+{
+  "cost_usd": 0.023968,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "Los Angeles Municipal Code, Just Cause Ordinance",
+        "coverage": {
+          "all": [
+            {
+              "const": true
+            },
+            {
+              "not": {
+                "any": [
+                  {
+                    "property_type": "in",
+                    "value": [
+                      "other"
+                    ]
+                  },
+                  {
+                    "fact": "subsidized_or_affordable",
+                    "op": "==",
+                    "value": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "coverage_text": "Most residential properties in the City of Los Angeles that are not regulated by the City's Rent Stabilization Ordinance.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [
+          {
+            "description": "Transient hotels",
+            "predicate": {
+              "property_type": "==",
+              "value": "other"
+            }
+          },
+          {
+            "description": "Licensed care facilities",
+            "predicate": {
+              "property_type": "==",
+              "value": "elderly_home"
+            }
+          },
+          {
+            "description": "Fraternity or sorority houses",
+            "predicate": {
+              "property_type": "==",
+              "value": "other"
+            }
+          },
+          {
+            "description": "Owner's roommate",
+            "predicate": {
+              "shares_kitchen_bath_with_owner": "==",
+              "value": true
+            }
+          },
+          {
+            "description": "Cooperatives under certain circumstances",
+            "predicate": {
+              "property_type": "==",
+              "value": "cooperative"
+            }
+          },
+          {
+            "description": "Some non-profit facilities for the homeless or short-term treatment centers for substance abuse",
+            "predicate": {
+              "subsidized_or_affordable": "==",
+              "value": true
+            }
+          },
+          {
+            "description": "Some properties owned by HACLA or the government",
+            "predicate": {
+              "owner_is_natural_person": "==",
+              "value": false
+            }
+          },
+          {
+            "description": "Properties built on or before October 1, 1978 that are subject to RSO",
+            "predicate": {
+              "const": true
+            },
+            "quote": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City's Rent Stabilization Ordinance (RSO)."
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "It prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions.",
+        "relations_hint": [
+          "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City's Rent Stabilization Ordinance (RSO)."
+        ],
+        "requirement": "Landlords may not terminate tenancies without just cause and must provide relocation assistance for no-fault evictions.",
+        "sunset_date": null,
+        "tenancy_conditions": [
+          "Tenant has lived in the same unit for at least six months or their original lease has expired, whichever comes first"
+        ],
+        "title": "Prohibition on eviction without just cause",
+        "uncertain_fields": []
+      },
+      {
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "Los Angeles Municipal Code, Just Cause Ordinance",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All properties subject to the Just Cause Ordinance.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Under the JCO, the landlord may recover possession of a rental unit in specific situations. Below is a list of reasons for which a tenant could be evicted and would be considered at fault. If the tenant is at fault for the eviction, then the tenant will not be entitled to relocation assistance.",
+        "relations_hint": [],
+        "requirement": "Landlords may evict tenants for specific at-fault reasons: failure to pay rent, failure to cure rental agreement violations, creating a nuisance or causing property damage, using the unit for illegal purposes, failure to renew a similar rental agreement, failure to provide reasonable access, or having an unapproved subtenant at lease end. Tenants evicted for at-fault reasons are not entitled to relocation assistance.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "At-fault eviction reasons",
+        "uncertain_fields": []
+      },
+      {
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "Los Angeles Municipal Code, Just Cause Ordinance",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All properties subject to the Just Cause Ordinance.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Situations in which the property owner wishes to regain the use of the rental unit, as the result of a personal or business decision, and not the tenant's fault, may be cause for eviction, but the property owner may have to pay the tenant.",
+        "relations_hint": [],
+        "requirement": "Landlords may evict tenants for no-fault reasons including owner move-in, resident manager move-in, demolition, conversion to non-residential use, government order to vacate, HUD sale, residential hotel conversion or demolition, or conversion to affordable housing, but must pay relocation assistance to tenants.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "No-fault eviction reasons with relocation assistance",
+        "uncertain_fields": []
+      },
+      {
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "Los Angeles Municipal Code, Just Cause Ordinance",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All RSO and JCO rental units in Los Angeles.",
+        "effective_date": "2023-03-27",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "Effective date for non-payment eviction threshold",
+            "text": "Effective March 27, 2023",
+            "unit": null,
+            "valid_from": "2023-03-27",
+            "valid_to": null,
+            "value": "2023-03-27"
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Effective March 27, 2023, landlords may not evict a tenant who falls behind in rent unless the tenant owes an amount higher than the Fair Market Rent (FMR).",
+        "relations_hint": [],
+        "requirement": "Landlords may not evict a tenant for non-payment of rent unless the tenant owes an amount exceeding the Fair Market Rent for the unit's bedroom size.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Non-payment eviction threshold based on Fair Market Rent",
+        "uncertain_fields": []
+      },
+      {
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "Los Angeles Municipal Code, Just Cause Ordinance",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All JCO and RSO rental properties in the City of Los Angeles.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "Filing deadline",
+            "text": "within three (3) business days of service on the tenant",
+            "unit": "days",
+            "valid_from": null,
+            "valid_to": null,
+            "value": 3
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Applies to all JCO & RSO rental properties – All eviction notices issued to tenants in the City of Los Angeles must be filed with LAHD within three (3) business days of service on the tenant.",
+        "relations_hint": [],
+        "requirement": "All eviction notices issued to tenants must be filed with LAHD within three business days of service on the tenant.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Eviction notice filing requirement",
+        "uncertain_fields": []
+      },
+      {
+        "approval_date": null,
+        "category": "rent_increase_limits",
+        "cite": "California Tenant Protection Act of 2019, AB 1482",
+        "coverage": {
+          "all": [
+            {
+              "const": true
+            },
+            {
+              "fact": "year_built",
+              "op": "<",
+              "value": 2009
+            },
+            {
+              "not": {
+                "any": [
+                  {
+                    "subsidized_or_affordable": "==",
+                    "value": true
+                  },
+                  {
+                    "property_type": "==",
+                    "value": "condo"
+                  },
+                  {
+                    "property_type": "==",
+                    "value": "single_family"
+                  },
+                  {
+                    "units": "==",
+                    "value": 2
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "coverage_text": "Units in buildings older than 15 years, excluding deed-restricted affordable units, single-family homes, condominiums, two-unit properties with owner occupancy, and dormitories.",
+        "effective_date": "2024-08-01",
+        "effective_expression": null,
+        "exemptions": [
+          {
+            "description": "Units constructed within the last 15 years",
+            "predicate": {
+              "fact": "year_built",
+              "op": ">=",
+              "value": 2009
+            }
+          },
+          {
+            "description": "Units restricted by deed, regulatory restrictions or other recorded document limiting affordability to low or moderate-income households",
+            "predicate": {
+              "subsidized_or_affordable": "==",
+              "value": true
+            }
+          },
+          {
+            "description": "Certain dormitories",
+            "predicate": {
+              "property_type": "==",
+              "value": "other"
+            }
+          },
+          {
+            "description": "Two-unit property provided the second unit was occupied by an owner of the property for the entire period of the tenancy",
+            "predicate": {
+              "all": [
+                {
+                  "units": "==",
+                  "value": 2
+                },
+                {
+                  "owner_occupied": "==",
+                  "value": true
+                }
+              ]
+            }
+          },
+          {
+            "description": "Single-family homes and condominiums not owned by a real estate trust, corporation, or LLC with corporate member, if landlord notified tenant in writing that tenancy is not subject to just cause and rent increase limitations",
+            "predicate": {
+              "any": [
+                {
+                  "property_type": "==",
+                  "value": "single_family"
+                },
+                {
+                  "property_type": "==",
+                  "value": "condo"
+                }
+              ]
+            }
+          },
+          {
+            "description": "Units already subject to the City's RSO",
+            "predicate": {
+              "const": true
+            }
+          }
+        ],
+        "key_values": [
+          {
+            "name": "Maximum rent increase",
+            "text": "8.9%",
+            "unit": "percent",
+            "valid_from": "2024-08-01",
+            "valid_to": "2025-07-31",
+            "value": 8.9
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Effective August 1, 2024 to July 31, 2025, the maximum allowable increase is 8.9%.",
+        "relations_hint": [
+          "The JCO does not regulate rent increases, however, state law AB 1482, the California Tenant Protection Act of 2019, may regulate the rent amount in buildings that are older than 15 years old."
+        ],
+        "requirement": "For units covered by AB 1482, the maximum allowable rent increase is 8.9% for the period August 1, 2024 to July 31, 2025.",
+        "sunset_date": "2025-07-31",
+        "tenancy_conditions": [],
+        "title": "Maximum rent increase limit (August 1, 2024 to July 31, 2025)",
+        "uncertain_fields": []
+      },
+      {
+        "approval_date": null,
+        "category": "rent_increase_limits",
+        "cite": "California Tenant Protection Act of 2019, AB 1482",
+        "coverage": {
+          "all": [
+            {
+              "const": true
+            },
+            {
+              "fact": "year_built",
+              "op": "<",
+              "value": 2008
+            },
+            {
+              "not": {
+                "any": [
+                  {
+                    "subsidized_or_affordable": "==",
+                    "value": true
+                  },
+                  {
+                    "property_type": "==",
+                    "value": "condo"
+                  },
+                  {
+                    "property_type": "==",
+                    "value": "single_family"
+                  },
+                  {
+                    "units": "==",
+                    "value": 2
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "coverage_text": "Units in buildings older than 15 years, excluding deed-restricted affordable units, single-family homes, condominiums, two-unit properties with owner occupancy, and dormitories.",
+        "effective_date": "2023-08-01",
+        "effective_expression": null,
+        "exemptions": [
+          {
+            "description": "Units constructed within the last 15 years",
+            "predicate": {
+              "fact": "year_built",
+              "op": ">=",
+              "value": 2008
+            }
+          },
+          {
+            "description": "Units restricted by deed, regulatory restrictions or other recorded document limiting affordability to low or moderate-income households",
+            "predicate": {
+              "subsidized_or_affordable": "==",
+              "value": true
+            }
+          },
+          {
+            "description": "Certain dormitories",
+            "predicate": {
+              "property_type": "==",
+              "value": "other"
+            }
+          },
+          {
+            "description": "Two-unit property provided the second unit was occupied by an owner of the property for the entire period of the tenancy",
+            "predicate": {
+              "all": [
+                {
+                  "units": "==",
+                  "value": 2
+                },
+                {
+                  "owner_occupied": "==",
+                  "value": true
+                }
+              ]
+            }
+          },
+          {
+            "description": "Single-family homes and condominiums not owned by a real estate trust, corporation, or LLC with corporate member, if landlord notified tenant in writing that tenancy is not subject to just cause and rent increase limitations",
+            "predicate": {
+              "any": [
+                {
+                  "property_type": "==",
+                  "value": "single_family"
+                },
+                {
+                  "property_type": "==",
+                  "value": "condo"
+                }
+              ]
+            }
+          },
+          {
+            "description": "Units already subject to the City's RSO",
+            "predicate": {
+              "const": true
+            }
+          }
+        ],
+        "key_values": [
+          {
+            "name": "Maximum rent increase",
+            "text": "8.8%",
+            "unit": "percent",
+            "valid_from": "2023-08-01",
+            "valid_to": "2024-07-31",
+            "value": 8.8
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Previously, from August 1, 2023 to July 31, 2024 the maximum annual increase for units subject to AB 1482 was 8.8%.",
+        "relations_hint": [],
+        "requirement": "For units covered by AB 1482, the maximum allowable rent increase was 8.8% for the period August 1, 2023 to July 31, 2024.",
+        "sunset_date": "2024-07-31",
+        "tenancy_conditions": [],
+        "title": "Maximum rent increase limit (August 1, 2023 to July 31, 2024)",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 4098,
+    "output_tokens": 3974
+  }
+}

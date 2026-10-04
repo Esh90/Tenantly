@@ -1,0 +1,48 @@
+{
+  "cost_usd": 0.0147604,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": "This act shall take effect on the first day of\nthe twelfth month next following the date of enactment.",
+        "category": "algorithmic_rent_setting",
+        "cite": "N.J.S.A. 56:9-1 et seq. (P.L. 2026, c.43, § 4)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental residential dwelling units and owners in New Jersey, excluding inpatient, long-term care and detention facilities.",
+        "effective_expression": "first day of the twelfth month next following the date of enactment",
+        "exemptions": [
+          {
+            "description": "Government entity setting or limiting rents through affordability controls",
+            "predicate": {
+              "fact": "subsidized_or_affordable",
+              "op": "==",
+              "value": true
+            },
+            "quote": "“Coordinator” shall not include a government entity that sets or limits rents\nor sale prices of residential property through affordability controls in\naccordance with law."
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": "Violation of the New Jersey Antitrust Act; sections 6 through 17 of P.L.1970, c.73 remain applicable",
+        "quote": "It\nshall be unlawful and a violation of the “New Jersey Antitrust Act,” P.L.1970,\nc.73 (C.56:9-1 et seq.) for:\na.     a rental property owner, or any agent,\nrepresentative, or subcontractor thereof, to receive, subscribe to, contract\nfor, or otherwise exchange any form of consideration in return for the use of,\nthe services of a coordinator;",
+        "relations_hint": [
+          "A municipality shall be prohibited from enacting\nan ordinance that conflicts with this act."
+        ],
+        "requirement": "It is unlawful for rental property owners to use a coordinator's services, for coordinators to facilitate anticompetitive agreements or perform a coordinating function, or for persons to engage in parallel pricing coordination. Violations are violations of the New Jersey Antitrust Act.",
+        "title": "Ban on algorithmic rent coordination",
+        "uncertain_fields": [
+          "approval_date"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 3469,
+    "output_tokens": 735
+  }
+}

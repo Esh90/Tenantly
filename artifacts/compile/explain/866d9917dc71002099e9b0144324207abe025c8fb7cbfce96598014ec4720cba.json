@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002199,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "If the City approves plans to turn an apartment building into condos, renters can move out without waiting for an eviction notice. The landlord must still pay moving costs.",
+    "summary_es": "Si la Ciudad aprueba planes para convertir un edificio de apartamentos en condominios, los inquilinos pueden mudarse sin esperar un aviso de desalojo. El arrendador debe pagar los gastos de mudanza.",
+    "who_en": "This rule covers all rental apartments in buildings that have approved condo conversion plans.",
+    "who_es": "Esta regla cubre todos los apartamentos de alquiler en edificios que tienen planes de conversión a condominios aprobados."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 994,
+    "output_tokens": 241
+  }
+}

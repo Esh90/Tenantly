@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002119,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The rule for algorithmic rent setting at the city level in Boston, MA is MA-ALG-P1, which references MA S.2983 / H.5222 and is marked as pending. The documents provided (D010-D014) contain policy guidance on tenant selection, fair housing, and housing stability notification but do not address algorithmic rent setting. No enacted local rule was found in the source materials.",
+    "result": "only_pending"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1314,
+    "output_tokens": 161
+  }
+}

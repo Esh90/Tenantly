@@ -1,0 +1,67 @@
+{
+  "cost_usd": 0.0123024,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "algorithmic_rent_setting",
+        "cite": "Cal. Bus. & Prof. Code § 16729(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Applies to any person using or distributing a common pricing algorithm, not limited to housing.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "(a) It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter.",
+        "relations_hint": [
+          "Nothing in this section shall impair or limit the applicability of antitrust laws."
+        ],
+        "requirement": "A person may not use or distribute a common pricing algorithm as part of a contract, combination, or conspiracy to restrain trade or commerce.",
+        "sunset_date": null,
+        "title": "Common pricing algorithm in restraint of trade",
+        "uncertain_fields": [
+          "effective_date",
+          "penalty"
+        ]
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "algorithmic_rent_setting",
+        "cite": "Cal. Bus. & Prof. Code § 16729(b)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Applies to any person using or distributing a common pricing algorithm, not limited to housing.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "(b) It shall be unlawful for a person to use or distribute a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state.",
+        "relations_hint": [],
+        "requirement": "A person may not use or distribute a common pricing algorithm while coercing another person to adopt its recommended price or commercial term.",
+        "sunset_date": null,
+        "title": "Coercing adoption of algorithm-recommended prices",
+        "uncertain_fields": [
+          "effective_date",
+          "penalty"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 2030,
+    "output_tokens": 777
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "cost_usd": 0.008991,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "algorithmic_rent_setting",
+        "cite": "Cal. Bus. & Prof. Code § 16729(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All persons using or distributing a common pricing algorithm as part of a contract, combination, trust, or conspiracy to restrain trade or commerce.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [
+          {
+            "description": "Nothing in this section shall impair or limit the applicability of antitrust laws.",
+            "predicate": {
+              "const": true
+            },
+            "quote": "Nothing in this section shall impair or limit the applicability of antitrust laws."
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter.",
+        "relations_hint": [],
+        "requirement": "It is unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Unlawful use of common pricing algorithm in restraint of trade",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "algorithmic_rent_setting",
+        "cite": "Cal. Bus. & Prof. Code § 16729(b)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All persons using or distributing a common pricing algorithm with coercion regarding recommended prices or commercial terms.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "It shall be unlawful for a person to use or distribute a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state.",
+        "relations_hint": [],
+        "requirement": "It is unlawful for a person to use or distribute a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in California.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Unlawful coercion to adopt recommended price via common pricing algorithm",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "algorithmic_rent_setting",
+        "cite": "Cal. Bus. & Prof. Code § 16756.1",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All persons subject to Cartwright Act enforcement in California.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Notwithstanding any other law, in a complaint for any violation of this chapter, it is sufficient to contain factual allegations demonstrating that the existence of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce is plausible, and the complaint shall not be required to allege facts tending to exclude the possibility of independent action.",
+        "relations_hint": [],
+        "requirement": "In a complaint for any violation of the Cartwright Act, factual allegations demonstrating that the existence of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce is plausible are sufficient, and the complaint shall not be required to allege facts tending to exclude the possibility of independent action.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Pleading standard for Cartwright Act violations",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 3501,
+    "output_tokens": 1098
+  }
+}

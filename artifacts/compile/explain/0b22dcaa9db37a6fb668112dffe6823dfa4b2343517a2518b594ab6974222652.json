@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002292,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords cannot post ads saying they will reject people based on arrests or convictions. They can only reject people for methamphetamine manufacturing or sex offender registration in limited cases.",
+    "summary_es": "Los arrendadores no pueden publicar anuncios que digan que rechazarán personas por arrestos o antecedentes penales. Solo pueden rechazar personas por fabricación de metanfetamina o registro de delincuentes sexuales en casos específicos.",
+    "who_en": "This rule applies to all rental units except owner-occupied buildings with four or fewer units.",
+    "who_es": "Esta regla aplica a todas las unidades de alquiler excepto edificios de propiedad ocupada con cuatro o menos unidades."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1022,
+    "output_tokens": 254
+  }
+}

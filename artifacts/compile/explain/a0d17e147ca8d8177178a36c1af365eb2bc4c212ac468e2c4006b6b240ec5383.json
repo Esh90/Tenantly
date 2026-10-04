@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.00213,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords must treat the combined income of people living together the same way they treat married couples' income when screening rental applicants. The same financial standards apply to all groups.",
+    "summary_es": "Los arrendadores deben tratar el ingreso combinado de las personas que viven juntas de la misma manera que el ingreso de las parejas casadas durante la evaluación de inquilinos. Los mismos estándares financieros se aplican a todos los grupos.",
+    "who_en": "This rule applies to all residential rentals in California.",
+    "who_es": "Esta regla se aplica a todos los alquileres residenciales en California."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 965,
+    "output_tokens": 233
+  }
+}

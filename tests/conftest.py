@@ -1,3 +1,6 @@
+import os
+
+os.environ["TENANTLY_STORE"] = "fixture"  # contract tests run on fixtures
 import pytest
 from fastapi.testclient import TestClient
 

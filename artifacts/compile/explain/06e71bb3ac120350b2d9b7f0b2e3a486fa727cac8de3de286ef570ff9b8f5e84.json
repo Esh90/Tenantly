@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.00508,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Santa Ana Ordinance NS-3090 concerns rent-setting software. This ordinance takes effect in April 2026.",
+    "summary_es": "La Ordenanza NS-3090 de Santa Ana trata sobre software para fijar rentas. Esta ordenanza entra en vigor en abril de 2026.",
+    "who_en": "This rule applies to rental properties in Santa Ana, California.",
+    "who_es": "Esta regla se aplica a propiedades de alquiler en Santa Ana, California."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2895,
+    "output_tokens": 437
+  }
+}

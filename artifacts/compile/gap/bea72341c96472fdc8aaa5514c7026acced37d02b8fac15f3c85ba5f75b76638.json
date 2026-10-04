@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002274,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "San Diego is preempted from establishing local rent increase limits because California Civil Code Section 1947.12 (CA-RENT-01, the statewide rent cap) preempts local rent control ordinances. The statewide rule establishes a uniform rent increase cap across California, preventing cities like San Diego from enacting stricter local rent increase limits.",
+    "result": "barred_by_state"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1509,
+    "output_tokens": 153
+  }
+}

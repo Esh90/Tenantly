@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002416,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "When withdrawing a job offer based on criminal history, the housing provider must consider the crime's nature and severity, the applicant's age, time passed, rehabilitation evidence, safety impact, and connection to the rental property.",
+    "summary_es": "Al retirar una oferta de trabajo basada en antecedentes penales, el arrendador debe considerar la naturaleza y gravedad del delito, la edad del solicitante, el tiempo transcurrido, evidencia de rehabilitación, impacto en la seguridad y conexión con la propiedad.",
+    "who_en": "This rule applies to all rental dwelling units except owner-occupied properties with no more than four units.",
+    "who_es": "Esta regla se aplica a todas las unidades de vivienda de alquiler excepto las propiedades ocupadas por el propietario con no más de cuatro unidades."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 996,
+    "output_tokens": 284
+  }
+}

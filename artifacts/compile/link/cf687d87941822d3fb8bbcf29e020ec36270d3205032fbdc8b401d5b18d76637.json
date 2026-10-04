@@ -1,0 +1,27 @@
+{
+  "cost_usd": 0.0035131999999999997,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "relations": [
+      {
+        "doc_id": "D048",
+        "effect": "bar",
+        "quote": "No city or town may enact, maintain or enforce rent control of any kind, except that any city or town that accepts this chapter may adopt rent control regulation that provides:",
+        "source_rule_id": "MA-RENT-01",
+        "target_rule_id": null,
+        "target_scope": {
+          "category": "rent_increase_limits",
+          "level": "city"
+        },
+        "type": "preempts"
+      }
+    ]
+  },
+  "prompt_version": 2,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 916,
+    "input_tokens": 740,
+    "output_tokens": 185
+  }
+}

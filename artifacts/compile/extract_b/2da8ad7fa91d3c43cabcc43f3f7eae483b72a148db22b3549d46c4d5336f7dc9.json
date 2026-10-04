@@ -1,0 +1,66 @@
+{
+  "cost_usd": 0.005968,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "category": "rent_increase_limits",
+        "cite": "Los Angeles RSO",
+        "coverage": {
+          "all": [
+            {
+              "const": true
+            }
+          ]
+        },
+        "coverage_text": "Rental units subject to the City of Los Angeles Rent Stabilization Ordinance.",
+        "effective_date": "2025-07-01",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "Annual Rent Increase Percentage",
+            "text": "3%",
+            "unit": "percent",
+            "valid_from": "2025-07-01",
+            "valid_to": "2026-06-30",
+            "value": 3
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Annual rent increases for rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO), effective July 1, 2025, through June 30, 2026 is 3%.",
+        "requirement": "Landlords may increase rent for RSO-covered units by a maximum of 3% annually during the period from July 1, 2025 through June 30, 2026.",
+        "title": "RSO Annual Rent Increase Limit",
+        "uncertain_fields": []
+      },
+      {
+        "category": "rent_increase_limits",
+        "cite": "Los Angeles RSO",
+        "coverage": {
+          "all": [
+            {
+              "const": true
+            }
+          ]
+        },
+        "coverage_text": "Rental units subject to the City of Los Angeles Rent Stabilization Ordinance.",
+        "effective_date": "2026-02-02",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Beginning February 2, 2026, a landlord can no longer include any additional percentage increase for utilities.",
+        "requirement": "Landlords may no longer include any additional percentage increase for utilities in rent increases.",
+        "title": "Prohibition on Utility Surcharge Increases",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2978,
+    "output_tokens": 598
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002718,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The documents provided contain only partial text from an ordinance (D073) without the relevant security deposit sections, draft materials (D076) that appear unrelated to security deposits, and link-only references without accessible text. The link-only documents point to state law (California Civil Code sections on security deposits) and city ordinances, but no actual text content is supplied that addresses security deposit rules at the San Diego city level. The relevant state law links (D017, D020) reference California Civil Code sections governing security deposits, which would establish state-level rules that typically preempt local regulation, but the actual text of those provisions is not provided. Therefore, based on the sources available, no San Diego city-level security deposit rule text can be located.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1563,
+    "output_tokens": 231
+  }
+}

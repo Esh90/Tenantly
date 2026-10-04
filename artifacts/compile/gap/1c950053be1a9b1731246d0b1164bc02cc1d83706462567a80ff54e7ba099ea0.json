@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.003869,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The documents referenced (D073 ordinance and D076 draft materials) appear potentially relevant to screening restrictions but have truncated or incomplete text. Multiple link-only references exist (D075, D077, D074) that reference tenant protection, discrimination, and source of income prohibition, but actual document text is not supplied. Insufficient text is provided to determine whether San Diego has a city-level screening_restrictions rule.",
+    "result": "text_not_supplied"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1564,
+    "output_tokens": 461
+  }
+}

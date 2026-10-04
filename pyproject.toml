@@ -24,6 +24,7 @@ dev = [
     "httpx>=0.27",
     "huggingface-hub>=2.1.1",
     "pyogrio>=0.13.0",
+    "pyyaml>=6.0.3",
 ]
 
 [tool.ruff]
@@ -41,7 +42,10 @@ select = ["E", "F", "I", "UP", "B"]
 "engine/rules/engine.py" = ["E501"]
 "engine/compile/*.py" = ["E501"]
 "engine/cli.py" = ["E501"]
+"engine/api/store.py" = ["E501"]
+"engine/export/build.py" = ["E501"]
 "tests/*.py" = ["E501"]
+"eval/*.py" = ["E501"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

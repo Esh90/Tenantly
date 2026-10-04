@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002067,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "After a judge orders eviction, the landlord must wait three business days before serving the warrant. Once served, the tenant has three business days to move out.",
+    "summary_es": "Después de que un juez ordena el desalojo, el arrendador debe esperar tres días hábiles antes de entregar la orden. Una vez entregada, el inquilino tiene tres días hábiles para mudarse.",
+    "who_en": "This rule applies to all residential rental properties.",
+    "who_es": "Esta regla se aplica a todas las propiedades residenciales de alquiler."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 967,
+    "output_tokens": 220
+  }
+}

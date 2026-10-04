@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002351,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "A landlord can only evict a tenant for one of 17 approved reasons. Simply ending a lease or selling the building is not enough reason to evict.",
+    "summary_es": "Un arrendador solo puede desalojar a un inquilino por una de 17 razones aprobadas. Simplemente terminar un contrato de arrendamiento o vender el edificio no es razón suficiente para desalojar.",
+    "who_en": "This rule applies to rental units covered by the San Francisco Rent Ordinance, including some units exempt from rent increase limits.",
+    "who_es": "Esta regla aplica a unidades de alquiler cubiertas por la Ordenanza de Rentas de San Francisco, incluyendo algunas unidades exentas de límites de aumento de renta."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1006,
+    "output_tokens": 269
+  }
+}

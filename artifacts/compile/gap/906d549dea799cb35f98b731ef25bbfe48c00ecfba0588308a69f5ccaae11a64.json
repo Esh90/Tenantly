@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002605,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The documents provided contain guidance on tenant protections, evictions, rent increases, and algorithmic rent-setting prohibitions in San Francisco, but do not include any text or substantive content addressing screening restrictions specifically. The category \"screening_restrictions\" at the city level for San Francisco is not covered by the triaged documents or link-only sources. While CA-SCR-02 relates to \"Screening Fee Disclosures and Refunds,\" the actual text of this rule is not supplied in the materials provided. The documents focus on other rental housing topics but contain no information about screening restrictions or screening practices.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1595,
+    "output_tokens": 202
+  }
+}

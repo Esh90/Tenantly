@@ -1,0 +1,378 @@
+{
+  "cost_usd": 0.027652,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "category": "just_cause_eviction",
+        "cite": "S.F. Admin. Code § 37.9(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental units covered by the San Francisco Rent Ordinance.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "In order to evict a tenant from a rental unit covered by the Rent Ordinance, a landlord must have a \"just cause\" reason that is the dominant motive for pursuing the eviction.",
+        "relations_hint": [],
+        "requirement": "A landlord must have a just cause reason that is the dominant motive for evicting a tenant from a rental unit covered by the Rent Ordinance. Mere expiration of a rental agreement or change in ownership does not constitute just cause.",
+        "title": "Just Cause Requirement for Eviction"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "S.F. Admin. Code § 37.9(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental units covered by the San Francisco Rent Ordinance.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "Non-payment of rent, habitual late payment of rent, or frequent bounced checks",
+        "relations_hint": [],
+        "requirement": "Non-payment of rent, habitual late payment of rent, or frequent bounced checks constitute just cause for eviction.",
+        "title": "Just Cause: Non-Payment of Rent"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "S.F. Admin. Code § 37.9(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental units covered by the San Francisco Rent Ordinance.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "Failure to cure a substantial breach of a rental agreement or lease",
+        "relations_hint": [],
+        "requirement": "Failure to cure a substantial breach of a rental agreement or lease constitutes just cause for eviction.",
+        "title": "Just Cause: Breach of Rental Agreement"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "S.F. Admin. Code § 37.9(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental units covered by the San Francisco Rent Ordinance.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "Nuisance or substantial interference with the comfort, safety, or enjoyment of the landlord or other tenants in the building, the nature of which must be severe, continuing or reoccurring in nature",
+        "relations_hint": [],
+        "requirement": "Nuisance or substantial interference with comfort, safety, or enjoyment of the landlord or other tenants constitutes just cause for eviction if the conduct is severe, continuing, or recurring in nature.",
+        "title": "Just Cause: Nuisance or Interference"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "S.F. Admin. Code § 37.9(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental units covered by the San Francisco Rent Ordinance.",
+        "exemptions": [
+          {
+            "description": "Mere occupancy of an unwarranted rental unit",
+            "predicate": {
+              "const": false
+            }
+          },
+          {
+            "description": "Single violation of San Francisco's short-term rental law cured within 30 days",
+            "predicate": {
+              "const": false
+            }
+          }
+        ],
+        "key_values": [
+          {
+            "name": "Cure period for short-term rental violation",
+            "text": "a single violation of San Francisco's short-term rental law (Chapter 41A) that is cured by the tenant within 30 days of written notice by the landlord",
+            "unit": "days",
+            "value": 30
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "Illegal use of a rental unit, not including (a) the mere occupancy of an unwarranted rental unit or (b) a single violation of San Francisco's short-term rental law (Chapter 41A) that is cured by the tenant within 30 days of written notice by the landlord",
+        "relations_hint": [],
+        "requirement": "Illegal use of a rental unit constitutes just cause for eviction, except for mere occupancy of an unwarranted rental unit or a single violation of short-term rental law that is cured within 30 days of written notice.",
+        "title": "Just Cause: Illegal Use"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "S.F. Admin. Code § 37.9(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental units covered by the San Francisco Rent Ordinance.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "The tenant has refused, after written request by the landlord, to execute a written extension or renewal of an expired rental agreement for a further term of like duration and under terms that are materially the same as the previous agreement",
+        "relations_hint": [],
+        "requirement": "A tenant's refusal, after written request by the landlord, to execute a written extension or renewal of an expired rental agreement for a further term of like duration and under materially the same terms constitutes just cause for eviction.",
+        "title": "Just Cause: Refusal to Renew Agreement"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "S.F. Admin. Code § 37.9(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental units covered by the San Francisco Rent Ordinance.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "The tenant has refused, after written notice to cease, to allow the landlord access to the rental unit as required by state or local law",
+        "relations_hint": [],
+        "requirement": "A tenant's refusal, after written notice to cease, to allow the landlord access to the rental unit as required by state or local law constitutes just cause for eviction.",
+        "title": "Just Cause: Refused Access"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "S.F. Admin. Code § 37.9(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental units covered by the San Francisco Rent Ordinance.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "The only tenant residing in the unit at the end of the term of the rental agreement is a subtenant not approved by the landlord. (Note that approval need not be in writing and may be implied from the landlord's conduct)",
+        "relations_hint": [],
+        "requirement": "When the only tenant residing in the unit at the end of the rental agreement term is a subtenant not approved by the landlord, this constitutes just cause for eviction. Approval may be implied from the landlord's conduct.",
+        "title": "Just Cause: Unapproved Subtenant"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "S.F. Admin. Code § 37.9(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental units covered by the San Francisco Rent Ordinance.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "Owner-occupancy or, in limited circumstances, occupancy by a member of the landlord's immediate family",
+        "relations_hint": [],
+        "requirement": "Owner-occupancy or occupancy by a member of the landlord's immediate family in limited circumstances constitutes just cause for eviction.",
+        "title": "Just Cause: Owner or Family Occupancy"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "S.F. Admin. Code § 37.9(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental units covered by the San Francisco Rent Ordinance.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "The landlord seeks to recover possession in good faith in order to sell the unit in accordance with a condominium conversion approved under the San Francisco subdivision ordinance",
+        "relations_hint": [],
+        "requirement": "A landlord's good faith effort to recover possession to sell the unit in accordance with an approved condominium conversion constitutes just cause for eviction.",
+        "title": "Just Cause: Condo Conversion"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "S.F. Admin. Code § 37.9(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental units covered by the San Francisco Rent Ordinance.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "To demolish or to otherwise permanently remove an individual rental unit from housing use",
+        "relations_hint": [],
+        "requirement": "The intent to demolish or permanently remove a rental unit from housing use constitutes just cause for eviction.",
+        "title": "Just Cause: Demolition or Removal from Housing Use"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "S.F. Admin. Code § 37.9(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental units covered by the San Francisco Rent Ordinance.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "To perform capital improvements or rehabilitation work that will make the unit temporarily uninhabitable while the work is performed – the tenant must be allowed to reoccupy the unit immediately after the work is completed",
+        "relations_hint": [],
+        "requirement": "The need to perform capital improvements or rehabilitation work that will temporarily make the unit uninhabitable constitutes just cause for eviction, provided the tenant is allowed to reoccupy immediately after work completion.",
+        "title": "Just Cause: Capital Improvements"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "S.F. Admin. Code § 37.9(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental units covered by the San Francisco Rent Ordinance.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "Building age requirement",
+            "text": "a building that is at least 50 years old",
+            "unit": "years",
+            "value": 50
+          },
+          {
+            "name": "Work cost threshold",
+            "text": "the cost of the proposed work is at least 75% of the cost of new construction",
+            "unit": "percent",
+            "value": 75
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "To perform substantial rehabilitation of a building that is at least 50 years old and essentially uninhabitable, provided that the cost of the proposed work is at least 75% of the cost of new construction",
+        "relations_hint": [],
+        "requirement": "Substantial rehabilitation of a building at least 50 years old and essentially uninhabitable constitutes just cause for eviction if the work cost is at least 75% of new construction cost.",
+        "title": "Just Cause: Substantial Rehabilitation"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "S.F. Admin. Code § 37.9(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental units covered by the San Francisco Rent Ordinance.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "To withdraw all rental units in a building from the rental market under the state Ellis Act",
+        "relations_hint": [],
+        "requirement": "Withdrawal of all rental units in a building from the rental market under the state Ellis Act constitutes just cause for eviction.",
+        "title": "Just Cause: Ellis Act Withdrawal"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "S.F. Admin. Code § 37.9(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental units covered by the San Francisco Rent Ordinance.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "To perform lead remediation/abatement work required by San Francisco Health Code Articles 11 or 26",
+        "relations_hint": [],
+        "requirement": "The need to perform lead remediation or abatement work required by San Francisco Health Code Articles 11 or 26 constitutes just cause for eviction.",
+        "title": "Just Cause: Lead Remediation"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "S.F. Admin. Code § 37.9(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental units covered by the San Francisco Rent Ordinance.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "To demolish or to otherwise permanently remove the rental unit from housing use in accordance with the terms of a development agreement entered into by the City under Chapter 56 of the San Francisco Administrative Code",
+        "relations_hint": [],
+        "requirement": "Demolition or permanent removal of a rental unit from housing use in accordance with a development agreement under San Francisco Administrative Code Chapter 56 constitutes just cause for eviction.",
+        "title": "Just Cause: Development Agreement Demolition"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "S.F. Admin. Code § 37.9(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental units covered by the San Francisco Rent Ordinance.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "Notice period after expiration",
+            "text": "the landlord served an eviction notice within 60 days after expiration of the agreement",
+            "unit": "days",
+            "value": 60
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "Where the tenant's \" Good Samaritan\" occupancy agreement has expired, and the landlord served an eviction notice within 60 days after expiration of the agreement. A \"Good Samaritan\" tenancy occurs when a tenant is displaced from a rental unit due to an emergency or disaster and the landlord agrees to provide the tenant a temporary replacement unit at a reduced rent",
+        "relations_hint": [],
+        "requirement": "Expiration of a Good Samaritan occupancy agreement constitutes just cause for eviction if the landlord serves an eviction notice within 60 days after expiration. A Good Samaritan tenancy occurs when a tenant displaced by emergency or disaster is provided temporary replacement housing at reduced rent.",
+        "title": "Just Cause: Good Samaritan Occupancy Expiration"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "S.F. Admin. Code § 37.9(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental units covered by the San Francisco Rent Ordinance.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "To complete a development project that will require the existing property to be demolished under Section 317 of the Planning Code.",
+        "relations_hint": [],
+        "requirement": "Completion of a development project requiring demolition of the existing property under Section 317 of the Planning Code constitutes just cause for eviction.",
+        "title": "Just Cause: Development Project Demolition"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "S.F. Admin. Code § 37.9(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental units covered by the San Francisco Rent Ordinance.",
+        "exemptions": [
+          {
+            "description": "Temporary removal of parking and storage spaces for mandatory soft-story seismic retrofit work",
+            "predicate": {
+              "const": false
+            },
+            "quote": "However, a landlord who has complied with the requirements of Ordinance Section 37.2(r) may temporarily remove certain housing services, including parking and storage spaces, in order to perform mandatory soft-story seismic retrofit work required by the Building Code."
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "The landlord also needs a \"just cause\" reason to take away or remove access to certain housing services, including but not limited to garage facilities, parking facilities, driveways, storage spaces, and laundry rooms.",
+        "relations_hint": [],
+        "requirement": "A landlord must have a just cause reason to take away or remove access to housing services including garage facilities, parking facilities, driveways, storage spaces, and laundry rooms.",
+        "title": "Just Cause Required for Removal of Housing Services"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "S.F. Admin. Code § 37.9(a)",
+        "coverage": {
+          "any": [
+            {
+              "fact": "co_date",
+              "op": ">",
+              "value": "1979-06-13"
+            },
+            {
+              "const": true
+            }
+          ]
+        },
+        "coverage_text": "Newly constructed rental units with Certificate of Occupancy after June 13, 1979, units eligible for rent increase under Costa-Hawkins, and tenancies regulated by another government agency.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "Certificate of Occupancy date threshold",
+            "text": "newly constructed rental units that first obtained a Certificate of Occupancy after June 13, 1979",
+            "value": "1979-06-13"
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "Some tenancies that are exempt from the rent increase limitations of the Ordinance are still subject to the eviction provisions of the Ordinance, and tenants in these categories can only be evicted for one of the \"just cause\" reasons listed in the Ordinance. This includes tenancies in newly constructed rental units that first obtained a Certificate of Occupancy after June 13, 1979, tenancies that are eligible for a rent increase under the Costa-Hawkins Rental Housing Act, and some tenancies where the rent is regulated by another government agency.",
+        "relations_hint": [],
+        "requirement": "Just cause eviction protections apply to tenancies exempt from rent increase limitations, including newly constructed units with Certificate of Occupancy after June 13, 1979, units eligible for rent increase under Costa-Hawkins, and units regulated by another government agency.",
+        "title": "Just Cause Applies to Rent-Exempt Tenancies"
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 3337,
+    "output_tokens": 4863
+  }
+}

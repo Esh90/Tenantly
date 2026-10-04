@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002341,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "While multiple link-only signals (D086, D087) indicate that Santa Ana has banned AI apartment rent pricing software, the actual text of any such ordinance is not provided in the available documents. The guidance documents D084 and D085 reference rent stabilization and just cause eviction ordinances but do not contain specific text addressing algorithmic rent setting. The link-only sources suggest action has been taken, but without the actual ordinance text, we cannot verify the specific provisions or confirm they exist in the supplied documentation.",
+    "result": "text_not_supplied"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1426,
+    "output_tokens": 183
+  }
+}

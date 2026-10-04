@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002596,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The documents provided contain only guidance pages about Santa Ana's rent stabilization and just cause eviction ordinances (D084, D085) with no actual text content. The link-only sources reference federal fair housing, California civil code sections, and articles about algorithmic pricing and AI rent-setting software bans, but none provide actual text regarding screening restrictions specifically. The three enacted rules listed (CA-SCR-01, CA-SCR-02, CA-SCR-03) relate to income standards, credit history alternatives, and appraisal discrimination respectively, but no text from these rules or other screening restriction provisions is supplied in the source materials. Without actual ordinance or statute text available, screening restrictions for Santa Ana cannot be verified.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1451,
+    "output_tokens": 229
+  }
+}

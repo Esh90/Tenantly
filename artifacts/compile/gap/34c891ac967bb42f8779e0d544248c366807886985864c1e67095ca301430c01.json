@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002612,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "Santa Ana has enacted SNA-ALG-01 (Ord. NS-3090) addressing algorithmic rent setting. This rule is listed among the rules in this category for Santa Ana. The documents D084 and D085 reference rent stabilization ordinances adopted by Santa Ana City Council, and multiple link-only sources (D086 and D087) specifically reference Santa Ana banning AI apartment rent pricing software and anticompetitive rent-setting software, confirming the existence of a rule in this category at the city level.",
+    "quote": "Ord. NS-3090",
+    "result": "found",
+    "section_id": "SNA-ALG-01"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1452,
+    "output_tokens": 232
+  }
+}

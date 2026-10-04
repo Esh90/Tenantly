@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001856,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "Multiple link-only documents provided without text content (D060-D064, D070-D072). Unable to verify whether any sources contain an application screening fee rule for Newark, NJ at the city level that would implement or relate to NJ-FEE-01. The actual text of these sources must be supplied to determine if a rule exists.",
+    "result": "text_not_supplied"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1111,
+    "output_tokens": 149
+  }
+}

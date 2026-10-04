@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002051,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords cannot punish renters for reporting illegal housing practices or helping others report them. This includes eviction, harassment, or unfair treatment.",
+    "summary_es": "Los arrendadores no pueden castigar a los inquilinos por reportar prácticas ilegales de vivienda o ayudar a otros a reportarlas. Esto incluye desalojo, acoso o trato injusto.",
+    "who_en": "This rule covers all housing.",
+    "who_es": "Esta regla cubre todas las viviendas."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1006,
+    "output_tokens": 209
+  }
+}

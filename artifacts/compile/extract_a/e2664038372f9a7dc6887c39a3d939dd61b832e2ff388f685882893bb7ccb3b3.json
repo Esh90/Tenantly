@@ -1,0 +1,87 @@
+{
+  "cost_usd": 0.0276284,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": "This Ordinance will take effect and be in force on the thirtieth day from\nand after its final passage.",
+        "category": "algorithmic_rent_setting",
+        "cite": "SDMC § 98.1103(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Applies to all residential rental property in the City of San Diego.",
+        "effective_expression": "thirtieth day from and after its final passage",
+        "exemptions": [
+          {
+            "description": "Software that publishes reports from aggregated historical nonpublic data more than 90 days old or public information without recommending rents",
+            "predicate": {
+              "const": true
+            }
+          },
+          {
+            "description": "Software used to set rents or income limits under affordable housing program guidelines",
+            "predicate": {
+              "fact": "subsidized_or_affordable",
+              "op": "==",
+              "value": true
+            }
+          }
+        ],
+        "key_values": [
+          {
+            "name": "max_civil_penalty",
+            "text": "civil penalties of up to\n$1,000 per violation",
+            "unit": "usd",
+            "value": 1000
+          }
+        ],
+        "lifecycle": "pending",
+        "penalty": "Civil action by tenant: injunctive relief, damages, or civil penalties up to $1,000 per violation",
+        "quote": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord.",
+        "requirement": "No person may sell, license, or otherwise provide an algorithmic device to a landlord.",
+        "title": "Sale of algorithmic rent-setting devices prohibited"
+      },
+      {
+        "anchor_quote": "This Ordinance will take effect and be in force on the thirtieth day from\nand after its final passage.",
+        "category": "algorithmic_rent_setting",
+        "cite": "SDMC § 98.1103(b)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Applies to all landlords of residential rental property in San Diego.",
+        "effective_expression": "thirtieth day from and after its final passage",
+        "exemptions": [
+          {
+            "description": "Software used to set rents or income limits under affordable housing program guidelines",
+            "predicate": {
+              "fact": "subsidized_or_affordable",
+              "op": "==",
+              "value": true
+            }
+          }
+        ],
+        "key_values": [
+          {
+            "name": "max_civil_penalty",
+            "text": "civil penalties of up to\n$1,000 per violation",
+            "unit": "usd",
+            "value": 1000
+          }
+        ],
+        "lifecycle": "pending",
+        "penalty": "Tenant civil action: injunctive relief, damages, or civil penalties up to $1,000 per violation; attorney's fees",
+        "quote": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.",
+        "requirement": "A landlord may not use an algorithmic device to set rental rates or occupancy levels. Each month and each property of use is a separate violation.",
+        "title": "Landlord use of algorithmic devices prohibited"
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 8798,
+    "output_tokens": 956
+  }
+}

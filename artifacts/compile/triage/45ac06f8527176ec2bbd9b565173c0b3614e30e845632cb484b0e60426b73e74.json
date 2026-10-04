@@ -1,0 +1,134 @@
+{
+  "cost_usd": 0.005999,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "sections": [
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D043-S001"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [
+          "D043-S001"
+        ],
+        "role": "operative",
+        "section_id": "D043-S002"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [
+          "D043-S001"
+        ],
+        "role": "operative",
+        "section_id": "D043-S003"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [
+          "D043-S003"
+        ],
+        "role": "operative",
+        "section_id": "D043-S004"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [
+          "D043-S004"
+        ],
+        "role": "operative",
+        "section_id": "D043-S005"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [
+          "D043-S005"
+        ],
+        "role": "operative",
+        "section_id": "D043-S006"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [
+          "D043-S006"
+        ],
+        "role": "operative",
+        "section_id": "D043-S007"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [
+          "D043-S007"
+        ],
+        "role": "procedural",
+        "section_id": "D043-S008"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [
+          "D043-S008"
+        ],
+        "role": "definition",
+        "section_id": "D043-S009"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [
+          "D043-S009"
+        ],
+        "role": "procedural",
+        "section_id": "D043-S010"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [
+          "D043-S010"
+        ],
+        "role": "operative",
+        "section_id": "D043-S011"
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2434,
+    "output_tokens": 713
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.001839,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Massachusetts has a rent-control ballot question. The exact details of this rule were not provided.",
+    "summary_es": "Massachusetts tiene una pregunta de control de rentas en la papeleta. Los detalles exactos de esta regla no fueron proporcionados.",
+    "who_en": "This applies to rentals in Massachusetts.",
+    "who_es": "Esto aplica a los alquileres en Massachusetts."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 954,
+    "output_tokens": 177
+  }
+}

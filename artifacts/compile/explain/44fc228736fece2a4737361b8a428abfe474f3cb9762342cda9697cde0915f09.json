@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002117,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords can increase rent by a maximum of 1.6% per year from March 1, 2026 through February 28, 2027 for rent-controlled units.",
+    "summary_es": "Los arrendadores pueden aumentar la renta un máximo de 1.6% por año del 1 de marzo de 2026 al 28 de febrero de 2027 para unidades con control de renta.",
+    "who_en": "This rule covers rent-controlled residential units in San Francisco.",
+    "who_es": "Esta regla aplica a unidades residenciales con control de renta en San Francisco."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 967,
+    "output_tokens": 230
+  }
+}

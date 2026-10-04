@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.00239,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "When a landlord charges a screening fee, the prospective tenant must get a copy of their credit report within 7 days, a receipt for the fee, and an itemized list of expenses and time spent. Any unused portion of the fee must be refunded.",
+    "summary_es": "Cuando un arrendador cobra una cuota de evaluación de inquilinos, el inquilino prospectivo debe recibir una copia de su informe de crédito dentro de 7 días, un recibo de la cuota y una lista detallada de gastos y tiempo invertido. Cualquier porción no utilizada de la cuota debe ser reembolsada.",
+    "who_en": "This rule covers all residential rental properties in Berkeley.",
+    "who_es": "Esta regla cubre todas las propiedades residenciales de alquiler en Berkeley."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1000,
+    "output_tokens": 278
+  }
+}

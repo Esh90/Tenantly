@@ -1,0 +1,81 @@
+{
+  "cost_usd": 0.011878399999999999,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": "This act shall take effect on the first day of the fourth month next following the date of enactment",
+        "approval_date": "2026-01-20",
+        "category": "application_screening_fees",
+        "cite": "N.J.S.A. 46:8-18.1",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties, except one- and two-family dwellings and non-landlord licensees.",
+        "effective_expression": "first day of the fourth month next following the date of enactment",
+        "exemptions": [
+          {
+            "description": "Dwelling unit in a one-family or two-family dwelling offered for rent",
+            "predicate": {
+              "fact": "property_type",
+              "op": "in",
+              "value": [
+                "single_family",
+                "multifamily_2_4"
+              ]
+            },
+            "quote": "(1) a dwelling unit located in a one-family or two-family dwelling that is offered for rent; or"
+          },
+          {
+            "description": "Licensee of the NJ Real Estate Commission, unless the licensee is the landlord",
+            "predicate": {
+              "const": false
+            },
+            "quote": "(2)  a licensee of the New Jersey Real Estate Commission, unless the licensee is the landlord of the residential rental property."
+          }
+        ],
+        "key_values": [
+          {
+            "name": "fee_cap",
+            "text": "exceeds $50",
+            "unit": "usd",
+            "value": 50
+          },
+          {
+            "name": "penalty_first",
+            "text": "up to $500 for a first offense",
+            "unit": "usd",
+            "value": 500
+          },
+          {
+            "name": "penalty_second",
+            "text": "up to $750 for a second offense",
+            "unit": "usd",
+            "value": 750
+          },
+          {
+            "name": "penalty_subsequent",
+            "text": "up to $1,000 for each subsequent offense",
+            "unit": "usd",
+            "value": 1000
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "Up to $500 first offense, up to $750 second offense, up to $1,000 each subsequent offense; wrongfully charged amount remitted to applicant.",
+        "quote": "A landlord, or agent thereof, shall not require an application or other similar fee to apply to lease or sublease a residential rental property for dwelling purposes, which exceeds $50.",
+        "relations_hint": [],
+        "requirement": "Landlords or their agents may not require an application or similar fee above $50 (CPI-adjusted annually). Violations carry civil penalties and the excess fee is remitted to the applicant.",
+        "tenancy_conditions": [],
+        "title": "Application fee capped at $50",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 1608,
+    "output_tokens": 819
+  }
+}

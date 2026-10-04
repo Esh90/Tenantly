@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002186,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "A landlord can evict a renter if the landlord, a family member, or a manager needs to live in the unit. This follows specific Los Angeles rules.",
+    "summary_es": "Un arrendador puede desalojar a un inquilino si el arrendador, un familiar o un gerente necesita vivir en la unidad. Esto sigue reglas específicas de Los Ángeles.",
+    "who_en": "This rule covers all homes and apartments under the RSO or JCO in Los Angeles.",
+    "who_es": "Esta regla cubre todas las casas y apartamentos bajo el RSO o JCO en Los Ángeles."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1011,
+    "output_tokens": 235
+  }
+}

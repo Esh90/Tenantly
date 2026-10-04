@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.001903,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Jersey City §218-12 regulates rent-setting software. The ordinance became effective in June 2025.",
+    "summary_es": "Jersey City §218-12 regula el software para fijar rentas. La ordenanza entró en vigor en junio de 2025.",
+    "who_en": "This rule covers rentals in Jersey City, New Jersey.",
+    "who_es": "Esta regla cubre los alquileres en Jersey City, Nueva Jersey."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 948,
+    "output_tokens": 191
+  }
+}

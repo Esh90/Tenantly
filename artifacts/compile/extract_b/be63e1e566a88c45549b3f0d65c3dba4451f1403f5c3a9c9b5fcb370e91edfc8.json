@@ -1,0 +1,720 @@
+{
+  "cost_usd": 0.095992,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "category": "security_deposits",
+        "cite": "N.J.S.A. 46:8-21.2",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties are covered, with the exception of owner-occupied two- or three-family dwellings unless the tenant requests it.",
+        "exemptions": [
+          {
+            "description": "Owner-occupied two- or three-family dwellings are exempt unless tenant makes written request 30 days after sending it to the landlord",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "property_type",
+                  "op": "in",
+                  "value": [
+                    "single_family"
+                  ]
+                },
+                {
+                  "fact": "owner_occupied",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "fact": "building_age_years",
+                  "op": "<=",
+                  "value": 3
+                }
+              ]
+            }
+          }
+        ],
+        "key_values": [
+          {
+            "name": "maximum_deposit_multiplier",
+            "text": "one and one-half times one month's rent",
+            "unit": "months",
+            "value": 1.5
+          },
+          {
+            "name": "annual_increase_limit",
+            "text": "10% of the current security deposit",
+            "unit": "percent",
+            "value": 10
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The maximum-security deposit to be collected by the landlord cannot be more than one and one-half times one month's rent ( N.J.S.A. 46:8-21.2 ). It can be less. Any additional yearly security deposit increase may not exceed 10% of the current security deposit.",
+        "requirement": "The maximum security deposit a landlord can collect is one and one-half times one month's rent. Any yearly security deposit increase may not exceed 10% of the current security deposit.",
+        "title": "Maximum Security Deposit Limit",
+        "uncertain_fields": []
+      },
+      {
+        "category": "security_deposits",
+        "cite": "N.J.S.A. 46:8-21.1",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties are covered, with the exception of owner-occupied two- or three-family dwellings.",
+        "exemptions": [
+          {
+            "description": "Owner-occupied two- or three-family dwellings",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "property_type",
+                  "op": "==",
+                  "value": "single_family"
+                },
+                {
+                  "fact": "owner_occupied",
+                  "op": "==",
+                  "value": true
+                }
+              ]
+            }
+          }
+        ],
+        "key_values": [
+          {
+            "name": "return_deadline",
+            "text": "30 days after termination of tenancy",
+            "unit": "days",
+            "value": 30
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "If tenant successfully sues for double the amount wrongly withheld, court may award double the amount together with court costs and reasonable attorney's fees",
+        "quote": "Within 30 days after the termination of a tenancy, a landlord must return the security deposit, plus interest earned less deductions, to the tenant ( N.J.S.A. 46:8-21.1). If a landlord fails to return the security deposit within 30 days, or the tenant disagrees with the amount deducted, the tenant may sue for double the amount of the security deposit that the tenant contends was wrongfully withheld.",
+        "requirement": "A landlord must return the security deposit plus interest earned less deductions within 30 days after the termination of a tenancy. If the landlord fails to return the deposit within 30 days or the tenant disagrees with deductions, the tenant may sue for double the amount wrongfully withheld.",
+        "title": "Security Deposit Return Timeline",
+        "uncertain_fields": []
+      },
+      {
+        "category": "security_deposits",
+        "cite": "N.J.S.A. 46:8-19",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties that collect security deposits are covered.",
+        "exemptions": [
+          {
+            "description": "Seasonal use or rental means use or rental for a term of not more than 125 consecutive days for residential purposes by a person having a permanent place of residence elsewhere",
+            "predicate": {
+              "not": {
+                "fact": "unit_separately_alienable",
+                "op": "==",
+                "value": true
+              }
+            }
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The interest or earnings paid on the security deposit belongs to the tenant and shall be paid to the tenant in cash or credited toward rent due and owing on the ren ewal or anniversary of the tenant's lease or on January 31,  if the tenant has been given written notice, that the interest payments will be paid on January 31 of each year (N.J.S.A. 46:8-19 (c)).",
+        "requirement": "Interest or earnings paid on the security deposit belongs to the tenant and shall be paid in cash or credited toward rent due on the renewal or anniversary of the lease or on January 31 if written notice is given that interest payments will be paid on January 31 of each year.",
+        "title": "Security Deposit Interest Accrual and Payment",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "N.J.S.A. 2A:18-61.1",
+        "coverage": {
+          "not": {
+            "any": [
+              {
+                "fact": "property_type",
+                "op": "in",
+                "value": [
+                  "single_family"
+                ]
+              },
+              {
+                "fact": "property_type",
+                "op": "in",
+                "value": [
+                  "multifamily_2_4"
+                ]
+              }
+            ]
+          }
+        },
+        "coverage_text": "All residential rental properties are covered except two- or three-unit owner-occupied premises, hotels, motels, and seasonal rental units.",
+        "exemptions": [
+          {
+            "description": "Two- or three-unit owner-occupied premises",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "property_type",
+                  "op": "in",
+                  "value": [
+                    "single_family",
+                    "multifamily_2_4"
+                  ]
+                },
+                {
+                  "fact": "owner_occupied",
+                  "op": "==",
+                  "value": true
+                }
+              ]
+            }
+          },
+          {
+            "description": "Hotel, motel, or guest house with transient or seasonal tenants",
+            "predicate": {
+              "fact": "property_type",
+              "op": "==",
+              "value": "other"
+            }
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "No residential landlord may evict or fail to renew a lease, whether it is a written or an oral lease without good cause. The landlord must be able to prove in court that he has grounds for an eviction.",
+        "requirement": "A landlord must have good cause to evict a tenant. No residential landlord may evict or fail to renew a lease without good cause. For nonpayment of rent evictions, the landlord may file suit immediately; for other good cause evictions, a Notice to Quit must be served before filing suit.",
+        "title": "Good Cause Eviction Requirement",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "N.J.S.A. 2A:18-61.1(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties are covered.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "notice_period_federally_subsidized",
+            "text": "14-day notice for federally subsidized housing",
+            "unit": "days",
+            "value": 14
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "If a tenant fails to pay rent, the landlord may immediately take legal action to have the tenant evicted. The landlord is not required to give the tenant notice before filing an eviction suit, except if the tenant resides in federally subsidized housing. I f the tenant resides in federally subsidized housing a 14-day notice must be given before filing a suite for eviction (N.J.S.A. 2A:18-61.1(a)).",
+        "requirement": "If a tenant fails to pay rent, the landlord may immediately file suit for eviction. In federally subsidized housing, a 14-day notice must be given before filing suit.",
+        "title": "Eviction for Nonpayment of Rent",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "N.J.S.A. 2A:18-61.1(b)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties are covered.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "notice_to_quit_period",
+            "text": "at least three days prior to filing suit",
+            "unit": "days",
+            "value": 3
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "If after given written Notice to Cease disorderly conduct, the tenant continues the disorderly conduct and that conduct destroys the peace and quiet of the other tenants living in the building or neighborhood, the landlord may file a suite for eviction. A Notice to Quit must be served on the tenant at least three days prior to filing a suit for eviction (N.J.S.A. 2A:18-61.1(b)).",
+        "requirement": "If after given a written Notice to Cease disorderly conduct, a tenant continues conduct that destroys the peace and quiet of other tenants or the neighborhood, the landlord may file suit for eviction. A Notice to Quit must be served at least three days prior to filing suit.",
+        "title": "Eviction for Disorderly Conduct",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "N.J.S.A. 2A:18-61.1(c)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties are covered.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "notice_to_quit_period",
+            "text": "at least three days prior to filing suit",
+            "unit": "days",
+            "value": 3
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The tenant may be evicted if they have intentionally or by reason of gross negligence caused or allowed destruction, damage, or injury to the property. A Notice to Quit must be served on the tenant at least three days prior to filing a suit for eviction  (N.J.S.A.:2A-18-61.1(c)).",
+        "requirement": "A tenant may be evicted if they have intentionally or by gross negligence caused or allowed destruction, damage, or injury to the property. A Notice to Quit must be served at least three days prior to filing suit.",
+        "title": "Eviction for Damage or Destruction to Property",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "N.J.S.A. 2A:18-61.1(d)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties are covered.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "notice_to_quit_period",
+            "text": "at least one month prior to filing suit",
+            "unit": "months",
+            "value": 1
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "If after given a written Notice to Cease violating or breaching reasonable rules and regulations contained in the lease or accepted in writing by the tenant, the tenant continues to substantially violate or breach the rules and regulations, the  landlord may file a suit for eviction. A Notice to Quit must be served on the tenant at least one month prior to filing the suit for eviction. In addition, any notices must be given on or before the start of a new month (N.J.S.A. 2A:18-61.1(d)).",
+        "requirement": "If after given a written Notice to Cease violating reasonable rules and regulations in the lease, a tenant continues to substantially violate or breach the rules, the landlord may file suit for eviction. A Notice to Quit must be served at least one month prior to filing suit, and notices must be given on or before the start of a new month.",
+        "title": "Eviction for Substantial Violation of Landlord Rules and Regulations",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "N.J.S.A. 2A:18-61.1(f)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties are covered.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "notice_to_quit_period",
+            "text": "at least one month prior to filing suit",
+            "unit": "months",
+            "value": 1
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "If a tenant fails to pay rent after being given notice of a rent increase and a Notice to Quit, the landlord may file a suit for eviction. The rent increase must not be unconscionable and must comply with all other laws or municipal ordinances, including rent control. A Notice to Quit must be served on the tenant at least one month prior to filing the suit for eviction (N.J.S.A. 2A:18-61.1(f)).",
+        "requirement": "If a tenant fails to pay rent after being given notice of a rent increase and a Notice to Quit, the landlord may file suit for eviction. The rent increase must not be unconscionable and must comply with all applicable laws and municipal ordinances. A Notice to Quit must be served at least one month prior to filing suit.",
+        "title": "Eviction for Failure to Pay Increased Rent",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "N.J.S.A. 2A:18-61.1(j)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties are covered.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "notice_to_quit_period",
+            "text": "at least one month before filing suit",
+            "unit": "months",
+            "value": 1
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "If the tenant continuously fails to pay rent or habitually pays late, after written Notice to Cease, the landlord may file a suit for eviction. A Notice to Quit must be served on the tenant at least one month before filing a suit for eviction (N.J.S.A. 2A:18-61.1(j)).",
+        "requirement": "If a tenant continuously fails to pay rent or habitually pays late, after written Notice to Cease, the landlord may file suit for eviction. A Notice to Quit must be served at least one month before filing suit. Courts have ruled that habitual late payments means more than one late payment following Notice to Cease.",
+        "title": "Eviction for Continuous Failure to Pay Rent or Habitual Late Payment",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "N.J.S.A. 2A:18-61.1(k)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties are covered except owner-occupied single, two-, or three-family dwellings.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "notice_to_quit_period",
+            "text": "at least three years before filing suit",
+            "unit": "years",
+            "value": 3
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "If the landlord or owner of a building or mobile home park is converting the property  from the rental market to a condominium, cooperative, or fee simple ownership of two or more dwelling units or park sites, except as hereinafter provided in subsection ( L) below, the landlord may file a suit for eviction. A Notice to Quit must be ser ved on the tenant at least three years before filing a suit for eviction. No legal action may be taken until the lease expires (N.J.S.A. 2A:18-61.1(k)).",
+        "requirement": "If a landlord is converting property from rental to condominium, cooperative, or fee simple ownership of two or more units, the landlord may file suit for eviction. A Notice to Quit must be served at least three years before filing suit. No legal action may be taken until the lease expires.",
+        "title": "Eviction Due to Conversion to Condominium or Cooperative",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "N.J.S.A. 2A:18-61.1(g)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties are covered.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "notice_to_quit_period",
+            "text": "at least three months before filing suit",
+            "unit": "months",
+            "value": 3
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "A tenant may be evicted if the following conditions apply: 1) The landlord has been cited by an inspector and needs to board up or demolish the property because of substantial health and safety violations and because it is financially difficult to abate the violations. 2) The landlord needs to abate health and safety violations and it is not possible to do so, while the tenant resides at the property. A Notice to Quit must be served on the tenant at least three months before filing a suit for eviction. The tenant can't be evicted until relocation assistance is provided.",
+        "requirement": "A tenant may be evicted if the landlord needs to board up, demolish, or abate health and safety violations, correct illegal occupancy, or if a governmental agency is removing the property from the rental market. A Notice to Quit must be served at least three months before filing suit. Relocation assistance must be provided before eviction.",
+        "title": "Eviction for Health and Safety Violations or Removal from Rental Market",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "N.J.S.A. 2A:18-61.1(h)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties are covered.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "notice_to_quit_period",
+            "text": "at least 18 months prior to filing suit",
+            "unit": "months",
+            "value": 18
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "If the landlord wants to permanently retire a building or mobile home park from residential use, provided the circumstances covered under section (G) above do not apply, the landlord may file suit for eviction. A Notice to Quit must be served on the tenant at least 18 months prior to filing the suit for eviction. No legal action may be taken until the lease expires  (N.J.S.A. 2A:18-61.1(h)).",
+        "requirement": "If a landlord wants to permanently retire a building or mobile home park from residential use, the landlord may file suit for eviction. A Notice to Quit must be served at least 18 months prior to filing suit. No legal action may be taken until the lease expires.",
+        "title": "Eviction Due to Permanent Retirement from Residential Use",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "N.J.S.A. 2A:18-61.1(e)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties are covered.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "notice_to_quit_period",
+            "text": "at least one month prior to filing suit",
+            "unit": "months",
+            "value": 1
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "If the tenant continues to substantially violate or breach the reasonable covenants or agreements contained in the lease, after given written Notice to Cease violating or breaching those covenants or agreements and if the landlord has reserved a right of re-entry in the lease, the landlord may file a suit for eviction. A Notice to Quit must be served on the tenant at least one month prior to filing the suit for this type of eviction.",
+        "requirement": "If a tenant substantially violates or breaches reasonable covenants or agreements in the lease after written Notice to Cease and the landlord has reserved a right of re-entry, the landlord may file suit for eviction. A Notice to Quit must be served at least one month prior to filing suit. In public housing with illegal activities or controlled substance violations, Notice to Cease is not required.",
+        "title": "Eviction for Violation or Breach of Lease Covenants or Agreements",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "N.J.S.A. 2A:18-61.1(l)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties are covered.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "notice_to_quit_period",
+            "text": "at least two months prior to filing suit",
+            "unit": "months",
+            "value": 2
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The landlord may file for eviction, if the owner of a building with three residential units or less seeks to personally occupy a unit, or has contracted to sell the residential unit to a buyer who wishes to personally occupy it and the contract fo r sale calls for the unit to be vacant at the time of closing. A Notice to Quit must be served on the tenant at least two months prior to filing suit for eviction. No legal action may be taken until the lease expires (N.J.S.A. 2A:18-61.1(l)).",
+        "requirement": "After conversion of property to condominium or cooperative ownership, landlords may evict tenants whose initial tenancy began after recording if the property is being sold to a buyer who seeks personal occupancy. A Notice to Quit must be served at least two months prior to filing suit, and no legal action may be taken until the lease expires.",
+        "title": "Eviction After Conversion to Condominium, Cooperative, or Fee Simple Ownership",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "N.J.S.A. 2A:18-61.1(m)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties are covered.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "notice_to_quit_period",
+            "text": "three days prior to filing suit",
+            "unit": "days",
+            "value": 3
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "If a tenant resides in the property on the condition that, he is employed by the landlord as a superintendent, janitor, or in some other job and that employment is terminated the landlord may file a suit for eviction. A Notice to Quit must be served on the tenant three days prior to filing a suit for eviction (N.J.S.A. 2A:18-61.1(m)).",
+        "requirement": "If a tenant resides in the property on the condition of employment with the landlord and that employment is terminated, the landlord may file suit for eviction. A Notice to Quit must be served three days prior to filing suit.",
+        "title": "Eviction Based on Employment Termination",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "N.J.S.A. 2A:18-61.1(n)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties are covered.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "notice_to_quit_period",
+            "text": "at least three days prior to filing suit",
+            "unit": "days",
+            "value": 3
+          },
+          {
+            "name": "statute_of_limitations",
+            "text": "No eviction suit may be brought more than two years after conviction, delinquency finding, or release from incarceration",
+            "unit": "years",
+            "value": 2
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The landlord may file a suit for eviction, if the tenant, including juveniles who have been found by the Court to be delinquent, has been convicted of or pleaded guilty to drug offenses that took place on the property, and has not in connection with his sentence either (1) successfully completed or (2) been admitted to and continues during probation participation toward completion of a drug rehabilitation program. A Notice to Quit must be served on the tenant at least three days prior to filing suit for eviction (N.J.S.A. 2A:18-61.1(n)).",
+        "requirement": "The landlord may file suit for eviction if the tenant or a guest has been convicted of or pleaded guilty to drug offenses on the property and has not successfully completed or been admitted to a drug rehabilitation program. A Notice to Quit must be served at least three days prior to filing suit. No eviction suit may be brought more than two years after conviction or release from incarceration.",
+        "title": "Eviction for Drug Offense Conviction Committed on Property",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "N.J.S.A. 2A:18-61.1(o)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties are covered.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "notice_to_quit_period",
+            "text": "at least three days prior to filing suit",
+            "unit": "days",
+            "value": 3
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The landlord may file for eviction, if the tenant has been convicted of or pleaded guilty to, or if a juvenile has been found by the court to be delinquent due to an offense involving assault or terrorist threats against the landlord, a member of the landlord's family or an employee of the landlord. A Notice to Quit must be served on the tenant at least three day s prior to filing a suit for (N.J.S.A. 2A-18-61.1(o)).",
+        "requirement": "The landlord may file suit for eviction if the tenant or a person permitted by the tenant to reside at the property has been convicted of or pleaded guilty to assault or terrorist threats against the landlord, the landlord's family, or employees. A Notice to Quit must be served at least three days prior to filing suit. No eviction suit may be brought more than two years after conviction or release from incarceration.",
+        "title": "Eviction for Assault or Threat Against Landlord",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "N.J.S.A. 2A:18-61.1(p)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties are covered.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "notice_to_quit_period",
+            "text": "at least three days prior to filing suit",
+            "unit": "days",
+            "value": 3
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The landlord may file for eviction, if the tenant is found by a civil court proceeding (not criminal) to be liable fo r involvement in theft of property located on the premises, involvement in assaults or terrorist threats against the landlord, a member of the landlord's family or an employee of the landlord, or involved in illegal drug activities that takes place on the premises and that tenant has not in connection with his sentence for the drug offense either (1) successfully completed or (2) been admitted to and continues during probation participation towards completion of a drug rehabilitation program. A Notice to Quit must be served on the tenant at least three days prior to filing suit for eviction (N.J.S.A. 2A:18-61.1(p)).",
+        "requirement": "The landlord may file suit for eviction if a civil court finds the tenant liable for theft, assault, terrorist threats, or illegal drug activities on the premises and the tenant has not completed or been admitted to a drug rehabilitation program. A Notice to Quit must be served at least three days prior to filing suit. No eviction suit may be brought more than two years after the finding or release from incarceration.",
+        "title": "Eviction for Civil Liability in Criminal Activities",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "N.J.S.A. 2A:18-61.1(q)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties are covered.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "notice_to_quit_period",
+            "text": "at least three days prior to filing suit",
+            "unit": "days",
+            "value": 3
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The landlord may file for eviction, if the tenant has been convicted of or pleaded guilty to, or if a juvenile has been found to be delinquent by the Court due to an offense involving theft of property from the landlord or from tenants residing in the same building or complex. A Notice to Quit must be served on the tenant at least three days prior to filing suit for eviction (N.J.S.A. 2A:18-61.1(q)).",
+        "requirement": "The landlord may file suit for eviction if the tenant or a person permitted by the tenant to reside at the property has been convicted of or pleaded guilty to theft of property from the landlord or other tenants in the same building. A Notice to Quit must be served at least three days prior to filing suit.",
+        "title": "Eviction for Theft of Property Conviction",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "N.J.S.A. 2A:18-61.1(r)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties are covered.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "statute_of_limitations",
+            "text": "No eviction suit may be brought more than two years after the alleged violation has terminated",
+            "unit": "years",
+            "value": 2
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The landlord may file for eviction, if the tenant in a civil action is found to have committed a violation of the human trafficking provisions set forth in section 1 of P.L. 2005, c.77 (2C:13-8) within or upon the leased premises , building, or complex of the building and land appurtenant thereto, or the mobile home park, in which those premises are located, or, being the tenant or lessee of such leased premises, knowingly harbors or harbored a person engaged in human trafficking, or permits or permitted such a person to occupy those premises for residential purposes, whether continuously or intermittently. No action for removal pursuant to this subsection may be brought mor e than two years after the alleged violation has terminated (N.J.S.A. 2A:18-61.1(r)).",
+        "requirement": "The landlord may file suit for eviction if a civil court finds the tenant has committed human trafficking within or upon the leased premises or knowingly harbors or permits a person engaged in human trafficking to occupy the premises. No eviction suit may be brought more than two years after the alleged violation has terminated.",
+        "title": "Eviction for Human Trafficking",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "N.J.S.A. 2A:18-61.1(i)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties are covered.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "notice_to_quit_period",
+            "text": "at least one month before filing suit",
+            "unit": "months",
+            "value": 1
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "When the lease expires, the landlord can offer the tenant a new lease with amended terms and conditions. In order to do t his, the landlord must provide the tenant with written notice terminating the existing lease and offering a new lease. The landlord's notice must clearly detail the changes made to the existing lease.  When the lease expires, the landlord may propose reasonable but substantial changes to the terms and conditions of the lease. If after written notice the tenant refuses to accept those changes the landlord may file a suit for eviction and the court will determine if the proposed changes are reasonable. A Notice to Quit must be served on the tenant at least one month before filing suit for eviction (N.J.S.A. 2A:18-61.1(i)).",
+        "requirement": "When a lease expires, if a tenant refuses reasonable but substantial changes to lease terms and conditions after written notice, the landlord may file suit for eviction. The court determines if changes are reasonable. A Notice to Quit must be served at least one month before filing suit.",
+        "title": "Eviction for Refusal to Accept Reasonable Lease Changes",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "N.J.S.A. 2A:18-61.2(a)",
+        "coverage": {
+          "all": [
+            {
+              "fact": "property_type",
+              "op": "in",
+              "value": [
+                "single_family",
+                "multifamily_2_4"
+              ]
+            },
+            {
+              "fact": "owner_occupied",
+              "op": "==",
+              "value": true
+            }
+          ]
+        },
+        "coverage_text": "Owner-occupied two- or three-family dwellings are covered.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "notice_to_quit_at_will_or_year_to_year",
+            "text": "three month notice to quit for at will or year-to-year tenancy",
+            "unit": "months",
+            "value": 3
+          },
+          {
+            "name": "notice_to_quit_month_to_month",
+            "text": "one month notice to quit for month-to-month tenancy",
+            "unit": "months",
+            "value": 1
+          },
+          {
+            "name": "notice_to_quit_for_cause",
+            "text": "three-day written Notice to Quit for disorderly, destructive or violative conduct",
+            "unit": "days",
+            "value": 3
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Tenants of landlord-occupied two- and three-family dwellings can be removed only when a court issues an order for eviction. However, in these cases, the landlord must prove that the tenant (a) is staying after the expiration of the term of the lease, (b) is staying after a failure to pay rent, (c) is disorderly so as to destroy the peace and quiet of other tena nts, (d) willfully destroys or damages the premises, (e) constantly violates the written rules and regulations or (f) violates any lease provision where the lease reserves a right of re -entry for such violations.",
+        "requirement": "In owner-occupied two- or three-family dwellings, tenants can only be removed by court order on the following grounds: staying after lease expiration, failing to pay rent, disorderly conduct, willful destruction, constantly violating written rules, or violating lease provisions with reserved right of re-entry. Notice periods vary by tenancy type and cause.",
+        "title": "Eviction in Owner-Occupied Two or Three-Family Dwellings",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "N.J.S.A. 2A:18-57",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties are covered.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "warrant_issuance_delay",
+            "text": "three business days after judgment for possession",
+            "unit": "days",
+            "value": 3
+          },
+          {
+            "name": "tenant_moving_period",
+            "text": "three business days to move belongings",
+            "unit": "days",
+            "value": 3
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The warrant for possession may not be issued unt il three (3) business days after the judgment for possession is granted. The tenant has three (3) business days to move all persons and belongings from the premises. If the tenant does not move after three (3) business days from the time the warrant for possession was served on the tenant, the landlord may arrange for the Court Officer to have the tenant evicted or locked out (N.J.S.A. 2A:18-57).",
+        "requirement": "After a judgment for possession is granted, the warrant for possession may not be issued until three business days after judgment. The tenant has three business days to move all persons and belongings from the premises after the warrant for possession is served.",
+        "title": "Warrant for Possession and Moving Timeline",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "N.J.S.A. 2A:18-59.1",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties are covered.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "maximum_stay_period",
+            "text": "up to one year",
+            "unit": "years",
+            "value": 1
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "A tenant may ask the court for permission to stay in the premises due to special circumstances that moving may cause. This action is a stay of eviction. If permission is granted, the tenant may not stay in the premises for more than one year, unless there is an agreed upon extension between landlord and tenant . All rent due ordinarily must be paid for permission to be granted by the court (N.J.S.A. 2A:18-59.1).",
+        "requirement": "A tenant may request a stay of eviction from the court due to special circumstances. If permission is granted, the tenant may remain for up to one year unless an extension is agreed upon by landlord and tenant. All rent due ordinarily must be paid for permission to be granted.",
+        "title": "Stay of Eviction",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 44242,
+    "output_tokens": 10350
+  }
+}

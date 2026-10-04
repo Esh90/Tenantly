@@ -1,0 +1,14 @@
+{
+  "cost_usd": 0.0024504,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": []
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 734,
+    "output_tokens": 51
+  }
+}

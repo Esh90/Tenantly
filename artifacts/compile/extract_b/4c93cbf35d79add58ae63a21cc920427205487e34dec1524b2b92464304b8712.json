@@ -1,0 +1,134 @@
+{
+  "cost_usd": 0.012374,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "M.G.L. c. 186, § 18",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental premises.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "minimum_damages",
+            "text": "one month's rent",
+            "unit": "months",
+            "value": 1
+          },
+          {
+            "name": "maximum_damages",
+            "text": "three month's rent",
+            "unit": "months",
+            "value": 3
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "Damages of not less than one month's rent or more than three months' rent, or the actual damages sustained by the tenant, whichever is greater, and the costs of the suit, including a reasonable attorney's fee.",
+        "quote": "Any person or agent thereof who threatens to or takes reprisals against any tenant of residential premises for the tenant's act of, commencing, proceeding with, or obtaining relief in any judicial or administrative action the purpose of which action is to obtain damages under, or otherwise enforce, any federal, state or local law, regulation, by-law or ordinance, which has as its objective the regulation of residential premises; or exercising the tenant's rights pursuant to section one hundred and twenty-four D of chapter one hundred and sixty-four; or reporting to the board of health or, in the city of Boston to the commissioner of housing inspection or to any other board having as its objective the regulation of residential premises a violation or a suspected violation of any health or building code or of any other municipal by-law or ordinance, or state or federal law or regulation which has as its objective the regulation of residential premises; or reporting or complaining of such violation or suspected violation in writing to the landlord or to the agent of the landlord; or for organizing or joining a tenants' union or similar organization, or for making or expressing an intention to make, a payment of rent to an organization of unit owners pursuant to paragraph (c) of section six of chapter one hundred and eighty-three A shall be liable for damages which shall not be less than one month's rent or more than three month's rent, or the actual damages sustained by the tenant, whichever is greater, and the costs of the suit, including a reasonable attorney's fee.",
+        "relations_hint": [],
+        "requirement": "A landlord or agent may not threaten or take reprisals against a tenant for commencing judicial or administrative action to enforce housing laws, reporting building or health code violations to authorities or in writing to the landlord, exercising tenant rights, or organizing or joining a tenants' union. Violators are liable for damages of not less than one month's rent and not more than three months' rent or actual damages, whichever is greater, plus costs and attorney's fees.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Reprisal Prohibition for Tenant Protected Activity",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "M.G.L. c. 186, § 18",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental premises.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [
+          {
+            "description": "Notice of termination for nonpayment of rent",
+            "predicate": {
+              "const": false
+            }
+          }
+        ],
+        "key_values": [
+          {
+            "name": "presumption_period",
+            "text": "six months",
+            "unit": "months",
+            "value": 6
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The receipt of any notice of termination of tenancy, except for nonpayment of rent, or, of increase in rent, or, of any substantial alteration in the terms of tenancy within six months after the tenant has commenced, proceeded with, or obtained relief in such action, exercised such rights, made such report or complaint, or organized or joined such tenants' union or within six months after any other person has taken such action or actions on behalf of the tenant or in, or relating to, the building in which the tenant resides, shall create a rebuttable presumption that such notice or other action is a reprisal against the tenant for engaging in such activities.",
+        "relations_hint": [],
+        "requirement": "A notice of termination of tenancy (other than for nonpayment of rent), notice of rent increase, or substantial alteration in tenancy terms received within six months after a tenant engages in protected activities or after another person takes such action on the tenant's behalf or relating to the building creates a rebuttable presumption of retaliation.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Rebuttable Presumption of Retaliation Within Six Months",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "M.G.L. c. 186, § 18",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental premises.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Such presumption shall be rebutted only by clear and convincing evidence that such person's action was not a reprisal against the tenant and that such person had sufficient independent justification for taking such action, and would have in fact taken such action, in the same manner and at the same time the action was taken, regardless of tenants engaging in, or the belief that tenants had engaged in, activities protected under this section.",
+        "relations_hint": [],
+        "requirement": "To rebut the presumption of retaliation, the landlord must prove by clear and convincing evidence that the action was not a reprisal and that the landlord had sufficient independent justification for the action and would have taken the same action in the same manner and at the same time regardless of the tenant's protected activities.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Rebuttal Standard for Retaliation Presumption",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "M.G.L. c. 186, § 18",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental premises.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Any waiver of this provision in any lease or other rental agreement shall be void and unenforceable.",
+        "relations_hint": [],
+        "requirement": "Any waiver of the reprisal and retaliation protections in a lease or other rental agreement is void and unenforceable.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Waiver Prohibition",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2804,
+    "output_tokens": 1914
+  }
+}

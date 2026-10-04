@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002212,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Applicants can show their landlord proof that their criminal record has errors or that they have changed. They can share documents about what they have done to improve.",
+    "summary_es": "Los inquilinos pueden mostrar al arrendador pruebas de que su antecedentes penales tienen errores o que han cambiado. Pueden compartir documentos sobre lo que han hecho para mejorar.",
+    "who_en": "This rule applies to all rental units except owner-occupied buildings with 4 or fewer units.",
+    "who_es": "Esta regla se aplica a todos los inmuebles de alquiler excepto los edificios ocupados por el propietario con 4 unidades o menos."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 987,
+    "output_tokens": 245
+  }
+}

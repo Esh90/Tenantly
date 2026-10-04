@@ -1,0 +1,67 @@
+{
+  "cost_usd": 0.0176344,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "approval_date": null,
+        "category": "rent_increase_limits",
+        "cite": "Berkeley Rent Ordinance (Measure BB), Annual General Adjustment",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Fully covered rental units under the Berkeley Rent Ordinance.",
+        "effective_date": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "max_AGA",
+            "text": "The maximum AGA is 5%.",
+            "unit": "percent",
+            "value": 5
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "The maximum AGA is 5%.",
+        "relations_hint": [],
+        "requirement": "The Annual General Adjustment for fully covered units cannot exceed 5% in any year, even if the CPI formula produces a higher figure. Banked AGAs may still be used to reach the rent ceiling.",
+        "title": "AGA capped at 5%",
+        "uncertain_fields": [
+          "coverage",
+          "effective_date"
+        ]
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "Berkeley Rent Ordinance (Measure BB), Just Cause",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Fully or partially covered units under the Berkeley Rent Ordinance.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "minimum_debt",
+            "text": "one month of the Fair Market Rent",
+            "unit": "months",
+            "value": 1
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "For a landlord to evict a tenant for nonpayment of rent, the tenant must owe an amount of rental debt equal to or greater than one month of the Fair Market Rent (FMR) value for a unit of equivalent size in the metro area Oakland-Fremont, CA HUD Metro FMR as determined by the US Department of Housing and Urban Development for the fiscal year in which the rent is demanded.",
+        "requirement": "A landlord may evict for nonpayment only if the rental debt is at least one month of HUD Fair Market Rent for a unit of equivalent size.",
+        "title": "Nonpayment eviction minimum debt",
+        "uncertain_fields": [
+          "coverage"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 4906,
+    "output_tokens": 735
+  }
+}

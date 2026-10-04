@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001956,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "Multiple link-only documents are referenced without actual text content. While NJ-ALG-01 indicates a ban on algorithmic rent coordination has been enacted, no actual regulatory text or quotes from the Hoboken city ordinance or New Jersey statutes have been provided. The links point to various ecode360 entries and legal code databases, but without the actual text being supplied, we cannot verify the existence of this rule or extract the required exact quote.",
+    "result": "text_not_supplied"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1111,
+    "output_tokens": 169
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.001949,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Owners cannot charge existing tenants a non-refundable fee when renewing a lease or changing roommates.",
+    "summary_es": "Los arrendadores no pueden cobrar a los inquilinos actuales una cuota no reembolsable cuando renuevan un contrato o cambian de compañeros de cuarto.",
+    "who_en": "This rule covers all residential rental property in Berkeley.",
+    "who_es": "Esta regla cubre todas las propiedades de alquiler residencial en Berkeley."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 949,
+    "output_tokens": 200
+  }
+}

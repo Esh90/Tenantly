@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.001956,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "This bill was proposed but not passed. It would have let Boston create rent limits and stronger eviction rules.",
+    "summary_es": "Este proyecto fue propuesto pero no fue aprobado. Habría permitido que Boston creara límites de renta y reglas más fuertes de desalojo.",
+    "who_en": "It would have covered all rental apartments and homes in Boston.",
+    "who_es": "Habría cubierto todos los apartamentos y casas de alquiler en Boston."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 966,
+    "output_tokens": 198
+  }
+}

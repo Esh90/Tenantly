@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002261,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Before evicting tenants in rent-controlled units, landlords must pay relocation money and file papers with LAHD. Only after filing can the eviction notice be served.",
+    "summary_es": "Antes de desalojar inquilinos en unidades de renta controlada, el arrendador debe pagar dinero de reubicación y presentar documentos ante LAHD. Solo después de presentar los documentos se puede entregar el aviso de desalojo.",
+    "who_en": "This rule applies to units covered by RSO or JCO in Los Angeles.",
+    "who_es": "Esta regla aplica a unidades cubiertas por RSO o JCO en Los Ángeles."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1031,
+    "output_tokens": 246
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.001974,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords cannot refuse to rent to someone because they receive public assistance or housing subsidies. They also cannot reject tenants because of program requirements.",
+    "summary_es": "Los arrendadores no pueden rechazar a alguien porque reciba asistencia pública o subsidios de vivienda. Tampoco pueden rechazar inquilinos por requisitos del programa.",
+    "who_en": "This rule applies to anyone who rents out housing.",
+    "who_es": "Esta regla se aplica a cualquier persona que alquile vivienda."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 939,
+    "output_tokens": 207
+  }
+}

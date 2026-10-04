@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002187,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The jurisdiction (Newark, NJ at city level) has no rule in the security_deposits category. While there are three enacted rules at the state level (NJ-DEP-01, NJ-DEP-02, NJ-DEP-03), the query specifically requests city-level rules for Newark. Multiple link-only sources are provided without accompanying text, preventing verification of whether they contain city-level security deposit regulations for Newark. Without accessible document text from these sources, and without state preemption/limitation sections provided to determine if state rules bar local regulation, the city-level gap cannot be resolved from available sources.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1152,
+    "output_tokens": 207
+  }
+}

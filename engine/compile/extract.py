@@ -99,8 +99,16 @@ def text_for_pass_a(view: DocView, sections, keep: set[str] | None) -> str:
 def run_pass(llm: LLM, view: DocView, text: str, pass_name: str) -> list[dict]:
     system, version = load_prompt("extract")
     model = config.MODEL_STRONG if pass_name == "A" else config.MODEL_FAST
+    user = view.wrapper(text)
+    if view.doc_type == "bill_status":
+        user += (
+            "\n\nThis document is a legislative bill status page, not statute text. Report the bill itself "
+            "as ONE rule record: category = the category its title concerns, quote = the bill title sentence "
+            'copied exactly, cite = the bill number (for example H.5222), coverage = {"const": true}, and '
+            "lifecycle from its history."
+        )
     res = llm.call(
-        stage=f"extract_{pass_name.lower()}", model=model, system=system, user=view.wrapper(text),
+        stage=f"extract_{pass_name.lower()}", model=model, system=system, user=user,
         tool=EMIT_RULES, prompt_version=version, ref=view.doc.doc_id, max_tokens=32000,
         effort="low",
     )  # fmt: skip
@@ -149,10 +157,15 @@ def finalize(view: DocView, rec: dict, pass_name: str) -> Rule | Rejection:
             continue
         q = ex.get("quote")
         eq = verify_quote(doc.text, q, view.spans) if q else None
+        predicate = ex["predicate"]
+        if predicate == {"const": True}:
+            # "an exemption exists but the facts cannot express it": unknown, never TRUE for everyone
+            predicate = {"const": "unknown"}
+            notes.append(f"exemption not expressible: {str(ex.get('description', ''))[:80]}")
         exemptions.append(
             Exemption(
                 description=str(ex.get("description", "")),
-                predicate=ex["predicate"],
+                predicate=predicate,
                 quote=eq.text if eq else None,
             )  # fmt: skip
         )
@@ -195,12 +208,23 @@ def finalize_all(view: DocView, raw: list[dict], pass_name: str):
     ok: list[Candidate] = []
     rej: list[Rejection] = []
     for rec in raw:
+        if not isinstance(rec, dict):
+            rej.append(Rejection(view.doc.doc_id, pass_name, "MALFORMED", str(rec)[:80]))
+            continue
         if rec.get("category") not in dsl_categories():
             rej.append(
                 Rejection(view.doc.doc_id, pass_name, "BAD_CATEGORY", str(rec.get("title", "")))
             )
             continue
-        out = finalize(view, rec, pass_name)
+        try:
+            out = finalize(view, rec, pass_name)
+        except (KeyError, TypeError, ValueError) as exc:
+            out = Rejection(
+                view.doc.doc_id,
+                pass_name,
+                f"MALFORMED_{type(exc).__name__}",
+                str(rec.get("title", "")),
+            )
         if isinstance(out, Rejection):
             rej.append(out)
         else:

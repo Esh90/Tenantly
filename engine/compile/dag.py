@@ -68,9 +68,7 @@ def compile_all(llm: LLM, only: list[str] | None = None, workers: int = 4):
     final = assemble.finalize_rules(all_raw)
     final, date_items = discrepancy.apply_alternative_dates(final, items)
 
-    raw_rel: list[dict] = []
-    for state in ("CA", "NJ", "MA"):
-        raw_rel += link.link_state(llm, state, final, views)
+    raw_rel = link.link_documents(llm, final, views)
     relations, rel_rejected = link.verify_relations(raw_rel, final, views)
 
     findings, gap_report = gaps.audit_gaps(llm, final, relations, views, links)

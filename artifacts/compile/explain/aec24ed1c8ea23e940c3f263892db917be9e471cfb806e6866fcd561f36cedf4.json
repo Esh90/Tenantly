@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002486,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Utility charges must be set as a fixed amount in the base rent when a tenancy starts. Landlords can charge separately only if utilities are separately metered and the lease requires the tenant to put utilities in their own name.",
+    "summary_es": "Los cargos de servicios deben ser un monto fijo incluido en la renta base cuando comienza un arrendamiento. Los arrendadores pueden cobrar por separado solo si los servicios tienen medidores separados y el contrato requiere que el inquilino ponga los servicios a su nombre.",
+    "who_en": "This rule covers all fully covered residential rental units in Berkeley where tenancies start on or after February 6, 2024.",
+    "who_es": "Esta regla cubre todas las unidades de alquiler residencial totalmente cubiertas en Berkeley donde los arrendamientos comienzan el 6 de febrero de 2024 o después."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1016,
+    "output_tokens": 294
+  }
+}

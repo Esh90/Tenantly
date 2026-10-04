@@ -1,0 +1,52 @@
+{
+  "cost_usd": 0.0116744,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "just_cause_eviction",
+        "cite": "M.G.L. c. 186, § 18",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential premises tenancies.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "presumption_period",
+            "text": "within six months",
+            "unit": "months",
+            "value": 6
+          },
+          {
+            "name": "damages_range",
+            "text": "not less than one month's rent or more than three month's rent, or the actual damages sustained by the tenant, whichever is greater",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "Liable for damages of one to three months' rent or actual damages, whichever is greater, plus costs and reasonable attorney's fees",
+        "quote": "Such presumption shall be rebutted only by clear and convincing evidence that such person's action was not a reprisal against the tenant and that such person had sufficient independent justification for taking such action, and would have in fact taken such action, in the same manner and at the same time the action was taken, regardless of tenants engaging in, or the belief that tenants had engaged in, activities protected under this section.",
+        "relations_hint": [
+          "Any waiver of this provision in any lease or other rental agreement shall be void and unenforceable."
+        ],
+        "requirement": "A termination notice (other than for nonpayment), rent increase, or substantial change in tenancy terms within six months after protected tenant activity is presumed to be a reprisal. The presumption can be rebutted only by clear and convincing evidence of independent justification.",
+        "tenancy_conditions": [
+          "Tenant engaged in protected activity (reporting violations, legal action, organizing tenants' union) within prior six months"
+        ],
+        "title": "Retaliation presumption for termination notices and rent increases",
+        "uncertain_fields": [
+          "category"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 1071,
+    "output_tokens": 906
+  }
+}

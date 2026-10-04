@@ -1,0 +1,32 @@
+{
+  "cost_usd": 0.003647,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "category": "rent_increase_limits",
+        "cite": "H.3744",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rentals in Boston.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "pending",
+        "quote": "An Act petition for a special law authorizing the city of Boston to implement rent stabilization and tenant eviction protections",
+        "relations_hint": [
+          "Local Approval Required"
+        ],
+        "requirement": "The bill authorizes the city of Boston to implement rent stabilization and tenant eviction protections.",
+        "title": "Boston Rent Stabilization and Tenant Eviction Protections"
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2662,
+    "output_tokens": 197
+  }
+}

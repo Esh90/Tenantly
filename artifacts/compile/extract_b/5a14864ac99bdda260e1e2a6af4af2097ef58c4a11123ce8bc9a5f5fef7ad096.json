@@ -1,0 +1,103 @@
+{
+  "cost_usd": 0.00922,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": "Approved January 20, 2026.",
+        "approval_date": "2026-01-20",
+        "category": "application_screening_fees",
+        "cite": "N.J.S.A. 46:8-18.1",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties are covered except one-family and two-family dwellings and licensees of the New Jersey Real Estate Commission who are not the landlord.",
+        "effective_date": null,
+        "effective_expression": "first day of the fourth month next following the date of enactment",
+        "exemptions": [
+          {
+            "description": "One-family or two-family dwellings offered for rent",
+            "predicate": {
+              "property_type": "single_family"
+            },
+            "quote": "a dwelling unit located in a one-family or two-family dwelling that is offered for rent"
+          },
+          {
+            "description": "Licensee of the New Jersey Real Estate Commission, unless the licensee is the landlord",
+            "predicate": {
+              "not": {
+                "fact": "owner_is_natural_person"
+              }
+            }
+          }
+        ],
+        "key_values": [
+          {
+            "name": "application fee cap",
+            "text": "fee to apply to lease or sublease a residential rental property for dwelling purposes, which exceeds $50",
+            "unit": "usd",
+            "value": 50
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "Up to $500 for a first offense, up to $750 for a second offense, and up to $1,000 for each subsequent offense, collected by summary proceedings. The wrongfully charged amount shall be remitted to the applicant or prospective tenant.",
+        "quote": "A landlord, or agent thereof, shall not require an application or other similar fee to apply to lease or sublease a residential rental property for dwelling purposes, which exceeds $50.",
+        "relations_hint": [],
+        "requirement": "A landlord or agent cannot charge an application or similar fee exceeding $50 for residential rental property.",
+        "tenancy_conditions": [],
+        "title": "Residential rental property application fee cap at $50",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": "Approved January 20, 2026.",
+        "approval_date": "2026-01-20",
+        "category": "application_screening_fees",
+        "cite": "N.J.S.A. 46:8-18.1(d)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties covered by the application fee cap are subject to annual adjustments.",
+        "effective_date": null,
+        "effective_expression": "January 1 of the year next following enactment",
+        "exemptions": [
+          {
+            "description": "No adjustment if percent change in Consumer Price Index is not greater than zero",
+            "predicate": {
+              "not": {
+                "fact": "other"
+              }
+            },
+            "quote": "An adjustment in the fee limitation shall be made only if the percent change in the Consumer Price Index for the period specified is greater than zero."
+          }
+        ],
+        "key_values": [
+          {
+            "name": "adjustment period",
+            "text": "12-month period ending October 31 of the previous year",
+            "unit": "months",
+            "value": 12
+          },
+          {
+            "name": "index",
+            "text": "Consumer Price Index for All Urban Consumers, New York-Northern New Jersey-Long Island Metropolitan Area, All Items (1982-84=100)"
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Beginning on January 1 of the year next following enactment of P.L.2025, c.405 (C.46:8-18.1 et seq.) and each year thereafter, the amount of the fee limitation established pursuant to subsection a. of this section shall be adjusted by the Director of the Division of Consumer Affairs in the Department of Law and Public Safety in direct proportion to the percent change in the Consumer Price Index over a 12-month period ending October 31 of the previous year.",
+        "relations_hint": [],
+        "requirement": "The Director of Consumer Affairs shall annually adjust the application fee cap based on the percent change in the Consumer Price Index for the 12-month period ending October 31 of the previous year, effective January 1 each year.",
+        "tenancy_conditions": [],
+        "title": "Annual adjustment of application fee limitation by Consumer Price Index",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 3185,
+    "output_tokens": 1207
+  }
+}

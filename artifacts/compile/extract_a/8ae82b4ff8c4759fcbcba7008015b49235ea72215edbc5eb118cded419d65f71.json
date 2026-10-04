@@ -1,0 +1,66 @@
+{
+  "cost_usd": 0.0333024,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "just_cause_eviction",
+        "cite": "LAMC 151.09; LAMC 165.03",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Units covered by the RSO or JCO in Los Angeles.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "relocation_eligible_under_3yrs",
+            "text": "$11,000",
+            "unit": "usd",
+            "valid_from": "2026-07-01",
+            "valid_to": "2027-06-30",
+            "value": 11000
+          },
+          {
+            "name": "relocation_eligible_3yrs_plus",
+            "text": "$14,400",
+            "unit": "usd",
+            "valid_from": "2026-07-01",
+            "valid_to": "2027-06-30",
+            "value": 14400
+          },
+          {
+            "name": "relocation_qualified_under_3yrs",
+            "text": "$23,150",
+            "unit": "usd",
+            "valid_from": "2026-07-01",
+            "valid_to": "2027-06-30",
+            "value": 23150
+          },
+          {
+            "name": "relocation_qualified_3yrs_plus",
+            "text": "$27,400",
+            "unit": "usd",
+            "valid_from": "2026-07-01",
+            "valid_to": "2027-06-30",
+            "value": 27400
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "Failure to file the Landlord Declaration with the LAHD makes the eviction a violation of the RSO or JCO.",
+        "quote": "All tenant not- at-fault evictions require payment of relocation assistance and the filing of a \nDeclaration of Intent to Evict form with the Los Angeles Housing Department (LAHD) before \nevicting tenants from units covered by the Rent Stabilization Ordinance (RSO) or the Just Cause \nOrdinance (JCO).",
+        "requirement": "Landlords must pay relocation assistance and file a Declaration of Intent to Evict with LAHD before a no-fault eviction of tenants in RSO or JCO units. Notice to terminate may be served only after filing.",
+        "title": "No-fault eviction relocation assistance and declaration filing",
+        "uncertain_fields": [
+          "effective_date"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 12870,
+    "output_tokens": 709
+  }
+}

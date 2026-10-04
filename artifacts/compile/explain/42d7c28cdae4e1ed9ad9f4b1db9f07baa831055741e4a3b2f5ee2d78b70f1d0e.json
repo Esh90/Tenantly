@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002167,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords can charge a cuota de solicitud to check an applicant's background. This fee cannot be more than $30 per person. The amount can go up each year based on inflation.",
+    "summary_es": "Los arrendadores pueden cobrar una cuota de solicitud para verificar el historial de un solicitante. Esta cuota no puede ser más de $30 por persona. El monto puede aumentar cada año según la inflación.",
+    "who_en": "This rule applies to all residential rental property owners and their agents.",
+    "who_es": "Esta regla aplica a todos los dueños de propiedades residenciales en alquiler y sus agentes."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 972,
+    "output_tokens": 239
+  }
+}

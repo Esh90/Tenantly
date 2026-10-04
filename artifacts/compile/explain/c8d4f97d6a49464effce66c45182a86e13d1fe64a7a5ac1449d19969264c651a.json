@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002153,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords cannot use credit scores to accept or reject rental applications. They may only look at credit history if they have no rental history available.",
+    "summary_es": "Los arrendadores no pueden usar puntuaciones de crédito para aceptar o rechazar solicitudes de renta. Solo pueden revisar el historial de crédito si no tienen historial de renta disponible.",
+    "who_en": "This rule covers housing providers with DND funding or land, or income-restricted inclusionary units.",
+    "who_es": "Esta regla aplica a proveedores de vivienda con financiamiento DND o terrenos, o unidades inclusionarias con ingresos limitados."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 958,
+    "output_tokens": 239
+  }
+}

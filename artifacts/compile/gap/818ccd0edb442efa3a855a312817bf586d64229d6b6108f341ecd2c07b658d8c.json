@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002749,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The documents provided do not contain text substantive enough to identify a rule regarding screening_restrictions at the city level for San Diego. Document D073 is truncated and incomplete (cutting off mid-text at \"Resi\"). Document D076 is a draft staff report with only the header visible. The link-only sources (D015, D017-D021, D028, D074-D077) cannot be evaluated as they contain no text. While D075 references Division 8 prohibition based on source of income (matching the enacted rule SD-SCR-01), and D074 references Division 11 on algorithmic pricing, neither provides substantive text to establish screening_restrictions policy. No actual screening restriction rules are documented in the available text.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1574,
+    "output_tokens": 235
+  }
+}

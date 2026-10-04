@@ -1,0 +1,34 @@
+{
+  "cost_usd": 0.0059384,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "screening_restrictions",
+        "cite": "Boston Fair Housing Regulations",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All housing in the City of Boston.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "In the City of Boston, it’s illegal to discriminate when renting, buying, selling, or securing financing for any housing.",
+        "relations_hint": [],
+        "requirement": "Discrimination in renting, buying, selling, or financing housing is illegal in Boston. The page lists refusing to accept rental assistance such as Section 8 vouchers as an example of discrimination.",
+        "title": "Housing discrimination prohibited, including rental assistance refusal",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 1193,
+    "output_tokens": 308
+  }
+}

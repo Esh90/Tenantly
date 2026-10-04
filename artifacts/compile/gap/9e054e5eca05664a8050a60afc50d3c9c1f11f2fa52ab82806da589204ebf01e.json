@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002069,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The category algorithmic_rent_setting at the city level (Newark, NJ) shows a rule exists (NJ-ALG-01 Ban on algorithmic rent coordination - enacted). Multiple links to legal sources are provided (D060-D064, D070-D072) referencing New Jersey statutes and code sections related to algorithmic rent setting, but the actual text of these sources has not been supplied. Without the text content from these linked documents, it is impossible to verify the rule, extract exact quotes, or confirm applicability to Newark specifically.",
+    "result": "text_not_supplied"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1109,
+    "output_tokens": 192
+  }
+}

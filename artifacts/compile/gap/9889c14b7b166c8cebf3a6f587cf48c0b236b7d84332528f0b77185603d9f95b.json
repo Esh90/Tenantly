@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002581,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The documents provided (D039-D043) are guidance documents and a motion related to the Just Cause For Eviction Ordinance and RSO overview, relocation assistance, and rent increase calculators. None of these documents contain text addressing screening restrictions or the specific rules listed (CA-SCR-01, CA-SCR-02, CA-SCR-03). The link-only documents do not provide accessible text to evaluate. The available sources do not contain substantive text addressing screening restrictions at the Los Angeles city level.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1646,
+    "output_tokens": 187
+  }
+}

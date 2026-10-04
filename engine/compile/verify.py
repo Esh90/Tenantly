@@ -12,6 +12,9 @@ from dataclasses import dataclass
 
 MIN_QUOTE = 20
 _WS = re.compile(r"\s+")
+# typography only: curly quotes and dashes match their ASCII forms (one character for one, so
+# raw offsets are unchanged); no letter or digit is ever altered
+_TYPO = str.maketrans({"’": "'", "‘": "'", "“": '"', "”": '"', "–": "-", "—": "-"})
 
 
 @dataclass(frozen=True)
@@ -38,7 +41,7 @@ def _normalize(text: str, lo: int, hi: int) -> tuple[str, list[int]]:
                 idx.append(i)
             i = j
         else:
-            out.append(ch)
+            out.append(ch.translate(_TYPO))
             idx.append(i)
             i += 1
     return "".join(out), idx
@@ -52,7 +55,7 @@ def verify_quote(raw: str, quote: str, spans: list[tuple[int, int]]) -> Span | N
         pos = raw.find(quote, lo, hi)
         if pos >= 0:
             return Span(pos, pos + len(quote), raw[pos : pos + len(quote)], True)
-    want = _WS.sub(" ", quote.strip())
+    want = _WS.sub(" ", quote.strip()).translate(_TYPO)
     if len(want) < MIN_QUOTE:
         return None
     for lo, hi in spans:

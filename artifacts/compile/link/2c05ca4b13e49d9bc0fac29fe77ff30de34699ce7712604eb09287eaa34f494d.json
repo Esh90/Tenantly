@@ -1,0 +1,39 @@
+{
+  "cost_usd": 0.0059992,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "relations": [
+      {
+        "doc_id": "D023",
+        "effect": "supersede",
+        "quote": "Residential real property subject to a local ordinance requiring just cause for termination of a residential tenancy adopted on or before September 1, 2019, in which case the local ordinance shall apply.",
+        "source_rule_id": "CA-JCE-01",
+        "target_rule_id": null,
+        "target_scope": {
+          "category": "just_cause_eviction",
+          "level": "city"
+        },
+        "type": "yields_to"
+      },
+      {
+        "doc_id": "D023",
+        "effect": "supersede",
+        "quote": "Residential real property subject to a local ordinance requiring just cause for termination of a residential tenancy adopted or amended after September 1, 2019, that is more protective than this section, in which case the local ordinance shall apply.",
+        "source_rule_id": "CA-JCE-01",
+        "target_rule_id": null,
+        "target_scope": {
+          "category": "just_cause_eviction",
+          "level": "city"
+        },
+        "type": "yields_to"
+      }
+    ]
+  },
+  "prompt_version": 2,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 916,
+    "input_tokens": 1163,
+    "output_tokens": 349
+  }
+}

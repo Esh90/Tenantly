@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002429,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The provided documents (D010-D014) address Boston Fair Chance Tenant Selection, Fair Housing Regulations, and Housing Stability Notification Act, but contain no text related to security deposits. The documents appear to be truncated or cover different housing topics. While MA state-level rules MA-DEP-01 and MA-DEP-02 exist for maximum security deposit amounts and upfront payment limits, no Boston city-level security deposit ordinance is present in the supplied document text. The link-only signals (D054-D056, D059) provide no document text to review. No ordinance or regulation text addressing Boston's security deposit rules was found in the provided sources.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1329,
+    "output_tokens": 220
+  }
+}

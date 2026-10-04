@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002019,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "Multiple link-only sources are provided (D060-D064, D070-D072) that appear to reference New Jersey and Newark algorithmic rent setting regulations, but no actual text content from these sources has been supplied. The category rules NJ-ALG-01 and NWK-ALG-01 are referenced as enacted but their specific text is not provided. Without access to the actual document text, it cannot be determined whether a specific rule exists for this jurisdiction and category combination.",
+    "result": "text_not_supplied"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1129,
+    "output_tokens": 178
+  }
+}

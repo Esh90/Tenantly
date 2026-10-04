@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.003393,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "San Diego Code §98.0800 is a screening restrictions law. The full text was not provided to explain the specific requirements.",
+    "summary_es": "El Código de San Diego §98.0800 es una ley sobre restricciones de evaluación de inquilinos. No se proporcionó el texto completo para explicar los requisitos específicos.",
+    "who_en": "This rule covers rental properties in San Diego, CA.",
+    "who_es": "Esta regla aplica a propiedades de alquiler en San Diego, CA."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1888,
+    "output_tokens": 301
+  }
+}

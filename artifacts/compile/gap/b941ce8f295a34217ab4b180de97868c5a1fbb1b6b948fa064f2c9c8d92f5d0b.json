@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002111,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "Jersey City has an enacted rule on algorithmic rent setting identified as JC-ALG-01 Jersey City §218-12. This represents a local ordinance addressing the category of algorithmic_rent_setting at the city level for Jersey City, NJ.",
+    "quote": "Jersey City §218-12",
+    "result": "found",
+    "section_id": "JC-ALG-01"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1246,
+    "output_tokens": 173
+  }
+}

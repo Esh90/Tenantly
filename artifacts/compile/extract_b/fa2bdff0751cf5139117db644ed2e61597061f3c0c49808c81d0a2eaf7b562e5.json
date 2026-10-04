@@ -1,0 +1,437 @@
+{
+  "cost_usd": 0.039508,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "approval_date": "2026-01-01",
+        "category": "just_cause_eviction",
+        "cite": "Cal. Civ. Code § 1946.2(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real properties, except those specifically exempted.",
+        "effective_date": "2024-04-01",
+        "exemptions": [
+          {
+            "description": "Transient and tourist hotel occupancy",
+            "predicate": {
+              "const": true
+            },
+            "quote": "Transient and tourist hotel occupancy as defined in subdivision (b) of Section 1940."
+          },
+          {
+            "description": "Housing accommodations in nonprofit hospital, religious facility, extended care facility, licensed residential care facility for the elderly, or adult residential facility",
+            "predicate": {
+              "const": true
+            },
+            "quote": "Housing accommodations in a nonprofit hospital, religious facility, extended care facility, licensed residential care facility for the elderly, as defined in Section 1569.2 of the Health and Safety Code, or an adult residential facility, as defined in Chapter 6 of Division 6 of Title 22 of the Manual of Policies and Procedures published by the State Department of Social Services."
+          },
+          {
+            "description": "Dormitories owned and operated by institution of higher education or K-12 school",
+            "predicate": {
+              "const": true
+            },
+            "quote": "Dormitories owned and operated by an institution of higher education or a kindergarten and grades 1 to 12, inclusive, school."
+          },
+          {
+            "description": "Housing where tenant shares bathroom or kitchen with owner who maintains principal residence",
+            "predicate": {
+              "fact": "shares_kitchen_bath_with_owner",
+              "op": "==",
+              "value": true
+            },
+            "quote": "Housing accommodations in which the tenant shares bathroom or kitchen facilities with the owner who maintains their principal residence at the residential real property."
+          },
+          {
+            "description": "Single-family owner-occupied residence renting no more than two units or bedrooms, including ADU or JADU",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "property_type",
+                  "op": "==",
+                  "value": "single_family"
+                },
+                {
+                  "fact": "owner_occupied",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "fact": "landlord_unit_count",
+                  "op": "<=",
+                  "value": 2
+                }
+              ]
+            },
+            "quote": "A residence in which the owner-occupant rents or leases no more than two units or bedrooms, including, but not limited to, an accessory dwelling unit or a junior accessory dwelling unit."
+          },
+          {
+            "description": "Mobilehome",
+            "predicate": {
+              "fact": "property_type",
+              "op": "==",
+              "value": "single_family"
+            }
+          },
+          {
+            "description": "Two-unit property where owner occupied one unit as principal residence at beginning of tenancy, neither is ADU or JADU",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "units",
+                  "op": "==",
+                  "value": 2
+                },
+                {
+                  "fact": "owner_occupied",
+                  "op": "==",
+                  "value": true
+                }
+              ]
+            },
+            "quote": "A property containing two separate dwelling units within a single structure in which the owner occupied one of the units as the owner's principal place of residence at the beginning of the tenancy, so long as the owner continues in occupancy, and neither unit is an accessory dwelling unit or a junior accessory dwelling unit."
+          },
+          {
+            "description": "Housing issued certificate of occupancy within previous 15 years, unless mobilehome",
+            "predicate": {
+              "fact": "co_date",
+              "op": ">",
+              "value": {
+                "as_of_minus_years": 15
+              }
+            },
+            "quote": "Housing that has been issued a certificate of occupancy within the previous 15 years, unless the housing is a mobilehome."
+          },
+          {
+            "description": "Residential real property alienable separate from other dwelling units, owned by natural person and not entity with specific restrictions, with proper notice provided",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "unit_separately_alienable",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "fact": "owner_is_natural_person",
+                  "op": "==",
+                  "value": true
+                }
+              ]
+            },
+            "quote": "Residential real property, including a mobilehome, that is alienable separate from the title to any other dwelling unit, provided that both of the following apply: The owner is not any of the following: A real estate investment trust, as defined in Section 856 of the Internal Revenue Code. A corporation. A limited liability company in which at least one member is a corporation. Management of a mobilehome park, as defined in Section 798.2."
+          },
+          {
+            "description": "Housing restricted by deed or agreement as affordable for very low, low, or moderate income persons",
+            "predicate": {
+              "fact": "subsidized_or_affordable",
+              "op": "==",
+              "value": true
+            },
+            "quote": "Housing restricted by deed, regulatory restriction contained in an agreement with a government agency, or other recorded document as affordable housing for persons and families of very low, low, or moderate income, as defined in Section 50093 of the Health and Safety Code, or subject to an agreement that provides housing subsidies for affordable housing for persons and families of very low, low, or moderate income, as defined in Section 50093 of the Health and Safety Code or comparable federal statutes."
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "Owner attempting to recover possession in material violation is liable for actual damages, attorney's fees and costs in court's discretion, and upon showing of willful or oppressive conduct, up to three times actual damages and punitive damages. Attorney General or city/county attorney may seek injunctive relief.",
+        "quote": "after a tenant has continuously and lawfully occupied a residential real property for 12 months, the owner of the residential real property shall not terminate a tenancy without just cause, which shall be stated in the written notice to terminate tenancy.",
+        "relations_hint": [
+          "This section does not apply to residential real property subject to a local ordinance requiring just cause adopted on or before September 1, 2019.",
+          "For ordinances adopted after September 1, 2019 that are more protective than this section, the local ordinance applies instead.",
+          "A residential real property shall not be subject to both a local ordinance requiring just cause and this section."
+        ],
+        "requirement": "After a tenant has continuously and lawfully occupied residential real property for 12 months, the owner must not terminate the tenancy without just cause stated in the written notice. If additional adult tenants are added before 24 months of continuous occupation by an existing tenant, the requirement applies only if either all tenants have occupied for 12 months or one or more tenants have occupied for 24 months.",
+        "sunset_date": "2030-01-01",
+        "tenancy_conditions": [
+          "continuously and lawfully occupied for 12 months",
+          "if additional adult tenants added before 24 months, all tenants occupied 12+ months or one tenant occupied 24+ months"
+        ],
+        "title": "Just Cause Requirement After 12 Months"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "Cal. Civ. Code § 1946.2(b)(1)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real properties, except those specifically exempted.",
+        "effective_date": "2024-04-01",
+        "exemptions": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "At-fault just cause, which means any of the following: Default in the payment of rent. A breach of a material term of the lease, as described in paragraph (3) of Section 1161 of the Code of Civil Procedure, including, but not limited to, violation of a provision of the lease after being issued a written notice to correct the violation.",
+        "requirement": "Owner may terminate a tenancy for just cause based on tenant default in rent payment, breach of material lease terms after written notice to cure, maintaining a nuisance, committing waste, refusing to execute lease renewal, criminal activity on property, illegal assignment or subletting, refusing owner entry, using premises for unlawful purpose, or employee/agent failure to vacate after termination.",
+        "sunset_date": "2030-01-01",
+        "title": "At-Fault Just Cause Grounds",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "Cal. Civ. Code § 1946.2(b)(2)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real properties, except those specifically exempted.",
+        "effective_date": "2024-04-01",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "Owner occupancy duration",
+            "text": "12 continuous months as that person's primary residence",
+            "unit": "months",
+            "value": 12
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "No-fault just cause, which means any of the following: (A) (i) Intent to occupy the residential real property by the owner or the owner's spouse, domestic partner, children, grandchildren, parents, or grandparents for a minimum of 12 continuous months as that person's primary residence.",
+        "requirement": "Owner may terminate a tenancy for no-fault just cause based on intent of owner or specified family members to occupy the property as primary residence for 12 continuous months, withdrawal from rental market, compliance with government order or habitability requirement necessitating vacation, or intent to demolish or substantially remodel.",
+        "sunset_date": "2030-01-01",
+        "title": "No-Fault Just Cause Grounds"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "Cal. Civ. Code § 1946.2(b)(2)(A)(ii)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All leases entered into on or after July 1, 2020; mobilehomes on or after July 1, 2022.",
+        "effective_date": "2020-07-01",
+        "exemptions": [
+          {
+            "description": "Intended occupant already occupies rental unit on property",
+            "predicate": {
+              "const": true
+            },
+            "quote": "This subparagraph does not apply if the intended occupant occupies a rental unit on the property or if a vacancy of a similar unit already exists at the property."
+          },
+          {
+            "description": "Similar vacancy already exists at property",
+            "predicate": {
+              "const": true
+            },
+            "quote": "This subparagraph does not apply if the intended occupant occupies a rental unit on the property or if a vacancy of a similar unit already exists at the property."
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "For leases entered into on or after July 1, 2020, or July 1, 2022, if the lease is for a tenancy in a mobilehome, clause (i) shall apply only if the tenant agrees, in writing, to the termination, or if a provision of the lease allows the owner to terminate the lease if the owner, or the owner's spouse, domestic partner, children, grandchildren, parents, or grandparents, unilaterally decides to occupy the residential real property.",
+        "requirement": "For leases entered into on or after July 1, 2020 (or July 1, 2022 for mobilehomes), owner occupancy termination requires either written tenant agreement or a lease provision allowing unilateral owner termination for owner occupancy. Owner occupancy termination does not apply if intended occupant already occupies a unit on property or a vacancy of similar unit exists.",
+        "tenancy_conditions": [
+          "lease commenced or renewed on or after July 1, 2020 (or July 1, 2022 for mobilehomes)"
+        ],
+        "title": "Owner Occupancy Intent Requirements and Restrictions"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "Cal. Civ. Code § 1946.2(b)(2)(A)(v)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real properties for which owner occupancy is claimed as just cause.",
+        "effective_date": "2024-04-01",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "Move-in deadline",
+            "text": "within 90 days after the tenant vacates",
+            "unit": "days",
+            "value": 90
+          },
+          {
+            "name": "Required occupancy duration",
+            "text": "as a primary residence for at least 12 consecutive months",
+            "unit": "months",
+            "value": 12
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Clause (i) applies only if the intended occupant moves into the rental unit within 90 days after the tenant vacates and occupies the rental unit as a primary residence for at least 12 consecutive months.",
+        "requirement": "For owner occupancy termination to be valid, the intended occupant must move into the rental unit within 90 days after tenant vacates and must occupy it as primary residence for at least 12 consecutive months.",
+        "sunset_date": "2030-01-01",
+        "title": "Timing and Occupancy Requirements for Owner Move-In Termination"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "Cal. Civ. Code § 1946.2(b)(2)(A)(vi)(I)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real properties where owner occupancy termination was claimed.",
+        "effective_date": "2024-04-01",
+        "exemptions": [
+          {
+            "description": "Intended occupant dies before occupying as primary residence for 12 months",
+            "predicate": {
+              "const": true
+            },
+            "quote": "If the intended occupant moves into the rental unit within 90 days after the tenant vacates, but dies before having occupied the rental unit as a primary residence for 12 months, as required by clause (vi), this will not be considered a failure to comply with this section or a material violation of this section by the owner as provided in subdivision (h)."
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "If the intended occupant fails to occupy the rental unit within 90 days after the tenant vacates or fails to occupy the rental unit as their primary residence for at least 12 consecutive months, the owner shall offer the unit to the tenant who vacated it at the same rent and lease terms in effect at the time the tenant vacated and shall reimburse the tenant for reasonable moving expenses incurred in excess of any relocation assistance that was paid to the tenant in connection with the written notice.",
+        "requirement": "If intended occupant fails to occupy within 90 days or does not occupy as primary residence for 12 consecutive months, owner must offer unit to original tenant at same rent and terms and reimburse reasonable moving expenses beyond relocation assistance already paid.",
+        "sunset_date": "2030-01-01",
+        "title": "Reinstatement and Reimbursement for Failed Owner Move-In"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "Cal. Civ. Code § 1946.2(b)(2)(D)(ii)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real properties for which substantial remodel is claimed as just cause.",
+        "effective_date": "2024-04-01",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "Minimum vacation period",
+            "text": "at least 30 consecutive days",
+            "unit": "days",
+            "value": 30
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "For purposes of this subparagraph, \"substantially remodel\" means either of the following that cannot be reasonably accomplished in a safe manner that allows the tenant to remain living in the place and that requires the tenant to vacate the residential real property for at least 30 consecutive days: (I) The replacement or substantial modification of any structural, electrical, plumbing, or mechanical system that requires a permit from a governmental agency. (II) The abatement of hazardous materials, including lead-based paint, mold, or asbestos, in accordance with applicable federal, state, and local laws.",
+        "requirement": "Substantial remodel means replacement or substantial modification of structural, electrical, plumbing, or mechanical systems requiring permit, or hazardous materials abatement, that cannot be safely accomplished with tenant present and requires vacation for at least 30 days. Cosmetic improvements alone do not qualify.",
+        "sunset_date": "2030-01-01",
+        "title": "Substantial Remodel Definition"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "Cal. Civ. Code § 1946.2(b)(2)(D)(iii)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real properties.",
+        "effective_date": "2024-04-01",
+        "exemptions": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Cosmetic improvements alone, including painting, decorating, and minor repairs, or other work that can be performed safely without having the residential real property vacated, do not qualify as substantial remodel.",
+        "requirement": "Cosmetic improvements including painting, decorating, and minor repairs, or work performable safely without vacancy, do not qualify as substantial remodel justifying termination.",
+        "sunset_date": "2030-01-01",
+        "title": "Cosmetic Work Exclusion from Substantial Remodel"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "Cal. Civ. Code § 1946.2(c)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real properties for which termination is based on curable lease violations.",
+        "effective_date": "2024-04-01",
+        "exemptions": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Before an owner of residential real property issues a notice to terminate a tenancy for just cause that is a curable lease violation, the owner shall first give notice of the violation to the tenant with an opportunity to cure the violation pursuant to paragraph (3) of Section 1161 of the Code of Civil Procedure. If the violation is not cured within the time period set forth in the notice, a three-day notice to quit without an opportunity to cure may thereafter be served to terminate the tenancy.",
+        "requirement": "For curable lease violations, owner must first give notice of violation with opportunity to cure. Only if violation is not cured within specified time may a three-day notice to quit be served.",
+        "sunset_date": "2030-01-01",
+        "title": "Cure Notice for Curable Violations"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "Cal. Civ. Code § 1946.2(d)(1)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real properties subject to just cause requirements.",
+        "effective_date": "2024-04-01",
+        "exemptions": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "For a tenancy for which just cause is required to terminate the tenancy under subdivision (a), if an owner of residential real property issues a termination notice based on a no-fault just cause described in paragraph (2) of subdivision (b), the owner shall, regardless of the tenant's income, at the owner's option, do one of the following: (A) Assist the tenant to relocate by providing a direct payment to the tenant as described in paragraph (3). (B) Waive in writing the payment of rent for the final month of the tenancy, prior to the rent becoming due.",
+        "requirement": "For no-fault just cause terminations, owner must provide either direct relocation payment or written rent waiver for final month, regardless of tenant income.",
+        "sunset_date": "2030-01-01",
+        "title": "Relocation Assistance or Rent Waiver for No-Fault Termination"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "Cal. Civ. Code § 1946.2(d)(3)(A)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real properties subject to just cause requirements with no-fault terminations.",
+        "effective_date": "2024-04-01",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "Relocation assistance amount",
+            "text": "equal to one month of the tenant's rent",
+            "unit": "months",
+            "value": 1
+          },
+          {
+            "name": "Payment deadline",
+            "text": "within 15 calendar days of service of the notice",
+            "unit": "days",
+            "value": 15
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The amount of relocation assistance or rent waiver shall be equal to one month of the tenant's rent that was in effect when the owner issued the notice to terminate the tenancy. Any relocation assistance shall be provided within 15 calendar days of service of the notice.",
+        "requirement": "Relocation assistance or rent waiver equals one month of rent in effect when termination notice issued. Relocation assistance must be provided within 15 calendar days of notice service.",
+        "sunset_date": "2030-01-01",
+        "title": "Relocation Assistance Amount and Timing"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "Cal. Civ. Code § 1946.2(f)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real properties subject to just cause requirements.",
+        "effective_date": "2020-07-01",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "Notice font size",
+            "text": "in no less than 12-point type",
+            "unit": "point",
+            "value": 12
+          },
+          {
+            "name": "Deadline for existing tenancies",
+            "text": "no later than August 1, 2020",
+            "value": "2020-08-01"
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "An owner of residential real property subject to this section shall provide notice to the tenant as follows: (1) (A) Except as provided in subparagraph (B), for any tenancy commenced or renewed on or after July 1, 2020, in the lease or rental agreement, as an addendum to the lease or rental agreement, or as a written notice signed by the tenant, with a copy provided to the tenant. (2) (A) Except as provided in subparagraph (B), for a tenancy existing prior to July 1, 2020, by written notice to the tenant no later than August 1, 2020, or as an addendum to the lease or rental agreement.",
+        "requirement": "Owner must notify tenant of just cause requirements: for leases commenced or renewed on or after July 1, 2020, in the lease, as addendum, or written notice; for earlier tenancies, by written notice by August 1, 2020, or as addendum. Notice must be in no less than 12-point type and include statutory language about rent limits and just cause.",
+        "tenancy_conditions": [
+          "for new leases: commenced or renewed on or after July 1, 2020",
+          "for existing leases: prior to July 1, 2020"
+        ],
+        "title": "Notice Requirements for Section 1946.2"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "Cal. Civ. Code § 1946.2(g)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real properties subject to just cause requirements.",
+        "effective_date": "2024-04-01",
+        "exemptions": [],
+        "lifecycle": "enacted",
+        "penalty": "Termination notice is rendered void.",
+        "quote": "An owner's failure to comply with any provision of this section shall render the written termination notice void.",
+        "requirement": "Any failure by owner to comply with section 1946.2 provisions renders the termination notice void.",
+        "sunset_date": "2030-01-01",
+        "title": "Void Termination Notice for Non-Compliance"
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 7708,
+    "output_tokens": 6360
+  }
+}

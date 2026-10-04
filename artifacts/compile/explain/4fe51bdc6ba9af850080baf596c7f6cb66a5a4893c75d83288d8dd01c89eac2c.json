@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002238,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "A landlord can evict an employee or agent who does not move out after losing their job. This is one legal reason for eviction.",
+    "summary_es": "Un arrendador puede desalojar con causa justa a un empleado o agente que no se muda después de perder su trabajo. Esta es una razón legal para desalojo.",
+    "who_en": "This rule applies to all residential rental properties in San Diego covered by SDMC Chapter 9, Article 8, Division 7.",
+    "who_es": "Esta regla aplica a todas las propiedades residenciales de alquiler en San Diego cubiertas por SDMC Capítulo 9, Artículo 8, División 7."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 988,
+    "output_tokens": 250
+  }
+}

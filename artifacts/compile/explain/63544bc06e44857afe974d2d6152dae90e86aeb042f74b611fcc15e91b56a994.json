@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002192,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Applicants can show proof that wrong information appears in their criminal record or provide evidence of how they have changed and improved their lives.",
+    "summary_es": "Los solicitantes pueden mostrar pruebas de que información incorrecta aparece en su antecedentes penales o proporcionar evidencia de cómo han cambiado y mejorado sus vidas.",
+    "who_en": "This applies to all rental homes except those owned and run by the owner with fewer than four units.",
+    "who_es": "Esto se aplica a todas las viviendas de alquiler excepto aquellas que son propiedad y administradas por el dueño con menos de cuatro unidades."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 982,
+    "output_tokens": 242
+  }
+}

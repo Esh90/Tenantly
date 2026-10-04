@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001455,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "detail_es": "No se pudo capturar la página oficial de MA (https://www.mass.gov/doc/803-cmr-5-criminal-offender-record-information-cori-housing/download), por lo que las normas de la misma no están en nuestras fuentes.",
+    "title_es": "No se pudo leer el texto oficial (D056)"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 710,
+    "output_tokens": 149
+  }
+}

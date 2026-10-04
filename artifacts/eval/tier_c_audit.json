@@ -1,0 +1,363 @@
+[
+  {
+    "category": "rent_increase_limits",
+    "citation": "Cal. Civ. Code §1947.12",
+    "jurisdiction": "California",
+    "signals": 2,
+    "skipped": "already covered by a rule from supplied text",
+    "sources": [
+      "challenge_brief_public.pdf"
+    ],
+    "specific_signals": 1,
+    "status": "enacted"
+  },
+  {
+    "category": "just_cause_eviction",
+    "citation": "Cal. Civ. Code §1946.2",
+    "jurisdiction": "California",
+    "signals": 2,
+    "skipped": "already covered by a rule from supplied text",
+    "sources": [
+      "challenge_brief_public.pdf"
+    ],
+    "specific_signals": 1,
+    "status": "enacted"
+  },
+  {
+    "category": "security_deposits",
+    "citation": "Cal. Civ. Code §1950.5",
+    "jurisdiction": "California",
+    "signals": 1,
+    "skipped": "no verified signal names the measure",
+    "sources": [],
+    "specific_signals": 0,
+    "status": "enacted"
+  },
+  {
+    "category": "application_screening_fees",
+    "citation": "Cal. Civ. Code §1950.6",
+    "jurisdiction": "California",
+    "signals": 2,
+    "skipped": "already covered by a rule from supplied text",
+    "sources": [
+      "challenge_brief_public.pdf"
+    ],
+    "specific_signals": 1,
+    "status": "enacted"
+  },
+  {
+    "category": "screening_restrictions",
+    "citation": "California Fair Employment and Housing Act (FEHA), SB 329",
+    "jurisdiction": "California",
+    "signals": 3,
+    "skipped": "cell already has a rule from supplied text",
+    "sources": [
+      "challenge_brief_public.pdf",
+      "link"
+    ],
+    "specific_signals": 2,
+    "status": "enacted"
+  },
+  {
+    "category": "algorithmic_rent_setting",
+    "citation": "AB 325 / SB 763",
+    "jurisdiction": "California",
+    "signals": 3,
+    "skipped": "cell already has a rule from supplied text",
+    "sources": [
+      "challenge_brief_public.pdf",
+      "change_tests.json",
+      "link"
+    ],
+    "specific_signals": 3,
+    "status": "enacted"
+  },
+  {
+    "category": "rent_increase_limits",
+    "citation": "S.F. Admin. Code ch. 37",
+    "jurisdiction": "San Francisco, CA",
+    "signals": 1,
+    "skipped": "no verified signal names the measure",
+    "sources": [],
+    "specific_signals": 0,
+    "status": "enacted"
+  },
+  {
+    "category": "just_cause_eviction",
+    "citation": "S.F. Admin. Code §37.9",
+    "jurisdiction": "San Francisco, CA",
+    "signals": 1,
+    "skipped": "already covered by a rule from supplied text",
+    "sources": [
+      "challenge_brief_public.pdf"
+    ],
+    "specific_signals": 1,
+    "status": "enacted"
+  },
+  {
+    "category": "algorithmic_rent_setting",
+    "citation": "S.F. Admin. Code §37.10C",
+    "jurisdiction": "San Francisco, CA",
+    "signals": 1,
+    "skipped": "already covered by a rule from supplied text",
+    "sources": [
+      "challenge_brief_public.pdf"
+    ],
+    "specific_signals": 1,
+    "status": "enacted"
+  },
+  {
+    "category": "rent_increase_limits",
+    "citation": "LA Rent Stabilization Ordinance",
+    "jurisdiction": "Los Angeles, CA",
+    "signals": 1,
+    "skipped": "no verified signal names the measure",
+    "sources": [],
+    "specific_signals": 0,
+    "status": "enacted"
+  },
+  {
+    "category": "security_deposits",
+    "citation": "Los Angeles Municipal Code",
+    "jurisdiction": "Los Angeles, CA",
+    "signals": 2,
+    "skipped": "cell already has a rule from supplied text",
+    "sources": [
+      "link"
+    ],
+    "specific_signals": 1,
+    "status": "enacted"
+  },
+  {
+    "category": "screening_restrictions",
+    "citation": "San Diego Code §98.0800",
+    "created": true,
+    "jurisdiction": "San Diego, CA",
+    "signals": 2,
+    "sources": [
+      "link"
+    ],
+    "specific_signals": 1,
+    "status": "enacted",
+    "tier": "C1"
+  },
+  {
+    "category": "algorithmic_rent_setting",
+    "citation": "San Diego Code §§98.1101–98.1104",
+    "jurisdiction": "San Diego, CA",
+    "signals": 3,
+    "skipped": "already covered by a rule from supplied text",
+    "sources": [
+      "challenge_brief_public.pdf",
+      "link"
+    ],
+    "specific_signals": 2,
+    "status": "enacted"
+  },
+  {
+    "category": "algorithmic_rent_setting",
+    "citation": "Berkeley ch. 13.63",
+    "jurisdiction": "Berkeley, CA",
+    "signals": 2,
+    "skipped": "cell already has a rule from supplied text",
+    "sources": [
+      "challenge_brief_public.pdf",
+      "link"
+    ],
+    "specific_signals": 2,
+    "status": "enacted"
+  },
+  {
+    "category": "algorithmic_rent_setting",
+    "citation": "Santa Ana Ord. NS-3090",
+    "created": true,
+    "jurisdiction": "Santa Ana, CA",
+    "signals": 3,
+    "sources": [
+      "challenge_brief_public.pdf",
+      "link"
+    ],
+    "specific_signals": 3,
+    "status": "enacted",
+    "tier": "C"
+  },
+  {
+    "category": "just_cause_eviction",
+    "citation": "N.J.S.A. 2A:18-61.1",
+    "jurisdiction": "New Jersey",
+    "signals": 2,
+    "skipped": "already covered by a rule from supplied text",
+    "sources": [
+      "challenge_brief_public.pdf"
+    ],
+    "specific_signals": 1,
+    "status": "enacted"
+  },
+  {
+    "category": "security_deposits",
+    "citation": "N.J.S.A. 46:8-21.2",
+    "jurisdiction": "New Jersey",
+    "signals": 1,
+    "skipped": "no verified signal names the measure",
+    "sources": [],
+    "specific_signals": 0,
+    "status": "enacted"
+  },
+  {
+    "category": "application_screening_fees",
+    "citation": "P.L.2025, c.405",
+    "jurisdiction": "New Jersey",
+    "signals": 0,
+    "skipped": "no verified signal names the measure",
+    "sources": [],
+    "specific_signals": 0,
+    "status": "enacted"
+  },
+  {
+    "category": "screening_restrictions",
+    "citation": "NJ Fair Chance in Housing Act (2021)",
+    "jurisdiction": "New Jersey",
+    "signals": 1,
+    "skipped": "cell already has a rule from supplied text",
+    "sources": [
+      "challenge_brief_public.pdf"
+    ],
+    "specific_signals": 1,
+    "status": "enacted"
+  },
+  {
+    "category": "algorithmic_rent_setting",
+    "citation": "P.L.2026, c.43",
+    "jurisdiction": "New Jersey",
+    "signals": 3,
+    "skipped": "already covered by a rule from supplied text",
+    "sources": [
+      "challenge_brief_public.pdf",
+      "change_tests.json",
+      "link"
+    ],
+    "specific_signals": 3,
+    "status": "enacted"
+  },
+  {
+    "category": "algorithmic_rent_setting",
+    "citation": "Jersey City §218-12",
+    "created": true,
+    "jurisdiction": "Jersey City, NJ",
+    "signals": 4,
+    "sources": [
+      "challenge_brief_public.pdf",
+      "change_tests.json",
+      "link"
+    ],
+    "specific_signals": 4,
+    "status": "enacted",
+    "tier": "C"
+  },
+  {
+    "category": "algorithmic_rent_setting",
+    "citation": "Hoboken ch. 158, Art. II",
+    "created": true,
+    "jurisdiction": "Hoboken, NJ",
+    "signals": 5,
+    "sources": [
+      "challenge_brief_public.pdf",
+      "change_tests.json"
+    ],
+    "specific_signals": 2,
+    "status": "enacted",
+    "tier": "C"
+  },
+  {
+    "category": "algorithmic_rent_setting",
+    "citation": "Newark",
+    "jurisdiction": "Newark, NJ",
+    "signals": 3,
+    "skipped": "no verified signal names the measure",
+    "sources": [],
+    "specific_signals": 0,
+    "status": "enacted"
+  },
+  {
+    "category": "security_deposits",
+    "citation": "G.L. c.186 §15B",
+    "jurisdiction": "Massachusetts",
+    "signals": 0,
+    "skipped": "no verified signal names the measure",
+    "sources": [],
+    "specific_signals": 0,
+    "status": "enacted"
+  },
+  {
+    "category": "application_screening_fees",
+    "citation": "G.L. c.186 §15B",
+    "jurisdiction": "Massachusetts",
+    "signals": 0,
+    "skipped": "no verified signal names the measure",
+    "sources": [],
+    "specific_signals": 0,
+    "status": "enacted"
+  },
+  {
+    "category": "application_screening_fees",
+    "citation": "G.L. c.112 §87DDD½",
+    "jurisdiction": "Massachusetts",
+    "signals": 0,
+    "skipped": "no verified signal names the measure",
+    "sources": [],
+    "specific_signals": 0,
+    "status": "enacted"
+  },
+  {
+    "category": "rent_increase_limits",
+    "citation": "G.L. c.40P",
+    "jurisdiction": "Massachusetts",
+    "signals": 2,
+    "skipped": "already covered by a rule from supplied text",
+    "sources": [
+      "change_tests.json"
+    ],
+    "specific_signals": 1,
+    "status": "enacted"
+  },
+  {
+    "category": "algorithmic_rent_setting",
+    "citation": "S.2983 / H.5222",
+    "jurisdiction": "Boston, MA",
+    "signals": 2,
+    "skipped": "already covered by a rule from supplied text",
+    "sources": [
+      "README.md",
+      "challenge_brief_public.pdf"
+    ],
+    "specific_signals": 2,
+    "status": "pending"
+  },
+  {
+    "category": "algorithmic_rent_setting",
+    "citation": "S.2983 / H.5222",
+    "jurisdiction": "Cambridge, MA",
+    "signals": 2,
+    "skipped": "already covered by a rule from supplied text",
+    "sources": [
+      "README.md",
+      "challenge_brief_public.pdf"
+    ],
+    "specific_signals": 2,
+    "status": "pending"
+  },
+  {
+    "category": "rent_increase_limits",
+    "citation": "Massachusetts rent-control ballot question",
+    "created": true,
+    "jurisdiction": "Massachusetts",
+    "signals": 3,
+    "sources": [
+      "change_tests.json",
+      "link"
+    ],
+    "specific_signals": 2,
+    "status": "failed",
+    "tier": "C"
+  }
+]

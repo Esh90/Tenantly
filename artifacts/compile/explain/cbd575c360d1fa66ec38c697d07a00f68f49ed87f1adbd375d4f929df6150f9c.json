@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002333,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Eligible landlords can raise rent by 1.0% starting January 1, 2026. This amount equals 65% of the Bay Area cost increase.",
+    "summary_es": "Los arrendadores elegibles pueden aumentar la renta en 1.0% a partir del 1 de enero de 2026. Este aumento es igual al 65% del aumento de costos del Área de la Bahía.",
+    "who_en": "This rule applies to rental units under Berkeley rent control where landlords meet the requirements in Regulation 1148.",
+    "who_es": "Esta regla se aplica a unidades de alquiler bajo control de renta de Berkeley donde los arrendadores cumplen los requisitos de la Regulación 1148."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1043,
+    "output_tokens": 258
+  }
+}

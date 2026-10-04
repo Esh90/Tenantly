@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001991,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "Multiple link-only sources are provided (D032-D034, D060-D064) but contain no supplied text to review. The existing rules NJ-DEP-01 and NJ-DEP-02 are at the state level, not city level. Without actual text from the Hoboken city code or the referenced sources, a determination cannot be made regarding whether Hoboken has enacted its own city-level security deposit rules beyond the state requirements.",
+    "result": "text_not_supplied"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1126,
+    "output_tokens": 173
+  }
+}

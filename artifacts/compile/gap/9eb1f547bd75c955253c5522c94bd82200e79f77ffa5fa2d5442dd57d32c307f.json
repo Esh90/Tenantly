@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002383,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The jurisdiction documents (D084, D085) are guidance materials that contain no specific text regarding application screening fees. The link-only signals (D015-D021, D028, D086, D087) reference external sources without providing the actual document text needed to verify whether application screening fee rules exist at the city level. While the state rules CA-FEE-01 and CA-FEE-02 address application screening fees, the city-level documentation necessary to determine if Santa Ana has enacted its own rules on this category has not been supplied.",
+    "result": "text_not_supplied"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1423,
+    "output_tokens": 192
+  }
+}

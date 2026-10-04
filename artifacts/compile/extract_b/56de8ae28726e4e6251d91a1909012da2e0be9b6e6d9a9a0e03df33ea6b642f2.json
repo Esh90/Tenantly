@@ -1,0 +1,77 @@
+{
+  "cost_usd": 0.007241,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "rent_increase_limits",
+        "cite": "S.F. Admin. Code § 37.9",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties in San Francisco.",
+        "effective_date": "2026-03-01",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "Allowable Annual Rent Increase",
+            "text": "1.6%",
+            "unit": "percent",
+            "valid_from": "2026-03-01",
+            "valid_to": "2027-02-28",
+            "value": 1.6
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Allowable Rent Increase: 1.6% for March 1, 2026 – February 28, 2027",
+        "relations_hint": [],
+        "requirement": "Landlords may increase rent by no more than 1.6% for tenancies during the period March 1, 2026 through February 28, 2027.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Allowable Rent Increase Rate",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "S.F. Admin. Code § 37.9",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties in San Francisco.",
+        "effective_date": "2026-03-01",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "Security Deposit Interest Rate",
+            "text": "4.2%",
+            "unit": "percent",
+            "valid_from": "2026-03-01",
+            "valid_to": "2027-02-28",
+            "value": 4.2
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Security Deposit Interest: 4.2% for March 1, 2026 – February 28, 2027",
+        "relations_hint": [],
+        "requirement": "Landlords shall pay interest on security deposits held for tenants at a rate of 4.2% annually for the period March 1, 2026 through February 28, 2027.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Security Deposit Interest Rate",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 3551,
+    "output_tokens": 738
+  }
+}

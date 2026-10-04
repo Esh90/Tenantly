@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001879,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The available documents (D029 and D031) are incomplete guidance pages with truncated text that does not contain substantive information about application screening fees. The link-only sources (D030, D054, D055, D056, D059) provide no retrievable text. Therefore, no actual regulatory text regarding application screening fees at the Cambridge, MA city level can be assessed.",
+    "result": "text_not_supplied"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1109,
+    "output_tokens": 154
+  }
+}

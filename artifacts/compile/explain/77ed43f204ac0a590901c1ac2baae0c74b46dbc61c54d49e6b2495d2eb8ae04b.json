@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.00244,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Rent can increase by 3% per year for RSO units from July 1, 2025 to June 30, 2026. Starting February 2, 2026, landlords cannot add extra charges for utilities.",
+    "summary_es": "La renta puede aumentar 3% por año para unidades RSO del 1 de julio de 2025 al 30 de junio de 2026. A partir del 2 de febrero de 2026, los arrendadores no pueden agregar cargos extra por servicios.",
+    "who_en": "This rule applies to rental units under the City of Los Angeles Rent Stabilization Ordinance (RSO).",
+    "who_es": "Esta regla aplica a unidades de alquiler bajo la Ordenanza de Estabilización de Rentas (RSO) de la Ciudad de Los Ángeles."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1000,
+    "output_tokens": 288
+  }
+}

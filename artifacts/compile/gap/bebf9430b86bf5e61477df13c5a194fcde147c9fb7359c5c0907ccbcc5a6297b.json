@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002291,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The documents provided contain only partial text snippets from statutes (D065, D066, D069) that are truncated and do not display substantive content about rent increase limits. Document D067 and D068 appear to be guidance documents with only header/contact information visible. Multiple link-only references (D060-D064) exist but contain no actual text to evaluate. None of the provided document text contains substantive information about state-level rent increase limits for New Jersey.",
+    "result": "text_not_supplied"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1411,
+    "output_tokens": 176
+  }
+}

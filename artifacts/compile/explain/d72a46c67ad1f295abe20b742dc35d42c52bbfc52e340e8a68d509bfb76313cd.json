@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002348,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "When a landlord ends a tenancy without a reason, the landlord must pay relocation assistance. This is two months of rent, or three months for seniors and disabled tenants.",
+    "summary_es": "Cuando un arrendador termina un arrendamiento sin motivo, el arrendador debe pagar asistencia de reubicación. Esto es dos meses de renta, o tres meses para inquilinos adultos mayores e inquilinos con discapacidades.",
+    "who_en": "This rule applies to residential rental properties in San Diego where a tenancy is ended for no-fault just cause.",
+    "who_es": "Esta regla se aplica a propiedades de alquiler residencial en San Diego donde un arrendamiento se termina por desalojo con causa justa sin motivo."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1003,
+    "output_tokens": 269
+  }
+}

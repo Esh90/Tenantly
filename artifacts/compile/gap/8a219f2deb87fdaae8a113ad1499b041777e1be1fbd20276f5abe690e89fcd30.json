@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002907,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "San Diego, CA (city level) has no ordinance or municipal code text supplied for security deposit rules. Document D073 is a truncated header from SDMC Chapter 9 Article 8 Division 7 on Housing with no substantive security deposit provisions provided. Documents D076 and D077 are draft materials and staff reports without text. D015-D021, D028, D074-D075 are link-only citations to state law (California Civil Code sections 1950.6, 1950-5, etc.) and federal fair housing law, which address state-level and federal requirements, not city-specific rules. The three state-level rules (CA-DEP-01, CA-DEP-02, CA-DEP-03) are California state law, not San Diego city ordinances. No city-level security deposit ordinance text is available in the sources provided.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1562,
+    "output_tokens": 269
+  }
+}

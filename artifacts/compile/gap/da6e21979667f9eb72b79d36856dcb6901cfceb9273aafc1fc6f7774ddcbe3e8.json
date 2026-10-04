@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002339,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "Santa Ana Ordinance NS-3090 is listed as an enacted rule in the algorithmic_rent_setting category for Santa Ana, CA. This ordinance directly addresses algorithmic rent setting at the city level.",
+    "quote": "SNA-ALG-01 Santa Ana Ord. NS-3090 (enacted)",
+    "result": "found",
+    "section_id": "SNA-ALG-01"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1454,
+    "output_tokens": 177
+  }
+}

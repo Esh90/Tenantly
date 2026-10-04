@@ -1,0 +1,14 @@
+[
+  {
+    "doc_id": "D024",
+    "effect": "conflict_flag",
+    "quote": "This\nsection is not intended to expand or limit the authority of local governments to establish local policies regulating rents consistent with Chapter 2.7 (commencing with Section 1954.50)",
+    "reason": "informational relation: it changes no result",
+    "source_rule_id": "CA-RENT-01",
+    "target_scope": {
+      "category": "rent_increase_limits",
+      "level": "city"
+    },
+    "type": "supplements"
+  }
+]

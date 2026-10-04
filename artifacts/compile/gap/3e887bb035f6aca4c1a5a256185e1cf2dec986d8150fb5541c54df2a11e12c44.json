@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.003486,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The triaged documents provided only include headers/titles of statutes (General Laws sections from Chapters 40P, 151B, 186, and 112) and bills (H.5222 and S.2983 about algorithmic rent setting), without supplying the actual text content. The link-only sources (D054-D056, D059) contain no text. Without substantive text from these sources, it is impossible to determine whether Massachusetts has a state-level rule regarding application screening fees.",
+    "result": "text_not_supplied"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1671,
+    "output_tokens": 363
+  }
+}

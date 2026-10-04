@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002143,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "A landlord cannot claim money from a tenant's security deposit for damage that existed before the tenant moved in or for normal wear and tear. This includes damage that builds up over time from regular use.",
+    "summary_es": "Un arrendador no puede reclamar dinero del depósito de seguridad de un inquilino por daño que existía antes de que el inquilino se mudara o por desgaste normal. Esto incluye daño que se acumula con el tiempo por uso regular.",
+    "who_en": "This rule applies to all residential rental properties.",
+    "who_es": "Esta regla se aplica a todas las propiedades residenciales de alquiler."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 948,
+    "output_tokens": 239
+  }
+}

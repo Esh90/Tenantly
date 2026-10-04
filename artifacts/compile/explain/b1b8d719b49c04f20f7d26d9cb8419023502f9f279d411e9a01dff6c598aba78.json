@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.001949,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "A landlord can evict a renter if the building is being converted to a hotel or torn down.",
+    "summary_es": "Un arrendador puede desalojar a un inquilino si el edificio se convierte en hotel o se demuele.",
+    "who_en": "This applies to all residential rental units covered by the RSO or JCO.",
+    "who_es": "Esto aplica a todas las unidades de alquiler residencial cubiertas por la RSO o JCO."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 954,
+    "output_tokens": 199
+  }
+}

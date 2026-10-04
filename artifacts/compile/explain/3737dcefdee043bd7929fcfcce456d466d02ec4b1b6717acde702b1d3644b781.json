@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.00216,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords must list what they kept from the security deposit and return the rest within 21 calendar days after the tenant moves out.",
+    "summary_es": "Los arrendadores deben indicar qué guardaron del depósito de seguridad y devolver el resto dentro de 21 días calendario después de que el inquilino se mude.",
+    "who_en": "This rule covers residential rental properties used as a tenant's home.",
+    "who_es": "Esta regla se aplica a propiedades de alquiler residencial utilizadas como vivienda de un inquilino."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1075,
+    "output_tokens": 217
+  }
+}

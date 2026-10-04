@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002304,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The jurisdiction has two pending rules in this category: MA-ALG-P1 (Act prohibiting algorithmic rent setting) and MA-ALG-P2 (Bill H.5222: Preventing algorithmic rent fixing). Both are explicitly marked as pending, indicating proposed legislation that has not yet been enacted. The documents provided (D010-D014) relate to fair housing, tenant selection, and housing stability notification, but do not contain text addressing algorithmic rent setting. No enacted rule for algorithmic rent setting at the Boston city level was found in the sources.",
+    "result": "only_pending"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1339,
+    "output_tokens": 193
+  }
+}

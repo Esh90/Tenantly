@@ -45,6 +45,9 @@ def item_dates(detail: str) -> list[date]:
     out += cal.parse_all_dates(detail)
     seen = set(out)
     for m in MONTH_YEAR.finditer(detail):  # "January 2026" has no day: use the first of the month
+        # "an August 2026 law-firm alert" dates the article, not the law
+        if re.match(r"\s+(law|alert|article|news|report|memo)", detail[m.end() :], re.I):
+            continue
         d = date(int(m.group(2)), cal.MONTHS[m.group(1).lower()], 1)
         if not any(x.year == d.year and x.month == d.month for x in seen):
             out.append(d)

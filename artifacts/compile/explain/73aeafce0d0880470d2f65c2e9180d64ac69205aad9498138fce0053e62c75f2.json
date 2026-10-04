@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.00235,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords can raise rent by 1.0% starting January 1, 2026. Tenants who started renting on or after January 1, 2025 cannot get a rent increase.",
+    "summary_es": "Los arrendadores pueden aumentar la renta en 1.0% a partir del 1 de enero de 2026. Los inquilinos que comenzaron a alquilar en o después del 1 de enero de 2025 no pueden recibir un aumento de renta.",
+    "who_en": "This rule applies to all homes rented in Berkeley that have rent control.",
+    "who_es": "Esta regla se aplica a todas las viviendas alquiladas en Berkeley que tienen control de renta."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1060,
+    "output_tokens": 258
+  }
+}

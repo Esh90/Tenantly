@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002399,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "A written notice to quit for nonpayment of rent must include a state form. This form has repayment options, rental assistance info, and court rules. It must clearly state this is not an eviction.",
+    "summary_es": "Un aviso escrito de desalojo con causa justa por falta de pago debe incluir un formulario estatal. Este formulario contiene opciones de pago, información de asistencia de alquiler y reglas judiciales. Debe indicar claramente que esto no es un desalojo.",
+    "who_en": "This applies to all landlords giving a notice to quit for nonpayment of rent in residential tenancies.",
+    "who_es": "Esto aplica a todos los arrendadores que dan un aviso de desalojo con causa justa por falta de pago en tenencias residenciales."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1004,
+    "output_tokens": 279
+  }
+}

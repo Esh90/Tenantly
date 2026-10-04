@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002015,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords cannot charge more than $68.96 for tenant screening. Any unused portion of the fee must be refunded to the renter.",
+    "summary_es": "Los arrendadores no pueden cobrar más de $68.96 por la evaluación de inquilinos. Cualquier parte no utilizada de la cuota debe ser reembolsada al inquilino.",
+    "who_en": "This rule applies to all residential rental applications in Berkeley.",
+    "who_es": "Esta regla se aplica a todas las solicitudes de alquiler residencial en Berkeley."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 945,
+    "output_tokens": 214
+  }
+}

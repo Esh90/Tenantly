@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002662,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The jurisdiction Los Angeles, CA has no documents containing substantive text about application_screening_fees at the city level. The triaged documents (D039-D043) address motions and guidance on Just Cause For Eviction Ordinance, RSO (Rent Stabilization Ordinance), and relocation assistance - none of which address application screening fees. The link-only documents (D015-D044) provide references to external resources but no actual text content. The rule CA-FEE-01 regarding refund requirements for inadvertent concurrent fee collection is at the state level, not specific to application screening fees at the city level.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1597,
+    "output_tokens": 213
+  }
+}

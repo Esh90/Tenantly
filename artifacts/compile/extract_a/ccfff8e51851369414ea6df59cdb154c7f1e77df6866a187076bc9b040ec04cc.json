@@ -1,0 +1,119 @@
+{
+  "cost_usd": 0.015276399999999999,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "rent_increase_limits",
+        "cite": "Santa Ana Rent Stabilization Ordinance",
+        "coverage": {
+          "all": [
+            {
+              "fact": "co_date",
+              "op": "<=",
+              "value": "1995-02-01"
+            }
+          ]
+        },
+        "coverage_text": "Residential buildings constructed on or before February 1, 1995.",
+        "effective_date": "2021-11-19",
+        "exemptions": [
+          {
+            "description": "Buildings constructed after February 1, 1995",
+            "predicate": {
+              "fact": "co_date",
+              "op": ">",
+              "value": "1995-02-01"
+            },
+            "quote": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990."
+          }
+        ],
+        "key_values": [
+          {
+            "name": "max_annual_increase",
+            "text": "3% per year",
+            "unit": "percent",
+            "value": 3
+          },
+          {
+            "name": "cpi_fraction",
+            "text": "80% of the percent change in the Consumer Price Index",
+            "unit": "percent",
+            "value": 80
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Increase in residential rents are limited to the lower of 3% per year, or 80% of the percent change in the Consumer Price Index over the most recent 12-month period. If the CPI is negative, no rent increase is permitted.",
+        "requirement": "Annual rent increases are limited to the lower of 3% or 80% of the 12-month CPI change. No increase is permitted if CPI is negative.",
+        "title": "Annual rent increase cap",
+        "uncertain_fields": [
+          "coverage"
+        ]
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "Santa Ana Just Cause Eviction Ordinance",
+        "coverage": {
+          "all": [
+            {
+              "fact": "building_age_years",
+              "op": ">",
+              "value": 15
+            },
+            {
+              "fact": "subsidized_or_affordable",
+              "op": "==",
+              "value": false
+            }
+          ]
+        },
+        "coverage_text": "Residential rentals other than housing produced in the last 15 years, deed-restricted affordable housing, and similar exempt types.",
+        "effective_date": "2021-11-19",
+        "exemptions": [
+          {
+            "description": "Housing produced in last 15 years, deed-restricted affordable housing, hotels, care facilities, dormitories, shared living",
+            "predicate": {
+              "any": [
+                {
+                  "fact": "building_age_years",
+                  "op": "<=",
+                  "value": 15
+                },
+                {
+                  "fact": "subsidized_or_affordable",
+                  "op": "==",
+                  "value": true
+                }
+              ]
+            },
+            "quote": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters."
+          }
+        ],
+        "key_values": [
+          {
+            "name": "relocation_assistance",
+            "text": "3 months of relocation assistance",
+            "unit": "months",
+            "value": 3
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "After 30 days, an owner shall not terminate a tenancy without just cause, which shall be stated in a written notice.",
+        "requirement": "After 30 days of tenancy, owners may only terminate for just cause stated in written notice. No-fault terminations require 3 months relocation assistance or rent waiver for the final 3 months.",
+        "tenancy_conditions": [
+          "after 30 days of tenancy"
+        ],
+        "title": "Just cause eviction"
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 1827,
+    "output_tokens": 1115
+  }
+}

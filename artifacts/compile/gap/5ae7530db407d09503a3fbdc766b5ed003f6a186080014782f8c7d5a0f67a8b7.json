@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002193,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The documents provided for Boston, MA regarding application_screening_fees at the city level contain only partial text snippets from policies, bills, and guidance documents about fair housing, fair chance tenant selection, and housing stability notification. None of the supplied document text contains specific information about application screening fees. The link-only signals (D054-D056, D059) do not provide text content that could be evaluated. The available documents do not supply sufficient text to determine whether a rule on application screening fees exists at the city level.",
+    "result": "text_not_supplied"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1283,
+    "output_tokens": 182
+  }
+}

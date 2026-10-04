@@ -1,0 +1,238 @@
+{
+  "cost_usd": 0.016466,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1947.12 (as applied in Berkeley, CA)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units.",
+        "effective_date": "2024-07-01",
+        "exemptions": [
+          {
+            "description": "Landlords owning only two rental properties with no more than four residential units total, where ownership is held by a natural person, family trust, or LLC with all natural person members",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "landlord_property_count",
+                  "op": "==",
+                  "value": 2
+                },
+                {
+                  "fact": "landlord_unit_count",
+                  "op": "<=",
+                  "value": 4
+                },
+                {
+                  "any": [
+                    {
+                      "fact": "owner_is_natural_person",
+                      "op": "==",
+                      "value": true
+                    },
+                    {
+                      "fact": "owner_is_natural_person",
+                      "op": "==",
+                      "value": false
+                    }
+                  ]
+                }
+              ]
+            },
+            "quote": "landlords who own only two rental properties with no more than four residential units total can charge up to two months' rent for furnished and unfurnished units if ownership is held by a natural person, family trust, or limited liability company (LLC) where all members are natural persons"
+          }
+        ],
+        "key_values": [
+          {
+            "name": "Security Deposit Limit",
+            "text": "one month's rent",
+            "unit": "months",
+            "valid_from": "2024-07-01",
+            "value": 1
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Starting July 1, 2024, many landlords may only charge one month's rent for unfurnished and furnished units",
+        "requirement": "Effective July 1, 2024, landlords may charge only one month's rent as a security deposit for unfurnished and furnished residential units.",
+        "title": "Security Deposit Amount Limit - General",
+        "uncertain_fields": []
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.7",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Last month's rent IS considered part of the security deposit",
+        "requirement": "Last month's rent paid by a tenant is considered part of the security deposit.",
+        "title": "Last Month's Rent as Part of Security Deposit",
+        "uncertain_fields": []
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.7",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "First month's rent is NOT considered part of the security deposit",
+        "requirement": "First month's rent paid by a tenant is not considered part of the security deposit.",
+        "title": "First Month's Rent Not Part of Security Deposit",
+        "uncertain_fields": []
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.7",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units with tenancies beginning on or after July 1, 2025.",
+        "effective_date": "2025-07-01",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "For tenancies that begin on or after July 1, 2025, a landlord must photograph the unit immediately before or at the start of a new tenancy to document the condition of the unit.",
+        "requirement": "For tenancies beginning on or after July 1, 2025, a landlord must photograph the rental unit immediately before or at the start of the new tenancy to document the unit's condition.",
+        "tenancy_conditions": [
+          "tenancy begins on or after July 1, 2025"
+        ],
+        "title": "Landlord Photograph Requirement Before New Tenancy",
+        "uncertain_fields": []
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.7",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "Return Timeline",
+            "text": "within 21 days after the tenant/s leave the unit vacant",
+            "unit": "days",
+            "value": 21
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "All or any remaining portion of a security deposit must be returned within 21 days after the tenant/s leave the unit vacant.",
+        "requirement": "Landlords must return all or any remaining portion of a security deposit within 21 days after tenants vacate the unit.",
+        "title": "Security Deposit Return Timeline",
+        "uncertain_fields": []
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.7",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "If deductions were made, the landlord must give the tenant a written statement itemizing the amount of and and purpose for any security deposit deductions, accompanied by copies of documents showing charges incurred and deducted by the landlord to repair or clean the premises, including a copy of any bill, invoice, or receipt for materials or supplies deductions.",
+        "requirement": "If a landlord makes deductions from a security deposit, the landlord must provide the tenant with a written itemized statement explaining the amount and purpose of each deduction, along with copies of supporting documents such as bills, invoices, or receipts.",
+        "title": "Security Deposit Deduction Itemization Requirement",
+        "uncertain_fields": []
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.7",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units.",
+        "effective_date": "2025-01-01",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Starting January 1, 2025, landlords must provide proof that necessary repairs were completed.",
+        "requirement": "Effective January 1, 2025, landlords must provide proof that repairs for which security deposit deductions were made were actually completed.",
+        "tenancy_conditions": [
+          "tenancy ends on or after January 1, 2025"
+        ],
+        "title": "Proof of Repairs Completed - Effective January 1, 2025",
+        "uncertain_fields": []
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.7",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units with tenancies ending on or after April 1, 2025.",
+        "effective_date": "2025-04-01",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Starting April 1, 2025, landlords must take photographs of a unit after regaining possession, but before any repairs or cleaning for which the landlord intends to make a deduction from the security deposit. These photos and a written explanation of the cost of the repairs/cleaning must be given to the tenant along with the itemized statement.",
+        "requirement": "Effective April 1, 2025, landlords must photograph the unit after taking possession but before making any repairs or cleaning for which they intend to deduct from the security deposit, and must provide these photos and a written cost explanation to the tenant with the itemized deduction statement.",
+        "tenancy_conditions": [
+          "tenancy ends on or after April 1, 2025"
+        ],
+        "title": "Post-Vacancy Photographs and Written Explanation - Effective April 1, 2025",
+        "uncertain_fields": []
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.7",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The landlord cannot require a tenant to pay for, or assert a claim against the tenant or the security deposit for professional carpet cleaning or other professional cleaning services, unless reasonably necessary to return the premises to the condition it was in at the start of the tenancy, minus ordinary wear and tear.",
+        "requirement": "Landlords cannot charge tenants or deduct from security deposits for professional carpet cleaning or other professional cleaning services unless the cleaning is reasonably necessary to return the premises to its original condition, excluding ordinary wear and tear.",
+        "title": "Prohibited Professional Cleaning Charge",
+        "uncertain_fields": []
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Berkeley Rent Ordinance",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units fully or partially covered by Berkeley's Rent Ordinance.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "For tenancies in units fully or partially covered by Berkeley's Rent Ordinance, landlords must pay tenants interest on their security deposit at the end of each year and a prorated amount if the tenant moves out before the end of the year.",
+        "requirement": "For rental units covered by Berkeley's Rent Ordinance, landlords must pay tenants interest on security deposits annually and a prorated amount if the tenant moves out before year-end.",
+        "title": "Security Deposit Interest Requirement Under Berkeley Rent Ordinance",
+        "uncertain_fields": [
+          "interest rate not specified"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 3096,
+    "output_tokens": 2674
+  }
+}

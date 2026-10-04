@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002347,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords may collect a monthly surcharge from tenants equal to 1/12 of 50% of the annual Systematic Code Enforcement Fee, starting January 1, 2022.",
+    "summary_es": "Los arrendadores pueden cobrar a los inquilinos una cuota mensual igual a 1/12 del 50% de la Tarifa Anual de Cumplimiento Sistemático del Código, a partir del 1 de enero de 2022.",
+    "who_en": "This applies to rental properties in Los Angeles that were first built on or before October 1, 1978.",
+    "who_es": "Esto se aplica a propiedades de alquiler en Los Ángeles que fueron construidas por primera vez en o antes del 1 de octubre de 1978."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 992,
+    "output_tokens": 271
+  }
+}

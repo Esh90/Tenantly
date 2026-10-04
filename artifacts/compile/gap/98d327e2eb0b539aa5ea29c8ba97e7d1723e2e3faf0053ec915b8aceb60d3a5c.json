@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.00215,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "Rules exist in this category for Hoboken at the city level. HOB-ALG-01 references Hoboken ch. 158, Art. II (enacted), which is a city-level rule addressing algorithmic rent setting. Additionally, NJ-ALG-01 is a state-level ban on algorithmic rent coordination that would apply to Hoboken.",
+    "quote": "Hoboken ch. 158, Art. II",
+    "result": "found",
+    "section_id": "HOB-ALG-01"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1140,
+    "output_tokens": 202
+  }
+}

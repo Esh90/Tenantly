@@ -1,0 +1,68 @@
+{
+  "cost_usd": 0.0108824,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "rent_increase_limits",
+        "cite": "Santa Ana Rent Stabilization and Just Cause Eviction Ordinance",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Guidance does not state coverage limits; applies to rental units covered by the ordinance.",
+        "key_values": [
+          {
+            "name": "cap_percent",
+            "text": "3% of your current rent",
+            "unit": "percent",
+            "value": 3
+          },
+          {
+            "name": "cpi_share",
+            "text": "80% of the Consumer Price Index (CPI) change",
+            "unit": "percent",
+            "value": 80
+          },
+          {
+            "name": "current_max_increase",
+            "text": "2.87 percent is the maximum allowable rent increase for the period of September 1, 2026 through August 31, 2027.",
+            "unit": "percent",
+            "valid_from": "2026-09-01",
+            "valid_to": "2027-08-31",
+            "value": 2.87
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "The increase cannot be more than 3% of your current rent or 80% of the Consumer Price Index (CPI) change, whichever is less.",
+        "requirement": "Annual rent increases may not exceed the lesser of 3% or 80% of the CPI change. The current maximum is 2.87% for Sept 1, 2026 through Aug 31, 2027.",
+        "title": "Annual maximum rent increase",
+        "uncertain_fields": [
+          "coverage",
+          "exemptions"
+        ]
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "Santa Ana Rent Stabilization and Just Cause Eviction Ordinance",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Guidance does not state coverage limits; applies to units covered by the ordinance.",
+        "lifecycle": "enacted",
+        "quote": "Your landlord must have a valid reason to evict you.",
+        "requirement": "Landlords must have a valid reason to evict, such as nonpayment, lease breach, or landlord move-in. Relocation assistance may be owed for certain evictions.",
+        "title": "Just cause eviction",
+        "uncertain_fields": [
+          "coverage"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 1675,
+    "output_tokens": 706
+  }
+}

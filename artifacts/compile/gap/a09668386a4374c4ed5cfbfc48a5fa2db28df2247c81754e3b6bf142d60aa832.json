@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002064,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The provided documents contain information about Boston Fair Chance Tenant Selection, Fair Housing Regulations, and Housing Stability Notification Act, but none of these sources address algorithmic rent setting. The documents discuss fair housing practices, tenant selection criteria, and housing stability notifications rather than algorithms used for setting rental prices. No sources in the provided materials contain relevant information about algorithmic rent setting at the city level.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1284,
+    "output_tokens": 156
+  }
+}

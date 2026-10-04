@@ -1,0 +1,75 @@
+{
+  "cost_usd": 0.0137844,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "screening_restrictions",
+        "cite": "Boston Fair Chance Tenant Selection Policy (DND, Feb. 2017) § 1",
+        "coverage": {
+          "fact": "subsidized_or_affordable",
+          "op": "==",
+          "value": true
+        },
+        "coverage_text": "Housing providers with DND funding or land, or income-restricted units under the BPDA Inclusionary Development Policy.",
+        "effective_date": null,
+        "exemptions": [
+          {
+            "description": "Direct relationship between conviction and housing sought, unreasonable risk to safety of others, or current criminal behavior",
+            "predicate": {
+              "const": true
+            },
+            "quote": null
+          }
+        ],
+        "key_values": [
+          {
+            "name": "conviction_lookback",
+            "text": "A conviction more than 5 years old",
+            "unit": "years",
+            "value": 5
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Housing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy will not impose a blanket policy that denies \nhousing to anyone with arrests and or convictions.",
+        "relations_hint": [
+          "Where federal or state law imposes a criminal history requirement that conflicts with a \nrequirement of this guidance, the federal or state law preempts this policy."
+        ],
+        "requirement": "Covered housing providers may not apply blanket denials based on arrests or convictions and must review applicants case by case. They may not consider non-conviction arrests, judicially relieved convictions, juvenile records, or convictions over 5 years old, subject to exceptions.",
+        "title": "Fair chance criminal history screening limits",
+        "uncertain_fields": [
+          "effective_date"
+        ]
+      },
+      {
+        "category": "screening_restrictions",
+        "cite": "Boston Fair Chance Tenant Selection Policy (DND, Feb. 2017) § Credit",
+        "coverage": {
+          "fact": "subsidized_or_affordable",
+          "op": "==",
+          "value": true
+        },
+        "coverage_text": "Housing providers with DND funding or land, or income-restricted inclusionary units.",
+        "effective_date": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The agent agrees not to use the applicant credit score to approve or deny housing    \napplications.",
+        "requirement": "Covered agents may not use credit scores to approve or deny applications. Credit history may be considered only in lieu of rental history when rental history is unavailable.",
+        "title": "No credit score use in screening",
+        "uncertain_fields": [
+          "effective_date"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 2211,
+    "output_tokens": 889
+  }
+}

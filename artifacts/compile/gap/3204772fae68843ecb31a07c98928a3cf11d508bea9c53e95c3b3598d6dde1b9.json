@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002231,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The documents provided (D029 and D031) contain only navigation headers and page titles from Cambridge, MA government websites related to Human Rights Commission and Tenants Rights, without actual substantive text about just cause eviction rules. The link-only documents (D030, D054, D055, D056, D059) are not accessible and provide no text content. While Massachusetts state rules exist for just cause eviction (MA-JCE-01 through MA-JCE-04), no city-level Cambridge ordinance text on just cause eviction is present in the supplied documents.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1231,
+    "output_tokens": 200
+  }
+}

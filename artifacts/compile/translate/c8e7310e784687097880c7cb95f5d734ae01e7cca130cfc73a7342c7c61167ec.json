@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001386,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "detail_es": "La copia guardada de D036 es principalmente navegación del sitio, por lo que los detalles de cobertura para la Exención de control de alquiler para propiedades de 1-4 unidades puede estar incompleta.",
+    "title_es": "Captura parcial de la fuente D036"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 686,
+    "output_tokens": 140
+  }
+}

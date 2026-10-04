@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002417,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "A landlord cannot ask about your criminal history before offering you a rental. This rule has two exceptions: questions about making methamphetamine in federally supported housing and being on the lifetime sex offender list.",
+    "summary_es": "Un arrendador no puede preguntar sobre tu historial criminal antes de ofrecerte un alquiler. Esta regla tiene dos excepciones: preguntas sobre fabricación de metanfetamina en viviendas con apoyo federal y estar en la lista de registro de delincuentes sexuales de por vida.",
+    "who_en": "This rule applies to all rental homes except owner-occupied buildings with four or fewer units.",
+    "who_es": "Esta regla se aplica a todos los hogares de alquiler excepto los edificios ocupados por el propietario con cuatro o menos unidades."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1042,
+    "output_tokens": 275
+  }
+}

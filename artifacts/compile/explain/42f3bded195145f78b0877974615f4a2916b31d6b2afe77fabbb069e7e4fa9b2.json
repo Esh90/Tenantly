@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.001977,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords cannot refuse to rent to someone based on their source of income. This includes pensions, benefits, and other income types.",
+    "summary_es": "Los arrendadores no pueden rechazar a alguien por su fuente de ingresos. Esto incluye pensiones, beneficios y otros tipos de ingresos.",
+    "who_en": "This rule applies to rental properties in San Diego, CA.",
+    "who_es": "Esta regla aplica a las propiedades de alquiler en San Diego, CA."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 957,
+    "output_tokens": 204
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001871,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "All provided documents are link-only references with no actual text content supplied. Without access to the full text of these sources, it is impossible to determine whether Hoboken, NJ has a rent increase limits rule at the city level or to identify relevant sections and quotes. The links reference various New Jersey state statutes and municipal codes, but the actual document text needed to make a classification is not available.",
+    "result": "text_not_supplied"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1086,
+    "output_tokens": 157
+  }
+}

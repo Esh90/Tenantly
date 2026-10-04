@@ -1,0 +1,149 @@
+{
+  "cost_usd": 0.012612,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "category": "just_cause_eviction",
+        "cite": "M.G.L. c. 186, § 12",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All estates at will in Massachusetts.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "Notice period for nonpayment of rent",
+            "text": "fourteen days' notice",
+            "unit": "days",
+            "value": 14
+          },
+          {
+            "name": "Look-back period for prior notice",
+            "text": "within the twelve months next preceding",
+            "unit": "months",
+            "value": 12
+          },
+          {
+            "name": "Cure period for tenant",
+            "text": "within ten days after the receipt thereof",
+            "unit": "days",
+            "value": 10
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "In case of neglect or refusal to pay the rent due from a tenant at will, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the tenancy; provided, that the tenancy of a tenant who has not received a similar notice from the landlord within the twelve months next preceding the receipt of such notice shall not be determined if the tenant, within ten days after the receipt thereof, pays or tenders to the landlord, the landlord's attorney, or the person to whom the tenant customarily pays rent, the full amount of any rent due.",
+        "requirement": "A landlord may terminate a tenancy at will for nonpayment of rent with 14 days' written notice. However, if the tenant has not received a similar notice within the preceding 12 months, the tenant may prevent termination by paying or tendering the full amount of rent due within 10 days of receiving notice.",
+        "tenancy_conditions": [
+          "Tenant has not received a similar notice within the preceding 12 months"
+        ],
+        "title": "Notice to determine estate at will for nonpayment of rent",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "M.G.L. c. 186, § 12",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All estates at will in Massachusetts.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "General notice period to terminate",
+            "text": "three months' notice",
+            "unit": "months",
+            "value": 3
+          },
+          {
+            "name": "Alternative notice period for shorter rent cycles",
+            "text": "equal to the interval between the days of payment or thirty days, whichever is longer",
+            "unit": "days",
+            "value": 30
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Estates at will may be determined by either party by three months' notice in writing for that purpose given to the other party; and, if the rent reserved is payable at periods of less than three months, the time of such notice shall be sufficient if it is equal to the interval between the days of payment or thirty days, whichever is longer.",
+        "requirement": "Either party may terminate an estate at will with three months' written notice, or if rent is payable at intervals of less than three months, by notice equal to the rent payment interval or 30 days, whichever is longer.",
+        "tenancy_conditions": [],
+        "title": "Notice to determine estate at will by either party",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "M.G.L. c. 186, § 12",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All estates at will in Massachusetts.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": "If the notice fails to contain this notification, the time within which the tenant is entitled to pay or tender rent is extended to the day the answer is due in any possession action.",
+        "quote": "Every notice to determine an estate at will for nonpayment of rent shall contain the following notification to the tenant: ''If you have not received a notice to quit for nonpayment of rent within the last twelve months, you have a right to prevent termination of your tenancy by paying or tendering to your landlord, your landlord's attorney or the person to whom you customarily pay your rent the full amount of rent due within ten days after your receipt of this notice.''",
+        "requirement": "A landlord must include in every notice to terminate for nonpayment a specific notification informing the tenant of their right to cure by paying rent within 10 days if they have not received a similar notice within the preceding 12 months.",
+        "tenancy_conditions": [],
+        "title": "Notice of rent cure rights for nonpayment",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "M.G.L. c. 186, § 12",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All estates at will in Massachusetts.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "If any notice to determine an estate at will for nonpayment of rent shall fail to contain such notification, the time within which the tenant receiving the notice would be entitled to pay or tender rent pursuant to this section shall be extended to the day the answer is due in any action by the landlord to recover possession of the premises.",
+        "requirement": "If a notice to terminate for nonpayment fails to include the required tenant notification, the tenant's cure period extends to the day an answer is due in possession proceedings.",
+        "tenancy_conditions": [],
+        "title": "Notice requirement failure consequence",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "M.G.L. c. 186, § 12",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All estates at will in Massachusetts.",
+        "exemptions": [
+          {
+            "description": "Salary payments are excluded",
+            "predicate": {
+              "const": true
+            },
+            "quote": "other than a salary payment"
+          }
+        ],
+        "key_values": [
+          {
+            "name": "Minimum continuation period",
+            "text": "not less than seven days",
+            "unit": "days",
+            "value": 7
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "If the neglect or refusal to pay the rent due was caused by a failure or delay of the federal government, the commonwealth or any municipality, or any departments, agencies or authorities thereof, in the mailing or delivery of any subsistence or rental payment, check or voucher other than a salary payment to either the tenant or the landlord, the court in any action for possession shall continue the hearing not less than seven days in order to furnish notice of such action to the appropriate agency and shall, if all rent due with interest and costs of suit has been tendered to the landlord within such time, treat the tenancy as not having been terminated.",
+        "requirement": "If nonpayment of rent was caused by a government delay in providing subsistence or rental payments, the court must continue the hearing for at least 7 days to notify the relevant agency, and if rent is tendered within that time, the tenancy shall be treated as not terminated.",
+        "tenancy_conditions": [],
+        "title": "Continuation of hearing for government subsistence or rental payment delays",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2767,
+    "output_tokens": 1969
+  }
+}

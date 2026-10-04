@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002328,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "A landlord cannot punish a tenant for using rights under Division 7 or asking for help enforcing them. This protects tenants who report problems or stand up for their legal rights.",
+    "summary_es": "Un arrendador no puede castigar a un inquilino por usar sus derechos bajo Division 7 ni por pedir ayuda para hacerlos cumplir. Esto protege a los inquilinos que reportan problemas o defienden sus derechos legales.",
+    "who_en": "This rule covers all residential rental properties subject to SDMC Chapter 9, Article 8, Division 7.",
+    "who_es": "Esta regla cubre todas las propiedades residenciales de alquiler sujetas a SDMC Capítulo 9, Artículo 8, División 7."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 953,
+    "output_tokens": 275
+  }
+}

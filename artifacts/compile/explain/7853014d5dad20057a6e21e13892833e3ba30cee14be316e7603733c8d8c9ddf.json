@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002113,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "If a landlord fails to follow security deposit rules in bad faith, the landlord loses the right to claim any amount of the deposit. This penalty applies starting January 1, 2026.",
+    "summary_es": "Si un arrendador incumple las reglas del depósito de seguridad de mala fe, el arrendador pierde el derecho de reclamar cualquier cantidad del depósito. Esta sanción aplica a partir del 1 de enero de 2026.",
+    "who_en": "This rule covers all residential rental properties.",
+    "who_es": "Esta regla cubre todas las propiedades residenciales de alquiler."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 943,
+    "output_tokens": 234
+  }
+}

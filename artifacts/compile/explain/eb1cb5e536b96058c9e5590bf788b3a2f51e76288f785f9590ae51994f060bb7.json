@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002321,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords can charge at most one month's rent as a security deposit. The last month's rent counts toward this deposit, but the first month's rent does not.",
+    "summary_es": "Los arrendadores pueden cobrar como máximo un mes de renta como depósito de seguridad. El último mes de renta cuenta hacia este depósito, pero el primer mes de renta no.",
+    "who_en": "This rule applies to most residential rentals in Berkeley, except landlords who own only two rental properties with no more than four units total.",
+    "who_es": "Esta regla se aplica a la mayoría de los alquileres residenciales en Berkeley, excepto los arrendadores que poseen solo dos propiedades de alquiler con no más de cuatro unidades en total."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 996,
+    "output_tokens": 265
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002759,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords cannot raise rent more than 5 percent plus the local cost-of-living change, or 10 percent, whichever is lower, in any 12-month period. Only two increases are allowed per tenant in 12 months.",
+    "summary_es": "Los arrendadores no pueden aumentar la renta más del 5 por ciento más el cambio en el costo de vida local, o el 10 por ciento, el que sea menor, en cualquier período de 12 meses. Solo se permiten dos aumentos por inquilino en 12 meses.",
+    "who_en": "This rule applies to all residential real property in California, except for affordable housing, newly built homes within 15 years, owner-occupied duplexes, and some separately owned properties.",
+    "who_es": "Esta regla se aplica a todas las propiedades residenciales en California, excepto viviendas asequibles, casas nuevas dentro de 15 años, dúplex ocupados por el propietario, y algunas propiedades de propiedad separada."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1074,
+    "output_tokens": 337
+  }
+}

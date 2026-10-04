@@ -1,0 +1,42 @@
+{
+  "cost_usd": 0.0086944,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "just_cause_eviction",
+        "cite": "S.F. Admin. Code § 37.9(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Rental units covered by the San Francisco Rent Ordinance, including some units exempt from rent increase limits.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "just_cause_reasons",
+            "text": "The 17 just cause reasons for eviction under Ordinance Section 37.9(a)",
+            "unit": null,
+            "value": 17
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "Landlord may be subject to substantial civil and/or criminal liability for unlawful eviction.",
+        "quote": "In order to evict a tenant from a rental unit covered by the Rent Ordinance, a landlord must have a \"just cause\" reason that is the dominant motive for pursuing the eviction.",
+        "relations_hint": [],
+        "requirement": "A landlord must have one of the enumerated just cause reasons as the dominant motive to evict a tenant from a covered unit. Expiration of a rental agreement or change in ownership is not just cause.",
+        "tenancy_conditions": [],
+        "title": "Just cause required for eviction",
+        "uncertain_fields": [
+          "coverage"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 1871,
+    "output_tokens": 448
+  }
+}

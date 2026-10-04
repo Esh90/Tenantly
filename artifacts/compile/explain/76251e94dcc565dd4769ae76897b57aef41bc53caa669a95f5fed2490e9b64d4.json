@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002154,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Annual rent increases are limited to the lower of 3% or 80% of the 12-month CPI change. No increase is permitted if CPI is negative.",
+    "summary_es": "Los aumentos de renta anuales están limitados al menor de 3% u 80% del cambio del IPC de 12 meses. No se permite aumento si el IPC es negativo.",
+    "who_en": "This rule applies to residential buildings constructed on or before February 1, 1995.",
+    "who_es": "Esta regla se aplica a edificios residenciales construidos en o antes del 1 de febrero de 1995."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 979,
+    "output_tokens": 235
+  }
+}

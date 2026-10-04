@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.00251,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The documents provided contain only guidance materials and links related to Santa Ana's rent stabilization and just cause eviction ordinances, but no actual text of city ordinances addressing security deposits. The link-only signals point to state law sources (California Civil Code sections on security deposits and related housing laws) and news articles about rent pricing software, but none of these sources contain the actual text of Santa Ana city-level security deposit rules. While state-level rules CA-DEP-01, CA-DEP-02, and CA-DEP-03 exist, there is no evidence in the provided documents of Santa Ana-specific security deposit regulations at the city level.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1450,
+    "output_tokens": 212
+  }
+}

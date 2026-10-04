@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002113,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "Document D036 is truncated/incomplete (ends with \"Landlord/ Tenant Relations - City of Jersey City...Birth, Mar\") and does not contain substantive text about application screening fees. The link-only documents (D035, D037, D060-D064) have no text provided for review. While a state rule exists (NJ-FEE-01), no city-level ordinance text or explicit local application screening fee rule is available in the supplied documents.",
+    "result": "text_not_supplied"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1223,
+    "output_tokens": 178
+  }
+}

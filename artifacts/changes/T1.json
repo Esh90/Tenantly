@@ -1,0 +1,5027 @@
+{
+  "affected": [
+    {
+      "address_id": "A0001",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "6238 De Longpre Ave, Los Angeles, CA 90028",
+      "lat": 34.096133031379,
+      "legal_city": "Los Angeles",
+      "lon": -118.324865073863
+    },
+    {
+      "address_id": "A0004",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "10050 Mountair Ave, Los Angeles, CA 91042",
+      "lat": 34.251842346844,
+      "legal_city": "Los Angeles",
+      "lon": -118.293109199528
+    },
+    {
+      "address_id": "A0005",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1609 Addison St, Berkeley, CA 94703",
+      "lat": 37.869830696926,
+      "legal_city": "Berkeley",
+      "lon": -122.279293972449
+    },
+    {
+      "address_id": "A0007",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4257 San Pedro Pl, Los Angeles, CA 90011",
+      "lat": 34.006235579229,
+      "legal_city": "Los Angeles",
+      "lon": -118.271165204282
+    },
+    {
+      "address_id": "A0014",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "5907 Cahuenga Blvd, Los Angeles, CA 91601",
+      "lat": 34.177801731811,
+      "legal_city": "Los Angeles",
+      "lon": -118.361636078081
+    },
+    {
+      "address_id": "A0016",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "3515 Fillmore St, San Francisco, CA",
+      "lat": 37.801874337429,
+      "legal_city": "San Francisco",
+      "lon": -122.436684852142
+    },
+    {
+      "address_id": "A0018",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1906 Bonita Ave, Berkeley, CA 94704",
+      "lat": 37.873088577747,
+      "legal_city": "Berkeley",
+      "lon": -122.272116073506
+    },
+    {
+      "address_id": "A0019",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "3820 Haines St, San Diego, CA 92109",
+      "lat": 32.788734586305,
+      "legal_city": "San Diego",
+      "lon": -117.239511773112
+    },
+    {
+      "address_id": "A0021",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "22 Precita Av, San Francisco, CA",
+      "lat": 37.746697199975,
+      "legal_city": "San Francisco",
+      "lon": -122.418913690663
+    },
+    {
+      "address_id": "A0022",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "10908 Hartsook St, Los Angeles, CA 91601",
+      "lat": 34.163485706471,
+      "legal_city": "Los Angeles",
+      "lon": -118.368312978253
+    },
+    {
+      "address_id": "A0023",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "843 Irolo St, Los Angeles, CA 90005",
+      "lat": 34.0569182313,
+      "legal_city": "Los Angeles",
+      "lon": -118.300958567015
+    },
+    {
+      "address_id": "A0025",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2341 8Th St, Berkeley, CA 94710",
+      "lat": 37.863231048622,
+      "legal_city": "Berkeley",
+      "lon": -122.293815269518
+    },
+    {
+      "address_id": "A0027",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "3918 Fulton St, San Francisco, CA",
+      "lat": 37.773108534668,
+      "legal_city": "San Francisco",
+      "lon": -122.473684296131
+    },
+    {
+      "address_id": "A0030",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2051 Divisadero St, San Francisco, CA",
+      "lat": 37.788524403095,
+      "legal_city": "San Francisco",
+      "lon": -122.440651886856
+    },
+    {
+      "address_id": "A0031",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "5624 S San Pedro St, Los Angeles, CA 90011",
+      "lat": 33.991312087929,
+      "legal_city": "Los Angeles",
+      "lon": -118.270046050706
+    },
+    {
+      "address_id": "A0033",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1260 Kearny St, San Francisco, CA",
+      "lat": 37.79964889858,
+      "legal_city": "San Francisco",
+      "lon": -122.405709002561
+    },
+    {
+      "address_id": "A0035",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "5239 Harmony Ave, Los Angeles, CA 91601",
+      "lat": 34.165618179362,
+      "legal_city": "Los Angeles",
+      "lon": -118.366516457468
+    },
+    {
+      "address_id": "A0037",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "770 Irolo St, Los Angeles, CA 90005",
+      "lat": 34.058302827517,
+      "legal_city": "Los Angeles",
+      "lon": -118.300824624602
+    },
+    {
+      "address_id": "A0038",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "154 Yukon St, San Francisco, CA",
+      "lat": 37.757178828285,
+      "legal_city": "San Francisco",
+      "lon": -122.442397125228
+    },
+    {
+      "address_id": "A0041",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "122 Tiffany Av, San Francisco, CA",
+      "lat": 37.744990908268,
+      "legal_city": "San Francisco",
+      "lon": -122.421406384884
+    },
+    {
+      "address_id": "A0045",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "12829 Branford St, Los Angeles, CA 91331",
+      "lat": 34.241771886514,
+      "legal_city": "Los Angeles",
+      "lon": -118.41212012105
+    },
+    {
+      "address_id": "A0050",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "36 Hoff St, San Francisco, CA",
+      "lat": 37.764124413322,
+      "legal_city": "San Francisco",
+      "lon": -122.420573521471
+    },
+    {
+      "address_id": "A0055",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "305 10Th Av, San Francisco, CA",
+      "lat": 37.782619210817,
+      "legal_city": "San Francisco",
+      "lon": -122.46876702789
+    },
+    {
+      "address_id": "A0058",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "3137 Boston Ave, San Diego, CA 92113",
+      "lat": 32.693817730505,
+      "legal_city": "San Diego",
+      "lon": -117.126888325341
+    },
+    {
+      "address_id": "A0060",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "5737 Willowcrest Ave, Los Angeles, CA 91601",
+      "lat": 34.174656039346,
+      "legal_city": "Los Angeles",
+      "lon": -118.362720761505
+    },
+    {
+      "address_id": "A0061",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "106 18Th Av, San Francisco, CA",
+      "lat": 37.785919313984,
+      "legal_city": "San Francisco",
+      "lon": -122.477559726965
+    },
+    {
+      "address_id": "A0062",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "77 Hoff St, San Francisco, CA",
+      "lat": 37.763766231452,
+      "legal_city": "San Francisco",
+      "lon": -122.420395727367
+    },
+    {
+      "address_id": "A0066",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1318 N Orange Dr, Los Angeles, CA 90028",
+      "lat": 34.0947022093,
+      "legal_city": "Los Angeles",
+      "lon": -118.341484249454
+    },
+    {
+      "address_id": "A0067",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1335 N Vista St, Los Angeles, CA 90046",
+      "lat": 34.095045778052,
+      "legal_city": "Los Angeles",
+      "lon": -118.351799391859
+    },
+    {
+      "address_id": "A0069",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2277 Union St, San Francisco, CA",
+      "lat": 37.796874616444,
+      "legal_city": "San Francisco",
+      "lon": -122.436717035924
+    },
+    {
+      "address_id": "A0072",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1251 10Th Av, San Francisco, CA",
+      "lat": 37.764890627041,
+      "legal_city": "San Francisco",
+      "lon": -122.467520089918
+    },
+    {
+      "address_id": "A0074",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "717 S Berendo St, Los Angeles, CA 90005",
+      "lat": 34.059391478589,
+      "legal_city": "Los Angeles",
+      "lon": -118.294210099909
+    },
+    {
+      "address_id": "A0079",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2361 Portland St, Los Angeles, CA 90007",
+      "lat": 34.032231820463,
+      "legal_city": "Los Angeles",
+      "lon": -118.282094130957
+    },
+    {
+      "address_id": "A0080",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "690 S Catalina St, Los Angeles, CA 90005",
+      "lat": 34.060127849082,
+      "legal_city": "Los Angeles",
+      "lon": -118.295327996925
+    },
+    {
+      "address_id": "A0081",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "145 Taylor St, San Francisco, CA",
+      "lat": 37.783758897294,
+      "legal_city": "San Francisco",
+      "lon": -122.410947938983
+    },
+    {
+      "address_id": "A0084",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1725 Chestnut St, San Francisco, CA",
+      "lat": 37.801332618559,
+      "legal_city": "San Francisco",
+      "lon": -122.431739349227
+    },
+    {
+      "address_id": "A0085",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1101 Church St, San Francisco, CA",
+      "lat": 37.753239144697,
+      "legal_city": "San Francisco",
+      "lon": -122.427505338235
+    },
+    {
+      "address_id": "A0088",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "201 Clement St, San Francisco, CA",
+      "lat": 37.783026502307,
+      "legal_city": "San Francisco",
+      "lon": -122.461275217487
+    },
+    {
+      "address_id": "A0091",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2229 Dwight Way, Berkeley, CA 94704",
+      "lat": 37.864405329327,
+      "legal_city": "Berkeley",
+      "lon": -122.264605312198
+    },
+    {
+      "address_id": "A0092",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2514 Piedmont Ave, Berkeley, CA 94704",
+      "lat": 37.865583367618,
+      "legal_city": "Berkeley",
+      "lon": -122.251697248224
+    },
+    {
+      "address_id": "A0094",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1371 27Th St, San Diego, CA 92154",
+      "lat": 32.571862077109,
+      "legal_city": "San Diego",
+      "lon": -117.075371141803
+    },
+    {
+      "address_id": "A0097",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1560 Mason St, San Francisco, CA",
+      "lat": 37.79780463687,
+      "legal_city": "San Francisco",
+      "lon": -122.411949673166
+    },
+    {
+      "address_id": "A0100",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4732 Bancroft St, San Diego, CA 92116",
+      "lat": 32.764095185337,
+      "legal_city": "San Diego",
+      "lon": -117.123977567896
+    },
+    {
+      "address_id": "A0103",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2161 Allston Way, Berkeley, CA 94704",
+      "lat": 37.869701586713,
+      "legal_city": "Berkeley",
+      "lon": -122.266218694007
+    },
+    {
+      "address_id": "A0105",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "140 Portola Dr, San Francisco, CA",
+      "lat": 37.748652213279,
+      "legal_city": "San Francisco",
+      "lon": -122.444191229026
+    },
+    {
+      "address_id": "A0106",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "250 Fremont St, San Francisco, CA",
+      "lat": 37.788294915739,
+      "legal_city": "San Francisco",
+      "lon": -122.394074444911
+    },
+    {
+      "address_id": "A0107",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "10635 Sherman Grove Ave, Los Angeles, CA 91040",
+      "lat": 34.262255890509,
+      "legal_city": "Los Angeles",
+      "lon": -118.32017657606
+    },
+    {
+      "address_id": "A0109",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2922 Otis St, Berkeley, CA 94703",
+      "lat": 37.8558347046,
+      "legal_city": "Berkeley",
+      "lon": -122.270269918923
+    },
+    {
+      "address_id": "A0111",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "10075 Tujunga Canyon Blvd, Los Angeles, CA 91042",
+      "lat": 34.249924250911,
+      "legal_city": "Los Angeles",
+      "lon": -118.284430355327
+    },
+    {
+      "address_id": "A0112",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "448 Broderick St, San Francisco, CA",
+      "lat": 37.77431322716,
+      "legal_city": "San Francisco",
+      "lon": -122.439298239317
+    },
+    {
+      "address_id": "A0113",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "3151 Eton Ave, Berkeley, CA 94705",
+      "lat": 37.853156920269,
+      "legal_city": "Berkeley",
+      "lon": -122.250637537308
+    },
+    {
+      "address_id": "A0114",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "3743 India St, San Diego, CA 92103",
+      "lat": 32.74279009558,
+      "legal_city": "San Diego",
+      "lon": -117.180736253153
+    },
+    {
+      "address_id": "A0115",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "397 05Th Av, San Francisco, CA",
+      "lat": 37.78123618708,
+      "legal_city": "San Francisco",
+      "lon": -122.46329611176
+    },
+    {
+      "address_id": "A0117",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1733 N Cherokee Ave, Los Angeles, CA 90028",
+      "lat": 34.102120911287,
+      "legal_city": "Los Angeles",
+      "lon": -118.334821278665
+    },
+    {
+      "address_id": "A0121",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4079 Front St, San Diego, CA 92103",
+      "lat": 32.751421595306,
+      "legal_city": "San Diego",
+      "lon": -117.16494526813
+    },
+    {
+      "address_id": "A0122",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4812 S Broadway, Los Angeles, CA 90037",
+      "lat": 33.999020066962,
+      "legal_city": "Los Angeles",
+      "lon": -118.278252342985
+    },
+    {
+      "address_id": "A0126",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1350 Potrero Av, San Francisco, CA",
+      "lat": 37.750954392609,
+      "legal_city": "San Francisco",
+      "lon": -122.406250403098
+    },
+    {
+      "address_id": "A0127",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "10029 Sepulveda Blvd, Los Angeles, CA 91345",
+      "lat": 34.252367056179,
+      "legal_city": "Los Angeles",
+      "lon": -118.467596873721
+    },
+    {
+      "address_id": "A0133",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "8819 Lankershim Blvd, Los Angeles, CA 91352",
+      "lat": 34.229428423859,
+      "legal_city": "Los Angeles",
+      "lon": -118.387834588124
+    },
+    {
+      "address_id": "A0135",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "843 Clay St, San Francisco, CA",
+      "lat": 37.794118952125,
+      "legal_city": "San Francisco",
+      "lon": -122.40698604858
+    },
+    {
+      "address_id": "A0138",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1033 E 51St St, Los Angeles, CA 90011",
+      "lat": 33.996685074769,
+      "legal_city": "Los Angeles",
+      "lon": -118.257577562794
+    },
+    {
+      "address_id": "A0141",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2601 43Rd Av, San Francisco, CA",
+      "lat": 37.73813158911,
+      "legal_city": "San Francisco",
+      "lon": -122.501210314083
+    },
+    {
+      "address_id": "A0142",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4615 Avalon Blvd, Los Angeles, CA 90011",
+      "lat": 34.001426079007,
+      "legal_city": "Los Angeles",
+      "lon": -118.265290530936
+    },
+    {
+      "address_id": "A0145",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4515 Felton St, San Diego, CA 92116",
+      "lat": 32.759371284084,
+      "legal_city": "San Diego",
+      "lon": -117.121714561521
+    },
+    {
+      "address_id": "A0147",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2850 Golden Gate Av, San Francisco, CA",
+      "lat": 37.776358944957,
+      "legal_city": "San Francisco",
+      "lon": -122.457612633148
+    },
+    {
+      "address_id": "A0150",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "3784 E Broadway, San Diego, CA 92102",
+      "lat": 32.716024799043,
+      "legal_city": "San Diego",
+      "lon": -117.11184048031
+    },
+    {
+      "address_id": "A0152",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1669 Sunset Cliffs Blvd, San Diego, CA 92107",
+      "lat": 32.74094590948,
+      "legal_city": "San Diego",
+      "lon": -117.25076493005
+    },
+    {
+      "address_id": "A0153",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "366 E 55Th St, Los Angeles, CA 90011",
+      "lat": 33.992394354537,
+      "legal_city": "Los Angeles",
+      "lon": -118.268297439622
+    },
+    {
+      "address_id": "A0154",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4568 Idaho St, San Diego, CA 92116",
+      "lat": 32.760412374063,
+      "legal_city": "San Diego",
+      "lon": -117.133977948208
+    },
+    {
+      "address_id": "A0156",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "290 Green St, San Francisco, CA",
+      "lat": 37.80031526334,
+      "legal_city": "San Francisco",
+      "lon": -122.402990211203
+    },
+    {
+      "address_id": "A0157",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2701 Ridge Rd, Berkeley, CA 94709",
+      "lat": 37.876494513292,
+      "legal_city": "Berkeley",
+      "lon": -122.257026606732
+    },
+    {
+      "address_id": "A0158",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2522 Hilgard Ave, Berkeley, CA 94709",
+      "lat": 37.878591221585,
+      "legal_city": "Berkeley",
+      "lon": -122.260493108118
+    },
+    {
+      "address_id": "A0162",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1640 N Poinsettia Pl, Los Angeles, CA 90046",
+      "lat": 34.100552498586,
+      "legal_city": "Los Angeles",
+      "lon": -118.347788965715
+    },
+    {
+      "address_id": "A0164",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "725 14Th St, San Francisco, CA",
+      "lat": 37.76763837901,
+      "legal_city": "San Francisco",
+      "lon": -122.42951948205
+    },
+    {
+      "address_id": "A0165",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "734 Jamaica Ct, San Diego, CA 92109",
+      "lat": 32.773642646317,
+      "legal_city": "San Diego",
+      "lon": -117.252245356556
+    },
+    {
+      "address_id": "A0167",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4616 Florida St, San Diego, CA 92116",
+      "lat": 32.76124264042,
+      "legal_city": "San Diego",
+      "lon": -117.143850889032
+    },
+    {
+      "address_id": "A0170",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "8917 Cedros Ave, Los Angeles, CA 91402",
+      "lat": 34.232064015614,
+      "legal_city": "Los Angeles",
+      "lon": -118.453618335394
+    },
+    {
+      "address_id": "A0172",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "8504 Willis Ave, Los Angeles, CA 91402",
+      "lat": 34.224850838975,
+      "legal_city": "Los Angeles",
+      "lon": -118.455218605953
+    },
+    {
+      "address_id": "A0173",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "13180 Foothill Blvd, Los Angeles, CA 91342",
+      "lat": 34.299371281369,
+      "legal_city": "Los Angeles",
+      "lon": -118.421538456805
+    },
+    {
+      "address_id": "A0178",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "5308 Riverton Ave, Los Angeles, CA 91601",
+      "lat": 34.166828679585,
+      "legal_city": "Los Angeles",
+      "lon": -118.365290745355
+    },
+    {
+      "address_id": "A0179",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "7006 Lanewood Ave, Los Angeles, CA 90028",
+      "lat": 34.09915207252,
+      "legal_city": "Los Angeles",
+      "lon": -118.341635208217
+    },
+    {
+      "address_id": "A0180",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "845 S Kingsley Dr, Los Angeles, CA 90005",
+      "lat": 34.056870603736,
+      "legal_city": "Los Angeles",
+      "lon": -118.303137913263
+    },
+    {
+      "address_id": "A0183",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2427 Hilgard Ave, Berkeley, CA 94709",
+      "lat": 37.87845544308,
+      "legal_city": "Berkeley",
+      "lon": -122.262349376787
+    },
+    {
+      "address_id": "A0184",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "156 W 32Nd St, Los Angeles, CA 90007",
+      "lat": 34.020782218595,
+      "legal_city": "Los Angeles",
+      "lon": -118.273514783778
+    },
+    {
+      "address_id": "A0188",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2819 Mcgee Ave, Berkeley, CA 94703",
+      "lat": 37.856959944236,
+      "legal_city": "Berkeley",
+      "lon": -122.275258218951
+    },
+    {
+      "address_id": "A0189",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1811 Carleton St, Berkeley, CA 94703",
+      "lat": 37.860487333983,
+      "legal_city": "Berkeley",
+      "lon": -122.273498335777
+    },
+    {
+      "address_id": "A0192",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "780 Post St, San Francisco, CA",
+      "lat": 37.787554937568,
+      "legal_city": "San Francisco",
+      "lon": -122.414659903737
+    },
+    {
+      "address_id": "A0193",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1626 Bonita Ave, Berkeley, CA 94709",
+      "lat": 37.877436210953,
+      "legal_city": "Berkeley",
+      "lon": -122.272592199936
+    },
+    {
+      "address_id": "A0196",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "16915 Blackhawk St, Los Angeles, CA 91344",
+      "lat": 34.258955182522,
+      "legal_city": "Los Angeles",
+      "lon": -118.500920253647
+    },
+    {
+      "address_id": "A0197",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1611 62Nd St, Berkeley, CA 94703",
+      "lat": 37.846527054842,
+      "legal_city": "Berkeley",
+      "lon": -122.274812039507
+    },
+    {
+      "address_id": "A0200",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1853 N Highland Ave, Los Angeles, CA 90028",
+      "lat": 34.105004287023,
+      "legal_city": "Los Angeles",
+      "lon": -118.337549044749
+    },
+    {
+      "address_id": "A0201",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2737 Benvenue Ave, Berkeley, CA 94705",
+      "lat": 37.861084663474,
+      "legal_city": "Berkeley",
+      "lon": -122.25463879726
+    },
+    {
+      "address_id": "A0202",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1446 Jackson St, San Francisco, CA",
+      "lat": 37.794522791984,
+      "legal_city": "San Francisco",
+      "lon": -122.41889836579
+    },
+    {
+      "address_id": "A0205",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2425 Grant St, Berkeley, CA 94703",
+      "lat": 37.864419418207,
+      "legal_city": "Berkeley",
+      "lon": -122.274486388915
+    },
+    {
+      "address_id": "A0206",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "401 43Rd Av, San Francisco, CA",
+      "lat": 37.78106651207,
+      "legal_city": "San Francisco",
+      "lon": -122.504228232138
+    },
+    {
+      "address_id": "A0207",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "705 W 23Rd St, Los Angeles, CA 90007",
+      "lat": 34.032030548439,
+      "legal_city": "Los Angeles",
+      "lon": -118.276733095547
+    },
+    {
+      "address_id": "A0210",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1432 N Curson Ave, Los Angeles, CA 90046",
+      "lat": 34.096815880701,
+      "legal_city": "Los Angeles",
+      "lon": -118.354938535163
+    },
+    {
+      "address_id": "A0212",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1311 South Van Ness Av, San Francisco, CA",
+      "lat": 37.752168513331,
+      "legal_city": "San Francisco",
+      "lon": -122.4161731875
+    },
+    {
+      "address_id": "A0213",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "11649 Acama St, Los Angeles, CA 91604",
+      "lat": 34.145584078078,
+      "legal_city": "Los Angeles",
+      "lon": -118.386856598286
+    },
+    {
+      "address_id": "A0215",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2295 California St, San Francisco, CA",
+      "lat": 37.789075325053,
+      "legal_city": "San Francisco",
+      "lon": -122.432052589153
+    },
+    {
+      "address_id": "A0216",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2309 Haste St, Berkeley, CA 94704",
+      "lat": 37.865531910644,
+      "legal_city": "Berkeley",
+      "lon": -122.262957356662
+    },
+    {
+      "address_id": "A0219",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "3735 32Nd St, San Diego, CA 92104",
+      "lat": 32.746245203063,
+      "legal_city": "San Diego",
+      "lon": -117.124937736826
+    },
+    {
+      "address_id": "A0222",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1901 Vallejo St, San Francisco, CA",
+      "lat": 37.795996387914,
+      "legal_city": "San Francisco",
+      "lon": -122.428597910742
+    },
+    {
+      "address_id": "A0224",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "8727 Tobias Ave, Los Angeles, CA 91402",
+      "lat": 34.228507480493,
+      "legal_city": "Los Angeles",
+      "lon": -118.451718756162
+    },
+    {
+      "address_id": "A0225",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1627 Jackson St, San Francisco, CA",
+      "lat": 37.794030087633,
+      "legal_city": "San Francisco",
+      "lon": -122.421842293682
+    },
+    {
+      "address_id": "A0228",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "225 Collingwood St, San Francisco, CA",
+      "lat": 37.758806229242,
+      "legal_city": "San Francisco",
+      "lon": -122.43584550357
+    },
+    {
+      "address_id": "A0229",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "5164 03Rd St, San Francisco, CA",
+      "lat": 37.731288264664,
+      "legal_city": "San Francisco",
+      "lon": -122.392090570269
+    },
+    {
+      "address_id": "A0231",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "521 Arguello Bl, San Francisco, CA",
+      "lat": 37.780784398048,
+      "legal_city": "San Francisco",
+      "lon": -122.458904742326
+    },
+    {
+      "address_id": "A0234",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2212 Blake St, Berkeley, CA 94704",
+      "lat": 37.863354369764,
+      "legal_city": "Berkeley",
+      "lon": -122.26472014852
+    },
+    {
+      "address_id": "A0235",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "6736 Selma Ave, Los Angeles, CA 90028",
+      "lat": 34.099644694718,
+      "legal_city": "Los Angeles",
+      "lon": -118.337259232832
+    },
+    {
+      "address_id": "A0236",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1110 Jackson St, San Francisco, CA",
+      "lat": 37.795227211112,
+      "legal_city": "San Francisco",
+      "lon": -122.41341354471
+    },
+    {
+      "address_id": "A0237",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "36 Valley St, San Francisco, CA",
+      "lat": 37.744772339215,
+      "legal_city": "San Francisco",
+      "lon": -122.423160521356
+    },
+    {
+      "address_id": "A0238",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "15256 Acre St, Los Angeles, CA 91343",
+      "lat": 34.229903219394,
+      "legal_city": "Los Angeles",
+      "lon": -118.465059354597
+    },
+    {
+      "address_id": "A0239",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1476 University Ave, Berkeley, CA 94702",
+      "lat": 37.870240703252,
+      "legal_city": "Berkeley",
+      "lon": -122.282479272768
+    },
+    {
+      "address_id": "A0240",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4135 38Th St, San Diego, CA 92105",
+      "lat": 32.752138713798,
+      "legal_city": "San Diego",
+      "lon": -117.111779263182
+    },
+    {
+      "address_id": "A0246",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4386 Copeland Ave, San Diego, CA 92105",
+      "lat": 32.756800937083,
+      "legal_city": "San Diego",
+      "lon": -117.104047557974
+    },
+    {
+      "address_id": "A0247",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4957 Cape May Ave, San Diego, CA 92107",
+      "lat": 32.748875084016,
+      "legal_city": "San Diego",
+      "lon": -117.248171449465
+    },
+    {
+      "address_id": "A0248",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "941 S Kenmore Ave, Los Angeles, CA 90006",
+      "lat": 34.054561165408,
+      "legal_city": "Los Angeles",
+      "lon": -118.296589306557
+    },
+    {
+      "address_id": "A0251",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4663 33Rd St, San Diego, CA 92116",
+      "lat": 32.762436259509,
+      "legal_city": "San Diego",
+      "lon": -117.122794711786
+    },
+    {
+      "address_id": "A0252",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "15514 Chase St, Los Angeles, CA 91343",
+      "lat": 34.224605812398,
+      "legal_city": "Los Angeles",
+      "lon": -118.470326035112
+    },
+    {
+      "address_id": "A0253",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2250 North Point St, San Francisco, CA",
+      "lat": 37.802722582821,
+      "legal_city": "San Francisco",
+      "lon": -122.444275084577
+    },
+    {
+      "address_id": "A0255",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "851 E 51St St, Los Angeles, CA 90011",
+      "lat": 33.996666263731,
+      "legal_city": "Los Angeles",
+      "lon": -118.260152086488
+    },
+    {
+      "address_id": "A0257",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "5 Commer Ct, San Francisco, CA",
+      "lat": 37.732351895037,
+      "legal_city": "San Francisco",
+      "lon": -122.384674255589
+    },
+    {
+      "address_id": "A0259",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "872 North Point St, San Francisco, CA",
+      "lat": 37.805617181224,
+      "legal_city": "San Francisco",
+      "lon": -122.421551166436
+    },
+    {
+      "address_id": "A0260",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2479 Le Conte Ave, Berkeley, CA 94709",
+      "lat": 37.87682628993,
+      "legal_city": "Berkeley",
+      "lon": -122.261370866713
+    },
+    {
+      "address_id": "A0262",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2924 E Juniper St, San Diego, CA 92104",
+      "lat": 32.729713456435,
+      "legal_city": "San Diego",
+      "lon": -117.13126954968
+    },
+    {
+      "address_id": "A0263",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1636 M L King Jr Way, Berkeley, CA 94709",
+      "lat": 37.877104430999,
+      "legal_city": "Berkeley",
+      "lon": -122.273753258644
+    },
+    {
+      "address_id": "A0267",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1314 N Van Ness Ave, Los Angeles, CA 90028",
+      "lat": 34.095065338349,
+      "legal_city": "Los Angeles",
+      "lon": -118.31568631956
+    },
+    {
+      "address_id": "A0268",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1848 Franklin St, San Francisco, CA",
+      "lat": 37.791524228684,
+      "legal_city": "San Francisco",
+      "lon": -122.42417782805
+    },
+    {
+      "address_id": "A0271",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4115 Lincoln Wy, San Francisco, CA",
+      "lat": 37.764244000512,
+      "legal_city": "San Francisco",
+      "lon": -122.502100180635
+    },
+    {
+      "address_id": "A0273",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "3911 Centre St, San Diego, CA 92103",
+      "lat": 32.749136257741,
+      "legal_city": "San Diego",
+      "lon": -117.147965593551
+    },
+    {
+      "address_id": "A0274",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "7072 Eastman St, San Diego, CA 92111",
+      "lat": 32.789776238445,
+      "legal_city": "San Diego",
+      "lon": -117.168439360297
+    },
+    {
+      "address_id": "A0275",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4091 Morrell St, San Diego, CA 92109",
+      "lat": 32.795607414483,
+      "legal_city": "San Diego",
+      "lon": -117.231646719173
+    },
+    {
+      "address_id": "A0276",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4361 Illinois St, San Diego, CA 92104",
+      "lat": 32.756358147896,
+      "legal_city": "San Diego",
+      "lon": -117.127636770855
+    },
+    {
+      "address_id": "A0277",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2736 Grant St, Berkeley, CA 94703",
+      "lat": 37.85849365947,
+      "legal_city": "Berkeley",
+      "lon": -122.273424660577
+    },
+    {
+      "address_id": "A0278",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1800 Franklin St, San Francisco, CA",
+      "lat": 37.791146664293,
+      "legal_city": "San Francisco",
+      "lon": -122.424100965563
+    },
+    {
+      "address_id": "A0280",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1215 11Th Av, San Francisco, CA",
+      "lat": 37.76547270684,
+      "legal_city": "San Francisco",
+      "lon": -122.468630232306
+    },
+    {
+      "address_id": "A0281",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1725 N Gower St, Los Angeles, CA 90028",
+      "lat": 34.102103469042,
+      "legal_city": "Los Angeles",
+      "lon": -118.32242566214
+    },
+    {
+      "address_id": "A0282",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2240 10Th St, Berkeley, CA 94710",
+      "lat": 37.865429346313,
+      "legal_city": "Berkeley",
+      "lon": -122.292299289201
+    },
+    {
+      "address_id": "A0283",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "90 Bartlett St, San Francisco, CA",
+      "lat": 37.755542885749,
+      "legal_city": "San Francisco",
+      "lon": -122.41994757491
+    },
+    {
+      "address_id": "A0285",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "5255 Harmony Ave, Los Angeles, CA 91601",
+      "lat": 34.165894818542,
+      "legal_city": "Los Angeles",
+      "lon": -118.366517318934
+    },
+    {
+      "address_id": "A0289",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1741 M L King Jr Way, Berkeley, CA 94709",
+      "lat": 37.874873789784,
+      "legal_city": "Berkeley",
+      "lon": -122.273285380013
+    },
+    {
+      "address_id": "A0293",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1314 Natoma St, San Francisco, CA",
+      "lat": 37.768086302987,
+      "legal_city": "San Francisco",
+      "lon": -122.418602494007
+    },
+    {
+      "address_id": "A0303",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "188 E 35Th St, Los Angeles, CA 90011",
+      "lat": 34.016877079827,
+      "legal_city": "Los Angeles",
+      "lon": -118.271171829397
+    },
+    {
+      "address_id": "A0304",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4541 Hamilton St, San Diego, CA 92116",
+      "lat": 32.759898286948,
+      "legal_city": "San Diego",
+      "lon": -117.136296909949
+    },
+    {
+      "address_id": "A0305",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "638 45Th Av, San Francisco, CA",
+      "lat": 37.776456954836,
+      "legal_city": "San Francisco",
+      "lon": -122.505895195699
+    },
+    {
+      "address_id": "A0309",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1706 N Stanley Ave, Los Angeles, CA 90046",
+      "lat": 34.101835421105,
+      "legal_city": "Los Angeles",
+      "lon": -118.356114053762
+    },
+    {
+      "address_id": "A0314",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "6640 Leland Way, Los Angeles, CA 90028",
+      "lat": 34.096954047102,
+      "legal_city": "Los Angeles",
+      "lon": -118.334062631211
+    },
+    {
+      "address_id": "A0315",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "5233 Cartwright Ave, Los Angeles, CA 91601",
+      "lat": 34.165516896714,
+      "legal_city": "Los Angeles",
+      "lon": -118.363242167449
+    },
+    {
+      "address_id": "A0316",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "3978 Florida St, San Diego, CA 92104",
+      "lat": 32.749889290623,
+      "legal_city": "San Diego",
+      "lon": -117.143805824838
+    },
+    {
+      "address_id": "A0317",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2233 Channing Way, Berkeley, CA 94704",
+      "lat": 37.866269484742,
+      "legal_city": "Berkeley",
+      "lon": -122.264363578265
+    },
+    {
+      "address_id": "A0318",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2041 Francisco St, Berkeley, CA 94709",
+      "lat": 37.875520264007,
+      "legal_city": "Berkeley",
+      "lon": -122.270236431385
+    },
+    {
+      "address_id": "A0319",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2315 Grant St, Berkeley, CA 94703",
+      "lat": 37.866407956138,
+      "legal_city": "Berkeley",
+      "lon": -122.27469711854
+    },
+    {
+      "address_id": "A0322",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "227 Cypress Dr, San Ysidro, CA 92173",
+      "lat": 32.555470956839,
+      "legal_city": "San Diego",
+      "lon": -117.045151967648
+    },
+    {
+      "address_id": "A0323",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4627 Compton Ave, Los Angeles, CA 90011",
+      "lat": 34.001632563866,
+      "legal_city": "Los Angeles",
+      "lon": -118.247839866285
+    },
+    {
+      "address_id": "A0324",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2003 Franklin St, San Francisco, CA",
+      "lat": 37.792904441436,
+      "legal_city": "San Francisco",
+      "lon": -122.424604033397
+    },
+    {
+      "address_id": "A0327",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1605 N Martel Ave, Los Angeles, CA 90046",
+      "lat": 34.099942749927,
+      "legal_city": "Los Angeles",
+      "lon": -118.350240944927
+    },
+    {
+      "address_id": "A0328",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1845 08Th Av, San Francisco, CA",
+      "lat": 37.753910517548,
+      "legal_city": "San Francisco",
+      "lon": -122.464604457855
+    },
+    {
+      "address_id": "A0330",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "5229 Willowcrest Ave, Los Angeles, CA 91601",
+      "lat": 34.165448094429,
+      "legal_city": "Los Angeles",
+      "lon": -118.362200030188
+    },
+    {
+      "address_id": "A0333",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "3752 33Rd St, San Diego, CA 92104",
+      "lat": 32.746101678529,
+      "legal_city": "San Diego",
+      "lon": -117.12293391208
+    },
+    {
+      "address_id": "A0334",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2025 Francisco St, Berkeley, CA 94709",
+      "lat": 37.875475369217,
+      "legal_city": "Berkeley",
+      "lon": -122.270586610925
+    },
+    {
+      "address_id": "A0335",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "125 Bemis St, San Francisco, CA",
+      "lat": 37.737182683157,
+      "legal_city": "San Francisco",
+      "lon": -122.430367276697
+    },
+    {
+      "address_id": "A0340",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "14735 Roscoe Blvd, Los Angeles, CA 91402",
+      "lat": 34.22154746833,
+      "legal_city": "Los Angeles",
+      "lon": -118.454598749429
+    },
+    {
+      "address_id": "A0341",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4225 50Th St, San Diego, CA 92115",
+      "lat": 32.753521698227,
+      "legal_city": "San Diego",
+      "lon": -117.086787563421
+    },
+    {
+      "address_id": "A0345",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "153 W Vernon Ave, Los Angeles, CA 90037",
+      "lat": 34.003875826453,
+      "legal_city": "Los Angeles",
+      "lon": -118.275158399166
+    },
+    {
+      "address_id": "A0346",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "Auburn Dr, San Diego, CA 92105",
+      "lat": 32.7418607,
+      "legal_city": "San Diego",
+      "lon": -117.0887578
+    },
+    {
+      "address_id": "A0347",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2142 2Nd Ave, San Diego, CA 92101",
+      "lat": 32.727653319366,
+      "legal_city": "San Diego",
+      "lon": -117.163065698172
+    },
+    {
+      "address_id": "A0349",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2400 Dana St, Berkeley, CA 94704",
+      "lat": 37.866568691092,
+      "legal_city": "Berkeley",
+      "lon": -122.261163802946
+    },
+    {
+      "address_id": "A0351",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "628 Hyde St, San Francisco, CA",
+      "lat": 37.786610489702,
+      "legal_city": "San Francisco",
+      "lon": -122.41643664948
+    },
+    {
+      "address_id": "A0353",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1044 E Jefferson Blvd, Los Angeles, CA 90011",
+      "lat": 34.012089330967,
+      "legal_city": "Los Angeles",
+      "lon": -118.257806027731
+    },
+    {
+      "address_id": "A0355",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "10701 Amestoy Ave, Los Angeles, CA 91344",
+      "lat": 34.264856666784,
+      "legal_city": "Los Angeles",
+      "lon": -118.506705841287
+    },
+    {
+      "address_id": "A0357",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "173 07Th St, San Francisco, CA",
+      "lat": 37.778180361844,
+      "legal_city": "San Francisco",
+      "lon": -122.409540179118
+    },
+    {
+      "address_id": "A0363",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2451 Shattuck Ave, Berkeley, CA 94704",
+      "lat": 37.864690284096,
+      "legal_city": "Berkeley",
+      "lon": -122.267324831145
+    },
+    {
+      "address_id": "A0364",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "125 03Rd Av, San Francisco, CA",
+      "lat": 37.786437508473,
+      "legal_city": "San Francisco",
+      "lon": -122.461516266857
+    },
+    {
+      "address_id": "A0365",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "3940 Idaho St, San Diego, CA 92104",
+      "lat": 32.749235987165,
+      "legal_city": "San Diego",
+      "lon": -117.13391504862
+    },
+    {
+      "address_id": "A0367",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "219 S 35Th St, San Diego, CA 92113",
+      "lat": 32.704217966085,
+      "legal_city": "San Diego",
+      "lon": -117.118695602941
+    },
+    {
+      "address_id": "A0368",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1430 Francisco St, San Francisco, CA",
+      "lat": 37.802780409256,
+      "legal_city": "San Francisco",
+      "lon": -122.428752796943
+    },
+    {
+      "address_id": "A0369",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "3260 California St, Berkeley, CA 94703",
+      "lat": 37.848609498456,
+      "legal_city": "Berkeley",
+      "lon": -122.276013172823
+    },
+    {
+      "address_id": "A0370",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2222 Toberman St, Los Angeles, CA 90007",
+      "lat": 34.034721924415,
+      "legal_city": "Los Angeles",
+      "lon": -118.281203744904
+    },
+    {
+      "address_id": "A0373",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1315 Spruce St, Berkeley, CA 94709",
+      "lat": 37.883557224033,
+      "legal_city": "Berkeley",
+      "lon": -122.266249122343
+    },
+    {
+      "address_id": "A0374",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "686 S Ardmore Ave, Los Angeles, CA 90005",
+      "lat": 34.060247782434,
+      "legal_city": "Los Angeles",
+      "lon": -118.301920522459
+    },
+    {
+      "address_id": "A0375",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1880 Fulton St, San Francisco, CA",
+      "lat": 37.775695071124,
+      "legal_city": "San Francisco",
+      "lon": -122.447766948778
+    },
+    {
+      "address_id": "A0378",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4053 Idaho St, San Diego, CA 92104",
+      "lat": 32.751323560417,
+      "legal_city": "San Diego",
+      "lon": -117.133775905803
+    },
+    {
+      "address_id": "A0379",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1336 Brunner St, San Diego, CA 92110",
+      "lat": 32.769172247535,
+      "legal_city": "San Diego",
+      "lon": -117.189895788824
+    },
+    {
+      "address_id": "A0382",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "119 Day St, San Francisco, CA",
+      "lat": 37.742927740317,
+      "legal_city": "San Francisco",
+      "lon": -122.425132126354
+    },
+    {
+      "address_id": "A0383",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1908 California St, Berkeley, CA 94703",
+      "lat": 37.872036512971,
+      "legal_city": "Berkeley",
+      "lon": -122.280023113182
+    },
+    {
+      "address_id": "A0384",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "21 Guerrero St, San Francisco, CA",
+      "lat": 37.7705152,
+      "legal_city": "San Francisco",
+      "lon": -122.4244127
+    },
+    {
+      "address_id": "A0385",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1059 Union St, San Francisco, CA",
+      "lat": 37.79947735291,
+      "legal_city": "San Francisco",
+      "lon": -122.416408067433
+    },
+    {
+      "address_id": "A0386",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "3654 Arizona St, San Diego, CA 92104",
+      "lat": 32.744723856404,
+      "legal_city": "San Diego",
+      "lon": -117.1379712012
+    },
+    {
+      "address_id": "A0387",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "10303 Caminito Alvarez, San Diego, CA 92126",
+      "lat": 32.9053438981,
+      "legal_city": "San Diego",
+      "lon": -117.169286391696
+    },
+    {
+      "address_id": "A0391",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "265 22Nd St, San Diego, CA 92102",
+      "lat": 32.707989329138,
+      "legal_city": "San Diego",
+      "lon": -117.143904241304
+    },
+    {
+      "address_id": "A0392",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4545 N 39Th St, San Diego, CA 92116",
+      "lat": 32.759875365223,
+      "legal_city": "San Diego",
+      "lon": -117.110733157421
+    },
+    {
+      "address_id": "A0395",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1632 Russell St, Berkeley, CA 94703",
+      "lat": 37.85541480374,
+      "legal_city": "Berkeley",
+      "lon": -122.275797862561
+    },
+    {
+      "address_id": "A0396",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "3244 Clairemont Dr, San Diego, CA 92117",
+      "lat": 32.800141615463,
+      "legal_city": "San Diego",
+      "lon": -117.195770657922
+    },
+    {
+      "address_id": "A0397",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1677 Bush St, San Francisco, CA",
+      "lat": 37.788065631555,
+      "legal_city": "San Francisco",
+      "lon": -122.424817163952
+    },
+    {
+      "address_id": "A0398",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "890 Green St, San Francisco, CA",
+      "lat": 37.798969157635,
+      "legal_city": "San Francisco",
+      "lon": -122.413748040152
+    },
+    {
+      "address_id": "A0401",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "257 14Th St, San Francisco, CA",
+      "lat": 37.768275245554,
+      "legal_city": "San Francisco",
+      "lon": -122.419001453676
+    },
+    {
+      "address_id": "A0402",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2914 Larkin St, San Francisco, CA",
+      "lat": 37.804747750317,
+      "legal_city": "San Francisco",
+      "lon": -122.421779262494
+    },
+    {
+      "address_id": "A0405",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "10214 Fernglen Ave, Los Angeles, CA 91042",
+      "lat": 34.254405539147,
+      "legal_city": "Los Angeles",
+      "lon": -118.294269681844
+    },
+    {
+      "address_id": "A0407",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4188 Greenbush Ave, Los Angeles, CA 91423",
+      "lat": 34.146796782796,
+      "legal_city": "Los Angeles",
+      "lon": -118.426009923389
+    },
+    {
+      "address_id": "A0408",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "14375 Polk St, Los Angeles, CA 91342",
+      "lat": 34.310760350581,
+      "legal_city": "Los Angeles",
+      "lon": -118.446247129705
+    },
+    {
+      "address_id": "A0409",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4428 Gresham St, San Diego, CA 92109",
+      "lat": 32.79763108496,
+      "legal_city": "San Diego",
+      "lon": -117.244179056101
+    },
+    {
+      "address_id": "A0411",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1833 Berkeley Way, Berkeley, CA 94703",
+      "lat": 37.87232876757,
+      "legal_city": "Berkeley",
+      "lon": -122.27465308516
+    },
+    {
+      "address_id": "A0413",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2209 Grand Ave, San Diego, CA 92109",
+      "lat": 32.800271149641,
+      "legal_city": "San Diego",
+      "lon": -117.229073590912
+    },
+    {
+      "address_id": "A0414",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1987 California St, San Francisco, CA",
+      "lat": 37.789718887946,
+      "legal_city": "San Francisco",
+      "lon": -122.426993113372
+    },
+    {
+      "address_id": "A0417",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4957 Cahuenga Blvd, Los Angeles, CA 91601",
+      "lat": 34.160498077424,
+      "legal_city": "Los Angeles",
+      "lon": -118.361590637042
+    },
+    {
+      "address_id": "A0419",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1538 Henry St, Berkeley, CA 94709",
+      "lat": 37.879313015271,
+      "legal_city": "Berkeley",
+      "lon": -122.2705189327
+    },
+    {
+      "address_id": "A0420",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4419 Cleveland Ave, San Diego, CA 92116",
+      "lat": 32.757581273133,
+      "legal_city": "San Diego",
+      "lon": -117.149951913385
+    },
+    {
+      "address_id": "A0421",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "17106 Chatsworth St   Apt 0001, Los Angeles, CA 91344",
+      "lat": 34.264737200693,
+      "legal_city": "Los Angeles",
+      "lon": -118.505814381942
+    },
+    {
+      "address_id": "A0425",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "650 Post St, San Francisco, CA",
+      "lat": 37.787814500247,
+      "legal_city": "San Francisco",
+      "lon": -122.412614041685
+    },
+    {
+      "address_id": "A0426",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1307 Colusa St, San Diego, CA 92110",
+      "lat": 32.768532440161,
+      "legal_city": "San Diego",
+      "lon": -117.190773729749
+    },
+    {
+      "address_id": "A0427",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "7665 Fountain Ave, Los Angeles, CA 90046",
+      "lat": 34.094477803207,
+      "legal_city": "Los Angeles",
+      "lon": -118.356732566622
+    },
+    {
+      "address_id": "A0430",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1950 Addison St, Berkeley, CA 94704",
+      "lat": 37.870562012406,
+      "legal_city": "Berkeley",
+      "lon": -122.272637519825
+    },
+    {
+      "address_id": "A0431",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "245 Euclid Ave, San Diego, CA 92114",
+      "lat": 32.706728960145,
+      "legal_city": "San Diego",
+      "lon": -117.084936538347
+    },
+    {
+      "address_id": "A0432",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "14605 Rayen St, Los Angeles, CA 91402",
+      "lat": 34.231842925425,
+      "legal_city": "Los Angeles",
+      "lon": -118.450479396041
+    },
+    {
+      "address_id": "A0433",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "720 W 27Th St, Los Angeles, CA 90007",
+      "lat": 34.028044141305,
+      "legal_city": "Los Angeles",
+      "lon": -118.278944633921
+    },
+    {
+      "address_id": "A0434",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1225 Hyde St, San Francisco, CA",
+      "lat": 37.792202707791,
+      "legal_city": "San Francisco",
+      "lon": -122.417712027591
+    },
+    {
+      "address_id": "A0437",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2969 San Marino St, Los Angeles, CA 90006",
+      "lat": 34.05457350989,
+      "legal_city": "Los Angeles",
+      "lon": -118.293871486247
+    },
+    {
+      "address_id": "A0439",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "225 25Th Av, San Francisco, CA",
+      "lat": 37.78525700396,
+      "legal_city": "San Francisco",
+      "lon": -122.485184671551
+    },
+    {
+      "address_id": "A0440",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4042 Fulton St, San Francisco, CA",
+      "lat": 37.773046725887,
+      "legal_city": "San Francisco",
+      "lon": -122.47502114247
+    },
+    {
+      "address_id": "A0441",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4017 Illinois St, San Diego, CA 92104",
+      "lat": 32.750692356257,
+      "legal_city": "San Diego",
+      "lon": -117.127623761555
+    },
+    {
+      "address_id": "A0442",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "7014 Lanewood Ave, Los Angeles, CA 90028",
+      "lat": 34.099151448276,
+      "legal_city": "Los Angeles",
+      "lon": -118.341876805569
+    },
+    {
+      "address_id": "A0443",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "3526 Fairmount Ave, San Diego, CA 92105",
+      "lat": 32.742658851729,
+      "legal_city": "San Diego",
+      "lon": -117.101032546312
+    },
+    {
+      "address_id": "A0445",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "8790 Van Nuys Blvd, Los Angeles, CA 91402",
+      "lat": 34.229751001698,
+      "legal_city": "Los Angeles",
+      "lon": -118.450185423298
+    },
+    {
+      "address_id": "A0451",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "7300 Valmont St, Los Angeles, CA 91042",
+      "lat": 34.252257110602,
+      "legal_city": "Los Angeles",
+      "lon": -118.291114794412
+    },
+    {
+      "address_id": "A0452",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1310 N Las Palmas Ave, Los Angeles, CA 90028",
+      "lat": 34.094610686343,
+      "legal_city": "Los Angeles",
+      "lon": -118.336242443207
+    },
+    {
+      "address_id": "A0454",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "8944 Columbus Ave, Los Angeles, CA 91343",
+      "lat": 34.232706363083,
+      "legal_city": "Los Angeles",
+      "lon": -118.465331558771
+    },
+    {
+      "address_id": "A0456",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2151 Chatsworth Blvd, San Diego, CA 92107",
+      "lat": 32.738822467011,
+      "legal_city": "San Diego",
+      "lon": -117.228546774402
+    },
+    {
+      "address_id": "A0457",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1856 Green St, San Francisco, CA",
+      "lat": 37.796928164046,
+      "legal_city": "San Francisco",
+      "lon": -122.429684738163
+    },
+    {
+      "address_id": "A0458",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1670 E 48Th Pl, Los Angeles, CA 90011",
+      "lat": 33.999307703621,
+      "legal_city": "Los Angeles",
+      "lon": -118.243996855675
+    },
+    {
+      "address_id": "A0461",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "735 11Th Av, San Francisco, CA",
+      "lat": 37.774456141897,
+      "legal_city": "San Francisco",
+      "lon": -122.469251256406
+    },
+    {
+      "address_id": "A0469",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2701 Shattuck Ave, Berkeley, CA 94705",
+      "lat": 37.860021095027,
+      "legal_city": "Berkeley",
+      "lon": -122.266948509568
+    },
+    {
+      "address_id": "A0470",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1919 Curtis St, Berkeley, CA 94702",
+      "lat": 37.870650504933,
+      "legal_city": "Berkeley",
+      "lon": -122.289620577483
+    },
+    {
+      "address_id": "A0474",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "3438 Mckinley Ave, Los Angeles, CA 90011",
+      "lat": 34.012650923784,
+      "legal_city": "Los Angeles",
+      "lon": -118.260382953065
+    },
+    {
+      "address_id": "A0477",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2250 Mission St, San Francisco, CA",
+      "lat": 37.761016013708,
+      "legal_city": "San Francisco",
+      "lon": -122.419353294864
+    },
+    {
+      "address_id": "A0478",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "3860 Cherokee Ave, San Diego, CA 92104",
+      "lat": 32.748446614415,
+      "legal_city": "San Diego",
+      "lon": -117.114420057856
+    },
+    {
+      "address_id": "A0479",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "12948 Moorpark St, Los Angeles, CA 91604",
+      "lat": 34.150301392175,
+      "legal_city": "Los Angeles",
+      "lon": -118.415275590675
+    },
+    {
+      "address_id": "A0480",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4046 N 43Rd St, San Diego, CA 92105",
+      "lat": 32.750481775488,
+      "legal_city": "San Diego",
+      "lon": -117.102033252477
+    },
+    {
+      "address_id": "A0481",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "536 Leavenworth St, San Francisco, CA",
+      "lat": 37.786028326648,
+      "legal_city": "San Francisco",
+      "lon": -122.414634028725
+    },
+    {
+      "address_id": "A0483",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1580 Market St, San Francisco, CA",
+      "lat": 37.774588554781,
+      "legal_city": "San Francisco",
+      "lon": -122.420119239496
+    },
+    {
+      "address_id": "A0484",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1801 08Th Av, San Francisco, CA",
+      "lat": 37.754690646826,
+      "legal_city": "San Francisco",
+      "lon": -122.464658373009
+    },
+    {
+      "address_id": "A0486",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2280 Mission St, San Francisco, CA",
+      "lat": 37.760560895514,
+      "legal_city": "San Francisco",
+      "lon": -122.419309809634
+    },
+    {
+      "address_id": "A0487",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2118 Fillmore St, San Francisco, CA",
+      "lat": 37.789124926129,
+      "legal_city": "San Francisco",
+      "lon": -122.433810595937
+    },
+    {
+      "address_id": "A0492",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "800 S Harvard Blvd, Los Angeles, CA 90005",
+      "lat": 34.057623861111,
+      "legal_city": "Los Angeles",
+      "lon": -118.304091662787
+    },
+    {
+      "address_id": "A0493",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4450 Geary Bl, San Francisco, CA",
+      "lat": 37.781029854011,
+      "legal_city": "San Francisco",
+      "lon": -122.466976349979
+    },
+    {
+      "address_id": "A0494",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2641 Franklin St, San Francisco, CA",
+      "lat": 37.798725772954,
+      "legal_city": "San Francisco",
+      "lon": -122.425776460433
+    },
+    {
+      "address_id": "A0496",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "512 32Nd St, San Diego, CA 92102",
+      "lat": 32.710782090084,
+      "legal_city": "San Diego",
+      "lon": -117.125336741291
+    },
+    {
+      "address_id": "A0497",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "3750 29Th St, San Diego, CA 92104",
+      "lat": 32.74637529596,
+      "legal_city": "San Diego",
+      "lon": -117.131053086987
+    },
+    {
+      "address_id": "A0499",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "8519 Willis Ave, Los Angeles, CA 91402",
+      "lat": 34.225076986186,
+      "legal_city": "Los Angeles",
+      "lon": -118.455356959313
+    },
+    {
+      "address_id": "A0500",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "CA-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "8811 Burnet Ave, Los Angeles, CA 91343",
+      "lat": 34.230253637086,
+      "legal_city": "Los Angeles",
+      "lon": -118.463342888059
+    }
+  ],
+  "affected_count": 250,
+  "change_id": "chg-T1",
+  "compare": {
+    "after": "2026-01-02",
+    "before": "2025-12-31"
+  },
+  "conflict_count": 0,
+  "created_at": "2026-10-04T02:46:52Z",
+  "expected_check": {
+    "detail": "affected 250 of expected 250; conflict flags 0 of expected 0",
+    "passed": true
+  },
+  "kind": "test",
+  "rule_ids": [
+    "CA-ALG-01"
+  ],
+  "summary": {
+    "en": "Compared 2025-12-31 with 2026-01-02 for CA-ALG-01 (CA). 250 of 250 addresses change (250 addresses: not_yet_effective -> applies).",
+    "es": "Compared 2025-12-31 with 2026-01-02 for CA-ALG-01 (CA). 250 of 250 addresses change (250 addresses: not_yet_effective -> applies)."
+  },
+  "test_id": "T1",
+  "test_type": "as_of",
+  "title": "California AB 325 / SB 763 takes effect"
+}

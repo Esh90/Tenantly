@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002137,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "A landlord can ask for a security deposit of at most one month's rent. The landlord must keep the deposit in an interest-bearing account and give the tenant a statement of the apartment's condition.",
+    "summary_es": "Un arrendador puede pedir un depósito de seguridad de como máximo una renta de un mes. El arrendador debe mantener el depósito en una cuenta con intereses y dar al inquilino un estado de la condición del apartamento.",
+    "who_en": "This rule covers all residential rental properties.",
+    "who_es": "Esta regla aplica a todas las propiedades residenciales de alquiler."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 972,
+    "output_tokens": 233
+  }
+}

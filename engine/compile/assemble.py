@@ -2,9 +2,10 @@
 
 from __future__ import annotations
 
+import re
 from collections import defaultdict
 
-from engine.compile.context import cite_key
+from engine.compile.context import cite_key, jurisdiction_for
 from engine.ir import Rule
 
 JUR_CODES = {
@@ -24,12 +25,50 @@ DERIVED_PENALTY = {"readme_reference", "brief_reference"}
 LONG_QUOTE_FIRST = lambda r: (-len(r.citation.quote), r.citation.doc_id)  # noqa: E731
 
 
+LOCAL_MARKERS = re.compile(
+    r"\bBMC\b|\bSDMC\b|\bLAMC\b|S\.?F\.? Admin|Admin\.? Code|Municipal Code|\bMC\b|\bordinance\b|\bch\.\s*\d|\bBerkeley\b|"
+    r"\bRent Ordinance\b|\bRSO\b|\bSan (Francisco|Diego)\b|\bLos Angeles\b|\bJersey City\b|\bHoboken\b|\bBoston\b|\bCambridge\b|\bSanta Ana\b",
+    re.I,
+)
+STATE_CITES = {
+    "CA": re.compile(
+        r"\bCal(ifornia|\.)?\s+(Civ|Gov|Bus|Health|Penal|Code)|\bCiv(il)?\.?\s+Code\b|\bGov(ernment)?\.?\s+Code\b|Bus(iness)?\.?\s*&\s*Prof",
+        re.I,
+    ),
+    "NJ": re.compile(r"N\.?J\.?S\.?A|\bP\.?L\.?\s*\d{4}|New Jersey", re.I),
+    "MA": re.compile(r"\bM\.?G\.?L\b|\bG\.?L\.?\s*c\.|Mass(achusetts)?\.?\s+Gen", re.I),
+}
+
+
+def rehome(rule: Rule) -> Rule:
+    """A city guidance page that cites a state statute describes the state rule: file it there."""
+    if rule.jurisdiction.level != "city" or rule.citation.tier not in ("A", "B"):
+        return rule
+    cite = re.sub(r"\([^)]*\)", "", rule.citation.cite)  # drop "(as applied in Berkeley)" asides
+    if LOCAL_MARKERS.search(cite):
+        return rule
+    pat = STATE_CITES.get(rule.jurisdiction.state)
+    if pat and pat.search(cite):
+        prov = dict(rule.provenance)
+        prov["rehomed_from"] = rule.jurisdiction.label
+        return rule.model_copy(
+            update={"jurisdiction": jurisdiction_for(rule.jurisdiction.state), "provenance": prov}
+        )
+    return rule
+
+
+def _group_key(r: Rule) -> tuple:
+    toks = cite_key(r.citation.cite).split("|")
+    first = toks[0] if toks and any(c.isdigit() for c in toks[0]) else f"{r.citation.doc_id}:title"
+    return (r.jurisdiction.id, r.category, first, r.lifecycle)
+
+
 def merge_across_docs(rules: list[Rule]) -> list[Rule]:
     """Rules with the same (jurisdiction, category, cite) from different documents become one:
     the best-tier, longest-quote record is primary and the others become extra citations."""
     groups: dict[tuple, list[Rule]] = defaultdict(list)
     for r in rules:
-        groups[(r.jurisdiction.id, r.category, cite_key(r.citation.cite), r.lifecycle)].append(r)
+        groups[_group_key(r)].append(r)
     out: list[Rule] = []
     for _, group in sorted(groups.items()):
         group.sort(key=lambda r: (r.citation.tier, *LONG_QUOTE_FIRST(r)))
@@ -87,7 +126,7 @@ def assign_ids(rules: list[Rule]) -> list[Rule]:
 
 
 def finalize_rules(rules: list[Rule]) -> list[Rule]:
-    merged = assign_ids(merge_across_docs(rules))
+    merged = assign_ids(merge_across_docs([rehome(r) for r in rules]))
     out = []
     for r in merged:
         c = confidence(r)

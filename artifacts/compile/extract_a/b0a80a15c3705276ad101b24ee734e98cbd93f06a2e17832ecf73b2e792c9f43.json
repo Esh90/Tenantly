@@ -1,0 +1,69 @@
+{
+  "cost_usd": 0.0147384,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "rent_increase_limits",
+        "cite": "Current Rates, including Rent Increase, Relocation, Sec. Deposit (SF.gov)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Page does not state building coverage; applies to units under the SF Rent Ordinance.",
+        "key_values": [
+          {
+            "name": "allowable_rent_increase",
+            "text": "1.6% for March 1, 2026 – February 28, 2027",
+            "unit": "percent",
+            "valid_from": "2026-03-01",
+            "valid_to": "2027-02-28",
+            "value": 1.6
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "1.6% for March 1, 2026 – February 28, 2027",
+        "requirement": "The allowable annual rent increase is 1.6% for the period March 1, 2026 through February 28, 2027.",
+        "title": "Allowable annual rent increase 2026-27",
+        "uncertain_fields": [
+          "coverage",
+          "cite"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Current Rates, including Rent Increase, Relocation, Sec. Deposit (SF.gov)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Page does not state coverage; applies to residential security deposits in San Francisco.",
+        "key_values": [
+          {
+            "name": "security_deposit_interest",
+            "text": "4.2% for March 1, 2026 – February 28, 2027",
+            "unit": "percent",
+            "valid_from": "2026-03-01",
+            "valid_to": "2027-02-28",
+            "value": 4.2
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "4.2% for March 1, 2026 – February 28, 2027",
+        "requirement": "The security deposit interest rate is 4.2% for the period March 1, 2026 through February 28, 2027.",
+        "title": "Security deposit interest rate 2026-27",
+        "uncertain_fields": [
+          "coverage",
+          "cite"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 2083,
+    "output_tokens": 1010
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "cost_usd": 0.0111604,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "application_screening_fees",
+        "cite": "Cal. Civ. Code § 1950.6(b)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental property owners and their agents.",
+        "effective_date": "2026-01-01",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "fee_cap",
+            "text": "thirty dollars ($30) per applicant",
+            "unit": "usd",
+            "value": 30
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "In no case shall the amount of the application screening fee charged by the landlord or their agent be greater than thirty dollars ($30) per applicant. The thirty dollar ($30) application screening fee may be adjusted annually by the landlord or their agent commensurate with an increase in the Consumer Price Index, beginning on January 1, 1998.",
+        "relations_hint": [
+          "Notwithstanding Section 1950.5"
+        ],
+        "requirement": "An application screening fee may not exceed actual out-of-pocket costs and the reasonable value of time, and in no case more than $30 per applicant, adjustable annually by CPI.",
+        "tenancy_conditions": [],
+        "title": "Application screening fee cap"
+      },
+      {
+        "category": "application_screening_fees",
+        "cite": "Cal. Civ. Code § 1950.6(c)(1)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental property owners and their agents.",
+        "effective_date": "2026-01-01",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "(1) A landlord or their agent shall not charge an applicant an application screening fee when they know or should have known that no rental unit is available at that time or will be available within a reasonable period of time.",
+        "relations_hint": [],
+        "requirement": "A landlord may not charge a screening fee when no unit is or will reasonably soon be available.",
+        "tenancy_conditions": [],
+        "title": "No fee when no unit available"
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 1934,
+    "output_tokens": 682
+  }
+}

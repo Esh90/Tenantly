@@ -1,0 +1,401 @@
+{
+  "cost_usd": 0.036905,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": "Approved June 18, 2021.",
+        "approval_date": "2021-06-18",
+        "category": "screening_restrictions",
+        "cite": "N.J.S.A. 46:8-55(a)(1)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental dwelling units except owner-occupied premises of not more than four dwelling units.",
+        "effective_date": null,
+        "effective_expression": "first day of the seventh month next following the date of enactment",
+        "exemptions": [
+          {
+            "description": "Inquiry into conviction for drug-related criminal activity for manufacture or production of methamphetamine on premises of federally assisted housing",
+            "predicate": {
+              "const": true
+            }
+          },
+          {
+            "description": "Inquiry into whether applicant is subject to lifetime registration requirement under State sex offender registration program",
+            "predicate": {
+              "const": true
+            }
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "A housing provider shall not require an applicant to complete any housing application that includes any inquiries regarding an applicant's criminal record prior to the provision of a conditional offer, except that a housing provider may consider whether an applicant has ever been convicted of drug-related criminal activity for the manufacture or production of methamphetamine on the premises of federally assisted housing, and whether the applicant is subject to a lifetime registration requirement under a State sex offender registration program.",
+        "relations_hint": [],
+        "requirement": "A housing provider must not require applicants to answer questions about criminal records before making a conditional offer, with narrow exceptions for methamphetamine manufacturing on federally assisted housing and lifetime sex offender registration requirements.",
+        "title": "Prohibition on criminal record inquiries before conditional offer",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": "Approved June 18, 2021.",
+        "approval_date": "2021-06-18",
+        "category": "screening_restrictions",
+        "cite": "N.J.S.A. 46:8-55(a)(2)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental dwelling units except owner-occupied premises of not more than four dwelling units.",
+        "effective_date": null,
+        "effective_expression": "first day of the seventh month next following the date of enactment",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "A housing provider shall not make any oral or written inquiry regarding an applicant's criminal record prior to making a conditional offer.",
+        "relations_hint": [],
+        "requirement": "A housing provider must not inquire orally or in writing about an applicant's criminal record before issuing a conditional offer.",
+        "title": "Prohibition on oral or written criminal record inquiry before conditional offer",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": "Approved June 18, 2021.",
+        "approval_date": "2021-06-18",
+        "category": "screening_restrictions",
+        "cite": "N.J.S.A. 46:8-56(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental dwelling units except owner-occupied premises of not more than four dwelling units.",
+        "effective_date": null,
+        "effective_expression": "first day of the seventh month next following the date of enactment",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "A housing provider shall not, either before or after the issuance of a conditional offer, evaluate an applicant based on any of the following types of criminal records: (1) arrests or charges that have not resulted in a criminal conviction; (2) expunged convictions; (3) convictions erased through executive pardon; (4) vacated and otherwise legally nullified convictions; (5) juvenile adjudications of delinquency; and (6) records that have been sealed.",
+        "relations_hint": [],
+        "requirement": "A housing provider must not evaluate applicants based on arrests without conviction, expunged convictions, pardoned convictions, vacated convictions, juvenile adjudications, or sealed records.",
+        "title": "Prohibition on considering certain types of criminal records",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": "Approved June 18, 2021.",
+        "approval_date": "2021-06-18",
+        "category": "screening_restrictions",
+        "cite": "N.J.S.A. 46:8-56(b)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental dwelling units except owner-occupied premises of not more than four dwelling units.",
+        "effective_date": null,
+        "effective_expression": "first day of the seventh month next following the date of enactment",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "Time limit for first-degree indictable offense",
+            "text": "within the six years immediately preceding the issuance of the conditional offer",
+            "unit": "years",
+            "value": 6
+          },
+          {
+            "name": "Time limit for second or third-degree indictable offense",
+            "text": "within the four years immediately preceding the issuance of the conditional offer",
+            "unit": "years",
+            "value": 4
+          },
+          {
+            "name": "Time limit for fourth-degree indictable offense",
+            "text": "within one year immediately preceding the issuance of the conditional offer",
+            "unit": "years",
+            "value": 1
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "After the issuance of a conditional offer to an applicant, a housing provider may only consider a criminal record in the applicant's history that: (1) resulted in a conviction for murder, aggravated sexual assault, kidnapping, arson, human trafficking, sexual assault in violation of N.J.S.2C:14-2, causing or permitting a child to engage in a prohibited sexual act or in the simulation of such an act in violation of paragraph (3) of subsection b. of N.J.S.2C:24-4, or any crime that resulted in lifetime registration in a state sex offender registry; (2) is for an indictable offense of the first degree that was issued, or if the conviction resulted in a prison sentence that sentence concluded, within the six years immediately preceding the issuance of the conditional offer; (3) is for an indictable offense of the second or third degree that was issued, or if the conviction resulted in a prison sentence that sentence concluded, within the four years immediately preceding the issuance of the conditional offer; or (4) is for an indictable offense of the fourth degree that was issued, or if the conviction resulted in a prison sentence that sentence concluded, within one year immediately preceding the issuance of the conditional offer.",
+        "relations_hint": [],
+        "requirement": "A housing provider may only consider certain convictions after issuing a conditional offer: violent/sexual crimes with lifetime registration requirements (no time limit); first-degree indictable offenses within 6 years; second or third-degree indictable offenses within 4 years; fourth-degree indictable offenses within 1 year.",
+        "title": "Time limits for considering convictions after conditional offer",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": "Approved June 18, 2021.",
+        "approval_date": "2021-06-18",
+        "category": "screening_restrictions",
+        "cite": "N.J.S.A. 46:8-56(c)(1)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental dwelling units except owner-occupied premises of not more than four dwelling units.",
+        "effective_date": null,
+        "effective_expression": "first day of the seventh month next following the date of enactment",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "A housing provider may withdraw a conditional offer based on an applicant's criminal record only if the housing provider determines, by preponderance of the evidence, that the withdrawal is necessary to fulfill a substantial, legitimate, and nondiscriminatory interest.",
+        "relations_hint": [],
+        "requirement": "A housing provider may withdraw a conditional offer based on criminal record only if it determines by preponderance of the evidence that withdrawal is necessary to fulfill a substantial, legitimate, and nondiscriminatory interest.",
+        "title": "Standard for withdrawing conditional offer based on criminal record",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": "Approved June 18, 2021.",
+        "approval_date": "2021-06-18",
+        "category": "screening_restrictions",
+        "cite": "N.J.S.A. 46:8-56(c)(3)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental dwelling units except owner-occupied premises of not more than four dwelling units.",
+        "effective_date": null,
+        "effective_expression": "first day of the seventh month next following the date of enactment",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The housing provider shall perform an individualized assessment of the application in light of the following factors: (a) the nature and severity of the criminal offense; (b) the age of the applicant at the time of the occurrence of the criminal offense; (c) the time which has elapsed since the occurrence of the criminal offense; (d) any information produced by the applicant, or produced on the applicant's behalf, in regard to the applicant's rehabilitation and good conduct since the occurrence of the criminal offense; (e) the degree to which the criminal offense, if it reoccurred, would negatively impact the safety of the housing provider's other tenants or property; and (f) whether the criminal offense occurred on or was connected to property that was rented or leased by the applicant.",
+        "relations_hint": [],
+        "requirement": "When withdrawing a conditional offer, a housing provider must perform an individualized assessment considering: nature and severity of offense, applicant's age at time of offense, time elapsed, rehabilitation evidence, potential safety impact, and whether offense was connected to rental property.",
+        "title": "Required individualized assessment factors for criminal record withdrawal",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": "Approved June 18, 2021.",
+        "approval_date": "2021-06-18",
+        "category": "screening_restrictions",
+        "cite": "N.J.S.A. 46:8-58(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental dwelling units except owner-occupied premises of not more than four dwelling units.",
+        "effective_date": null,
+        "effective_expression": "first day of the seventh month next following the date of enactment",
+        "exemptions": [
+          {
+            "description": "Advertisement may exclude applicants convicted of drug-related criminal activity for manufacture or production of methamphetamine on premises of federally assisted housing",
+            "predicate": {
+              "const": true
+            }
+          },
+          {
+            "description": "Advertisement may exclude applicants subject to lifetime registration requirement under State sex offender registration program",
+            "predicate": {
+              "const": true
+            }
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "A housing provider shall not knowingly or purposefully publish, or cause to be published, any housing advertisement that explicitly provides that the housing provider will not consider any applicant who has been arrested or convicted of one or more crimes or offenses, except for drug-related criminal activity for the manufacture or production of methamphetamine on the premises of federally assisted housing, and whether the applicant is subject to a lifetime registration requirement under a State sex offender registration program.",
+        "relations_hint": [],
+        "requirement": "A housing provider must not knowingly publish housing advertisements stating it will not consider applicants with arrests or convictions, except for limited exceptions regarding methamphetamine manufacturing and sex offender registration.",
+        "title": "Prohibition on discriminatory housing advertisements regarding criminal records",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": "Approved June 18, 2021.",
+        "approval_date": "2021-06-18",
+        "category": "screening_restrictions",
+        "cite": "N.J.S.A. 46:8-58(b)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental dwelling units except owner-occupied premises of not more than four dwelling units.",
+        "effective_date": null,
+        "effective_expression": "first day of the seventh month next following the date of enactment",
+        "exemptions": [
+          {
+            "description": "Exception for drug-related criminal activity for manufacture or production of methamphetamine on premises of federally assisted housing",
+            "predicate": {
+              "const": true
+            }
+          },
+          {
+            "description": "Exception for applicants subject to lifetime registration requirement under State sex offender registration program",
+            "predicate": {
+              "const": true
+            }
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "A housing provider shall not print, publish, circulate, issue, display, post, or mail, or cause to be printed, published, circulated, issued, displayed, posted or mailed any statement, advertisement, publication or sign, or use any form of application for the rental, lease, or sublease of any real property or part or portion thereof or make any record or inquiry in connection with the prospective rental, lease, or sublease of any real property or part or portion thereof which expresses, directly or indirectly, any unlawful limitation, specification or discrimination as to criminal record, except as permitted by this act and for drug-related criminal activity for the manufacture or production of methamphetamine on the premises of federally assisted housing, and whether the applicant is subject to a lifetime registration requirement under a State sex offender registration program.",
+        "relations_hint": [],
+        "requirement": "A housing provider must not print, publish, or use any statement, advertisement, application form, record, or inquiry that expresses discrimination based on criminal record, except as permitted by law and limited exceptions for methamphetamine manufacturing and sex offender registration.",
+        "title": "Prohibition on discriminatory statements and inquiries regarding criminal records",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": "Approved June 18, 2021.",
+        "approval_date": "2021-06-18",
+        "category": "screening_restrictions",
+        "cite": "N.J.S.A. 46:8-58(c)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental dwelling units except owner-occupied premises of not more than four dwelling units.",
+        "effective_date": null,
+        "effective_expression": "first day of the seventh month next following the date of enactment",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Unless otherwise required by law, a housing provider shall not: (1) distribute or disseminate an applicant's criminal record to any person who is not expected to use the criminal record for the purpose of evaluating the applicant in a manner consistent with this act; or (2) use an applicant's criminal record for a purpose that is not consistent with this act.",
+        "relations_hint": [],
+        "requirement": "A housing provider must not distribute an applicant's criminal record to persons not evaluating the applicant consistently with the act, and must not use criminal records for purposes inconsistent with the act.",
+        "title": "Prohibition on distributing applicant's criminal record to unauthorized persons",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": "Approved June 18, 2021.",
+        "approval_date": "2021-06-18",
+        "category": "screening_restrictions",
+        "cite": "N.J.S.A. 46:8-60",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental dwelling units except owner-occupied premises of not more than four dwelling units.",
+        "effective_date": null,
+        "effective_expression": "first day of the seventh month next following the date of enactment",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "A housing provider shall not require an applicant to submit to a drug or alcohol test, or request the applicant's consent to obtain information from a drug abuse treatment facility.",
+        "relations_hint": [],
+        "requirement": "A housing provider must not require applicants to submit to drug or alcohol tests or request consent to obtain drug abuse treatment facility information.",
+        "title": "Prohibition on requiring drug or alcohol testing",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": "Approved June 18, 2021.",
+        "approval_date": "2021-06-18",
+        "category": "screening_restrictions",
+        "cite": "N.J.S.A. 46:8-55(b)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental dwelling units except owner-occupied premises of not more than four dwelling units.",
+        "effective_date": null,
+        "effective_expression": "first day of the seventh month next following the date of enactment",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Prior to accepting any application fee, a housing provider shall disclose in writing to the applicant: (1) Whether the eligibility criteria of the housing provider include the review and consideration of criminal history; and (2) A statement that the applicant, pursuant to subsection a. of this section, may provide evidence demonstrating inaccuracies within the applicant's criminal record or evidence of rehabilitation or other mitigating factors.",
+        "relations_hint": [],
+        "requirement": "Before accepting an application fee, a housing provider must disclose in writing whether criminal history will be reviewed and must inform applicants of their right to provide evidence of inaccuracies or rehabilitation.",
+        "title": "Disclosure of criminal record review in application process",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": "Approved June 18, 2021.",
+        "approval_date": "2021-06-18",
+        "category": "screening_restrictions",
+        "cite": "N.J.S.A. 46:8-55(a)(3)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental dwelling units except owner-occupied premises of not more than four dwelling units.",
+        "effective_date": null,
+        "effective_expression": "first day of the seventh month next following the date of enactment",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "An applicant may provide evidence to the housing provider demonstrating inaccuracies within the applicant's criminal record or evidence of rehabilitation or other mitigating factors.",
+        "relations_hint": [],
+        "requirement": "An applicant has the right to provide evidence to the housing provider demonstrating inaccuracies in their criminal record or evidence of rehabilitation and mitigating factors.",
+        "title": "Right to provide evidence of rehabilitation and inaccuracies",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": "Approved June 18, 2021.",
+        "approval_date": "2021-06-18",
+        "category": "screening_restrictions",
+        "cite": "N.J.S.A. 46:8-56(c)(2)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental dwelling units except owner-occupied premises of not more than four dwelling units.",
+        "effective_date": null,
+        "effective_expression": "first day of the seventh month next following the date of enactment",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "If a housing provider withdraws a conditional offer, the housing provider shall provide the applicant with written notification that includes, with specificity, the reason or reasons for the withdrawal of the conditional offer and an opportunity to appeal the denial by providing evidence to the housing provider demonstrating inaccuracies within the applicant's criminal record or evidence of rehabilitation or other mitigating factors.",
+        "relations_hint": [],
+        "requirement": "When withdrawing a conditional offer, a housing provider must provide written notification specifying the reason(s) and give the applicant an opportunity to appeal by providing evidence of inaccuracies or rehabilitation.",
+        "title": "Required written notification upon withdrawal of conditional offer",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": "Approved June 18, 2021.",
+        "approval_date": "2021-06-18",
+        "category": "screening_restrictions",
+        "cite": "N.J.S.A. 46:8-56(d)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental dwelling units except owner-occupied premises of not more than four dwelling units.",
+        "effective_date": null,
+        "effective_expression": "first day of the seventh month next following the date of enactment",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "Deadline to request information",
+            "text": "within 30 days after the housing provider's notice of the withdrawal",
+            "unit": "days",
+            "value": 30
+          },
+          {
+            "name": "Deadline for housing provider to provide information",
+            "text": "within l0 days after receipt of a timely request",
+            "unit": "days",
+            "value": 10
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The applicant may request, within 30 days after the housing provider's notice of the withdrawal, that the housing provider afford the applicant a copy of all information that the housing provider relied upon in considering the applicant, including criminal records. A housing provider shall provide the information requested under paragraph (1) of this subsection, free of charge, within l0 days after receipt of a timely request.",
+        "relations_hint": [],
+        "requirement": "An applicant may request a copy of all information the housing provider relied upon, including criminal records, within 30 days of withdrawal notice, and the provider must provide it free of charge within 10 days.",
+        "title": "Right to request copy of information used in decision",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": "Approved June 18, 2021.",
+        "approval_date": "2021-06-18",
+        "category": "screening_restrictions",
+        "cite": "N.J.S.A. 46:8-55(c)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental dwelling units except owner-occupied premises of not more than four dwelling units.",
+        "effective_date": null,
+        "effective_expression": "first day of the seventh month next following the date of enactment",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "A housing provider shall apply the standards established by this section to each applicant in a nondiscriminatory manner.",
+        "relations_hint": [],
+        "requirement": "A housing provider must apply criminal record standards to all applicants in a nondiscriminatory manner.",
+        "title": "Nondiscriminatory application of standards",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 6950,
+    "output_tokens": 5991
+  }
+}

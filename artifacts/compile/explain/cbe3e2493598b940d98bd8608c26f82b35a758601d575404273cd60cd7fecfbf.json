@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002202,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Source of income means lawful money that a tenant receives and can verify. This includes public assistance, housing subsidies, and Section 8 vouchers paid to tenants or landlords on their behalf.",
+    "summary_es": "Fuente de ingresos significa dinero legal que un inquilino recibe y puede verificar. Esto incluye asistencia pública, subsidios de vivienda, y vouchers de la Sección 8 pagados a inquilinos o arrendadores en su nombre.",
+    "who_en": "This rule covers all rental housing accommodations in California.",
+    "who_es": "Esta regla cubre todas las viviendas de alquiler en California."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 997,
+    "output_tokens": 241
+  }
+}

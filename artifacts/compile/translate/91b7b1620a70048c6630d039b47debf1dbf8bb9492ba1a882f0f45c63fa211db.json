@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001347,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "detail_es": "La copia guardada de D013 es principalmente navegación del sitio, por lo que los detalles de cobertura para Aviso de Derechos y Recursos de Inquilinos pueden estar incompletos.",
+    "title_es": "Captura parcial de fuente D013"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 682,
+    "output_tokens": 133
+  }
+}

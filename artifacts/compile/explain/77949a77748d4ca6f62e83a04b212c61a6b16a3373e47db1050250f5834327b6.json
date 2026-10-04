@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.00233,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "A housing provider can withdraw a conditional offer based on criminal record only if they determine by preponderance of the evidence that withdrawal is necessary to fulfill a substantial, legitimate, and nondiscriminatory interest.",
+    "summary_es": "Un arrendador puede retirar una oferta condicional basada en antecedentes penales solo si determina por preponderancia de la evidencia que el retiro es necesario para cumplir un interés sustancial, legítimo y no discriminatorio.",
+    "who_en": "This rule applies to all rental dwelling units except owner-occupied premises with not more than four dwelling units.",
+    "who_es": "Esta regla aplica a todas las unidades de alquiler excepto las viviendas de propiedad ocupadas por el dueño con no más de cuatro unidades de vivienda."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 960,
+    "output_tokens": 274
+  }
+}

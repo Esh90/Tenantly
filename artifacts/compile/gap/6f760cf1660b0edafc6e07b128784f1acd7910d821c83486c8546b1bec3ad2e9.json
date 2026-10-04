@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002283,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The provided document D036 is incomplete (truncated guidance text about Landlord/Tenant Relations for Jersey City) and does not contain specific screening restrictions rules. While four state-level NJ screening restriction rules are noted (NJ-SCR-01 through NJ-SCR-04), no city-level ordinance or rule for Jersey City implementing or going beyond these state rules is found in the supplied text. The link-only sources cannot be reviewed for their content. The incomplete guidance document does not provide the necessary text to identify a city-specific screening restrictions rule.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1303,
+    "output_tokens": 196
+  }
+}

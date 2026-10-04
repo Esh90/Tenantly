@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002094,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords cannot charge existing tenants non-refundable fees for renewing a lease or for roommate changes like departures, additions, or replacements.",
+    "summary_es": "Los arrendadores no pueden cobrar a los inquilinos existentes cuotas no reembolsables por renovar un contrato de arrendamiento o por cambios de compañeros de cuarto como salidas, adiciones o reemplazos.",
+    "who_en": "This applies to all residential rental properties in Berkeley.",
+    "who_es": "Esto aplica a todas las propiedades residenciales de alquiler en Berkeley."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 964,
+    "output_tokens": 226
+  }
+}

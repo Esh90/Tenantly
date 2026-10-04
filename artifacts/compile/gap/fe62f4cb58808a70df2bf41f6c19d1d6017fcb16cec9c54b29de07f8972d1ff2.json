@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002318,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The documents provided (D010-D014) focus on Boston Fair Chance Tenant Selection, Fair Housing Regulations, and Housing Stability Notification Act - none of which address security deposit rules. The rule MA-DEP-01 Maximum Security Deposit Amount exists at the state level, but no city-level rule for Boston on security deposits is found in the provided document texts. The link-only sources (D054-D059) do not contain text and appear to address application fees, criminal records, and rent control rather than security deposits specifically. No source material contains relevant text on Boston's security deposit requirements.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1303,
+    "output_tokens": 203
+  }
+}

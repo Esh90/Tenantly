@@ -3,13 +3,23 @@
 from __future__ import annotations
 
 import json
+import os
+import threading
+import time
 from pathlib import Path
 
 
 def atomic_write_text(path: Path, text: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    tmp = path.with_suffix(path.suffix + ".tmp")
+    # a unique temp name per process and thread, so concurrent writers never collide
+    tmp = path.with_name(f"{path.name}.{os.getpid()}.{threading.get_ident()}.tmp")
     tmp.write_text(text, encoding="utf-8", newline="\n")
+    for attempt in range(8):  # Windows can hold a file briefly (antivirus, indexers)
+        try:
+            tmp.replace(path)
+            return
+        except PermissionError:
+            time.sleep(0.05 * (attempt + 1))
     tmp.replace(path)
 
 

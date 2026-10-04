@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002152,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Annual General Adjustments are capped at a maximum of 5%. Landlords with banked unused AGAs from previous years may implement a larger increase to raise rent to the rent ceiling.",
+    "summary_es": "Los aumentos generales anuales tienen un tope máximo del 5%. Los arrendadores con aumentos no utilizados de años anteriores pueden implementar un aumento mayor para elevar la renta hasta el techo de renta.",
+    "who_en": "This rule applies to all fully covered residential rental units in Berkeley.",
+    "who_es": "Esta regla se aplica a todas las unidades de alquiler residencial totalmente cubiertas en Berkeley."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 972,
+    "output_tokens": 236
+  }
+}

@@ -1,0 +1,416 @@
+{
+  "cost_usd": 0.035668,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Cal. Gov. Code § 12955(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All housing accommodations.",
+        "effective_date": "2024-01-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "For the owner of any housing accommodation to discriminate against or harass any person because of the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information of that person.",
+        "relations_hint": [],
+        "requirement": "Housing owners must not discriminate against or harass any person based on race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Housing Discrimination Based on Protected Characteristics",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Cal. Gov. Code § 12955(b)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All housing accommodations.",
+        "effective_date": "2024-01-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "For the owner of any housing accommodation to make or to cause to be made any written or oral inquiry concerning the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, disability, veteran or military status, or genetic information of any person seeking to purchase, rent, or lease any housing accommodation.",
+        "relations_hint": [],
+        "requirement": "Housing owners must not make or cause to be made any written or oral inquiry concerning the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, disability, veteran or military status, or genetic information of any person seeking to purchase, rent, or lease a housing accommodation.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Prohibition on Inquiries About Protected Characteristics",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Cal. Gov. Code § 12955(c)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All housing accommodations.",
+        "effective_date": "2024-01-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "For any person to make, print, or publish, or cause to be made, printed, or published any notice, statement, or advertisement, with respect to the sale or rental of a housing accommodation that indicates any preference, limitation, or discrimination based on race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information or an intention to make that preference, limitation, or discrimination.",
+        "relations_hint": [],
+        "requirement": "Any person must not make, print, publish, or cause to be made, printed, or published any notice, statement, or advertisement with respect to the sale or rental of a housing accommodation that indicates any preference, limitation, or discrimination based on race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Prohibition on Discriminatory Notices, Statements, or Advertisements",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Cal. Gov. Code § 12955(d)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All housing accommodations.",
+        "effective_date": "2024-01-01",
+        "effective_expression": null,
+        "exemptions": [
+          {
+            "description": "Selection preferences based on age imposed in connection with federally approved housing programs do not constitute age discrimination in housing.",
+            "predicate": {
+              "const": true
+            },
+            "quote": "Selection preferences based on age, imposed in connection with a federally approved housing program, do not constitute age discrimination in housing."
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "For any person subject to the provisions of Section 51 of the Civil Code, as that section applies to housing accommodations, to discriminate against any person on the basis of sex, gender, gender identity, gender expression, sexual orientation, color, race, religion, ancestry, national origin, familial status, marital status, disability, genetic information, source of income, veteran or military status, or on any other basis prohibited by that section.",
+        "relations_hint": [],
+        "requirement": "Any person subject to Civil Code Section 51 as applied to housing accommodations must not discriminate on the basis of sex, gender, gender identity, gender expression, sexual orientation, color, race, religion, ancestry, national origin, familial status, marital status, disability, genetic information, source of income, veteran or military status, or any other basis prohibited by that section.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Discrimination Prohibition Under Civil Code Section 51",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Cal. Gov. Code § 12955(e)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All housing accommodations.",
+        "effective_date": "2024-01-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "For any person, bank, mortgage company, or other financial institution that provides financial assistance for the purchase, refinance, organization, or construction of any housing accommodation to discriminate against any person or group of persons because of the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information in the terms, conditions, or privileges relating to the obtaining or use of that financial assistance.",
+        "relations_hint": [],
+        "requirement": "Any person, bank, mortgage company, or other financial institution that provides financial assistance for the purchase, refinance, organization, or construction of any housing accommodation must not discriminate on the basis of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information in the terms, conditions, or privileges relating to that financial assistance.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Prohibition on Discrimination by Financial Institutions",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "Cal. Gov. Code § 12955(f)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All housing accommodations.",
+        "effective_date": "2024-01-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "For any owner of housing accommodations to harass, evict, or otherwise discriminate against any person in the sale or rental of housing accommodations when the owner's dominant purpose is retaliation against a person who has opposed practices unlawful under this section, informed law enforcement agencies of practices believed unlawful under this section, has testified or assisted in any proceeding under this part, or has aided or encouraged a person to exercise or enjoy the rights secured by this part.",
+        "relations_hint": [
+          "Nothing herein is intended to cause or permit the delay of an unlawful detainer action."
+        ],
+        "requirement": "Housing owners must not harass, evict, or otherwise discriminate against any person in the sale or rental of housing when the owner's dominant purpose is retaliation against a person who has opposed practices unlawful under this section, informed law enforcement of unlawful practices, testified or assisted in any proceeding, or aided or encouraged a person to exercise rights under this part.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Prohibition on Retaliatory Eviction and Discrimination",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Cal. Gov. Code § 12955(g)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All housing accommodations.",
+        "effective_date": "2024-01-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "For any person to aid, abet, incite, compel, or coerce the doing of any of the acts or practices declared unlawful in this section, or to attempt to do so.",
+        "relations_hint": [],
+        "requirement": "Any person must not aid, abet, incite, compel, or coerce the doing of any acts or practices declared unlawful under this section, or attempt to do so.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Prohibition on Aiding Discrimination",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Cal. Gov. Code § 12955(h)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All housing accommodations.",
+        "effective_date": "2024-01-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "For any person, for profit, to induce any person to sell or rent any dwelling by representations regarding the entry or prospective entry into the neighborhood of a person or persons of a particular race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, ancestry, disability, genetic information, source of income, familial status, veteran or military status, or national origin.",
+        "relations_hint": [],
+        "requirement": "Any person, for profit, must not induce any person to sell or rent any dwelling by representations regarding the entry or prospective entry into the neighborhood of a person or persons of a particular race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, ancestry, disability, genetic information, source of income, familial status, veteran or military status, or national origin.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Prohibition on Blockbusting and Steering",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Cal. Gov. Code § 12955(i)(1)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All housing accommodations.",
+        "effective_date": "2024-01-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "For any person or other organization or entity whose business involves real estate-related transactions to discriminate against any person in making available a transaction, or in the terms and conditions of a transaction, because of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, source of income, familial status, disability, veteran or military status, or genetic information.",
+        "relations_hint": [],
+        "requirement": "Any person or organization whose business involves real estate-related transactions must not discriminate against any person in making available a transaction, or in the terms and conditions of a transaction, because of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, source of income, familial status, disability, veteran or military status, or genetic information.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Prohibition on Discrimination in Real Estate Transactions",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Cal. Gov. Code § 12955(i)(2)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property.",
+        "effective_date": "2024-01-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "For any person or other entity whose business includes performing appraisals, as defined in subdivision (b) of Section 11302 of the Business and Professions Code, of residential real property to discriminate against any person in making available those services, or in the performance of those services, because of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, familial status, source of income, disability, genetic information, veteran or military status, or national origin.",
+        "relations_hint": [],
+        "requirement": "Any person or entity whose business includes performing appraisals of residential real property must not discriminate against any person in making available appraisal services, or in the performance of those services, because of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, familial status, source of income, disability, genetic information, veteran or military status, or national origin.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Prohibition on Discrimination in Real Property Appraisals",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Cal. Gov. Code § 12955(j)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All housing accommodations.",
+        "effective_date": "2024-01-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "To deny a person access to, or membership or participation in, a multiple listing service, real estate brokerage organization, or other service because of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, ancestry, disability, genetic information, familial status, source of income, veteran or military status, or national origin.",
+        "relations_hint": [],
+        "requirement": "Any person must not deny a person access to, or membership or participation in, a multiple listing service, real estate brokerage organization, or other service because of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, ancestry, disability, genetic information, familial status, source of income, veteran or military status, or national origin.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Prohibition on Discrimination in Multiple Listing Services",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Cal. Gov. Code § 12955(k)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All housing accommodations.",
+        "effective_date": "2024-01-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "To otherwise make unavailable or deny a dwelling based on discrimination because of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, familial status, source of income, disability, genetic information, veteran or military status, or national origin.",
+        "relations_hint": [],
+        "requirement": "Any person must not make unavailable or deny a dwelling based on discrimination because of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, familial status, source of income, disability, genetic information, veteran or military status, or national origin.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Prohibition on Making Housing Unavailable Based on Discrimination",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Cal. Gov. Code § 12955(l)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All housing accommodations.",
+        "effective_date": "2024-01-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "To discriminate through public or private land use practices, decisions, and authorizations because of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, familial status, marital status, disability, genetic information, national origin, source of income, veteran or military status, or ancestry.",
+        "relations_hint": [],
+        "requirement": "Any person must not discriminate through public or private land use practices, decisions, and authorizations because of race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, familial status, marital status, disability, genetic information, national origin, source of income, veteran or military status, or ancestry.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Prohibition on Discrimination Through Land Use Practices",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Cal. Gov. Code § 12955(n)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental housing accommodations.",
+        "effective_date": "2024-01-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "To use a financial or income standard in the rental of housing that fails to account for the aggregate income of persons residing together or proposing to reside together on the same basis as the aggregate income of married persons residing together or proposing to reside together.",
+        "relations_hint": [],
+        "requirement": "Housing providers must not use a financial or income standard in the rental of housing that fails to account for the aggregate income of persons residing together or proposing to reside together on the same basis as the aggregate income of married persons residing together or proposing to reside together.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Prohibition on Income Standards Without Accounting for Aggregate Income",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Cal. Gov. Code § 12955(o)(1)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental housing accommodations with government rent subsidies.",
+        "effective_date": "2024-01-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "In instances in which there is a government rent subsidy, to do either of the following: (A) Use a financial or income standard in assessing eligibility for the rental of housing that is not based on the portion of the rent to be paid by the tenant. (B) (i) Use a person's credit history as part of the application process for a rental accommodation without offering the applicant the option, at the applicant's discretion, of providing lawful, verifiable alternative evidence of the applicant's reasonable ability to pay the portion of the rent to be paid by the tenant, including, but not limited to, government benefit payments, pay records, and bank statements.",
+        "relations_hint": [],
+        "requirement": "When there is a government rent subsidy, housing providers must not use a financial or income standard in assessing eligibility that is not based on the portion of rent to be paid by the tenant. Housing providers must not use a person's credit history as part of the application process without offering the applicant the option to provide lawful, verifiable alternative evidence of reasonable ability to pay the tenant's portion of rent. If the applicant elects to provide alternative evidence, the housing provider must provide reasonable time to respond and reasonably consider that evidence in lieu of credit history.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Requirements When Using Credit History with Government Rent Subsidies",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "application_screening_fees",
+        "cite": "Cal. Gov. Code § 12955(p)(1)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental housing accommodations.",
+        "effective_date": "2024-01-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "For the purposes of this section, \"source of income\" means lawful, verifiable income paid directly to a tenant, or to a representative of a tenant, or paid to a housing owner or landlord on behalf of a tenant, including federal, state, or local public assistance, and federal, state, or local housing subsidies, including, but not limited to, federal housing assistance vouchers issued under Section 8 of the United States Housing Act of 1937 (42 U.S.C. Sec. 1437f). \"Source of income\" includes a federal Department of Housing and Urban Development Veterans Affairs Supportive Housing voucher.",
+        "relations_hint": [],
+        "requirement": "Source of income means lawful, verifiable income paid directly to a tenant, or to a representative of a tenant, or paid to a housing owner or landlord on behalf of a tenant, including federal, state, or local public assistance and federal, state, or local housing subsidies, including federal housing assistance vouchers issued under Section 8 of the United States Housing Act of 1937 and HUD Veterans Affairs Supportive Housing vouchers.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Definition of Source of Income",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Cal. Gov. Code § 12955(p)(2)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All rental housing accommodations.",
+        "effective_date": "2024-01-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "For the purposes of this section, it shall not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+        "relations_hint": [],
+        "requirement": "It does not constitute discrimination based on source of income to make a written or oral inquiry concerning the level or source of income.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Permissible Inquiry Into Level or Source of Income",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 4383,
+    "output_tokens": 6257
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002003,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Bill H.5222 addresses algorithmic rent fixing in rental housing. The bill's specific requirements are not yet available.",
+    "summary_es": "El Proyecto de Ley H.5222 aborda la fijación algorítmica de rentas en viviendas de alquiler. Los requisitos específicos del proyecto aún no están disponibles.",
+    "who_en": "This bill applies to the rental housing market generally.",
+    "who_es": "Este proyecto de ley se aplica al mercado de viviendas de alquiler en general."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 948,
+    "output_tokens": 211
+  }
+}

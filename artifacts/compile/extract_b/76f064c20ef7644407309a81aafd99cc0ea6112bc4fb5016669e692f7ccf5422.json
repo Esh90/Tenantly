@@ -1,0 +1,144 @@
+{
+  "cost_usd": 0.015308,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": "This act shall take effect on the first day of the twelfth month next following the date of enactment.",
+        "category": "algorithmic_rent_setting",
+        "cite": "N.J.S.A. 56:9-1 et seq. (P.L. 2026, c.043 § 4(a))",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental property in New Jersey.",
+        "effective_expression": "first day of the twelfth month next following the date of enactment",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "It shall be unlawful and a violation of the \"New Jersey Antitrust Act,\" P.L.1970, c.73 (C.56:9-1 et seq.) for: a. a rental property owner, or any agent, representative, or subcontractor thereof, to receive, subscribe to, contract for, or otherwise exchange any form of consideration in return for the use of, the services of a coordinator",
+        "requirement": "A rental property owner, or any agent, representative, or subcontractor thereof, shall not receive, subscribe to, contract for, or otherwise exchange any form of consideration in return for the use of the services of a coordinator.",
+        "title": "Prohibition on Rental Property Owners Using Coordinators",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "anchor_quote": "This act shall take effect on the first day of the twelfth month next following the date of enactment.",
+        "category": "algorithmic_rent_setting",
+        "cite": "N.J.S.A. 56:9-1 et seq. (P.L. 2026, c.043 § 4(b))",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental property in New Jersey.",
+        "effective_expression": "first day of the twelfth month next following the date of enactment",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "It shall be unlawful and a violation of the \"New Jersey Antitrust Act,\" P.L.1970, c.73 (C.56:9-1 et seq.) for: b. a coordinator to facilitate a tacit or express agreement among rental property owners that restricts competition with respect to residential dwelling units, including by performing a coordinating function",
+        "requirement": "A coordinator shall not facilitate a tacit or express agreement among rental property owners that restricts competition with respect to residential dwelling units, including by performing a coordinating function.",
+        "title": "Prohibition on Coordinators Facilitating Pricing Agreements",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "anchor_quote": "This act shall take effect on the first day of the twelfth month next following the date of enactment.",
+        "category": "algorithmic_rent_setting",
+        "cite": "N.J.S.A. 56:9-1 et seq. (P.L. 2026, c.043 § 4(c))",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental property in New Jersey.",
+        "effective_expression": "first day of the twelfth month next following the date of enactment",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "It shall be unlawful and a violation of the \"New Jersey Antitrust Act,\" P.L.1970, c.73 (C.56:9-1 et seq.) for: c. two or more persons to engage in or otherwise facilitate parallel pricing coordination",
+        "requirement": "Two or more persons shall not engage in or otherwise facilitate parallel pricing coordination.",
+        "title": "Prohibition on Parallel Pricing Coordination",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "anchor_quote": "This act shall take effect on the first day of the twelfth month next following the date of enactment.",
+        "category": "algorithmic_rent_setting",
+        "cite": "N.J.S.A. 56:9-1 et seq. (P.L. 2026, c.043 § 4(d))",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental property in New Jersey.",
+        "effective_expression": "first day of the twelfth month next following the date of enactment",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "It shall be unlawful and a violation of the \"New Jersey Antitrust Act,\" P.L.1970, c.73 (C.56:9-1 et seq.) for: d. any agent or representative of a coordinator or subcontractor thereof to engage in parallel pricing coordination",
+        "requirement": "Any agent or representative of a coordinator or subcontractor thereof shall not engage in parallel pricing coordination.",
+        "title": "Prohibition on Coordinator Agents Engaging in Parallel Pricing Coordination",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "anchor_quote": "This act shall take effect on the first day of the twelfth month next following the date of enactment.",
+        "category": "algorithmic_rent_setting",
+        "cite": "N.J.S.A. 56:9-1 et seq. (P.L. 2026, c.043 § 4(e))",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental property in New Jersey.",
+        "effective_expression": "first day of the twelfth month next following the date of enactment",
+        "exemptions": [
+          {
+            "description": "Providing, using, or collecting competitively sensitive information solely for research, statistical analysis, or testing where not used in setting or recommending rental prices or lease terms",
+            "predicate": {
+              "const": true
+            },
+            "quote": "\"Coordinating function\" shall not include the following: (1) providing, using, or collecting competitively sensitive information solely for the purpose of conducting research, statistical analysis, or testing, where the competitively sensitive information is not used in setting or recommending rental prices, material lease terms, fees, occupancy rates or levels, or other contract terms for current or future leases"
+          },
+          {
+            "description": "Developing an estimated amount of rent that is made available to the public at no cost",
+            "predicate": {
+              "const": true
+            },
+            "quote": "\"Coordinating function\" shall not include the following: (2) developing an estimated amount of rent that is made available to the public at no cost"
+          },
+          {
+            "description": "Using a real estate brokerage database available on equal terms to subscribers that lists properties for rent or sale but does not set or recommend rental prices or collect competitively sensitive information for pricing purposes",
+            "predicate": {
+              "const": true
+            },
+            "quote": "\"Coordinating function\" shall not include the following: (3) the use of a real estate brokerage database that is available on equal terms to subscribers that lists properties for rent or sale but does not: (a) set or recommend rental prices, material lease terms, or occupancy rates or levels; or (b) collect competitively sensitive information to set or recommend rental prices, material lease terms, or occupancy rates or levels"
+          },
+          {
+            "description": "A government entity setting or limiting rents or sale prices of residential property through affordability controls in accordance with the law",
+            "predicate": {
+              "const": true
+            },
+            "quote": "\"Coordinating function\" shall not include the following: (4) a government entity setting or limiting rents or sale prices of residential property through affordability controls in accordance with the law."
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "It shall be unlawful and a violation of the \"New Jersey Antitrust Act,\" P.L.1970, c.73 (C.56:9-1 et seq.) for: e. any person to perform a coordinating function.",
+        "requirement": "Any person shall not perform a coordinating function.",
+        "title": "Prohibition on Performing a Coordinating Function",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 4548,
+    "output_tokens": 2152
+  }
+}

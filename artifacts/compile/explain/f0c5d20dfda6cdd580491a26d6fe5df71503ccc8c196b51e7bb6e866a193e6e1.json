@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002172,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "A landlord can ask for a security deposit equal to one month's rent. The money must be kept in an account that earns interest, and the tenant gets a written statement about the property's condition.",
+    "summary_es": "Un arrendador puede pedir un depósito de seguridad igual a una renta de un mes. El dinero debe guardarse en una cuenta que gane intereses, y el inquilino recibe un documento escrito sobre el estado de la propiedad.",
+    "who_en": "This rule covers all residential rental properties.",
+    "who_es": "Esta regla cubre todas las propiedades residenciales de alquiler."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1012,
+    "output_tokens": 232
+  }
+}

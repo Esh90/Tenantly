@@ -1,0 +1,273 @@
+{
+  "cost_usd": 0.018095,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Boston Fair Chance Tenant Selection Policy (February 2017)",
+        "coverage": {
+          "any": [
+            {
+              "fact": "owner_is_natural_person",
+              "op": "!=",
+              "value": true
+            }
+          ]
+        },
+        "coverage_text": "Housing providers receiving DND funding, DND land, or housing with units created under BPDA Inclusionary Development Policy.",
+        "effective_date": "2017-02-01",
+        "effective_expression": null,
+        "exemptions": [
+          {
+            "description": "Direct relationship between conviction and housing sought with unreasonable risk of substantial harm to safety of others",
+            "predicate": {
+              "const": true
+            },
+            "quote": "A direct relationship between a conviction and the housing sought and or unreasonable risk of substantial harm to the safety of others."
+          },
+          {
+            "description": "Current criminal behavior",
+            "predicate": {
+              "const": true
+            },
+            "quote": "This guidance does not apply to current criminal behavior."
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Housing providers receiving Department of Neighborhood Development (DND) funding and/or land, or that have income restricted units created under the Boston Planning and Development Agency (BPDA) Inclusionary Development Policy will not impose a blanket policy that denies housing to anyone with arrests and or convictions. Housing providers will consider applicants on a case-by-case basis.",
+        "relations_hint": [
+          "Where federal or state law imposes a criminal history requirement that conflicts with a requirement of this guidance, the federal or state law preempts this policy."
+        ],
+        "requirement": "Housing providers cannot impose blanket policies denying housing based on arrests or convictions; they must consider applicants individually.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Prohibition on blanket denial policies based on criminal history",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Boston Fair Chance Tenant Selection Policy (February 2017)",
+        "coverage": {
+          "any": [
+            {
+              "fact": "owner_is_natural_person",
+              "op": "!=",
+              "value": true
+            }
+          ]
+        },
+        "coverage_text": "Housing providers receiving DND funding, DND land, or housing with units created under BPDA Inclusionary Development Policy.",
+        "effective_date": "2017-02-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The Developer/Agent (Agent) agrees to not consider any of the following categories when determining housing eligibility and or considering eviction: a) Arrests that did not result in conviction. This includes dismissed charges, diversion programs, and similar non-convictions.",
+        "relations_hint": [],
+        "requirement": "Housing providers must not consider arrests that did not result in conviction, including dismissed charges and diversion programs.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Exclusion of arrests without conviction from housing eligibility determination",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Boston Fair Chance Tenant Selection Policy (February 2017)",
+        "coverage": {
+          "any": [
+            {
+              "fact": "owner_is_natural_person",
+              "op": "!=",
+              "value": true
+            }
+          ]
+        },
+        "coverage_text": "Housing providers receiving DND funding, DND land, or housing with units created under BPDA Inclusionary Development Policy.",
+        "effective_date": "2017-02-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The Developer/Agent (Agent) agrees to not consider any of the following categories when determining housing eligibility and or considering eviction: b) Convictions that are subject to a form of judicial relief, such as expungement, sealing, and certificates for relief from disabilities.",
+        "relations_hint": [],
+        "requirement": "Housing providers must not consider convictions that have been subject to judicial relief, such as expungement, sealing, or certificates for relief from disabilities.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Exclusion of convictions subject to judicial relief from housing eligibility determination",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Boston Fair Chance Tenant Selection Policy (February 2017)",
+        "coverage": {
+          "any": [
+            {
+              "fact": "owner_is_natural_person",
+              "op": "!=",
+              "value": true
+            }
+          ]
+        },
+        "coverage_text": "Housing providers receiving DND funding, DND land, or housing with units created under BPDA Inclusionary Development Policy.",
+        "effective_date": "2017-02-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The Developer/Agent (Agent) agrees to not consider any of the following categories when determining housing eligibility and or considering eviction: c) Juvenile records",
+        "relations_hint": [],
+        "requirement": "Housing providers must not consider juvenile records when determining housing eligibility or eviction.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Exclusion of juvenile records from housing eligibility determination",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Boston Fair Chance Tenant Selection Policy (February 2017)",
+        "coverage": {
+          "any": [
+            {
+              "fact": "owner_is_natural_person",
+              "op": "!=",
+              "value": true
+            }
+          ]
+        },
+        "coverage_text": "Housing providers receiving DND funding, DND land, or housing with units created under BPDA Inclusionary Development Policy.",
+        "effective_date": "2017-02-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "Lookback period for convictions",
+            "text": "A conviction more than 5 years old",
+            "unit": "years",
+            "valid_from": null,
+            "valid_to": null,
+            "value": 5
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The Developer/Agent (Agent) agrees to not consider any of the following categories when determining housing eligibility and or considering eviction: d) A conviction more than 5 years old.",
+        "relations_hint": [],
+        "requirement": "Housing providers must not consider convictions that occurred more than 5 years before the housing application.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Exclusion of convictions older than 5 years from housing eligibility determination",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Boston Fair Chance Tenant Selection Policy (February 2017)",
+        "coverage": {
+          "any": [
+            {
+              "fact": "owner_is_natural_person",
+              "op": "!=",
+              "value": true
+            }
+          ]
+        },
+        "coverage_text": "Housing providers receiving DND funding, DND land, or housing with units created under BPDA Inclusionary Development Policy.",
+        "effective_date": "2017-02-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The agent agrees not to use the applicant credit score to approve or deny housing applications.",
+        "relations_hint": [],
+        "requirement": "Housing providers must not use credit scores as a basis to approve or deny housing applications.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Prohibition on using credit score to approve or deny housing",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Boston Fair Chance Tenant Selection Policy (February 2017)",
+        "coverage": {
+          "any": [
+            {
+              "fact": "owner_is_natural_person",
+              "op": "!=",
+              "value": true
+            }
+          ]
+        },
+        "coverage_text": "Housing providers receiving DND funding, DND land, or housing with units created under BPDA Inclusionary Development Policy.",
+        "effective_date": "2017-02-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Property Managers may consider an applicant's credit history, but such information may ONLY be used in lieu of rental history to determine an applicant's ability to pay rent when rental history is not available.",
+        "relations_hint": [],
+        "requirement": "Property managers may consider credit history only as a substitute for rental history when determining ability to pay rent, and only when rental history is unavailable.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Limited use of credit history in absence of rental history",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Boston Fair Chance Tenant Selection Policy (February 2017)",
+        "coverage": {
+          "any": [
+            {
+              "fact": "owner_is_natural_person",
+              "op": "!=",
+              "value": true
+            }
+          ]
+        },
+        "coverage_text": "Housing providers receiving DND funding, DND land, or housing with units created under BPDA Inclusionary Development Policy.",
+        "effective_date": "2017-02-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The lack of credit history, as opposed to poor credit history, is not sufficient justification to reject an applicant.",
+        "relations_hint": [],
+        "requirement": "Housing providers must not reject applicants solely because they lack a credit history, though poor credit history may be considered with mitigating factors.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Prohibition on using lack of credit history as basis for rejection",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 3595,
+    "output_tokens": 2900
+  }
+}

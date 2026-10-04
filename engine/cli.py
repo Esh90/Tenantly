@@ -96,6 +96,54 @@ def compile(
 
 
 @app.command()
+def lookups() -> None:
+    """Engine at the default date for all 500 addresses; prints the result distribution."""
+    from collections import Counter
+
+    from engine.export import build
+
+    doc = build.build_lookups(build.load_ruleset(), build.load_records())
+    c = Counter(e["result"] for v in doc["lookups"].values() for e in v)
+    typer.echo(f"lookups: {len(doc['lookups'])} addresses; results {dict(sorted(c.items()))}")
+
+
+@app.command()
+def changes() -> None:
+    """Typed change tests T1-T5 -> artifacts/changes/*.json and out/changes.json."""
+    from engine.export import build
+
+    sub = build.write_changes(build.load_ruleset(), build.load_records())
+    for tid, v in sub.items():
+        typer.echo(
+            f"{tid}: affected {len(v['affected_address_ids'])}, conflict flags {len(v['conflict_flag_address_ids'])}"
+        )
+
+
+@app.command()
+def export() -> None:
+    """Write out/rules.json, lookups.json, changes.json (validated against the official schema)."""
+    from engine.export import build
+
+    typer.echo(str(build.export_all(build.load_ruleset(), build.load_records())))
+
+
+@app.command()
+def snapshot() -> None:
+    """Write the static snapshot to artifacts/web/."""
+    from engine.export import build
+
+    typer.echo(str(build.build_snapshot()))
+
+
+@app.command()
+def score() -> None:
+    """Self-score against the silver key (eval/selfscore.py) -> artifacts/eval/selfscore.json."""
+    import importlib
+
+    typer.echo(importlib.import_module("eval.selfscore").main())
+
+
+@app.command()
 def serve(port: int = 8000, reload: bool = False) -> None:
     """Run the API locally."""
     import uvicorn

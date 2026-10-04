@@ -2,6 +2,12 @@
 
 Changes to the API contract (PLAN.md section 14) that the frontend must follow. Newest first.
 
+## v0.3 - unsubscribe response
+- `DELETE /v1/alerts/subscriptions/{token}` returns `200 {"ok": true}` instead of `204`, because the
+  frontend client requires a JSON body on every success.
+- List endpoints keep their `{ "items": [...] }` wrapper (and the snapshot files do too); the frontend
+  `api.ts` unwraps them. `GET /v1/audit` rows are mapped to the app's audit entry shape there.
+
 ## v0.2 - nullable coordinates
 - `lat` and `lon` are now `number | null` on `AddressSummary`, `AddressIndexItem` and
   `AffectedAddress`. One sample address (A0295, a parcel lot with no house number) cannot be

@@ -1,0 +1,249 @@
+{
+  "cost_usd": 0.016045,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "category": "rent_increase_limits",
+        "cite": "Santa Ana, CA Rent Stabilization Ordinance",
+        "coverage": {
+          "not": {
+            "any": [
+              {
+                "fact": "co_date",
+                "op": ">",
+                "value": "1995-02-01"
+              },
+              {
+                "fact": "property_type",
+                "op": "==",
+                "value": "other"
+              }
+            ]
+          }
+        },
+        "coverage_text": "Residential buildings constructed on or before February 1, 1995, excluding mobile home spaces offered for rent after January 1, 1990.",
+        "effective_date": "2021-11-19",
+        "exemptions": [
+          {
+            "description": "Residential buildings constructed after February 1, 1995",
+            "predicate": {
+              "fact": "co_date",
+              "op": ">",
+              "value": "1995-02-01"
+            },
+            "quote": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990."
+          },
+          {
+            "description": "Mobile home spaces offered for rent after January 1, 1990",
+            "predicate": {
+              "fact": "property_type",
+              "op": "==",
+              "value": "other"
+            }
+          }
+        ],
+        "key_values": [
+          {
+            "name": "maximum_annual_increase_percent",
+            "text": "3% per year",
+            "unit": "percent",
+            "value": 3
+          },
+          {
+            "name": "cpi_percentage_applied",
+            "text": "80% of the percent change in the Consumer Price Index over the most recent 12-month period",
+            "unit": "percent",
+            "value": 80
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Increase in residential rents are limited to the lower of 3% per year, or 80% of the percent change in the Consumer Price Index over the most recent 12-month period. If the CPI is negative, no rent increase is permitted.",
+        "requirement": "Residential rent increases are limited to the lower of 3% per year, or 80% of the percent change in the Consumer Price Index over the most recent 12-month period. If the CPI is negative, no rent increase is permitted.",
+        "title": "Annual Rent Increase Cap",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "Santa Ana, CA Just Cause Eviction Ordinance",
+        "coverage": {
+          "not": {
+            "any": [
+              {
+                "fact": "building_age_years",
+                "op": "<",
+                "value": 15
+              },
+              {
+                "fact": "subsidized_or_affordable",
+                "op": "==",
+                "value": true
+              },
+              {
+                "fact": "property_type",
+                "op": "in",
+                "value": [
+                  "other"
+                ]
+              }
+            ]
+          }
+        },
+        "coverage_text": "Residential rental property excluding housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters.",
+        "effective_date": "2021-11-19",
+        "exemptions": [
+          {
+            "description": "Housing produced in the last 15 years",
+            "predicate": {
+              "fact": "building_age_years",
+              "op": "<",
+              "value": 15
+            },
+            "quote": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters."
+          },
+          {
+            "description": "Deed-restricted affordable housing",
+            "predicate": {
+              "fact": "subsidized_or_affordable",
+              "op": "==",
+              "value": true
+            }
+          },
+          {
+            "description": "Hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters",
+            "predicate": {
+              "fact": "property_type",
+              "op": "in",
+              "value": [
+                "other"
+              ]
+            }
+          }
+        ],
+        "key_values": [
+          {
+            "name": "days_before_just_cause_required",
+            "text": "After 30 days",
+            "unit": "days",
+            "value": 30
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "After 30 days, an owner shall not terminate a tenancy without just cause, which shall be stated in a written notice.",
+        "requirement": "After 30 days of tenancy, a landlord may not terminate a tenancy without just cause, which must be stated in a written notice.",
+        "tenancy_conditions": [
+          "After 30 days of tenancy"
+        ],
+        "title": "Just Cause Eviction Requirement",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "Santa Ana, CA Just Cause Eviction Ordinance",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to the Just Cause Eviction Ordinance.",
+        "effective_date": "2021-11-19",
+        "key_values": [
+          {
+            "name": "at_fault_cause_types",
+            "text": "default in payment of rent, breach of a material term of the lease, committing a nuisance, criminal activity, and other actions"
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "\"Just cause\" includes certain at-fault causes such as default in payment of rent, breach of a material term of the lease, committing a nuisance, criminal activity, and other actions.",
+        "requirement": "Just cause for eviction may include at-fault causes such as default in payment of rent, breach of a material term of the lease, committing a nuisance, criminal activity, and other actions.",
+        "title": "At-Fault Just Cause Grounds for Eviction",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "Santa Ana, CA Just Cause Eviction Ordinance",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to the Just Cause Eviction Ordinance.",
+        "effective_date": "2021-11-19",
+        "key_values": [
+          {
+            "name": "no_fault_cause_types",
+            "text": "intent of the owner to occupy the property, removal of the property from the rental market, and demolition or substantial remodel"
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "\"Just cause\" also includes certain no-fault causes such as the intent of the owner to occupy the property, removal of the property from the rental market, and demolition or substantial remodel.",
+        "requirement": "Just cause for eviction may include no-fault causes such as the intent of the owner to occupy the property, removal of the property from the rental market, and demolition or substantial remodel.",
+        "title": "No-Fault Just Cause Grounds for Eviction",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "Santa Ana, CA Just Cause Eviction Ordinance",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to the Just Cause Eviction Ordinance.",
+        "effective_date": "2021-11-19",
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Before issuing a notice to terminate for just cause, the owner shall first give notice of the violation with a time period for the tenant to fix the violation(s).",
+        "requirement": "Before issuing a notice to terminate for just cause, the owner must first give notice of the violation with a time period for the tenant to fix the violation(s).",
+        "title": "Pre-Termination Notice and Cure Period",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "Santa Ana, CA Just Cause Eviction Ordinance",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to the Just Cause Eviction Ordinance.",
+        "effective_date": "2021-11-19",
+        "key_values": [
+          {
+            "name": "relocation_assistance_months",
+            "text": "3 months of relocation assistance",
+            "unit": "months",
+            "value": 3
+          },
+          {
+            "name": "rent_waiver_months",
+            "text": "waive payment of rent for the final 3 months",
+            "unit": "months",
+            "value": 3
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Under a no-fault just cause termination, the owner shall either provide 3 months of relocation assistance or waive payment of rent for the final 3 months of the tenancy.",
+        "requirement": "Under a no-fault just cause termination, the owner shall either provide 3 months of relocation assistance or waive payment of rent for the final 3 months of the tenancy.",
+        "title": "No-Fault Eviction Relocation Assistance",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 3355,
+    "output_tokens": 2538
+  }
+}

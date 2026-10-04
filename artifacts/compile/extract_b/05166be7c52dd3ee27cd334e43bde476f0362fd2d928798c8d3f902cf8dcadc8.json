@@ -1,0 +1,129 @@
+{
+  "cost_usd": 0.011803,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "approval_date": "2020-10",
+        "category": "just_cause_eviction",
+        "cite": "Boston City Ordinance § 10-11.7 (Housing Stability Notification Act)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units in Boston, Massachusetts.",
+        "effective_date": "2020-11-06",
+        "exemptions": [
+          {
+            "description": "Residences in any hospital, skilled nursing facility or health facility",
+            "predicate": {
+              "fact": "property_type",
+              "op": "in",
+              "value": [
+                "elderly_home"
+              ]
+            },
+            "quote": "The only exempt properties are residences: 1. in any hospital, skilled nursing facility or health facility"
+          },
+          {
+            "description": "Residences in a non-profit facility whose primary purpose is providing short-term treatment, assistance or therapy for alcohol, drug, or other substance abuse",
+            "predicate": {
+              "not": {
+                "fact": "owner_is_natural_person"
+              }
+            },
+            "quote": "The only exempt properties are residences: 2. in a non-profit facility whose primary purpose is providing short-term treatment, assistance or therapy for alcohol, drug, or other substance abuse."
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": "1st Offense: Warning; 2nd and Subsequent Offenses: $300 per day",
+        "quote": "The Housing Stability Notification Act (HSNA) is an Ordinance passed by the City of Boston in October 2020 that requires any landlord planning to end a tenancy agreement to provide the tenant with a Notice of Tenants' Rights and Resources. The HSNA requires that landlords give this Notice of Tenants' Rights and Resources to tenants when the landlord starts the eviction process, or when the landlord decides to not offer the tenant a renewal of their lease agreement. The Notice of Tenants' Rights and Resources must be delivered at the same time as the Notice to Quit.",
+        "relations_hint": [
+          "requirements of this Ordinance may not be waived, and any term of any lease, contract, or other agreement that purports to waive or limit a tenant's or former homeowner's substantive or procedural rights under this Ordinance are contrary to public policy, unenforceable, and void",
+          "If a landlord violates the HSNA, it DOES NOT halt the eviction process."
+        ],
+        "requirement": "Landlords must provide tenants with a Notice of Tenants' Rights and Resources at the same time as serving a Notice to Quit or Notice of Lease Non-renewal.",
+        "title": "Landlord Notice of Tenants' Rights and Resources Upon Eviction or Non-renewal"
+      },
+      {
+        "approval_date": "2020-10",
+        "category": "just_cause_eviction",
+        "cite": "Boston City Ordinance § 10-11.7 (Housing Stability Notification Act)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units and owner-occupied properties in Boston subject to foreclosure or post-foreclosure transfer.",
+        "effective_date": "2020-11-06",
+        "exemptions": [
+          {
+            "description": "Residences in any hospital, skilled nursing facility or health facility",
+            "predicate": {
+              "fact": "property_type",
+              "op": "in",
+              "value": [
+                "elderly_home"
+              ]
+            }
+          },
+          {
+            "description": "Residences in a non-profit facility whose primary purpose is providing short-term treatment, assistance or therapy for alcohol, drug, or other substance abuse",
+            "predicate": {
+              "not": {
+                "fact": "owner_is_natural_person"
+              }
+            }
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": "1st Offense: Warning; 2nd and Subsequent Offenses: $300 per day",
+        "quote": "The Notice of Tenants' Rights and Resources must also be delivered to any tenant that is asked to leave a property. For example, if someone is purchasing a property out of foreclosure, or from a bank or a mortgage lender, they must provide this Notice to the former owners of the property, or any tenants that live in the property.",
+        "requirement": "Foreclosing owners and purchasers in foreclosure must provide the Notice of Tenants' Rights and Resources to former owners and any tenants when requiring them to leave a property.",
+        "title": "Notice to Former Owners and Tenants Upon Property Transfer or Foreclosure"
+      },
+      {
+        "approval_date": "2020-10",
+        "category": "just_cause_eviction",
+        "cite": "Boston City Ordinance § 10-11.7 (Housing Stability Notification Act)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units in Boston, Massachusetts.",
+        "effective_date": "2020-11-06",
+        "exemptions": [
+          {
+            "description": "Residences in any hospital, skilled nursing facility or health facility",
+            "predicate": {
+              "fact": "property_type",
+              "op": "in",
+              "value": [
+                "elderly_home"
+              ]
+            }
+          },
+          {
+            "description": "Residences in a non-profit facility whose primary purpose is providing short-term treatment, assistance or therapy for alcohol, drug, or other substance abuse",
+            "predicate": {
+              "not": {
+                "fact": "owner_is_natural_person"
+              }
+            }
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": "1st Offense: Warning; 2nd and Subsequent Offenses: $300 per day",
+        "quote": "The HSNA also requires landlords and foreclosing owners to send a copy of the Notice to Quit or Notice of Non-renewal of Lease, together with a Certificate of Compliance/Service, to the City of Boston's Office of Housing Stability",
+        "requirement": "Landlords and foreclosing owners must send a copy of the Notice to Quit or Notice of Non-renewal of Lease, together with a Certificate of Compliance/Service, to the City of Boston's Office of Housing Stability.",
+        "title": "Landlord Reporting Obligation to City"
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 3608,
+    "output_tokens": 1639
+  }
+}

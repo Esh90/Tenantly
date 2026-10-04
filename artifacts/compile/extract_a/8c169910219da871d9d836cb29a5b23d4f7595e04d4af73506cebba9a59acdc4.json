@@ -1,0 +1,53 @@
+{
+  "cost_usd": 0.0139444,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "screening_restrictions",
+        "cite": "Cal. Gov. Code § 12955(n)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rentals.",
+        "effective_date": "2024-01-01",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "(n) To use a financial or income standard in the rental of housing that fails to account for the aggregate income of persons residing together or proposing to reside together on the same basis as the aggregate income\nof married persons residing together or proposing to reside together.",
+        "requirement": "It is unlawful to use a financial or income standard in rental housing that does not treat the aggregate income of persons residing together the same as that of married persons residing together.",
+        "title": "Aggregate income standard for cohabitants",
+        "uncertain_fields": [
+          "quote"
+        ]
+      },
+      {
+        "category": "screening_restrictions",
+        "cite": "Cal. Gov. Code § 12955(o)(1)(B)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rentals involving a government rent subsidy.",
+        "effective_date": "2024-01-01",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "(B) (i) Use a person’s credit history as part of the application process for a rental accommodation without offering the applicant the option, at the applicant’s discretion, of providing lawful, verifiable alternative evidence of the applicant’s reasonable ability to pay\nthe portion of the rent to be paid by the tenant, including, but not limited to, government benefit payments, pay records, and bank statements.",
+        "requirement": "Where a government rent subsidy exists, a housing provider using credit history must offer the applicant the option of providing alternative evidence of ability to pay the tenant's portion of rent, and must consider it if provided.",
+        "title": "Credit history alternatives with rent subsidy",
+        "uncertain_fields": [
+          "quote"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 3306,
+    "output_tokens": 686
+  }
+}

@@ -1,0 +1,737 @@
+{
+  "cost_usd": 0.056381,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property leases.",
+        "effective_date": "2025-08-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "maximum_security_deposit",
+            "text": "a security deposit equal to the first month's rent",
+            "unit": "months",
+            "value": 1
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "a security deposit equal to the first month's rent provided that such security deposit is deposited as required by subsection (3) and that the tenant is given the statement of condition as required by subsection (2)",
+        "relations_hint": [],
+        "requirement": "A lessor may not require a tenant to pay a security deposit exceeding one month's rent, provided the deposit is held in an interest-bearing account and a statement of condition is provided to the tenant.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Maximum Security Deposit Amount",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property leases.",
+        "effective_date": "2025-08-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": "Failure to comply entitles the tenant to immediate return of the security deposit.",
+        "quote": "Any security deposit received by such lessor shall be held in a separate, interest-bearing account in a bank, located within the commonwealth under such terms as will place such deposit beyond the claim of creditors of the lessor, including a foreclosing mortgagee or trustee in bankruptcy, and as will provide for its transfer to a subsequent owner of said property.",
+        "relations_hint": [],
+        "requirement": "A lessor must hold security deposits in a separate, interest-bearing account in a bank located within Massachusetts, placed beyond the claims of creditors and providing for transfer to a successor owner.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Separate Interest-Bearing Account Requirement",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property leases.",
+        "effective_date": "2025-08-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "receipt_deadline",
+            "text": "within thirty days after such deposit is received",
+            "unit": "days",
+            "value": 30
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "Failure to comply entitles the tenant to immediate return of the security deposit.",
+        "quote": "A receipt shall be given to the tenant within thirty days after such deposit is received by the lessor which receipt shall indicate the name and location of the bank in which the security deposit has been deposited and the amount and account number of said deposit.",
+        "relations_hint": [],
+        "requirement": "A lessor must provide a receipt to the tenant within thirty days of receiving a security deposit, indicating the bank name, location, amount, and account number.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Security Deposit Receipt and Bank Notification",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property leases where a security deposit is accepted.",
+        "effective_date": "2025-08-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "statement_deadline",
+            "text": "within ten days after commencement of the tenancy, whichever is later",
+            "unit": "days",
+            "value": 10
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Any lessor of residential real property, or his agent, who accepts a security deposit from a tenant or prospective tenant shall, upon receipt of such security deposit, or within ten days after commencement of the tenancy, whichever is later, furnish to such tenant or prospective tenant a separate written statement of the present condition of the premises to be leased or rented.",
+        "relations_hint": [],
+        "requirement": "A lessor must furnish to the tenant a separate written statement of the present condition of the premises, including any existing damage and code violations, within ten days after commencement of tenancy or upon receipt of the security deposit, whichever is later.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Statement of Condition of Premises",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property leases where a security deposit is accepted.",
+        "effective_date": "2025-08-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "response_deadline",
+            "text": "within fifteen days after you receive this list or within fifteen days after you move in, whichever is later",
+            "unit": "days",
+            "value": 15
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "This statement must be returned to the lessor or his agent within fifteen days after you receive this list or within fifteen days after you move in, whichever is later.",
+        "relations_hint": [],
+        "requirement": "A tenant must return the statement of condition to the lessor within fifteen days after receipt or within fifteen days after moving in, whichever is later, and may submit a separate signed list of damages the lessor must respond to within fifteen days.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Tenant Right to Challenge Statement of Condition",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property leases where a security deposit is accepted.",
+        "effective_date": "2025-08-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "record_retention_period",
+            "text": "for a period of two years from the date of termination of the tenancy",
+            "unit": "years",
+            "value": 2
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "Upon wrongful failure to make records available, the tenant is entitled to immediate return of the security deposit and any accrued interest.",
+        "quote": "Every lessor who accepts a security deposit shall maintain a record of all such security deposits received which contains the following information: a detailed description of any damage done to each of the dwelling units or premises for which a security deposit has been accepted, returned to any tenant thereof or for which the lessor has brought suit against any tenant; the date upon which the occupancy of the tenant or tenants charged with such damage was terminated; and whether repairs were performed to remedy such damage, the dates of said repairs, the cost thereof, and receipts therefor.",
+        "relations_hint": [],
+        "requirement": "A lessor must maintain detailed records of all security deposits including damage descriptions, termination dates, and repair information, and make records available for inspection during normal business hours for two years after tenancy termination.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Security Deposit Record Maintenance by Lessor",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property leases where a security deposit is held for one year or longer.",
+        "effective_date": "2025-08-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "interest_rate",
+            "text": "five per cent per year",
+            "unit": "percent",
+            "value": 5
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "A lessor of residential real property who holds a security deposit pursuant to this section for a period of one year or longer from the commencement of the term of the tenancy shall, beginning with the first day of the tenancy, pay interest at the rate of five per cent per year, or other such lesser amount of interest as has been received from the bank where the deposit has been held payable to the tenant at the end of each year of the tenancy.",
+        "relations_hint": [],
+        "requirement": "A lessor holding a security deposit for one year or longer must pay interest to the tenant at five percent per year or at the lesser rate received from the bank, paid annually or credited to the next rental payment.",
+        "sunset_date": null,
+        "tenancy_conditions": [
+          "security deposit held for one year or longer from commencement of tenancy"
+        ],
+        "title": "Security Deposit Interest Payment",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property leases.",
+        "effective_date": "2025-08-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "return_deadline",
+            "text": "within thirty days after the termination of occupancy",
+            "unit": "days",
+            "value": 30
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The lessor shall, within thirty days after the termination of occupancy under a tenancy-at-will or the end of the tenancy as specified in a valid written lease agreement, return to the tenant the security deposit or any balance thereof; provided, however, that the lessor may deduct from such security deposit for the following: (i) any unpaid rent or water charges which have not been validly withheld or deducted pursuant to any general or special law (ii) any unpaid increase in real estate taxes which the tenant is obligated to pay pursuant to a tax escalation clause which conforms to the requirements of section fifteen C; and (iii) a reasonable amount necessary to repair any damage caused to the dwelling unit by the tenant or any person under the tenant's control or on the premises with the tenant's consent, reasonable wear and tear excluded.",
+        "relations_hint": [],
+        "requirement": "A lessor must return the security deposit or any balance within thirty days after termination of occupancy, with deductions allowed only for unpaid rent, water charges, real estate tax increases, or reasonable repairs for tenant-caused damage (excluding ordinary wear and tear).",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Security Deposit Return Deadline and Deductions",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property leases where deductions are made from security deposits.",
+        "effective_date": "2025-08-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "itemized_list_deadline",
+            "text": "within such thirty days",
+            "unit": "days",
+            "value": 30
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "In the case of such damage, the lessor shall provide to the tenant within such thirty days an itemized list of damages, sworn to by the lessor or his agent under pains and penalties of perjury, itemizing in precise detail the nature of the damage and of the repairs necessary to correct such damage, and written evidence, such as estimates, bills, invoices or receipts, indicating the actual or estimated cost thereof.",
+        "relations_hint": [],
+        "requirement": "When deducting from a security deposit for damage, a lessor must provide an itemized list of damages sworn under pains and penalties of perjury, with written evidence such as estimates, bills, invoices, or receipts, within thirty days after termination.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Itemized List of Damages Requirement",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property leases.",
+        "effective_date": "2025-08-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "No amount shall be deducted from the security deposit for any damage to the dwelling unit which was listed in the separate written statement of the present condition of the premises which was required to be given to the tenant prior to the execution of the lease or creation of the tenancy pursuant to clause (c) of subsection (2) or any damages listed in any separate list submitted by the tenant and signed by the lessor or his agent pursuant to said clause (c), unless the lessor subsequently repaired or caused to be repaired said damage and can prove that the renewed damage was unrelated to the prior damage and was caused by the tenant or by any person under the tenant's control or on the premises with the tenant's consent.",
+        "relations_hint": [],
+        "requirement": "A lessor may not deduct from the security deposit for any damage listed in the initial statement of condition or in a tenant's separate list signed by the lessor, unless the lessor subsequently repaired the damage and can prove the renewed damage was unrelated and caused by the tenant.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Prohibition on Deductions for Pre-Existing Damage",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property leases.",
+        "effective_date": "2025-08-01",
+        "effective_expression": null,
+        "exemptions": [
+          {
+            "description": "Granting a mortgage on the premises does not constitute a transfer of interest",
+            "predicate": {
+              "const": true
+            },
+            "quote": "provided however, that the granting of a mortgage on such premises shall not be a transfer of interest"
+          }
+        ],
+        "key_values": [
+          {
+            "name": "notification_deadline",
+            "text": "within forty-five days from the date of said transfer",
+            "unit": "days",
+            "value": 45
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Whenever a lessor who receives a security deposit transfers his interest in the dwelling unit for which the security deposit is held, whether by sale, assignment, death, appointment of a receiver or trustee in bankruptcy, or otherwise, the lessor shall transfer such security deposit together with any interest which has accrued thereon for the benefit of the tenant who made such security deposit to his successor in interest, and said successor in interest shall be liable for the retention and return of said security deposit in accordance with the provisions of this section from the date upon which said transfer is made",
+        "relations_hint": [],
+        "requirement": "When a lessor transfers interest in the dwelling unit, the security deposit and accrued interest must be transferred to the successor in interest, who must notify the tenant within forty-five days of the transfer.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Transfer of Security Deposit to Successor in Interest",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property leases.",
+        "effective_date": "2025-08-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": "Lessor forfeits right to retain security deposit and to counterclaim for damages; tenant may recover treble damages.",
+        "quote": "The lessor shall forfeit his right to retain any portion of the security deposit for any reason, or, in any action by a tenant to recover a security deposit, to counterclaim for any damage to the premises if he: (a) fails to deposit such funds in an account as required by subsection (3); (b) fails to furnish to the tenant within thirty days after the termination of the occupancy the itemized list of damages, if any, in compliance with the provisions of this section; (c) uses in any lease signed by the tenant any provision which conflicts with any provision of this section and attempts to enforce such provision or attempts to obtain from the tenant or prospective tenant a waiver of any provision of this section; (d) fails to transfer such security deposit to his successor in interest or to otherwise comply with the provisions of subsection (5) after he has succeeded to an interest in residential real property; or, (e) fails to return to the tenant the security deposit or balance thereof to which the tenant is entitled after deducting therefrom any sums in accordance with the provisions of this section, together with any interest thereon, within thirty days after termination of the tenancy.",
+        "relations_hint": [],
+        "requirement": "A lessor forfeits the right to retain any portion of a security deposit or to counterclaim for damages if the lessor fails to comply with deposit account requirements, fails to provide itemized damages within thirty days, uses conflicting lease provisions, fails to transfer deposits to successors, or fails to return the deposit within thirty days after termination.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Forfeiture of Lessor's Rights for Non-Compliance",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property leases.",
+        "effective_date": "2025-08-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "damages_multiplier",
+            "text": "three times the amount of such security deposit",
+            "unit": null,
+            "value": 3
+          },
+          {
+            "name": "interest_rate_on_damages",
+            "text": "interest at the rate of five per cent",
+            "unit": "percent",
+            "value": 5
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "Treble damages, interest at 5% from date payment was due, court costs, and reasonable attorney's fees.",
+        "quote": "If the lessor or his agent fails to comply with clauses (a), (d), or (e) of subsection 6, the tenant shall be awarded damages in an amount equal to three times the amount of such security deposit or balance thereof to which the tenant is entitled plus interest at the rate of five per cent from the date when such payment became due, together with court costs and reasonable attorney's fees.",
+        "relations_hint": [],
+        "requirement": "If a lessor fails to comply with deposit account requirements, fails to provide itemized damages within thirty days, or fails to return the deposit within thirty days, the tenant is awarded damages equal to three times the amount of the security deposit or balance, plus interest at five percent and court costs and attorneys' fees.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Treble Damages for Non-Compliance with Security Deposit Rules",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property leases where advance rent for last month is collected.",
+        "effective_date": "2025-08-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "interest_rate_advance_rent",
+            "text": "five per cent per year",
+            "unit": "percent",
+            "value": 5
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Any lessor or his agent who receives, at or prior to the commencement of a tenancy, rent in advance for the last month of the tenancy from a tenant or prospective tenant shall give to such tenant or prospective tenant at the time of such advance payment a receipt indicating the amount of such rent, the date on which it was received, its intended application as rent for the last month of the tenancy, the name of the person receiving it and, in the case of an agent, the name of the lessor for whom the rent is received, and a description of the rented or leased premises, and a statement indicating that the tenant is entitled to interest on said rent payment at the rate of five per cent per year or other such lesser amount of interest as has been received from the bank where the deposit has been held payable in accordance with the provisions of this clause",
+        "relations_hint": [],
+        "requirement": "A lessor who receives advance rent for the last month must provide a receipt indicating the amount, date, intended application, recipient name, lessor name if applicable, premises description, and statement that the tenant is entitled to interest at five percent per year.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Advance Rent for Last Month - Receipt and Interest",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property leases where advance rent for last month is collected.",
+        "effective_date": "2025-08-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "interest_rate",
+            "text": "five per cent per year",
+            "unit": "percent",
+            "value": 5
+          },
+          {
+            "name": "interest_payment_on_termination",
+            "text": "within thirty days of such termination",
+            "unit": "days",
+            "value": 30
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Any lessor or his agent who receives said rent in advance for the last month of tenancy shall, beginning with the first day of tenancy, pay interest at the rate of five per cent per year or other such lesser amount of interest as has been received from the bank where the deposit has been held.  Such interest shall be paid over to the tenant each year as provided in this clause; provided, however, that in the event that the tenancy is terminated before the anniversary date of such tenancy, the tenant shall receive all accrued interest within thirty days of such termination.",
+        "relations_hint": [],
+        "requirement": "Beginning with the first day of tenancy, a lessor must pay interest on advance rent for the last month at five percent per year or the lesser rate received from the bank, paid annually or deductible from next rent payment; if not received within thirty days after tenancy ends, tenant may deduct it from next rent payment.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Payment of Interest on Advance Rent for Last Month",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property leases where advance rent for last month is collected.",
+        "effective_date": "2025-08-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "damages_multiplier",
+            "text": "three times the amount of interest",
+            "unit": null,
+            "value": 3
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "Treble damages (three times the interest owed), court costs, and reasonable attorney's fees.",
+        "quote": "If the lessor fails to pay any interest to which the tenant is then entitled within thirty days after the termination of the tenancy, the tenant upon proof of the same in an action against the lessor shall be awarded damages in an amount equal to three times the amount of interest to which the tenant is entitled, together with court costs and reasonable attorneys fees.",
+        "relations_hint": [],
+        "requirement": "If a lessor fails to pay interest on advance rent within thirty days after tenancy termination, the tenant is awarded treble damages equal to three times the amount of interest due, plus court costs and reasonable attorney's fees.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Damages for Failure to Pay Interest on Advance Rent",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property leases.",
+        "effective_date": "2025-08-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "At or prior to the commencement of any tenancy, no lessor or agent of the lessor may require a tenant or prospective tenant to pay, to the lessor or to an agent of the lessor, any amount in excess of the following: (i) rent for the first full month of occupancy; and, (ii) rent for the last full month of occupancy calculated at the same rate as the first month; and, (iii) a security deposit equal to the first month's rent",
+        "relations_hint": [],
+        "requirement": "At or prior to commencement of tenancy, a lessor may not require a tenant to pay more than: rent for the first full month, rent for the last full month at the same rate, a security deposit equal to one month's rent, and the cost of key and lock.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Maximum Upfront Payments from Tenant",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property leases where a fee in lieu of security deposit is authorized by executive office regulations.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "maximum_total_fee",
+            "text": "not to exceed 1 month's rent",
+            "unit": "months",
+            "value": 1
+          }
+        ],
+        "lifecycle": "pending",
+        "penalty": null,
+        "quote": "provided, however, that the executive office of housing and livable communities may promulgate regulations to authorize a lessor and a tenant or prospective tenant to agree to the payment of a fee in lieu of payment of a security deposit; provided further, that any such regulations shall: (A) require the lessor to utilize a fee collected to waive a security deposit to cover for unpaid rent or unit damage that applies to the tenant's lease",
+        "relations_hint": [],
+        "requirement": "The executive office of housing and livable communities may promulgate regulations authorizing lessors and tenants to agree to a non-refundable or recurring fee in lieu of a security deposit, subject to requirements including offer to all tenants, limitation to one month's rent total, and opt-out rights.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Fee in Lieu of Security Deposit - Optional Program",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property leases.",
+        "effective_date": "2025-08-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "No lessor or successor in interest shall at any time subsequent to the commencement of a tenancy demand rent in advance in excess of the current month's rent or a security deposit in excess of the amount allowed by this section.",
+        "relations_hint": [],
+        "requirement": "After tenancy commencement, a lessor or successor in interest may not demand rent in advance beyond the current month's rent or a security deposit in excess of the amount allowed by this section.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Prohibition on Advance Rent Demands After Tenancy Commencement",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property leases.",
+        "effective_date": "2025-08-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "A security deposit shall continue to be the property of the tenant making such deposit, shall not be commingled with the assets of the lessor, and shall not be subject to the claims of any creditor of the lessor or of the lessor's successor in interest, including a foreclosing mortgagee or trustee in bankruptcy; provided, however, that the tenant shall be entitled to only such interest as is provided for in subsection (3)(b).",
+        "relations_hint": [],
+        "requirement": "A security deposit shall remain the property of the tenant and shall not be commingled with the lessor's assets or subject to claims of the lessor's creditors, except as provided for interest as specified in the statute.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Security Deposit Remains Tenant Property",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property leases.",
+        "effective_date": "2025-08-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "days_before_penalty",
+            "text": "thirty days after such rent shall have been due",
+            "unit": "days",
+            "value": 30
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "No lease or other rental agreement shall impose any interest or penalty for failure to pay rent until thirty days after such rent shall have been due.",
+        "relations_hint": [],
+        "requirement": "No lease or rental agreement may impose interest or penalties for failure to pay rent until thirty days after such rent is due.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "No Interest or Penalty for Late Rent Payment Before Thirty Days",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property leases where advance rent for last month is collected.",
+        "effective_date": "2025-08-01",
+        "effective_expression": null,
+        "exemptions": [
+          {
+            "description": "Granting a mortgage on the premises does not constitute a transfer of interest",
+            "predicate": {
+              "const": true
+            },
+            "quote": "provided, however, that the granting of a mortgage on such premises shall not be deemed a transfer of interest"
+          }
+        ],
+        "key_values": [
+          {
+            "name": "successor_notification_deadline",
+            "text": "within forty-five days from the date of said transfer",
+            "unit": "days",
+            "value": 45
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Whenever a lessor who receives rent in advance for the last month of tenancy transfers his interest in the dwelling unit for which the rental advance was received, whether by sale, assignment, death, appointment of a receiver or trustee in bankruptcy, or otherwise, the lessor shall credit an amount equal to such rental advance together with any interest which has accrued thereon for the benefit of the tenant who made such rental advance, to the successor in interest of such lessor",
+        "relations_hint": [],
+        "requirement": "When a lessor transfers interest in a dwelling unit, the advance rent for the last month and accrued interest must be credited to the successor in interest, who must notify the tenant within forty-five days.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Transfer of Advance Rent for Last Month to Successor",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property leases.",
+        "effective_date": "2025-08-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Any provision of a lease which conflicts with any provision of this section and any waiver by a tenant or prospective tenant of any provision of this section shall be deemed to be against public policy and therefore void and unenforceable.",
+        "relations_hint": [],
+        "requirement": "Any lease provision that conflicts with this section and any waiver by a tenant or prospective tenant of any provision of this section shall be deemed against public policy and void and unenforceable.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Waiver of Security Deposit Provisions Void",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B",
+        "coverage": {
+          "not": {
+            "all": [
+              {
+                "fact": "unit_separately_alienable",
+                "op": "==",
+                "value": true
+              },
+              {
+                "fact": "property_type",
+                "op": "==",
+                "value": "condo"
+              }
+            ]
+          }
+        },
+        "coverage_text": "All residential real property leases except short-term vacation or recreational rentals of one hundred days or less.",
+        "effective_date": "2025-08-01",
+        "effective_expression": null,
+        "exemptions": [
+          {
+            "description": "Lease, rental, occupancy or tenancy of one hundred days or less in duration for a vacation or recreational purpose",
+            "predicate": {
+              "const": true
+            },
+            "quote": "any lease, rental, occupancy or tenancy of one hundred days or less in duration which lease or rental is for a vacation or recreational purpose"
+          }
+        ],
+        "key_values": [
+          {
+            "name": "duration_threshold",
+            "text": "one hundred days or less",
+            "unit": "days",
+            "value": 100
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The provisions of this section shall not apply to any lease, rental, occupancy or tenancy of one hundred days or less in duration which lease or rental is for a vacation or recreational purpose.",
+        "relations_hint": [],
+        "requirement": "The provisions of this section do not apply to any lease, rental, occupancy or tenancy of one hundred days or less in duration that is for a vacation or recreational purpose.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Exemption for Short-Term Vacation Rentals",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 7416,
+    "output_tokens": 9793
+  }
+}

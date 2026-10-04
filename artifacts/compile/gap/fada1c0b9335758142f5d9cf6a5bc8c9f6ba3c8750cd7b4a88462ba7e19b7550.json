@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002668,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The triaged documents provided (D039-D043) relate to Just Cause For Eviction Ordinance, RSO overview, rent increase calculator, and relocation assistance - none of which directly address application screening fees. The link-only sources include references to California civil code sections and fair housing issues, but no specific text about Los Angeles city-level application screening fee regulations is present in the provided document excerpts. The category rules CA-FEE-01 and CA-FEE-02 are noted as existing but no corresponding city-level ordinance text implementing these rules at the Los Angeles level was supplied in the source materials.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1618,
+    "output_tokens": 210
+  }
+}

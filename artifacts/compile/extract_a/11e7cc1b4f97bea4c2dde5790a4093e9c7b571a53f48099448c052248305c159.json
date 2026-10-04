@@ -1,0 +1,92 @@
+{
+  "cost_usd": 0.0135044,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Residential rentals generally, except small landlords.",
+        "effective_date": "2024-07-01",
+        "exemptions": [
+          {
+            "description": "Landlords owning only two rental properties with no more than four units total, owned by a natural person, family trust, or all-natural-person LLC, may charge up to two months' rent.",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "landlord_property_count",
+                  "op": "<=",
+                  "value": 2
+                },
+                {
+                  "fact": "landlord_unit_count",
+                  "op": "<=",
+                  "value": 4
+                }
+              ]
+            },
+            "quote": "Starting July 1, 2024, landlords who own only two rental properties with no more than four residential units total can charge up to two months' rent for furnished and unfurnished units if ownership is held by a natural person, family trust, or limited liability company (LLC) where all members are natural persons"
+          }
+        ],
+        "key_values": [
+          {
+            "name": "deposit_cap",
+            "text": "one month's rent",
+            "unit": "months",
+            "valid_from": "2024-07-01",
+            "value": 1
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "Starting July 1, 2024, many landlords may only charge one month's rent for unfurnished and furnished units",
+        "requirement": "Landlords generally may charge no more than one month's rent as a security deposit for furnished or unfurnished units. Last month's rent counts toward the deposit; first month's rent does not.",
+        "title": "Security deposit cap"
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rentals.",
+        "key_values": [
+          {
+            "name": "return_deadline",
+            "text": "within 21 days",
+            "unit": "days",
+            "value": 21
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "All or any remaining portion of a security deposit must be returned\nwithin 21 days\nafter the tenant/s leave the unit vacant.",
+        "requirement": "Landlords must return the remaining deposit within 21 days after the tenant vacates, with an itemized statement and supporting documents if deductions are made.",
+        "title": "Deposit return within 21 days"
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Berkeley Rent Ordinance",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Units fully or partially covered by Berkeley's Rent Ordinance.",
+        "lifecycle": "enacted",
+        "quote": "For tenancies in units fully or partially covered by Berkeley's Rent Ordinance, landlords must pay tenants interest on their security deposit at the end of each year and a prorated amount if the tenant moves out before the end of the year.",
+        "requirement": "Landlords of units covered by the Rent Ordinance must pay tenants interest on security deposits annually, prorated on move-out.",
+        "title": "Security deposit interest",
+        "uncertain_fields": [
+          "coverage"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 1531,
+    "output_tokens": 997
+  }
+}

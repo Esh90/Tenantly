@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.003396,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Massachusetts had a rent-control ballot question. The full text of this measure was not provided.",
+    "summary_es": "Massachusetts tenía una pregunta de voto sobre control de rentas. El texto completo de esta medida no fue proporcionado.",
+    "who_en": "This information covered rentals in Massachusetts.",
+    "who_es": "Esta información cubrió alquileres en Massachusetts."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1876,
+    "output_tokens": 304
+  }
+}

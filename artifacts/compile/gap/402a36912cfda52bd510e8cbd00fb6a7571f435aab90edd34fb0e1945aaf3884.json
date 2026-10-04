@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.00203,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "Cambridge, MA has no city-level rule on algorithmic rent setting. However, there are two pending rules at the state level (MA-ALG-P1 and MA-ALG-P2) that address this category. The provided documents (D029, D031) are guidance materials that do not contain substantive rules on algorithmic rent setting. The link-only documents lack text content for evaluation. No adopted or implemented city or state rules currently exist on this topic.",
+    "result": "only_pending"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1165,
+    "output_tokens": 173
+  }
+}

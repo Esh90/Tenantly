@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.00191,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "Security deposit rules at the city level for Cambridge, MA are preempted by state law. Massachusetts state law (MA-DEP-01 and MA-DEP-02) governs maximum security deposit amounts and limits on upfront payments/security deposits. Cities cannot enact more restrictive local rules on this topic as it is controlled at the state level.",
+    "result": "barred_by_state"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1155,
+    "output_tokens": 151
+  }
+}

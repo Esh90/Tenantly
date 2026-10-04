@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002259,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "When a housing provider checks your criminal record, you can show evidence that information is wrong or that you have changed. You can also provide proof of other factors that matter to your situation.",
+    "summary_es": "Cuando el arrendador revisa tu historial criminal, puedes presentar evidencia de que la información es incorrecta o que has cambiado. También puedes proporcionar prueba de otros factores importantes en tu situación.",
+    "who_en": "This rule applies to most rental apartments and houses, but not to owner-occupied buildings with 4 or fewer units.",
+    "who_es": "Esta regla se aplica a la mayoría de apartamentos y casas de alquiler, pero no a edificios ocupados por el propietario con 4 o menos unidades."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 954,
+    "output_tokens": 261
+  }
+}

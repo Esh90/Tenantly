@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002189,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The jurisdiction Hoboken, NJ has no screening restrictions rule at the city level. While NJ state has three enacted screening restriction rules (NJ-SCR-01, NJ-SCR-02, NJ-SCR-03), none of these are identified as Hoboken city-specific rules. The provided link-only sources (D032-D064) have no accompanying text to verify whether they contain city-level screening restrictions for Hoboken. Without accessible text from these sources or documentation of city-specific ordinances, no rule can be confirmed for this jurisdiction and category at the city level.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1169,
+    "output_tokens": 204
+  }
+}

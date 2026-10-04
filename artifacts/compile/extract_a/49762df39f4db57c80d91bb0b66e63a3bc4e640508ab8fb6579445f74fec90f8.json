@@ -1,0 +1,40 @@
+{
+  "cost_usd": 0.011133,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "rent_increase_limits",
+        "cite": "H.3744",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "No coverage is specified; treated as all residential rentals in Boston.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "failed",
+        "penalty": null,
+        "quote": "An Act petition for a special law authorizing the city of Boston to implement rent stabilization and tenant eviction protections",
+        "relations_hint": [],
+        "requirement": "The bill would authorize the city of Boston to implement rent stabilization and tenant eviction protections. It was accompanied to a study order and no enacted requirements appear in the text.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Boston rent stabilization and tenant eviction protections petition",
+        "uncertain_fields": [
+          "lifecycle"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 2362,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 829,
+    "output_tokens": 357
+  }
+}

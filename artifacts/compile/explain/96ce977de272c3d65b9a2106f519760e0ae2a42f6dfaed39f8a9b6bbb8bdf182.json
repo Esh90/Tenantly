@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002375,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Any interest earned on your security deposit belongs to you. The landlord must pay it to you in cash or use it to reduce your rent on the lease renewal date or January 31.",
+    "summary_es": "Los intereses ganados en tu depósito de seguridad te pertenecen. El arrendador debe pagártelo en efectivo o usarlo para reducir tu renta en la fecha de renovación del contrato o el 31 de enero.",
+    "who_en": "This rule covers all residential rental properties that collect security deposits, except for seasonal rentals of 125 days or less.",
+    "who_es": "Esta regla aplica a todas las propiedades residenciales de alquiler que cobran depósitos de seguridad, excepto los alquileres de temporada de 125 días o menos."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1015,
+    "output_tokens": 272
+  }
+}

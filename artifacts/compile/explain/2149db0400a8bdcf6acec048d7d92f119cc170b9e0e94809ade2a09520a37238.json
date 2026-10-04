@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002182,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "A landlord can charge a cuota de solicitud only if they consider applications in the order received and approve the first applicant who meets the written criteria. Fees can only be charged when applications are actually reviewed.",
+    "summary_es": "Un arrendador puede cobrar una cuota de solicitud solo si considera las solicitudes en el orden en que se reciben y aprueba el primer inquilino que cumple con los criterios escritos. Las cuotas solo se pueden cobrar cuando las solicitudes se revisan realmente.",
+    "who_en": "This rule applies to all residential rental properties.",
+    "who_es": "Esta regla aplica a todas las propiedades residenciales de alquiler."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 972,
+    "output_tokens": 242
+  }
+}

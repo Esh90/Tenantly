@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002064,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The triaged documents (D029 and D031) are truncated guidance/overview pages with no substantive text provided about just cause eviction requirements. The link-only signals (D030, D054, D055, D056, D059) provide no text content and do not appear to address just cause eviction standards. While a state-level rule (MA-JCE-01) exists regarding notice requirements, no city-level just cause eviction rule was found in the available source materials for Cambridge, MA.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1139,
+    "output_tokens": 185
+  }
+}

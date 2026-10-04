@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002341,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The jurisdiction is Hoboken, NJ at the city level. While seven screening restriction rules (NJ-SCR-01 through NJ-SCR-07) are listed as enacted at what appears to be the state level, there is no evidence in the provided documents or link-only signals of any city-level screening restriction rules specific to Hoboken. The links provided (D032-D034, D060-D064) are not accompanied by text content and therefore cannot be verified to contain city-level Hoboken rules. The category exists at the state level but no Hoboken city-level rules are documented in the triaged materials.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1276,
+    "output_tokens": 213
+  }
+}

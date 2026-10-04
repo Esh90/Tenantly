@@ -1,0 +1,128 @@
+{
+  "cost_usd": 0.0392264,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0704",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental property in San Diego except those exempted under § 98.0703.",
+        "effective_date": "2023-06-24",
+        "exemptions": [
+          {
+            "description": "Housing issued a certificate of occupancy within the previous 15 years",
+            "predicate": {
+              "fact": "co_date",
+              "op": ">",
+              "value": {
+                "as_of_minus_years": 15
+              }
+            },
+            "quote": "(k) housing that has been issued a certificate of occupancy within the previous 15 years, unless the housing is a mobilehome; and"
+          },
+          {
+            "description": "Tenant shares bathroom or kitchen with landlord who lives there",
+            "predicate": {
+              "fact": "shares_kitchen_bath_with_owner",
+              "op": "==",
+              "value": true
+            },
+            "quote": null
+          },
+          {
+            "description": "Deed-restricted or subsidized affordable housing (not Section 8)",
+            "predicate": {
+              "fact": "subsidized_or_affordable",
+              "op": "==",
+              "value": true
+            },
+            "quote": null
+          },
+          {
+            "description": "Separately alienable property where landlord is not REIT, corporation, etc., with written notice",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "unit_separately_alienable",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "fact": "owner_is_natural_person",
+                  "op": "==",
+                  "value": true
+                }
+              ]
+            },
+            "quote": null
+          }
+        ],
+        "key_values": [
+          {
+            "name": "owner_occupancy_minimum",
+            "text": "a minimum of 12 continuous months",
+            "unit": "months",
+            "value": 12
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "A landlord shall not terminate a tenancy without just cause. For purposes of this Division, just cause includes at-fault just cause and no-fault just cause.",
+        "relations_hint": [
+          "consistent with California Civil Code section 1946.2"
+        ],
+        "requirement": "Landlords may not terminate a tenancy without at-fault or no-fault just cause as enumerated in the ordinance.",
+        "tenancy_conditions": [
+          "tenancy longer than 30 days"
+        ],
+        "title": "Just cause required for termination of tenancy",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0706(c)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Residential rental property subject to the Division where tenancy is terminated for no-fault just cause.",
+        "effective_date": "2023-06-24",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "standard_relocation",
+            "text": "two months of actual rent",
+            "unit": "months",
+            "value": 2
+          },
+          {
+            "name": "senior_disabled_relocation",
+            "text": "three months of actual rent",
+            "unit": "months",
+            "value": 3
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "Not less than three times the required relocation assistance and actual economic damages (§ 98.0709(e))",
+        "quote": "(1) The landlord shall, regardless of the tenant’s income or length of tenancy and at the landlord’s option, provide relocation assistance to the tenant by one of the following:",
+        "requirement": "For no-fault just cause terminations, the landlord must provide relocation assistance by direct payment or rent waiver of two months' rent (three for seniors or disabled tenants).",
+        "tenancy_conditions": [
+          "no-fault termination"
+        ],
+        "title": "Relocation assistance for no-fault termination",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 13637,
+    "output_tokens": 1148
+  }
+}

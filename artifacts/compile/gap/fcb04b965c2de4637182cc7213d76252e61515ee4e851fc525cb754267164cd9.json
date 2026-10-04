@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002199,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "While multiple screening restriction rules exist at the state level (NJ-SCR-01 through NJ-SCR-07), no city-level ordinance or municipal regulation specific to Newark, NJ for the screening_restrictions category has been identified in the provided triaged sections. The link-only signals reference state law (N.J. Title codes) and general documents but contain no actual text to verify a Newark city-specific rule. State-level rules do not constitute city-level rules for this jurisdiction-level classification.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1274,
+    "output_tokens": 185
+  }
+}

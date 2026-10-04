@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002258,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords cannot end a tenancy without just cause. For no-fault evictions, landlords must provide relocation assistance to tenants.",
+    "summary_es": "Los arrendadores no pueden terminar una tenencia sin causa justa. Para desalojos sin culpa del inquilino, los arrendadores deben proporcionar asistencia de reubicación.",
+    "who_en": "This rule covers most residential properties in the City of Los Angeles that are not regulated by the City's Rent Stabilization Ordinance.",
+    "who_es": "Esta regla cubre la mayoría de las propiedades residenciales en la Ciudad de Los Ángeles que no están reguladas por la Ordenanza de Estabilización de Rentas de la ciudad."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 968,
+    "output_tokens": 258
+  }
+}

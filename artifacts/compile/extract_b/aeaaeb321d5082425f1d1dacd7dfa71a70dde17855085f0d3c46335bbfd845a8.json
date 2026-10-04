@@ -1,0 +1,1159 @@
+{
+  "cost_usd": 0.081017,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(c)(1)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "effective_date": "2026-01-01",
+        "exemptions": [
+          {
+            "description": "Advance payment of at least six months' rent permitted if lease term is six months or longer",
+            "predicate": {
+              "const": true
+            },
+            "quote": "This subdivision does not prohibit an advance payment of not less than six months' rent if the term of the lease is six months or longer."
+          },
+          {
+            "description": "Mutual agreement for structural, decorative, furnishing, or other similar alterations",
+            "predicate": {
+              "const": true
+            },
+            "quote": "This subdivision does not preclude a landlord and a tenant from entering into a mutual agreement for the landlord, at the request of the tenant and for a specified fee or charge, to make structural, decorative, furnishing, or other similar alterations, if the alterations are other than cleaning or repairing for which the landlord may charge the previous tenant as provided by subdivision (e)."
+          },
+          {
+            "description": "Two months' rent limit for natural person landlords or LLCs with all natural person members owning no more than two residential rental properties with collectively no more than four dwelling units",
+            "predicate": {
+              "all": [
+                {
+                  "any": [
+                    {
+                      "fact": "owner_is_natural_person",
+                      "op": "==",
+                      "value": true
+                    },
+                    {
+                      "fact": "owner_is_natural_person",
+                      "op": "!=",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "fact": "landlord_property_count",
+                  "op": "<=",
+                  "value": 2
+                },
+                {
+                  "fact": "landlord_unit_count",
+                  "op": "<=",
+                  "value": 4
+                }
+              ]
+            }
+          }
+        ],
+        "key_values": [
+          {
+            "name": "security deposit limit",
+            "text": "one month's rent, in addition to any rent for the first month paid on or before initial occupancy",
+            "unit": "months",
+            "value": 1
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Except as provided in paragraph (2), (3), or (5), a landlord shall not demand or receive security, however denominated, in an amount or value in excess of an amount equal to one month's rent, in addition to any rent for the first month paid on or before initial occupancy.",
+        "requirement": "A landlord shall not demand or receive security in an amount exceeding one month's rent, in addition to any rent for the first month paid at or before initial occupancy.",
+        "title": "Security deposit limit for standard landlords",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "anchor_quote": "On or after April 1, 2025, if a landlord or its agent charges a service member who rents residential property in which the service member will reside a higher than standard or advertised security",
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(c)(4)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties where a service member is the tenant.",
+        "effective_expression": "on or after April 1, 2025",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "On or after April 1, 2025, if a landlord or its agent charges a service member who rents residential property in which the service member will reside a higher than standard or advertised security pursuant to paragraph (1) due to the credit history, credit score, housing history, or other factor related to the tenant, the landlord shall provide the tenant with a written statement, on or before the date the lease is signed, of the amount of the higher security and an explanation why the higher security amount is being charged.",
+        "requirement": "If a landlord charges a service member a higher than standard or advertised security deposit due to credit history, credit score, housing history, or other tenant-related factors, the landlord must provide a written statement on or before lease signing with the higher amount and explanation.",
+        "tenancy_conditions": [
+          "tenant is a service member",
+          "higher than standard or advertised security is charged"
+        ],
+        "title": "Higher security deposit for service members with credit or housing history concerns",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(c)(4)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties where a service member is the tenant and a higher security deposit was charged.",
+        "effective_date": "2026-01-01",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "return period for additional security",
+            "text": "after no more than six months of residency",
+            "unit": "months",
+            "value": 6
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The additional amount of security shall be returned to the tenant after no more than six months of residency if the tenant is not in arrears for any rent due during that period.",
+        "requirement": "An additional security deposit charged to a service member must be returned to the tenant after no more than six months of residency if the tenant is not in arrears for any rent due during that period.",
+        "tenancy_conditions": [
+          "tenant is a service member",
+          "additional security deposit was charged",
+          "tenant has not been in arrears for any rent due"
+        ],
+        "title": "Return of additional security deposit for service members after six months without arrears",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(c)(5)(A)",
+        "coverage": {
+          "all": [
+            {
+              "any": [
+                {
+                  "fact": "owner_is_natural_person",
+                  "op": "==",
+                  "value": true
+                }
+              ]
+            },
+            {
+              "fact": "landlord_property_count",
+              "op": "<=",
+              "value": 2
+            },
+            {
+              "fact": "landlord_unit_count",
+              "op": "<=",
+              "value": 4
+            }
+          ]
+        },
+        "coverage_text": "Residential rental properties owned by natural persons or LLCs where all members are natural persons, owning no more than two residential rental properties with collectively no more than four dwelling units.",
+        "effective_date": "2026-01-01",
+        "exemptions": [
+          {
+            "description": "Exemption does not apply if prospective tenant is a service member",
+            "predicate": {
+              "const": true
+            },
+            "quote": "Subparagraph (A) shall not apply if the prospective tenant is a service member."
+          }
+        ],
+        "key_values": [
+          {
+            "name": "security deposit limit for small landlords",
+            "text": "two months' rent, in addition to any rent for the first month paid on or before initial occupancy",
+            "unit": "months",
+            "value": 2
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Notwithstanding paragraph (1), a landlord shall not demand or receive security, however denominated, in an amount or value in excess of an amount equal to two months' rent, in addition to any rent for the first month paid on or before initial occupancy if the landlord meets both of the following requirements: (i) The landlord is a natural person or a limited liability company in which all members are natural persons. (ii) The landlord owns no more than two residential rental properties that collectively include no more than four dwelling units offered for rent.",
+        "requirement": "A landlord who is a natural person or LLC with all natural person members and owns no more than two residential rental properties with collectively no more than four dwelling units may demand up to two months' rent in security, in addition to any rent for the first month paid at or before initial occupancy.",
+        "title": "Two months' rent security deposit for small natural person landlords",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(c)(5)(B)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "effective_date": "2026-01-01",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "A landlord shall not refuse to enter into a rental agreement for residential property with a prospective tenant who is a service member because this subparagraph prohibits the landlord from demanding or receiving a greater amount of security than that which is established in paragraph (1).",
+        "requirement": "A landlord shall not refuse to enter into a rental agreement with a prospective service member because the small landlord exception prevents demanding more than one month's rent in security.",
+        "tenancy_conditions": [
+          "prospective tenant is a service member"
+        ],
+        "title": "Landlord may not refuse service member based on security deposit limit",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(c)(5)(C)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "effective_date": "2026-01-01",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "\"Natural person\" includes any natural person who is a settlor or beneficiary of a family trust. \"Family trust\" means a revocable living trust or irrevocable trust in which the settlors and beneficiaries of the trust are persons who are related to each other as sibling, spouse, domestic partner, child, parent, grandparent, or grandchild.",
+        "requirement": "For purposes of the small landlord exception, a natural person includes any natural person who is a settlor or beneficiary of a family trust, defined as a revocable or irrevocable trust with related settlors and beneficiaries.",
+        "title": "Definition of natural person and family trust for small landlord exception",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(c)(6)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "This subdivision shall not apply to a security collected or demanded by the landlord before July 1, 2024.",
+        "requirement": "The security deposit limit amendments do not apply to security collected or demanded by the landlord before July 1, 2024.",
+        "title": "Security collected before July 1, 2024 excluded from deposit limit amendment",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(d)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Any security shall be held by the landlord for the tenant who is party to the lease or agreement. The claim of a tenant to the security shall be prior to the claim of any creditor of the landlord.",
+        "requirement": "A landlord must hold security for the tenant, and the tenant's claim to the security takes priority over the claim of any creditor of the landlord.",
+        "title": "Tenant claim to security takes priority over landlord creditors",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(e)(1)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Subject to paragraph (2), the landlord may claim of the security only those amounts as are reasonably necessary for the purposes specified in subdivision (b).",
+        "requirement": "A landlord may only claim from the security deposit those amounts that are reasonably necessary for purposes specified in subdivision (b).",
+        "title": "Landlord may only claim necessary amounts from security deposit",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(e)(2)(A)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The landlord shall not assert a claim against the tenant or the security for damages to the premises or any defective conditions that preexisted the tenancy, for ordinary wear and tear or the effects thereof, whether the wear and tear preexisted the tenancy or occurred during the tenancy, or for the cumulative effects of ordinary wear and tear occurring during any one or more tenancies.",
+        "requirement": "A landlord shall not assert a claim against the tenant or security for preexisting damage or defective conditions, ordinary wear and tear, or cumulative effects of ordinary wear and tear.",
+        "title": "Landlord cannot claim for preexisting damage or ordinary wear and tear",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(e)(2)(B)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Claims against the tenant or the security for materials or supplies and for work performed by a contractor, the landlord, or the landlord's employee shall be limited to a reasonable amount necessary to restore the premises back to the condition it was in at the inception of the tenancy, exclusive of ordinary wear and tear.",
+        "requirement": "Claims for materials, supplies, and work performed must be limited to a reasonable amount necessary to restore the premises to its condition at the inception of the tenancy, excluding ordinary wear and tear.",
+        "title": "Claims for repairs limited to reasonable restoration amount",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(e)(2)(C)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The landlord shall not require a tenant to pay for, or assert a claim against the tenant or the security for, professional carpet cleaning or other professional cleaning services, unless reasonably necessary to return the premises to the condition it was in at the inception of tenancy, exclusive of ordinary wear and tear.",
+        "requirement": "A landlord shall not require a tenant to pay for or assert a claim for professional carpet cleaning or other professional cleaning services unless reasonably necessary to return the premises to its condition at inception of tenancy, exclusive of ordinary wear and tear.",
+        "title": "Landlord cannot claim for professional cleaning except when reasonably necessary",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(f)(1)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [
+          {
+            "description": "Exemption when tenancy is terminated pursuant to specific sections of Code of Civil Procedure",
+            "predicate": {
+              "const": true
+            },
+            "quote": "The requirements of this subdivision do not apply when the tenancy is terminated pursuant to subdivision (2), (3), or (4) of Section 1161 of the Code of Civil Procedure."
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Within a reasonable time after notification of either party's intention to terminate the tenancy, or before the end of the lease term, the landlord shall notify the tenant in writing of the tenant's option to request an initial inspection and of the tenant's right to be present at the inspection.",
+        "requirement": "A landlord must notify the tenant in writing of the tenant's option to request an initial inspection and right to be present at the inspection within a reasonable time after notification of termination or before lease end.",
+        "tenancy_conditions": [
+          "either party has notified intention to terminate tenancy or lease is nearing expiration"
+        ],
+        "title": "Initial inspection and notice of tenant options",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(f)(1)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "earliest timing for initial inspection",
+            "text": "no earlier than two weeks before the termination or the end of lease date",
+            "unit": "weeks",
+            "value": 2
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "At a reasonable time, but no earlier than two weeks before the termination or the end of lease date, the landlord, or an agent of the landlord, shall, upon the request of the tenant, make an initial inspection of the premises prior to any final inspection the landlord makes after the tenant has vacated the premises. The purpose of the initial inspection shall be to allow the tenant an opportunity to remedy identified deficiencies, in a manner consistent with the rights and obligations of the parties under the rental agreement, in order to avoid deductions from the security.",
+        "requirement": "Upon tenant request, a landlord must conduct an initial inspection at a reasonable time but no earlier than two weeks before termination or lease end, to allow the tenant to remedy identified deficiencies and avoid deductions.",
+        "tenancy_conditions": [
+          "tenant has requested an initial inspection"
+        ],
+        "title": "Initial inspection procedures and timing",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(f)(1)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [
+          {
+            "description": "Parties may agree in writing to waive the 48-hour notice requirement",
+            "predicate": {
+              "const": true
+            },
+            "quote": "The tenant and landlord may agree to forgo the 48-hour prior written notice by both signing a written waiver."
+          }
+        ],
+        "key_values": [
+          {
+            "name": "prior written notice for initial inspection",
+            "text": "at least 48 hours' prior written notice",
+            "unit": "hours",
+            "value": 48
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The landlord shall give at least 48 hours' prior written notice of the date and time of the inspection if either a mutual time is agreed upon, or if a mutually agreed time cannot be scheduled but the tenant still wishes an inspection. The tenant and landlord may agree to forgo the 48-hour prior written notice by both signing a written waiver.",
+        "requirement": "A landlord must provide at least 48 hours' prior written notice of the inspection date and time unless the tenant and landlord agree in writing to waive this requirement.",
+        "tenancy_conditions": [
+          "initial inspection has been requested"
+        ],
+        "title": "Notice requirements for initial inspection",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(f)(2)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Based on the inspection, the landlord shall give the tenant an itemized statement specifying repairs or cleanings that are proposed to be the basis of any deductions from the security the landlord intends to make pursuant to paragraphs (1) to (4), inclusive, of subdivision (b). This statement shall also include the texts of paragraphs (1) to (4), inclusive, of subdivision (b).",
+        "requirement": "A landlord must provide the tenant with an itemized statement specifying proposed repairs or cleanings as basis for security deductions, including the text of subdivision (b) purposes.",
+        "tenancy_conditions": [
+          "initial inspection has been conducted"
+        ],
+        "title": "Itemized statement after initial inspection",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(f)(3)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The tenant shall have the opportunity during the period following the initial inspection until termination of the tenancy to remedy identified deficiencies, in a manner consistent with the rights and obligations of the parties under the rental agreement, in order to avoid deductions from the security.",
+        "requirement": "A tenant has the opportunity from after the initial inspection until tenancy termination to remedy identified deficiencies to avoid security deductions.",
+        "tenancy_conditions": [
+          "initial inspection has been conducted"
+        ],
+        "title": "Tenant opportunity to remedy deficiencies after initial inspection",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(f)(4)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [
+          {
+            "description": "Landlord may deduct for identified items that tenant failed to cure",
+            "predicate": {
+              "const": true
+            },
+            "quote": "Nothing in this subdivision shall prevent a landlord from using the security for deductions itemized in the statement provided for in paragraph (2) that were not cured by the tenant so long as the deductions are for damages authorized by this section."
+          },
+          {
+            "description": "Landlord may deduct for items occurring between inspection and return of possession or not identified due to tenant possessions",
+            "predicate": {
+              "const": true
+            },
+            "quote": "Nothing in this subdivision shall prevent a landlord from using the security for any purpose specified in paragraphs (1) to (4), inclusive, of subdivision (b) that occurs between completion of the initial inspection when possession of the unit is returned to the landlord or that was not identified during the initial inspection due to the presence of a tenant's possessions."
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Subject to paragraphs (5) and (6), if an initial inspection is conducted pursuant to this subdivision and, at the time of inspection, the premises do not contain tenant possessions that prevent the landlord from identifying repairs or cleanings due to the presence of those possessions, the landlord shall not use the security for deductions for repairs or cleanings that are not identified in the itemized statement described in paragraph (2).",
+        "requirement": "If an initial inspection is conducted and the premises do not contain tenant possessions preventing identification of repairs or cleanings, the landlord cannot deduct from security for repairs or cleanings not identified in the itemized statement.",
+        "tenancy_conditions": [
+          "initial inspection was conducted",
+          "premises did not contain tenant possessions preventing identification of needed repairs or cleanings"
+        ],
+        "title": "Landlord cannot deduct for items not identified in initial inspection if unit was clear",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "anchor_quote": "For tenancies that begin on or after July 1, 2025, the landlord shall take photographs",
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(g)(1)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "effective_expression": "for tenancies that begin on or after July 1, 2025",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "For tenancies that begin on or after July 1, 2025, the landlord shall take photographs of the unit immediately before, or at the inception of, the tenancy.",
+        "requirement": "For tenancies beginning on or after July 1, 2025, a landlord must take photographs of the unit immediately before or at the inception of the tenancy.",
+        "tenancy_conditions": [
+          "tenancy begins on or after July 1, 2025"
+        ],
+        "title": "Landlord photography at inception of tenancy",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "anchor_quote": "Beginning April 1, 2025, the landlord shall take photographs",
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(g)(2)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "effective_expression": "beginning April 1, 2025",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Beginning April 1, 2025, the landlord shall take photographs of the unit within a reasonable time after the possession of the unit is returned to the landlord, but prior to any repairs or cleanings for which the landlord will make a deduction from or claim against the security deposit pursuant to this section, and shall also take photographs of the unit within a reasonable time after such repairs or cleanings are completed.",
+        "requirement": "Beginning April 1, 2025, a landlord must take photographs of the unit after return of possession but before repairs or cleanings for which deductions will be made, and again after repairs or cleanings are completed.",
+        "title": "Landlord photography after return of possession and repairs",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(h)(1)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "deadline for return of security and statement",
+            "text": "No later than 21 calendar days after the tenant has vacated the premises",
+            "unit": "days",
+            "value": 21
+          },
+          {
+            "name": "earliest timing for return of security (fixed-term lease)",
+            "text": "not earlier than 60 calendar days prior to the expiration of a fixed-term lease",
+            "unit": "days",
+            "value": 60
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "No later than 21 calendar days after the tenant has vacated the premises, but not earlier than the time that either the landlord or the tenant provides a notice to terminate the tenancy under Section 1946 or 1946.1, Section 1161 of the Code of Civil Procedure, or not earlier than 60 calendar days prior to the expiration of a fixed-term lease, the landlord shall furnish the tenant, a copy of an itemized statement indicating the basis for, and the amount of, any security received and the disposition of the security, and shall return any remaining portion of the security to the tenant as follows:",
+        "requirement": "A landlord must furnish the tenant with an itemized statement and return any remaining security no later than 21 calendar days after the tenant vacates, but not earlier than notice of termination or 60 days before lease expiration.",
+        "title": "Timeline for returning security and furnishing itemized statement",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(h)(1)(A)(i)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [
+          {
+            "description": "Electronic return if landlord received security or rental payments electronically",
+            "predicate": {
+              "const": true
+            },
+            "quote": "If the landlord received the security or rental payments from the tenant electronically, the landlord shall return the remainder of the security electronically to a bank account or other financial institution designated by the tenant in writing, or by any electronic or virtual method available to the landlord if agreed to in writing by the tenant."
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Subject to subparagraph (C), and except as provided by clause (ii), the landlord shall return the remainder of the security by personal delivery or by a check made payable to the tenant and mailed by first-class mail, postage prepaid.",
+        "requirement": "A landlord shall return the remainder of the security by personal delivery or by check mailed by first-class mail, postage prepaid, subject to electronic payment options and multiple tenant provisions.",
+        "title": "Method of returning security deposit",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(h)(1)(B)(i)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [
+          {
+            "description": "Upon mutual agreement, itemized statement may be emailed or mailed to address provided by tenant",
+            "predicate": {
+              "const": true
+            },
+            "quote": "Upon mutual agreement between the landlord and tenant entered into at the commencement of the tenancy or at any time during or after the tenancy, the itemized statement may be furnished by either of the following: (I) Emailed to an account provided by the tenant. (II) Mailed to an address provided by the tenant by first-class mail, postage prepaid."
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Subject to subparagraph (C), and except as provided by clause (ii), the landlord shall furnish the itemized statement by personal delivery or first-class mail, postage prepaid.",
+        "requirement": "A landlord shall furnish the itemized statement by personal delivery or first-class mail, postage prepaid, subject to mutual agreement and multiple tenant provisions.",
+        "title": "Method of furnishing itemized statement",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(h)(1)(C)(i)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties with multiple adult tenants.",
+        "exemptions": [
+          {
+            "description": "Landlord and all adult tenants may enter into written mutual agreement for alternative return and statement delivery methods",
+            "predicate": {
+              "const": true
+            },
+            "quote": "If multiple adult tenants reside in the unit, the landlord may enter into a mutual written agreement between the landlord and all adult tenants, at the commencement of the tenancy or at any time during or after the tenancy, that specifies both of the following: (I) How any remaining portion of the security will be returned, including whether it will be returned to a specific adult tenant or divided among multiple tenants, with the allocation percentages."
+          },
+          {
+            "description": "Exception for tenant terminating lease pursuant to Section 1946.7 if no written mutual agreement exists",
+            "predicate": {
+              "const": true
+            },
+            "quote": "If multiple adult tenants reside in a unit and a tenant terminates the lease pursuant to Section 1946.7 and no written mutual agreement was entered into by the landlord and all adult tenants pursuant to clause (ii), and the tenant who terminated the lease pursuant to Section 1946.7 requests that the security be disbursed in a manner other than by check made payable to all adult tenants, the landlord may return the security in a manner other than by check made payable to all adult tenants."
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Except as provided in clause (iii) and unless the landlord and all adult tenants residing in the unit enter into a written mutual agreement pursuant to clause (ii), if multiple adult tenants reside in the unit, the landlord shall return the remainder of the security by a check made payable to all adult tenants on the rental or lease agreement at the time the tenancy terminates and furnish the itemized statement by personal delivery or first-class mail, postage prepaid, to any one of the adult tenants chosen by the landlord.",
+        "requirement": "If multiple adult tenants reside in the unit and no written mutual agreement exists, the landlord shall return security by check payable to all adult tenants and furnish the statement to any one of them.",
+        "tenancy_conditions": [
+          "multiple adult tenants reside in the unit"
+        ],
+        "title": "Return of security with multiple adult tenants",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(h)(2)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The landlord shall also include, along with and at the same time the itemized statement is sent, copies of documents showing charges incurred and deducted by the landlord to repair or clean the premises, as follows:",
+        "requirement": "A landlord must include with the itemized statement copies of documents showing charges for repairs and cleaning, including bills, invoices, receipts, and explanations.",
+        "title": "Documentation of charges for repairs and cleaning",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(h)(2)(A)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "If the landlord or landlord's employee did the work, the itemized statement shall reasonably describe the work performed. The itemized statement shall include the time spent and the reasonable hourly rate charged.",
+        "requirement": "If a landlord or the landlord's employee performed the work, the itemized statement must reasonably describe the work, include time spent, and state the reasonable hourly rate charged.",
+        "title": "Documentation when landlord or landlord's employee did the work",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(h)(2)(B)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "If the landlord or landlord's employee did not do the work, the landlord shall provide the tenant a copy of the bill, invoice, or receipt supplied by the person or entity performing the work. The itemized statement shall provide the tenant with the name, address, and telephone number of the person or entity, if the bill, invoice, or receipt does not include that information.",
+        "requirement": "If a contractor or third party performed the work, the landlord must provide a copy of the bill, invoice, or receipt and include the name, address, and telephone number of the service provider if not on the document.",
+        "title": "Documentation when contractor or third party did the work",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(h)(2)(C)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "If a deduction is made for materials or supplies, the landlord shall provide a copy of the bill, invoice, or receipt. If a particular material or supply item is purchased by the landlord on an ongoing basis, the landlord may document the cost of the item by providing a copy of a bill, invoice, receipt, vendor price list, or other vendor document that reasonably documents the cost of the item used in the repair or cleaning of the unit.",
+        "requirement": "For materials or supplies deductions, the landlord must provide a bill, invoice, or receipt, or for items purchased on an ongoing basis, a vendor price list or similar document.",
+        "title": "Documentation for materials and supplies deductions",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(h)(2)(D)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "If a deduction is made for repairs or cleanings allowed by this section, the landlord shall provide photographs taken pursuant to subdivision (g), along with a written explanation of the cost of the allowable repairs or cleanings, as described in subparagraphs (A) to (C), inclusive.",
+        "requirement": "For repairs or cleanings deductions, the landlord must provide photographs taken per subdivision (g) and a written explanation of the cost.",
+        "title": "Documentation for repairs and cleanings with photographs",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(h)(3)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "completion period for repairs or documentation receipt",
+            "text": "within 21 calendar days after the tenant has vacated the premises",
+            "unit": "days",
+            "value": 21
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "If a repair to be done by the landlord or the landlord's employee cannot reasonably be completed within 21 calendar days after the tenant has vacated the premises, or if the documents from a person or entity providing services, materials, or supplies are not in the landlord's possession within 21 calendar days after the tenant has vacated the premises, the landlord may deduct the amount of a good faith estimate of the charges that will be incurred and provide that estimate with the itemized statement.",
+        "requirement": "If repairs cannot be completed or documentation is not received within 21 calendar days of tenant vacation, the landlord may deduct a good faith estimate and include it with the itemized statement.",
+        "title": "Good faith estimate when repairs cannot be completed within 21 days",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(h)(3)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "deadline for final accounting after completion",
+            "text": "Within 14 calendar days of completing the repair or receiving the documentation",
+            "unit": "days",
+            "value": 14
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Within 14 calendar days of completing the repair or receiving the documentation, the landlord shall complete the requirements in paragraphs (1) and (2) in the manner specified.",
+        "requirement": "Within 14 calendar days of completing the repair or receiving documentation, the landlord must provide final accounting meeting the requirements of paragraphs (1) and (2).",
+        "title": "Final accounting after estimate completion",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(h)(4)(A)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "deduction threshold for documentation exemption",
+            "text": "one hundred twenty-five dollars ($125)",
+            "unit": "usd",
+            "value": 125
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The landlord need not comply with paragraph (2) or (3) if either of the following applies: (A) The deductions for repairs and cleaning together do not exceed one hundred twenty-five dollars ($125).",
+        "requirement": "A landlord need not provide documentation if total deductions for repairs and cleaning together do not exceed $125.",
+        "title": "Exception to documentation requirements for deductions under $125",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(h)(4)(B)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The waiver shall only be effective if it is signed by the tenant at the same time or after a notice to terminate a tenancy under Section 1946 or 1946.1 has been given, a notice under Section 1161 of the Code of Civil Procedure has been given, or no earlier than 60 calendar days prior to the expiration of a fixed-term lease. The waiver shall substantially include the text of paragraph (2).",
+        "requirement": "A tenant may waive documentation requirements only if the waiver is signed at or after termination notice and substantially includes the text of paragraph (2).",
+        "title": "Tenant waiver of documentation requirements",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(h)(5)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "tenant request window",
+            "text": "within 14 calendar days after receiving the itemized statement",
+            "unit": "days",
+            "value": 14
+          },
+          {
+            "name": "landlord compliance deadline for documentation",
+            "text": "within 14 calendar days after receiving the request from the tenant",
+            "unit": "days",
+            "value": 14
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Notwithstanding paragraph (4), the landlord shall comply with paragraphs (2) and (3) when a tenant makes a request for documentation within 14 calendar days after receiving the itemized statement specified in paragraph (1). The landlord shall comply within 14 calendar days after receiving the request from the tenant.",
+        "requirement": "Even if deductions are under $125 or waived, a landlord must provide documentation if the tenant requests it within 14 calendar days of receiving the itemized statement, and must comply within 14 calendar days of the request.",
+        "title": "Documentation must be provided upon tenant request",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(h)(6)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Any mailings to the tenant pursuant to this subdivision shall be sent to the address provided by the tenant. If the tenant does not provide an address, mailings pursuant to this subdivision shall be sent to the unit that has been vacated.",
+        "requirement": "Mailings of security return and itemized statement shall be sent to the address provided by the tenant, or if none, to the vacated unit.",
+        "title": "Mailing address for security return and statement",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(h)(7)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": "Forfeiture of all claimed security amounts",
+        "quote": "The landlord shall not be entitled to claim any amount of the security if the landlord, in bad faith, fails to comply with this subdivision.",
+        "requirement": "A landlord forfeits the right to claim any amount of the security if the landlord in bad faith fails to comply with the subdivision requirements.",
+        "title": "Bad faith failure to comply forfeits claims",
+        "uncertain_fields": []
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(i)(1)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Upon termination of the landlord's interest in the premises, whether by sale, assignment, death, appointment of receiver, or otherwise, the landlord or the landlord's agent shall, within a reasonable time, do one of the following acts, either of which shall relieve the landlord of further liability with respect to the security held: (1) Transfer the portion of the security remaining after any lawful deductions are made under subdivision (e) to the landlord's successor in interest.",
+        "requirement": "Upon termination of the landlord's interest, the landlord or agent must transfer the remaining security to the successor in interest within a reasonable time.",
+        "title": "Transfer of security to successor in interest",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(i)(1)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The landlord shall thereafter notify the tenant by personal delivery or by first-class mail, postage prepaid, of the transfer, of any claims made against the security, of the amount of the security deposited, and of the names of the successors in interest, their addresses, and their telephone numbers.",
+        "requirement": "A landlord must notify the tenant by personal delivery or first-class mail of the transfer, any claims, the amount, and successor information.",
+        "title": "Notice to tenant of security transfer",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(i)(2)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Return the portion of the security remaining after any lawful deductions are made under subdivision (e) to the tenant, together with an accounting as provided in subdivision (h).",
+        "requirement": "As an alternative to transfer, a landlord may return the remaining security to the tenant with an accounting per subdivision (h).",
+        "title": "Return of security instead of transfer to successor",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(j)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Prior to the voluntary transfer of a landlord's interest in the premises, the landlord shall deliver to the landlord's successor in interest a written statement indicating the following: (1) The security remaining after any lawful deductions are made. (2) An itemization of any lawful deductions from any security received. (3) Their election under paragraph (1) or (2) of subdivision (i).",
+        "requirement": "Before transferring interest in the premises, the landlord must provide the successor a written statement showing remaining security, itemized deductions, and the transfer election.",
+        "title": "Written statement by landlord to successor",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(k)(1)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": "Joint and several liability for security repayment",
+        "quote": "In the event of noncompliance with subdivision (i), the landlord's successors in interest shall be jointly and severally liable with the landlord for repayment of the security, or that portion thereof to which the tenant is entitled, when and as provided in subdivisions (e) and (h).",
+        "requirement": "If a landlord fails to comply with subdivision (i) transfer requirements, the successor in interest is jointly and severally liable for repayment of security to the tenant.",
+        "title": "Successor liability for noncompliance with transfer requirements"
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(k)(1)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "A successor in interest of a landlord may not require the tenant to post any security to replace that amount not transferred to the tenant or successors in interest as provided in subdivision (i), unless and until the successor in interest first makes restitution of the initial security as provided in paragraph (2) of subdivision (i) or provides the tenant with an accounting as provided in subdivision (h).",
+        "requirement": "A successor in interest cannot require replacement security unless the successor first returns the original security or provides an accounting.",
+        "title": "Successor cannot require replacement security without restitution",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(k)(3)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Notwithstanding this subdivision, if, upon inquiry and reasonable investigation, a landlord's successor in interest has a good faith belief that the lawfully remaining security deposit is transferred to the successor in interest or returned to the tenant pursuant to subdivision (i), the successor in interest is not liable for damages as provided in subdivision (m), or any security not transferred pursuant to subdivision (i).",
+        "requirement": "A successor in interest is not liable for damages if reasonable investigation shows good faith belief that remaining security was transferred or returned per subdivision (i).",
+        "title": "Successor not liable if good faith investigation supports transfer or return",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(l)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Upon receipt of any portion of the security under paragraph (1) of subdivision (i), the landlord's successors in interest shall have all of the rights and obligations of a landlord holding the security with respect to the security.",
+        "requirement": "Upon receipt of any security from the predecessor landlord, the successor has all rights and obligations of a landlord regarding that security.",
+        "title": "Successor rights and obligations upon receipt of security",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(m)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "statutory damages multiplier for bad faith",
+            "text": "up to twice the amount of the security, in addition to actual damages",
+            "unit": "multiple",
+            "value": 2
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "Statutory damages up to twice the security amount plus actual damages",
+        "quote": "The bad faith claim or retention by a landlord or the landlord's successors in interest of the security or any portion thereof in violation of this section, or the bad faith demand of replacement of security in violation of subdivision (k), may subject the landlord or the landlord's successors in interest to statutory damages of up to twice the amount of the security, in addition to actual damages.",
+        "requirement": "Bad faith claim or retention of security by a landlord or successor may subject them to statutory damages of up to twice the security amount, plus actual damages.",
+        "title": "Statutory damages for bad faith claim or retention of security"
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(m)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": "Damages at court discretion; landlord bears burden of proof",
+        "quote": "The court may award damages for bad faith whenever the facts warrant that award, regardless of whether the injured party has specifically requested relief. In an action under this section, the landlord or the landlord's successors in interest shall have the burden of proof as to the reasonableness of the amounts claimed or the authority pursuant to this section to demand additional security deposits.",
+        "requirement": "Courts may award damages for bad faith regardless of whether requested, and landlords bear the burden of proving reasonableness of claimed amounts or authority to demand additional deposits.",
+        "title": "Court discretion to award damages for bad faith"
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(n)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "A lease or rental agreement shall not contain a provision characterizing any security as \"nonrefundable.\"",
+        "requirement": "No lease or rental agreement may contain a provision characterizing security as nonrefundable.",
+        "title": "Prohibition of nonrefundable security provisions",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(o)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "An action under this section may be maintained in small claims court if the damages claimed, whether actual, statutory, or both, are within the jurisdictional amount allowed by Section 116.220 or 116.221 of the Code of Civil Procedure.",
+        "requirement": "Security deposit actions may be maintained in small claims court if damages are within the jurisdictional limits of Code of Civil Procedure sections 116.220 or 116.221.",
+        "title": "Small claims court jurisdiction for security deposit actions",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "security_deposits",
+        "cite": "Cal. Civ. Code § 1950.5(p)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Proof of the existence of and the amount of a security deposit may be established by any credible evidence, including, but not limited to, a canceled check, a receipt, a lease indicating the requirement of a deposit as well as the amount, prior consistent statements or actions of the landlord or tenant, or a statement under penalty of perjury that satisfies the credibility requirements set forth in Section 780 of the Evidence Code.",
+        "requirement": "The existence and amount of a security deposit may be proven by any credible evidence including canceled checks, receipts, lease terms, prior statements or actions, or penalty-of-perjury statements.",
+        "title": "Proof of security deposit amount",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 7957,
+    "output_tokens": 14612
+  }
+}

@@ -1,0 +1,369 @@
+{
+  "cost_usd": 0.028675,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "laws": [
+      {
+        "category": "rent_increase_limits",
+        "citation": "Cal. Civ. Code §1947.12",
+        "date_claim": null,
+        "jurisdiction": "California",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "CA Tenant Protection Act, Civ. Code §1947.12 (5% + CPI, max 10%)"
+          }
+        ],
+        "status_claim": "enacted"
+      },
+      {
+        "category": "rent_increase_limits",
+        "citation": "S.F. Admin. Code ch. 37",
+        "date_claim": null,
+        "jurisdiction": "San Francisco",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "SF Rent Ordinance applies (certificate of occupancy on or before 6/13/1979); the AB 1482 state cap yields to it. S.F. Admin. Code ch. 37 · Cal. Civ. Code §1947.12"
+          }
+        ],
+        "status_claim": "enacted"
+      },
+      {
+        "category": "rent_increase_limits",
+        "citation": "LA Rent Stabilization Ordinance",
+        "date_claim": null,
+        "jurisdiction": "Los Angeles",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "LA Rent Stabilization Ordinance"
+          }
+        ],
+        "status_claim": "enacted"
+      },
+      {
+        "category": "rent_increase_limits",
+        "citation": "MA G.L. c.40P",
+        "date_claim": null,
+        "jurisdiction": "Massachusetts",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "MA G.L. c.40P (state bar on local rent control)"
+          }
+        ],
+        "status_claim": "enacted"
+      },
+      {
+        "category": "just_cause_eviction",
+        "citation": "Cal. Civ. Code §1946.2",
+        "date_claim": null,
+        "jurisdiction": "California",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "CA Civ. Code §1946.2 · NJ Anti-Eviction Act, N.J.S.A. 2A:18-61.1"
+          }
+        ],
+        "status_claim": "enacted"
+      },
+      {
+        "category": "just_cause_eviction",
+        "citation": "S.F. Admin. Code §37.9",
+        "date_claim": null,
+        "jurisdiction": "San Francisco",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "Eviction only for listed causes. S.F. Admin. Code §37.9 · Cal. Civ. Code §1946.2"
+          }
+        ],
+        "status_claim": "enacted"
+      },
+      {
+        "category": "just_cause_eviction",
+        "citation": "N.J.S.A. 2A:18-61.1",
+        "date_claim": null,
+        "jurisdiction": "New Jersey",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "NJ Anti-Eviction Act, N.J.S.A. 2A:18-61.1"
+          }
+        ],
+        "status_claim": "enacted"
+      },
+      {
+        "category": "security_deposits",
+        "citation": "Cal. Civ. Code §1950.5",
+        "date_claim": "7/1/2024",
+        "jurisdiction": "California",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "CA Civ. Code §1950.5 as amended by AB 12 (one month; two for qualifying small landlords; eff. 7/1/2024)"
+          }
+        ],
+        "status_claim": "enacted"
+      },
+      {
+        "category": "security_deposits",
+        "citation": "N.J.S.A. 46:8-21.2",
+        "date_claim": null,
+        "jurisdiction": "New Jersey",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "NJ N.J.S.A. 46:8-21.2 (1.5 months)"
+          }
+        ],
+        "status_claim": "enacted"
+      },
+      {
+        "category": "security_deposits",
+        "citation": "MA G.L. c.186 §15B",
+        "date_claim": null,
+        "jurisdiction": "Massachusetts",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "MA G.L. c.186 §15B (first month's rent)"
+          }
+        ],
+        "status_claim": "enacted"
+      },
+      {
+        "category": "application_screening_fees",
+        "citation": "Cal. Civ. Code §1950.6",
+        "date_claim": null,
+        "jurisdiction": "California",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "CA Civ. Code §1950.6 (CPI-adjusted cap)"
+          }
+        ],
+        "status_claim": "enacted"
+      },
+      {
+        "category": "application_screening_fees",
+        "citation": "N.J. P.L.2025, c.405",
+        "date_claim": "5/1/2026",
+        "jurisdiction": "New Jersey",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "NJ P.L.2025, c.405 ($50 cap, eff. 5/1/2026)"
+          }
+        ],
+        "status_claim": "enacted"
+      },
+      {
+        "category": "application_screening_fees",
+        "citation": "MA G.L. c.186 §15B",
+        "date_claim": null,
+        "jurisdiction": "Massachusetts",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "MA G.L. c.186 §15B (upfront charges limited to first and last month's rent, deposit, lock)"
+          }
+        ],
+        "status_claim": "enacted"
+      },
+      {
+        "category": "application_screening_fees",
+        "citation": "MA G.L. c.112 §87DDD½",
+        "date_claim": "8/1/2025",
+        "jurisdiction": "Massachusetts",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "MA broker-fee rule, G.L. c.112 §87DDD½ (8/1/2025)"
+          }
+        ],
+        "status_claim": "enacted"
+      },
+      {
+        "category": "screening_restrictions",
+        "citation": "NJ Fair Chance in Housing Act",
+        "date_claim": "2021",
+        "jurisdiction": "New Jersey",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "NJ Fair Chance in Housing Act (2021)"
+          }
+        ],
+        "status_claim": "enacted"
+      },
+      {
+        "category": "screening_restrictions",
+        "citation": "FEHA, SB 329",
+        "date_claim": null,
+        "jurisdiction": "California",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "CA source-of-income protections under FEHA (SB 329)"
+          }
+        ],
+        "status_claim": "enacted"
+      },
+      {
+        "category": "algorithmic_rent_setting",
+        "citation": "AB 325 / SB 763",
+        "date_claim": "1/1/2026",
+        "jurisdiction": "California",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "CA AB 325 / SB 763 (1/1/2026)"
+          },
+          {
+            "source": "README.md",
+            "text": "**T1** | California AB 325 / SB 763: as of 2025-12-31 vs 2026-01-02"
+          }
+        ],
+        "status_claim": "enacted"
+      },
+      {
+        "category": "algorithmic_rent_setting",
+        "citation": "S.F. Admin. Code §37.10C",
+        "date_claim": "Oct 2024",
+        "jurisdiction": "San Francisco",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "Local ban on algorithmic devices using nonpublic competitor data, plus state restrictions on common pricing algorithms. S.F. Admin. Code §37.10C (Oct 2024) · AB 325 / SB 763 (eff. 1/1/2026)"
+          }
+        ],
+        "status_claim": "enacted"
+      },
+      {
+        "category": "algorithmic_rent_setting",
+        "citation": "San Diego §§98.1101–98.1104",
+        "date_claim": "Jun 2025",
+        "jurisdiction": "San Diego",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "San Diego §§98.1101–98.1104 (Jun 2025)"
+          }
+        ],
+        "status_claim": "enacted"
+      },
+      {
+        "category": "algorithmic_rent_setting",
+        "citation": "Berkeley ch. 13.63",
+        "date_claim": "2026",
+        "jurisdiction": "Berkeley",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "Berkeley ch. 13.63 (2026)"
+          }
+        ],
+        "status_claim": "enacted"
+      },
+      {
+        "category": "algorithmic_rent_setting",
+        "citation": "Santa Ana Ord. NS-3090",
+        "date_claim": "Apr 2026",
+        "jurisdiction": "Santa Ana",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "Santa Ana Ord. NS-3090 (Apr 2026)"
+          }
+        ],
+        "status_claim": "enacted"
+      },
+      {
+        "category": "algorithmic_rent_setting",
+        "citation": "Jersey City §218-12",
+        "date_claim": "Jun 2025",
+        "jurisdiction": "Jersey City",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "Jersey City §218-12 (Jun 2025)"
+          }
+        ],
+        "status_claim": "enacted"
+      },
+      {
+        "category": "algorithmic_rent_setting",
+        "citation": "Hoboken ch. 158, Art. II",
+        "date_claim": "Jul 2025",
+        "jurisdiction": "Hoboken",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "Hoboken ch. 158, Art. II (Jul 2025)"
+          }
+        ],
+        "status_claim": "enacted"
+      },
+      {
+        "category": "algorithmic_rent_setting",
+        "citation": "NJ FAIR Act, P.L.2026, c.43",
+        "date_claim": "7/1/2027",
+        "jurisdiction": "New Jersey",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "NJ FAIR Act, P.L.2026, c.43 (eff. 7/1/2027)"
+          },
+          {
+            "source": "README.md",
+            "text": "**T3** | New Jersey FAIR Act: enacted 2026-07-20, effective 2027-07-01. Report `not_yet_effective` now, `applies` on 2027-07-02. Flag a possible conflict with the Jersey City and Hoboken ordinances."
+          }
+        ],
+        "status_claim": "enacted"
+      },
+      {
+        "category": "algorithmic_rent_setting",
+        "citation": "MA S.2983 / H.5222",
+        "date_claim": null,
+        "jurisdiction": "Massachusetts",
+        "signals": [
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "MA S.2983 / H.5222 (pending)"
+          },
+          {
+            "source": "README.md",
+            "text": "**T4** | Massachusetts pending bills S.2983 and H.5222"
+          }
+        ],
+        "status_claim": "pending"
+      },
+      {
+        "category": "rent_increase_limits",
+        "citation": "MA IP 25-21",
+        "date_claim": "6/23/2026",
+        "jurisdiction": "Massachusetts",
+        "signals": [
+          {
+            "source": "README.md",
+            "text": "**T5** | Massachusetts rent-control ballot question (struck 2026-06-23): affected set must be empty. Never report a rent cap in Boston or Cambridge."
+          },
+          {
+            "source": "challenge_brief_public.pdf",
+            "text": "Massachusetts' high court removed a statewide rent-control question from the November ballot. Proposed changes don't always become law, and tools must know the difference."
+          }
+        ],
+        "status_claim": "failed"
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 10655,
+    "output_tokens": 3604
+  }
+}

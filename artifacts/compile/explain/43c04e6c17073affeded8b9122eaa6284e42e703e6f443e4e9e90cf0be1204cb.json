@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.00206,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "A landlord cannot claim money from a tenant's security deposit for damage that was already there, normal wear and tear, or buildup of regular use over time.",
+    "summary_es": "Un arrendador no puede reclamar dinero del depósito de seguridad de un inquilino por daño que ya existía, desgaste normal, o acumulación de uso regular con el tiempo.",
+    "who_en": "This rule covers all homes rented to tenants in California.",
+    "who_es": "Esta regla cubre todas las casas alquiladas a inquilinos en California."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 965,
+    "output_tokens": 219
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002407,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Rental property owners cannot use software or services to coordinate rent prices with other landlords. People cannot work together to set similar rents or use a coordinator to help with this.",
+    "summary_es": "Los arrendadores no pueden usar software o servicios para coordinar aumentos de renta con otros arrendadores. Las personas no pueden trabajar juntas para fijar rentas similares o usar un coordinador para ayudar con esto.",
+    "who_en": "This rule covers all rental residential dwelling units and owners in New Jersey, except for government-run inpatient, long-term care, and detention facilities.",
+    "who_es": "Esta regla cubre todas las unidades de vivienda residencial de alquiler y los arrendadores en Nueva Jersey, excepto las instalaciones gubernamentales de cuidados a largo plazo, internación y detención."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1027,
+    "output_tokens": 276
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002047,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "Multiple link-only sources are provided without text (D060-D064, D070-D072) that could not be accessed to verify whether they contain screening restriction rules for Newark, NJ at the city level. While state-level rules in this category are identified (NJ-SCR-01, NJ-SCR-02, NJ-SCR-03), no city-specific screening restriction rules could be confirmed due to absence of document text from the linked sources.",
+    "result": "text_not_supplied"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1167,
+    "output_tokens": 176
+  }
+}

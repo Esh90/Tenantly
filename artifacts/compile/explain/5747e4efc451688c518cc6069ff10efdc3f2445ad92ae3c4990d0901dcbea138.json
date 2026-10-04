@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.00219,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords cannot buy or use software that works together with other landlords to set or suggest rents. This rule applies to any software that recommends rent prices for apartments in Berkeley.",
+    "summary_es": "Los arrendadores no pueden comprar ni usar software que funcione junto con otros arrendadores para fijar o sugerir rentas. Esta regla se aplica a cualquier software que recomiende precios de renta para apartamentos en Berkeley.",
+    "who_en": "This rule covers all homes and apartments for rent in Berkeley.",
+    "who_es": "Esta regla cubre todos los hogares y apartamentos para alquilar en Berkeley."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1040,
+    "output_tokens": 230
+  }
+}

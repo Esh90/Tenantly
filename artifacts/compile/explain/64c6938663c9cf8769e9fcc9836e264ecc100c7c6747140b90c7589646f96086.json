@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002406,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Appraisers cannot treat people differently when appraising homes based on race, color, religion, sex, gender identity, sexual orientation, family status, income source, disability, genetic information, veteran status, or national origin. This applies to all residential properties.",
+    "summary_es": "Los tasadores no pueden tratar a las personas de manera diferente al evaluar casas según la raza, color, religión, sexo, identidad de género, orientación sexual, estado familiar, fuente de ingresos, discapacidad, información genética, estado de veterano u origen nacional. Esto se aplica a todas las propiedades residenciales.",
+    "who_en": "This rule covers appraisals of all residential real property in California.",
+    "who_es": "Esta regla cubre las evaluaciones de todas las propiedades residenciales en California."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1016,
+    "output_tokens": 278
+  }
+}

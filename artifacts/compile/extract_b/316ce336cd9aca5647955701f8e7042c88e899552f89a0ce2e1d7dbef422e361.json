@@ -1,0 +1,51 @@
+{
+  "cost_usd": 0.004712,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": null,
+        "approval_date": "2026-01-14",
+        "category": "rent_increase_limits",
+        "cite": "S.F. Rent Increase Announcement (January 14, 2026)",
+        "coverage": {
+          "all": [
+            {
+              "const": true
+            }
+          ]
+        },
+        "coverage_text": "Rent-controlled residential units in San Francisco.",
+        "effective_date": "2026-03-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "annual_allowable_increase",
+            "text": "1.6%",
+            "unit": "percent",
+            "valid_from": "2026-03-01",
+            "valid_to": "2027-02-28",
+            "value": 1.6
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.",
+        "relations_hint": [],
+        "requirement": "For rent-controlled units, landlords may increase rent by a maximum of 1.6% per year during the period from March 1, 2026 through February 28, 2027.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Annual Rent Increase Limit for 2026-2027",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2472,
+    "output_tokens": 448
+  }
+}

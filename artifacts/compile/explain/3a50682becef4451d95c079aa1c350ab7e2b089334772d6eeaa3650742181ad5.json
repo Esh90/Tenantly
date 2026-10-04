@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.00223,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Cities and towns in Massachusetts cannot enact rent control, except under specific conditions. These include voluntary compliance after six months and no regulation of occupancy, services, evictions, or condos.",
+    "summary_es": "Las ciudades y pueblos de Massachusetts no pueden establecer control de rentas, excepto bajo condiciones específicas. Estas incluyen cumplimiento voluntario después de seis meses y ninguna regulación de ocupación, servicios, desalojos o condominios.",
+    "who_en": "This rule applies to all residential rentals in Massachusetts municipalities.",
+    "who_es": "Esta regla aplica a todas las rentas residenciales en municipios de Massachusetts."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1055,
+    "output_tokens": 235
+  }
+}

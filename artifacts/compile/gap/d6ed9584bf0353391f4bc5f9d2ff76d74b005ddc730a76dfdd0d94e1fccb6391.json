@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002879,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The documents provided for Los Angeles, CA contain guidance on Just Cause For Eviction Ordinance, RSO (Rent Stabilization Ordinance), and relocation assistance, but do not contain any substantive text addressing screening_restrictions at the city level. The motion (D039) is incomplete and does not address screening restrictions. The link-only signals reference state-level laws (CA Civil Code sections related to eviction, fair housing, and screening) and one reference to Section 8 acceptance and criminal background checks, but no actual text is available from these sources. The identified state rules (CA-SCR-01 and CA-SCR-02) are state-level enactments, not city-level. None of the provided documents contain city-level rules or ordinances specifically restricting screening practices in Los Angeles.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1624,
+    "output_tokens": 251
+  }
+}

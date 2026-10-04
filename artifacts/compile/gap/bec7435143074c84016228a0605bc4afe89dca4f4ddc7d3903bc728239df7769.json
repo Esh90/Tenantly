@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001954,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The jurisdiction has enacted rules in the just_cause_eviction category (NJ-JCE-01 through NJ-JCE-05), but only link-only signals are available without accompanying text. No actual document text has been supplied to verify the content of these rules or to identify specific section IDs and exact quotes.",
+    "result": "text_not_supplied"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1224,
+    "output_tokens": 146
+  }
+}

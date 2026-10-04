@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002559,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The jurisdiction documents (D084, D085) are guidance materials providing only high-level information about Santa Ana's rent stabilization and just cause eviction ordinances, with no actual text content of the security deposit rules. The link-only sources (D017, D020) reference California state law on security deposits (Civil Code §1950.5), but no actual text from Santa Ana's specific ordinance or California law is provided in the documents. While three rules in this category are listed as enacted (CA-DEP-01, CA-DEP-02, CA-DEP-03), the actual ordinance text for Santa Ana's implementation of security deposit requirements is not supplied in the available materials.",
+    "result": "text_not_supplied"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1449,
+    "output_tokens": 222
+  }
+}

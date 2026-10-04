@@ -66,9 +66,9 @@ def subscribe(body: SubscriptionRequest):
     return get_store().subscribe(body)
 
 
-@router.delete("/alerts/subscriptions/{token}", status_code=204)
+@router.delete("/alerts/subscriptions/{token}")
 def unsubscribe(token: str):
-    return Response(status_code=204)
+    return {"ok": True}
 
 
 @router.get("/alerts/feed/{address_id}.atom")

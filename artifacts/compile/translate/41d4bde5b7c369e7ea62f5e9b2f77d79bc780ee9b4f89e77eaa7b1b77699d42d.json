@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001638,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "detail_es": "La prohibición de algoritmos de Berkeley (cap. 13.63) tiene dos fechas de vigencia publicadas: 1 de marzo de 2026 en el texto de la ordenanza, enero de 2026 según una alerta de un despacho de abogados de agosto de 2026. El texto de la ordenanza que tenemos no tiene fecha de vigencia, por lo que mostramos el rango entre las dos fechas publicadas.",
+    "title_es": "Prohibición de algoritmos de Berkeley"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 723,
+    "output_tokens": 183
+  }
+}

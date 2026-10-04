@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002899,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "California state law (CA-DEP-01 through CA-DEP-08) provides comprehensive security deposit rules that apply to Santa Ana as a city within California. The referenced link-only sources include D020 which points to California Civil Code Section 1950.5, the primary state statute governing security deposits. The link-only sources D086 and D087 reference Santa Ana city ordinances on rental protections. While the provided documents (D084, D085) are guidance materials about Santa Ana's rent stabilization ordinances, they do not contain specific text about security deposits. However, Santa Ana, as a California city, is governed by California's security deposit laws which are well-established and enacted at the state level.",
+    "quote": null,
+    "result": "found",
+    "section_id": null
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1599,
+    "output_tokens": 260
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "cost_usd": 0.005748,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "approval_date": "2025-10-16",
+        "category": "rent_increase_limits",
+        "cite": "Berkeley Municipal Code § 13.76.110A; Rent Board Regulation 1148",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to Berkeley rent stabilization.",
+        "effective_date": "2026-01-01",
+        "exemptions": [
+          {
+            "description": "Tenants whose tenancy began on or after January 1, 2025 and whose rents were set pursuant to the Costa-Hawkins Rental Housing Act",
+            "predicate": {
+              "all": [
+                {
+                  "tenancy_conditions": "tenancy began on or after January 1, 2025"
+                },
+                {
+                  "tenancy_conditions": "rent set pursuant to Costa-Hawkins Rental Housing Act"
+                }
+              ]
+            }
+          }
+        ],
+        "key_values": [
+          {
+            "name": "Annual General Adjustment percentage",
+            "text": "1.0%",
+            "unit": "percent",
+            "valid_from": "2026-01-01",
+            "value": 1.0
+          },
+          {
+            "name": "CPI adjustment formula",
+            "text": "65% of the increase in the Consumer Price Index (CPI) for All Urban Consumers in the Bay Area during the period from July 1, 2024 - June 30, 2025",
+            "unit": "percent",
+            "value": 65
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "the Berkeley Rent Stabilization Board adopted the Annual General Adjustment (AGA) Order for Year 2026 which will allow eligible landlords to increase the 2025 permanent rent ceilings by 1.0% no earlier than January 1, 2026.",
+        "requirement": "Eligible landlords may increase permanent rent ceilings by 1.0%, effective no earlier than January 1, 2026. Tenants whose tenancy began on or after January 1, 2025 and whose rents were set pursuant to the Costa-Hawkins Rental Housing Act may not have their rents adjusted by the 2026 AGA.",
+        "title": "2026 Annual General Adjustment"
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2698,
+    "output_tokens": 610
+  }
+}

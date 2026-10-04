@@ -1,0 +1,563 @@
+{
+  "cost_usd": 0.032798,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "rent_increase_limits",
+        "cite": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance",
+        "coverage": {
+          "all": [
+            {
+              "fact": "property_type",
+              "op": "==",
+              "value": "multifamily_5plus"
+            },
+            {
+              "fact": "co_date",
+              "op": "<",
+              "value": "1980-01-01"
+            }
+          ]
+        },
+        "coverage_text": "Most units in multifamily properties built before 1980.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Most units in multifamily properties built before 1980** Fully Covered Yes Yes Yes Yes",
+        "relations_hint": [],
+        "requirement": "Most units in multifamily properties built before 1980 are fully covered and subject to rent control under Berkeley's rent stabilization ordinance.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Rent Control Coverage for Pre-1980 Multifamily Units",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "rent_increase_limits",
+        "cite": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance",
+        "coverage": {
+          "all": [
+            {
+              "fact": "property_type",
+              "op": "==",
+              "value": "single_family"
+            }
+          ]
+        },
+        "coverage_text": "Single-family homes with current tenancies that began before 1996.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Single family homes with current tenancies that began before 1996** Fully Covered Yes Yes Yes Yes",
+        "relations_hint": [],
+        "requirement": "Single-family homes with tenancies that began before 1996 are fully covered and subject to rent control.",
+        "sunset_date": null,
+        "tenancy_conditions": [
+          "tenancy began before 1996"
+        ],
+        "title": "Rent Control Coverage for Pre-1996 Single-Family Home Tenancies",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "rent_increase_limits",
+        "cite": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance",
+        "coverage": {
+          "all": [
+            {
+              "fact": "property_type",
+              "op": "==",
+              "value": "single_family"
+            }
+          ]
+        },
+        "coverage_text": "Single-family homes with five or more rooms rented out individually with separate leases.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Rooming house: single-family homes with five or more rooms rented out individually with separate leases** Fully Covered Yes Yes Yes Yes",
+        "relations_hint": [],
+        "requirement": "Rooming houses (single-family homes with five or more rooms rented individually with separate leases) are fully covered and subject to rent control.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Rent Control Coverage for Rooming Houses",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "rent_increase_limits",
+        "cite": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance",
+        "coverage": {
+          "fact": "co_date",
+          "op": ">",
+          "value": "1980-06-01"
+        },
+        "coverage_text": "Units that were built and received a Certificate of Occupancy after June 1980.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "New construction: units that were built and received a Certificate of Occupancy after June 1980** Partially Covered Yes No Yes Yes",
+        "relations_hint": [],
+        "requirement": "Units that were built and received a Certificate of Occupancy after June 1980 are partially covered and subject to rent control.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Rent Control Coverage for New Construction Built After June 1980",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "rent_increase_limits",
+        "cite": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance",
+        "coverage": {
+          "all": [
+            {
+              "fact": "property_type",
+              "op": "==",
+              "value": "single_family"
+            }
+          ]
+        },
+        "coverage_text": "Single-family homes with tenancies that began on or after January 1, 1996.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Single-family home with a tenancy that began on or after January 1, 1996** Partially Covered Yes No Yes Yes",
+        "relations_hint": [],
+        "requirement": "Single-family homes with tenancies that began on or after January 1, 1996 are partially covered and subject to rent control.",
+        "sunset_date": null,
+        "tenancy_conditions": [
+          "tenancy began on or after January 1, 1996"
+        ],
+        "title": "Rent Control Coverage for Single-Family Homes with Tenancies Starting 1996 or Later",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "rent_increase_limits",
+        "cite": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance",
+        "coverage": {
+          "fact": "property_type",
+          "op": "==",
+          "value": "condo"
+        },
+        "coverage_text": "Most condominiums.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Most condominiums** Partially Covered Yes No Yes Yes",
+        "relations_hint": [],
+        "requirement": "Most condominiums are partially covered and subject to rent control.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Rent Control Coverage for Condominiums",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "rent_increase_limits",
+        "cite": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance",
+        "coverage": {
+          "any": [
+            {
+              "fact": "subsidized_or_affordable",
+              "op": "==",
+              "value": true
+            }
+          ]
+        },
+        "coverage_text": "Units with Section 202 or Section 811 government subsidies regardless of unit type.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Units with the following government subsidies regardless of unit type: Section 202 Supportive Housing for the Elderly, Section 811 Supportive Housing for Persons with Disabilities Partially Covered Yes No Yes Yes",
+        "relations_hint": [],
+        "requirement": "Units with Section 202 Supportive Housing for the Elderly or Section 811 Supportive Housing for Persons with Disabilities subsidies are partially covered and subject to rent control.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Rent Control Coverage for Section 202 and Section 811 Subsidized Units",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "rent_increase_limits",
+        "cite": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance",
+        "coverage": {
+          "fact": "subsidized_or_affordable",
+          "op": "==",
+          "value": true
+        },
+        "coverage_text": "Units with Rental Supplement Program, Section 8 Loan Management Set Aside, or Project-based Section 8 subsidies in a project with a mortgage insured or held by HUD.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Regardless of unit type, units with Rental Supplement Program, Section 8 Loan Management Set Aside, Project-based Section 8 subsidies AND in a project with a mortgage insured or held by HUD. Partially Covered Yes No Yes Yes",
+        "relations_hint": [],
+        "requirement": "Units with Rental Supplement Program, Section 8 Loan Management Set Aside, or Project-based Section 8 subsidies in a project with a mortgage insured or held by HUD are partially covered and subject to rent control.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Rent Control Coverage for Project-Based Section 8 with HUD Mortgage",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance",
+        "coverage": {
+          "all": [
+            {
+              "fact": "property_type",
+              "op": "==",
+              "value": "multifamily_5plus"
+            },
+            {
+              "fact": "co_date",
+              "op": "<",
+              "value": "1980-01-01"
+            }
+          ]
+        },
+        "coverage_text": "Most units in multifamily properties built before 1980.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Most units in multifamily properties built before 1980** Fully Covered Yes Yes Yes Yes",
+        "relations_hint": [],
+        "requirement": "Most units in multifamily properties built before 1980 are fully covered and protected by just cause eviction requirements.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Just Cause Eviction Coverage for Pre-1980 Multifamily Units",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance",
+        "coverage": {
+          "all": [
+            {
+              "fact": "property_type",
+              "op": "==",
+              "value": "single_family"
+            }
+          ]
+        },
+        "coverage_text": "Single-family homes with current tenancies that began before 1996.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Single family homes with current tenancies that began before 1996** Fully Covered Yes Yes Yes Yes",
+        "relations_hint": [],
+        "requirement": "Single-family homes with tenancies that began before 1996 are fully covered and protected by just cause eviction requirements.",
+        "sunset_date": null,
+        "tenancy_conditions": [
+          "tenancy began before 1996"
+        ],
+        "title": "Just Cause Eviction Coverage for Pre-1996 Single-Family Home Tenancies",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance",
+        "coverage": {
+          "all": [
+            {
+              "fact": "property_type",
+              "op": "==",
+              "value": "single_family"
+            }
+          ]
+        },
+        "coverage_text": "Single-family homes with five or more rooms rented out individually with separate leases.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Rooming house: single-family homes with five or more rooms rented out individually with separate leases** Fully Covered Yes Yes Yes Yes",
+        "relations_hint": [],
+        "requirement": "Rooming houses (single-family homes with five or more rooms rented individually with separate leases) are fully covered and protected by just cause eviction requirements.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Just Cause Eviction Coverage for Rooming Houses",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance",
+        "coverage": {
+          "all": [
+            {
+              "fact": "property_type",
+              "op": "==",
+              "value": "multifamily_5plus"
+            },
+            {
+              "fact": "co_date",
+              "op": "<",
+              "value": "1980-01-01"
+            }
+          ]
+        },
+        "coverage_text": "Most units in multifamily properties built before 1980.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Most units in multifamily properties built before 1980** Fully Covered Yes Yes Yes Yes",
+        "relations_hint": [],
+        "requirement": "Security deposits held for most units in multifamily properties built before 1980 must accrue interest.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Security Deposit Interest Coverage for Pre-1980 Multifamily Units",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance",
+        "coverage": {
+          "all": [
+            {
+              "fact": "property_type",
+              "op": "==",
+              "value": "single_family"
+            }
+          ]
+        },
+        "coverage_text": "Single-family homes with current tenancies that began before 1996.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Single family homes with current tenancies that began before 1996** Fully Covered Yes Yes Yes Yes",
+        "relations_hint": [],
+        "requirement": "Security deposits held for single-family homes with tenancies that began before 1996 must accrue interest.",
+        "sunset_date": null,
+        "tenancy_conditions": [
+          "tenancy began before 1996"
+        ],
+        "title": "Security Deposit Interest Coverage for Pre-1996 Single-Family Home Tenancies",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance",
+        "coverage": {
+          "all": [
+            {
+              "fact": "property_type",
+              "op": "==",
+              "value": "single_family"
+            }
+          ]
+        },
+        "coverage_text": "Single-family homes with five or more rooms rented out individually with separate leases.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Rooming house: single-family homes with five or more rooms rented out individually with separate leases** Fully Covered Yes Yes Yes Yes",
+        "relations_hint": [],
+        "requirement": "Security deposits held for rooming houses (single-family homes with five or more rooms rented individually with separate leases) must accrue interest.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Security Deposit Interest Coverage for Rooming Houses",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance",
+        "coverage": {
+          "fact": "co_date",
+          "op": ">",
+          "value": "1980-06-01"
+        },
+        "coverage_text": "Units that were built and received a Certificate of Occupancy after June 1980.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "New construction: units that were built and received a Certificate of Occupancy after June 1980** Partially Covered Yes No Yes Yes",
+        "relations_hint": [],
+        "requirement": "Security deposits held for units that were built and received a Certificate of Occupancy after June 1980 must accrue interest.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Security Deposit Interest Coverage for New Construction Built After June 1980",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance",
+        "coverage": {
+          "all": [
+            {
+              "fact": "property_type",
+              "op": "==",
+              "value": "single_family"
+            }
+          ]
+        },
+        "coverage_text": "Single-family homes with tenancies that began on or after January 1, 1996.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Single-family home with a tenancy that began on or after January 1, 1996** Partially Covered Yes No Yes Yes",
+        "relations_hint": [],
+        "requirement": "Security deposits held for single-family homes with tenancies that began on or after January 1, 1996 must accrue interest.",
+        "sunset_date": null,
+        "tenancy_conditions": [
+          "tenancy began on or after January 1, 1996"
+        ],
+        "title": "Security Deposit Interest Coverage for Single-Family Homes with Tenancies Starting 1996 or Later",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance",
+        "coverage": {
+          "fact": "property_type",
+          "op": "==",
+          "value": "condo"
+        },
+        "coverage_text": "Most condominiums.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Most condominiums** Partially Covered Yes No Yes Yes",
+        "relations_hint": [],
+        "requirement": "Security deposits held for most condominiums must accrue interest.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Security Deposit Interest Coverage for Condominiums",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance",
+        "coverage": {
+          "fact": "subsidized_or_affordable",
+          "op": "==",
+          "value": true
+        },
+        "coverage_text": "Units with Section 202 or Section 811 government subsidies regardless of unit type.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Units with the following government subsidies regardless of unit type: Section 202 Supportive Housing for the Elderly, Section 811 Supportive Housing for Persons with Disabilities Partially Covered Yes No Yes Yes",
+        "relations_hint": [],
+        "requirement": "Security deposits held for units with Section 202 Supportive Housing for the Elderly or Section 811 Supportive Housing for Persons with Disabilities subsidies must accrue interest.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Security Deposit Interest Coverage for Section 202 and Section 811 Subsidized Units",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "security_deposits",
+        "cite": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance",
+        "coverage": {
+          "fact": "subsidized_or_affordable",
+          "op": "==",
+          "value": true
+        },
+        "coverage_text": "Units with Rental Supplement Program, Section 8 Loan Management Set Aside, or Project-based Section 8 subsidies in a project with a mortgage insured or held by HUD.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Regardless of unit type, units with Rental Supplement Program, Section 8 Loan Management Set Aside, Project-based Section 8 subsidies AND in a project with a mortgage insured or held by HUD. Partially Covered Yes No Yes Yes",
+        "relations_hint": [],
+        "requirement": "Security deposits held for units with Rental Supplement Program, Section 8 Loan Management Set Aside, or Project-based Section 8 subsidies in a project with a mortgage insured or held by HUD must accrue interest.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Security Deposit Interest Coverage for Project-Based Section 8 with HUD Mortgage",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2868,
+    "output_tokens": 5986
+  }
+}

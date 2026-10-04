@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002732,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The documents provided (D073 is a truncated ordinance excerpt, D076 is a staff report on anti-competitive practices) do not contain text addressing security deposit rules. The link-only documents reference California state law on security deposits (D017, D020) and other tenant protection topics, but the actual text of any San Diego municipal code provisions on security deposits is not supplied. The state-level rules (CA-DEP-01 through CA-DEP-08) are listed as enacted but no specific San Diego city-level ordinance text addressing these security deposit requirements has been provided in the source documents.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1712,
+    "output_tokens": 204
+  }
+}

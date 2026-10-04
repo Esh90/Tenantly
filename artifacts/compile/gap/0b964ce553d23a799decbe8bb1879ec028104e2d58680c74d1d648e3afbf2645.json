@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002223,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "Massachusetts has a state-level prohibition on rent control with limited exceptions under MA-RENT-01. Cambridge, as a city within Massachusetts, is preempted by state law from implementing independent rent increase limits. The available guidance documents (D029, D031) do not contain specific rent increase limit language, and link-only sources do not provide text evidence of a local rule. The state preemption rule MA-RENT-01 bars the jurisdiction from establishing this category of regulation.",
+    "quote": null,
+    "result": "barred_by_state",
+    "section_id": null
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1158,
+    "output_tokens": 213
+  }
+}

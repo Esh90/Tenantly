@@ -1,0 +1,44 @@
+{
+  "cost_usd": 0.010714399999999999,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "just_cause_eviction",
+        "cite": "Boston City Ordinances § 10-11.7",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All landlords in Boston planning to end a tenancy.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "fine_per_day",
+            "text": "$300 per day",
+            "unit": "usd",
+            "value": 300
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "1st offense: warning; 2nd and subsequent offenses: $300 per day. A violation does not halt the eviction process.",
+        "quote": "The Housing Stability Notification Act requires ALL LANDLORDS planning to end a tenancy agreement to provide the tenant with a Notice of Tenants’ Rights and Resources.",
+        "relations_hint": [],
+        "requirement": "Landlords planning to end a tenancy must give the tenant a Notice of Tenants' Rights and Resources, delivered with the Notice to quit or non-renewal notice. Landlords must also submit tenant contact information and a copy of the notice through the city's online portal.",
+        "tenancy_conditions": [
+          "landlord planning to end tenancy via notice to quit or non-renewal"
+        ],
+        "title": "Notice of Tenants' Rights and Resources",
+        "uncertain_fields": [
+          "effective_date"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 2766,
+    "output_tokens": 471
+  }
+}

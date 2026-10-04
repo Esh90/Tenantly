@@ -54,6 +54,10 @@ Renters can't afford to get this wrong, small landlords can't afford lawyers, an
 
 Built for the RealPage *Rental Housing Law Navigator* challenge: **3 states, 10 cities, 6 rule categories, 500 real buildings**, from a corpus of 87 sources (54 with supplied text).
 
+### User flow
+
+![Tenantly user flow: from typing an address to a cited answer, the as-of slider, the decisive question and change views](user-flow.png)
+
 ## 3. Results
 
 All values are measured; see `artifacts/eval/` and the [Proof page](‹LIVE_APP_URL›/proof).

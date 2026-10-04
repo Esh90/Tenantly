@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002278,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords can only consider certain criminal convictions after making a job offer. They cannot look at arrests without conviction, expunged records, pardoned convictions, or sealed records.",
+    "summary_es": "Los arrendadores solo pueden considerar ciertas condenas criminales después de hacer una oferta de empleo. No pueden revisar arrestos sin condena, registros expurgados, condenas indultadas o registros sellados.",
+    "who_en": "This rule applies to rental dwelling units, except owner-occupied buildings with four or fewer units.",
+    "who_es": "Esta regla se aplica a unidades de vivienda en alquiler, excepto edificios ocupados por el propietario con cuatro o menos unidades."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1023,
+    "output_tokens": 251
+  }
+}

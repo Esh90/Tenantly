@@ -1,0 +1,60 @@
+{
+  "cost_usd": 0.0223244,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "security_deposits",
+        "cite": "M.G.L. c. 186, § 15B(1)(b)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential leases and tenancies.",
+        "effective_date": "2025-08-01",
+        "exemptions": [
+          {
+            "description": "Vacation or recreational leases of 100 days or less",
+            "predicate": {
+              "fact": "property_type",
+              "op": "==",
+              "value": "other"
+            },
+            "quote": "The provisions of this section shall not apply to any lease, rental, occupancy or tenancy of one hundred days or less in duration which lease or rental is for a vacation or recreational purpose."
+          }
+        ],
+        "key_values": [
+          {
+            "name": "max_security_deposit",
+            "text": "a security deposit equal to the first month's rent",
+            "unit": "months",
+            "value": 1
+          },
+          {
+            "name": "max_fee_in_lieu",
+            "text": "to an amount not to exceed 1 month's rent",
+            "unit": "months",
+            "value": 1
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "Forfeiture of right to retain deposit; treble damages plus 5% interest, costs and attorney's fees (subsection 7).",
+        "quote": "At or prior to the commencement of any tenancy, no lessor or agent of the lessor may require a tenant or prospective tenant to pay, to the lessor or to an agent of the lessor, any amount in excess of the following:",
+        "relations_hint": [
+          "Any provision of a lease which conflicts with any provision of this section and any waiver by a tenant or prospective tenant of any provision of this section shall be deemed to be against public policy and therefore void and unenforceable."
+        ],
+        "requirement": "At or before tenancy start, a lessor may require only first month's rent, last month's rent, a security deposit equal to first month's rent, and the cost of a key and lock. Security deposit must be held per subsection (3) and a statement of condition given.",
+        "title": "Limit on upfront payments and security deposit",
+        "uncertain_fields": [
+          "exemptions"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 7521,
+    "output_tokens": 681
+  }
+}

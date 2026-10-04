@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002309,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords must return your security deposit and provide an itemized statement within 21 calendar days after you move out. If the landlord acts in bad faith and doesn't follow this rule, they cannot keep any of your deposit.",
+    "summary_es": "Los arrendadores deben devolver su depósito de seguridad y proporcionar un estado detallado dentro de 21 días calendario después de que se mude. Si el arrendador actúa de mala fe y no cumple con esta regla, no puede quedarse con ningún parte de su depósito.",
+    "who_en": "This rule applies to residential rental properties used as a tenant's dwelling.",
+    "who_es": "Esta regla se aplica a las propiedades residenciales de alquiler utilizadas como vivienda del inquilino."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 959,
+    "output_tokens": 270
+  }
+}

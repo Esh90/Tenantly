@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002271,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "At the start of your lease, your landlord can ask for first month's rent, last month's rent, a security deposit equal to first month's rent, and the cost of a key and lock. Nothing more.",
+    "summary_es": "Al inicio de tu arrendamiento, tu arrendador puede solicitar la renta del primer mes, la renta del último mes, un depósito de seguridad igual a la renta del primer mes, y el costo de una llave y cerradura. Nada más.",
+    "who_en": "This rule covers all residential leases and tenancies in Massachusetts.",
+    "who_es": "Esta regla cubre todos los arrendamientos y tenencias residenciales en Massachusetts."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1036,
+    "output_tokens": 247
+  }
+}

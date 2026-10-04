@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.003662,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "Massachusetts has pending bills (H.5222 and S.2983) that would prohibit algorithmic rent setting, but these bills have not been enacted into law. The statute sections identified in the search results are provided only as headers without full text content. No enacted statutory rule addressing algorithmic rent setting at the state level is present in the supplied documents.",
+    "result": "only_pending"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1672,
+    "output_tokens": 398
+  }
+}

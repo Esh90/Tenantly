@@ -1,0 +1,61 @@
+{
+  "cost_usd": 0.0079764,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "approval_date": "2025-10-16",
+        "category": "just_cause_eviction",
+        "cite": "Berkeley Rent Stabilization and Good Cause for Eviction Ordinance; Ellis Implementation Ordinance",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Rental units subject to Berkeley's rent stabilization and Ellis ordinances where owner move-in or Ellis Act evictions occur.",
+        "effective_date": "2026-01-01",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "standard_relocation_payment",
+            "text": "$19,413",
+            "unit": "usd",
+            "valid_from": "2026-01-01",
+            "value": 19413
+          },
+          {
+            "name": "additional_relocation_payment_qualifying_households",
+            "text": "$6,471",
+            "unit": "usd",
+            "valid_from": "2026-01-01",
+            "value": 6471
+          },
+          {
+            "name": "cpi_adjustment",
+            "text": "1.5% upward adjustment",
+            "unit": "percent",
+            "valid_from": "2026-01-01",
+            "value": 1.5
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The standard relocation assistance payment will increase to\n$19,413\n.",
+        "relations_hint": [],
+        "requirement": "Owners must pay tenants relocation assistance when evicting for owner move-in or to withdraw a property from the rental market. The standard payment is $19,413 from January 1, 2026, with an additional $6,471 for qualifying households.",
+        "tenancy_conditions": [
+          "owner move-in or Ellis Act eviction"
+        ],
+        "title": "2026 relocation assistance for OMI and Ellis evictions",
+        "uncertain_fields": [
+          "coverage"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 812,
+    "output_tokens": 588
+  }
+}

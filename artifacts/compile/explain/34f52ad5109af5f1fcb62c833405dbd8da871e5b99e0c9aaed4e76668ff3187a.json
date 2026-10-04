@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002075,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords must pay tenants interest on security deposits every year. When you move out, you get interest for the time you lived there.",
+    "summary_es": "Los arrendadores deben pagar intereses a los inquilinos sobre el depósito de seguridad cada año. Cuando te mudes, recibes intereses por el tiempo que viviste allí.",
+    "who_en": "This rule covers apartments fully or partly covered by Berkeley's Rent Ordinance.",
+    "who_es": "Esta regla cubre apartamentos completamente o parcialmente cubiertos por la Ordenanza de Renta de Berkeley."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 950,
+    "output_tokens": 225
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002724,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The documents provided contain only guidance pages and link-only signals. The guidance documents (D078-D083) appear to be index pages or summaries from SF.gov covering topics like Human Rights Commission, evictions, rent increases, and algorithmic devices, but do not contain substantive text addressing application screening fees. The link-only references (D015-D021, D028) point to external resources including California civil code sections and fair housing guidance, but no actual text content is provided. While rules CA-FEE-01 and CA-FEE-02 exist in this category, no specific city ordinance text or local regulation text addressing application screening fees at the San Francisco city level has been supplied to analyze.",
+    "result": "text_not_supplied"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1589,
+    "output_tokens": 227
+  }
+}

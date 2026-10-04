@@ -1,0 +1,265 @@
+{
+  "cost_usd": 0.012648,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "sections": [
+      {
+        "categories": [],
+        "keep": false,
+        "refs": [],
+        "role": "other",
+        "section_id": "D067-S001"
+      },
+      {
+        "categories": [],
+        "keep": false,
+        "refs": [],
+        "role": "other",
+        "section_id": "D067-S002"
+      },
+      {
+        "categories": [],
+        "keep": false,
+        "refs": [],
+        "role": "other",
+        "section_id": "D067-S003"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D067-S004"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D067-S005"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D067-S006"
+      },
+      {
+        "categories": [],
+        "keep": true,
+        "refs": [],
+        "role": "procedural",
+        "section_id": "D067-S007"
+      },
+      {
+        "categories": [
+          "security_deposits"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D067-S008"
+      },
+      {
+        "categories": [
+          "security_deposits"
+        ],
+        "keep": true,
+        "refs": [
+          "D067-S008"
+        ],
+        "role": "penalty",
+        "section_id": "D067-S009"
+      },
+      {
+        "categories": [],
+        "keep": true,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D067-S010"
+      },
+      {
+        "categories": [
+          "rent_increase_limits",
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D067-S011"
+      },
+      {
+        "categories": [
+          "rent_increase_limits"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D067-S012"
+      },
+      {
+        "categories": [],
+        "keep": true,
+        "refs": [],
+        "role": "procedural",
+        "section_id": "D067-S013"
+      },
+      {
+        "categories": [],
+        "keep": true,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D067-S014"
+      },
+      {
+        "categories": [],
+        "keep": true,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D067-S015"
+      },
+      {
+        "categories": [],
+        "keep": true,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D067-S016"
+      },
+      {
+        "categories": [],
+        "keep": true,
+        "refs": [
+          "D067-S016"
+        ],
+        "role": "operative",
+        "section_id": "D067-S017"
+      },
+      {
+        "categories": [],
+        "keep": true,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D067-S018"
+      },
+      {
+        "categories": [],
+        "keep": true,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D067-S019"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D067-S020"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D067-S021"
+      },
+      {
+        "categories": [
+          "just_cause_eviction",
+          "rent_increase_limits"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D067-S022"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [
+          "D067-S022"
+        ],
+        "role": "operative",
+        "section_id": "D067-S023"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "procedural",
+        "section_id": "D067-S024"
+      },
+      {
+        "categories": [],
+        "keep": true,
+        "refs": [],
+        "role": "definition",
+        "section_id": "D067-S025"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D067-S026"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D067-S027"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D067-S028"
+      },
+      {
+        "categories": [],
+        "keep": true,
+        "refs": [],
+        "role": "procedural",
+        "section_id": "D067-S029"
+      },
+      {
+        "categories": [
+          "just_cause_eviction"
+        ],
+        "keep": true,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D067-S030"
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 4608,
+    "output_tokens": 1608
+  }
+}

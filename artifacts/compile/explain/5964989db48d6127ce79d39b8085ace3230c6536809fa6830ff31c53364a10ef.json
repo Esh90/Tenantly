@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002423,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Appraisers cannot refuse or treat people unfairly based on race, color, religion, sex, gender identity, sexual orientation, family status, income source, disability, genetic information, military status, or national origin. This rule applies to all appraisal services for homes.",
+    "summary_es": "Los tasadores no pueden rechazar ni tratar injustamente a las personas por raza, color, religión, sexo, identidad de género, orientación sexual, estado familiar, origen de ingresos, discapacidad, información genética, estado militar u origen nacional. Esta regla se aplica a todos los servicios de tasación para viviendas.",
+    "who_en": "This rule applies to anyone or any company that appraises residential real property.",
+    "who_es": "Esta regla se aplica a cualquier persona o empresa que tasapropiedad residencial."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1008,
+    "output_tokens": 283
+  }
+}

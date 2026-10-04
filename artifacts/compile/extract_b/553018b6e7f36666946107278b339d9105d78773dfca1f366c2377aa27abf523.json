@@ -1,0 +1,53 @@
+{
+  "cost_usd": 0.005732,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "M.G.L. c. 186, § 11",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties under written lease.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [
+          {
+            "description": "Nonpayment caused by federal, state, or municipal government failure or delay in mailing or delivery of subsistence or rental payments",
+            "predicate": {
+              "const": true
+            },
+            "quote": "If the neglect or refusal to pay the rent due was caused by a failure or delay of the federal government, the commonwealth or any municipality, or any departments, agencies or authorities thereof, in the mailing or delivery of any subsistence or rental payment, check or voucher other than a salary payment to either the tenant or the landlord, the court in any such action shall continue the hearing not less than seven days in order to furnish notice of such action to the appropriate agency and shall, if all rent due with interest and costs of suit has been tendered to the landlord within such time, treat the tenancy as not having been terminated."
+          }
+        ],
+        "key_values": [
+          {
+            "name": "notice_period",
+            "text": "fourteen days' notice to quit",
+            "unit": "days",
+            "value": 14
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Upon the neglect or refusal to pay the rent due under a written lease, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the lease, unless the tenant, on or before the day the answer is due, in an action by the landlord to recover possession of the premises, pays or tenders to the landlord or to his attorney all rent then due, with interest and costs of suit.",
+        "relations_hint": [],
+        "requirement": "A landlord must provide fourteen days' written notice to quit before terminating a lease for nonpayment of rent. The tenant may prevent termination by paying all rent due with interest and costs of suit on or before the answer is due in the landlord's action.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Eviction for Nonpayment of Rent Notice Requirement",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2432,
+    "output_tokens": 660
+  }
+}

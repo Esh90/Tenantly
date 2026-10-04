@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002252,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords must pay interest on security deposits held for tenants in RSO-covered units. The interest rate and payment terms are set by Los Angeles law.",
+    "summary_es": "Los arrendadores deben pagar interés sobre el depósito de seguridad que retienen para los inquilinos en unidades cubiertas por RSO. La tasa de interés y los términos de pago se establecen según la ley de Los Ángeles.",
+    "who_en": "This rule covers rental properties in Los Angeles that were first built on or before October 1, 1978.",
+    "who_es": "Esta regla cubre propiedades de alquiler en Los Ángeles que fueron construidas por primera vez en o antes del 1 de octubre de 1978."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 932,
+    "output_tokens": 264
+  }
+}

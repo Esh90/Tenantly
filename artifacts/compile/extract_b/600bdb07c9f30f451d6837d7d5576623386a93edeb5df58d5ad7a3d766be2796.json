@@ -1,0 +1,746 @@
+{
+  "cost_usd": 0.068033,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "approval_date": "2023-05-25",
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0704",
+        "coverage": {
+          "not": {
+            "any": [
+              {
+                "property_type": "in",
+                "value": [
+                  "single_family"
+                ]
+              },
+              {
+                "owner_occupied": true,
+                "property_type": "in",
+                "value": [
+                  "multifamily_2_4"
+                ]
+              },
+              {
+                "shares_kitchen_bath_with_owner": true
+              },
+              {
+                "landlord_property_count": {
+                  "op": "<=",
+                  "value": 1
+                },
+                "owner_is_natural_person": true,
+                "property_type": "in",
+                "unit_separately_alienable": true,
+                "value": [
+                  "other"
+                ]
+              },
+              {
+                "year_built": {
+                  "op": ">=",
+                  "value": 2009
+                }
+              },
+              {
+                "subsidized_or_affordable": true
+              }
+            ]
+          }
+        },
+        "coverage_text": "Residential rental properties in San Diego that do not fall within the exemptions, including most multifamily buildings not owner-occupied and properties built before the prior 15 years.",
+        "effective_date": "2023-06-24",
+        "exemptions": [
+          {
+            "description": "Transient and tourist hotel occupancy",
+            "predicate": {
+              "const": true
+            },
+            "quote": "transient and tourist hotel occupancy as defined in California Civil Code section 1940(b), as may be amended"
+          },
+          {
+            "description": "Short-term residential occupancy",
+            "predicate": {
+              "const": true
+            },
+            "quote": "short-term residential occupancy, as defined in and subject to Chapter 5, Article 10, Division 1 of this Code, as may be amended"
+          },
+          {
+            "description": "Housing restricted by deed as affordable housing",
+            "predicate": {
+              "subsidized_or_affordable": true
+            },
+            "quote": "housing restricted by deed, regulatory restriction contained in an agreement with a government agency, or other document as affordable housing for persons and families of very low, low, or moderate income"
+          },
+          {
+            "description": "Housing subject to subsidies for affordable housing (excluding Section 8)",
+            "predicate": {
+              "subsidized_or_affordable": true
+            },
+            "quote": "housing subject to an agreement that provides housing subsidies for affordable housing for persons and families of very low, low, or moderate income, as defined in California Health and Safety Code section 50093, as may be amended, or comparable federal statutes. This exemption shall not include Section 8"
+          },
+          {
+            "description": "Mobilehomes subject to Mobilehome Residency Law",
+            "predicate": {
+              "const": true
+            },
+            "quote": "mobilehomes subject to the Mobilehome Residency Law (California Civil Code sections 798-799.11), as may be amended"
+          },
+          {
+            "description": "Housing in nonprofit hospitals, religious facilities, care facilities, or transitional housing",
+            "predicate": {
+              "const": true
+            },
+            "quote": "housing accommodations in a nonprofit hospital, religious facility, extended care facility, licensed residential care facility for the elderly, as defined in California Health and Safety Code section 1569.2, as may be amended, an adult residential facility, as defined in Title 22, Division 6, Chapter 6 of the Manual of Policies and Procedures published by the California Department of Social Services, as may be amended, or non-profit transitional housing"
+          },
+          {
+            "description": "Dormitories owned and operated by educational institutions",
+            "predicate": {
+              "const": true
+            },
+            "quote": "dormitories owned and operated by an institution of higher education or an institution offering instruction to any grade from kindergarten through 12"
+          },
+          {
+            "description": "Rental property where tenant shares bathroom or kitchen with landlord's principal residence",
+            "predicate": {
+              "shares_kitchen_bath_with_owner": true
+            },
+            "quote": "residential rental property in which the tenant shares bathroom or kitchen facilities with the landlord who maintains their principal residence at the residential rental property"
+          },
+          {
+            "description": "Single-family residence occupied by landlord as principal residence with limited rentals",
+            "predicate": {
+              "all": [
+                {
+                  "property_type": "==",
+                  "value": "single_family"
+                },
+                {
+                  "owner_occupied": true
+                }
+              ]
+            },
+            "quote": "single-family residence occupied by the landlord as the landlord's principal place of residence, including both of the following: (1) a residence in which the landlord-occupant rents or leases no more than two bedrooms, two accessory dwelling units, or two junior accessory dwelling units, as defined in section 113.0103; and (2) a mobilehome"
+          },
+          {
+            "description": "Two-unit property where landlord occupies one unit",
+            "predicate": {
+              "all": [
+                {
+                  "property_type": "==",
+                  "value": "multifamily_2_4"
+                },
+                {
+                  "owner_occupied": true
+                }
+              ]
+            },
+            "quote": "a property containing two separate dwelling units within a single structure in which the landlord occupies one of the dwelling units as the landlord's principal place of residence at the beginning of the tenancy, so long as the landlord continues in occupancy"
+          },
+          {
+            "description": "Housing with certificate of occupancy issued within the previous 15 years",
+            "predicate": {
+              "fact": "co_date",
+              "op": ">",
+              "value": {
+                "as_of_minus_years": 15
+              }
+            },
+            "quote": "housing that has been issued a certificate of occupancy within the previous 15 years, unless the housing is a mobilehome"
+          },
+          {
+            "description": "Separately alienable residential rental property owned by natural person landlord (not REIT, corporation, or certain LLCs)",
+            "predicate": {
+              "all": [
+                {
+                  "unit_separately_alienable": true
+                },
+                {
+                  "owner_is_natural_person": true
+                },
+                {
+                  "not": {
+                    "landlord_property_count": {
+                      "op": ">",
+                      "value": 0
+                    }
+                  }
+                }
+              ]
+            },
+            "quote": "residential rental property, including a mobilehome, that is alienable separate from the title to any other dwelling unit, provided that both of the following apply: (1) The landlord is not any of the following: (A) a real estate investment trust, as defined in California Internal Revenue Code section 856, as may be amended; (B) a corporation; (C) a limited liability company in which at least one member is a corporation; or (D) management of a mobilehome park"
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "A landlord shall not terminate a tenancy without just cause. For purposes of this Division, just cause includes at-fault just cause and no-fault just cause.",
+        "requirement": "A landlord shall not terminate a tenancy without just cause. Just cause includes at-fault just cause (such as non-payment of rent, material lease breach, nuisance, waste, criminal activity, or unlawful use) and no-fault just cause (owner occupancy, withdrawal from rental market, habitability compliance, or demolition/substantial remodel).",
+        "title": "Just Cause Required for Termination of Tenancy",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0704(a)(1)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7.",
+        "effective_date": "2023-06-24",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "At-Fault Just Cause. At-fault just cause is any of the following: (1) a default in the payment of rent",
+        "requirement": "A landlord may terminate a tenancy for just cause based on the tenant's default in the payment of rent.",
+        "title": "At-Fault Just Cause - Default in Payment of Rent",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0704(a)(2)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7.",
+        "effective_date": "2023-06-24",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "a breach of a material term of the lease, as described in California Code of Civil Procedure section 1161(3), as may be amended, including violation of a provision of the lease after being issued a written notice to correct the violation",
+        "requirement": "A landlord may terminate a tenancy for just cause based on the tenant's breach of a material term of the lease, including violation of a provision after receiving written notice to correct.",
+        "title": "At-Fault Just Cause - Material Lease Breach",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0704(a)(3)-(4)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7.",
+        "effective_date": "2023-06-24",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "the maintaining, committing, or permitting the maintenance or commission of a nuisance as described in California Code of Civil Procedure section 1161(4), as may be amended; (4) the committing of waste as described in California Code of Civil Procedure section 1161(4), as may be amended",
+        "requirement": "A landlord may terminate a tenancy for just cause based on the tenant maintaining, committing, or permitting the maintenance or commission of a nuisance, or the committing of waste.",
+        "title": "At-Fault Just Cause - Nuisance or Waste",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0704(a)(5)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7.",
+        "effective_date": "2023-06-24",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "where the tenant has a written lease that terminated on or after June 24, 2023 and after receiving a written request or demand from the landlord, the tenant refused to execute a written extension or renewal of the lease for a substantially similar duration and with substantially similar provisions, provided the terms of the extension or renewal do not violate this Division or any other provision of law",
+        "requirement": "A landlord may terminate a tenancy for just cause when a tenant with a written lease that terminated on or after June 24, 2023 refuses, after receiving a written request, to execute a written extension or renewal of substantially similar duration and provisions, provided the terms do not violate law.",
+        "tenancy_conditions": [
+          "Written lease terminated on or after June 24, 2023",
+          "Tenant received written request to renew"
+        ],
+        "title": "At-Fault Just Cause - Refusal to Execute Lease Renewal",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0704(a)(6)-(7)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7.",
+        "effective_date": "2023-06-24",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "criminal activity by the tenant on the residential rental property, including any common areas associated with the residential rental property; (7) a criminal threat, as defined in California Penal Code section 422(a), as may be amended, by the tenant regardless of where made directed at the tenant's landlord or any other tenant of the residential rental property",
+        "requirement": "A landlord may terminate a tenancy for just cause based on criminal activity by the tenant on the residential rental property, including common areas, or criminal threats directed at the landlord or other tenants.",
+        "title": "At-Fault Just Cause - Criminal Activity",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0704(a)(8)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7.",
+        "effective_date": "2023-06-24",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "the tenant's assignment or sublet of the residential rental property in violation of the tenant's lease, as described in California Code of Civil Procedure section 1161(4), as may be amended",
+        "requirement": "A landlord may terminate a tenancy for just cause based on the tenant's assignment or subletting of the residential rental property in violation of the lease.",
+        "title": "At-Fault Just Cause - Unauthorized Assignment or Subletting",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0704(a)(9)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7.",
+        "effective_date": "2023-06-24",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "the tenant's refusal to allow the landlord to enter the residential rental property as authorized by California Civil Code sections 1101.5 and 1954, as may be amended, and California Health and Safety Code sections 13113.7 and 17926.1, as may be amended",
+        "requirement": "A landlord may terminate a tenancy for just cause based on the tenant's refusal to allow the landlord authorized entry to the property.",
+        "title": "At-Fault Just Cause - Refusal to Allow Entry",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0704(a)(10)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7.",
+        "effective_date": "2023-06-24",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "the tenant's use of the residential rental property for an unlawful purpose as described in California Code of Civil Procedure section 1161(4), as may be amended",
+        "requirement": "A landlord may terminate a tenancy for just cause based on the tenant's use of the residential rental property for an unlawful purpose.",
+        "title": "At-Fault Just Cause - Unlawful Use of Property",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0704(a)(11)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7.",
+        "effective_date": "2023-06-24",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "where the tenant is an employee, agent, or licensee of the landlord and the tenant fails to vacate the residential rental property after their termination as an employee, agent, or licensee as described in California Code of Civil Procedure section 1161(1), as may be amended",
+        "requirement": "A landlord may terminate a tenancy for just cause when a tenant who is an employee, agent, or licensee of the landlord fails to vacate after termination of employment.",
+        "title": "At-Fault Just Cause - Failure of Employee to Vacate",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0704(a)(12)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7.",
+        "effective_date": "2023-06-24",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "when the tenant fails to deliver possession of the residential rental property after providing the landlord written notice as provided in California Civil Code section 1946, as may be amended, of the tenant's intention to terminate the tenancy, or the tenant makes a written offer to surrender the residential rental property that is accepted in writing by the landlord, but fails to deliver possession at the time specified in that written notice as described in California Code of Civil Procedure section 1161(5), as may be amended",
+        "requirement": "A landlord may terminate a tenancy for just cause when a tenant fails to deliver possession after providing written notice of intent to terminate, or fails to deliver possession at the time specified in a written offer to surrender accepted by the landlord.",
+        "title": "At-Fault Just Cause - Failure to Deliver Possession After Notice",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0704(b)(1)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7.",
+        "effective_date": "2023-06-24",
+        "exemptions": [
+          {
+            "description": "When the intended occupant occupies a rental unit on the property or a vacancy of similar unit already exists",
+            "predicate": {
+              "const": true
+            },
+            "quote": "Section 98.0704(b)(1) does not apply if the intended occupant occupies a rental unit on the property or if a vacancy of a similar unit already exists at the property."
+          }
+        ],
+        "key_values": [
+          {
+            "name": "minimum_occupancy_duration",
+            "text": "minimum of 12 continuous months as that person's primary residence",
+            "unit": "months",
+            "value": 12
+          },
+          {
+            "name": "move_in_timeframe",
+            "text": "within 90 days after the tenant vacates",
+            "unit": "days",
+            "value": 90
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "The owner seeks to recover possession to occupy the residential rental property for the owner or their spouse, domestic partner, child (by blood or adoption), grandchild (by blood or adoption), parent, or grandparent for a minimum of 12 continuous months as that person's primary residence.",
+        "requirement": "A landlord may terminate a tenancy for no-fault just cause to recover possession for the owner or specified family members to occupy as a primary residence for a minimum of 12 continuous months. For leases entered after June 24, 2023, the tenant must agree in writing or the lease must expressly allow such termination. Additional conditions apply regarding notice, proof, timing, and protections.",
+        "tenancy_conditions": [
+          "Intended occupant must move in within 90 days after tenant vacates",
+          "Intended occupant must occupy for at least 12 continuous months"
+        ],
+        "title": "No-Fault Just Cause - Owner Occupancy",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0704(b)(2)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7.",
+        "effective_date": "2023-06-24",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "The landlord seeks to recover possession to withdraw the residential rental property from the rental market.",
+        "requirement": "A landlord may terminate a tenancy for no-fault just cause to recover possession to withdraw the residential rental property from the rental market.",
+        "title": "No-Fault Just Cause - Withdrawal from Rental Market",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0704(b)(3)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7.",
+        "effective_date": "2023-06-24",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "minimum_vacancy_duration",
+            "text": "requires vacating the residential rental property for at least 30 days",
+            "unit": "days",
+            "value": 30
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "The landlord seeks to recover possession to comply with any of the following: (A) an order issued by a government agency or court relating to habitability that requires vacating the residential rental property for at least 30 days. An order issued by a government agency or court relating to habitability that requires vacating the residential rental property for fewer than 30 days is not grounds to terminate a tenancy for just cause and a landlord may be required by applicable state or federal law to provide tenant relocation benefits; (B) an order issued by a government agency or court to vacate the residential rental property; or (C) a local ordinance that requires vacating the residential rental property.",
+        "requirement": "A landlord may terminate a tenancy for no-fault just cause to recover possession to comply with a government agency or court order requiring vacating for habitability issues for at least 30 days, or to comply with a government order to vacate, or to comply with a local ordinance requiring vacating. Tenants are not entitled to relocation assistance if found at fault for the condition.",
+        "title": "No-Fault Just Cause - Habitability Compliance",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0704(b)(4)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7.",
+        "effective_date": "2023-06-24",
+        "key_values": [
+          {
+            "name": "minimum_vacancy_duration",
+            "text": "requires the tenant to vacate the residential rental property for at least 30 continuous days",
+            "unit": "days",
+            "value": 30
+          },
+          {
+            "name": "permit_posting_timeframe",
+            "text": "post at the residential rental property a copy of the application for the necessary permits within three business days of submittal",
+            "unit": "days",
+            "value": 3
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "The landlord seeks to recover possession to demolish or to substantially remodel the residential rental property.",
+        "requirement": "A landlord may terminate a tenancy for no-fault just cause to recover possession to demolish or substantially remodel the property. Substantial remodel is replacement or substantial modification of structural, electrical, plumbing, or mechanical systems requiring a permit, or hazardous materials abatement that requires the tenant to vacate for at least 30 continuous days. Landlord must post permit applications and secure permits before notice. Detailed notice requirements apply.",
+        "title": "No-Fault Just Cause - Demolition or Substantial Remodel",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0706(a)(1)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7.",
+        "effective_date": "2023-06-24",
+        "key_values": [
+          {
+            "name": "cure_opportunity",
+            "text": "opportunity to cure the violation",
+            "value": null
+          },
+          {
+            "name": "notice_to_quit",
+            "text": "three-day notice to quit",
+            "unit": "days",
+            "value": 3
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "Before a landlord issues a notice to terminate a tenancy for at-fault just cause that is a curable lease violation, the landlord shall first give written notice of the violation including a description of the violation and an opportunity to cure the violation under California Code of Civil Procedure section 1161(3), as may be amended. If the violation is not cured within the time period in the notice, the landlord may terminate the tenancy without another opportunity to cure by serving a three-day notice to quit.",
+        "requirement": "For at-fault just cause terminations that are curable lease violations, the landlord must first give written notice of the violation with a description and opportunity to cure. If not cured within the specified time, the landlord may serve a three-day notice to quit. The landlord must notify the Commission in writing no later than three business days after notice to tenant.",
+        "title": "Notice Requirements for At-Fault Just Cause Termination",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0706(b)(1)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7.",
+        "effective_date": "2023-06-24",
+        "key_values": [
+          {
+            "name": "notice_period",
+            "text": "at least 30 or 60 days prior to the proposed date of termination",
+            "value": null
+          },
+          {
+            "name": "font_size",
+            "text": "in no less than 12-point font",
+            "unit": "point",
+            "value": 12
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "The landlord shall give written notice to the tenant at least 30 or 60 days prior to the proposed date of termination as required by California Civil Code section 1946.1, as may be amended, in no less than 12-point font. The written notice shall contain the following: (A) The landlord shall provide a description of the basis for the termination. (B) The notice shall state the tenant's right to relocation assistance established in section 98.0706(c)",
+        "requirement": "For no-fault just cause terminations, the landlord must give written notice in 12-point font at least 30 or 60 days prior to the termination date as required by California Civil Code section 1946.1, describing the basis for termination, stating the tenant's relocation assistance rights, stating the amount and payment method or rent waiver, and for certain terminations, stating the right to receive an offer to renew within five years. The landlord must notify the Commission in writing no later than three business days after notice to tenant.",
+        "title": "Notice Requirements for No-Fault Just Cause Termination",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0706(c)(1)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7 subject to no-fault just cause termination.",
+        "effective_date": "2023-06-24",
+        "key_values": [
+          {
+            "name": "general_tenant_relocation",
+            "text": "direct payment to the tenant shall be in an amount equal to two months of actual rent",
+            "unit": "months",
+            "value": 2
+          },
+          {
+            "name": "senior_disabled_tenant_relocation",
+            "text": "If the tenant is a senior or disabled, the direct payment to the tenant shall be in an amount equal to three months of actual rent",
+            "unit": "months",
+            "value": 3
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "The landlord shall, regardless of the tenant's income or length of tenancy and at the landlord's option, provide relocation assistance to the tenant by one of the following: (A) The landlord shall provide a direct payment to the tenant. (i) Unless section 98.0706(c)(1)(A)(ii) applies, the direct payment to the tenant shall be in an amount equal to two months of actual rent under the tenant's lease in effect at the date of the notice. (ii) If the tenant is a senior or disabled, the direct payment to the tenant shall be in an amount equal to three months of actual rent under the tenant's lease in effect at the date of the notice.",
+        "requirement": "For terminations due to no-fault just cause, the landlord must provide relocation assistance to the tenant in the form of a direct payment or rent waiver. General tenants receive two months of actual rent; seniors (62+) or disabled tenants receive three months of actual rent. The landlord's relocation assistance obligation is in addition to returning any deposits and is credited against other relocation assistance required by law. The assistance is recoverable as damages if the tenant fails to vacate.",
+        "title": "Relocation Assistance for No-Fault Just Cause Termination",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0706(d)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7 where no-fault just cause eviction occurred.",
+        "effective_date": "2023-06-24",
+        "key_values": [
+          {
+            "name": "offer_window",
+            "text": "within five years of the date the tenant was evicted",
+            "unit": "years",
+            "value": 5
+          },
+          {
+            "name": "opt_in_deadline",
+            "text": "within 30 days of the termination notice",
+            "unit": "days",
+            "value": 30
+          },
+          {
+            "name": "tenant_acceptance_period",
+            "text": "30 days from the date of receipt of the offer to accept",
+            "unit": "days",
+            "value": 30
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "If a residential rental property is offered for rent or lease for residential purposes within five years of the date the tenant was evicted under sections 98.0704(b)(1), (3), or (4), landlord shall first offer to lease the residential rental property in writing to the tenant displaced from that unit by the no-fault just cause termination if the tenant: (1) advised the landlord in writing within 30 days of the termination notice of the tenant's desire to receive an offer to renew the tenancy; and (2) provided the landlord a mailing address or email address for the landlord to send the offer, including any change of mailing address or email address. The landlord shall have the right to screen the tenant using industry accepted methods and shall communicate the minimum screening criteria in the written offer for the new tenancy. The tenant shall have 30 days from the date of receipt of the offer to accept.",
+        "requirement": "If a residential rental property is offered for rent within five years of eviction due to owner occupancy, withdrawal from rental market, or demolition/substantial remodel, the landlord must first offer to lease the property to the displaced tenant in writing if the tenant requested such right within 30 days of the termination notice and provided contact information. The tenant has 30 days to accept the offer. The landlord may screen using accepted methods.",
+        "title": "Right to Renew Tenancy After No-Fault Just Cause Eviction",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0707(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7 where buyout offers are made.",
+        "effective_date": "2023-06-24",
+        "key_values": [
+          {
+            "name": "refusal_effectiveness",
+            "text": "effective for six months",
+            "unit": "months",
+            "value": 6
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "Prior to making a buyout offer, the landlord shall provide each tenant in a residential rental property a written disclosure that shall include the following: (1) a statement that the tenant has a right not to enter into a buyout agreement; (2) a statement that the tenant may choose to consult with an attorney before entering into a buyout agreement; (3) a statement that the landlord may not retaliate against the tenant for refusing to enter into or negotiate a buyout agreement; (4) a statement that all tenants of a residential rental property may refuse to receive future buyout offers by providing landlord written notice of their refusal, which shall be effective for six months, and all tenants of a residential rental property may rescind the refusal to receive future buyout offers by providing landlord written notice of the rescission; (5) a statement that the tenant is eligible for relocation assistance and the amount of the required relocation assistance in section 98.0706(c)",
+        "requirement": "Prior to making a buyout offer, the landlord must provide each tenant a written disclosure stating: the tenant's right to refuse buyout agreements; the right to consult an attorney; prohibition on retaliation for refusing; the right to refuse future offers for six months; the amount of relocation assistance owed; names of authorized representatives; and space for tenant and landlord signatures with dates.",
+        "title": "Buyout Agreements - Disclosure Requirements",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0707(b)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7 where buyout offers are made.",
+        "effective_date": "2023-06-24",
+        "key_values": [
+          {
+            "name": "copy_delivery_deadline",
+            "text": "within three days of its execution",
+            "unit": "days",
+            "value": 3
+          },
+          {
+            "name": "retention_period",
+            "text": "retain a copy of each signed disclosure form for five years",
+            "unit": "years",
+            "value": 5
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "The landlord shall provide each tenant a fully executed copy of the disclosure form within three days of its execution and retain a copy of each signed disclosure form for five years, along with a record of the date the landlord provided the disclosure to each tenant.",
+        "requirement": "The landlord must provide each tenant a fully executed copy of the disclosure form within three days of execution and retain a copy of each signed disclosure form for five years, along with a record of the date provided to each tenant.",
+        "title": "Buyout Agreements - Disclosure Delivery",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0707(c)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7 where buyout agreements are executed.",
+        "effective_date": "2023-06-24",
+        "key_values": [
+          {
+            "name": "font_size",
+            "text": "bold letters in at least 14-point font",
+            "unit": "point",
+            "value": 14
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "The landlord shall comply with the following: (1) The buyout agreement shall be in writing. (2) A copy of the buyout agreement shall be given to each tenant at the time the tenant signs the buyout agreement. (3) The buyout agreement shall include the following statements in bold letters in at least 14-point font in close proximity to the space reserved for the signature of the tenant: (A) You, the tenant, have a right not to enter into this buyout agreement. (B) If you, the tenant, are entitled to relocation assistance under federal, state, or local law, a buyout agreement for less than the amount of the relocation assistance to which you are entitled violates Chapter 9, Article 8, Division 7 of the San Diego Municipal Code and is void.",
+        "requirement": "A buyout agreement must be in writing. Each tenant must receive a copy when signing. The agreement must include bold 14-point font statements: the tenant has a right not to enter the agreement; an agreement for less than the relocation assistance owed violates the ordinance and is void; and the tenant may consult an attorney. If negotiated in a non-English language, the tenant must receive both English and translated versions. Non-compliance voids the agreement.",
+        "title": "Buyout Agreements - Execution Requirements",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0707(d)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7 where buyout agreements are proposed.",
+        "effective_date": "2023-06-24",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "Buyout agreements must be for an amount that is greater than the amount of relocation assistance available to the tenant in section 98.0706(c). A buyout agreement for less than the amount of relocation assistance owed to the tenant violates this Division and is void.",
+        "requirement": "A buyout agreement must be for an amount greater than the relocation assistance available to the tenant. A buyout agreement for less than the relocation assistance owed is void.",
+        "title": "Buyout Agreements - Void if Below Relocation Assistance Amount",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0708",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7.",
+        "effective_date": "2023-06-24",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "A landlord shall not retaliate against a tenant for exercising any right provided by this Division or seeking the enforcement of this Division.",
+        "requirement": "A landlord shall not retaliate against a tenant for exercising any right provided by Division 7 or seeking enforcement of Division 7.",
+        "title": "Retaliation Prohibited",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0709",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7.",
+        "effective_date": "2023-06-24",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": "Wrongful eviction: not less than three times actual economic damages; Failure to provide relocation assistance: not less than three times the required relocation assistance and actual economic damages; Material violation: reasonable attorney's fees and costs at court discretion",
+        "quote": "A tenant claiming a violation of this Division may file an action against a landlord in a court of competent jurisdiction. (b) A tenant may seek injunctive relief, equitable relief, and money damages, including punitive damages, in a civil action against a landlord for a violation of this Division. (d) Any attempt by a landlord to recover possession of a residential rental property or any actual recovery of possession of a residential rental property in violation of this Division shall render the landlord liable to the tenant in a civil action for wrongful eviction for damages of not less than three times the actual economic damages. (e) Any landlord who fails to provide relocation assistance as required by section 98.0706(c) shall be liable to the tenant in a civil action for not less than three times the required relocation assistance and actual economic damages.",
+        "requirement": "Tenants may file civil actions for violations, seeking injunctive relief, equitable relief, and money damages including punitive damages. Wrongful eviction liability is not less than three times actual economic damages. Failure to provide relocation assistance triggers liability of not less than three times the required assistance plus actual economic damages. Attorneys fees and costs are available at court discretion for material violations.",
+        "title": "Civil Remedies for Violations",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0706(e) and § 98.0710",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7.",
+        "effective_date": "2023-06-24",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "quote": "In addition to other remedies applicable to landlord's failure to comply with this Division, a landlord's failure to strictly comply with section 98.0706 shall render void any notice of termination required by section 98.0706.",
+        "requirement": "Strict non-compliance with notice requirements renders a termination notice void. Any failure to comply with any provision of Division 7 also renders void any notice of termination required by the Division.",
+        "title": "Void Termination Notices for Non-Compliance",
+        "uncertain_fields": []
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "SDMC § 98.0705",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties subject to SDMC Chapter 9, Article 8, Division 7.",
+        "effective_date": "2023-06-24",
+        "key_values": [
+          {
+            "name": "font_size",
+            "text": "no less than 12-point font",
+            "unit": "point",
+            "value": 12
+          },
+          {
+            "name": "existing_tenancy_notice_deadline",
+            "text": "within 90 days of June 24, 2023",
+            "unit": "days",
+            "valid_from": "2023-06-24",
+            "value": 90
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "A landlord of residential rental property subject to this Division shall provide written notice in no less than 12-point font to the tenant, and in a manner that complies with California Civil Code section 1632, as may be amended, that states as follows: California law limits the amount your rent can be increased. See California Civil Code section 1947.12 for more information. Local law also provides that a landlord shall provide a statement of cause in any notice to terminate a tenancy. In some circumstances, tenants who are seniors (62 years or older) or disabled may be entitled to additional tenant protections. See Chapter 9, Article 8, Division 7 of the San Diego Municipal Code for more information. (b) A landlord of residential rental property subject to this Division shall include a copy of the Tenant Protection Guide with the written notice required by section 98.0705(a).",
+        "requirement": "Landlords must provide tenants written notice in 12-point font complying with California Civil Code section 1632 stating that California law limits rent increases and citing section 1947.12, and that local law requires cause statements in termination notices, with additional protections for seniors and disabled tenants. The notice must include a Tenant Protection Guide prepared by the San Diego Housing Commission. For existing tenancies, notice must be provided within 90 days of June 24, 2023. For new or renewed tenancies from June 24, 2023 onward, notice must be included in the lease or as a signed document.",
+        "title": "Notice to Tenant of Residential Tenant Protections",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 12398,
+    "output_tokens": 11127
+  }
+}

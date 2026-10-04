@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002261,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords cannot ask for a security deposit larger than one month's rent, on top of the first month's rent. There are exceptions for small landlords with no more than two properties and four units total.",
+    "summary_es": "Los arrendadores no pueden pedir un depósito de seguridad mayor que una renta mensual, además de la primera renta mensual. Hay excepciones para arrendadores pequeños con no más de dos propiedades y cuatro unidades en total.",
+    "who_en": "This rule applies to residential rental properties used as a tenant's dwelling.",
+    "who_es": "Esta regla se aplica a propiedades residenciales de alquiler usadas como vivienda de un inquilino."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1006,
+    "output_tokens": 251
+  }
+}

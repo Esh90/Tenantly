@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.00243,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Housing ads cannot say they won't consider applicants with arrests or convictions. Exceptions exist for methamphetamine manufacturing convictions on federally assisted housing and sex offender registration requirements.",
+    "summary_es": "Los anuncios de vivienda no pueden decir que no considerarán solicitudes de personas con antecedentes penales o condenas. Existen excepciones para condenas por fabricación de metanfetamina en viviendas asistidas federalmente y requisitos de registro de delincuentes sexuales.",
+    "who_en": "This rule applies to all rental dwelling units except owner-occupied premises with no more than four dwelling units.",
+    "who_es": "Esta regla se aplica a todas las unidades de vivienda de alquiler excepto las propiedades ocupadas por el dueño con no más de cuatro unidades de vivienda."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1005,
+    "output_tokens": 285
+  }
+}

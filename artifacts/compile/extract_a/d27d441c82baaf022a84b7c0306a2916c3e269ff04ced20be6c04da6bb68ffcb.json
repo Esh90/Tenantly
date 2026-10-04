@@ -1,0 +1,99 @@
+{
+  "cost_usd": 0.0254384,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "just_cause_eviction",
+        "cite": "Cal. Civ. Code § 1946.2(a)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Residential rental properties in California not otherwise exempted.",
+        "effective_date": "2026-01-01",
+        "exemptions": [
+          {
+            "description": "Housing with certificate of occupancy within previous 15 years",
+            "predicate": {
+              "fact": "co_date",
+              "op": ">",
+              "value": {
+                "as_of_minus_years": 15
+              }
+            },
+            "quote": "Housing that has been issued a certificate of occupancy within the previous 15 years, unless the housing is a mobilehome."
+          },
+          {
+            "description": "Shares bathroom/kitchen with owner who lives there",
+            "predicate": {
+              "fact": "shares_kitchen_bath_with_owner",
+              "op": "==",
+              "value": true
+            },
+            "quote": "Housing accommodations in which the tenant shares bathroom or kitchen facilities with the owner who maintains their principal residence at the residential real property."
+          },
+          {
+            "description": "Affordable/subsidized housing",
+            "predicate": {
+              "fact": "subsidized_or_affordable",
+              "op": "==",
+              "value": true
+            },
+            "quote": null
+          },
+          {
+            "description": "Separately alienable property with non-corporate owner and notice",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "unit_separately_alienable",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "fact": "owner_is_natural_person",
+                  "op": "==",
+                  "value": true
+                }
+              ]
+            },
+            "quote": null
+          }
+        ],
+        "key_values": [
+          {
+            "name": "occupancy_threshold",
+            "text": "12 months",
+            "unit": "months",
+            "value": 12
+          },
+          {
+            "name": "relocation_assistance",
+            "text": "equal to one month of the tenant's rent",
+            "unit": "months",
+            "value": 1
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "Notice void; actual damages, attorney's fees, up to three times actual damages if willful; injunctive relief.",
+        "quote": "after a tenant has continuously and lawfully occupied a residential real property for 12 months, the owner of the residential real property shall not terminate a tenancy without just cause, which shall be stated in the written notice to terminate tenancy.",
+        "relations_hint": [
+          "Residential real property subject to a local ordinance requiring just cause for termination of a residential tenancy adopted on or before September 1, 2019, in which case the local ordinance shall apply."
+        ],
+        "requirement": "After a tenant has lawfully occupied a unit for 12 months, the owner may terminate only for stated at-fault or no-fault just cause. No-fault terminations require relocation assistance or a final-month rent waiver equal to one month's rent.",
+        "sunset_date": "2030-01-01",
+        "tenancy_conditions": [
+          "tenant has continuously and lawfully occupied for 12 months (or 24 months if adult tenants added)"
+        ],
+        "title": "Just cause required for termination after 12 months"
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 7723,
+    "output_tokens": 952
+  }
+}

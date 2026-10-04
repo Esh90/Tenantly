@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.00235,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "When a landlord or agent accidentally collects an application fee from multiple applicants for the same rental unit, they must refund the fee within seven days to applicants whose applications are not reviewed. Applicants can choose to use the fee for another rental unit instead.",
+    "summary_es": "Cuando un arrendador o su agente cobra accidentalmente una cuota de solicitud de múltiples inquilinos para la misma unidad de alquiler, debe reembolsar la cuota dentro de siete días a los inquilinos cuyas solicitudes no se revisan. Los inquilinos pueden elegir usar la cuota para otra unidad de alquiler.",
+    "who_en": "This rule covers all residential rental properties.",
+    "who_es": "Esta regla cubre todas las propiedades residenciales de alquiler."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 995,
+    "output_tokens": 271
+  }
+}

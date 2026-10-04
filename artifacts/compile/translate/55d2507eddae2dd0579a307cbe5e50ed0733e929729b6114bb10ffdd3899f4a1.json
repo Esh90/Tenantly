@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001206,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "detail_es": "New Jersey's FAIR Act puede anular las ordenanzas de Jersey City y Hoboken una vez que entre en vigencia.",
+    "title_es": "New Jersey's FAIR Act"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 676,
+    "output_tokens": 106
+  }
+}

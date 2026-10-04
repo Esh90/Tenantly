@@ -1,0 +1,108 @@
+{
+  "cost_usd": 0.0110344,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "rent_increase_limits",
+        "cite": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance (Rent Board Coverage Guide)",
+        "coverage": {
+          "any": [
+            {
+              "all": [
+                {
+                  "fact": "property_type",
+                  "op": "in",
+                  "value": [
+                    "multifamily_2_4",
+                    "multifamily_5plus"
+                  ]
+                },
+                {
+                  "fact": "co_date",
+                  "op": "<",
+                  "value": "1980-06-01"
+                }
+              ]
+            },
+            {
+              "all": [
+                {
+                  "fact": "property_type",
+                  "op": "==",
+                  "value": "single_family"
+                },
+                {
+                  "fact": "year_built",
+                  "op": "<",
+                  "value": 1996
+                }
+              ]
+            }
+          ]
+        },
+        "coverage_text": "Most pre-1980 multifamily units and single-family homes with tenancies begun before 1996.",
+        "exemptions": [
+          {
+            "description": "Owner-occupied golden duplex",
+            "predicate": {
+              "fact": "owner_occupied",
+              "op": "==",
+              "value": true
+            },
+            "quote": null
+          },
+          {
+            "description": "Owner shares kitchen or bath with tenant",
+            "predicate": {
+              "fact": "shares_kitchen_bath_with_owner",
+              "op": "==",
+              "value": true
+            },
+            "quote": null
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "Most units in multifamily properties built before 1980** Fully Covered Yes Yes Yes Yes",
+        "requirement": "Fully covered units are subject to Berkeley rent control and must be registered. New construction, post-1995 single-family tenancies, and most condos are not subject to rent control.",
+        "title": "Rent control coverage",
+        "uncertain_fields": [
+          "coverage"
+        ]
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance (Rent Board Coverage Guide)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All Berkeley rentals other than exempt types.",
+        "exemptions": [
+          {
+            "description": "Owner shares kitchen or bath with tenant",
+            "predicate": {
+              "fact": "shares_kitchen_bath_with_owner",
+              "op": "==",
+              "value": true
+            },
+            "quote": null
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "Most condominiums** Partially Covered Yes No Yes Yes",
+        "requirement": "Fully and partially covered units are subject to just cause eviction rules; listed exempt units are not.",
+        "title": "Just cause eviction coverage",
+        "uncertain_fields": [
+          "exemptions"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 1201,
+    "output_tokens": 816
+  }
+}

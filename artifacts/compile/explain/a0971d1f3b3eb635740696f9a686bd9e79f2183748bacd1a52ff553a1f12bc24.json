@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002495,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "After 30 days of renting, a landlord cannot end your lease without just cause. The landlord must write down the reason in a formal notice.",
+    "summary_es": "Después de 30 días de alquilar, el arrendador no puede terminar su contrato sin causa justa. El arrendador debe escribir la razón en un aviso formal.",
+    "who_en": "This rule applies to residential rental properties in Santa Ana, excluding housing built in the last 15 years, deed-restricted affordable housing, hotels, hospitals, care facilities, and dormitories.",
+    "who_es": "Esta regla se aplica a propiedades residenciales de alquiler en Santa Ana, excluyendo viviendas construidas en los últimos 15 años, viviendas asequibles con restricción de escritura, hoteles, hospitales, instalaciones de cuidado y dormitorios."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1025,
+    "output_tokens": 294
+  }
+}

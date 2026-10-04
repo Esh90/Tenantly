@@ -1,0 +1,54 @@
+{
+  "cost_usd": 0.0085004,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "approval_date": "2025-10-16",
+        "category": "rent_increase_limits",
+        "cite": "BMC § 13.76.110(A); Rent Board Regulation 1148",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Rental units subject to Berkeley rent stabilization whose landlords qualify under Regulation 1148.",
+        "effective_date": "2026-01-01",
+        "exemptions": [
+          {
+            "description": "Tenancies that began on or after Jan 1, 2025 with rents set under Costa-Hawkins are not adjusted by the 2026 AGA.",
+            "predicate": {
+              "const": true
+            },
+            "quote": "The 2026 AGA may not adjust tenants’ rents when their tenancy began on or after \nJanuary 1, 2025, and who had their rents set pursuant to the Costa-Hawkins Rental \nHousing Act."
+          }
+        ],
+        "key_values": [
+          {
+            "name": "2026 AGA",
+            "text": "1.0%",
+            "unit": "percent",
+            "valid_from": "2026-01-01",
+            "value": 1.0
+          },
+          {
+            "name": "AGA formula",
+            "text": "65% of the increase in the Consumer Price Index",
+            "unit": "percent",
+            "value": 65
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "adopted the Annual General Adjustment (AGA) Order for Year 2026 which will allow \neligible landlords to increase the 2025 permanent rent ceilings by 1.0% no earlier than \nJanuary 1, 2026.",
+        "requirement": "Eligible landlords may raise 2025 permanent rent ceilings by 1.0% no earlier than January 1, 2026. The AGA equals 65% of the Bay Area CPI increase.",
+        "title": "Berkeley 2026 Annual General Adjustment"
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 899,
+    "output_tokens": 623
+  }
+}

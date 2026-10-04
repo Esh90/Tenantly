@@ -1,0 +1,63 @@
+{
+  "cost_usd": 0.007346,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Cambridge Municipal Code § 8.71",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units in Cambridge, Massachusetts, including single-unit rental properties.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [
+          {
+            "description": "Rental units in hospitals, skilled nursing facilities, or health facilities",
+            "predicate": {
+              "property_type": "==",
+              "value": "hospital"
+            },
+            "quote": "this Ordinance does NOT apply to: rental units in a hospital, skilled nursing facility or health facility or in a non-profit facility that has the primary purpose of providing short term assistance, treatment, assistance or therapy for alcohol, drug or other substance abuse."
+          },
+          {
+            "description": "Short-term rental units as defined in Article 4, Section 4.60 of the Cambridge Zoning Ordinance",
+            "predicate": {
+              "not": {
+                "const": true
+              }
+            },
+            "quote": "the Ordinance does NOT apply to Short Term Rental Units as set forth in Article 4, Section 4.60 of the Cambridge Zoning Ordinance."
+          }
+        ],
+        "key_values": [
+          {
+            "name": "daily_violation_penalty",
+            "text": "$300 for each day's violation",
+            "unit": "usd",
+            "value": 300
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "May be fined $300 for each day's violation.",
+        "quote": "The Ordinance requires owners, landlords, and management companies to provide you with information at the start of your lease or tenancy as well as when your tenancy is being terminated. For new tenancies, the Guide must be provided when a tenant signs a lease or enters into a tenancy agreement for the first time or tenders the first month's rent. The Ordinance also requires that a landlord provide the Guide to tenants when legal steps to terminate a tenancy are taken (ex. Notice to Quit or Summary Process).",
+        "relations_hint": [],
+        "requirement": "Owners, landlords, and management companies must provide tenants with information about tenants' rights and resources at the start of a lease or tenancy, and when tenancy is being terminated. The Guide must be provided at inception when a tenant signs a lease, enters into a tenancy agreement for the first time, or tenders the first month's rent, and also when legal steps to terminate a tenancy are taken.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Tenants Rights and Resources Notification Requirement",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 3636,
+    "output_tokens": 742
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002751,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "For no-fault evictions, landlords must give tenants either money equal to one month's rent or a written agreement to waive the last month's rent. Payment must happen within 15 calendar days of serving the eviction notice.",
+    "summary_es": "Para desalojos sin causa, los arrendadores deben dar a los inquilinos dinero igual a una mes de renta o un acuerdo escrito para perdonar el último mes de renta. El pago debe hacerse dentro de 15 días calendario después de entregar la noticia de desalojo.",
+    "who_en": "This rule applies to all residential rental properties that are subject to just cause eviction requirements, with some exceptions for new housing, subsidized housing, and properties where the owner lives in the same unit.",
+    "who_es": "Esta regla se aplica a todas las propiedades residenciales de alquiler que están sujetas a requisitos de desalojo con causa justa, con algunas excepciones para viviendas nuevas, viviendas subsidiadas y propiedades donde el arrendador vive en la misma unidad."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1051,
+    "output_tokens": 340
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "cost_usd": 0.004772,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "sections": [
+      {
+        "categories": [],
+        "keep": false,
+        "refs": [],
+        "role": "other",
+        "section_id": "D049-S001"
+      },
+      {
+        "categories": [],
+        "keep": false,
+        "refs": [],
+        "role": "other",
+        "section_id": "D049-S002"
+      },
+      {
+        "categories": [],
+        "keep": false,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D049-S003"
+      },
+      {
+        "categories": [],
+        "keep": false,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D049-S004"
+      },
+      {
+        "categories": [],
+        "keep": false,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D049-S005"
+      },
+      {
+        "categories": [],
+        "keep": false,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D049-S006"
+      },
+      {
+        "categories": [],
+        "keep": false,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D049-S007"
+      },
+      {
+        "categories": [],
+        "keep": false,
+        "refs": [],
+        "role": "exemption",
+        "section_id": "D049-S008"
+      },
+      {
+        "categories": [],
+        "keep": false,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D049-S009"
+      },
+      {
+        "categories": [],
+        "keep": false,
+        "refs": [],
+        "role": "operative",
+        "section_id": "D049-S010"
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2132,
+    "output_tokens": 528
+  }
+}

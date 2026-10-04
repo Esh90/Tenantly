@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.004038,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "New Jersey state-level screening restrictions rules (NJ-SCR-01 through NJ-SCR-04) enacted under the N.J. Fair Chance in Housing Act apply statewide and govern screening practices in Hoboken and all other municipalities. These rules prohibit criminal record inquiries before conditional offer, require individualized assessment factors for criminal record withdrawal, prohibit discriminatory housing advertisements regarding criminal records, and prohibit drug or alcohol testing requirements. No separate city-level ordinance is required as state law preempts and governs this category.",
+    "quote": null,
+    "result": "found",
+    "section_id": "NJ-SCR-01, NJ-SCR-02, NJ-SCR-03, NJ-SCR-04"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1193,
+    "output_tokens": 569
+  }
+}

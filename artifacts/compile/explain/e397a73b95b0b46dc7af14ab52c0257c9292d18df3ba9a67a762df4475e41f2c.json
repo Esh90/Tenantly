@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002158,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "A landlord can demolish a building or convert it to condos, cooperatives, hotels, or commercial use. The property can be evicted for these reasons regardless of other rental protection rules.",
+    "summary_es": "Un arrendador puede demoler un edificio o convertirlo en condominios, cooperativas, hoteles o uso comercial. La propiedad puede ser desalojada por estas razones sin importar otras reglas de protección de alquiler.",
+    "who_en": "This rule applies to all residential rental units in Los Angeles.",
+    "who_es": "Esta regla se aplica a todas las unidades residenciales de alquiler en Los Ángeles."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 963,
+    "output_tokens": 239
+  }
+}

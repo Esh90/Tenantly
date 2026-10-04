@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.00224,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Most units in multifamily properties built before 1980 are protected by just-cause eviction requirements. This means landlords must have a legal reason to evict tenants.",
+    "summary_es": "La mayoría de las unidades en propiedades multifamiliares construidas antes de 1980 están protegidas por los requisitos de desalojo con causa justa. Esto significa que los arrendadores deben tener una razón legal para desalojar inquilinos.",
+    "who_en": "This rule covers most units in multifamily properties built before 1980 in Berkeley.",
+    "who_es": "Esta regla cubre la mayoría de las unidades en propiedades multifamiliares construidas antes de 1980 en Berkeley."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 945,
+    "output_tokens": 259
+  }
+}

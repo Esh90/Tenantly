@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002466,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The provided documents (D073 and D076) contain only partial text that does not include substantive content regarding application screening fees. D073 is truncated at the chapter/article/division headers, and D076 is truncated at the subject line. The remaining references are link-only without accompanying text. No actual regulatory language addressing application screening fees (CA-FEE-01, CA-FEE-02, or CA-FEE-03) is supplied in the document materials.",
+    "result": "text_not_supplied"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1561,
+    "output_tokens": 181
+  }
+}

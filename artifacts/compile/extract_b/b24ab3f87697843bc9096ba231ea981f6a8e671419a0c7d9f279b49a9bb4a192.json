@@ -1,0 +1,73 @@
+{
+  "cost_usd": 0.005908,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "category": "rent_increase_limits",
+        "cite": "M.G.L. c. 40P, § 4",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties in Massachusetts.",
+        "exemptions": [
+          {
+            "description": "Rental units owned by persons or entities owning fewer than ten rental units",
+            "predicate": {
+              "fact": "landlord_property_count",
+              "op": "<",
+              "value": 10
+            },
+            "quote": "nor may such regulation apply to any rental unit that is owned by a person or entity owning less than ten rental units"
+          },
+          {
+            "description": "Rental units with fair market rent exceeding $400",
+            "predicate": {
+              "fact": "unit_separately_alienable",
+              "op": "==",
+              "value": true
+            }
+          }
+        ],
+        "key_values": [
+          {
+            "name": "voluntary_compliance_period",
+            "text": "after six months from the date of the initial adoption of rent control regulation by a particular city or town, compliance on the part of property owners as to the rent control regulation or any subsequently adopted rent control regulation shall be entirely voluntary and uncoerced",
+            "unit": "months",
+            "value": 6
+          },
+          {
+            "name": "minimum_properties_threshold",
+            "text": "nor may such regulation apply to any rental unit that is owned by a person or entity owning less than ten rental units",
+            "unit": "units",
+            "value": 10
+          },
+          {
+            "name": "fair_market_rent_cap",
+            "text": "or that has a fair market rent exceeding $400",
+            "unit": "usd",
+            "value": 400
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "No city or town may enact, maintain or enforce rent control of any kind, except that any city or town that accepts this chapter may adopt rent control regulation that provides:",
+        "relations_hint": [
+          "regulation may not include the regulation of occupancy, services, evictions, condominium conversion or the removal of properties from such regulation"
+        ],
+        "requirement": "Massachusetts cities and towns are prohibited from enacting, maintaining, or enforcing rent control. A city or town that accepts Chapter 40P may adopt rent control regulation only if it meets three specific conditions.",
+        "title": "State prohibition on municipal rent control with exceptions",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2483,
+    "output_tokens": 685
+  }
+}

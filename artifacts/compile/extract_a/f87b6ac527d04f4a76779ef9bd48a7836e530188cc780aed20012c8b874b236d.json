@@ -1,0 +1,59 @@
+{
+  "cost_usd": 0.0161764,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "screening_restrictions",
+        "cite": "Cambridge Fair Housing Ordinance, Cambridge Municipal Code ch. 14.04",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Residential rentals in Cambridge, except owner-occupied 2-family dwellings.",
+        "exemptions": [
+          {
+            "description": "2-family dwellings where the owner lives there",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "property_type",
+                  "op": "==",
+                  "value": "multifamily_2_4"
+                },
+                {
+                  "fact": "owner_occupied",
+                  "op": "==",
+                  "value": true
+                }
+              ]
+            },
+            "quote": null
+          }
+        ],
+        "key_values": [
+          {
+            "name": "civil_fine_max",
+            "text": "civil fines of up to $300 for each violation",
+            "unit": "usd",
+            "value": 300
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "Civil fines of up to $300 for each violation, plus other remedies after hearing.",
+        "quote": "Under the law, landlords, sellers and rental agents may use any reasonable standard to determine which applicants are selected, as long as that standard is applied equally and uniformly to all applicants.",
+        "requirement": "Landlords and rental agents may use reasonable tenant selection standards only if applied equally and uniformly to all applicants. Discrimination based on protected categories, including source of income (Section 8 and public benefits), is prohibited.",
+        "title": "Uniform reasonable tenant selection standards; no discrimination",
+        "uncertain_fields": [
+          "effective_date"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 3987,
+    "output_tokens": 773
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "cost_usd": 0.036314400000000004,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "screening_restrictions",
+        "cite": "M.G.L. c. 151B, § 4(10)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Any person furnishing rental accommodations.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.",
+        "requirement": "It is an unlawful practice to discriminate in rental accommodations against a person because they receive public assistance or housing subsidies, including rental assistance, or because of program requirements.",
+        "title": "Source-of-income discrimination in rental accommodations",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 15996,
+    "output_tokens": 385
+  }
+}

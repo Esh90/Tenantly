@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002753,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The documents provided do not contain any text addressing application screening fees for Los Angeles. The triaged documents (D039-D043) focus on eviction ordinances, RSO overview, rent increase calculations, and relocation assistance—none of which address application screening fees. The link-only signals (D015-D044) include references to state law and fair housing issues but no specific Los Angeles ordinance text on application screening fees. While three state-level rules exist in this category (CA-FEE-01, CA-FEE-02, CA-FEE-03), no Los Angeles city-level implementation, regulation, or guidance on application screening fees is present in the supplied documents.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1643,
+    "output_tokens": 222
+  }
+}

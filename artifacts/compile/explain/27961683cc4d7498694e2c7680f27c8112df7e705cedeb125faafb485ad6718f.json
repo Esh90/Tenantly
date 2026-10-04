@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002434,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "If a landlord charges a service member a higher security deposit because of credit history, credit score, or housing history, the landlord must give a written statement before signing the lease. The statement must show the amount and explain why it is higher.",
+    "summary_es": "Si un arrendador le cobra a un miembro del servicio militar un depósito de seguridad más alto debido a su historial de crédito, puntuación de crédito o historial de vivienda, el arrendador debe entregar una declaración escrita antes de firmar el contrato. La declaración debe mostrar el monto y explicar por qué es más alto.",
+    "who_en": "This rule applies to all residential rental properties where a service member is the tenant.",
+    "who_es": "Esta regla se aplica a todas las propiedades residenciales de alquiler donde un miembro del servicio militar es el inquilino."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 969,
+    "output_tokens": 293
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002699,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords must pay relocation assistance to tenants before evicting them from RSO or JCO units. The landlord must file a Declaration of Intent to Evict with LAHD before giving notice. Relocation assistance amounts are $11,000, $14,400, $23,150, or $27,400 depending on tenant circumstances.",
+    "summary_es": "Los arrendadores deben pagar asistencia de reubicación a los inquilinos antes de desalojarlos de unidades RSO o JCO. El arrendador debe presentar una Declaración de Intención de Desalojo con LAHD antes de notificar. Los montos de asistencia de reubicación son $11,000, $14,400, $23,150 o $27,400 según las circunstancias del inquilino.",
+    "who_en": "This rule covers units covered by the RSO or JCO in Los Angeles.",
+    "who_es": "Esta regla cubre unidades cubiertas por el RSO o JCO en Los Ángeles."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1014,
+    "output_tokens": 337
+  }
+}

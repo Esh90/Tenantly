@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002046,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "After an initial inspection, tenants can fix problems found in their rental unit until they move out. This helps reduce security deposit deductions.",
+    "summary_es": "Después de una inspección inicial, los inquilinos pueden reparar los problemas encontrados en su unidad de alquiler hasta que se muden. Esto ayuda a reducir las deducciones del depósito de seguridad.",
+    "who_en": "This rule applies to all residential rental properties.",
+    "who_es": "Esta regla se aplica a todas las propiedades residenciales de alquiler."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 961,
+    "output_tokens": 217
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002559,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords must give tenants a written notice in 12-point font about tenant protections under California and San Diego law. The notice must include a Tenant Protection Guide from the San Diego Housing Commission.",
+    "summary_es": "Los arrendadores deben entregar a los inquilinos un aviso escrito en letra de 12 puntos sobre las protecciones de inquilinos según la ley de California y San Diego. El aviso debe incluir una Guía de Protecciones de Inquilinos de la Comisión de Vivienda de San Diego.",
+    "who_en": "This rule covers all residential rental properties subject to SDMC Chapter 9, Article 8, Division 7.",
+    "who_es": "Esta regla cubre todas las propiedades residenciales de alquiler sujetas al SDMC Capítulo 9, Artículo 8, División 7."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1089,
+    "output_tokens": 294
+  }
+}

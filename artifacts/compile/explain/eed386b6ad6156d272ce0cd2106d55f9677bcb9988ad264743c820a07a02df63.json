@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002175,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Most apartments in buildings built before 1980 need just-cause reasons to evict tenants. The owner cannot force tenants to leave without a legal reason.",
+    "summary_es": "La mayoría de apartamentos en edificios construidos antes de 1980 requieren una causa justa para desalojar a los inquilinos. El arrendador no puede obligar a los inquilinos a irse sin una razón legal.",
+    "who_en": "This rule applies to most units in multifamily properties built before 1980.",
+    "who_es": "Esta regla se aplica a la mayoría de unidades en propiedades multifamiliares construidas antes de 1980."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 970,
+    "output_tokens": 241
+  }
+}

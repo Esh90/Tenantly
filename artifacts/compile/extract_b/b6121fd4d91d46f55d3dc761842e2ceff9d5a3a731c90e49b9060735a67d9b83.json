@@ -1,0 +1,107 @@
+{
+  "cost_usd": 0.009444,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "M.G.L. c. 186, § 31",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential tenancies in Massachusetts.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "A notice to quit for nonpayment of rent given in writing by a landlord to a residential tenant pursuant to this chapter shall be accompanied by a form that shall include, but not be limited to: (i) documentation of any agreements between the tenant and landlord for the tenant to repay the landlord for nonpayment of rent; and (ii) information on: (1) rental assistance programs including, but not limited to, the residential assistance for families in transition program; (2) applicable trial court rules, standing orders or emergency administrative orders pertaining to actions for summary process; and (3) any relevant federal or state legal restrictions on residential evictions.",
+        "relations_hint": [],
+        "requirement": "A landlord must accompany any notice to quit for nonpayment of rent with a form that includes documentation of any repayment agreements and information about rental assistance programs, applicable trial court rules, and federal or state eviction restrictions.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Notice to Quit for Nonpayment of Rent—Required Form and Disclosures",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "M.G.L. c. 186, § 31",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential tenancies in Massachusetts.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The form shall also prominently display the following statement: ''THIS NOTICE TO QUIT IS NOT AN EVICTION. YOU DO NOT NEED TO IMMEDIATELY LEAVE YOUR UNIT. YOU ARE ENTITLED TO A LEGAL PROCEEDING IN WHICH YOU CAN DEFEND AGAINST THE EVICTION. ONLY A COURT ORDER CAN FORCE YOU TO LEAVE YOUR UNIT.''",
+        "relations_hint": [],
+        "requirement": "The form accompanying a notice to quit for nonpayment of rent must prominently display a specific statement informing the tenant that the notice is not an eviction, they do not need to immediately leave, they are entitled to a legal proceeding to defend against eviction, and only a court order can force them to leave.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Notice to Quit—Required Prominent Statement",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "M.G.L. c. 186, § 31",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential tenancies in Massachusetts.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The information in clause (ii) of subsection (a) shall be made available in the 5 most common languages spoken in the commonwealth in addition to English.",
+        "relations_hint": [],
+        "requirement": "The information required in the form (regarding rental assistance programs, trial court rules, and eviction restrictions) must be made available in the five most common languages spoken in Massachusetts in addition to English.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Form Availability in Multiple Languages",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "M.G.L. c. 186, § 31",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential tenancies in Massachusetts.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "No court having jurisdiction over an action for summary process pursuant to chapter 239, including the Boston municipal court department, shall, in an eviction for nonpayment of rent for a residential dwelling unit, accept for filing a writ, summons or complaint without proof of delivery of the form required under this section.",
+        "relations_hint": [],
+        "requirement": "Courts cannot accept a writ, summons, or complaint in a nonpayment of rent eviction action for a residential dwelling unit without proof that the required form was delivered to the tenant.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Court Filing Requirement—Proof of Form Delivery",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2559,
+    "output_tokens": 1377
+  }
+}

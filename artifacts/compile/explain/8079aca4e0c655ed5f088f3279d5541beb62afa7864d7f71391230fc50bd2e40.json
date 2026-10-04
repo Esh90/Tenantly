@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002246,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "If a landlord breaks the rent-setting software rules, a tenant can sue for money damages or civil penalties up to $1,000 per violation. The tenant can also recover court costs and lawyer fees.",
+    "summary_es": "Si un arrendador viola las reglas del software para fijar rentas, un inquilino puede demandar por daños o penas civiles hasta $1,000 por cada violación. El inquilino también puede recuperar los costos de la corte y los honorarios del abogado.",
+    "who_en": "This applies to all residential rental properties in San Diego.",
+    "who_es": "Esto se aplica a todas las propiedades residenciales de alquiler en San Diego."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1001,
+    "output_tokens": 249
+  }
+}

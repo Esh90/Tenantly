@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002348,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords can charge tenants a monthly fee. This fee is 1/12 of 50% of the annual Systematic Code Enforcement Fee, starting January 1, 2022.",
+    "summary_es": "Los arrendadores pueden cobrar a los inquilinos una cuota mensual. Esta cuota es 1/12 del 50% de la tarifa anual de Cumplimiento Sistemático de Códigos, comenzando el 1 de enero de 2022.",
+    "who_en": "This rule applies to rental properties in Los Angeles that were built on or before October 1, 1978.",
+    "who_es": "Esta regla se aplica a las propiedades de alquiler en Los Ángeles que fueron construidas el 1 de octubre de 1978 o antes."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 988,
+    "output_tokens": 272
+  }
+}

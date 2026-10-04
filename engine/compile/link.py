@@ -79,7 +79,9 @@ def verify_relations(
         why = None
         view = views.get(rec.get("doc_id", ""))
         src = by_id.get(rec.get("source_rule_id", ""))
-        if src is None:
+        if rec.get("type") not in EFFECT_FOR:
+            why = "informational relation: it changes no result"
+        elif src is None:
             why = "unknown source rule id"
         elif rec.get("target_rule_id") and rec["target_rule_id"] not in by_id:
             why = "unknown target rule id"
@@ -92,7 +94,9 @@ def verify_relations(
             if span is None:
                 why = "QUOTE_NOT_FOUND"
             elif rec.get("condition") and dsl.validate(rec["condition"]):
-                why = "invalid condition"
+                # the quote is verified; an unusable condition is dropped, and the scope plus the
+                # target rule's own result decide when the relation applies
+                rec = {**rec, "condition": None}
         effect = EFFECT_FOR.get(rec.get("type", ""), rec.get("effect"))
         if why is None and effect != rec.get("effect") and rec.get("type") in EFFECT_FOR:
             why = "effect does not match relation type"
@@ -124,3 +128,38 @@ def verify_relations(
     ok.sort(key=lambda r: (r.source_rule_id, r.type, r.target_rule_id or "", str(r.target_scope)))
     ok = [r.model_copy(update={"relation_id": f"REL-{i:03d}"}) for i, r in enumerate(ok, start=1)]
     return ok, rejected
+
+
+def link_documents(llm: LLM, rules: list[Rule], views: dict[str, DocView]) -> list[dict]:
+    """One model call per state-level law document: do its own rules yield to, bar, or conflict
+    with local rules? Asking per document keeps each answer tied to one source text."""
+    out: list[dict] = []
+    system, version = load_prompt("link")
+    by_doc: dict[str, list[Rule]] = {}
+    for r in rules:
+        if (
+            r.jurisdiction.level == "state"
+            and r.lifecycle != "failed"
+            and r.citation.doc_id in views
+        ):
+            by_doc.setdefault(r.citation.doc_id, []).append(r)
+    for doc_id, mine in sorted(by_doc.items()):
+        v = views[doc_id]
+        if v.doc_type not in ("statute", "ordinance", "draft_materials"):
+            continue
+        p = passages(v)
+        if not p.strip():
+            continue
+        listing = "\n".join(
+            f"{r.rule_id} | {r.jurisdiction.label} | state | {r.category} | {r.title} | {r.citation.quote[:160]!r}"
+            for r in mine
+        )
+        user = (
+            f"State: {mine[0].jurisdiction.state}\nThe rules below come from this document. Local rules of the same "
+            f"state exist for each category; refer to them with target_scope.\n\nCompiled rules:\n{listing}\n\nPassages:\n"
+            + v.wrapper(p)
+        )
+        res = llm.call(stage="link", model=config.MODEL_STRONG, system=system, user=user, tool=EMIT_RELATIONS,
+                       prompt_version=version, ref=doc_id, max_tokens=4000, effort="low")  # fmt: skip
+        out += res.output.get("relations", [])
+    return out

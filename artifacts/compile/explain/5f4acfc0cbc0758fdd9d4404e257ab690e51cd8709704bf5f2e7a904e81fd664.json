@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002401,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "When a landlord evicts a tenant for owner move-in or to remove a property from rentals, the landlord must pay $19,413 in relocation assistance. Qualifying households receive an additional $6,471.",
+    "summary_es": "Cuando un arrendador desaloja a un inquilino por mudanza del propietario o para retirar una propiedad del mercado de alquiler, el arrendador debe pagar $19,413 en asistencia de reubicación. Los inquilinos que califican reciben $6,471 adicionales.",
+    "who_en": "This applies to rental units subject to Berkeley's rent stabilization and Ellis ordinances.",
+    "who_es": "Esto aplica a unidades de alquiler sujetas a las ordenanzas de estabilización de rentas y Ellis de Berkeley."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1011,
+    "output_tokens": 278
+  }
+}

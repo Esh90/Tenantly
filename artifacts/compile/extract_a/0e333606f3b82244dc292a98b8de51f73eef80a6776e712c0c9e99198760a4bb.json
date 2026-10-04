@@ -1,0 +1,45 @@
+{
+  "cost_usd": 0.0076484,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "rent_increase_limits",
+        "cite": "LAMC ch. XV, art. 1 (Los Angeles Rent Stabilization Ordinance)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO).",
+        "effective_date": "2025-07-01",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "annual_allowable_increase",
+            "text": "3%",
+            "unit": "percent",
+            "valid_from": "2025-07-01",
+            "valid_to": "2026-06-30",
+            "value": 3
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Annual rent increases for rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO), effective\nJuly 1, 2025, through June 30, 2026\nis\n3%",
+        "requirement": "For RSO units, the annual allowable rent increase for July 1, 2025 through June 30, 2026 is 3%. Beginning February 2, 2026, no additional percentage for utilities may be included.",
+        "tenancy_conditions": [],
+        "title": "LA RSO annual allowable rent increase 3%",
+        "uncertain_fields": [
+          "coverage",
+          "cite"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 1278,
+    "output_tokens": 462
+  }
+}

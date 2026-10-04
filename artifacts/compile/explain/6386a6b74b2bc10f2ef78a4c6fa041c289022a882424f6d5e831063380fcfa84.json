@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002635,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "After 30 days, landlords can only end a lease for valid reasons in writing. If they evict without cause, they must give 3 months of relocation help or waive rent for 3 months.",
+    "summary_es": "Después de 30 días, los arrendadores solo pueden terminar un contrato de arrendamiento por razones válidas por escrito. Si desalojan sin causa, deben dar 3 meses de ayuda para mudarse o condonar la renta durante 3 meses.",
+    "who_en": "This rule covers residential rental homes, except new buildings built in the last 15 years, affordable housing with deed restrictions, hotels, care facilities, dormitories, and shared living spaces.",
+    "who_es": "Esta regla cubre casas de alquiler residencial, excepto edificios nuevos construidos en los últimos 15 años, vivienda asequible con restricciones de escritura, hoteles, instalaciones de cuidado, dormitorios y espacios compartidos."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1025,
+    "output_tokens": 322
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002354,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "Jersey City has no specific city-level security deposit rules in the provided documents. The triaged section D036 is only partial guidance text about Landlord/Tenant Relations with no substantive security deposit policy. The security deposit rules identified (NJ-DEP-01, NJ-DEP-02, NJ-DEP-03) are enacted state-level rules from New Jersey, not Jersey City ordinances. The link-only documents provided do not contain accessible text and appear to reference state-level laws and algorithmic rent pricing matters rather than city-level security deposit regulations. No city ordinance text establishing security deposit rules for Jersey City was found in the sources provided.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1264,
+    "output_tokens": 218
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "cost_usd": 0.003685,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "algorithmic_rent_setting",
+        "cite": "S.2983",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "pending",
+        "penalty": null,
+        "quote": "An Act prohibiting algorithmic rent setting",
+        "relations_hint": [],
+        "requirement": "Prohibit the use of algorithmic rent setting in rental housing.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Prohibition of algorithmic rent setting",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2415,
+    "output_tokens": 254
+  }
+}

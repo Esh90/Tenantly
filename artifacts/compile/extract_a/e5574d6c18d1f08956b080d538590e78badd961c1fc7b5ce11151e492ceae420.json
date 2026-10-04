@@ -1,0 +1,64 @@
+{
+  "cost_usd": 0.026762400000000002,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "screening_restrictions",
+        "cite": "Cal. Gov. Code § 12955 (FEHA); CRD Housing Discrimination guidance",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Most housing providers in California covered by FEHA.",
+        "exemptions": [
+          {
+            "description": "Owner-occupied home renting to one additional person may exclude applicants on protected characteristics (not specific to criminal history).",
+            "predicate": {
+              "fact": "owner_occupied",
+              "op": "==",
+              "value": true
+            },
+            "quote": null
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Housing providers are also prohibited from having “blanket bans” of all people with a criminal history.",
+        "requirement": "Housing providers may not consider arrests without conviction, sealed or expunged records, or juvenile records, and may not have blanket bans on applicants with criminal history. Denials based on conviction must be directly related to being a good tenant and safety.",
+        "tenancy_conditions": [],
+        "title": "Criminal history screening limits",
+        "uncertain_fields": [
+          "penalty",
+          "exemptions"
+        ]
+      },
+      {
+        "category": "screening_restrictions",
+        "cite": "Cal. Gov. Code § 12955 (FEHA); CRD Housing Discrimination guidance",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Most housing providers in California covered by FEHA.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "No. California law protects tenants from discrimination based on how a tenant will be paying rent (“source of income”).",
+        "requirement": "Housing providers may not refuse to rent or apply different terms based on source of income, including Section 8 vouchers and other rental assistance.",
+        "tenancy_conditions": [],
+        "title": "Source of income discrimination prohibited",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 8090,
+    "output_tokens": 1011
+  }
+}

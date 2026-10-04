@@ -1,0 +1,194 @@
+{
+  "cost_usd": 0.0141,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "application_screening_fees",
+        "cite": "BMC 13.78.010; Cal. Civ. Code § 1950.6",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties in Berkeley.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "maximum_screening_fee",
+            "text": "The maximum tenant screening fee for 2026 is $68.96",
+            "unit": "usd",
+            "valid_from": "2026-01-01",
+            "valid_to": "2026-12-31",
+            "value": 68.96
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The maximum tenant screening fee for 2026 is\n$68.96",
+        "relations_hint": [],
+        "requirement": "Landlords may not charge a prospective tenant a screening fee exceeding $68.96 in 2026.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Maximum Tenant Screening Fee",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Cal. Civ. Code § 1950.6",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties in Berkeley.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "credit_report_delivery_deadline",
+            "text": "Prospective tenants should expect to receive a copy of their credit report within 7 days of receipt by the landlord",
+            "unit": "days",
+            "value": 7
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Landlords may use screening fees to obtain information about a prospective tenant like a consumer credit report. Prospective tenants should expect to receive a copy of their credit report within 7 days of receipt by the landlord, a receipt for the fee paid and an itemized list of any out-of-pocket expenses and time spent by the landlord on the screening, and a refund of any unused portion of the fee.",
+        "relations_hint": [],
+        "requirement": "When a landlord charges a screening fee, the prospective tenant must receive a copy of their credit report within 7 days of the landlord's receipt, a receipt for the fee paid, an itemized list of out-of-pocket expenses and time spent by the landlord, and a refund of any unused portion of the fee.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Screening Fee Disclosures and Refunds",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "Cal. Civ. Code § 1950.6",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties in Berkeley.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "If the tenant provides a reusable screening report, the landlord must use it.",
+        "relations_hint": [],
+        "requirement": "Landlords must accept and use a reusable screening report provided by a prospective tenant instead of charging a new screening fee.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Reusable Screening Report Requirement",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "application_screening_fees",
+        "cite": "Cal. Civ. Code § 1950.6",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties in Berkeley.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The landlord cannot charge a prospective tenant a screening fee if no rental unit is actually available.",
+        "relations_hint": [],
+        "requirement": "Landlords may not charge a screening fee to a prospective tenant when no rental unit is actually available.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Prohibition on Screening Fees When No Unit Available",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "application_screening_fees",
+        "cite": "Cal. Civ. Code § 1950.6",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties in Berkeley.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The landlord must also return a screening fee to any applicant not selected, or have a policy under which they: (1) review applications in the order received and the first qualified applicant gets the unit, and (2) do not charge a screening fee to any applicant not considered.",
+        "relations_hint": [],
+        "requirement": "Landlords must either refund screening fees to applicants not selected, or adopt a policy of reviewing applications in order received and charging screening fees only to the first qualified applicant.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Screening Fee Refund or First-Qualified Applicant Policy",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "application_screening_fees",
+        "cite": "BMC 13.78.010",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties in Berkeley.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "When an owner or the owner's agent gets a request to rent residential property in Berkeley from an applicant and the owner charges a fee to purchase a consumer credit report and to validate, review, or otherwise process an application, the owner must provide, either in the rental application or in a separate disclosure before receiving the fee, a clear and conspicuous tenant screening fee rights statement and a statement of the maximum fee cap permitted under California Civil Code Section 1950.6(b).",
+        "relations_hint": [],
+        "requirement": "Before charging a screening fee, landlords must provide prospective tenants either in the rental application or in a separate disclosure a clear and conspicuous tenant screening fee rights statement and the maximum fee cap under California Civil Code Section 1950.6(b).",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Tenant Screening Fee Disclosure Requirements",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "screening_restrictions",
+        "cite": "BMC 13.78.016",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties in Berkeley.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "An owner of residential rental property (or the owner's agent) cannot charge a non-refundable fee to any existing tenant for the purpose of renewing a tenancy, in whole or in part, including any fee associated with the departure of a roommate or to request to add or replace a roommate in a pre-existing household.",
+        "relations_hint": [],
+        "requirement": "Landlords may not charge existing tenants any non-refundable fee for renewing a tenancy or for related requests such as roommate departure, addition, or replacement.",
+        "sunset_date": null,
+        "tenancy_conditions": [
+          "existing tenant"
+        ],
+        "title": "Prohibition on Non-Refundable Fees for Existing Tenants",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2855,
+    "output_tokens": 2249
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "cost_usd": 0.10989639999999999,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "security_deposits",
+        "cite": "N.J.S.A. 46:8-21.2",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Most residential rentals, including mobile homes.",
+        "exemptions": [
+          {
+            "description": "Owner-occupied two- or three-family dwellings (unless tenant requests application)",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "owner_occupied",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "fact": "property_type",
+                  "op": "==",
+                  "value": "multifamily_2_4"
+                }
+              ]
+            },
+            "quote": "The exception is an owner-occupied two-, or three-family dwelling."
+          }
+        ],
+        "key_values": [
+          {
+            "name": "max_deposit",
+            "text": "one and one-half times one month’s rent",
+            "unit": "months",
+            "value": 1.5
+          },
+          {
+            "name": "annual_increase_cap",
+            "text": "10% of the current security deposit",
+            "unit": "percent",
+            "value": 10
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "The maximum-security deposit to be collected by the landlord cannot be more than one and one-half times one month’s rent ( N.J.S.A. 46:8-21.2 ). It can be less. Any additional yearly security deposit increase may not exceed 10% of the current security deposit.",
+        "requirement": "A landlord may not collect a security deposit above 1.5 times one month's rent. Yearly increases may not exceed 10% of the current deposit.",
+        "title": "Security deposit cap"
+      },
+      {
+        "category": "security_deposits",
+        "cite": "N.J.S.A. 46:8-21.1",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Most residential rentals.",
+        "key_values": [
+          {
+            "name": "return_deadline",
+            "text": "Within 30 days",
+            "unit": "days",
+            "value": 30
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "Tenant may sue for double the amount wrongfully withheld, plus costs and attorney's fees.",
+        "quote": "Within 30 days after the termination of a tenancy, a landlord must return the security deposit, plus interest earned less deductions, to the tenant ( N.J.S.A. 46:8-21.1).",
+        "requirement": "Landlord must return the deposit with interest less deductions within 30 days after tenancy ends.",
+        "title": "Security deposit return"
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "N.J.S.A. 2A:18-53",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Most residential rentals including single-family homes and apartments.",
+        "exemptions": [
+          {
+            "description": "Owner-occupied premises with two or fewer rental units",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "owner_occupied",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "fact": "units",
+                  "op": "<=",
+                  "value": 3
+                }
+              ]
+            },
+            "quote": null
+          }
+        ],
+        "lifecycle": "enacted",
+        "quote": "A landlord must have good cause to evict a tenant (N.J.S.A. 2A:18-53).",
+        "requirement": "A landlord must have statutory good cause to evict a residential tenant or fail to renew a lease.",
+        "title": "Good cause eviction"
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 49557,
+    "output_tokens": 1031
+  }
+}

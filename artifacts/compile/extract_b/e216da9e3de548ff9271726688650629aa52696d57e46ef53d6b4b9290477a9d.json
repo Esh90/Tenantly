@@ -1,0 +1,353 @@
+{
+  "cost_usd": 0.024732,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": "This section shall become operative on April 1, 2024.",
+        "approval_date": "2024-01-01",
+        "category": "rent_increase_limits",
+        "cite": "Cal. Civ. Code § 1947.12",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property, except as exempted.",
+        "effective_date": null,
+        "effective_expression": "April 1, 2024",
+        "exemptions": [
+          {
+            "description": "Housing restricted by deed, regulatory restriction, or other recorded document as affordable housing for very low, low, or moderate income persons and families, as defined in Health and Safety Code Section 50093, or subject to an agreement providing housing subsidies for such persons and families.",
+            "predicate": {
+              "fact": "subsidized_or_affordable",
+              "op": "==",
+              "value": true
+            },
+            "quote": "Housing restricted by deed, regulatory restriction contained in an agreement with a government agency, or other recorded document as affordable housing for persons and families of very low, low, or moderate income, as defined in Section 50093 of the Health and Safety Code, or subject to an agreement that provides housing subsidies for affordable housing for persons and families of very low, low, or moderate income, as defined in Section 50093 of the Health and Safety Code or comparable federal statutes."
+          },
+          {
+            "description": "Dormitories owned and operated by an institution of higher education or a kindergarten and grades 1 to 12 school.",
+            "predicate": {
+              "property_type": "in",
+              "value": [
+                "elderly_home"
+              ]
+            },
+            "quote": "Dormitories owned and operated by an institution of higher education or a kindergarten and grades 1 to 12, inclusive, school."
+          },
+          {
+            "description": "Housing subject to rent or price control through a public entity's exercise of its police power that restricts annual increases to an amount less than that provided in subdivision (a).",
+            "predicate": {
+              "const": false
+            },
+            "quote": "Housing subject to rent or price control through a public entity's valid exercise of its police power consistent with Chapter 2.7 (commencing with Section 1954.50) that restricts annual increases in the rental rate to an amount less than that provided in subdivision (a)."
+          },
+          {
+            "description": "Housing issued a certificate of occupancy within the previous 15 years, unless the housing is a mobilehome.",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "co_date",
+                  "op": ">",
+                  "value": {
+                    "as_of_minus_years": 15
+                  }
+                },
+                {
+                  "not": {
+                    "property_type": "==",
+                    "value": "other"
+                  }
+                }
+              ]
+            },
+            "quote": "Housing that has been issued a certificate of occupancy within the previous 15 years, unless the housing is a mobilehome."
+          },
+          {
+            "description": "Residential real property that is alienable separate from the title to any other dwelling unit, where the owner is a natural person (not a real estate investment trust, corporation, or limited liability company with a corporate member), and tenants have been provided written notice of exemption.",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "unit_separately_alienable",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "fact": "owner_is_natural_person",
+                  "op": "==",
+                  "value": true
+                }
+              ]
+            },
+            "quote": "Residential real property that is alienable separate from the title to any other dwelling unit, including a mobilehome, provided that both of the following apply: (A) The owner is not any of the following: (i) A real estate investment trust, as defined in Section 856 of the Internal Revenue Code. (ii) A corporation. (iii) A limited liability company in which at least one member is a corporation."
+          },
+          {
+            "description": "A property containing two separate dwelling units within a single structure where the owner occupied one unit as the owner's principal place of residence at the beginning of the tenancy and continues in occupancy, and neither unit is an accessory dwelling unit or junior accessory dwelling unit.",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "units",
+                  "op": "==",
+                  "value": 2
+                },
+                {
+                  "fact": "owner_occupied",
+                  "op": "==",
+                  "value": true
+                }
+              ]
+            },
+            "quote": "A property containing two separate dwelling units within a single structure in which the owner occupied one of the units as the owner's principal place of residence at the beginning of the tenancy, so long as the owner continues in occupancy, and neither unit is an accessory dwelling unit or a junior accessory dwelling unit."
+          }
+        ],
+        "key_values": [
+          {
+            "name": "rent increase percentage",
+            "text": "5 percent plus the percentage change in the cost of living, or 10 percent, whichever is lower",
+            "unit": "percent",
+            "value": null
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "Liable in a civil action for injunctive relief, damages in the amount by which any payment exceeds the maximum allowable rent, reasonable attorney's fees and costs, and upon a showing of willful conduct or oppression, fraud, or malice, damages up to three times the amount by which any payment exceeds the maximum allowable rent. Attorney General, city attorney, or county counsel may enforce and seek injunctive relief. Action must be brought within three years from the date the cause of action accrued.",
+        "quote": "Subject to subdivision (b), an owner of residential real property shall not, over the course of any 12-month period, increase the gross rental rate for a dwelling or a unit more than 5 percent plus the percentage change in the cost of living, or 10 percent, whichever is lower, of the lowest gross rental rate charged for that dwelling or unit at any time during the 12 months prior to the effective date of the increase.",
+        "relations_hint": [],
+        "requirement": "An owner of residential real property may not increase the gross rental rate by more than 5% plus the percentage change in the cost of living, or 10%, whichever is lower, over any 12-month period, calculated from the lowest gross rental rate charged in the prior 12 months.",
+        "sunset_date": "2030-01-01",
+        "tenancy_conditions": [],
+        "title": "Annual rent increase cap",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": "This section shall become operative on April 1, 2024.",
+        "approval_date": "2024-01-01",
+        "category": "rent_increase_limits",
+        "cite": "Cal. Civ. Code § 1947.12",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property with the same tenant in occupancy.",
+        "effective_date": null,
+        "effective_expression": "April 1, 2024",
+        "exemptions": [
+          {
+            "description": "Housing restricted by deed, regulatory restriction, or other recorded document as affordable housing for very low, low, or moderate income persons and families.",
+            "predicate": {
+              "fact": "subsidized_or_affordable",
+              "op": "==",
+              "value": true
+            }
+          },
+          {
+            "description": "Dormitories owned and operated by an institution of higher education or kindergarten and grades 1 to 12 school.",
+            "predicate": {
+              "property_type": "in",
+              "value": [
+                "elderly_home"
+              ]
+            }
+          },
+          {
+            "description": "Housing subject to rent or price control through a public entity's exercise of police power that restricts annual increases to an amount less than subdivision (a).",
+            "predicate": {
+              "const": false
+            }
+          },
+          {
+            "description": "Housing issued a certificate of occupancy within the previous 15 years, unless a mobilehome.",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "co_date",
+                  "op": ">",
+                  "value": {
+                    "as_of_minus_years": 15
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "description": "Separately alienable residential real property owned by a natural person (not a corporation or REIT).",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "unit_separately_alienable",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "fact": "owner_is_natural_person",
+                  "op": "==",
+                  "value": true
+                }
+              ]
+            }
+          },
+          {
+            "description": "Two dwelling unit property where owner occupies one as principal residence and continues in occupancy.",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "units",
+                  "op": "==",
+                  "value": 2
+                },
+                {
+                  "fact": "owner_occupied",
+                  "op": "==",
+                  "value": true
+                }
+              ]
+            }
+          }
+        ],
+        "key_values": [
+          {
+            "name": "maximum number of increases",
+            "text": "not be increased in more than two increments over that 12-month period",
+            "unit": null,
+            "value": 2
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "If the same tenant remains in occupancy of a unit of residential real property over any 12-month period, the gross rental rate for the unit of residential real property shall not be increased in more than two increments over that 12-month period, subject to the other restrictions of this subdivision governing gross rental rate increase.",
+        "relations_hint": [],
+        "requirement": "If the same tenant remains in occupancy over any 12-month period, the gross rental rate may not be increased more than twice during that 12-month period.",
+        "sunset_date": "2030-01-01",
+        "tenancy_conditions": [
+          "Same tenant remains in occupancy over any 12-month period"
+        ],
+        "title": "Limitation on rent increase frequency",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": "This section shall become operative on April 1, 2024.",
+        "approval_date": "2024-01-01",
+        "category": "rent_increase_limits",
+        "cite": "Cal. Civ. Code § 1947.12",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property subject to new tenancies.",
+        "effective_date": null,
+        "effective_expression": "April 1, 2024",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "For a new tenancy in which no tenant from the prior tenancy remains in lawful possession of the residential real property, the owner may establish the initial rental rate not subject to subdivision (a). Subdivision (a) is only applicable to subsequent increases after that initial rental rate has been established.",
+        "relations_hint": [],
+        "requirement": "For a new tenancy in which no tenant from the prior tenancy remains in lawful possession, the owner may establish the initial rental rate without restriction. The annual increase cap applies only to subsequent increases after the initial rate is established.",
+        "sunset_date": "2030-01-01",
+        "tenancy_conditions": [
+          "New tenancy in which no tenant from the prior tenancy remains in lawful possession"
+        ],
+        "title": "New tenancy initial rental rate",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": "This section shall become operative on April 1, 2024.",
+        "approval_date": "2024-01-01",
+        "category": "rent_increase_limits",
+        "cite": "Cal. Civ. Code § 1947.12",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property subject to rent increase limits.",
+        "effective_date": null,
+        "effective_expression": "April 1, 2024",
+        "exemptions": [
+          {
+            "description": "Housing restricted by deed, regulatory restriction, or other recorded document as affordable housing for very low, low, or moderate income persons and families.",
+            "predicate": {
+              "fact": "subsidized_or_affordable",
+              "op": "==",
+              "value": true
+            }
+          },
+          {
+            "description": "Dormitories owned and operated by an institution of higher education or kindergarten and grades 1 to 12 school.",
+            "predicate": {
+              "property_type": "in",
+              "value": [
+                "elderly_home"
+              ]
+            }
+          },
+          {
+            "description": "Housing subject to rent or price control through a public entity's exercise of police power that restricts annual increases to an amount less than subdivision (a).",
+            "predicate": {
+              "const": false
+            }
+          },
+          {
+            "description": "Housing issued a certificate of occupancy within the previous 15 years, unless a mobilehome.",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "co_date",
+                  "op": ">",
+                  "value": {
+                    "as_of_minus_years": 15
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "description": "Separately alienable residential real property owned by a natural person (not a corporation or REIT).",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "unit_separately_alienable",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "fact": "owner_is_natural_person",
+                  "op": "==",
+                  "value": true
+                }
+              ]
+            }
+          },
+          {
+            "description": "Two dwelling unit property where owner occupies one as principal residence and continues in occupancy.",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "units",
+                  "op": "==",
+                  "value": 2
+                },
+                {
+                  "fact": "owner_occupied",
+                  "op": "==",
+                  "value": true
+                }
+              ]
+            }
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "A tenant of residential real property subject to this section shall not enter into a sublease that results in a total rent for the premises that exceeds the allowable rental rate authorized by subdivision (a).",
+        "relations_hint": [],
+        "requirement": "A tenant shall not enter into a sublease that results in total rent exceeding the allowable rental rate under the annual increase cap.",
+        "sunset_date": "2030-01-01",
+        "tenancy_conditions": [],
+        "title": "Sublease rent ceiling",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 5642,
+    "output_tokens": 3818
+  }
+}

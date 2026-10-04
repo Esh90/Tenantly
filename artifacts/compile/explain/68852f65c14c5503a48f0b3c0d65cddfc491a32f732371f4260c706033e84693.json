@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.001977,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Massachusetts would ban the use of rent-setting software to set rental prices. Landlords could not use algorithms to determine how much rent to charge.",
+    "summary_es": "Massachusetts prohibiría el uso de software para fijar rentas al establecer precios de alquiler. Los arrendadores no podrían usar algoritmos para determinar cuánta renta cobrar.",
+    "who_en": "This rule applies to all residential rentals in Massachusetts.",
+    "who_es": "Esta regla aplica a todos los alquileres residenciales en Massachusetts."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 932,
+    "output_tokens": 209
+  }
+}

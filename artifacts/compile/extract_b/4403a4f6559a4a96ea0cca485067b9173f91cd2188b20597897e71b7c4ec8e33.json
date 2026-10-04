@@ -1,0 +1,63 @@
+{
+  "cost_usd": 0.007207,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "Boston City Charter § 10-11.7",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": "Warning on first offense; $300 per day for 2nd and subsequent offenses.",
+        "quote": "The Housing Stability Notification Act requires ANY LANDLORDS planning to end a tenancy agreement to provide the tenant with a Notice of Tenants' Rights and Resources.",
+        "relations_hint": [
+          "If a landlord violates the act, it DOES NOT halt the eviction process."
+        ],
+        "requirement": "Any landlord planning to end a tenancy agreement must provide the tenant with a Notice of Tenants' Rights and Resources at the same time as the Notice to Quit or Notice of non-renewal of lease.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Notice of Tenant Rights and Resources Requirement",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "Boston City Charter § 10-11.7",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental properties.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": "Fine up to $300 per day for failure to submit.",
+        "quote": "Landlords must use this online form to provide tenant contact information and upload a copy of the Notice to Quit or Notice of Non-renewal of Lease.",
+        "relations_hint": [],
+        "requirement": "Landlords and foreclosing owners must complete and submit a Notice to Quit/Non-renewal of Lease Submission Verification Form through an online portal, providing tenant contact information and a copy of the notice.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Notice to Quit/Non-renewal Submission Requirement",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 3932,
+    "output_tokens": 655
+  }
+}

@@ -161,6 +161,7 @@ EMIT_SIGNALS = {
                             "enum": ["enacted", "pending", "failed"],
                         },
                         "date_claim": NULL_STR,
+                        "link_doc_ids": {"type": "array", "items": STR},
                         "signals": {
                             "type": "array",
                             "items": {

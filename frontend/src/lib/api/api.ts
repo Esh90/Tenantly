@@ -89,16 +89,27 @@ const post = (body: unknown, headers: Record<string, string> = {}): RequestInit 
   headers: { "Content-Type": "application/json", ...headers },
 });
 
+/** The API wraps lists as { items }; the app works with plain arrays. */
+async function unwrap<T>(p: Promise<T[] | { items: T[] }>): Promise<T[]> {
+  const r = await p;
+  return Array.isArray(r) ? r : r.items;
+}
+
 const metaSchema = z.object({ app: z.literal("Tenantly"), data_version: z.string(), default_as_of: z.string() }).passthrough();
 const lookupSchema = z.object({ address: z.object({ address_id: z.string() }).passthrough(), as_of: z.string(), categories: z.array(z.unknown()) }).passthrough();
 
 export const getMeta = () => withFallback(() => request<Meta>("/meta", { fn: "getMeta", schema: metaSchema }), "/meta.json");
 
 export const getAddressIndex = () =>
-  withFallback(() => request<AddressIndexItem[]>("/addresses", { fn: "getAddressIndex" }), "/addresses.json");
+  unwrap(
+    withFallback(
+      () => request<AddressIndexItem[] | { items: AddressIndexItem[] }>("/addresses", { fn: "getAddressIndex" }),
+      "/addresses.json",
+    ),
+  );
 
 export const searchAddresses = (q: string, limit = 8) =>
-  request<AddressIndexItem[]>(`/addresses/search${qs({ q, limit })}`, { fn: "searchAddresses" });
+  unwrap(request<{ items: AddressIndexItem[] }>(`/addresses/search${qs({ q, limit })}`, { fn: "searchAddresses" }));
 
 export const resolveAddress = (query: string) =>
   request<ResolveResponse>("/resolve", { fn: "resolveAddress", ...post({ query }) });
@@ -119,22 +130,39 @@ export const getJurisdictionGeo = (id: string) =>
   withFallback(() => request<JurisdictionFeature>(`/geo/jurisdictions/${encodeURIComponent(id)}`, { fn: "getJurisdictionGeo" }), `/geo/${id}.json`);
 
 export const listRules = (filters: RuleFilters = {}) =>
-  withFallback(() => request<RuleDetail[]>(`/rules${qs({ ...filters })}`, { fn: "listRules" }), "/rules.json");
+  unwrap(
+    withFallback(
+      () => request<{ items: RuleDetail[] }>(`/rules${qs({ ...filters })}`, { fn: "listRules" }),
+      "/rules.json",
+    ),
+  );
 
 export const getRule = (ruleId: string) =>
   request<RuleDetail>(`/rules/${encodeURIComponent(ruleId)}`, { fn: "getRule" });
 
 export const listFindings = (filters: { state?: StateCode | undefined } = {}) =>
-  withFallback(() => request<Finding[]>(`/findings${qs({ ...filters })}`, { fn: "listFindings" }), "/findings.json");
+  unwrap(
+    withFallback(
+      () => request<{ items: Finding[] }>(`/findings${qs({ ...filters })}`, { fn: "listFindings" }),
+      "/findings.json",
+    ),
+  );
 
 export const listOpenQuestions = () =>
-  withFallback(() => request<OpenQuestion[]>("/open-questions", { fn: "listOpenQuestions" }), "/open_questions.json");
+  unwrap(
+    withFallback(
+      () => request<{ items: OpenQuestion[] }>("/open-questions", { fn: "listOpenQuestions" }),
+      "/open_questions.json",
+    ),
+  );
 
 export const getSource = (docId: string, ruleId?: string, window?: number) =>
   request<SourceDoc>(`/sources/${encodeURIComponent(docId)}${qs({ rule_id: ruleId, window })}`, { fn: "getSource" });
 
 export const listChanges = () =>
-  withFallback(() => request<ChangeEvent[]>("/changes", { fn: "listChanges" }), "/changes.json");
+  unwrap(
+    withFallback(() => request<{ items: ChangeEvent[] }>("/changes", { fn: "listChanges" }), "/changes.json"),
+  );
 
 export const getChange = (changeId: string) =>
   withFallback(() => request<ChangeEvent>(`/changes/${encodeURIComponent(changeId)}`, { fn: "getChange" }), `/changes/${changeId}.json`);
@@ -178,8 +206,35 @@ export const unsubscribeAlerts = (token: string) =>
 
 export const getProof = () => withFallback(() => request<ProofResponse>("/proof", { fn: "getProof" }), "/proof.json");
 
-export const getAudit = (ruleId?: string, limit = 20) =>
-  request<AuditEntry[]>(`/audit${qs({ rule_id: ruleId, limit })}`, { fn: "getAudit" });
+type ApiAuditItem = {
+  ts: string;
+  stage: string;
+  model: string | null;
+  prompt_version: string | null;
+  cache_hit: boolean;
+  input_sha: string;
+  output_sha: string;
+  verifier: string | null;
+  cost_usd: number;
+};
+
+/** Maps the API's audit rows (one per model call) to the app's AuditEntry. */
+export const getAudit = async (ruleId?: string, limit = 20): Promise<AuditEntry[]> => {
+  const rows = await unwrap(
+    request<ApiAuditItem[] | { items: ApiAuditItem[] }>(`/audit${qs({ rule_id: ruleId, limit })}`, { fn: "getAudit" }),
+  );
+  return rows.map((r) => {
+    const raw = r as ApiAuditItem & Partial<AuditEntry>;
+    if (raw.audit_id) return raw as AuditEntry;
+    return {
+      audit_id: `${r.stage}-${r.output_sha.slice(0, 8)}`,
+      rule_id: ruleId ?? "",
+      at: r.ts,
+      action: `${r.stage}${r.model ? ` (${r.model})` : ""}${r.cache_hit ? " [cached]" : ""}`,
+      detail: `prompt v${r.prompt_version ?? "?"}; input ${r.input_sha.slice(0, 10)}; output ${r.output_sha.slice(0, 10)}; $${r.cost_usd.toFixed(4)}`,
+    };
+  });
+};
 
 export const submissionUrl = (name: "rules" | "lookups" | "changes") =>
   IS_MOCK ? `#submission-${name}` : `${API_BASE_URL}/v1/submission/${name}.json`;

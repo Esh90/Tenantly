@@ -1,0 +1,1009 @@
+{
+  "cost_usd": 0.079063,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 151.09, § 165.03",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units covered by the RSO or JCO.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "notice_filing_deadline",
+            "text": "a copy of the notice must be filed with LAHD no later than 3 days after it is served",
+            "unit": "days",
+            "value": 3
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "Failure to file the Landlord Declaration with the LAHD makes the eviction a violation of the RSO or JCO.",
+        "quote": "All tenant not-at-fault evictions require payment of relocation assistance and the filing of a Declaration of Intent to Evict form with the Los Angeles Housing Department (LAHD) before evicting tenants from units covered by the Rent Stabilization Ordinance (RSO) or the Just Cause Ordinance (JCO). Failure to file the Landlord Declaration with the LAHD makes the eviction a violation of the RSO or JCO. Notices to terminate tenancy can only be served on the tenant after the landlord files the Declaration with LAHD, and a copy of the notice must be filed with LAHD no later than 3 days after it is served.",
+        "relations_hint": [],
+        "requirement": "Landlords must file a Declaration of Intent to Evict with the Los Angeles Housing Department before serving notice to terminate tenancy for no-fault reasons under the RSO or JCO. A copy of the notice must be filed with LAHD no later than 3 days after service.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "No-Fault Eviction Requirements - Declaration and Relocation",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 151.09.A.8, § 165.03.H, § 151.30",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units covered by the RSO or JCO.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [
+          {
+            "description": "Eviction for resident manager occupancy allowed only if required by law, affordable housing covenant, or regulatory agreement",
+            "predicate": {
+              "fact": "resident_manager_occupancy",
+              "op": "==",
+              "value": true
+            },
+            "quote": "Evictions for the purpose of resident manager occupancy are allowed only if required by law or an affordable housing covenant, or a regulatory agreement."
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The landlord evicts for the occupancy of her/himself, spouse, grandchildren, children, parents or grandparents, or a resident manager (Los Angeles Municipal Code (LAMC) 151.09.A.8, 165.03.H.). Evictions for the purpose of resident manager occupancy are allowed only if required by law or an affordable housing covenant, or a regulatory agreement. Landlords must comply with the restrictions and requirements of LAMC Section 151.30.",
+        "relations_hint": [],
+        "requirement": "Landlord may evict for occupancy by landlord, spouse, grandchildren, children, parents, grandparents, or resident manager (if required by law, affordable housing covenant, or regulatory agreement), subject to LAMC Section 151.30 restrictions.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "No-Fault Eviction for Owner/Family Occupancy",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 151.09.A.10, § 165.03.I, § 151.22-151.28; Cal. Gov. Code § 7060.4",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units covered by the RSO or JCO.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The landlord seeks in good faith to recover possession of the rental unit to demolish, convert to a commercial use, or remove it from rental housing use (LAMC 151.09.A.10, 165.03.I). For RSO units, these are considered Ellis Act (California Government Code 7060.4) evictions, and the landlord must comply with the requirements of LAMC 151.22-151.28.",
+        "relations_hint": [
+          "Ellis Act provisions apply to RSO units"
+        ],
+        "requirement": "Landlord may evict in good faith to recover possession to demolish, convert to commercial use, or remove the unit from rental housing use, subject to Ellis Act requirements (for RSO units) and LAMC 151.22-151.28 compliance.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "No-Fault Eviction for Demolition, Conversion, or Removal from Rental Use",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 151.09.A.11, § 165.03.J",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units covered by the RSO or JCO.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The landlord evicts to comply with a governmental agency's Order to Vacate (LAMC 151.09.A.11, 165.03.J.). Prior to giving notice to tenants, landlords must file a Landlord Declaration of Intent to Evict.",
+        "relations_hint": [],
+        "requirement": "Landlord may evict to comply with a governmental agency's Order to Vacate. Landlord must file Declaration of Intent to Evict with LAHD prior to giving notice to tenants.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "No-Fault Eviction to Comply with Government Agency Order",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 151.09.A.12, § 165.03.K",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units covered by the RSO or JCO.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The Secretary of Housing and Urban Development is both the owner and plaintiff and seeks to recover possession to vacate the property prior to sale (LAMC 151.09.A.12, 165.03.K.).",
+        "relations_hint": [],
+        "requirement": "Secretary of Housing and Urban Development, as both owner and plaintiff, may evict to recover possession to vacate the property prior to sale.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "No-Fault Eviction - HUD Secretary as Owner",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 151.09.A.13, § 165.03.L",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units covered by the RSO or JCO.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Residential Hotel Unit conversion or demolition (LAMC 151.09.A.13, 165.03.L.).",
+        "relations_hint": [],
+        "requirement": "Landlord may evict for residential hotel unit conversion or demolition.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "No-Fault Eviction for Residential Hotel Unit Conversion or Demolition",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 151.09.A.14, § 165.03.M",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units covered by the RSO or JCO.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The landlord seeks to recover possession of the rental unit to convert the subject property to an affordable housing accommodation (LAMC 151.09.A.14, 165.03.M.).",
+        "relations_hint": [],
+        "requirement": "Landlord may evict to recover possession of the rental unit to convert the property to an affordable housing accommodation.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "No-Fault Eviction to Convert to Affordable Housing",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 47.06, § 47.07",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The landlord demolishes the property or converts the use of the property to condominiums, stock cooperatives, community apartment projects, hotels, and commercial uses, regardless of whether the property is subject to the RSO OR JCO (LAMC 47.06 & 47.07).",
+        "relations_hint": [],
+        "requirement": "Landlord may demolish property or convert to condominiums, stock cooperatives, community apartment projects, hotels, and commercial uses, regardless of whether property is subject to RSO or JCO.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Eviction for Demolition, Conversion to Condo/Commercial Regardless of RSO/JCO Coverage",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 151.09.G, § 165.06",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units covered by the RSO or JCO.",
+        "effective_date": "2026-07-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "eligible_tenant_relocation_less_than_3_years",
+            "text": "$11,000",
+            "unit": "usd",
+            "valid_from": "2026-07-01",
+            "valid_to": "2027-06-30",
+            "value": 11000
+          },
+          {
+            "name": "eligible_tenant_relocation_3_years_or_more",
+            "text": "$14,400",
+            "unit": "usd",
+            "valid_from": "2026-07-01",
+            "valid_to": "2027-06-30",
+            "value": 14400
+          },
+          {
+            "name": "qualified_tenant_relocation_less_than_3_years",
+            "text": "$23,150",
+            "unit": "usd",
+            "valid_from": "2026-07-01",
+            "valid_to": "2027-06-30",
+            "value": 23150
+          },
+          {
+            "name": "qualified_tenant_relocation_3_years_or_more",
+            "text": "$27,400",
+            "unit": "usd",
+            "valid_from": "2026-07-01",
+            "valid_to": "2027-06-30",
+            "value": 27400
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Chart A: Relocation Assistance Amounts Effective July 1, 2026 through June 30, 2027 Household $11,000 $14,400 $10,550 One month's rent Qualified Household $23,150 $27,400 $21,250 Increases every July 1st.",
+        "relations_hint": [
+          "Increases every July 1st"
+        ],
+        "requirement": "Landlord must pay relocation assistance to eligible tenants based on length of tenancy. Amounts are $11,000 for less than 3 years of tenancy and $14,400 for 3 years or more.",
+        "sunset_date": "2027-06-30",
+        "tenancy_conditions": [],
+        "title": "Relocation Assistance for No-Fault Evictions - Eligible Tenant Amounts",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 151.09.G, § 165.06",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units covered by the RSO or JCO.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "relocation_payment_deadline",
+            "text": "within fifteen (15) days of service of the written notice of eviction",
+            "unit": "days",
+            "value": 15
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Payment shall be made available within fifteen (15) days of service of the written notice of eviction; however, At the landlord's sole discretion and cost, the landlord may elect to pay the monetary relocation benefits through an escrow account.",
+        "relations_hint": [],
+        "requirement": "Landlord must make relocation assistance payment available within 15 days of service of the written notice of eviction.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Relocation Assistance Payment Deadline",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 151.09.G, § 165.06; RAC Regulations § 960.00",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units covered by the RSO or JCO.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "escrow_placement_deadline",
+            "text": "within the required 15-day period",
+            "unit": "days",
+            "value": 15
+          },
+          {
+            "name": "escrow_payment_deadline",
+            "text": "within three (3) working days of receiving a payment request",
+            "unit": "days",
+            "value": 3
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "At the landlord's sole discretion and cost, the landlord may elect to pay the monetary relocation benefits through an escrow account. The monies must be placed in the escrow account within the required 15-day period. The escrow account must provide for payments to the tenant(s) for actual relocation expenses incurred by the tenant before vacating the unit for the following relocation expenses: first and last month's rent; security deposit; utility connection charges; moving expenses. Payments from the escrow account shall be made within three (3) working days of receiving a payment request.",
+        "relations_hint": [],
+        "requirement": "Landlord may elect to pay relocation benefits through an escrow account at landlord's sole discretion and cost. Monies must be placed in escrow within 15 days, account must provide for relocation expenses (first/last rent, security deposit, utility connection, moving), and payments must be made within 3 working days of request.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Relocation Assistance - Escrow Account Option",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 151.09.G, § 165.06",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units covered by the RSO or JCO.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Relocation Assistance is paid per unit, not per tenant. The entire payment shall be made to a tenant who is the only tenant in a rental unit. If two or more tenants occupy a rental unit, each tenant shall be paid an equal pro rata share of the payment. If more than one payment amount applies to a unit, the landlord pays the higher amount for the unit.",
+        "relations_hint": [],
+        "requirement": "Relocation assistance is paid per unit, not per tenant. If two or more tenants occupy a unit, each tenant receives an equal pro rata share. If multiple payment amounts apply, the higher amount is paid.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Relocation Assistance - Distribution Among Multiple Tenants",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 151.09.G, § 165.06; RAC Regulations § 920.00",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units covered by the RSO or JCO.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [
+          {
+            "description": "Evicting a resident manager to replace with another resident manager (unless Manager-Tenant receiving free or reduced rent)",
+            "predicate": {
+              "fact": "resident_manager_replacement",
+              "op": "==",
+              "value": true
+            }
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Landlords are exempt from paying relocation assistance when: Evicting a resident manager to replace him/her with another resident manager. If the resident manager is a Manager -Tenant receiving free or reduced rent with no other compensation, he/she may be entitled to relocation assistance.",
+        "relations_hint": [],
+        "requirement": "Landlord is exempt from paying relocation assistance when evicting a resident manager to replace with another resident manager, except if the resident manager is a Manager-Tenant receiving free or reduced rent.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Exemption from Relocation Assistance - Resident Manager Replacement",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 151.09.G, § 165.06",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units covered by the RSO or JCO.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [
+          {
+            "description": "Natural disaster-caused hazardous conditions not caused by landlord negligence",
+            "predicate": {
+              "fact": "natural_disaster_eviction",
+              "op": "==",
+              "value": true
+            }
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Landlords are exempt from paying relocation assistance when: They are required to evict due to hazardous conditions caused by a natural disaster , which is not caused by the landlord's negligence.",
+        "relations_hint": [],
+        "requirement": "Landlord is exempt from paying relocation assistance when required to evict due to hazardous conditions caused by a natural disaster not caused by the landlord's negligence.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Exemption from Relocation Assistance - Natural Disaster",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 151.09.G.5, § 165.06.J",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units covered by the RSO or JCO.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [
+          {
+            "description": "No offset allowed if relocation assistance is owed due to governmental agency order to vacate or unpermitted dwelling",
+            "predicate": {
+              "any": [
+                {
+                  "fact": "governmental_order_to_vacate",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "fact": "unpermitted_dwelling",
+                  "op": "==",
+                  "value": true
+                }
+              ]
+            }
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Relocation Offset: A landlord may offset the tenant's accumulated rent against any relocation assistance, unless the relocation assistance is owed because a termination of tenancy is required by a governmental agency order to vacate or comply with an issued order for an unpermitted dwelling.",
+        "relations_hint": [],
+        "requirement": "Landlord may offset the tenant's accumulated rent against any relocation assistance, unless relocation assistance is owed because a governmental agency order to vacate is required or the dwelling is unpermitted.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Relocation Assistance Offset - Accumulated Rent",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 151.09.G, § 165.06",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units covered by the RSO or JCO requiring relocation assistance.",
+        "effective_date": "2026-07-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "relocation_service_fee_eligible_tenant",
+            "text": "$623",
+            "unit": "usd",
+            "valid_from": "2026-07-01",
+            "valid_to": "2027-06-30",
+            "value": 623
+          },
+          {
+            "name": "relocation_service_fee_qualified_tenant",
+            "text": "$1002",
+            "unit": "usd",
+            "valid_from": "2026-07-01",
+            "valid_to": "2027-06-30",
+            "value": 1002
+          },
+          {
+            "name": "relocation_administrative_fee",
+            "text": "$86",
+            "unit": "usd",
+            "valid_from": "2026-07-01",
+            "valid_to": "2027-06-30",
+            "value": 86
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "All landlords who file a declaration requiring relocation assistance to be provided to tenants shall pay the Relocation Service Fee, according to the tenants' Eligible or Qualified status, AND a Relocation Administrative Fee per rental unit. Application Fees Effective July 1, 2026 to June 30, 2027 FEE PER UNIT Relocation Service Fee for Eligible Tenants $623* Relocation Service Fee for Qualified Tenants $1002* Relocation Service Administrative Fee $86*",
+        "relations_hint": [
+          "Increases every July 1st"
+        ],
+        "requirement": "Landlord must pay Relocation Service Fee for Eligible Tenants of $623 per unit and a Relocation Administrative Fee of $86 per unit when filing a declaration requiring relocation assistance.",
+        "sunset_date": "2027-06-30",
+        "tenancy_conditions": [],
+        "title": "Administrative Fees - Relocation Service Fee for Eligible Tenants",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 151.09.G, § 165.06",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units subject to demolition permitting.",
+        "effective_date": "2026-07-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "demolition_monitoring_administrative_fee",
+            "text": "$46",
+            "unit": "usd",
+            "valid_from": "2026-07-01",
+            "valid_to": "2027-06-30",
+            "value": 46
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "All property owners who seek the LAHD's clearance of a Planning or Building and Safety Department demolition permit shall pay a Demolition Monitoring Administrative Fee. Application Fees Effective July 1, 2026 to June 30, 2027 FEE PER UNIT Demolition Monitoring Administrative Fee $46",
+        "relations_hint": [],
+        "requirement": "Property owners seeking LAHD clearance of a Planning or Building and Safety Department demolition permit must pay Demolition Monitoring Administrative Fee of $46 per unit.",
+        "sunset_date": "2027-06-30",
+        "tenancy_conditions": [],
+        "title": "Administrative Fee - Demolition Monitoring",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 151.09.G, § 165.06.C",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units covered by the RSO or JCO with relocation assistance disputes.",
+        "effective_date": "2026-07-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "relocation_assistance_dispute_resolution_fee",
+            "text": "$300",
+            "unit": "usd",
+            "valid_from": "2026-07-01",
+            "valid_to": "2027-06-30",
+            "value": 300
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Requests for a hearing to appea l a decision regarding a tenant's relocation assistance eligibility for higher relocation assistance based on a tenant's income, age, length of tenancy, family status and/or disability status must be filed along with the Relocation Assistance Dispute Resolution Fee (LAMC 151.09.G, 165.06.C.). Application Fees Effective July 1, 2026 to June 30, 2027 FEE PER UNIT Relocation Assistance Dispute Resolution Fee $300",
+        "relations_hint": [],
+        "requirement": "Landlords filing a request for hearing to appeal a decision regarding tenant relocation assistance eligibility must pay Relocation Assistance Dispute Resolution Fee of $300.",
+        "sunset_date": "2027-06-30",
+        "tenancy_conditions": [],
+        "title": "Administrative Fee - Relocation Assistance Dispute Resolution",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 151.09.C.2, § 165.06.F",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units covered by the RSO or JCO.",
+        "effective_date": "2026-07-01",
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "owner_family_manager_occupancy_filing_fee",
+            "text": "$75",
+            "unit": "usd",
+            "valid_from": "2026-07-01",
+            "valid_to": "2027-06-30",
+            "value": 75
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "When the termination of tenancy is due to recover possession of the rental unit for use of occupancy as a primary place of residence by the landlord, the landlord's qualified family member, or resident manager, the landlord shall pay an administrative fee for the filing of the application (LAMC 151.09.C.2, 165.06.F.). Application Fees Effective July 1, 2026 to June 30, 2027 FEE PER UNIT Landlord Declaration for Owner, Eligible Relative, or Resident Manager Occupancy Filing $75",
+        "relations_hint": [],
+        "requirement": "Landlord must pay administrative fee of $75 per unit for filing application for termination of tenancy to recover possession for use of occupancy as primary residence by landlord, qualified family member, or resident manager.",
+        "sunset_date": "2027-06-30",
+        "tenancy_conditions": [],
+        "title": "Administrative Fee - Owner/Relative/Manager Occupancy Filing",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 151.09.G, § 165.06",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units covered by the RSO or JCO.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Non-payment Dispute - In an action by the landlord to recover possession of a rental unit, the tenant may raise as an affirmative defense the failure of the landlord to provide relocation assistance. A tenant may file a complaint with LAHD online at https://housing.lacity.gov/residents/file-a-rso-complaint or call the general hotline at (866) 557-7368. A tenant may seek a private right of action by obtaining legal advice.",
+        "relations_hint": [],
+        "requirement": "Tenant may raise failure to provide relocation assistance as affirmative defense in landlord's eviction action, file complaint with LAHD, or seek private right of action with legal advice.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Tenant Remedy - Failure to Provide Relocation Assistance",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 151.30, § 165.06.A.(6)",
+        "coverage": {
+          "all": [
+            {
+              "fact": "units",
+              "op": "<=",
+              "value": 4
+            },
+            {
+              "fact": "owner_is_natural_person",
+              "op": "==",
+              "value": true
+            },
+            {
+              "fact": "owner_occupied",
+              "op": "==",
+              "value": true
+            },
+            {
+              "fact": "property_type",
+              "op": "==",
+              "value": "single_family"
+            }
+          ]
+        },
+        "coverage_text": "Single-family dwellings or buildings with 4 or fewer units owned by a natural person who occupies one unit and owns a single-family home on a separate lot.",
+        "effective_date": "2026-07-01",
+        "effective_expression": null,
+        "exemptions": [
+          {
+            "description": "Mom and Pop reduced relocation only applies if building has 4 or fewer rental units, landlord has not used provision in prior 3 years, landlord owns no more than 4 units plus single-family home on separate lot, and eligible relative does not own residential property in LA",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "units",
+                  "op": "<=",
+                  "value": 4
+                },
+                {
+                  "fact": "landlord_property_count",
+                  "op": "<=",
+                  "value": 5
+                },
+                {
+                  "fact": "eligible_relative_la_property_owner",
+                  "op": "==",
+                  "value": false
+                }
+              ]
+            }
+          }
+        ],
+        "key_values": [
+          {
+            "name": "mom_pop_eligible_household_relocation",
+            "text": "$10,550",
+            "unit": "usd",
+            "valid_from": "2026-07-01",
+            "valid_to": "2027-06-30",
+            "value": 10550
+          },
+          {
+            "name": "mom_pop_qualified_household_relocation",
+            "text": "one month's rent",
+            "unit": null,
+            "valid_from": "2026-07-01",
+            "valid_to": "2027-06-30",
+            "value": null
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Mom and Pop properties may pay reduced relocation assistance payments to their tenants for a good faith eviction for occupancy by the owner or eligible relative, provided that requirements in Section 151.30 of the LAMC are met. This applies only for evictions for occupancy by owner, family, or manager. Chart A: Relocation Assistance Amounts Effective July 1, 2026 through June 30, 2027 Household $11,000 $14,400 $10,550 One month's rent Qualified Household $23,150 $27,400 $21,250",
+        "relations_hint": [
+          "Mom and Pop reduction only for occupancy by owner, family, or manager"
+        ],
+        "requirement": "Mom and Pop properties (4 or fewer units, owner-occupied with single-family home on separate lot, no use of reduction in prior 3 years, eligible relative owns no property in LA) may pay reduced relocation assistance ($10,550 for household; one month's rent for qualified household) for good faith owner/family occupancy evictions, subject to LAMC 151.30 requirements.",
+        "sunset_date": "2027-06-30",
+        "tenancy_conditions": [],
+        "title": "Mom and Pop Properties - Reduced Relocation Assistance for Owner/Family Occupancy",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 165.06.A.(6)",
+        "coverage": {
+          "all": [
+            {
+              "fact": "property_type",
+              "op": "==",
+              "value": "single_family"
+            },
+            {
+              "fact": "owner_is_natural_person",
+              "op": "==",
+              "value": true
+            },
+            {
+              "fact": "landlord_property_count",
+              "op": "<=",
+              "value": 5
+            }
+          ]
+        },
+        "coverage_text": "Single-family dwellings subject to JCO where owner is a natural person owning no more than 4 dwelling units plus a single-family home on a separate lot in Los Angeles.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "single_family_jco_relocation",
+            "text": "one month's rent that was in effect when the landlord served the written notice to terminate the tenancy",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Single Family Dwellings Owned by Natural Persons When the residential real property is a single-family dwelling subject to the JCO and the owner is a natural person, including natural persons who hold properties in a trust or registered legal entity controlled by that natural person, who owns no more than four dwelling units and a single-family home on a separate lot in the City of Los Angeles: one month's rent that was in effect when the landlord served the written notice to terminate the tenancy, as either a monetary payment or credit. The Los Angeles Municipal Code Section 151.30(E) shall not apply. (LAMC 165.06.A.(6)).",
+        "relations_hint": [
+          "LAMC 151.30(E) does not apply"
+        ],
+        "requirement": "When residential real property is a single-family dwelling subject to the JCO and owner is a natural person owning no more than 4 dwelling units plus a single-family home on separate lot in LA, tenant receives one month's rent as relocation assistance as monetary payment or credit. LAMC 151.30(E) does not apply.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Single Family Dwelling - Natural Person Owner JCO Relocation",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 47.06.D.2",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential rental units subject to condominium conversion with approved tentative parcel or tract map.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "If the City of Los Angeles Planning Department has approved a tentative parcel or tract map for a condominium conversion, the tenant may elect to relocate without receiving a Notice to Terminate Tenancy from the landlord (LAMC Sec. 47.06.D.2). The landlord is still responsible for the payment of relocation assistance in these cases.",
+        "relations_hint": [],
+        "requirement": "If City of Los Angeles Planning Department has approved a tentative parcel or tract map for condominium conversion, tenant may elect to relocate without receiving Notice to Terminate Tenancy from landlord. Landlord remains responsible for paying relocation assistance.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Condominium Conversion - Tenant Early Relocation Right",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 165.03.I(1); Cal. Gov. Code § 66300 et seq.",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All Protected Units subject to demolition for new construction.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "notice_filing_deadline_demolition",
+            "text": "within 3 business days",
+            "unit": "days",
+            "value": 3
+          },
+          {
+            "name": "relocation_payment_deadline_demolition",
+            "text": "within 15 days of serving a notice to terminate tenancy",
+            "unit": "days",
+            "value": 15
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "Failure to comply with the RPO may result in financial penalties starting at $250,000 per displaced unit and withholding of LAHD permit clearances.",
+        "quote": "To terminate tenancy for the purpose of demolition of a Protected Unit, a landlord must: File with LAHD a Declaration of Intent to Evict for units regulated by the JCO per the Los Angeles Municipal Code (LAMC) Section 165.03.I(1) or file with LAHD a Notice of Intent to Withdraw Units From Rental Housing Use for units regulated by the RSO. Serve tenants with a written notice to move out and file a copy of it with LAHD within 3 business days online at https://lahd.service-now.com/efs. Pay relocation assistance to tenants in compliance with the State law's Housing Crisis Act (California Government Code Section 66300 et seq.) or the City laws, whichever is higher.",
+        "relations_hint": [
+          "Ellis Act provisions (LAMC 151.22-151.28) apply only to RSO units"
+        ],
+        "requirement": "To terminate tenancy for demolition of a Protected Unit, landlord must file Declaration of Intent to Evict (JCO units) or Notice of Intent to Withdraw (RSO units) with LAHD, serve written notice to move out and file copy with LAHD within 3 business days, and pay relocation assistance per HCA or City law, whichever is higher, within 15 days of notice.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Demolition for New Construction - Landlord Requirements",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": "effective 2/11/2025 under Ordinances # 188481 and #188482",
+        "approval_date": "2025-02-11",
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 165.03.I(1); Ordinances # 188481 and #188482",
+        "coverage": {
+          "all": [
+            {
+              "fact": "subsidized_or_affordable",
+              "op": "==",
+              "value": true
+            }
+          ]
+        },
+        "coverage_text": "Protected Units being demolished for new construction where tenants are low-income, very-low-income, or extremely-low-income households.",
+        "effective_date": "2026-07-01",
+        "effective_expression": "effective 2/11/2025 under Ordinances # 188481 and #188482",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "rpo_extremely_low_income_relocation",
+            "text": "$115,480",
+            "unit": "usd",
+            "valid_from": "2026-07-01",
+            "valid_to": "2027-06-30",
+            "value": 115480
+          },
+          {
+            "name": "rpo_very_low_income_relocation",
+            "text": "$96,750",
+            "unit": "usd",
+            "valid_from": "2026-07-01",
+            "valid_to": "2027-06-30",
+            "value": 96750
+          },
+          {
+            "name": "rpo_low_income_relocation",
+            "text": "$87,450",
+            "unit": "usd",
+            "valid_from": "2026-07-01",
+            "valid_to": "2027-06-30",
+            "value": 87450
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "CHART B: Resident Protections Ordinance Standardized Payments (Only for Low, Very Low and Extremely Low Income Households) Effective July 1, 2026 through June 30, 2027 (Increases July 1st) Household Type Extremely Low Income Very Low Income Low Income Above Low Income Tenants Displaced by New Development $115,480 $96,750 $87,450 See Chart A (RSO or JCO amounts)",
+        "relations_hint": [
+          "Increases July 1st"
+        ],
+        "requirement": "For demolition of Protected Units for new construction, low-income households receive standardized relocation payments: $115,480 (extremely low income), $96,750 (very low income), $87,450 (low income). Above low-income households receive standard RSO/JCO amounts.",
+        "sunset_date": "2027-06-30",
+        "tenancy_conditions": [],
+        "title": "RPO Standardized Payment for Low-Income Tenants - New Construction Demolition",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": "effective 2/11/2025 under Ordinances # 188481 and #188482",
+        "approval_date": "2025-02-11",
+        "category": "just_cause_eviction",
+        "cite": "Resident Protections Ordinance (RPO); Ordinances # 188481 and #188482",
+        "coverage": {
+          "all": [
+            {
+              "fact": "subsidized_or_affordable",
+              "op": "==",
+              "value": true
+            }
+          ]
+        },
+        "coverage_text": "Protected Units being demolished for new construction under RPO Option 1.",
+        "effective_date": null,
+        "effective_expression": "effective 2/11/2025 under Ordinances # 188481 and #188482",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Under Option 1, the City's Relocation Consultant handles the entire relocation determination amount process and provides relocation services to tenants. Option 1 has predictable relocation consultant services fees for owners and predictable relocation payments to lower income households at the amounts in Chart B per RPO. The households that are above low income are paid relocation under Chart A. The City Relocation Consultant service fees charged to the owner for relocation services are paid upfront to LAHD by the owner (See the APPLICATION RELOCATION SERVICES FEES CHART on page 6).",
+        "relations_hint": [],
+        "requirement": "Under RPO Option 1, City's Relocation Consultant handles relocation determination and provides services. Owner pays upfront consultant fees to LAHD. Low-income households receive Chart B amounts; above low-income households receive Chart A (RSO/JCO) amounts.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "RPO Option 1 - Standardized Payment with City Relocation Consultant",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": "effective 2/11/2025 under Ordinances # 188481 and #188482",
+        "approval_date": "2025-02-11",
+        "category": "just_cause_eviction",
+        "cite": "Resident Protections Ordinance (RPO); Ordinances # 188481 and #188482",
+        "coverage": {
+          "all": [
+            {
+              "fact": "subsidized_or_affordable",
+              "op": "==",
+              "value": true
+            }
+          ]
+        },
+        "coverage_text": "Protected Units being demolished for new construction under RPO Option 2.",
+        "effective_date": null,
+        "effective_expression": "effective 2/11/2025 under Ordinances # 188481 and #188482",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "For Option 2, the owner must provide a letter from the LAHD Housing Development Bureau approving the comparable replacement unit in compliance with State law at the time of filing with LAHD. If the owner does not have the approval letter, then they may choose Option 1 or 3 to proceed with the filing of the Notice of Intent to Withdraw or the Declaration of Intent to Evict. Additionally, the owner must comply with the RSO or JCO relocation requirements in Chart A.",
+        "relations_hint": [],
+        "requirement": "Under RPO Option 2, owner must provide LAHD-approved letter for comparable replacement unit and comply with RSO/JCO relocation requirements in Chart A. Owner pays upfront consultant fees for finding comparable unit.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "RPO Option 2 - Comparable Replacement Unit with RSO/JCO Relocation",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": "effective 2/11/2025 under Ordinances # 188481 and #188482",
+        "approval_date": "2025-02-11",
+        "category": "just_cause_eviction",
+        "cite": "Resident Protections Ordinance (RPO); Ordinances # 188481 and #188482; Cal. Gov. Code § 66300 et seq.",
+        "coverage": {
+          "all": [
+            {
+              "fact": "subsidized_or_affordable",
+              "op": "==",
+              "value": true
+            }
+          ]
+        },
+        "coverage_text": "Protected Units being demolished for new construction under RPO Option 3.",
+        "effective_date": null,
+        "effective_expression": "effective 2/11/2025 under Ordinances # 188481 and #188482",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "rpo_option_3_rso_jco_payment_deadline",
+            "text": "within 15 days of filing the Notice of Intent to Withdraw or the Declaration of Intent to Evict",
+            "unit": "days",
+            "value": 15
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "For Option 3, the owner must provide an approval letter from the LAHD Housing Development Bureau approving a relocation plan and the private relocation consultant in compliance with State law. If the owner does not have an approval letter, then they may choose Option 1 or 2 to proceed with the filing of the Notice of Intent to Withdraw or Declaration of Intent to Evict. The cost of hiring a private relocation consultant and the final relocation amounts for tenants are unknown until the end of the withdrawal process. In addition to complying with relocation amounts under Option 3, the owner is required to pay tenants the RSO or JCO relocation amounts within 15 days of filing the Notice of Intent to Withdraw or the Declaration of Intent to Evict, which will be supplemented only if the owner's private consultant determines it is required under State law.",
+        "relations_hint": [
+          "Relocation payment timing above RSO/JCO amount regulated by state law"
+        ],
+        "requirement": "Under RPO Option 3, owner must provide LAHD-approved relocation plan and private consultant letter. Owner pays for private consultant fees (negotiated separately) plus upfront City consultant fees. Owner must pay RSO/JCO amounts within 15 days, supplemented only if private consultant determines State law requires it.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "RPO Option 3 - Individualized Relocation with Private Consultant",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": null,
+        "category": "just_cause_eviction",
+        "cite": "LAMC § 165.06",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All tenants in Protected Units being demolished for new construction.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Qualified tenant – A qualified tenant is any tenant who on the date of service of the written notice of termination is 62 years of age or older; handicapped, as defined in Section 50072 of the California Health and Safety Code, or disabled, as defined in Title 42 of the United States Code, Section 423; or who has one or more minor dependent children (as determined for federal income tax purposes). Eligible tenant – Unless a tenant is a qualified tenant as explained above, the tenant is an eligible tenant and is entitled to receive a relocation assistance amount that depends on length of time in the unit and income. Low Income Tenant – A tenant whose income is 80 percent or less of the Area Median Income, as adjusted for household size, as defined by the U.S. Department of Housing and Urban Development, regardless of the length of tenancy.",
+        "relations_hint": [],
+        "requirement": "Qualified tenant is 62+ years old, handicapped/disabled, or has minor dependent children. Eligible tenant is any other tenant entitled to relocation based on length of tenancy and income. Low-income tenant has income 80% or less of AMI adjusted for household size.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "RPO Qualified and Eligible Tenant Definitions",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 11268,
+    "output_tokens": 13559
+  }
+}

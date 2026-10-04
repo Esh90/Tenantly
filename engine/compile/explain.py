@@ -13,7 +13,7 @@ import re
 import textstat
 
 from engine import config
-from engine.compile.llm import LLM
+from engine.compile.llm import LLM, NoToolCall
 from engine.compile.tools import EMIT_PLAIN, load_prompt
 from engine.ir import Rule
 
@@ -87,8 +87,12 @@ def explain_rule(llm: LLM, rule: Rule) -> Rule:
             if attempt == 1
             else f"\nYour previous answer failed: {'; '.join(problems)}. Fix this."
         )
-        res = llm.call(stage="explain", model=config.MODEL_FAST, system=system, user=user + extra,
-                       tool=EMIT_PLAIN, prompt_version=version, ref=rule.rule_id, max_tokens=1500)  # fmt: skip
+        try:
+            res = llm.call(stage="explain", model=config.MODEL_FAST, system=system, user=user + extra,
+                           tool=EMIT_PLAIN, prompt_version=version, ref=rule.rule_id, max_tokens=1500)  # fmt: skip
+        except NoToolCall:
+            problems = ["the model returned no structured answer"]
+            continue
         out = res.output
         problems = check(rule, out)
         if not problems:

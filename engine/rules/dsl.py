@@ -94,7 +94,7 @@ class AsOfMinusYears:
 
 @dataclass(frozen=True)
 class Const:
-    value: bool
+    value: bool | None  # None is the explicit "unknown" constant: an exemption we cannot express
 
 
 @dataclass(frozen=True)
@@ -140,8 +140,10 @@ def parse(d: dict) -> Node:
         raise DslError(f"predicate must be an object, got {type(d).__name__}")
     keys = set(d)
     if keys == {"const"}:
+        if d["const"] == "unknown":
+            return Const(None)
         if not isinstance(d["const"], bool):
-            raise DslError("const must be true or false")
+            raise DslError("const must be true, false or 'unknown'")
         return Const(d["const"])
     if keys == {"all"} or keys == {"any"}:
         kids = d["all"] if "all" in d else d["any"]
@@ -204,7 +206,7 @@ def validate(d: dict) -> list[str]:
 
 def to_dict(node: Node) -> dict:
     if isinstance(node, Const):
-        return {"const": node.value}
+        return {"const": "unknown" if node.value is None else node.value}
     if isinstance(node, AllOf):
         return {"all": [to_dict(c) for c in node.children]}
     if isinstance(node, AnyOf):
@@ -359,7 +361,7 @@ def evaluate(node: Node, env: FactEnv, as_of: date) -> Evaluation:
     """Kleene evaluation. ``unknown_facts`` lists only the facts that kept the result open:
     an FALSE ``all`` or a TRUE ``any`` is decided, so it reports none."""
     if isinstance(node, Const):
-        return Evaluation(Tri.of(node.value))
+        return Evaluation(Tri.UNKNOWN if node.value is None else Tri.of(node.value))
     if isinstance(node, Exists):
         known = not env.get(node.fact, as_of).unknown
         spec = FACTS[node.fact]

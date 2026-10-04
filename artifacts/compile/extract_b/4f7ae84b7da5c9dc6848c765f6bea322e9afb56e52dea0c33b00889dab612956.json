@@ -1,0 +1,83 @@
+{
+  "cost_usd": 0.009336,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": null,
+        "approval_date": "2025-11-18",
+        "category": "algorithmic_rent_setting",
+        "cite": "BMC § 13.63.030(A)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential dwelling units in Berkeley.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [
+          {
+            "description": "Products or processes that generate or present reports, studies, or presentations publishing rental data in aggregated and anonymous manner without recommending rent prices, fees, or occupancy rates",
+            "predicate": {
+              "const": true
+            },
+            "quote": "does not include (a) a product or process that generates or presents any report, study, or presentation that publishes rental data in an aggregated and anonymous manner but does not recommend rent prices, fees, or occupancy rates or other rental contract terms for future leases"
+          },
+          {
+            "description": "Products used for establishing rent or income limits in accordance with affordable housing guidelines",
+            "predicate": {
+              "const": true
+            },
+            "quote": "(b) a product used for the purpose of establishing rent or income limits in accordance with the affordable housing guidelines of a local government, the state, the federal government, or other political subdivision"
+          },
+          {
+            "description": "Products that provide information for market research for project financing, appraisals, or research, testing, or training for software development",
+            "predicate": {
+              "const": true
+            },
+            "quote": "(c) a product or process that provides or uses, or the provision or use of, information for the purpose of (i) conducting market research for project financing, (ii) conducting an appraisal, or (iii) conducting research, testing, or training for software development"
+          }
+        ],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": "Civil penalties of up to $1,000 per violation; City Attorney may seek damages, injunctive relief, and restitution",
+        "quote": "It shall be unlawful to sell, license, or otherwise provide to City of Berkeley landlords any coordinated pricing algorithm that sets or recommends rents or occupancy levels that may be achieved for residential dwelling units in the City of Berkeley.",
+        "relations_hint": [],
+        "requirement": "It is unlawful to sell, license, or provide to Berkeley landlords any coordinated pricing algorithm that sets or recommends rents or occupancy levels for residential dwelling units in Berkeley.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Prohibition on Sale of Coordinated Pricing Algorithms",
+        "uncertain_fields": []
+      },
+      {
+        "anchor_quote": null,
+        "approval_date": "2025-11-18",
+        "category": "algorithmic_rent_setting",
+        "cite": "BMC § 13.63.030(B)",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential dwelling units in Berkeley.",
+        "effective_date": null,
+        "effective_expression": null,
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": "Civil penalties of up to $1,000 per violation; tenants may seek injunctive relief, damages, and attorney's fees",
+        "quote": "It shall be unlawful for a landlord to use a coordinated pricing algorithm described in subsection A when setting rents or occupancy levels for residential dwelling units in the City of Berkeley. Each separate month that a violation exists or continues, and each separate residential dwelling unit for which the landlord used the coordinated pricing algorithm, shall constitute a separate and distinct violation.",
+        "relations_hint": [],
+        "requirement": "Landlords must not use coordinated pricing algorithms when setting rents or occupancy levels for residential dwelling units in Berkeley. Each month of violation and each unit involved constitute separate violations.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Prohibition on Landlord Use of Coordinated Pricing Algorithms",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 4161,
+    "output_tokens": 1035
+  }
+}

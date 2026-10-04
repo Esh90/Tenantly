@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002485,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "The search for application_screening_fees at the city level in San Diego, CA found no relevant text in the provided documents. Document D073 is a truncated ordinance chapter on housing but contains no text about application screening fees. Document D076 is a staff report about anti-competitive pricing (unrelated to screening fees). The link-only documents reference fair housing issues, tenant protection measures, and algorithmic pricing restrictions, but none specifically address refund requirements for inadvertent concurrent fee collection related to application screening fees. No applicable regulation text was supplied in the sources provided.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1515,
+    "output_tokens": 194
+  }
+}

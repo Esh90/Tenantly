@@ -34,6 +34,20 @@ def jurisdiction_for(label: str) -> JurisdictionRef:
     )  # fmt: skip
 
 
+def resolve_jurisdiction(text: str) -> JurisdictionRef:
+    """Accept a label ("Berkeley, CA"), a state code or name, or a bare city name."""
+    t = text.strip()
+    if t in STATES or t in CITY_BY_LABEL:
+        return jurisdiction_for(t)
+    for code, (_, name) in STATES.items():
+        if t.lower() in (name.lower(), f"state of {name.lower()}"):
+            return jurisdiction_for(code)
+    for c in CITIES:
+        if t.lower() in (c.name.lower(), c.label.lower(), f"city of {c.name.lower()}"):
+            return jurisdiction_for(c.label)
+    raise KeyError(text)
+
+
 @dataclass
 class DocView:
     doc: Doc

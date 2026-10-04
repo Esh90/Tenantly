@@ -211,7 +211,7 @@ def test_alerts(client):
     SubscriptionCreated.model_validate(r.json())
     assert "<feed" in client.get("/v1/alerts/feed/A0016.atom").text
     assert "BEGIN:VCALENDAR" in client.get("/v1/alerts/calendar/A0016.ics").text
-    assert client.delete("/v1/alerts/subscriptions/tok").status_code == 204
+    assert client.delete("/v1/alerts/subscriptions/tok").json() == {"ok": True}
 
 
 def test_proof_and_audit(client):

@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002386,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "Document D036 is marked as guidance but provides only truncated text about Landlord/Tenant Relations without substantive content on algorithmic rent setting. The link-only sources (D035, D037, D060-D064) reference algorithmic rent pricing and bans but no actual text content is supplied from these sources. While there is a state-level rule (NJ-ALG-01) indicating a ban on algorithmic rent coordination exists at the state level, no actual text of a Jersey City city-level rule or ordinance has been supplied in the documents provided.",
+    "quote": null,
+    "result": "text_not_supplied",
+    "section_id": null
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1221,
+    "output_tokens": 233
+  }
+}

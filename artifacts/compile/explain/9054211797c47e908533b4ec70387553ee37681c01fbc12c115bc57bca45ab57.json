@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002238,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords must give tenants an itemized statement and return any remaining depósito de seguridad within 21 calendar days after the tenant moves out.",
+    "summary_es": "Los arrendadores deben darles a los inquilinos un estado de cuenta detallado y devolver cualquier depósito de seguridad restante dentro de 21 días de calendario después de que el inquilino se mude.",
+    "who_en": "This rule applies to residential rental properties used as a tenant's dwelling.",
+    "who_es": "Esta regla se aplica a las propiedades residenciales de alquiler utilizadas como vivienda de un inquilino."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1058,
+    "output_tokens": 236
+  }
+}

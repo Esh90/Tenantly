@@ -1,0 +1,42 @@
+[
+  {
+    "affected": 250,
+    "conflicts": 0,
+    "expected": 250,
+    "expected_conflicts": 0,
+    "passed": true,
+    "test_id": "T1"
+  },
+  {
+    "affected": 90,
+    "conflicts": 0,
+    "expected": 90,
+    "expected_conflicts": 0,
+    "passed": true,
+    "test_id": "T2"
+  },
+  {
+    "affected": 139,
+    "conflicts": 89,
+    "expected": 140,
+    "expected_conflicts": 90,
+    "passed": false,
+    "test_id": "T3"
+  },
+  {
+    "affected": 110,
+    "conflicts": 0,
+    "expected": 110,
+    "expected_conflicts": 0,
+    "passed": true,
+    "test_id": "T4"
+  },
+  {
+    "affected": 0,
+    "conflicts": 0,
+    "expected": 0,
+    "expected_conflicts": 0,
+    "passed": true,
+    "test_id": "T5"
+  }
+]

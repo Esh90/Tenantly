@@ -1,0 +1,98 @@
+{
+  "cost_usd": 0.007981,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "category": "rent_increase_limits",
+        "cite": "Santa Ana Rent Stabilization and Just Cause Eviction Ordinance",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "The rent increase limit applies to all residential rental units in Santa Ana.",
+        "effective_expression": "annually",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "maximum_percent_increase",
+            "text": "3% of your current rent",
+            "unit": "percent",
+            "value": 3
+          },
+          {
+            "name": "cpi_multiplier",
+            "text": "80% of the Consumer Price Index (CPI) change",
+            "unit": "percent",
+            "value": 80
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "The increase cannot be more than 3% of your current rent or 80% of the Consumer Price Index (CPI) change, whichever is less.",
+        "relations_hint": [],
+        "requirement": "Landlords cannot increase rent by more than 3% of current rent or 80% of the Consumer Price Index (CPI) change, whichever is less.",
+        "title": "Maximum Rent Increase Limit",
+        "uncertain_fields": [
+          "effective_date",
+          "penalty"
+        ]
+      },
+      {
+        "category": "rent_increase_limits",
+        "cite": "Santa Ana Rent Stabilization and Just Cause Eviction Ordinance",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "The rent increase limit applies to all residential rental units in Santa Ana.",
+        "effective_date": "2026-09-01",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "current_maximum_allowable_increase",
+            "text": "2.87 percent is the maximum allowable rent increase",
+            "unit": "percent",
+            "valid_from": "2026-09-01",
+            "valid_to": "2027-08-31",
+            "value": 2.87
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "2.87 percent is the maximum allowable rent increase for the period of September 1, 2026 through August 31, 2027.",
+        "relations_hint": [],
+        "requirement": "The maximum allowable rent increase for the period from September 1, 2026 through August 31, 2027 is 2.87 percent.",
+        "title": "Current Maximum Allowable Rent Increase for 2026-2027",
+        "uncertain_fields": [
+          "penalty"
+        ]
+      },
+      {
+        "category": "just_cause_eviction",
+        "cite": "Santa Ana Rent Stabilization and Just Cause Eviction Ordinance",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "The just cause eviction requirement applies to all residential rental units in Santa Ana.",
+        "exemptions": [],
+        "key_values": [],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Your landlord must have a valid reason to evict you. This could be for not paying rent, breaking the lease, or if the landlord wants to move into the property themselves.",
+        "relations_hint": [],
+        "requirement": "Landlords must have a valid reason to evict a tenant, such as non-payment of rent, lease violation, or landlord move-in.",
+        "title": "Just Cause Eviction Requirement",
+        "uncertain_fields": [
+          "effective_date",
+          "penalty"
+        ]
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 3231,
+    "output_tokens": 950
+  }
+}

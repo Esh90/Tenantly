@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002001,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "San Diego §§98.1101–98.1104 establishes rules about rent-setting software. This law takes effect in June 2025.",
+    "summary_es": "San Diego §§98.1101–98.1104 establece normas sobre el software para fijar rentas. Esta ley entra en vigor en junio de 2025.",
+    "who_en": "This rule covers rental properties in San Diego.",
+    "who_es": "Esta norma se aplica a las propiedades de alquiler en San Diego."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 961,
+    "output_tokens": 208
+  }
+}

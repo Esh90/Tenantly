@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002232,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "A tenant can ask a court to delay eviction due to special circumstances. If approved, the tenant may stay up to one year, and the landlord and tenant can agree to extend it longer if all rent is paid.",
+    "summary_es": "Un inquilino puede pedirle a un juzgado que retrase el desalojo debido a circunstancias especiales. Si se aprueba, el inquilino puede permanecer hasta un año, y el arrendador e inquilino pueden acordar extenderlo más tiempo si se paga toda la renta.",
+    "who_en": "This rule applies to all residential rental properties.",
+    "who_es": "Esta regla se aplica a todas las propiedades residenciales de alquiler."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 962,
+    "output_tokens": 254
+  }
+}

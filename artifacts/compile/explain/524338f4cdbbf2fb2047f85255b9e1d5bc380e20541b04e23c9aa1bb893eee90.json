@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002163,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "No rent increases were allowed for certain rental units from March 30, 2020 through January 31, 2024.",
+    "summary_es": "No se permitieron aumentos de renta para ciertos apartamentos de alquiler desde el 30 de marzo de 2020 hasta el 31 de enero de 2024.",
+    "who_en": "This rule applies to rental properties in Los Angeles that were built on or before October 1, 1978.",
+    "who_es": "Esta regla se aplica a las propiedades de alquiler en Los Ángeles que fueron construidas en o antes del 1 de octubre de 1978."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 983,
+    "output_tokens": 236
+  }
+}

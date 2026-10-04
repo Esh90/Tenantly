@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002153,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Apartments and rental units in buildings built before 1980 have rent control limits. Most units in these older buildings cannot have unlimited rent raises.",
+    "summary_es": "Los apartamentos y unidades de alquiler en edificios construidos antes de 1980 tienen límites de aumento de renta. La mayoría de las unidades en estos edificios más antiguos no pueden tener aumentos de renta sin límites.",
+    "who_en": "This rule covers most units in multifamily properties built before 1980.",
+    "who_es": "Esta regla cubre la mayoría de las unidades en propiedades multifamiliares construidas antes de 1980."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 963,
+    "output_tokens": 238
+  }
+}

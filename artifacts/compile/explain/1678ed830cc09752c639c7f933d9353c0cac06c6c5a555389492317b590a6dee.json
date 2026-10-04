@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.00228,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords cannot ask about or use criminal history when advertising or choosing tenants. If a landlord makes a decision based on criminal history, they must tell the tenant in writing and let them respond.",
+    "summary_es": "Los arrendadores no pueden preguntar sobre antecedentes penales ni usarlos al anunciar o elegir inquilinos. Si un arrendador toma una decisión basada en antecedentes penales, debe notificar al inquilino por escrito y permitirle responder.",
+    "who_en": "This rule covers rental housing in Berkeley.",
+    "who_es": "Esta regla cubre viviendas de alquiler en Berkeley."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1085,
+    "output_tokens": 239
+  }
+}

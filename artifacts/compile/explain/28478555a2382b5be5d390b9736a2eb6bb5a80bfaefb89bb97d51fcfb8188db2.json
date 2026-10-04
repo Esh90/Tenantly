@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002437,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Tenants in owner-occupied two or three-family homes can only be evicted by court order. Valid reasons include not leaving after lease ends, not paying rent, bad behavior, property damage, or breaking lease rules.",
+    "summary_es": "Los inquilinos en casas bifamiliares o trifamiliares ocupadas por el propietario solo pueden ser desalojados por orden judicial. Las razones válidas incluyen no irse después que termina el contrato, no pagar renta, mal comportamiento, daño a la propiedad o violar las reglas del contrato.",
+    "who_en": "This rule applies to owner-occupied two or three-family dwellings.",
+    "who_es": "Esta regla se aplica a casas bifamiliares o trifamiliares ocupadas por el propietario."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1067,
+    "output_tokens": 274
+  }
+}

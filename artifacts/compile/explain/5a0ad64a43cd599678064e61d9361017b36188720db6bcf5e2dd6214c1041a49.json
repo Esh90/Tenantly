@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002547,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "After 30 days of renting, a landlord cannot end your tenancy without just cause. The landlord must write down the reason in a notice to you.",
+    "summary_es": "Después de 30 días de alquiler, el arrendador no puede terminar su contrato sin causa justa. El arrendador debe escribir la razón en un aviso para usted.",
+    "who_en": "This rule applies to residential rental properties, except housing built in the last 15 years, deed-restricted affordable housing, hotels, hospitals, care facilities, dormitories, and shared living quarters.",
+    "who_es": "Esta regla se aplica a las propiedades residenciales de alquiler, excepto viviendas construidas en los últimos 15 años, viviendas con restricción de deed, hoteles, hospitales, centros de cuidado, dormitorios y viviendas compartidas."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1062,
+    "output_tokens": 297
+  }
+}

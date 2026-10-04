@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002158,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "A landlord cannot charge a screening fee if no unit is available or will not be available soon. This protects renters from paying fees when there is no real opportunity to rent.",
+    "summary_es": "Un arrendador no puede cobrar una cuota de evaluación de inquilinos si ninguna unidad está disponible ni estará disponible pronto. Esto protege a los inquilinos de pagar cuotas cuando no hay una oportunidad real de alquilar.",
+    "who_en": "This rule applies to all residential rental property owners and their agents.",
+    "who_es": "Esta regla se aplica a todos los propietarios de propiedades residenciales de alquiler y sus agentes."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 928,
+    "output_tokens": 246
+  }
+}

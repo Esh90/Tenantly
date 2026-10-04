@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.00261,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Tenants in owner-occupied two- or three-family homes can only be evicted by court order for specific reasons: lease expiration, unpaid rent, disorderly conduct, property damage, breaking rules, or violating the lease. Notice periods depend on the tenancy type and reason.",
+    "summary_es": "Los inquilinos en viviendas de dos o tres familias ocupadas por el propietario solo pueden ser desalojados por orden judicial por razones específicas: vencimiento del arrendamiento, falta de pago de renta, conducta desordenada, daño a la propiedad, incumplimiento de reglas o violación del contrato. Los períodos de aviso dependen del tipo de arrendamiento y la razón.",
+    "who_en": "This rule applies to owner-occupied two- or three-family dwellings.",
+    "who_es": "Esta regla se aplica a viviendas de dos o tres familias ocupadas por el propietario."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1050,
+    "output_tokens": 312
+  }
+}

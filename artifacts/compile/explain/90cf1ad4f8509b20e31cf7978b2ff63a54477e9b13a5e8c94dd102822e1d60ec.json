@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002127,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "No one can sell or provide rent-setting software to landlords in San Diego. This applies to devices that use algorithms to set rental prices.",
+    "summary_es": "Nadie puede vender ni proporcionar software para fijar rentas a los arrendadores en San Diego. Esto se aplica a dispositivos que usan algoritmos para establecer precios de alquiler.",
+    "who_en": "This rule covers all residential rental properties in the City of San Diego.",
+    "who_es": "Esta regla se aplica a todas las propiedades residenciales de alquiler en la Ciudad de San Diego."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1017,
+    "output_tokens": 222
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "cost_usd": 0.0072004,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "category": "just_cause_eviction",
+        "cite": "M.G.L. c. 186, § 11",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "Rentals under a written lease.",
+        "exemptions": [],
+        "key_values": [
+          {
+            "name": "notice_to_quit_period",
+            "text": "fourteen days' notice to quit",
+            "unit": "days",
+            "value": 14
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "Upon the neglect or refusal to pay the rent due under a written lease, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the lease, unless the tenant, on or before the day the answer is due, in an action by the landlord to recover possession of the premises, pays or tenders to the landlord or to his attorney all rent then due, with interest and costs of suit.",
+        "relations_hint": [],
+        "requirement": "For nonpayment of rent under a written lease, a landlord may terminate the lease with 14 days' written notice to quit. The tenant can defeat termination by paying all rent due, with interest and costs, on or before the answer day in a possession action.",
+        "tenancy_conditions": [
+          "written lease",
+          "nonpayment of rent"
+        ],
+        "title": "Termination of lease for nonpayment of rent",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 539,
+    "output_tokens": 565
+  }
+}

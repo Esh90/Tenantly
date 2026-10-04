@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002291,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "explanation": "Jersey City, NJ has rules for security deposit return (NJ-DEP-01) and security deposit cap (NJ-DEP-02) at the state level, but no city-level ordinance or rule for security deposits is found in the provided sources. Document D036 is guidance content from Jersey City's Landlord/Tenant Relations page but does not contain substantive security deposit rules. The remaining sources are link-only references with no text content provided, making it impossible to verify if they contain city-level security deposit regulations. Without textual evidence of a city-level rule, this gap cannot be filled from the available sources.",
+    "result": "none_in_sources"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1236,
+    "output_tokens": 211
+  }
+}

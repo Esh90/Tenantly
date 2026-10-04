@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002606,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "When a landlord evicts a tenant from a single-family dwelling for owner move-in, the tenant gets one month's rent as relocation assistance. This payment can be given as money or as a credit.",
+    "summary_es": "Cuando un arrendador desaloja a un inquilino de una casa unifamiliar para mudarse a la propiedad, el inquilino recibe un mes de renta como asistencia de reubicación. Este pago puede darse como dinero o como crédito.",
+    "who_en": "This rule applies to single-family dwellings in Los Angeles where the owner is a natural person who owns no more than 4 dwelling units plus a single-family home on a separate lot.",
+    "who_es": "Esta regla aplica a casas unifamiliares en Los Ángeles donde el arrendador es una persona natural que es dueña de no más de 4 unidades de vivienda más una casa unifamiliar en un lote separado."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1041,
+    "output_tokens": 313
+  }
+}

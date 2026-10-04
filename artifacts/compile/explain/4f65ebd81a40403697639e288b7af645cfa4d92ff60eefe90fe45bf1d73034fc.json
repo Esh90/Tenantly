@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002397,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "If a landlord gives a termination notice, raises rent, or changes lease terms within six months after a tenant does something protected by law, it is presumed to be retaliation. The landlord can only stop this presumption by showing clear and convincing evidence of another reason.",
+    "summary_es": "Si un arrendador da aviso de terminación, aumenta la renta o cambia los términos del contrato dentro de seis meses después de una actividad protegida del inquilino, se presume represalia. El arrendador solo puede evitar esto si demuestra con pruebas claras que hay otra razón.",
+    "who_en": "This rule applies to all residential rental properties.",
+    "who_es": "Esta regla se aplica a todas las propiedades de alquiler residencial."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1057,
+    "output_tokens": 268
+  }
+}

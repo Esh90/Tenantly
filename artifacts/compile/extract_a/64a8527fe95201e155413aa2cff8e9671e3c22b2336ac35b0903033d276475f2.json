@@ -1,0 +1,116 @@
+{
+  "cost_usd": 0.0201284,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "approval_date": null,
+        "category": "rent_increase_limits",
+        "cite": "Cal. Civ. Code § 1947.12",
+        "coverage": {
+          "const": true
+        },
+        "coverage_text": "All residential real property unless exempted.",
+        "effective_date": "2024-04-01",
+        "exemptions": [
+          {
+            "description": "Affordable/deed-restricted or subsidized housing",
+            "predicate": {
+              "fact": "subsidized_or_affordable",
+              "op": "==",
+              "value": true
+            }
+          },
+          {
+            "description": "Housing with certificate of occupancy within previous 15 years",
+            "predicate": {
+              "fact": "co_date",
+              "op": ">",
+              "value": {
+                "as_of_minus_years": 15
+              }
+            }
+          },
+          {
+            "description": "Separately alienable property whose owner is not a REIT, corporation or LLC with corporate member, with notice",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "unit_separately_alienable",
+                  "op": "==",
+                  "value": true
+                },
+                {
+                  "fact": "owner_is_natural_person",
+                  "op": "==",
+                  "value": true
+                }
+              ]
+            }
+          },
+          {
+            "description": "Duplex where owner occupies one unit",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "property_type",
+                  "op": "==",
+                  "value": "multifamily_2_4"
+                },
+                {
+                  "fact": "units",
+                  "op": "==",
+                  "value": 2
+                },
+                {
+                  "fact": "owner_occupied",
+                  "op": "==",
+                  "value": true
+                }
+              ]
+            }
+          }
+        ],
+        "key_values": [
+          {
+            "name": "base_percent",
+            "text": "5 percent plus the percentage change in the cost of living",
+            "unit": "percent",
+            "value": 5
+          },
+          {
+            "name": "cap_percent",
+            "text": "or 10 percent, whichever is lower",
+            "unit": "percent",
+            "value": 10
+          },
+          {
+            "name": "max_increments",
+            "text": "not be increased in more than two increments over that 12-month period",
+            "unit": "increments",
+            "value": 2
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": "Civil liability: injunctive relief, damages for excess rent, attorney's fees, up to three times damages if willful.",
+        "quote": "Subject to subdivision (b), an owner of residential real property shall not, over the course of any 12-month period, increase the gross rental rate for a dwelling or a unit more than 5 percent plus the percentage change in the cost of living, or 10 percent, whichever is lower, of the lowest gross rental rate charged for that dwelling or unit at any time during the 12 months prior to the effective date of the increase.",
+        "relations_hint": [
+          "not intended to expand or limit the authority of local governments to establish local policies regulating rents consistent with Chapter 2.7"
+        ],
+        "requirement": "Owners may not raise gross rent over any 12-month period by more than 5 percent plus the local CPI change, or 10 percent, whichever is lower. No more than two increases are allowed in 12 months for the same tenant.",
+        "sunset_date": "2030-01-01",
+        "tenancy_conditions": [
+          "Initial rate for new tenancy not subject to cap"
+        ],
+        "title": "Statewide rent cap"
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2362,
+    "input_tokens": 4983,
+    "output_tokens": 969
+  }
+}

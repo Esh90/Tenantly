@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002393,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "A landlord can end a month-to-month lease for unpaid rent with 14 days' written notice. If the tenant received no similar notice in the past 12 months, the tenant can keep the lease by paying all overdue rent within 10 days.",
+    "summary_es": "Un arrendador puede terminar un contrato mes a mes por falta de pago con 14 días de aviso escrito. Si el inquilino no recibió un aviso similar en los últimos 12 meses, el inquilino puede mantener el contrato pagando toda la renta vencida dentro de 10 días.",
+    "who_en": "This rule applies to all month-to-month leases in Massachusetts.",
+    "who_es": "Esta regla se aplica a todos los contratos mes a mes en Massachusetts."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1023,
+    "output_tokens": 274
+  }
+}

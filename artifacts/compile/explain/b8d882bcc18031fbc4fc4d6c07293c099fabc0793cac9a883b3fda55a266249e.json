@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002146,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "If a landlord fails to give relocation help, a tenant can use this as a defense in eviction court. Tenants can also file a complaint or take legal action.",
+    "summary_es": "Si un arrendador no da ayuda de reubicación, un inquilino puede usar esto como defensa en corte de desalojo. Los inquilinos también pueden presentar una queja o tomar acción legal.",
+    "who_en": "This rule covers all homes rented under RSO or JCO rules.",
+    "who_es": "Esta regla cubre todos los hogares alquilados bajo las reglas de RSO o JCO."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 976,
+    "output_tokens": 234
+  }
+}

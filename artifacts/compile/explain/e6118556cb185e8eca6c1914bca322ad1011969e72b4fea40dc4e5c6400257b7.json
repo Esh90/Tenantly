@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002232,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "When a landlord accidentally collects an application screening fee twice from the same person, they must refund the fee within seven days. The landlord can also let the applicant use the fee for another rental unit instead.",
+    "summary_es": "Cuando un arrendador accidentalmente cobra una cuota de solicitud dos veces de la misma persona, debe devolver la cuota dentro de siete días. El arrendador también puede permitir que el inquilino use la cuota para otra unidad de alquiler.",
+    "who_en": "This rule covers all residential rental properties.",
+    "who_es": "Esta regla se aplica a todas las propiedades residenciales de alquiler."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1027,
+    "output_tokens": 241
+  }
+}
