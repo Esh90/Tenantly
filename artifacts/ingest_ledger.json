@@ -1,0 +1,46 @@
+{
+  "by_model": {
+    "claude-haiku-4-5-20251001": 0.00714,
+    "claude-sonnet-5-5": 0.016555
+  },
+  "by_stage": {
+    "adjudicate": 0.00429,
+    "explain": 0.002013,
+    "extract_a": 0.012265,
+    "extract_b": 0.005127
+  },
+  "cache_hits": 0,
+  "cap_usd": 0.5,
+  "paid_calls": 4,
+  "prices_per_mtok": {
+    "claude-haiku-4-5": [
+      1.0,
+      5.0
+    ],
+    "claude-haiku-4-5-20251001": [
+      1.0,
+      5.0
+    ],
+    "claude-opus-5": [
+      5.0,
+      25.0
+    ],
+    "claude-opus-5-5": [
+      4.0,
+      20.0
+    ],
+    "claude-sonnet-5": [
+      2.0,
+      10.0
+    ],
+    "claude-sonnet-5-5": [
+      2.0,
+      10.0
+    ]
+  },
+  "tokens": {
+    "input": 4970,
+    "output": 1499
+  },
+  "total_usd": 0.023695
+}

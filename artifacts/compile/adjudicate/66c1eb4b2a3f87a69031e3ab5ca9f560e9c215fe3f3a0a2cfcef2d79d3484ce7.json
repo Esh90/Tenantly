@@ -1,0 +1,16 @@
+{
+  "cost_usd": 0.00429,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "choice": "A",
+    "evidence_quote": "in a building with five or more units",
+    "undetermined": false
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1130,
+    "output_tokens": 203
+  }
+}

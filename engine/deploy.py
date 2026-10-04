@@ -15,7 +15,17 @@ log = logging.getLogger("tenantly.deploy")
 
 COPY_DIRS = ["engine", "artifacts", "dataset", "out"]
 COPY_FILES = ["pyproject.toml", "uv.lock", "Dockerfile"]
-SKIP = shutil.ignore_patterns("__pycache__", "*.pyc", "cache", "compile", ".pytest_cache")
+SECRETS = ["ANTHROPIC_API_KEY", "ADMIN_TOKEN", "GROQ_API_KEY"]
+VARIABLES = {
+    "ALLOWED_ORIGINS": "*",  # public read-only API; admin routes need the token
+    "DEMO_MODE": "live",
+    "BUDGET_USD_CAP": "6",
+    "INGEST_BUDGET_USD": "0.5",
+    "MODEL_FAST": "claude-haiku-4-5-20251001",
+    "MODEL_STRONG": "claude-sonnet-5-5",
+    "MODEL_JUDGE": "claude-sonnet-5-5",
+}
+SKIP = shutil.ignore_patterns("__pycache__", "*.pyc", "cache", "compile", "web", ".pytest_cache")
 
 
 def build_space() -> os.PathLike[str]:
@@ -56,6 +66,11 @@ def deploy(timeout_s: int = 900) -> str:
     space = build_space()
     api = HfApi(token=token)
     api.create_repo(space_id, repo_type="space", space_sdk="docker", exist_ok=True)
+    for name in SECRETS:  # values are read from .env and never printed
+        if os.environ.get(name):
+            api.add_space_secret(space_id, name, os.environ[name])
+    for name, value in VARIABLES.items():
+        api.add_space_variable(space_id, name, os.environ.get(name, value))
     api.upload_folder(folder_path=str(space), repo_id=space_id, repo_type="space")
     want = local_data_version()
     url = space_url(space_id) + "/v1/health"

@@ -1,0 +1,30 @@
+# Render Blueprint: one free Docker web service for the Tenantly API.
+# Secrets are entered in the Render dashboard (sync: false); none are stored in this repository.
+services:
+  - type: web
+    name: tenantly-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /v1/health
+    autoDeploy: true
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: ADMIN_TOKEN
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: ALLOWED_ORIGINS
+        value: "*"
+      - key: DEMO_MODE
+        value: live
+      - key: BUDGET_USD_CAP
+        value: "6"
+      - key: INGEST_BUDGET_USD
+        value: "0.5"
+      - key: MODEL_FAST
+        value: claude-haiku-4-5-20251001
+      - key: MODEL_STRONG
+        value: claude-sonnet-5-5
+      - key: MODEL_JUDGE
+        value: claude-sonnet-5-5

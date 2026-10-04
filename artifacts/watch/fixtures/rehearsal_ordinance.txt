@@ -1,0 +1,18 @@
+REHEARSAL FIXTURE: this text is invented to rehearse Tenantly's ingest pipeline. It is not a real law.
+
+ORDINANCE NO. R-2026-REHEARSAL
+
+AN ORDINANCE LIMITING RENTAL APPLICATION FEES IN THE CITY OF CAMBRIDGE
+
+BE IT ORDAINED by the City Council of the City of Cambridge:
+
+Section 8.99.010. Application fees.
+No landlord or agent of a landlord shall charge a prospective tenant an application fee or screening fee that exceeds fifty dollars ($50) for any rental unit in a building with five or more units.
+
+Section 8.99.020. Exemptions.
+This chapter does not apply to a building with fewer than five units in which the owner lives.
+
+Section 8.99.030. Effective date.
+This ordinance shall take effect on the first day of the second month next following the date of enactment.
+
+Approved November 20, 2026.

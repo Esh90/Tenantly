@@ -612,6 +612,14 @@ class FixtureStore:
             raise ApiError("JOB_NOT_FOUND", "We couldn't find this job.", {"job_id": job_id})
         return job
 
+    def ingest_events(self, job_id: str):
+        job = self.ingest_get(job_id)
+        for s in job["stages"]:
+            yield f"event: stage\ndata: {json.dumps(s)}\n\n"
+        impact = job["result"]["impact"] if job["result"] else {}
+        yield f"event: impact\ndata: {json.dumps(impact)}\n\n"
+        yield f"event: done\ndata: {json.dumps({'status': job['status']})}\n\n"
+
     def ingest_publish(self, job_id: str) -> dict:
         job = self.ingest_get(job_id)
         if job["status"] == "published":

@@ -2,8 +2,6 @@
 
 from __future__ import annotations
 
-import json
-
 from fastapi import APIRouter, Depends, Query, Response
 from fastapi.responses import StreamingResponse
 
@@ -40,16 +38,13 @@ def ingest_job(job_id: str):
 
 @router.get("/ingest/{job_id}/events")
 def ingest_events(job_id: str):
-    job = get_store().ingest_get(job_id)
-
-    def stream():
-        for s in job["stages"]:
-            yield f"event: stage\ndata: {json.dumps(s)}\n\n"
-        impact = job["result"]["impact"] if job["result"] else {}
-        yield f"event: impact\ndata: {json.dumps(impact)}\n\n"
-        yield f"event: done\ndata: {json.dumps({'status': job['status']})}\n\n"
-
-    return StreamingResponse(stream(), media_type="text/event-stream")
+    store = get_store()
+    store.ingest_get(job_id)  # 404 if unknown
+    return StreamingResponse(
+        store.ingest_events(job_id),
+        media_type="text/event-stream",
+        headers={"Cache-Control": "no-store", "X-Accel-Buffering": "no"},
+    )
 
 
 @router.post(

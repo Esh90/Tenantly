@@ -1,0 +1,11 @@
+.git
+.venv
+build
+frontend
+artifacts/web
+artifacts/cache
+artifacts/compile
+tests
+eval
+__pycache__
+*.pyc

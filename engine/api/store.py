@@ -80,6 +80,8 @@ class Store(FixtureStore):
         self.default_date = date.fromisoformat(config.DEFAULT_AS_OF)
         self._counts = self._counts_at_default()
         self.n_text, self.n_link = self._manifest_counts()
+        self.extra_changes: dict[str, dict] = {}
+        self._ingest = None
 
     # ---- startup ----
     def _manifest_counts(self) -> tuple[int, int]:
@@ -414,6 +416,53 @@ class Store(FixtureStore):
         feats.sort(key=lambda f: (order[f["properties"]["level"]], f["id"]))
         return {"type": "FeatureCollection", "features": feats}
 
+    # ---- ingest (real) ----
+    @property
+    def ingest(self):
+        if self._ingest is None:
+            from engine.api.ingest import IngestManager
+
+            self._ingest = IngestManager(self)
+        return self._ingest
+
+    def ingest_start(self, req) -> dict:
+        return self.ingest.start(req)
+
+    def ingest_get(self, job_id: str) -> dict:
+        return self.ingest.get(job_id)
+
+    def ingest_events(self, job_id: str):
+        return self.ingest.events(job_id)
+
+    def ingest_publish(self, job_id: str) -> dict:
+        return self.ingest.publish(job_id)
+
+    def apply_overlay(
+        self, overlay: RuleSet, new_ids: set[str], job: dict, affected: list, on: str
+    ) -> str:
+        """Publish: swap in the overlay, recompute counts and record a change event."""
+        from engine.compile.dag import data_version
+
+        dv = data_version(overlay.rules, overlay.relations, overlay.findings)
+        self.rs = overlay.model_copy(update={"data_version": dv})
+        self.rules_by_id = {r.rule_id: r for r in self.rs.rules}
+        self.data_version = dv
+        self._timelines.clear()
+        self._counts = self._counts_at_default()
+        cid = f"chg-{job['job_id']}"
+        titles = ", ".join(sorted(new_ids))
+        self.extra_changes[cid] = {
+            "change_id": cid, "kind": "ingest", "test_id": None, "title": f"New document published: {titles}",
+            "test_type": "with_without",
+            "summary": T.bi(f"{len(new_ids)} new rule(s) published; {len(affected)} addresses are reached.",
+                            f"Se publicaron {len(new_ids)} regla(s) nueva(s); alcanzan a {len(affected)} direcciones."),
+            "created_at": now_iso(), "rule_ids": sorted(new_ids),
+            "compare": {"mode": "with_without", "on": on}, "affected_count": len(affected),
+            "conflict_count": sum(1 for a in affected if a["conflict_flag"]), "expected_check": None,
+            "affected": affected,
+        }  # fmt: skip
+        return cid
+
     # ---- changes ----
     def _change_files(self) -> dict[str, dict]:
         out = {}
@@ -423,12 +472,12 @@ class Store(FixtureStore):
 
     def changes(self) -> dict:
         items = []
-        for ev in self._change_files().values():
+        for ev in list(self._change_files().values()) + list(self.extra_changes.values()):
             items.append({k: v for k, v in ev.items() if k != "affected"})
         return {"items": items}
 
     def change(self, change_id: str) -> dict:
-        ev = self._change_files().get(change_id)
+        ev = self._change_files().get(change_id) or self.extra_changes.get(change_id)
         if ev is None:
             raise ApiError(
                 "CHANGE_NOT_FOUND", "We couldn't find this change.", {"change_id": change_id}
