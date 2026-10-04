@@ -53,15 +53,22 @@ export const useSubscribeAlerts = () => useMutation({ mutationFn: api.subscribeA
 export const useUnsubscribeAlerts = () => useMutation({ mutationFn: api.unsubscribeAlerts });
 export const useStartIngest = () =>
   useMutation({ mutationFn: (v: { body: api.IngestBody; token: string }) => api.startIngest(v.body, v.token) });
+const invalidateLive = (qc: ReturnType<typeof useQueryClient>) => {
+  for (const k of ["changes", "change", "timeline", "lookup", "rules", "rule", "meta", "findings", "open-questions", "proof", "addresses", "source", "audit"]) qc.invalidateQueries({ queryKey: [k] });
+};
 export function usePublishIngest() {
   const qc = useQueryClient();
   return useMutation({
-    mutationFn: (v: { jobId: string; token: string }) => api.publishIngest(v.jobId, v.token),
-    onSuccess: () => {
-      qc.invalidateQueries({ queryKey: ["changes"] });
-      qc.invalidateQueries({ queryKey: ["timeline"] });
-      qc.invalidateQueries({ queryKey: ["lookup"] });
-      qc.invalidateQueries({ queryKey: ["rules"] });
-    },
+    mutationFn: (v: { jobId: string; token: string; approve?: boolean }) => api.publishIngest(v.jobId, v.token, v.approve),
+    onSuccess: () => invalidateLive(qc),
   });
 }
+export const useRejectIngest = () => useMutation({ mutationFn: (v: { jobId: string; token: string }) => api.rejectIngest(v.jobId, v.token) });
+export const useRejudgeIngest = () => useMutation({ mutationFn: (v: { jobId: string; token: string }) => api.rejudgeIngest(v.jobId, v.token) });
+export const useEditIngest = () =>
+  useMutation({ mutationFn: (v: { jobId: string; rules: Record<string, unknown>[]; token: string }) => api.editIngest(v.jobId, v.rules, v.token) });
+export const useExtractText = () => useMutation({ mutationFn: (v: { file: File; token: string }) => api.extractText(v.file, v.token) });
+export const useInvalidateLive = () => {
+  const qc = useQueryClient();
+  return () => invalidateLive(qc);
+};

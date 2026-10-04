@@ -39,7 +39,7 @@ function LangToggle() {
 
 
 export function Header() {
-  const { t } = useI18n();
+  const { t, tr } = useI18n();
   const { theme, toggle } = useTheme();
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const isHome = pathname === "/";
@@ -49,6 +49,7 @@ export function Header() {
   const primary = [
     { to: "/rules", label: t("nav_rules") },
     { to: "/changes", label: t("nav_changes") },
+    { to: "/ingest", label: tr("Law Ingestion", "Ingesta de leyes") },
     { to: "/about", label: t("nav_about") },
   ] as const;
 

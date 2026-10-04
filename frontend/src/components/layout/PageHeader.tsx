@@ -19,7 +19,7 @@ export function Page({ children, narrow }: { children: ReactNode; narrow?: boole
   return <div className={narrow ? "mx-auto max-w-[920px] px-5 md:px-8" : "mx-auto max-w-[1280px] px-5 md:px-8"}>{children}</div>;
 }
 
-export function SectionTitle({ title, sub, id }: { title: string; sub?: string; id?: string }) {
+export function SectionTitle({ title, sub, id }: { title: string; sub?: string | undefined; id?: string }) {
   return (
     <div className="border-b-2 border-deed pb-3" id={id}>
       <h2 className="text-xl text-deed md:text-2xl">{title}</h2>

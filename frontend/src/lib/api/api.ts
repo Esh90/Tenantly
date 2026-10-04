@@ -47,13 +47,15 @@ export interface IngestBody {
   jurisdiction_hint: string;
   source_url: string;
   retrieved_at: string;
+  auto_publish?: boolean;
+  format?: string;
 }
 export interface IngestStarted {
   job_id: string;
   status: IngestJob["status"];
   events_url: string;
 }
-export type IngestEvent = { type: "stage" | "impact" | "done" | "error"; data: unknown };
+export type IngestEvent = { type: "stage" | "state" | "impact" | "done" | "error"; data: unknown };
 export interface SubscribeBody {
   email: string;
   address_id: string;
@@ -74,7 +76,7 @@ export interface AuditEntry {
 export interface JurisdictionFeature {
   type: "Feature";
   properties: { id: string; name: string; label: string };
-  geometry: { type: "Polygon"; coordinates: [number, number][][] };
+  geometry: { type: "Polygon"; coordinates: [number, number][][] } | { type: "MultiPolygon"; coordinates: [number, number][][][] };
 }
 
 const qs = (params: Record<string, string | number | undefined | null>) => {
@@ -175,7 +177,7 @@ export const getIngest = (jobId: string) => request<IngestJob>(`/ingest/${encode
 export function streamIngest(jobId: string, onEvent: (e: IngestEvent) => void): () => void {
   if (IS_MOCK) return mockStreamIngest(jobId, onEvent);
   const es = new EventSource(`${API_BASE_URL}/v1/ingest/${encodeURIComponent(jobId)}/events`);
-  const types: IngestEvent["type"][] = ["stage", "impact", "done", "error"];
+  const types: IngestEvent["type"][] = ["stage", "state", "impact", "done", "error"];
   types.forEach((type) =>
     es.addEventListener(type, (ev) => {
       const raw = (ev as MessageEvent).data;
@@ -192,11 +194,41 @@ export function streamIngest(jobId: string, onEvent: (e: IngestEvent) => void): 
   return () => es.close();
 }
 
-export const publishIngest = (jobId: string, adminToken: string) =>
-  request<{ change_id: string; published_at: string }>(`/ingest/${encodeURIComponent(jobId)}/publish`, {
-    fn: "publishIngest",
+export const publishIngest = (jobId: string, adminToken: string, approve = false) =>
+  request<{ change_id: string; published_at: string }>(
+    `/ingest/${encodeURIComponent(jobId)}/publish${qs({ approve: approve ? "true" : undefined })}`,
+    { fn: "publishIngest", ...post({}, { "X-Admin-Token": adminToken }) },
+  );
+
+export const rejectIngest = (jobId: string, adminToken: string) =>
+  request<{ job_id: string; state: string }>(`/ingest/${encodeURIComponent(jobId)}/reject`, {
+    fn: "rejectIngest",
     ...post({}, { "X-Admin-Token": adminToken }),
   });
+
+export const rejudgeIngest = (jobId: string, adminToken: string) =>
+  request<{ job_id: string; state: string }>(`/ingest/${encodeURIComponent(jobId)}/rejudge`, {
+    fn: "rejudgeIngest",
+    ...post({}, { "X-Admin-Token": adminToken }),
+  });
+
+export const editIngest = (jobId: string, rules: Record<string, unknown>[], adminToken: string) =>
+  request<{ job_id: string; state: string }>(`/ingest/${encodeURIComponent(jobId)}/edit`, {
+    fn: "editIngest",
+    ...post({ rules }, { "X-Admin-Token": adminToken }),
+  });
+
+/** Uploaded PDF and DOCX files are turned into text by the server; plain text is read in the browser. */
+export const extractText = (file: File, adminToken: string) =>
+  request<{ text: string; format: string; pages: number | null; chars: number }>(
+    `/ingest/extract-text${qs({ filename: file.name })}`,
+    {
+      fn: "extractText",
+      method: "POST",
+      body: file,
+      headers: { "Content-Type": "application/octet-stream", "X-Admin-Token": adminToken },
+    },
+  );
 
 export const subscribeAlerts = (body: SubscribeBody) =>
   request<Subscription>("/alerts/subscriptions", { fn: "subscribeAlerts", ...post(body) });
