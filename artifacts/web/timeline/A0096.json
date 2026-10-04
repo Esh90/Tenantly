@@ -1,0 +1,2637 @@
+{
+  "address_id": "A0096",
+  "breakpoints": [
+    {
+      "date": "2025-08-01",
+      "label": {
+        "en": "Starts August 1, 2025.",
+        "es": "Comienza el 1 de agosto de 2025."
+      },
+      "rule_ids": [
+        "MA-DEP-01"
+      ]
+    }
+  ],
+  "data_version": "874cced39c1c",
+  "range": {
+    "end": "2028-12-31",
+    "start": "2025-01-01"
+  },
+  "segments": [
+    {
+      "end": "2025-08-01",
+      "lookup": {
+        "address": {
+          "address_id": "A0096",
+          "is_sample": true,
+          "label": "81 Westland Av, Boston, MA 02115",
+          "lat": 42.343854353427,
+          "legal_city": "Boston",
+          "lon": -71.089157903457,
+          "postal_city": "Boston",
+          "state": "MA",
+          "street": "81 Westland Av",
+          "zip": "02115"
+        },
+        "as_of": "2025-01-01",
+        "categories": [
+          {
+            "category": "rent_increase_limits",
+            "findings": [
+              {
+                "category": "rent_increase_limits",
+                "evidence": [
+                  {
+                    "char_end": 601,
+                    "char_start": 425,
+                    "cite": "M.G.L. c. 40P, § 4",
+                    "doc_id": "D048",
+                    "doc_sha256": "090647f489ec5f03c114df23b74c28a107a7e0b855e382969c27dbf58a55837d",
+                    "low_signal": false,
+                    "quote": "No city or town may enact, maintain or enforce rent control of any kind, except that any city or town that accepts this chapter may adopt rent control regulation that provides:",
+                    "quote_source": "corpus",
+                    "retrieved_at": "2026-10-01T22:36Z",
+                    "supplementary_doc": null,
+                    "tier": "A",
+                    "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40P/Section4",
+                    "version_label": null
+                  }
+                ],
+                "explanation": {
+                  "en": "No local rent cap here. Massachusetts law bars cities from adopting one.",
+                  "es": "No hay límite local de renta aquí. La ley de Massachusetts impide que las ciudades lo adopten."
+                },
+                "finding_id": "F-MA-2507000-rent_increase_limits",
+                "jurisdiction": {
+                  "geoid": "2507000",
+                  "id": "MA-2507000",
+                  "in_scope": true,
+                  "label": "Boston, MA",
+                  "level": "city",
+                  "name": "Boston",
+                  "state": "MA"
+                },
+                "reason_code": "barred_by_state"
+              }
+            ],
+            "headline": {
+              "en": "Your rent increases are limited by General prohibition on rent control; limited exception.",
+              "es": "Los aumentos de renta están limitados por General prohibition on rent control; limited exception."
+            },
+            "label": {
+              "en": "Rent increase limits",
+              "es": "Límites a los aumentos de renta"
+            },
+            "results": [
+              {
+                "audio": {
+                  "en": null,
+                  "es": null
+                },
+                "category": "rent_increase_limits",
+                "caveats": [],
+                "citation": {
+                  "char_end": 601,
+                  "char_start": 425,
+                  "cite": "M.G.L. c. 40P, § 4",
+                  "doc_id": "D048",
+                  "doc_sha256": "090647f489ec5f03c114df23b74c28a107a7e0b855e382969c27dbf58a55837d",
+                  "low_signal": false,
+                  "quote": "No city or town may enact, maintain or enforce rent control of any kind, except that any city or town that accepts this chapter may adopt rent control regulation that provides:",
+                  "quote_source": "corpus",
+                  "retrieved_at": "2026-10-01T22:36Z",
+                  "supplementary_doc": null,
+                  "tier": "A",
+                  "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40P/Section4",
+                  "version_label": null
+                },
+                "conditions": [],
+                "confidence": 0.95,
+                "conflict_flag": false,
+                "conflicts": [],
+                "effective_date": null,
+                "effective_note": {
+                  "en": "The effective date is not in our sources.",
+                  "es": "La fecha de entrada en vigor no está en nuestras fuentes."
+                },
+                "extra_citations": [],
+                "governs_over": [],
+                "jurisdiction": {
+                  "geoid": null,
+                  "id": "MA",
+                  "in_scope": true,
+                  "label": "MA",
+                  "level": "state",
+                  "name": "Massachusetts",
+                  "state": "MA"
+                },
+                "key_values": [
+                  {
+                    "name": "voluntary_compliance_after",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "after six months from the date of the initial adoption",
+                    "valid_from": null,
+                    "valid_to": null
+                  },
+                  {
+                    "name": "min_owner_units",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "owned by a person or entity owning less than ten rental units",
+                    "valid_from": null,
+                    "valid_to": null
+                  },
+                  {
+                    "name": "max_fair_market_rent",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "fair market rent exceeding $400",
+                    "valid_from": null,
+                    "valid_to": null
+                  }
+                ],
+                "missing_facts": [],
+                "open_question_ids": [],
+                "reason": {
+                  "en": "Covered: applies to residential rentals in MA.",
+                  "es": "Cubierto: se aplica a viviendas en alquiler en MA."
+                },
+                "result": "applies",
+                "review_flag": false,
+                "rule_id": "MA-RENT-01",
+                "rule_status": "in_force",
+                "summary": {
+                  "en": "General prohibition on rent control; limited exception: after six months from the date of the initial adoption.",
+                  "es": "General prohibition on rent control; limited exception: after six months from the date of the initial adoption."
+                },
+                "superseded_by": null,
+                "title": "General prohibition on rent control; limited exception",
+                "who": {
+                  "en": "Applies to all residential rentals in Massachusetts municipalities, limiting local rent control.",
+                  "es": "Applies to all residential rentals in Massachusetts municipalities, limiting local rent control."
+                }
+              }
+            ]
+          },
+          {
+            "category": "just_cause_eviction",
+            "findings": [],
+            "headline": {
+              "en": "Your evictions are limited by Notice of Tenants' Rights and Resources.",
+              "es": "Los desalojos están limitados por Notice of Tenants' Rights and Resources."
+            },
+            "label": {
+              "en": "Just-cause eviction",
+              "es": "Desalojo con causa justa"
+            },
+            "results": [
+              {
+                "audio": {
+                  "en": null,
+                  "es": null
+                },
+                "category": "just_cause_eviction",
+                "caveats": [
+                  {
+                    "en": "Residences in hospitals, skilled nursing or health facilities, or non-profit short-term substance abuse treatment facilities.",
+                    "es": "Residences in hospitals, skilled nursing or health facilities, or non-profit short-term substance abuse treatment facilities."
+                  }
+                ],
+                "citation": {
+                  "char_end": 1903,
+                  "char_start": 1736,
+                  "cite": "Boston City Ordinances § 10-11.7",
+                  "doc_id": "D013",
+                  "doc_sha256": "49b8ad77c47ac7a12afc5a1451cc38e8d908b45f83c922cbd2ee2eb320b715f0",
+                  "low_signal": true,
+                  "quote": "The Housing Stability Notification Act requires\nALL LANDLORDS\nplanning to end a tenancy agreement to provide the tenant with a Notice of Tenants’ Rights and Resources.",
+                  "quote_source": "corpus",
+                  "retrieved_at": "2026-10-01T22:35Z",
+                  "supplementary_doc": null,
+                  "tier": "B",
+                  "url": "https://www.boston.gov/housing-stability-notification-act",
+                  "version_label": null
+                },
+                "conditions": [],
+                "confidence": 0.75,
+                "conflict_flag": false,
+                "conflicts": [],
+                "effective_date": null,
+                "effective_note": {
+                  "en": "The effective date is not in our sources.",
+                  "es": "La fecha de entrada en vigor no está en nuestras fuentes."
+                },
+                "extra_citations": [
+                  {
+                    "char_end": 859,
+                    "char_start": 758,
+                    "cite": "Boston City Ordinances § 10-11.7",
+                    "doc_id": "D014",
+                    "doc_sha256": "70574b2f50c363398d635ef9cc92eed83ba4eca0e404a04ec04bfba004ff9606",
+                    "low_signal": false,
+                    "quote": "The Notice of\nTenants’ Rights and Resources must be delivered at the same time as the Notice to\nQuit.",
+                    "quote_source": "corpus",
+                    "retrieved_at": "2026-10-01T22:35Z",
+                    "supplementary_doc": null,
+                    "tier": "B",
+                    "url": "https://www.boston.gov/sites/default/files/file/2020/11/Housing%20Stability%20Notification%20Act%20Tenant%20FAQs.pdf",
+                    "version_label": null
+                  }
+                ],
+                "governs_over": [],
+                "jurisdiction": {
+                  "geoid": "2507000",
+                  "id": "MA-2507000",
+                  "in_scope": true,
+                  "label": "Boston, MA",
+                  "level": "city",
+                  "name": "Boston",
+                  "state": "MA"
+                },
+                "key_values": [
+                  {
+                    "name": "fine_per_day",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "$300 per day",
+                    "valid_from": null,
+                    "valid_to": null
+                  },
+                  {
+                    "name": "second_and_subsequent_offense_fine",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "2nd and Subsequent Offenses: $300 per day",
+                    "valid_from": null,
+                    "valid_to": null
+                  }
+                ],
+                "missing_facts": [],
+                "open_question_ids": [
+                  "OQ-06"
+                ],
+                "reason": {
+                  "en": "Covered: applies to residential rentals in Boston, MA. An exemption could apply if: Residences in hospitals, skilled nursing or health facilities, or non-profit short-term substance abuse treatment facilities..",
+                  "es": "Cubierto: se aplica a viviendas en alquiler en Boston, MA. Podría aplicar una exención si: Residences in hospitals, skilled nursing or health facilities, or non-profit short-term substance abuse treatment facilities.."
+                },
+                "result": "applies",
+                "review_flag": false,
+                "rule_id": "BOS-JCE-01",
+                "rule_status": "in_force",
+                "summary": {
+                  "en": "Notice of Tenants' Rights and Resources: $300 per day.",
+                  "es": "Notice of Tenants' Rights and Resources: $300 per day."
+                },
+                "superseded_by": null,
+                "title": "Notice of Tenants' Rights and Resources",
+                "who": {
+                  "en": "All landlords in Boston planning to end a tenancy.",
+                  "es": "All landlords in Boston planning to end a tenancy."
+                }
+              },
+              {
+                "audio": {
+                  "en": null,
+                  "es": null
+                },
+                "category": "just_cause_eviction",
+                "caveats": [],
+                "citation": {
+                  "char_end": 1122,
+                  "char_start": 439,
+                  "cite": "M.G.L. c. 186, § 31",
+                  "doc_id": "D058",
+                  "doc_sha256": "80dcf6692b891859e2601c0732252ba30ec010b5034749c4693ef68ce1fd4281",
+                  "low_signal": false,
+                  "quote": "A notice to quit for nonpayment of rent given in writing by a landlord to a residential tenant pursuant to this chapter shall be accompanied by a form that shall include, but not be limited to: (i) documentation of any agreements between the tenant and landlord for the tenant to repay the landlord for nonpayment of rent; and (ii) information on: (1) rental assistance programs including, but not limited to, the residential assistance for families in transition program; (2) applicable trial court rules, standing orders or emergency administrative orders pertaining to actions for summary process; and (3) any relevant federal or state legal restrictions on residential evictions.",
+                  "quote_source": "corpus",
+                  "retrieved_at": "2026-10-01T22:54Z",
+                  "supplementary_doc": null,
+                  "tier": "A",
+                  "url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section31",
+                  "version_label": null
+                },
+                "conditions": [],
+                "confidence": 0.95,
+                "conflict_flag": false,
+                "conflicts": [],
+                "effective_date": null,
+                "effective_note": {
+                  "en": "The effective date is not in our sources.",
+                  "es": "La fecha de entrada en vigor no está en nuestras fuentes."
+                },
+                "extra_citations": [
+                  {
+                    "char_end": 1608,
+                    "char_start": 1020,
+                    "cite": "M.G.L. c. 186, § 12",
+                    "doc_id": "D051",
+                    "doc_sha256": "6c1a194983bb0ee7079919bb8ef0e77efcd35d73dd9795853024a6eaaf5b24de",
+                    "low_signal": false,
+                    "quote": "In case of neglect or refusal to pay the rent due from a tenant at will, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the tenancy; provided, that the tenancy of a tenant who has not received a similar notice from the landlord within the twelve months next preceding the receipt of such notice shall not be determined if the tenant, within ten days after the receipt thereof, pays or tenders to the landlord, the landlord's attorney, or the person to whom the tenant customarily pays rent, the full amount of any rent due.",
+                    "quote_source": "corpus",
+                    "retrieved_at": "2026-10-01T22:37Z",
+                    "supplementary_doc": null,
+                    "tier": "A",
+                    "url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section12",
+                    "version_label": null
+                  },
+                  {
+                    "char_end": 3285,
+                    "char_start": 2840,
+                    "cite": "M.G.L. c. 186, § 18",
+                    "doc_id": "D053",
+                    "doc_sha256": "5c418b18df23a00a8b6b056e68352f67b378b94321ee42867df8ce02ce36830a",
+                    "low_signal": false,
+                    "quote": "Such presumption shall be rebutted only by clear and convincing evidence that such person's action was not a reprisal against the tenant and that such person had sufficient independent justification for taking such action, and would have in fact taken such action, in the same manner and at the same time the action was taken, regardless of tenants engaging in, or the belief that tenants had engaged in, activities protected under this section.",
+                    "quote_source": "corpus",
+                    "retrieved_at": "2026-10-01T22:37Z",
+                    "supplementary_doc": null,
+                    "tier": "A",
+                    "url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section18",
+                    "version_label": null
+                  },
+                  {
+                    "char_end": 866,
+                    "char_start": 443,
+                    "cite": "M.G.L. c. 186, § 11",
+                    "doc_id": "D050",
+                    "doc_sha256": "cdc077701a5c63533240e370c77ce86546bd2c8372d771433c52a98fadc48f19",
+                    "low_signal": false,
+                    "quote": "Upon the neglect or refusal to pay the rent due under a written lease, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the lease, unless the tenant, on or before the day the answer is due, in an action by the landlord to recover possession of the premises, pays or tenders to the landlord or to his attorney all rent then due, with interest and costs of suit.",
+                    "quote_source": "corpus",
+                    "retrieved_at": "2026-10-01T22:37Z",
+                    "supplementary_doc": null,
+                    "tier": "A",
+                    "url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section11",
+                    "version_label": null
+                  }
+                ],
+                "governs_over": [],
+                "jurisdiction": {
+                  "geoid": null,
+                  "id": "MA",
+                  "in_scope": true,
+                  "label": "MA",
+                  "level": "state",
+                  "name": "Massachusetts",
+                  "state": "MA"
+                },
+                "key_values": [
+                  {
+                    "name": "Notice period for nonpayment of rent",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "fourteen days' notice",
+                    "valid_from": null,
+                    "valid_to": null
+                  },
+                  {
+                    "name": "Look-back period for prior notice",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "within the twelve months next preceding",
+                    "valid_from": null,
+                    "valid_to": null
+                  },
+                  {
+                    "name": "Cure period for tenant",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "within ten days after the receipt thereof",
+                    "valid_from": null,
+                    "valid_to": null
+                  },
+                  {
+                    "name": "presumption_period",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "within six months",
+                    "valid_from": null,
+                    "valid_to": null
+                  },
+                  {
+                    "name": "damages_range",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "not less than one month's rent or more than three month's rent, or the actual damages sustained by the tenant, whichever is greater",
+                    "valid_from": null,
+                    "valid_to": null
+                  },
+                  {
+                    "name": "notice_to_quit_period",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "fourteen days' notice to quit",
+                    "valid_from": null,
+                    "valid_to": null
+                  }
+                ],
+                "missing_facts": [],
+                "open_question_ids": [],
+                "reason": {
+                  "en": "Covered: applies to residential rentals in MA.",
+                  "es": "Cubierto: se aplica a viviendas en alquiler en MA."
+                },
+                "result": "applies",
+                "review_flag": false,
+                "rule_id": "MA-JCE-01",
+                "rule_status": "in_force",
+                "summary": {
+                  "en": "When giving notice for unpaid rent, landlords must include a state form. The form shows payment options, rental help, court rules, and states this is not an eviction yet.",
+                  "es": "Al notificar por renta impaga, el arrendador debe incluir un formulario estatal. El formulario muestra opciones de pago, ayuda de renta, reglas de corte, y declara que esto aún no es un desalojo."
+                },
+                "superseded_by": null,
+                "title": "Notice to quit for nonpayment must include form",
+                "who": {
+                  "en": "This applies to all homes where a landlord gives notice for unpaid rent.",
+                  "es": "Esto aplica a todas las viviendas donde un arrendador notifica por renta impaga."
+                }
+              }
+            ]
+          },
+          {
+            "category": "security_deposits",
+            "findings": [
+              {
+                "category": "security_deposits",
+                "evidence": [],
+                "explanation": {
+                  "en": "No security deposits rule for Boston, MA appears in our sources.",
+                  "es": "No aparece en nuestras fuentes una regla de depósitos de seguridad para Boston, MA."
+                },
+                "finding_id": "F-MA-2507000-security_deposits",
+                "jurisdiction": {
+                  "geoid": "2507000",
+                  "id": "MA-2507000",
+                  "in_scope": true,
+                  "label": "Boston, MA",
+                  "level": "city",
+                  "name": "Boston",
+                  "state": "MA"
+                },
+                "reason_code": "none_in_sources"
+              }
+            ],
+            "headline": {
+              "en": "Starts August 1, 2025.",
+              "es": "Comienza el 1 de agosto de 2025."
+            },
+            "label": {
+              "en": "Security deposits",
+              "es": "Depósitos de seguridad"
+            },
+            "results": [
+              {
+                "audio": {
+                  "en": null,
+                  "es": null
+                },
+                "category": "security_deposits",
+                "caveats": [
+                  {
+                    "en": "Vacation or recreational leases of 100 days or less",
+                    "es": "Vacation or recreational leases of 100 days or less"
+                  }
+                ],
+                "citation": {
+                  "char_end": 2399,
+                  "char_start": 2184,
+                  "cite": "M.G.L. c. 186, § 15B",
+                  "doc_id": "D052",
+                  "doc_sha256": "f24c21cb2b32330c0f2f112f066d02b784887a8552cc3777ea96f1d53dd0171f",
+                  "low_signal": false,
+                  "quote": "a security deposit equal to the first month's rent provided that such security deposit is deposited as required by subsection (3) and that the tenant is given the statement of condition as required by subsection (2)",
+                  "quote_source": "corpus",
+                  "retrieved_at": "2026-10-01T22:37Z",
+                  "supplementary_doc": null,
+                  "tier": "A",
+                  "url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+                  "version_label": "Introductory paragraph of clause (b) of subsection (1) as amended by 2025, 9, Secs. 54 and 55, effective 2025-08-01"
+                },
+                "conditions": [],
+                "confidence": 0.8,
+                "conflict_flag": false,
+                "conflicts": [],
+                "effective_date": "2025-08-01",
+                "effective_note": {
+                  "en": "Starts August 1, 2025.",
+                  "es": "Comienza el 1 de agosto de 2025."
+                },
+                "extra_citations": [
+                  {
+                    "char_end": 2022,
+                    "char_start": 1808,
+                    "cite": "M.G.L. c. 186, § 15B(1)(b)",
+                    "doc_id": "D052",
+                    "doc_sha256": "f24c21cb2b32330c0f2f112f066d02b784887a8552cc3777ea96f1d53dd0171f",
+                    "low_signal": false,
+                    "quote": "At or prior to the commencement of any tenancy, no lessor or agent of the lessor may require a tenant or prospective tenant to pay, to the lessor or to an agent of the lessor, any amount in excess of the following:",
+                    "quote_source": "corpus",
+                    "retrieved_at": "2026-10-01T22:37Z",
+                    "supplementary_doc": null,
+                    "tier": "A",
+                    "url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+                    "version_label": "Introductory paragraph of clause (b) of subsection (1) as amended by 2025, 9, Secs. 54 and 55, effective 2025-08-01"
+                  }
+                ],
+                "governs_over": [],
+                "jurisdiction": {
+                  "geoid": null,
+                  "id": "MA",
+                  "in_scope": true,
+                  "label": "MA",
+                  "level": "state",
+                  "name": "Massachusetts",
+                  "state": "MA"
+                },
+                "key_values": [
+                  {
+                    "name": "maximum_security_deposit",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "a security deposit equal to the first month's rent",
+                    "valid_from": null,
+                    "valid_to": null
+                  },
+                  {
+                    "name": "max_security_deposit",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "a security deposit equal to the first month's rent",
+                    "valid_from": null,
+                    "valid_to": null
+                  },
+                  {
+                    "name": "max_fee_in_lieu",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "to an amount not to exceed 1 month's rent",
+                    "valid_from": null,
+                    "valid_to": null
+                  }
+                ],
+                "missing_facts": [],
+                "open_question_ids": [],
+                "reason": {
+                  "en": "Not yet in effect: starts August 1, 2025.",
+                  "es": "Aún no está vigente: comienza el 1 de agosto de 2025."
+                },
+                "result": "not_yet_effective",
+                "review_flag": false,
+                "rule_id": "MA-DEP-01",
+                "rule_status": "not_yet_effective",
+                "summary": {
+                  "en": "Maximum Security Deposit Amount: a security deposit equal to the first month's rent.",
+                  "es": "Maximum Security Deposit Amount: a security deposit equal to the first month's rent."
+                },
+                "superseded_by": null,
+                "title": "Maximum Security Deposit Amount",
+                "who": {
+                  "en": "All residential real property leases.",
+                  "es": "All residential real property leases."
+                }
+              }
+            ]
+          },
+          {
+            "category": "application_screening_fees",
+            "findings": [
+              {
+                "category": "application_screening_fees",
+                "evidence": [],
+                "explanation": {
+                  "en": "A law may exist for Boston, MA, but its text was not supplied.",
+                  "es": "Puede existir una ley para Boston, MA, pero no se proporcionó su texto."
+                },
+                "finding_id": "F-MA-2507000-application_screening_fees",
+                "jurisdiction": {
+                  "geoid": "2507000",
+                  "id": "MA-2507000",
+                  "in_scope": true,
+                  "label": "Boston, MA",
+                  "level": "city",
+                  "name": "Boston",
+                  "state": "MA"
+                },
+                "reason_code": "text_not_supplied"
+              },
+              {
+                "category": "application_screening_fees",
+                "evidence": [],
+                "explanation": {
+                  "en": "A law may exist for MA, but its text was not supplied.",
+                  "es": "Puede existir una ley para MA, pero no se proporcionó su texto."
+                },
+                "finding_id": "F-MA-application_screening_fees",
+                "jurisdiction": {
+                  "geoid": null,
+                  "id": "MA",
+                  "in_scope": true,
+                  "label": "MA",
+                  "level": "state",
+                  "name": "Massachusetts",
+                  "state": "MA"
+                },
+                "reason_code": "text_not_supplied"
+              }
+            ],
+            "headline": {
+              "en": "No rule found in our sources for this category.",
+              "es": "No encontramos una regla en nuestras fuentes para esta categoría."
+            },
+            "label": {
+              "en": "Application and screening fees",
+              "es": "Cuotas de solicitud y evaluación"
+            },
+            "results": []
+          },
+          {
+            "category": "screening_restrictions",
+            "findings": [],
+            "headline": {
+              "en": "Your tenant screening are limited by Fair chance criminal history screening limits.",
+              "es": "La evaluación de inquilinos están limitados por Fair chance criminal history screening limits."
+            },
+            "label": {
+              "en": "Screening restrictions",
+              "es": "Restricciones de evaluación"
+            },
+            "results": [
+              {
+                "audio": {
+                  "en": null,
+                  "es": null
+                },
+                "category": "screening_restrictions",
+                "caveats": [
+                  {
+                    "en": "Direct relationship between conviction and housing sought, unreasonable risk to safety of others, or current criminal behavior",
+                    "es": "Direct relationship between conviction and housing sought, unreasonable risk to safety of others, or current criminal behavior"
+                  }
+                ],
+                "citation": {
+                  "char_end": 685,
+                  "char_start": 360,
+                  "cite": "Boston Fair Chance Tenant Selection Policy (DND, Feb. 2017) § 1",
+                  "doc_id": "D010",
+                  "doc_sha256": "61380f45cb66d87065eb029b6f5ee54dc704a0d059acc6136477337ce5f0cb73",
+                  "low_signal": false,
+                  "quote": "Housing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy will not impose a blanket policy that denies \nhousing to anyone with arrests and or convictions.",
+                  "quote_source": "corpus",
+                  "retrieved_at": "2026-10-01T22:44Z",
+                  "supplementary_doc": null,
+                  "tier": "B",
+                  "url": "https://drive.google.com/file/d/1j4U3fDtmnYuwcUWhx5BMUcXc1bnKT8Ku/view?usp=sharing",
+                  "version_label": null
+                },
+                "conditions": [
+                  {
+                    "actual": "yes",
+                    "basis": "use code / description flags subsidized or affordable",
+                    "expected": "yes",
+                    "fact": "subsidized_or_affordable",
+                    "label": {
+                      "en": "Subsidized or affordable housing is yes",
+                      "es": "Vivienda subsidiada o asequible es yes"
+                    },
+                    "op": "==",
+                    "result": "true"
+                  }
+                ],
+                "confidence": 0.8,
+                "conflict_flag": false,
+                "conflicts": [],
+                "effective_date": null,
+                "effective_note": {
+                  "en": "The effective date is not in our sources.",
+                  "es": "La fecha de entrada en vigor no está en nuestras fuentes."
+                },
+                "extra_citations": [
+                  {
+                    "char_end": 4502,
+                    "char_start": 4403,
+                    "cite": "Boston Fair Chance Tenant Selection Policy (DND, Feb. 2017) § Credit",
+                    "doc_id": "D010",
+                    "doc_sha256": "61380f45cb66d87065eb029b6f5ee54dc704a0d059acc6136477337ce5f0cb73",
+                    "low_signal": false,
+                    "quote": "The agent agrees not to use the applicant credit score to approve or deny housing    \napplications.",
+                    "quote_source": "corpus",
+                    "retrieved_at": "2026-10-01T22:44Z",
+                    "supplementary_doc": null,
+                    "tier": "B",
+                    "url": "https://drive.google.com/file/d/1j4U3fDtmnYuwcUWhx5BMUcXc1bnKT8Ku/view?usp=sharing",
+                    "version_label": null
+                  }
+                ],
+                "governs_over": [],
+                "jurisdiction": {
+                  "geoid": "2507000",
+                  "id": "MA-2507000",
+                  "in_scope": true,
+                  "label": "Boston, MA",
+                  "level": "city",
+                  "name": "Boston",
+                  "state": "MA"
+                },
+                "key_values": [
+                  {
+                    "name": "conviction_lookback",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "A conviction more than 5 years old",
+                    "valid_from": null,
+                    "valid_to": null
+                  }
+                ],
+                "missing_facts": [],
+                "open_question_ids": [],
+                "reason": {
+                  "en": "Covered: subsidized or affordable housing is yes. An exemption could apply if: Direct relationship between conviction and housing sought, unreasonable risk to safety of others, or current criminal behavior.",
+                  "es": "Cubierto: vivienda subsidiada o asequible es yes. Podría aplicar una exención si: Direct relationship between conviction and housing sought, unreasonable risk to safety of others, or current criminal behavior."
+                },
+                "result": "applies",
+                "review_flag": false,
+                "rule_id": "BOS-SCR-01",
+                "rule_status": "in_force",
+                "summary": {
+                  "en": "Housing providers must look at each applicant's case one by one. They cannot refuse someone just because they have an old criminal record. They cannot consider arrests, records wiped off by a judge, or convictions over 5 years old.",
+                  "es": "Los proveedores de vivienda deben revisar el caso de cada solicitante por separado. No pueden rechazar a alguien solo porque tiene un registro criminal antiguo. No pueden considerar arrestos, antecedentes eliminados por un juez, o condenas de más de 5 años."
+                },
+                "superseded_by": null,
+                "title": "Fair chance criminal history screening limits",
+                "who": {
+                  "en": "This applies to housing providers that get funding from DND or use DND land, or have income-restricted units under the BPDA Inclusionary Development Policy.",
+                  "es": "Esto se aplica a los proveedores de vivienda que reciben fondos de DND o usan tierra de DND, o tienen unidades con alquiler restringido bajo la Política de Desarrollo Inclusionario de BPDA."
+                }
+              },
+              {
+                "audio": {
+                  "en": null,
+                  "es": null
+                },
+                "category": "screening_restrictions",
+                "caveats": [],
+                "citation": {
+                  "char_end": 2159,
+                  "char_start": 2038,
+                  "cite": "Boston Fair Housing Regulations",
+                  "doc_id": "D012",
+                  "doc_sha256": "aaed5c3d1e3aacb57a1f9a8fa9e855ecaa857bdbedc3d7b99a1992e7fc0aed0f",
+                  "low_signal": false,
+                  "quote": "In the City of Boston, it’s illegal to discriminate when renting, buying, selling, or securing financing for any housing.",
+                  "quote_source": "corpus",
+                  "retrieved_at": "2026-10-01T22:35Z",
+                  "supplementary_doc": null,
+                  "tier": "B",
+                  "url": "https://www.boston.gov/departments/fair-housing-and-equity/boston-fair-housing-regulations",
+                  "version_label": null
+                },
+                "conditions": [],
+                "confidence": 0.8,
+                "conflict_flag": false,
+                "conflicts": [],
+                "effective_date": null,
+                "effective_note": {
+                  "en": "The effective date is not in our sources.",
+                  "es": "La fecha de entrada en vigor no está en nuestras fuentes."
+                },
+                "extra_citations": [],
+                "governs_over": [],
+                "jurisdiction": {
+                  "geoid": "2507000",
+                  "id": "MA-2507000",
+                  "in_scope": true,
+                  "label": "Boston, MA",
+                  "level": "city",
+                  "name": "Boston",
+                  "state": "MA"
+                },
+                "key_values": [],
+                "missing_facts": [],
+                "open_question_ids": [],
+                "reason": {
+                  "en": "Covered: applies to residential rentals in Boston, MA.",
+                  "es": "Cubierto: se aplica a viviendas en alquiler en Boston, MA."
+                },
+                "result": "applies",
+                "review_flag": false,
+                "rule_id": "BOS-SCR-02",
+                "rule_status": "in_force",
+                "summary": {
+                  "en": "Housing discrimination prohibited, including rental assistance refusal.",
+                  "es": "Housing discrimination prohibited, including rental assistance refusal."
+                },
+                "superseded_by": null,
+                "title": "Housing discrimination prohibited, including rental assistance refusal",
+                "who": {
+                  "en": "All housing in the City of Boston.",
+                  "es": "All housing in the City of Boston."
+                }
+              },
+              {
+                "audio": {
+                  "en": null,
+                  "es": null
+                },
+                "category": "screening_restrictions",
+                "caveats": [],
+                "citation": {
+                  "char_end": 37863,
+                  "char_start": 37389,
+                  "cite": "M.G.L. c. 151B, § 4(10)",
+                  "doc_id": "D049",
+                  "doc_sha256": "ac42593c79533c25223582de77eb5411d2f8ef501a0d027d2a61042b7e81d7ef",
+                  "low_signal": false,
+                  "quote": "For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.",
+                  "quote_source": "corpus",
+                  "retrieved_at": "2026-10-01T22:37Z",
+                  "supplementary_doc": null,
+                  "tier": "A",
+                  "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter151B/Section4",
+                  "version_label": null
+                },
+                "conditions": [],
+                "confidence": 0.9,
+                "conflict_flag": false,
+                "conflicts": [],
+                "effective_date": null,
+                "effective_note": {
+                  "en": "The effective date is not in our sources.",
+                  "es": "La fecha de entrada en vigor no está en nuestras fuentes."
+                },
+                "extra_citations": [],
+                "governs_over": [],
+                "jurisdiction": {
+                  "geoid": null,
+                  "id": "MA",
+                  "in_scope": true,
+                  "label": "MA",
+                  "level": "state",
+                  "name": "Massachusetts",
+                  "state": "MA"
+                },
+                "key_values": [],
+                "missing_facts": [],
+                "open_question_ids": [],
+                "reason": {
+                  "en": "Covered: applies to residential rentals in MA.",
+                  "es": "Cubierto: se aplica a viviendas en alquiler en MA."
+                },
+                "result": "applies",
+                "review_flag": false,
+                "rule_id": "MA-SCR-01",
+                "rule_status": "in_force",
+                "summary": {
+                  "en": "Source-of-income discrimination in rental accommodations.",
+                  "es": "Source-of-income discrimination in rental accommodations."
+                },
+                "superseded_by": null,
+                "title": "Source-of-income discrimination in rental accommodations",
+                "who": {
+                  "en": "Any person furnishing rental accommodations.",
+                  "es": "Any person furnishing rental accommodations."
+                }
+              }
+            ]
+          },
+          {
+            "category": "algorithmic_rent_setting",
+            "findings": [
+              {
+                "category": "algorithmic_rent_setting",
+                "evidence": [],
+                "explanation": {
+                  "en": "No algorithmic rent setting rule for Boston, MA appears in our sources.",
+                  "es": "No aparece en nuestras fuentes una regla de fijación algorítmica de rentas para Boston, MA."
+                },
+                "finding_id": "F-MA-2507000-algorithmic_rent_setting",
+                "jurisdiction": {
+                  "geoid": "2507000",
+                  "id": "MA-2507000",
+                  "in_scope": true,
+                  "label": "Boston, MA",
+                  "level": "city",
+                  "name": "Boston",
+                  "state": "MA"
+                },
+                "reason_code": "none_in_sources"
+              }
+            ],
+            "headline": {
+              "en": "No rule found in our sources for this category.",
+              "es": "No encontramos una regla en nuestras fuentes para esta categoría."
+            },
+            "label": {
+              "en": "Algorithmic rent setting",
+              "es": "Fijación algorítmica de rentas"
+            },
+            "results": []
+          }
+        ],
+        "counts": {
+          "applies": 6,
+          "not_yet_effective": 1,
+          "pending": 2,
+          "superseded": 0,
+          "unknown": 0
+        },
+        "data_version": "874cced39c1c",
+        "decisive_question": null,
+        "disclaimer": "Tenantly shows public housing law for information only. It is not legal advice. Check the official source or a qualified professional before acting.",
+        "facts": {
+          "property_type": {
+            "basis": "A/125 (SUBSD HOUSING S- 8)",
+            "interval": null,
+            "label": {
+              "en": "Property type",
+              "es": "Tipo de propiedad"
+            },
+            "record_conflict": false,
+            "source": "assessor_derived",
+            "value": "multifamily_5plus"
+          },
+          "source_dataset": "Boston Property Assessment FY2026",
+          "subsidized": {
+            "basis": "use code / description flags subsidized or affordable",
+            "interval": null,
+            "label": {
+              "en": "Subsidized or affordable",
+              "es": "Subsidiado o asequible"
+            },
+            "record_conflict": false,
+            "source": "assessor_derived",
+            "value": true
+          },
+          "units": {
+            "basis": "Boston A/125: class A is 7+ units",
+            "interval": [
+              7,
+              null
+            ],
+            "label": {
+              "en": "Number of units",
+              "es": "Número de unidades"
+            },
+            "record_conflict": false,
+            "source": "assessor_derived",
+            "value": null
+          },
+          "use_code": "A/125",
+          "use_description": "SUBSD HOUSING S- 8",
+          "year_built": {
+            "basis": "assessor record",
+            "interval": [
+              1910,
+              1910
+            ],
+            "label": {
+              "en": "Year built",
+              "es": "Año de construcción"
+            },
+            "record_conflict": false,
+            "source": "assessor",
+            "value": 1910
+          },
+          "zip_suspect": false
+        },
+        "facts_source": "data",
+        "failed": [
+          {
+            "citation": {
+              "char_end": 324,
+              "char_start": 196,
+              "cite": "H.3744",
+              "doc_id": "D011",
+              "doc_sha256": "93835654c3483e7b169677f7a3ccdcf021b6edab4ac81ab7ad3091903de71ff2",
+              "low_signal": true,
+              "quote": "An Act petition for a special law authorizing the city of Boston to implement rent stabilization and tenant eviction protections",
+              "quote_source": "corpus",
+              "retrieved_at": "2026-10-01T22:35Z",
+              "supplementary_doc": null,
+              "tier": "B",
+              "url": "https://malegislature.gov/Bills/193/H3744",
+              "version_label": null
+            },
+            "note": {
+              "en": "Not law: Boston rent stabilization and tenant eviction protections petition did not become law.",
+              "es": "No es ley: Boston rent stabilization and tenant eviction protections petition no llegó a ser ley."
+            },
+            "rule_id": "BOS-RENT-P1",
+            "title": "Boston rent stabilization and tenant eviction protections petition"
+          },
+          {
+            "citation": {
+              "char_end": null,
+              "char_start": null,
+              "cite": "Massachusetts rent-control ballot question",
+              "doc_id": "D059",
+              "doc_sha256": null,
+              "low_signal": false,
+              "quote": "\"MA-RENT-P1\" # Massachusetts rent-control ballot question struck",
+              "quote_source": "supplementary",
+              "retrieved_at": "2026-10-01",
+              "supplementary_doc": "change_tests.json",
+              "tier": "C",
+              "url": "https://www.wbur.org/news/2026/06/23/massachusetts-high-court-rent-control-ballot-question-struck",
+              "version_label": null
+            },
+            "note": {
+              "en": "Not law: Massachusetts rent-control ballot question did not become law.",
+              "es": "No es ley: Massachusetts rent-control ballot question no llegó a ser ley."
+            },
+            "rule_id": "MA-RENT-P1",
+            "title": "Massachusetts rent-control ballot question"
+          }
+        ],
+        "fallback": false,
+        "is_projection": false,
+        "jurisdiction": {
+          "city": {
+            "geoid": "2507000",
+            "id": "MA-2507000",
+            "in_scope": true,
+            "label": "Boston, MA",
+            "level": "city",
+            "name": "Boston",
+            "state": "MA"
+          },
+          "county": {
+            "geoid": "25025",
+            "id": "MA-25025",
+            "in_scope": false,
+            "label": "Suffolk County, MA",
+            "level": "county",
+            "name": "Suffolk County",
+            "state": "MA"
+          },
+          "mailing_city": "Boston",
+          "mailing_mismatch": false,
+          "note": null,
+          "resolution": {
+            "census_agrees": true,
+            "geocoder": "census_batch",
+            "method": "point_in_polygon"
+          },
+          "state": {
+            "geoid": null,
+            "id": "MA",
+            "in_scope": true,
+            "label": "MA",
+            "level": "state",
+            "name": "Massachusetts",
+            "state": "MA"
+          }
+        },
+        "open_questions": [
+          {
+            "changes_answer_between": null,
+            "detail": {
+              "en": "The saved copy of D013 is mostly site navigation, so coverage details for Notice of Tenants' Rights and Resources may be incomplete.",
+              "es": "La copia guardada de D013 es principalmente navegación del sitio, por lo que los detalles de cobertura para Aviso de Derechos y Recursos de Inquilinos pueden estar incompletos."
+            },
+            "oq_id": "OQ-06",
+            "rule_ids": [
+              "BOS-JCE-01"
+            ],
+            "sources": [
+              {
+                "char_end": 1903,
+                "char_start": 1736,
+                "cite": "Boston City Ordinances § 10-11.7",
+                "doc_id": "D013",
+                "doc_sha256": "49b8ad77c47ac7a12afc5a1451cc38e8d908b45f83c922cbd2ee2eb320b715f0",
+                "low_signal": true,
+                "quote": "The Housing Stability Notification Act requires\nALL LANDLORDS\nplanning to end a tenancy agreement to provide the tenant with a Notice of Tenants’ Rights and Resources.",
+                "quote_source": "corpus",
+                "retrieved_at": "2026-10-01T22:35Z",
+                "supplementary_doc": null,
+                "tier": "B",
+                "url": "https://www.boston.gov/housing-stability-notification-act",
+                "version_label": null
+              }
+            ],
+            "title": {
+              "en": "Partial capture of source D013",
+              "es": "Captura parcial de fuente D013"
+            }
+          },
+          {
+            "changes_answer_between": null,
+            "detail": {
+              "en": "The saved copy of D045 is mostly site navigation, so coverage details for Bill H.5222: Preventing algorithmic rent fixing may be incomplete.",
+              "es": "La copia guardada de D045 es principalmente navegación del sitio, por lo que los detalles de cobertura para Bill H.5222: Preventing algorithmic rent fixing pueden estar incompletos."
+            },
+            "oq_id": "OQ-09",
+            "rule_ids": [
+              "MA-ALG-P2"
+            ],
+            "sources": [
+              {
+                "char_end": 274,
+                "char_start": 192,
+                "cite": "H.5222",
+                "doc_id": "D045",
+                "doc_sha256": "8bc537dfe4d0e00b829147ae82ba11d40bef8a2b0696f487c417ca517673bba7",
+                "low_signal": true,
+                "quote": "An Act relative to preventing algorithmic rent fixing in the rental housing market",
+                "quote_source": "corpus",
+                "retrieved_at": "2026-10-01T22:36Z",
+                "supplementary_doc": null,
+                "tier": "B",
+                "url": "https://malegislature.gov/Bills/194/H5222",
+                "version_label": null
+              }
+            ],
+            "title": {
+              "en": "Partial capture of source D045",
+              "es": "Captura parcial de la fuente D045"
+            }
+          }
+        ],
+        "pending": [
+          {
+            "audio": {
+              "en": null,
+              "es": null
+            },
+            "category": "algorithmic_rent_setting",
+            "caveats": [],
+            "citation": {
+              "char_end": 235,
+              "char_start": 192,
+              "cite": "S.2983",
+              "doc_id": "D046",
+              "doc_sha256": "6ea5313d0a656ab73b683e72b594cf143ee61bd6923ee1d9f3df46682248004d",
+              "low_signal": false,
+              "quote": "An Act prohibiting algorithmic rent setting",
+              "quote_source": "corpus",
+              "retrieved_at": "2026-10-01T22:36Z",
+              "supplementary_doc": null,
+              "tier": "B",
+              "url": "https://malegislature.gov/Bills/194/S2983",
+              "version_label": null
+            },
+            "conditions": [],
+            "confidence": 0.8,
+            "conflict_flag": false,
+            "conflicts": [],
+            "effective_date": null,
+            "effective_note": null,
+            "extra_citations": [],
+            "governs_over": [],
+            "jurisdiction": {
+              "geoid": null,
+              "id": "MA",
+              "in_scope": true,
+              "label": "MA",
+              "level": "state",
+              "name": "Massachusetts",
+              "state": "MA"
+            },
+            "key_values": [],
+            "missing_facts": [],
+            "open_question_ids": [],
+            "reason": {
+              "en": "Pending: a proposed bill, not law. It would reach this building if passed.",
+              "es": "Pendiente: un proyecto de ley, no es ley. Cubriría este edificio si se aprueba."
+            },
+            "result": "pending",
+            "review_flag": false,
+            "rule_id": "MA-ALG-P1",
+            "rule_status": "pending",
+            "summary": {
+              "en": "Massachusetts would ban the use of rent-setting software to set rental prices. Landlords could not use algorithms to determine how much rent to charge.",
+              "es": "Massachusetts prohibiría el uso de software para fijar rentas al establecer precios de alquiler. Los arrendadores no podrían usar algoritmos para determinar cuánta renta cobrar."
+            },
+            "superseded_by": null,
+            "title": "Act prohibiting algorithmic rent setting",
+            "who": {
+              "en": "This rule applies to all residential rentals in Massachusetts.",
+              "es": "Esta regla aplica a todos los alquileres residenciales en Massachusetts."
+            }
+          },
+          {
+            "audio": {
+              "en": null,
+              "es": null
+            },
+            "category": "algorithmic_rent_setting",
+            "caveats": [],
+            "citation": {
+              "char_end": 274,
+              "char_start": 192,
+              "cite": "H.5222",
+              "doc_id": "D045",
+              "doc_sha256": "8bc537dfe4d0e00b829147ae82ba11d40bef8a2b0696f487c417ca517673bba7",
+              "low_signal": true,
+              "quote": "An Act relative to preventing algorithmic rent fixing in the rental housing market",
+              "quote_source": "corpus",
+              "retrieved_at": "2026-10-01T22:36Z",
+              "supplementary_doc": null,
+              "tier": "B",
+              "url": "https://malegislature.gov/Bills/194/H5222",
+              "version_label": null
+            },
+            "conditions": [],
+            "confidence": 0.75,
+            "conflict_flag": false,
+            "conflicts": [],
+            "effective_date": null,
+            "effective_note": null,
+            "extra_citations": [],
+            "governs_over": [],
+            "jurisdiction": {
+              "geoid": null,
+              "id": "MA",
+              "in_scope": true,
+              "label": "MA",
+              "level": "state",
+              "name": "Massachusetts",
+              "state": "MA"
+            },
+            "key_values": [],
+            "missing_facts": [],
+            "open_question_ids": [
+              "OQ-09"
+            ],
+            "reason": {
+              "en": "Pending: a proposed bill, not law. It would reach this building if passed.",
+              "es": "Pendiente: un proyecto de ley, no es ley. Cubriría este edificio si se aprueba."
+            },
+            "result": "pending",
+            "review_flag": false,
+            "rule_id": "MA-ALG-P2",
+            "rule_status": "pending",
+            "summary": {
+              "en": "Bill H.5222: Preventing algorithmic rent fixing.",
+              "es": "Bill H.5222: Preventing algorithmic rent fixing."
+            },
+            "superseded_by": null,
+            "title": "Bill H.5222: Preventing algorithmic rent fixing",
+            "who": {
+              "en": "Applies to the rental housing market generally, as indicated by the bill title.",
+              "es": "Applies to the rental housing market generally, as indicated by the bill title."
+            }
+          }
+        ],
+        "reasoning_boundary": {
+          "assumptions": [
+            {
+              "en": "A certificate of occupancy is assumed to fall in the year the building was built.",
+              "es": "Se supone que el certificado de ocupación corresponde al año de construcción."
+            },
+            {
+              "en": "Dates after October 1, 2026 are projections from the sources we retrieved.",
+              "es": "Las fechas posteriores al 1 de octubre de 2026 son proyecciones a partir de las fuentes consultadas."
+            }
+          ],
+          "checked": [
+            {
+              "en": "Rules quoted from 54 public legal documents retrieved on October 1, 2026.",
+              "es": "Reglas citadas de 54 documentos legales públicos consultados el October 1, 2026."
+            },
+            {
+              "en": "Which city and state the address is legally in, by map boundary, not by mailing name.",
+              "es": "En qué ciudad y estado queda legalmente la dirección, por límites del mapa y no por el nombre postal."
+            },
+            {
+              "en": "Building size and year built from the public assessor record",
+              "es": "Tamaño y año de construcción del registro público del asesor"
+            }
+          ],
+          "not_checked": [
+            {
+              "en": "Facts that are not in public records, such as who owns the building, unless you tell us.",
+              "es": "Datos que no están en registros públicos, como quién es el dueño, a menos que usted los indique."
+            },
+            {
+              "en": "Court decisions, agency guidance and your lease terms.",
+              "es": "Decisiones judiciales, guías de agencias y los términos de su contrato."
+            },
+            {
+              "en": "Local laws in cities outside our ten, and laws whose text we could not retrieve.",
+              "es": "Leyes locales de ciudades fuera de nuestras diez y leyes cuyo texto no pudimos obtener."
+            }
+          ]
+        },
+        "sources_retrieved_at": "2026-10-01",
+        "upcoming": [
+          {
+            "date": "2025-08-01",
+            "from": "not_yet_effective",
+            "rule_id": "MA-DEP-01",
+            "summary": {
+              "en": "Starts August 1, 2025.",
+              "es": "Comienza el 1 de agosto de 2025."
+            },
+            "title": "Maximum Security Deposit Amount",
+            "to": "applies"
+          }
+        ]
+      },
+      "start": "2025-01-01"
+    },
+    {
+      "end": null,
+      "lookup": {
+        "address": {
+          "address_id": "A0096",
+          "is_sample": true,
+          "label": "81 Westland Av, Boston, MA 02115",
+          "lat": 42.343854353427,
+          "legal_city": "Boston",
+          "lon": -71.089157903457,
+          "postal_city": "Boston",
+          "state": "MA",
+          "street": "81 Westland Av",
+          "zip": "02115"
+        },
+        "as_of": "2025-08-01",
+        "categories": [
+          {
+            "category": "rent_increase_limits",
+            "findings": [
+              {
+                "category": "rent_increase_limits",
+                "evidence": [
+                  {
+                    "char_end": 601,
+                    "char_start": 425,
+                    "cite": "M.G.L. c. 40P, § 4",
+                    "doc_id": "D048",
+                    "doc_sha256": "090647f489ec5f03c114df23b74c28a107a7e0b855e382969c27dbf58a55837d",
+                    "low_signal": false,
+                    "quote": "No city or town may enact, maintain or enforce rent control of any kind, except that any city or town that accepts this chapter may adopt rent control regulation that provides:",
+                    "quote_source": "corpus",
+                    "retrieved_at": "2026-10-01T22:36Z",
+                    "supplementary_doc": null,
+                    "tier": "A",
+                    "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40P/Section4",
+                    "version_label": null
+                  }
+                ],
+                "explanation": {
+                  "en": "No local rent cap here. Massachusetts law bars cities from adopting one.",
+                  "es": "No hay límite local de renta aquí. La ley de Massachusetts impide que las ciudades lo adopten."
+                },
+                "finding_id": "F-MA-2507000-rent_increase_limits",
+                "jurisdiction": {
+                  "geoid": "2507000",
+                  "id": "MA-2507000",
+                  "in_scope": true,
+                  "label": "Boston, MA",
+                  "level": "city",
+                  "name": "Boston",
+                  "state": "MA"
+                },
+                "reason_code": "barred_by_state"
+              }
+            ],
+            "headline": {
+              "en": "Your rent increases are limited by General prohibition on rent control; limited exception.",
+              "es": "Los aumentos de renta están limitados por General prohibition on rent control; limited exception."
+            },
+            "label": {
+              "en": "Rent increase limits",
+              "es": "Límites a los aumentos de renta"
+            },
+            "results": [
+              {
+                "audio": {
+                  "en": null,
+                  "es": null
+                },
+                "category": "rent_increase_limits",
+                "caveats": [],
+                "citation": {
+                  "char_end": 601,
+                  "char_start": 425,
+                  "cite": "M.G.L. c. 40P, § 4",
+                  "doc_id": "D048",
+                  "doc_sha256": "090647f489ec5f03c114df23b74c28a107a7e0b855e382969c27dbf58a55837d",
+                  "low_signal": false,
+                  "quote": "No city or town may enact, maintain or enforce rent control of any kind, except that any city or town that accepts this chapter may adopt rent control regulation that provides:",
+                  "quote_source": "corpus",
+                  "retrieved_at": "2026-10-01T22:36Z",
+                  "supplementary_doc": null,
+                  "tier": "A",
+                  "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40P/Section4",
+                  "version_label": null
+                },
+                "conditions": [],
+                "confidence": 0.95,
+                "conflict_flag": false,
+                "conflicts": [],
+                "effective_date": null,
+                "effective_note": {
+                  "en": "The effective date is not in our sources.",
+                  "es": "La fecha de entrada en vigor no está en nuestras fuentes."
+                },
+                "extra_citations": [],
+                "governs_over": [],
+                "jurisdiction": {
+                  "geoid": null,
+                  "id": "MA",
+                  "in_scope": true,
+                  "label": "MA",
+                  "level": "state",
+                  "name": "Massachusetts",
+                  "state": "MA"
+                },
+                "key_values": [
+                  {
+                    "name": "voluntary_compliance_after",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "after six months from the date of the initial adoption",
+                    "valid_from": null,
+                    "valid_to": null
+                  },
+                  {
+                    "name": "min_owner_units",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "owned by a person or entity owning less than ten rental units",
+                    "valid_from": null,
+                    "valid_to": null
+                  },
+                  {
+                    "name": "max_fair_market_rent",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "fair market rent exceeding $400",
+                    "valid_from": null,
+                    "valid_to": null
+                  }
+                ],
+                "missing_facts": [],
+                "open_question_ids": [],
+                "reason": {
+                  "en": "Covered: applies to residential rentals in MA.",
+                  "es": "Cubierto: se aplica a viviendas en alquiler en MA."
+                },
+                "result": "applies",
+                "review_flag": false,
+                "rule_id": "MA-RENT-01",
+                "rule_status": "in_force",
+                "summary": {
+                  "en": "General prohibition on rent control; limited exception: after six months from the date of the initial adoption.",
+                  "es": "General prohibition on rent control; limited exception: after six months from the date of the initial adoption."
+                },
+                "superseded_by": null,
+                "title": "General prohibition on rent control; limited exception",
+                "who": {
+                  "en": "Applies to all residential rentals in Massachusetts municipalities, limiting local rent control.",
+                  "es": "Applies to all residential rentals in Massachusetts municipalities, limiting local rent control."
+                }
+              }
+            ]
+          },
+          {
+            "category": "just_cause_eviction",
+            "findings": [],
+            "headline": {
+              "en": "Your evictions are limited by Notice of Tenants' Rights and Resources.",
+              "es": "Los desalojos están limitados por Notice of Tenants' Rights and Resources."
+            },
+            "label": {
+              "en": "Just-cause eviction",
+              "es": "Desalojo con causa justa"
+            },
+            "results": [
+              {
+                "audio": {
+                  "en": null,
+                  "es": null
+                },
+                "category": "just_cause_eviction",
+                "caveats": [
+                  {
+                    "en": "Residences in hospitals, skilled nursing or health facilities, or non-profit short-term substance abuse treatment facilities.",
+                    "es": "Residences in hospitals, skilled nursing or health facilities, or non-profit short-term substance abuse treatment facilities."
+                  }
+                ],
+                "citation": {
+                  "char_end": 1903,
+                  "char_start": 1736,
+                  "cite": "Boston City Ordinances § 10-11.7",
+                  "doc_id": "D013",
+                  "doc_sha256": "49b8ad77c47ac7a12afc5a1451cc38e8d908b45f83c922cbd2ee2eb320b715f0",
+                  "low_signal": true,
+                  "quote": "The Housing Stability Notification Act requires\nALL LANDLORDS\nplanning to end a tenancy agreement to provide the tenant with a Notice of Tenants’ Rights and Resources.",
+                  "quote_source": "corpus",
+                  "retrieved_at": "2026-10-01T22:35Z",
+                  "supplementary_doc": null,
+                  "tier": "B",
+                  "url": "https://www.boston.gov/housing-stability-notification-act",
+                  "version_label": null
+                },
+                "conditions": [],
+                "confidence": 0.75,
+                "conflict_flag": false,
+                "conflicts": [],
+                "effective_date": null,
+                "effective_note": {
+                  "en": "The effective date is not in our sources.",
+                  "es": "La fecha de entrada en vigor no está en nuestras fuentes."
+                },
+                "extra_citations": [
+                  {
+                    "char_end": 859,
+                    "char_start": 758,
+                    "cite": "Boston City Ordinances § 10-11.7",
+                    "doc_id": "D014",
+                    "doc_sha256": "70574b2f50c363398d635ef9cc92eed83ba4eca0e404a04ec04bfba004ff9606",
+                    "low_signal": false,
+                    "quote": "The Notice of\nTenants’ Rights and Resources must be delivered at the same time as the Notice to\nQuit.",
+                    "quote_source": "corpus",
+                    "retrieved_at": "2026-10-01T22:35Z",
+                    "supplementary_doc": null,
+                    "tier": "B",
+                    "url": "https://www.boston.gov/sites/default/files/file/2020/11/Housing%20Stability%20Notification%20Act%20Tenant%20FAQs.pdf",
+                    "version_label": null
+                  }
+                ],
+                "governs_over": [],
+                "jurisdiction": {
+                  "geoid": "2507000",
+                  "id": "MA-2507000",
+                  "in_scope": true,
+                  "label": "Boston, MA",
+                  "level": "city",
+                  "name": "Boston",
+                  "state": "MA"
+                },
+                "key_values": [
+                  {
+                    "name": "fine_per_day",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "$300 per day",
+                    "valid_from": null,
+                    "valid_to": null
+                  },
+                  {
+                    "name": "second_and_subsequent_offense_fine",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "2nd and Subsequent Offenses: $300 per day",
+                    "valid_from": null,
+                    "valid_to": null
+                  }
+                ],
+                "missing_facts": [],
+                "open_question_ids": [
+                  "OQ-06"
+                ],
+                "reason": {
+                  "en": "Covered: applies to residential rentals in Boston, MA. An exemption could apply if: Residences in hospitals, skilled nursing or health facilities, or non-profit short-term substance abuse treatment facilities..",
+                  "es": "Cubierto: se aplica a viviendas en alquiler en Boston, MA. Podría aplicar una exención si: Residences in hospitals, skilled nursing or health facilities, or non-profit short-term substance abuse treatment facilities.."
+                },
+                "result": "applies",
+                "review_flag": false,
+                "rule_id": "BOS-JCE-01",
+                "rule_status": "in_force",
+                "summary": {
+                  "en": "Notice of Tenants' Rights and Resources: $300 per day.",
+                  "es": "Notice of Tenants' Rights and Resources: $300 per day."
+                },
+                "superseded_by": null,
+                "title": "Notice of Tenants' Rights and Resources",
+                "who": {
+                  "en": "All landlords in Boston planning to end a tenancy.",
+                  "es": "All landlords in Boston planning to end a tenancy."
+                }
+              },
+              {
+                "audio": {
+                  "en": null,
+                  "es": null
+                },
+                "category": "just_cause_eviction",
+                "caveats": [],
+                "citation": {
+                  "char_end": 1122,
+                  "char_start": 439,
+                  "cite": "M.G.L. c. 186, § 31",
+                  "doc_id": "D058",
+                  "doc_sha256": "80dcf6692b891859e2601c0732252ba30ec010b5034749c4693ef68ce1fd4281",
+                  "low_signal": false,
+                  "quote": "A notice to quit for nonpayment of rent given in writing by a landlord to a residential tenant pursuant to this chapter shall be accompanied by a form that shall include, but not be limited to: (i) documentation of any agreements between the tenant and landlord for the tenant to repay the landlord for nonpayment of rent; and (ii) information on: (1) rental assistance programs including, but not limited to, the residential assistance for families in transition program; (2) applicable trial court rules, standing orders or emergency administrative orders pertaining to actions for summary process; and (3) any relevant federal or state legal restrictions on residential evictions.",
+                  "quote_source": "corpus",
+                  "retrieved_at": "2026-10-01T22:54Z",
+                  "supplementary_doc": null,
+                  "tier": "A",
+                  "url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section31",
+                  "version_label": null
+                },
+                "conditions": [],
+                "confidence": 0.95,
+                "conflict_flag": false,
+                "conflicts": [],
+                "effective_date": null,
+                "effective_note": {
+                  "en": "The effective date is not in our sources.",
+                  "es": "La fecha de entrada en vigor no está en nuestras fuentes."
+                },
+                "extra_citations": [
+                  {
+                    "char_end": 1608,
+                    "char_start": 1020,
+                    "cite": "M.G.L. c. 186, § 12",
+                    "doc_id": "D051",
+                    "doc_sha256": "6c1a194983bb0ee7079919bb8ef0e77efcd35d73dd9795853024a6eaaf5b24de",
+                    "low_signal": false,
+                    "quote": "In case of neglect or refusal to pay the rent due from a tenant at will, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the tenancy; provided, that the tenancy of a tenant who has not received a similar notice from the landlord within the twelve months next preceding the receipt of such notice shall not be determined if the tenant, within ten days after the receipt thereof, pays or tenders to the landlord, the landlord's attorney, or the person to whom the tenant customarily pays rent, the full amount of any rent due.",
+                    "quote_source": "corpus",
+                    "retrieved_at": "2026-10-01T22:37Z",
+                    "supplementary_doc": null,
+                    "tier": "A",
+                    "url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section12",
+                    "version_label": null
+                  },
+                  {
+                    "char_end": 3285,
+                    "char_start": 2840,
+                    "cite": "M.G.L. c. 186, § 18",
+                    "doc_id": "D053",
+                    "doc_sha256": "5c418b18df23a00a8b6b056e68352f67b378b94321ee42867df8ce02ce36830a",
+                    "low_signal": false,
+                    "quote": "Such presumption shall be rebutted only by clear and convincing evidence that such person's action was not a reprisal against the tenant and that such person had sufficient independent justification for taking such action, and would have in fact taken such action, in the same manner and at the same time the action was taken, regardless of tenants engaging in, or the belief that tenants had engaged in, activities protected under this section.",
+                    "quote_source": "corpus",
+                    "retrieved_at": "2026-10-01T22:37Z",
+                    "supplementary_doc": null,
+                    "tier": "A",
+                    "url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section18",
+                    "version_label": null
+                  },
+                  {
+                    "char_end": 866,
+                    "char_start": 443,
+                    "cite": "M.G.L. c. 186, § 11",
+                    "doc_id": "D050",
+                    "doc_sha256": "cdc077701a5c63533240e370c77ce86546bd2c8372d771433c52a98fadc48f19",
+                    "low_signal": false,
+                    "quote": "Upon the neglect or refusal to pay the rent due under a written lease, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the lease, unless the tenant, on or before the day the answer is due, in an action by the landlord to recover possession of the premises, pays or tenders to the landlord or to his attorney all rent then due, with interest and costs of suit.",
+                    "quote_source": "corpus",
+                    "retrieved_at": "2026-10-01T22:37Z",
+                    "supplementary_doc": null,
+                    "tier": "A",
+                    "url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section11",
+                    "version_label": null
+                  }
+                ],
+                "governs_over": [],
+                "jurisdiction": {
+                  "geoid": null,
+                  "id": "MA",
+                  "in_scope": true,
+                  "label": "MA",
+                  "level": "state",
+                  "name": "Massachusetts",
+                  "state": "MA"
+                },
+                "key_values": [
+                  {
+                    "name": "Notice period for nonpayment of rent",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "fourteen days' notice",
+                    "valid_from": null,
+                    "valid_to": null
+                  },
+                  {
+                    "name": "Look-back period for prior notice",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "within the twelve months next preceding",
+                    "valid_from": null,
+                    "valid_to": null
+                  },
+                  {
+                    "name": "Cure period for tenant",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "within ten days after the receipt thereof",
+                    "valid_from": null,
+                    "valid_to": null
+                  },
+                  {
+                    "name": "presumption_period",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "within six months",
+                    "valid_from": null,
+                    "valid_to": null
+                  },
+                  {
+                    "name": "damages_range",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "not less than one month's rent or more than three month's rent, or the actual damages sustained by the tenant, whichever is greater",
+                    "valid_from": null,
+                    "valid_to": null
+                  },
+                  {
+                    "name": "notice_to_quit_period",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "fourteen days' notice to quit",
+                    "valid_from": null,
+                    "valid_to": null
+                  }
+                ],
+                "missing_facts": [],
+                "open_question_ids": [],
+                "reason": {
+                  "en": "Covered: applies to residential rentals in MA.",
+                  "es": "Cubierto: se aplica a viviendas en alquiler en MA."
+                },
+                "result": "applies",
+                "review_flag": false,
+                "rule_id": "MA-JCE-01",
+                "rule_status": "in_force",
+                "summary": {
+                  "en": "When giving notice for unpaid rent, landlords must include a state form. The form shows payment options, rental help, court rules, and states this is not an eviction yet.",
+                  "es": "Al notificar por renta impaga, el arrendador debe incluir un formulario estatal. El formulario muestra opciones de pago, ayuda de renta, reglas de corte, y declara que esto aún no es un desalojo."
+                },
+                "superseded_by": null,
+                "title": "Notice to quit for nonpayment must include form",
+                "who": {
+                  "en": "This applies to all homes where a landlord gives notice for unpaid rent.",
+                  "es": "Esto aplica a todas las viviendas donde un arrendador notifica por renta impaga."
+                }
+              }
+            ]
+          },
+          {
+            "category": "security_deposits",
+            "findings": [
+              {
+                "category": "security_deposits",
+                "evidence": [],
+                "explanation": {
+                  "en": "No security deposits rule for Boston, MA appears in our sources.",
+                  "es": "No aparece en nuestras fuentes una regla de depósitos de seguridad para Boston, MA."
+                },
+                "finding_id": "F-MA-2507000-security_deposits",
+                "jurisdiction": {
+                  "geoid": "2507000",
+                  "id": "MA-2507000",
+                  "in_scope": true,
+                  "label": "Boston, MA",
+                  "level": "city",
+                  "name": "Boston",
+                  "state": "MA"
+                },
+                "reason_code": "none_in_sources"
+              }
+            ],
+            "headline": {
+              "en": "Your security deposit are limited by Maximum Security Deposit Amount.",
+              "es": "El depósito de seguridad están limitados por Maximum Security Deposit Amount."
+            },
+            "label": {
+              "en": "Security deposits",
+              "es": "Depósitos de seguridad"
+            },
+            "results": [
+              {
+                "audio": {
+                  "en": null,
+                  "es": null
+                },
+                "category": "security_deposits",
+                "caveats": [
+                  {
+                    "en": "Vacation or recreational leases of 100 days or less",
+                    "es": "Vacation or recreational leases of 100 days or less"
+                  }
+                ],
+                "citation": {
+                  "char_end": 2399,
+                  "char_start": 2184,
+                  "cite": "M.G.L. c. 186, § 15B",
+                  "doc_id": "D052",
+                  "doc_sha256": "f24c21cb2b32330c0f2f112f066d02b784887a8552cc3777ea96f1d53dd0171f",
+                  "low_signal": false,
+                  "quote": "a security deposit equal to the first month's rent provided that such security deposit is deposited as required by subsection (3) and that the tenant is given the statement of condition as required by subsection (2)",
+                  "quote_source": "corpus",
+                  "retrieved_at": "2026-10-01T22:37Z",
+                  "supplementary_doc": null,
+                  "tier": "A",
+                  "url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+                  "version_label": "Introductory paragraph of clause (b) of subsection (1) as amended by 2025, 9, Secs. 54 and 55, effective 2025-08-01"
+                },
+                "conditions": [],
+                "confidence": 0.8,
+                "conflict_flag": false,
+                "conflicts": [],
+                "effective_date": "2025-08-01",
+                "effective_note": null,
+                "extra_citations": [
+                  {
+                    "char_end": 2022,
+                    "char_start": 1808,
+                    "cite": "M.G.L. c. 186, § 15B(1)(b)",
+                    "doc_id": "D052",
+                    "doc_sha256": "f24c21cb2b32330c0f2f112f066d02b784887a8552cc3777ea96f1d53dd0171f",
+                    "low_signal": false,
+                    "quote": "At or prior to the commencement of any tenancy, no lessor or agent of the lessor may require a tenant or prospective tenant to pay, to the lessor or to an agent of the lessor, any amount in excess of the following:",
+                    "quote_source": "corpus",
+                    "retrieved_at": "2026-10-01T22:37Z",
+                    "supplementary_doc": null,
+                    "tier": "A",
+                    "url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+                    "version_label": "Introductory paragraph of clause (b) of subsection (1) as amended by 2025, 9, Secs. 54 and 55, effective 2025-08-01"
+                  }
+                ],
+                "governs_over": [],
+                "jurisdiction": {
+                  "geoid": null,
+                  "id": "MA",
+                  "in_scope": true,
+                  "label": "MA",
+                  "level": "state",
+                  "name": "Massachusetts",
+                  "state": "MA"
+                },
+                "key_values": [
+                  {
+                    "name": "maximum_security_deposit",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "a security deposit equal to the first month's rent",
+                    "valid_from": null,
+                    "valid_to": null
+                  },
+                  {
+                    "name": "max_security_deposit",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "a security deposit equal to the first month's rent",
+                    "valid_from": null,
+                    "valid_to": null
+                  },
+                  {
+                    "name": "max_fee_in_lieu",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "to an amount not to exceed 1 month's rent",
+                    "valid_from": null,
+                    "valid_to": null
+                  }
+                ],
+                "missing_facts": [],
+                "open_question_ids": [],
+                "reason": {
+                  "en": "Covered: applies to residential rentals in MA. An exemption could apply if: Vacation or recreational leases of 100 days or less.",
+                  "es": "Cubierto: se aplica a viviendas en alquiler en MA. Podría aplicar una exención si: Vacation or recreational leases of 100 days or less."
+                },
+                "result": "applies",
+                "review_flag": false,
+                "rule_id": "MA-DEP-01",
+                "rule_status": "in_force",
+                "summary": {
+                  "en": "Maximum Security Deposit Amount: a security deposit equal to the first month's rent.",
+                  "es": "Maximum Security Deposit Amount: a security deposit equal to the first month's rent."
+                },
+                "superseded_by": null,
+                "title": "Maximum Security Deposit Amount",
+                "who": {
+                  "en": "All residential real property leases.",
+                  "es": "All residential real property leases."
+                }
+              }
+            ]
+          },
+          {
+            "category": "application_screening_fees",
+            "findings": [
+              {
+                "category": "application_screening_fees",
+                "evidence": [],
+                "explanation": {
+                  "en": "A law may exist for Boston, MA, but its text was not supplied.",
+                  "es": "Puede existir una ley para Boston, MA, pero no se proporcionó su texto."
+                },
+                "finding_id": "F-MA-2507000-application_screening_fees",
+                "jurisdiction": {
+                  "geoid": "2507000",
+                  "id": "MA-2507000",
+                  "in_scope": true,
+                  "label": "Boston, MA",
+                  "level": "city",
+                  "name": "Boston",
+                  "state": "MA"
+                },
+                "reason_code": "text_not_supplied"
+              },
+              {
+                "category": "application_screening_fees",
+                "evidence": [],
+                "explanation": {
+                  "en": "A law may exist for MA, but its text was not supplied.",
+                  "es": "Puede existir una ley para MA, pero no se proporcionó su texto."
+                },
+                "finding_id": "F-MA-application_screening_fees",
+                "jurisdiction": {
+                  "geoid": null,
+                  "id": "MA",
+                  "in_scope": true,
+                  "label": "MA",
+                  "level": "state",
+                  "name": "Massachusetts",
+                  "state": "MA"
+                },
+                "reason_code": "text_not_supplied"
+              }
+            ],
+            "headline": {
+              "en": "No rule found in our sources for this category.",
+              "es": "No encontramos una regla en nuestras fuentes para esta categoría."
+            },
+            "label": {
+              "en": "Application and screening fees",
+              "es": "Cuotas de solicitud y evaluación"
+            },
+            "results": []
+          },
+          {
+            "category": "screening_restrictions",
+            "findings": [],
+            "headline": {
+              "en": "Your tenant screening are limited by Fair chance criminal history screening limits.",
+              "es": "La evaluación de inquilinos están limitados por Fair chance criminal history screening limits."
+            },
+            "label": {
+              "en": "Screening restrictions",
+              "es": "Restricciones de evaluación"
+            },
+            "results": [
+              {
+                "audio": {
+                  "en": null,
+                  "es": null
+                },
+                "category": "screening_restrictions",
+                "caveats": [
+                  {
+                    "en": "Direct relationship between conviction and housing sought, unreasonable risk to safety of others, or current criminal behavior",
+                    "es": "Direct relationship between conviction and housing sought, unreasonable risk to safety of others, or current criminal behavior"
+                  }
+                ],
+                "citation": {
+                  "char_end": 685,
+                  "char_start": 360,
+                  "cite": "Boston Fair Chance Tenant Selection Policy (DND, Feb. 2017) § 1",
+                  "doc_id": "D010",
+                  "doc_sha256": "61380f45cb66d87065eb029b6f5ee54dc704a0d059acc6136477337ce5f0cb73",
+                  "low_signal": false,
+                  "quote": "Housing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy will not impose a blanket policy that denies \nhousing to anyone with arrests and or convictions.",
+                  "quote_source": "corpus",
+                  "retrieved_at": "2026-10-01T22:44Z",
+                  "supplementary_doc": null,
+                  "tier": "B",
+                  "url": "https://drive.google.com/file/d/1j4U3fDtmnYuwcUWhx5BMUcXc1bnKT8Ku/view?usp=sharing",
+                  "version_label": null
+                },
+                "conditions": [
+                  {
+                    "actual": "yes",
+                    "basis": "use code / description flags subsidized or affordable",
+                    "expected": "yes",
+                    "fact": "subsidized_or_affordable",
+                    "label": {
+                      "en": "Subsidized or affordable housing is yes",
+                      "es": "Vivienda subsidiada o asequible es yes"
+                    },
+                    "op": "==",
+                    "result": "true"
+                  }
+                ],
+                "confidence": 0.8,
+                "conflict_flag": false,
+                "conflicts": [],
+                "effective_date": null,
+                "effective_note": {
+                  "en": "The effective date is not in our sources.",
+                  "es": "La fecha de entrada en vigor no está en nuestras fuentes."
+                },
+                "extra_citations": [
+                  {
+                    "char_end": 4502,
+                    "char_start": 4403,
+                    "cite": "Boston Fair Chance Tenant Selection Policy (DND, Feb. 2017) § Credit",
+                    "doc_id": "D010",
+                    "doc_sha256": "61380f45cb66d87065eb029b6f5ee54dc704a0d059acc6136477337ce5f0cb73",
+                    "low_signal": false,
+                    "quote": "The agent agrees not to use the applicant credit score to approve or deny housing    \napplications.",
+                    "quote_source": "corpus",
+                    "retrieved_at": "2026-10-01T22:44Z",
+                    "supplementary_doc": null,
+                    "tier": "B",
+                    "url": "https://drive.google.com/file/d/1j4U3fDtmnYuwcUWhx5BMUcXc1bnKT8Ku/view?usp=sharing",
+                    "version_label": null
+                  }
+                ],
+                "governs_over": [],
+                "jurisdiction": {
+                  "geoid": "2507000",
+                  "id": "MA-2507000",
+                  "in_scope": true,
+                  "label": "Boston, MA",
+                  "level": "city",
+                  "name": "Boston",
+                  "state": "MA"
+                },
+                "key_values": [
+                  {
+                    "name": "conviction_lookback",
+                    "stale": false,
+                    "stale_note": null,
+                    "text": "A conviction more than 5 years old",
+                    "valid_from": null,
+                    "valid_to": null
+                  }
+                ],
+                "missing_facts": [],
+                "open_question_ids": [],
+                "reason": {
+                  "en": "Covered: subsidized or affordable housing is yes. An exemption could apply if: Direct relationship between conviction and housing sought, unreasonable risk to safety of others, or current criminal behavior.",
+                  "es": "Cubierto: vivienda subsidiada o asequible es yes. Podría aplicar una exención si: Direct relationship between conviction and housing sought, unreasonable risk to safety of others, or current criminal behavior."
+                },
+                "result": "applies",
+                "review_flag": false,
+                "rule_id": "BOS-SCR-01",
+                "rule_status": "in_force",
+                "summary": {
+                  "en": "Housing providers must look at each applicant's case one by one. They cannot refuse someone just because they have an old criminal record. They cannot consider arrests, records wiped off by a judge, or convictions over 5 years old.",
+                  "es": "Los proveedores de vivienda deben revisar el caso de cada solicitante por separado. No pueden rechazar a alguien solo porque tiene un registro criminal antiguo. No pueden considerar arrestos, antecedentes eliminados por un juez, o condenas de más de 5 años."
+                },
+                "superseded_by": null,
+                "title": "Fair chance criminal history screening limits",
+                "who": {
+                  "en": "This applies to housing providers that get funding from DND or use DND land, or have income-restricted units under the BPDA Inclusionary Development Policy.",
+                  "es": "Esto se aplica a los proveedores de vivienda que reciben fondos de DND o usan tierra de DND, o tienen unidades con alquiler restringido bajo la Política de Desarrollo Inclusionario de BPDA."
+                }
+              },
+              {
+                "audio": {
+                  "en": null,
+                  "es": null
+                },
+                "category": "screening_restrictions",
+                "caveats": [],
+                "citation": {
+                  "char_end": 2159,
+                  "char_start": 2038,
+                  "cite": "Boston Fair Housing Regulations",
+                  "doc_id": "D012",
+                  "doc_sha256": "aaed5c3d1e3aacb57a1f9a8fa9e855ecaa857bdbedc3d7b99a1992e7fc0aed0f",
+                  "low_signal": false,
+                  "quote": "In the City of Boston, it’s illegal to discriminate when renting, buying, selling, or securing financing for any housing.",
+                  "quote_source": "corpus",
+                  "retrieved_at": "2026-10-01T22:35Z",
+                  "supplementary_doc": null,
+                  "tier": "B",
+                  "url": "https://www.boston.gov/departments/fair-housing-and-equity/boston-fair-housing-regulations",
+                  "version_label": null
+                },
+                "conditions": [],
+                "confidence": 0.8,
+                "conflict_flag": false,
+                "conflicts": [],
+                "effective_date": null,
+                "effective_note": {
+                  "en": "The effective date is not in our sources.",
+                  "es": "La fecha de entrada en vigor no está en nuestras fuentes."
+                },
+                "extra_citations": [],
+                "governs_over": [],
+                "jurisdiction": {
+                  "geoid": "2507000",
+                  "id": "MA-2507000",
+                  "in_scope": true,
+                  "label": "Boston, MA",
+                  "level": "city",
+                  "name": "Boston",
+                  "state": "MA"
+                },
+                "key_values": [],
+                "missing_facts": [],
+                "open_question_ids": [],
+                "reason": {
+                  "en": "Covered: applies to residential rentals in Boston, MA.",
+                  "es": "Cubierto: se aplica a viviendas en alquiler en Boston, MA."
+                },
+                "result": "applies",
+                "review_flag": false,
+                "rule_id": "BOS-SCR-02",
+                "rule_status": "in_force",
+                "summary": {
+                  "en": "Housing discrimination prohibited, including rental assistance refusal.",
+                  "es": "Housing discrimination prohibited, including rental assistance refusal."
+                },
+                "superseded_by": null,
+                "title": "Housing discrimination prohibited, including rental assistance refusal",
+                "who": {
+                  "en": "All housing in the City of Boston.",
+                  "es": "All housing in the City of Boston."
+                }
+              },
+              {
+                "audio": {
+                  "en": null,
+                  "es": null
+                },
+                "category": "screening_restrictions",
+                "caveats": [],
+                "citation": {
+                  "char_end": 37863,
+                  "char_start": 37389,
+                  "cite": "M.G.L. c. 151B, § 4(10)",
+                  "doc_id": "D049",
+                  "doc_sha256": "ac42593c79533c25223582de77eb5411d2f8ef501a0d027d2a61042b7e81d7ef",
+                  "low_signal": false,
+                  "quote": "For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.",
+                  "quote_source": "corpus",
+                  "retrieved_at": "2026-10-01T22:37Z",
+                  "supplementary_doc": null,
+                  "tier": "A",
+                  "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter151B/Section4",
+                  "version_label": null
+                },
+                "conditions": [],
+                "confidence": 0.9,
+                "conflict_flag": false,
+                "conflicts": [],
+                "effective_date": null,
+                "effective_note": {
+                  "en": "The effective date is not in our sources.",
+                  "es": "La fecha de entrada en vigor no está en nuestras fuentes."
+                },
+                "extra_citations": [],
+                "governs_over": [],
+                "jurisdiction": {
+                  "geoid": null,
+                  "id": "MA",
+                  "in_scope": true,
+                  "label": "MA",
+                  "level": "state",
+                  "name": "Massachusetts",
+                  "state": "MA"
+                },
+                "key_values": [],
+                "missing_facts": [],
+                "open_question_ids": [],
+                "reason": {
+                  "en": "Covered: applies to residential rentals in MA.",
+                  "es": "Cubierto: se aplica a viviendas en alquiler en MA."
+                },
+                "result": "applies",
+                "review_flag": false,
+                "rule_id": "MA-SCR-01",
+                "rule_status": "in_force",
+                "summary": {
+                  "en": "Source-of-income discrimination in rental accommodations.",
+                  "es": "Source-of-income discrimination in rental accommodations."
+                },
+                "superseded_by": null,
+                "title": "Source-of-income discrimination in rental accommodations",
+                "who": {
+                  "en": "Any person furnishing rental accommodations.",
+                  "es": "Any person furnishing rental accommodations."
+                }
+              }
+            ]
+          },
+          {
+            "category": "algorithmic_rent_setting",
+            "findings": [
+              {
+                "category": "algorithmic_rent_setting",
+                "evidence": [],
+                "explanation": {
+                  "en": "No algorithmic rent setting rule for Boston, MA appears in our sources.",
+                  "es": "No aparece en nuestras fuentes una regla de fijación algorítmica de rentas para Boston, MA."
+                },
+                "finding_id": "F-MA-2507000-algorithmic_rent_setting",
+                "jurisdiction": {
+                  "geoid": "2507000",
+                  "id": "MA-2507000",
+                  "in_scope": true,
+                  "label": "Boston, MA",
+                  "level": "city",
+                  "name": "Boston",
+                  "state": "MA"
+                },
+                "reason_code": "none_in_sources"
+              }
+            ],
+            "headline": {
+              "en": "No rule found in our sources for this category.",
+              "es": "No encontramos una regla en nuestras fuentes para esta categoría."
+            },
+            "label": {
+              "en": "Algorithmic rent setting",
+              "es": "Fijación algorítmica de rentas"
+            },
+            "results": []
+          }
+        ],
+        "counts": {
+          "applies": 7,
+          "not_yet_effective": 0,
+          "pending": 2,
+          "superseded": 0,
+          "unknown": 0
+        },
+        "data_version": "874cced39c1c",
+        "decisive_question": null,
+        "disclaimer": "Tenantly shows public housing law for information only. It is not legal advice. Check the official source or a qualified professional before acting.",
+        "facts": {
+          "property_type": {
+            "basis": "A/125 (SUBSD HOUSING S- 8)",
+            "interval": null,
+            "label": {
+              "en": "Property type",
+              "es": "Tipo de propiedad"
+            },
+            "record_conflict": false,
+            "source": "assessor_derived",
+            "value": "multifamily_5plus"
+          },
+          "source_dataset": "Boston Property Assessment FY2026",
+          "subsidized": {
+            "basis": "use code / description flags subsidized or affordable",
+            "interval": null,
+            "label": {
+              "en": "Subsidized or affordable",
+              "es": "Subsidiado o asequible"
+            },
+            "record_conflict": false,
+            "source": "assessor_derived",
+            "value": true
+          },
+          "units": {
+            "basis": "Boston A/125: class A is 7+ units",
+            "interval": [
+              7,
+              null
+            ],
+            "label": {
+              "en": "Number of units",
+              "es": "Número de unidades"
+            },
+            "record_conflict": false,
+            "source": "assessor_derived",
+            "value": null
+          },
+          "use_code": "A/125",
+          "use_description": "SUBSD HOUSING S- 8",
+          "year_built": {
+            "basis": "assessor record",
+            "interval": [
+              1910,
+              1910
+            ],
+            "label": {
+              "en": "Year built",
+              "es": "Año de construcción"
+            },
+            "record_conflict": false,
+            "source": "assessor",
+            "value": 1910
+          },
+          "zip_suspect": false
+        },
+        "facts_source": "data",
+        "failed": [
+          {
+            "citation": {
+              "char_end": 324,
+              "char_start": 196,
+              "cite": "H.3744",
+              "doc_id": "D011",
+              "doc_sha256": "93835654c3483e7b169677f7a3ccdcf021b6edab4ac81ab7ad3091903de71ff2",
+              "low_signal": true,
+              "quote": "An Act petition for a special law authorizing the city of Boston to implement rent stabilization and tenant eviction protections",
+              "quote_source": "corpus",
+              "retrieved_at": "2026-10-01T22:35Z",
+              "supplementary_doc": null,
+              "tier": "B",
+              "url": "https://malegislature.gov/Bills/193/H3744",
+              "version_label": null
+            },
+            "note": {
+              "en": "Not law: Boston rent stabilization and tenant eviction protections petition did not become law.",
+              "es": "No es ley: Boston rent stabilization and tenant eviction protections petition no llegó a ser ley."
+            },
+            "rule_id": "BOS-RENT-P1",
+            "title": "Boston rent stabilization and tenant eviction protections petition"
+          },
+          {
+            "citation": {
+              "char_end": null,
+              "char_start": null,
+              "cite": "Massachusetts rent-control ballot question",
+              "doc_id": "D059",
+              "doc_sha256": null,
+              "low_signal": false,
+              "quote": "\"MA-RENT-P1\" # Massachusetts rent-control ballot question struck",
+              "quote_source": "supplementary",
+              "retrieved_at": "2026-10-01",
+              "supplementary_doc": "change_tests.json",
+              "tier": "C",
+              "url": "https://www.wbur.org/news/2026/06/23/massachusetts-high-court-rent-control-ballot-question-struck",
+              "version_label": null
+            },
+            "note": {
+              "en": "Not law: Massachusetts rent-control ballot question did not become law.",
+              "es": "No es ley: Massachusetts rent-control ballot question no llegó a ser ley."
+            },
+            "rule_id": "MA-RENT-P1",
+            "title": "Massachusetts rent-control ballot question"
+          }
+        ],
+        "fallback": false,
+        "is_projection": false,
+        "jurisdiction": {
+          "city": {
+            "geoid": "2507000",
+            "id": "MA-2507000",
+            "in_scope": true,
+            "label": "Boston, MA",
+            "level": "city",
+            "name": "Boston",
+            "state": "MA"
+          },
+          "county": {
+            "geoid": "25025",
+            "id": "MA-25025",
+            "in_scope": false,
+            "label": "Suffolk County, MA",
+            "level": "county",
+            "name": "Suffolk County",
+            "state": "MA"
+          },
+          "mailing_city": "Boston",
+          "mailing_mismatch": false,
+          "note": null,
+          "resolution": {
+            "census_agrees": true,
+            "geocoder": "census_batch",
+            "method": "point_in_polygon"
+          },
+          "state": {
+            "geoid": null,
+            "id": "MA",
+            "in_scope": true,
+            "label": "MA",
+            "level": "state",
+            "name": "Massachusetts",
+            "state": "MA"
+          }
+        },
+        "open_questions": [
+          {
+            "changes_answer_between": null,
+            "detail": {
+              "en": "The saved copy of D013 is mostly site navigation, so coverage details for Notice of Tenants' Rights and Resources may be incomplete.",
+              "es": "La copia guardada de D013 es principalmente navegación del sitio, por lo que los detalles de cobertura para Aviso de Derechos y Recursos de Inquilinos pueden estar incompletos."
+            },
+            "oq_id": "OQ-06",
+            "rule_ids": [
+              "BOS-JCE-01"
+            ],
+            "sources": [
+              {
+                "char_end": 1903,
+                "char_start": 1736,
+                "cite": "Boston City Ordinances § 10-11.7",
+                "doc_id": "D013",
+                "doc_sha256": "49b8ad77c47ac7a12afc5a1451cc38e8d908b45f83c922cbd2ee2eb320b715f0",
+                "low_signal": true,
+                "quote": "The Housing Stability Notification Act requires\nALL LANDLORDS\nplanning to end a tenancy agreement to provide the tenant with a Notice of Tenants’ Rights and Resources.",
+                "quote_source": "corpus",
+                "retrieved_at": "2026-10-01T22:35Z",
+                "supplementary_doc": null,
+                "tier": "B",
+                "url": "https://www.boston.gov/housing-stability-notification-act",
+                "version_label": null
+              }
+            ],
+            "title": {
+              "en": "Partial capture of source D013",
+              "es": "Captura parcial de fuente D013"
+            }
+          },
+          {
+            "changes_answer_between": null,
+            "detail": {
+              "en": "The saved copy of D045 is mostly site navigation, so coverage details for Bill H.5222: Preventing algorithmic rent fixing may be incomplete.",
+              "es": "La copia guardada de D045 es principalmente navegación del sitio, por lo que los detalles de cobertura para Bill H.5222: Preventing algorithmic rent fixing pueden estar incompletos."
+            },
+            "oq_id": "OQ-09",
+            "rule_ids": [
+              "MA-ALG-P2"
+            ],
+            "sources": [
+              {
+                "char_end": 274,
+                "char_start": 192,
+                "cite": "H.5222",
+                "doc_id": "D045",
+                "doc_sha256": "8bc537dfe4d0e00b829147ae82ba11d40bef8a2b0696f487c417ca517673bba7",
+                "low_signal": true,
+                "quote": "An Act relative to preventing algorithmic rent fixing in the rental housing market",
+                "quote_source": "corpus",
+                "retrieved_at": "2026-10-01T22:36Z",
+                "supplementary_doc": null,
+                "tier": "B",
+                "url": "https://malegislature.gov/Bills/194/H5222",
+                "version_label": null
+              }
+            ],
+            "title": {
+              "en": "Partial capture of source D045",
+              "es": "Captura parcial de la fuente D045"
+            }
+          }
+        ],
+        "pending": [
+          {
+            "audio": {
+              "en": null,
+              "es": null
+            },
+            "category": "algorithmic_rent_setting",
+            "caveats": [],
+            "citation": {
+              "char_end": 235,
+              "char_start": 192,
+              "cite": "S.2983",
+              "doc_id": "D046",
+              "doc_sha256": "6ea5313d0a656ab73b683e72b594cf143ee61bd6923ee1d9f3df46682248004d",
+              "low_signal": false,
+              "quote": "An Act prohibiting algorithmic rent setting",
+              "quote_source": "corpus",
+              "retrieved_at": "2026-10-01T22:36Z",
+              "supplementary_doc": null,
+              "tier": "B",
+              "url": "https://malegislature.gov/Bills/194/S2983",
+              "version_label": null
+            },
+            "conditions": [],
+            "confidence": 0.8,
+            "conflict_flag": false,
+            "conflicts": [],
+            "effective_date": null,
+            "effective_note": null,
+            "extra_citations": [],
+            "governs_over": [],
+            "jurisdiction": {
+              "geoid": null,
+              "id": "MA",
+              "in_scope": true,
+              "label": "MA",
+              "level": "state",
+              "name": "Massachusetts",
+              "state": "MA"
+            },
+            "key_values": [],
+            "missing_facts": [],
+            "open_question_ids": [],
+            "reason": {
+              "en": "Pending: a proposed bill, not law. It would reach this building if passed.",
+              "es": "Pendiente: un proyecto de ley, no es ley. Cubriría este edificio si se aprueba."
+            },
+            "result": "pending",
+            "review_flag": false,
+            "rule_id": "MA-ALG-P1",
+            "rule_status": "pending",
+            "summary": {
+              "en": "Massachusetts would ban the use of rent-setting software to set rental prices. Landlords could not use algorithms to determine how much rent to charge.",
+              "es": "Massachusetts prohibiría el uso de software para fijar rentas al establecer precios de alquiler. Los arrendadores no podrían usar algoritmos para determinar cuánta renta cobrar."
+            },
+            "superseded_by": null,
+            "title": "Act prohibiting algorithmic rent setting",
+            "who": {
+              "en": "This rule applies to all residential rentals in Massachusetts.",
+              "es": "Esta regla aplica a todos los alquileres residenciales en Massachusetts."
+            }
+          },
+          {
+            "audio": {
+              "en": null,
+              "es": null
+            },
+            "category": "algorithmic_rent_setting",
+            "caveats": [],
+            "citation": {
+              "char_end": 274,
+              "char_start": 192,
+              "cite": "H.5222",
+              "doc_id": "D045",
+              "doc_sha256": "8bc537dfe4d0e00b829147ae82ba11d40bef8a2b0696f487c417ca517673bba7",
+              "low_signal": true,
+              "quote": "An Act relative to preventing algorithmic rent fixing in the rental housing market",
+              "quote_source": "corpus",
+              "retrieved_at": "2026-10-01T22:36Z",
+              "supplementary_doc": null,
+              "tier": "B",
+              "url": "https://malegislature.gov/Bills/194/H5222",
+              "version_label": null
+            },
+            "conditions": [],
+            "confidence": 0.75,
+            "conflict_flag": false,
+            "conflicts": [],
+            "effective_date": null,
+            "effective_note": null,
+            "extra_citations": [],
+            "governs_over": [],
+            "jurisdiction": {
+              "geoid": null,
+              "id": "MA",
+              "in_scope": true,
+              "label": "MA",
+              "level": "state",
+              "name": "Massachusetts",
+              "state": "MA"
+            },
+            "key_values": [],
+            "missing_facts": [],
+            "open_question_ids": [
+              "OQ-09"
+            ],
+            "reason": {
+              "en": "Pending: a proposed bill, not law. It would reach this building if passed.",
+              "es": "Pendiente: un proyecto de ley, no es ley. Cubriría este edificio si se aprueba."
+            },
+            "result": "pending",
+            "review_flag": false,
+            "rule_id": "MA-ALG-P2",
+            "rule_status": "pending",
+            "summary": {
+              "en": "Bill H.5222: Preventing algorithmic rent fixing.",
+              "es": "Bill H.5222: Preventing algorithmic rent fixing."
+            },
+            "superseded_by": null,
+            "title": "Bill H.5222: Preventing algorithmic rent fixing",
+            "who": {
+              "en": "Applies to the rental housing market generally, as indicated by the bill title.",
+              "es": "Applies to the rental housing market generally, as indicated by the bill title."
+            }
+          }
+        ],
+        "reasoning_boundary": {
+          "assumptions": [
+            {
+              "en": "A certificate of occupancy is assumed to fall in the year the building was built.",
+              "es": "Se supone que el certificado de ocupación corresponde al año de construcción."
+            },
+            {
+              "en": "Dates after October 1, 2026 are projections from the sources we retrieved.",
+              "es": "Las fechas posteriores al 1 de octubre de 2026 son proyecciones a partir de las fuentes consultadas."
+            }
+          ],
+          "checked": [
+            {
+              "en": "Rules quoted from 54 public legal documents retrieved on October 1, 2026.",
+              "es": "Reglas citadas de 54 documentos legales públicos consultados el October 1, 2026."
+            },
+            {
+              "en": "Which city and state the address is legally in, by map boundary, not by mailing name.",
+              "es": "En qué ciudad y estado queda legalmente la dirección, por límites del mapa y no por el nombre postal."
+            },
+            {
+              "en": "Building size and year built from the public assessor record",
+              "es": "Tamaño y año de construcción del registro público del asesor"
+            }
+          ],
+          "not_checked": [
+            {
+              "en": "Facts that are not in public records, such as who owns the building, unless you tell us.",
+              "es": "Datos que no están en registros públicos, como quién es el dueño, a menos que usted los indique."
+            },
+            {
+              "en": "Court decisions, agency guidance and your lease terms.",
+              "es": "Decisiones judiciales, guías de agencias y los términos de su contrato."
+            },
+            {
+              "en": "Local laws in cities outside our ten, and laws whose text we could not retrieve.",
+              "es": "Leyes locales de ciudades fuera de nuestras diez y leyes cuyo texto no pudimos obtener."
+            }
+          ]
+        },
+        "sources_retrieved_at": "2026-10-01",
+        "upcoming": []
+      },
+      "start": "2025-08-01"
+    }
+  ]
+}

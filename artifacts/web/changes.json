@@ -1,0 +1,128 @@
+{
+  "items": [
+    {
+      "affected_count": 250,
+      "change_id": "chg-T1",
+      "compare": {
+        "after": "2026-01-02",
+        "before": "2025-12-31"
+      },
+      "conflict_count": 0,
+      "created_at": "2026-10-04T03:35:06Z",
+      "expected_check": {
+        "detail": "affected 250 of expected 250; conflict flags 0 of expected 0",
+        "passed": true
+      },
+      "kind": "test",
+      "rule_ids": [
+        "CA-ALG-01"
+      ],
+      "summary": {
+        "en": "Compared 2025-12-31 with 2026-01-02 for CA-ALG-01 (CA). 250 of 250 addresses change (250 addresses: not_yet_effective -> applies).",
+        "es": "Compared 2025-12-31 with 2026-01-02 for CA-ALG-01 (CA). 250 of 250 addresses change (250 addresses: not_yet_effective -> applies)."
+      },
+      "test_id": "T1",
+      "test_type": "as_of",
+      "title": "California AB 325 / SB 763 takes effect"
+    },
+    {
+      "affected_count": 90,
+      "change_id": "chg-T2",
+      "compare": {
+        "on": "2026-10-01"
+      },
+      "conflict_count": 0,
+      "created_at": "2026-10-04T03:35:06Z",
+      "expected_check": {
+        "detail": "affected 90 of expected 90; conflict flags 0 of expected 0",
+        "passed": true
+      },
+      "kind": "test",
+      "rule_ids": [
+        "HOB-ALG-01",
+        "JC-ALG-01"
+      ],
+      "summary": {
+        "en": "On 2026-10-01, 90 of 500 addresses are reached by HOB-ALG-01 or JC-ALG-01: HOB-ALG-01 reaches 40, JC-ALG-01 reaches 50.",
+        "es": "On 2026-10-01, 90 of 500 addresses are reached by HOB-ALG-01 or JC-ALG-01: HOB-ALG-01 reaches 40, JC-ALG-01 reaches 50."
+      },
+      "test_id": "T2",
+      "test_type": "boundary",
+      "title": "Hoboken vs Jersey City local algorithmic bans"
+    },
+    {
+      "affected_count": 140,
+      "change_id": "chg-T3",
+      "compare": {
+        "after": "2027-07-02",
+        "before": "2026-10-01"
+      },
+      "conflict_count": 90,
+      "created_at": "2026-10-04T03:35:06Z",
+      "expected_check": {
+        "detail": "affected 140 of expected 140; conflict flags 90 of expected 90",
+        "passed": true
+      },
+      "kind": "test",
+      "rule_ids": [
+        "NJ-ALG-01"
+      ],
+      "summary": {
+        "en": "Compared 2026-10-01 with 2027-07-02 for NJ-ALG-01 (NJ). 140 of 140 addresses change (140 addresses: not_yet_effective -> applies). 90 carry a conflict flag on 2027-07-02 (possible preemption between NJ-ALG-01 and JC-ALG-01 and HOB-ALG-01), for human review.",
+        "es": "Compared 2026-10-01 with 2027-07-02 for NJ-ALG-01 (NJ). 140 of 140 addresses change (140 addresses: not_yet_effective -> applies). 90 carry a conflict flag on 2027-07-02 (possible preemption between NJ-ALG-01 and JC-ALG-01 and HOB-ALG-01), for human review."
+      },
+      "test_id": "T3",
+      "test_type": "as_of",
+      "title": "NJ FAIR Act: enacted, not yet effective; possible preemption"
+    },
+    {
+      "affected_count": 110,
+      "change_id": "chg-T4",
+      "compare": {
+        "on": "2026-10-01"
+      },
+      "conflict_count": 0,
+      "created_at": "2026-10-04T03:35:06Z",
+      "expected_check": {
+        "detail": "affected 110 of expected 110; conflict flags 0 of expected 0",
+        "passed": true
+      },
+      "kind": "test",
+      "rule_ids": [
+        "MA-ALG-P1",
+        "MA-ALG-P2"
+      ],
+      "summary": {
+        "en": "On 2026-10-01, MA-ALG-P1 and MA-ALG-P2 are pending, not law. 110 of 110 addresses would be reached if enacted.",
+        "es": "On 2026-10-01, MA-ALG-P1 and MA-ALG-P2 are pending, not law. 110 of 110 addresses would be reached if enacted."
+      },
+      "test_id": "T4",
+      "test_type": "pending",
+      "title": "Massachusetts pending bills S.2983 and H.5222"
+    },
+    {
+      "affected_count": 0,
+      "change_id": "chg-T5",
+      "compare": {
+        "on": "2026-10-01"
+      },
+      "conflict_count": 0,
+      "created_at": "2026-10-04T03:35:06Z",
+      "expected_check": {
+        "detail": "affected 0 of expected 0; conflict flags 0 of expected 0",
+        "passed": true
+      },
+      "kind": "test",
+      "rule_ids": [
+        "MA-RENT-P1"
+      ],
+      "summary": {
+        "en": "On 2026-10-01, MA-RENT-P1 recorded as failed; 0 addresses receive a result from it.",
+        "es": "On 2026-10-01, MA-RENT-P1 recorded as failed; 0 addresses receive a result from it."
+      },
+      "test_id": "T5",
+      "test_type": "negative",
+      "title": "Massachusetts rent-control ballot question struck"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "affected": [],
+  "affected_count": 0,
+  "change_id": "chg-T5",
+  "compare": {
+    "on": "2026-10-01"
+  },
+  "conflict_count": 0,
+  "created_at": "2026-10-04T03:35:06Z",
+  "expected_check": {
+    "detail": "affected 0 of expected 0; conflict flags 0 of expected 0",
+    "passed": true
+  },
+  "kind": "test",
+  "rule_ids": [
+    "MA-RENT-P1"
+  ],
+  "summary": {
+    "en": "On 2026-10-01, MA-RENT-P1 recorded as failed; 0 addresses receive a result from it.",
+    "es": "On 2026-10-01, MA-RENT-P1 recorded as failed; 0 addresses receive a result from it."
+  },
+  "test_id": "T5",
+  "test_type": "negative",
+  "title": "Massachusetts rent-control ballot question struck"
+}

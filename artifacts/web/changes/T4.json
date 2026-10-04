@@ -1,0 +1,3107 @@
+{
+  "affected": [
+    {
+      "address_id": "A0006",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "69-71 Westland Av, Boston, MA 02115",
+      "lat": 42.343782153564,
+      "legal_city": "Boston",
+      "lon": -71.088686987281
+    },
+    {
+      "address_id": "A0009",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "322-322.5 Western Ave, Cambridge, MA",
+      "lat": 42.364468228676,
+      "legal_city": "Cambridge",
+      "lon": -71.113348085886
+    },
+    {
+      "address_id": "A0010",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "134 Oxford St, Cambridge, MA",
+      "lat": 42.385333082376,
+      "legal_city": "Cambridge",
+      "lon": -71.1160583909
+    },
+    {
+      "address_id": "A0015",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "15 Everett St, Cambridge, MA",
+      "lat": 42.379980886163,
+      "legal_city": "Cambridge",
+      "lon": -71.118720021347
+    },
+    {
+      "address_id": "A0024",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "227 Charles St, Cambridge, MA",
+      "lat": 42.368207474124,
+      "legal_city": "Cambridge",
+      "lon": -71.084850671785
+    },
+    {
+      "address_id": "A0034",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "25 Gore St, Cambridge, MA",
+      "lat": 42.371703436562,
+      "legal_city": "Cambridge",
+      "lon": -71.079128226997
+    },
+    {
+      "address_id": "A0036",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "33 Ward St, South Boston, MA 02127",
+      "lat": 42.32946722555,
+      "legal_city": "Boston",
+      "lon": -71.054524489253
+    },
+    {
+      "address_id": "A0039",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1 Craigie St, Cambridge, MA",
+      "lat": 42.379449621711,
+      "legal_city": "Cambridge",
+      "lon": -71.125838882455
+    },
+    {
+      "address_id": "A0043",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4 Orchard St, Cambridge, MA",
+      "lat": 42.390119763731,
+      "legal_city": "Cambridge",
+      "lon": -71.119075629483
+    },
+    {
+      "address_id": "A0046",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "8-12 Soden St, Cambridge, MA",
+      "lat": 42.365425650101,
+      "legal_city": "Cambridge",
+      "lon": -71.108291600506
+    },
+    {
+      "address_id": "A0048",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1619 Commonwealth Av, Brighton, MA 02135",
+      "lat": 42.343402761946,
+      "legal_city": "Boston",
+      "lon": -71.143549067491
+    },
+    {
+      "address_id": "A0052",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "88 Gardner ST, Allston, MA 02134",
+      "lat": 42.353518237841,
+      "legal_city": "Boston",
+      "lon": -71.125813095903
+    },
+    {
+      "address_id": "A0053",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "32 Garrison ST, Boston, MA 02116",
+      "lat": 42.345890982312,
+      "legal_city": "Boston",
+      "lon": -71.07944707371
+    },
+    {
+      "address_id": "A0054",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "13 Shetland ST, Roxbury, MA 02119",
+      "lat": 42.324986499476,
+      "legal_city": "Boston",
+      "lon": -71.068028337557
+    },
+    {
+      "address_id": "A0056",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "41-43 Edgerly RD, Boston, MA 02115",
+      "lat": 42.34565560843,
+      "legal_city": "Boston",
+      "lon": -71.087953685927
+    },
+    {
+      "address_id": "A0063",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "11 Cortes ST, Boston, MA 02116",
+      "lat": 42.348290028212,
+      "legal_city": "Boston",
+      "lon": -71.069583391995
+    },
+    {
+      "address_id": "A0064",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "24-26 Concord Ave, Cambridge, MA",
+      "lat": 42.379346098924,
+      "legal_city": "Cambridge",
+      "lon": -71.125715638744
+    },
+    {
+      "address_id": "A0065",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "63 Bailey ST, Dorchester, MA 02124",
+      "lat": 42.284452236737,
+      "legal_city": "Boston",
+      "lon": -71.066465126331
+    },
+    {
+      "address_id": "A0068",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "40-42 Clearway ST, Boston, MA 02115",
+      "lat": 42.345343961417,
+      "legal_city": "Boston",
+      "lon": -71.085817934257
+    },
+    {
+      "address_id": "A0070",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "43 Fayette St, Cambridge, MA",
+      "lat": 42.372611705618,
+      "legal_city": "Cambridge",
+      "lon": -71.103267573782
+    },
+    {
+      "address_id": "A0071",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "14.5-16 Vandine St, Cambridge, MA",
+      "lat": 42.368807622044,
+      "legal_city": "Cambridge",
+      "lon": -71.090573198514
+    },
+    {
+      "address_id": "A0073",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "35-37 Inman St, Cambridge, MA",
+      "lat": 42.368591564991,
+      "legal_city": "Cambridge",
+      "lon": -71.104039667653
+    },
+    {
+      "address_id": "A0075",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "27 Everett St, Cambridge, MA",
+      "lat": 42.379922700614,
+      "legal_city": "Cambridge",
+      "lon": -71.117508170008
+    },
+    {
+      "address_id": "A0077",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "91 Brookline St, Cambridge, MA",
+      "lat": 42.361566486333,
+      "legal_city": "Cambridge",
+      "lon": -71.103733351887
+    },
+    {
+      "address_id": "A0082",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "63 Inman St, Cambridge, MA",
+      "lat": 42.370344257321,
+      "legal_city": "Cambridge",
+      "lon": -71.102833387558
+    },
+    {
+      "address_id": "A0083",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "38 Kenilworth St, Roxbury, MA 02119",
+      "lat": 42.328651609512,
+      "legal_city": "Boston",
+      "lon": -71.087424612529
+    },
+    {
+      "address_id": "A0086",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "67 Plymouth St, Cambridge, MA",
+      "lat": 42.369083221693,
+      "legal_city": "Cambridge",
+      "lon": -71.093495991755
+    },
+    {
+      "address_id": "A0093",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "90 Bickford St, Jamaica Plain, MA 02130",
+      "lat": 42.324002818423,
+      "legal_city": "Boston",
+      "lon": -71.101924371068
+    },
+    {
+      "address_id": "A0095",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "23 Elm St, Cambridge, MA",
+      "lat": 42.367845841037,
+      "legal_city": "Cambridge",
+      "lon": -71.098495150944
+    },
+    {
+      "address_id": "A0096",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "81 Westland Av, Boston, MA 02115",
+      "lat": 42.343854353427,
+      "legal_city": "Boston",
+      "lon": -71.089157903457
+    },
+    {
+      "address_id": "A0098",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "Willowwood St, Dorchester, MA 02124",
+      "lat": 42.2845131,
+      "legal_city": "Boston",
+      "lon": -71.0862152
+    },
+    {
+      "address_id": "A0118",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "18-34 Kingbird Rd, Dorchester, MA 02124",
+      "lat": 42.292393727282,
+      "legal_city": "Boston",
+      "lon": -71.09361381307
+    },
+    {
+      "address_id": "A0123",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "123 Condor ST, East Boston, MA 02128",
+      "lat": 42.382539410028,
+      "legal_city": "Boston",
+      "lon": -71.035437146913
+    },
+    {
+      "address_id": "A0124",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "33-35 Brookline St, Cambridge, MA",
+      "lat": 42.363009949315,
+      "legal_city": "Cambridge",
+      "lon": -71.102397310535
+    },
+    {
+      "address_id": "A0128",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "Harvard ST, Dorchester, MA 02124",
+      "lat": 42.2993192,
+      "legal_city": "Boston",
+      "lon": -71.0738262
+    },
+    {
+      "address_id": "A0134",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "101 Norfolk ST, Dorchester, MA 02124",
+      "lat": 42.288488914986,
+      "legal_city": "Boston",
+      "lon": -71.076008765993
+    },
+    {
+      "address_id": "A0140",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "459 Beacon St, Boston, MA 02115",
+      "lat": 42.351156189935,
+      "legal_city": "Boston",
+      "lon": -71.088098655836
+    },
+    {
+      "address_id": "A0143",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "75 Elm Hill Av, Dorchester, MA 02121",
+      "lat": 42.310212727666,
+      "legal_city": "Boston",
+      "lon": -71.087061380822
+    },
+    {
+      "address_id": "A0144",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "112-114 Amory ST, Roxbury, MA 02119",
+      "lat": 42.319531661123,
+      "legal_city": "Boston",
+      "lon": -71.100170587998
+    },
+    {
+      "address_id": "A0149",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "25 Everett ST, East Boston, MA 02128",
+      "lat": 42.368309769533,
+      "legal_city": "Boston",
+      "lon": -71.036711056222
+    },
+    {
+      "address_id": "A0151",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "16 Queensberry ST, Boston, MA 02215",
+      "lat": 42.343098317562,
+      "legal_city": "Boston",
+      "lon": -71.095965021374
+    },
+    {
+      "address_id": "A0155",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "473 Harvard ST, Dorchester, MA 02124",
+      "lat": 42.288741879366,
+      "legal_city": "Boston",
+      "lon": -71.09239312943
+    },
+    {
+      "address_id": "A0166",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1 Potter Pk, Cambridge, MA",
+      "lat": 42.384310248934,
+      "legal_city": "Cambridge",
+      "lon": -71.12020099261
+    },
+    {
+      "address_id": "A0169",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "115 Kilsyth Rd, Brighton, MA 02135",
+      "lat": 42.340367940381,
+      "legal_city": "Boston",
+      "lon": -71.146633078674
+    },
+    {
+      "address_id": "A0174",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "84 Hampshire St, Cambridge, MA",
+      "lat": 42.368359091009,
+      "legal_city": "Cambridge",
+      "lon": -71.0943940217
+    },
+    {
+      "address_id": "A0175",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "10 Dover St, Cambridge, MA",
+      "lat": 42.394678131873,
+      "legal_city": "Cambridge",
+      "lon": -71.126686968537
+    },
+    {
+      "address_id": "A0176",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "15 Chester St, Cambridge, MA",
+      "lat": 42.393657148181,
+      "legal_city": "Cambridge",
+      "lon": -71.124477534158
+    },
+    {
+      "address_id": "A0191",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "60 Kirkland St, Cambridge, MA",
+      "lat": 42.377309547812,
+      "legal_city": "Cambridge",
+      "lon": -71.110680713996
+    },
+    {
+      "address_id": "A0194",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "72 Burbank ST, Boston, MA 02115",
+      "lat": 42.34449244891,
+      "legal_city": "Boston",
+      "lon": -71.08932121797
+    },
+    {
+      "address_id": "A0195",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "1850-1848 Commonwealth Av, Brighton, MA 02135",
+      "lat": 42.338962456382,
+      "legal_city": "Boston",
+      "lon": -71.152168954882
+    },
+    {
+      "address_id": "A0198",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "194 Havre ST, East Boston, MA 02128",
+      "lat": 42.374496794147,
+      "legal_city": "Boston",
+      "lon": -71.036497835188
+    },
+    {
+      "address_id": "A0199",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "42 Bay State Rd, Cambridge, MA",
+      "lat": 42.387191106272,
+      "legal_city": "Cambridge",
+      "lon": -71.140083871382
+    },
+    {
+      "address_id": "A0203",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2986-2930 Washington ST, Roxbury, MA 02119",
+      "lat": 42.317725876641,
+      "legal_city": "Boston",
+      "lon": -71.096287187104
+    },
+    {
+      "address_id": "A0209",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "19 Trowbridge St, Cambridge, MA",
+      "lat": 42.371041072612,
+      "legal_city": "Cambridge",
+      "lon": -71.11237412069
+    },
+    {
+      "address_id": "A0211",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "499 Beacon St, Boston, MA 02215",
+      "lat": 42.350692439566,
+      "legal_city": "Boston",
+      "lon": -71.089845858115
+    },
+    {
+      "address_id": "A0214",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "358 Harvard St, Cambridge, MA",
+      "lat": 42.371082219474,
+      "legal_city": "Cambridge",
+      "lon": -71.110911398922
+    },
+    {
+      "address_id": "A0217",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "170-172 Maverick ST, East Boston, MA 02128",
+      "lat": 42.3695452992,
+      "legal_city": "Boston",
+      "lon": -71.037420846277
+    },
+    {
+      "address_id": "A0218",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "15 Richdale Ave, Cambridge, MA",
+      "lat": 42.388324409245,
+      "legal_city": "Cambridge",
+      "lon": -71.121620396425
+    },
+    {
+      "address_id": "A0220",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "21-23 Faulkner ST, Dorchester, MA 02122",
+      "lat": 42.299546456651,
+      "legal_city": "Boston",
+      "lon": -71.061434029601
+    },
+    {
+      "address_id": "A0221",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "191 Park DR, Boston, MA 02215",
+      "lat": 42.341033010088,
+      "legal_city": "Boston",
+      "lon": -71.100162328229
+    },
+    {
+      "address_id": "A0226",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "663 Massachusetts Av, Boston, MA 02118",
+      "lat": 42.335912589034,
+      "legal_city": "Boston",
+      "lon": -71.0764696579
+    },
+    {
+      "address_id": "A0230",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "85 Hancock St, Cambridge, MA",
+      "lat": 42.36894090845,
+      "legal_city": "Cambridge",
+      "lon": -71.10823462185
+    },
+    {
+      "address_id": "A0232",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "189 Third St, Cambridge, MA",
+      "lat": 42.367926768436,
+      "legal_city": "Cambridge",
+      "lon": -71.080956110328
+    },
+    {
+      "address_id": "A0233",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "30 Medfield St, Boston, MA 02215",
+      "lat": 42.345263577025,
+      "legal_city": "Boston",
+      "lon": -71.105981333095
+    },
+    {
+      "address_id": "A0242",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "85-87 Sierra Rd, Hyde Park, MA 02136",
+      "lat": 42.2377982,
+      "legal_city": "Boston",
+      "lon": -71.1266635
+    },
+    {
+      "address_id": "A0245",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "30 West Howell St M-D, Dorchester, MA 02125",
+      "lat": 42.325356355842,
+      "legal_city": "Boston",
+      "lon": -71.059503187262
+    },
+    {
+      "address_id": "A0258",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "471 Columbia Rd, Dorchester, MA 02125",
+      "lat": 42.314021035494,
+      "legal_city": "Boston",
+      "lon": -71.067499784037
+    },
+    {
+      "address_id": "A0272",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "5 Everett St, Cambridge, MA",
+      "lat": 42.380002159495,
+      "legal_city": "Cambridge",
+      "lon": -71.11923068717
+    },
+    {
+      "address_id": "A0284",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "345 Columbia St, Cambridge, MA",
+      "lat": 42.371521199602,
+      "legal_city": "Cambridge",
+      "lon": -71.095359909702
+    },
+    {
+      "address_id": "A0286",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "27 Irving Ter, Cambridge, MA",
+      "lat": 42.375840853959,
+      "legal_city": "Cambridge",
+      "lon": -71.111412032264
+    },
+    {
+      "address_id": "A0290",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "21 Forest St, Cambridge, MA",
+      "lat": 42.385243189976,
+      "legal_city": "Cambridge",
+      "lon": -71.116197964756
+    },
+    {
+      "address_id": "A0291",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "165 Cambridgepark Dr, Cambridge, MA",
+      "lat": 42.395099011822,
+      "legal_city": "Cambridge",
+      "lon": -71.146981411789
+    },
+    {
+      "address_id": "A0292",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "24 Berkshire St, Cambridge, MA",
+      "lat": 42.368859452865,
+      "legal_city": "Cambridge",
+      "lon": -71.091628846996
+    },
+    {
+      "address_id": "A0294",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "178 Richdale Ave, Cambridge, MA",
+      "lat": 42.389122123461,
+      "legal_city": "Cambridge",
+      "lon": -71.126525304753
+    },
+    {
+      "address_id": "A0295",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "Harvard ST LOT 2A-13, Dorchester, MA 02124",
+      "lat": null,
+      "legal_city": null,
+      "lon": null
+    },
+    {
+      "address_id": "A0298",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "361 Washington St, Cambridge, MA",
+      "lat": 42.365668497367,
+      "legal_city": "Cambridge",
+      "lon": -71.099392946846
+    },
+    {
+      "address_id": "A0300",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "36 Trowbridge St, Cambridge, MA",
+      "lat": 42.371850975157,
+      "legal_city": "Cambridge",
+      "lon": -71.111648701864
+    },
+    {
+      "address_id": "A0301",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "165 Hampshire St, Cambridge, MA",
+      "lat": 42.371842605201,
+      "legal_city": "Cambridge",
+      "lon": -71.098439445715
+    },
+    {
+      "address_id": "A0302",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4-6 Clinton St, Cambridge, MA",
+      "lat": 42.367476629021,
+      "legal_city": "Cambridge",
+      "lon": -71.106864979314
+    },
+    {
+      "address_id": "A0306",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "335A Harvard St, Cambridge, MA",
+      "lat": 42.370715584888,
+      "legal_city": "Cambridge",
+      "lon": -71.109090354517
+    },
+    {
+      "address_id": "A0310",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "53-55 Ashford ST, Allston, MA 02134",
+      "lat": 42.354511450817,
+      "legal_city": "Boston",
+      "lon": -71.12661393612
+    },
+    {
+      "address_id": "A0312",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "25 Orlando St, Mattapan, MA 02126",
+      "lat": 42.274643004403,
+      "legal_city": "Boston",
+      "lon": -71.0991080589
+    },
+    {
+      "address_id": "A0332",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "26 Sonoma St, Dorchester, MA 02121",
+      "lat": 42.308190903587,
+      "legal_city": "Boston",
+      "lon": -71.086856518884
+    },
+    {
+      "address_id": "A0336",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "151 North First St, Cambridge, MA",
+      "lat": 42.372482137906,
+      "legal_city": "Cambridge",
+      "lon": -71.075526736217
+    },
+    {
+      "address_id": "A0339",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "124 Berkshire St, Cambridge, MA",
+      "lat": 42.371616346646,
+      "legal_city": "Cambridge",
+      "lon": -71.090029432444
+    },
+    {
+      "address_id": "A0342",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "49 Roseland St, Cambridge, MA",
+      "lat": 42.386748328179,
+      "legal_city": "Cambridge",
+      "lon": -71.116972926785
+    },
+    {
+      "address_id": "A0354",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "73 Lubec St, East Boston, MA 02128",
+      "lat": 42.370721531914,
+      "legal_city": "Boston",
+      "lon": -71.033000779013
+    },
+    {
+      "address_id": "A0356",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "16 Brainerd RD, Allston, MA 02134",
+      "lat": 42.348858680092,
+      "legal_city": "Boston",
+      "lon": -71.130629546012
+    },
+    {
+      "address_id": "A0361",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "15 Berkshire St, Cambridge, MA",
+      "lat": 42.368426537915,
+      "legal_city": "Cambridge",
+      "lon": -71.092040596292
+    },
+    {
+      "address_id": "A0362",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "368 Riverway St, Boston, MA 02115",
+      "lat": 42.334291810524,
+      "legal_city": "Boston",
+      "lon": -71.110791246894
+    },
+    {
+      "address_id": "A0366",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "230 Everett ST, East Boston, MA 02128",
+      "lat": 42.365643672949,
+      "legal_city": "Boston",
+      "lon": -71.030306589214
+    },
+    {
+      "address_id": "A0376",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "St James St, Roxbury, MA 02119",
+      "lat": 42.3266526,
+      "legal_city": "Boston",
+      "lon": -71.0854415
+    },
+    {
+      "address_id": "A0380",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "Greenville St, Roxbury, MA 02119",
+      "lat": 42.3272463,
+      "legal_city": "Boston",
+      "lon": -71.0805833
+    },
+    {
+      "address_id": "A0403",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "45 Myrtle ST, Boston, MA 02114",
+      "lat": 42.359416672345,
+      "legal_city": "Boston",
+      "lon": -71.066075463637
+    },
+    {
+      "address_id": "A0406",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "170 W Springfield ST, Boston, MA 02118",
+      "lat": 42.339468331482,
+      "legal_city": "Boston",
+      "lon": -71.079433474181
+    },
+    {
+      "address_id": "A0422",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "21-23 Marion St, Cambridge, MA",
+      "lat": 42.372394786904,
+      "legal_city": "Cambridge",
+      "lon": -71.088995126672
+    },
+    {
+      "address_id": "A0423",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "10 Camelot Ct, Brighton, MA 02135",
+      "lat": 42.349362810146,
+      "legal_city": "Boston",
+      "lon": -71.141330315148
+    },
+    {
+      "address_id": "A0429",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "12 Blackwood St, Boston, MA 02115",
+      "lat": 42.34315888883,
+      "legal_city": "Boston",
+      "lon": -71.082683836307
+    },
+    {
+      "address_id": "A0444",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "231 Commonwealth Av, Boston, MA 02116",
+      "lat": 42.351030509952,
+      "legal_city": "Boston",
+      "lon": -71.082259034359
+    },
+    {
+      "address_id": "A0446",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "610 Columbus Av, Boston, MA 02118",
+      "lat": 42.339112790328,
+      "legal_city": "Boston",
+      "lon": -71.083459763098
+    },
+    {
+      "address_id": "A0453",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "11 Carlisle St, Cambridge, MA",
+      "lat": 42.372350092405,
+      "legal_city": "Cambridge",
+      "lon": -71.097785158487
+    },
+    {
+      "address_id": "A0463",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "4 Beechwood St, Dorchester, MA 02121",
+      "lat": 42.30507257807,
+      "legal_city": "Boston",
+      "lon": -71.074772762892
+    },
+    {
+      "address_id": "A0464",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "2-98 Dabney St, Roxbury, MA 02119",
+      "lat": 42.325243458888,
+      "legal_city": "Boston",
+      "lon": -71.084506386968
+    },
+    {
+      "address_id": "A0465",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "141 Oxford St, Cambridge, MA",
+      "lat": 42.385287646163,
+      "legal_city": "Cambridge",
+      "lon": -71.116210705332
+    },
+    {
+      "address_id": "A0466",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "115 Norway St, Boston, MA 02115",
+      "lat": 42.345351761852,
+      "legal_city": "Boston",
+      "lon": -71.088829313111
+    },
+    {
+      "address_id": "A0467",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "24 St Albans Rd, Boston, MA 02115",
+      "lat": 42.333878417918,
+      "legal_city": "Boston",
+      "lon": -71.106997184859
+    },
+    {
+      "address_id": "A0468",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "13 Shepard St, Cambridge, MA",
+      "lat": 42.381661514871,
+      "legal_city": "Cambridge",
+      "lon": -71.121015754447
+    },
+    {
+      "address_id": "A0473",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "20 Phillips ST, Boston, MA 02114",
+      "lat": 42.360298905905,
+      "legal_city": "Boston",
+      "lon": -71.067296757754
+    },
+    {
+      "address_id": "A0485",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "296-302 Western Ave, Cambridge, MA",
+      "lat": 42.364528330341,
+      "legal_city": "Cambridge",
+      "lon": -71.112705698148
+    },
+    {
+      "address_id": "A0488",
+      "after": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "before": [
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P1"
+        },
+        {
+          "result": "pending",
+          "rule_id": "MA-ALG-P2"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "197 Beacon St, Boston, MA 02116",
+      "lat": 42.354230756113,
+      "legal_city": "Boston",
+      "lon": -71.076768182377
+    }
+  ],
+  "affected_count": 110,
+  "change_id": "chg-T4",
+  "compare": {
+    "on": "2026-10-01"
+  },
+  "conflict_count": 0,
+  "created_at": "2026-10-04T03:35:06Z",
+  "expected_check": {
+    "detail": "affected 110 of expected 110; conflict flags 0 of expected 0",
+    "passed": true
+  },
+  "kind": "test",
+  "rule_ids": [
+    "MA-ALG-P1",
+    "MA-ALG-P2"
+  ],
+  "summary": {
+    "en": "On 2026-10-01, MA-ALG-P1 and MA-ALG-P2 are pending, not law. 110 of 110 addresses would be reached if enacted.",
+    "es": "On 2026-10-01, MA-ALG-P1 and MA-ALG-P2 are pending, not law. 110 of 110 addresses would be reached if enacted."
+  },
+  "test_id": "T4",
+  "test_type": "pending",
+  "title": "Massachusetts pending bills S.2983 and H.5222"
+}

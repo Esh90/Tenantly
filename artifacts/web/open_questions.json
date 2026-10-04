@@ -1,0 +1,322 @@
+{
+  "items": [
+    {
+      "changes_answer_between": [
+        "2026-01-01",
+        "2026-03-01"
+      ],
+      "detail": {
+        "en": "Berkeley's algorithmic ban (ch. 13.63) has two published effective dates: March 1, 2026 in the ordinance text, January 2026 per an August 2026 law-firm alert. The ordinance text we hold has no effective date, so we show the range between the two published dates.",
+        "es": "La prohibición de algoritmos de Berkeley (cap. 13.63) tiene dos fechas de vigencia publicadas: 1 de marzo de 2026 en el texto de la ordenanza, enero de 2026 según una alerta de un despacho de abogados de agosto de 2026. El texto de la ordenanza que tenemos no tiene fecha de vigencia, por lo que mostramos el rango entre las dos fechas publicadas."
+      },
+      "oq_id": "OQ-01",
+      "rule_ids": [
+        "BRK-ALG-01"
+      ],
+      "sources": [
+        {
+          "char_end": null,
+          "char_start": null,
+          "cite": "Participant guide, section 9",
+          "doc_id": "README",
+          "doc_sha256": null,
+          "low_signal": false,
+          "quote": "Berkeley's algorithmic ban (ch. 13.63) has two published effective dates: March 1, 2026 in the ordinance text, January 2026 per an August 2026 law-firm alert.",
+          "quote_source": "supplementary",
+          "retrieved_at": "2026-10-01",
+          "supplementary_doc": "README.md",
+          "tier": "B",
+          "url": "dataset/README.md",
+          "version_label": null
+        }
+      ],
+      "title": {
+        "en": "Berkeley's algorithmic ban",
+        "es": "Prohibición de algoritmos de Berkeley"
+      }
+    },
+    {
+      "changes_answer_between": [
+        "2027-07-01",
+        "2027-07-01"
+      ],
+      "detail": {
+        "en": "New Jersey's FAIR Act may preempt the Jersey City and Hoboken ordinances once it takes effect.",
+        "es": "New Jersey's FAIR Act puede anular las ordenanzas de Jersey City y Hoboken una vez que entre en vigencia."
+      },
+      "oq_id": "OQ-02",
+      "rule_ids": [
+        "HOB-ALG-01",
+        "JC-ALG-01",
+        "NJ-ALG-01"
+      ],
+      "sources": [
+        {
+          "char_end": null,
+          "char_start": null,
+          "cite": "Participant guide, section 9",
+          "doc_id": "README",
+          "doc_sha256": null,
+          "low_signal": false,
+          "quote": "New Jersey's FAIR Act may preempt the Jersey City and Hoboken ordinances once it takes effect.",
+          "quote_source": "supplementary",
+          "retrieved_at": "2026-10-01",
+          "supplementary_doc": "README.md",
+          "tier": "B",
+          "url": "dataset/README.md",
+          "version_label": null
+        }
+      ],
+      "title": {
+        "en": "New Jersey's FAIR Act",
+        "es": "New Jersey's FAIR Act"
+      }
+    },
+    {
+      "changes_answer_between": [
+        "2026-01-24",
+        "2026-02-02"
+      ],
+      "detail": {
+        "en": "Los Angeles's new RSO formula has two published effective dates: 2026-02-02 per LAHD, 2026-01-24 per a landlord association.",
+        "es": "La nueva fórmula de RSO de Los Ángeles tiene dos fechas efectivas publicadas: 2026-02-02 según LAHD, 2026-01-24 según una asociación de propietarios."
+      },
+      "oq_id": "OQ-03",
+      "rule_ids": [
+        "LA-RENT-01",
+        "LA-RENT-02",
+        "LA-RENT-03",
+        "LA-RENT-04"
+      ],
+      "sources": [
+        {
+          "char_end": null,
+          "char_start": null,
+          "cite": "Participant guide, section 9",
+          "doc_id": "README",
+          "doc_sha256": null,
+          "low_signal": false,
+          "quote": "Los Angeles's new RSO formula has two published effective dates: 2026-02-02 per LAHD, 2026-01-24 per a landlord association.",
+          "quote_source": "supplementary",
+          "retrieved_at": "2026-10-01",
+          "supplementary_doc": "README.md",
+          "tier": "B",
+          "url": "dataset/README.md",
+          "version_label": null
+        }
+      ],
+      "title": {
+        "en": "Los Angeles's new RSO formula",
+        "es": "Nueva fórmula de RSO de Los Ángeles"
+      }
+    },
+    {
+      "changes_answer_between": null,
+      "detail": {
+        "en": "California's screening-fee cap has no single official 2026 dollar figure.",
+        "es": "El límite de tarifa de verificación de California no tiene una cifra oficial única en dólares para 2026."
+      },
+      "oq_id": "OQ-04",
+      "rule_ids": [
+        "CA-FEE-01",
+        "CA-FEE-02"
+      ],
+      "sources": [
+        {
+          "char_end": null,
+          "char_start": null,
+          "cite": "Participant guide, section 9",
+          "doc_id": "README",
+          "doc_sha256": null,
+          "low_signal": false,
+          "quote": "California's screening-fee cap has no single official 2026 dollar figure.",
+          "quote_source": "supplementary",
+          "retrieved_at": "2026-10-01",
+          "supplementary_doc": "README.md",
+          "tier": "B",
+          "url": "dataset/README.md",
+          "version_label": null
+        }
+      ],
+      "title": {
+        "en": "California's screening-fee cap",
+        "es": "Límite de tarifa de verificación de California"
+      }
+    },
+    {
+      "changes_answer_between": null,
+      "detail": {
+        "en": "The official page for MA (https://www.mass.gov/doc/803-cmr-5-criminal-offender-record-information-cori-housing/download) could not be captured, so rules from it are not in our sources.",
+        "es": "No se pudo capturar la página oficial de MA (https://www.mass.gov/doc/803-cmr-5-criminal-offender-record-information-cori-housing/download), por lo que las normas de la misma no están en nuestras fuentes."
+      },
+      "oq_id": "OQ-05",
+      "rule_ids": [],
+      "sources": [],
+      "title": {
+        "en": "Official text could not be read (D056)",
+        "es": "No se pudo leer el texto oficial (D056)"
+      }
+    },
+    {
+      "changes_answer_between": null,
+      "detail": {
+        "en": "The saved copy of D013 is mostly site navigation, so coverage details for Notice of Tenants' Rights and Resources may be incomplete.",
+        "es": "La copia guardada de D013 es principalmente navegación del sitio, por lo que los detalles de cobertura para Aviso de Derechos y Recursos de Inquilinos pueden estar incompletos."
+      },
+      "oq_id": "OQ-06",
+      "rule_ids": [
+        "BOS-JCE-01"
+      ],
+      "sources": [
+        {
+          "char_end": 1903,
+          "char_start": 1736,
+          "cite": "Boston City Ordinances § 10-11.7",
+          "doc_id": "D013",
+          "doc_sha256": "49b8ad77c47ac7a12afc5a1451cc38e8d908b45f83c922cbd2ee2eb320b715f0",
+          "low_signal": true,
+          "quote": "The Housing Stability Notification Act requires\nALL LANDLORDS\nplanning to end a tenancy agreement to provide the tenant with a Notice of Tenants’ Rights and Resources.",
+          "quote_source": "corpus",
+          "retrieved_at": "2026-10-01T22:35Z",
+          "supplementary_doc": null,
+          "tier": "B",
+          "url": "https://www.boston.gov/housing-stability-notification-act",
+          "version_label": null
+        }
+      ],
+      "title": {
+        "en": "Partial capture of source D013",
+        "es": "Captura parcial de fuente D013"
+      }
+    },
+    {
+      "changes_answer_between": null,
+      "detail": {
+        "en": "The saved copy of D011 is mostly site navigation, so coverage details for Boston rent stabilization and tenant eviction protections petition may be incomplete.",
+        "es": "La copia guardada de D011 es principalmente navegación del sitio, por lo que los detalles de cobertura para la estabilización de renta en Boston y la petición de protecciones contra desalojo de inquilinos pueden estar incompletos."
+      },
+      "oq_id": "OQ-07",
+      "rule_ids": [
+        "BOS-RENT-P1"
+      ],
+      "sources": [
+        {
+          "char_end": 324,
+          "char_start": 196,
+          "cite": "H.3744",
+          "doc_id": "D011",
+          "doc_sha256": "93835654c3483e7b169677f7a3ccdcf021b6edab4ac81ab7ad3091903de71ff2",
+          "low_signal": true,
+          "quote": "An Act petition for a special law authorizing the city of Boston to implement rent stabilization and tenant eviction protections",
+          "quote_source": "corpus",
+          "retrieved_at": "2026-10-01T22:35Z",
+          "supplementary_doc": null,
+          "tier": "B",
+          "url": "https://malegislature.gov/Bills/193/H3744",
+          "version_label": null
+        }
+      ],
+      "title": {
+        "en": "Partial capture of source D011",
+        "es": "Captura parcial de la fuente D011"
+      }
+    },
+    {
+      "changes_answer_between": null,
+      "detail": {
+        "en": "The saved copy of D036 is mostly site navigation, so coverage details for Rent control exemption for 1-4 unit properties may be incomplete.",
+        "es": "La copia guardada de D036 es principalmente navegación del sitio, por lo que los detalles de cobertura para la Exención de control de alquiler para propiedades de 1-4 unidades puede estar incompleta."
+      },
+      "oq_id": "OQ-08",
+      "rule_ids": [
+        "JC-RENT-01"
+      ],
+      "sources": [
+        {
+          "char_end": 4028,
+          "char_start": 3961,
+          "cite": "Jersey City Municipal Code ch. 260",
+          "doc_id": "D036",
+          "doc_sha256": "f444bed30ede0905ce671ac4b9addf27feaa31c9a74ba6ba537b7f8d77e81dce",
+          "low_signal": true,
+          "quote": "(Please Note: All 1-4 Unit Properties are exempt from rent control)",
+          "quote_source": "corpus",
+          "retrieved_at": "2026-10-01T22:36Z",
+          "supplementary_doc": null,
+          "tier": "B",
+          "url": "https://www.jerseycitynj.gov/landlordtenant",
+          "version_label": null
+        }
+      ],
+      "title": {
+        "en": "Partial capture of source D036",
+        "es": "Captura parcial de la fuente D036"
+      }
+    },
+    {
+      "changes_answer_between": null,
+      "detail": {
+        "en": "The saved copy of D045 is mostly site navigation, so coverage details for Bill H.5222: Preventing algorithmic rent fixing may be incomplete.",
+        "es": "La copia guardada de D045 es principalmente navegación del sitio, por lo que los detalles de cobertura para Bill H.5222: Preventing algorithmic rent fixing pueden estar incompletos."
+      },
+      "oq_id": "OQ-09",
+      "rule_ids": [
+        "MA-ALG-P2"
+      ],
+      "sources": [
+        {
+          "char_end": 274,
+          "char_start": 192,
+          "cite": "H.5222",
+          "doc_id": "D045",
+          "doc_sha256": "8bc537dfe4d0e00b829147ae82ba11d40bef8a2b0696f487c417ca517673bba7",
+          "low_signal": true,
+          "quote": "An Act relative to preventing algorithmic rent fixing in the rental housing market",
+          "quote_source": "corpus",
+          "retrieved_at": "2026-10-01T22:36Z",
+          "supplementary_doc": null,
+          "tier": "B",
+          "url": "https://malegislature.gov/Bills/194/H5222",
+          "version_label": null
+        }
+      ],
+      "title": {
+        "en": "Partial capture of source D045",
+        "es": "Captura parcial de la fuente D045"
+      }
+    },
+    {
+      "changes_answer_between": null,
+      "detail": {
+        "en": "The saved copy of D083 is mostly site navigation, so coverage details for Security Deposit Interest Rate may be incomplete.",
+        "es": "La copia guardada de D083 es principalmente navegación del sitio, por lo que los detalles de cobertura para la Tasa de Interés del Depósito de Garantía pueden estar incompletos."
+      },
+      "oq_id": "OQ-10",
+      "rule_ids": [
+        "SF-DEP-01",
+        "SF-RENT-02"
+      ],
+      "sources": [
+        {
+          "char_end": 483,
+          "char_start": 414,
+          "cite": "S.F. Admin. Code § 37.9",
+          "doc_id": "D083",
+          "doc_sha256": "764e9e3a023bd434458dfea8ffbb57e57d23e5f0a4939cc10948b9e495034d2f",
+          "low_signal": true,
+          "quote": "Security Deposit Interest:\n4.2% for March 1, 2026 – February 28, 2027",
+          "quote_source": "corpus",
+          "retrieved_at": "2026-10-01T22:37Z",
+          "supplementary_doc": null,
+          "tier": "B",
+          "url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
+          "version_label": null
+        }
+      ],
+      "title": {
+        "en": "Partial capture of source D083",
+        "es": "Captura parcial de la fuente D083"
+      }
+    }
+  ]
+}

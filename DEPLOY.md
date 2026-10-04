@@ -6,7 +6,7 @@ Three pieces, all free-tier:
 |---|---|---|
 | API (FastAPI, in memory, no model on lookups) | Render free web service, from `render.yaml` | Runs the Docker image straight from this repository |
 | Web app (`frontend/`) | Lovable publish, custom domain `tenantlyrent.me` | Already built there |
-| Fallback data | jsDelivr over the `snapshot-v0.2` tag | The app keeps working when the free API instance is asleep |
+| Fallback data | jsDelivr over the `snapshot-v0.3` tag | The app keeps working when the free API instance is asleep |
 
 ## 1. API on Render
 1. Render dashboard, **New, Blueprint**, pick the `Esh90/Tenantly` repository. It reads `render.yaml`.
@@ -24,7 +24,7 @@ still verified byte for byte.
 ## 2. Web app
 1. In Lovable, project settings, environment variables:
    `VITE_API_BASE_URL` = the Render URL, `VITE_SNAPSHOT_BASE_URL` =
-   `https://cdn.jsdelivr.net/gh/Esh90/Tenantly@snapshot-v0.2/artifacts/web`.
+   `https://cdn.jsdelivr.net/gh/Esh90/Tenantly@snapshot-v0.3/artifacts/web`.
 2. Publish, then **Settings, Domains**, connect `tenantlyrent.me`. Lovable shows the DNS records
    (an A record and a TXT record); add them in Namecheap, Advanced DNS.
 3. No map key is needed: the map uses OpenFreeMap tiles.
