@@ -305,6 +305,11 @@ class AlertService:
 
     def subscribe(self, address_id: str, email: str, lang: str) -> dict:
         watcher, created = self.repository.subscribe(address_id, email, lang)
+        if created and self.configured:
+            try:
+                self._send_confirmation(watcher)
+            except Exception:  # noqa: BLE001
+                log.exception("confirmation email failed watch=%s", watcher["id"])
         return {
             "subscription_id": watcher["id"],
             "unsubscribe_token": watcher["unsubscribe_token"],
@@ -318,6 +323,32 @@ class AlertService:
                 "ics": f"/v1/alerts/calendar/{address_id}.ics",
             },
         }
+
+    def _send_confirmation(self, watcher: dict) -> None:
+        address_url = f"{self.public_app_url}/a/{urllib.parse.quote(watcher['address_id'])}"
+        unsubscribe_url = (
+            f"{self.public_app_url}/v1/alerts/unsubscribe?token="
+            f"{urllib.parse.quote(watcher['unsubscribe_token'])}"
+        )
+        subject = "You're watching this address on Tenantly"
+        text = (
+            f"You've subscribed to housing-law alerts for address {watcher['address_id']}.\n\n"
+            f"We'll email you whenever a verified law change affects this property.\n\n"
+            f"View property: {address_url}\n\n"
+            f"Unsubscribe: {unsubscribe_url}\n\n"
+            "Tenantly provides public legal information, not legal advice."
+        )
+        html_body = (
+            "<p><strong>You're now watching this address on Tenantly.</strong></p>"
+            "<p>We'll email you whenever a verified housing-law change affects this property.</p>"
+            f"<p><a href=\"{html.escape(address_url)}\">View property analysis</a></p>"
+            f"<p><small><a href=\"{html.escape(unsubscribe_url)}\">Unsubscribe</a> · "
+            "Tenantly provides public legal information, not legal advice.</small></p>"
+        )
+        content = NotificationContent(subject, text, html_body)
+        delivery = self.resend.send(watcher["email"], content)
+        if delivery.status != "sent":
+            log.warning("confirmation email failed watch=%s error=%s", watcher["id"], delivery.error_message)
 
     def status(self, token: str) -> dict | None:
         watcher = self.repository.by_token(token)
