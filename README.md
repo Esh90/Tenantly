@@ -57,6 +57,14 @@ Scope: **3 states (CA, NJ, MA) · 10 cities · 6 rule categories · 500 real bui
 | Read the exact quoted sentence behind every answer, with retrieval date | Conflict flags where state and local law may collide | The same starting evidence a lawyer uses — never advice, never ways around a rule |
 | Date slider: explore any date instantly with no network request | CSV-ready change sets and a full compile audit log | Email or Atom-feed alerts when a law affecting that building changes |
 
+### System architecture
+
+![Tenantly system architecture: the law compiler, the address resolver, the in-memory rules engine, the API, the web app and the ingestion path](docs/system-architecture.jpg)
+
+### User flow
+
+![Tenantly user flow: from typing an address to a cited answer, the as-of date slider, the decisive-question card, and change tracking view](user-flow.png)
+
 ### Feature matrix
 
 | Feature | Status |
