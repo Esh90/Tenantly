@@ -3087,8 +3087,11 @@
     "on": "2026-10-01"
   },
   "conflict_count": 0,
-  "created_at": "2026-10-04T03:00:39Z",
-  "expected_check": null,
+  "created_at": "2026-10-04T03:35:06Z",
+  "expected_check": {
+    "detail": "affected 110 of expected 110; conflict flags 0 of expected 0",
+    "passed": true
+  },
   "kind": "test",
   "rule_ids": [
     "MA-ALG-P1",

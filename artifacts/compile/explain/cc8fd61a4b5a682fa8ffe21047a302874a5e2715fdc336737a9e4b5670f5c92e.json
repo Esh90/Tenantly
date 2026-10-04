@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002485,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords can increase rent by 1.0% starting January 1, 2026. Tenants who moved in on or after January 1, 2025 with rents set under Costa-Hawkins are not eligible for this increase.",
+    "summary_es": "Los arrendadores pueden aumentar la renta en 1.0% a partir del 1 de enero de 2026. Los inquilinos que se mudaron a partir del 1 de enero de 2025 con rentas establecidas bajo Costa-Hawkins no califican para este aumento.",
+    "who_en": "This rule applies to all residential rental properties subject to Berkeley rent stabilization.",
+    "who_es": "Esta regla se aplica a todas las propiedades residenciales de alquiler sujetas a la estabilización de rentas de Berkeley."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1100,
+    "output_tokens": 277
+  }
+}

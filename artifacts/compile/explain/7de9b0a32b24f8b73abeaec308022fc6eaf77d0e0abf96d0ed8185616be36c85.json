@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002387,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords in Los Angeles must have a legal reason to evict tenants. When landlords end tenancies without fault by the tenant, they must pay relocation assistance.",
+    "summary_es": "Los arrendadores en Los Ángeles deben tener una razón legal para desalojar a los inquilinos. Cuando los arrendadores terminan los arrendamientos sin culpa del inquilino, deben pagar asistencia de reubicación.",
+    "who_en": "This rule applies to most residential properties in the City of Los Angeles that are not regulated by the Rent Stabilization Ordinance.",
+    "who_es": "Esta regla se aplica a la mayoría de propiedades residenciales en la Ciudad de Los Ángeles que no están reguladas por la Ordenanza de Estabilización de Rentas."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1002,
+    "output_tokens": 277
+  }
+}

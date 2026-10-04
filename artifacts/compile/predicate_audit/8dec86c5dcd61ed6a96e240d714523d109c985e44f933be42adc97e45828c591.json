@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001988,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The predicate is incomplete. The legal condition requires three elements: (1) landlord owns only two rental properties (<=2), (2) no more than four units total (<=4), and (3) ownership held by a natural person, family trust, or all-natural-person LLC. The predicate only captures the first two conditions and omits the ownership type requirement entirely. The available fact \"owner_is_natural_person\" exists but is not used in the predicate, yet the condition explicitly requires verification that ownership is by a natural person, family trust, or all-natural-person LLC."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1008,
+    "output_tokens": 196
+  }
+}

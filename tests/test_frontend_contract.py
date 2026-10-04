@@ -38,11 +38,29 @@ def _interfaces() -> dict[str, set[str]]:
     return out
 
 
+# Shapes nested inside IngestResult's open (extra-allowed) payload; they are produced by
+# engine/api/ingest_parts.py as plain dicts, so there is no model class to compare against.
+DYNAMIC_INGEST_SHAPES = {
+    "IngestCheck",
+    "IngestValidation",
+    "JudgeIssue",
+    "IngestJudge",
+    "HierarchyLevel",
+    "Hierarchy",
+    "GraphNode",
+    "GraphEdge",
+    "KnowledgeGraph",
+    "IngestResultData",
+}
+
+
 @pytest.mark.skipif(not TYPES.exists(), reason="frontend not present")
 def test_every_ts_interface_matches_its_model_fields():
     ifaces = _interfaces()
     assert len(ifaces) >= 25
     for name, ts_fields in ifaces.items():
+        if name in DYNAMIC_INGEST_SHAPES:
+            continue
         cls = getattr(m, name, None)
         assert cls is not None, f"no API model for {name}"
         py_fields = {(v.alias or k) for k, v in cls.model_fields.items()}

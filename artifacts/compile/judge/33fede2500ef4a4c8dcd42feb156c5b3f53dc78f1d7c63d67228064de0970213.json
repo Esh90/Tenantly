@@ -1,0 +1,88 @@
+{
+  "cost_usd": 0.0197175,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "checks": [
+      {
+        "id": "exists_in_source",
+        "note": "Both rules restate §8.99.010, but they are duplicates of the same single provision, so one is redundant.",
+        "status": "warn"
+      },
+      {
+        "id": "meaning_preserved",
+        "note": "The $50 cap, five-or-more-unit coverage and prohibition on landlords and agents match §8.99.010.",
+        "status": "pass"
+      },
+      {
+        "body": "",
+        "id": "conditions_complete",
+        "note": "The §8.99.020 exemption for owner-occupied buildings with fewer than five units is captured in both rules, although it is logically redundant with the five-unit threshold.",
+        "status": "pass"
+      },
+      {
+        "id": "jurisdiction_correct",
+        "note": "The source is a Cambridge ordinance and the rules are assigned to Cambridge, MA.",
+        "status": "pass"
+      },
+      {
+        "id": "dates_correct",
+        "note": "§8.99.030 says the ordinance takes effect on the first day of the second month after enactment. The source approval date is November 20, 2026, so 2027-01-01 is a plausible reading. Even so, 'enactment' is not clearly defined, the derivation label 'nj_nth_month_next_following' is odd, and key_values carry null dates.",
+        "status": "warn"
+      },
+      {
+        "id": "citations_accurate",
+        "note": "The quote comes from §8.99.010 and is correct. The exemption citations are null even though that text is in §8.99.020, and the effective-date section §8.99.030 is not cited.",
+        "status": "warn"
+      },
+      {
+        "id": "precedence_reasonable",
+        "note": "No precedence relations are asserted, and the source contains none.",
+        "status": "pass"
+      },
+      {
+        "id": "no_hallucination",
+        "note": "Nothing invented beyond the source. The effective-date derivation is an inference from §8.99.030.",
+        "status": "pass"
+      },
+      {
+        "id": "conflicts_considered",
+        "note": "CAM-FEE-01 and CAM-FEE-02 are duplicates of each other. The duplicates check passed, but both rules appear in the same extraction.",
+        "status": "warn"
+      },
+      {
+        "id": "json_faithful",
+        "note": "The coverage structure differs between the two rules, one using 'all' and one a bare predicate. Their confidence values also differ, 0.8 and 0.9, for identical content.",
+        "status": "warn"
+      }
+    ],
+    "confidence": 0.6,
+    "issues": [
+      {
+        "message": "CAM-FEE-02 duplicates CAM-FEE-01, and both extract the same provision.",
+        "rule_id": "CAM-FEE-02",
+        "severity": "warning",
+        "source_section": "8.99.010"
+      },
+      {
+        "message": "The effective date was derived from the 'enactment' wording in §8.99.030. It was computed as 2027-01-01 with the anchor 'Approved November 20, 2026', and a human should confirm it. The date section is not cited.",
+        "rule_id": "CAM-FEE-01",
+        "severity": "warning",
+        "source_section": "8.99.030"
+      },
+      {
+        "message": "The exemption citation is null, but the exemption text comes from §8.99.020.",
+        "rule_id": "CAM-FEE-01",
+        "severity": "info",
+        "source_section": "8.99.020"
+      }
+    ],
+    "verdict": "review"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 1275,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2820,
+    "output_tokens": 1089
+  }
+}

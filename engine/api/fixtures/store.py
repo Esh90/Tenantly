@@ -620,7 +620,7 @@ class FixtureStore:
         yield f"event: impact\ndata: {json.dumps(impact)}\n\n"
         yield f"event: done\ndata: {json.dumps({'status': job['status']})}\n\n"
 
-    def ingest_publish(self, job_id: str) -> dict:
+    def ingest_publish(self, job_id: str, approve: bool = False) -> dict:
         job = self.ingest_get(job_id)
         if job["status"] == "published":
             raise ApiError(

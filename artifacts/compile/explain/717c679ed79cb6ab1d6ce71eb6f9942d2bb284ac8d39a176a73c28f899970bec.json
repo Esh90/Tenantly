@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002227,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords can increase rent by no more than 1.6% for tenancies from March 1, 2026 through February 28, 2027. This limits how much your rent can go up during that time period.",
+    "summary_es": "Los arrendadores pueden aumentar la renta en no más del 1.6% para arrendamientos del 1 de marzo de 2026 al 28 de febrero de 2027. Esto limita cuánto puede subir tu renta durante ese período.",
+    "who_en": "This rule covers all residential rental properties in San Francisco.",
+    "who_es": "Esta regla cubre todas las propiedades residenciales de alquiler en San Francisco."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 977,
+    "output_tokens": 250
+  }
+}

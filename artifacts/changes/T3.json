@@ -2808,8 +2808,11 @@
     "before": "2026-10-01"
   },
   "conflict_count": 90,
-  "created_at": "2026-10-04T03:00:39Z",
-  "expected_check": null,
+  "created_at": "2026-10-04T03:35:06Z",
+  "expected_check": {
+    "detail": "affected 140 of expected 140; conflict flags 90 of expected 90",
+    "passed": true
+  },
   "kind": "test",
   "rule_ids": [
     "NJ-ALG-01"

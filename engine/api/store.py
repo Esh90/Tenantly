@@ -416,6 +416,18 @@ class Store(FixtureStore):
         feats.sort(key=lambda f: (order[f["properties"]["level"]], f["id"]))
         return {"type": "FeatureCollection", "features": feats}
 
+    @classmethod
+    def preview(cls, overlay: RuleSet):
+        """A light read-only view over a staged rule set, for rendering rule details. It skips the
+        per-address counts, which only the live set needs."""
+        live = load_store()
+        o = cls.__new__(cls)
+        o.rs, o.rules_by_id = overlay, {r.rule_id: r for r in overlay.rules}
+        o.default_date, o._counts, o._docs = live.default_date, {}, live._docs
+        o._audit_cache = live._audit_rows()
+        o.data_version = "preview"
+        return o
+
     # ---- ingest (real) ----
     @property
     def ingest(self):
@@ -434,8 +446,17 @@ class Store(FixtureStore):
     def ingest_events(self, job_id: str):
         return self.ingest.events(job_id)
 
-    def ingest_publish(self, job_id: str) -> dict:
-        return self.ingest.publish(job_id)
+    def ingest_publish(self, job_id: str, approve: bool = False) -> dict:
+        return self.ingest.publish(job_id, approve)
+
+    def ingest_reject(self, job_id: str) -> dict:
+        return self.ingest.reject(job_id)
+
+    def ingest_rejudge(self, job_id: str) -> dict:
+        return self.ingest.rejudge(job_id)
+
+    def ingest_edit(self, job_id: str, rules: list[dict]) -> dict:
+        return self.ingest.edit(job_id, rules)
 
     def apply_overlay(
         self, overlay: RuleSet, new_ids: set[str], job: dict, affected: list, on: str
@@ -614,6 +635,18 @@ class Store(FixtureStore):
             for t in ups
         )
         return f"BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Tenantly//EN\r\n{ev}END:VCALENDAR\r\n"
+
+
+def jurisdiction_ref(jid: str):
+    """A JurisdictionRef for a state code or a city id such as CA-0667000."""
+    from engine.compile.context import jurisdiction_for
+
+    if jid in ("CA", "NJ", "MA"):
+        return jurisdiction_for(jid)
+    for c in CITIES:
+        if c.id == jid:
+            return jurisdiction_for(c.label)
+    raise KeyError(jid)
 
 
 @lru_cache(maxsize=1)

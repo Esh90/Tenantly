@@ -1,9 +1,9 @@
 {
   "adjudicated_fields": 1,
   "findings": 40,
-  "mean_confidence": 0.756,
+  "mean_confidence": 0.757,
   "open_questions": 10,
-  "quotes_verified": 84,
+  "quotes_verified": 79,
   "rejected_by_reason": {
     "MALFORMED": 433,
     "QUOTE_NOT_FOUND": 65
@@ -11,11 +11,11 @@
   "rejected_candidates": 498,
   "relations": 3,
   "relations_rejected": 1,
-  "review_flagged": 3,
-  "rules": 89,
+  "review_flagged": 2,
+  "rules": 84,
   "tier_counts": {
     "A": 25,
-    "B": 59,
+    "B": 54,
     "C": 4,
     "C1": 1
   }

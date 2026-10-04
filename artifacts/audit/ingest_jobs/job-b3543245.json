@@ -1,0 +1,1466 @@
+{
+  "error": null,
+  "finished_at": "2026-10-04T03:34:19Z",
+  "job_id": "job-b3543245",
+  "result": {
+    "audit": [
+      {
+        "detail": "876 characters for Cambridge, MA; auto-publish off",
+        "event": "received",
+        "ts": "2026-10-04T03:33:53Z"
+      },
+      {
+        "detail": "2 rules held in staging, apart from the live law set",
+        "event": "staged",
+        "ts": "2026-10-04T03:34:10Z"
+      },
+      {
+        "detail": "passed",
+        "event": "validation",
+        "ts": "2026-10-04T03:34:10Z"
+      },
+      {
+        "detail": "verdict review, confidence 60%, 3 issue(s)",
+        "event": "judge",
+        "ts": "2026-10-04T03:34:18Z"
+      },
+      {
+        "detail": "the Judge verdict is review; Judge confidence 60% is below the 85% threshold",
+        "event": "review_required",
+        "ts": "2026-10-04T03:34:19Z"
+      },
+      {
+        "detail": "published by reviewer approval; change event chg-job-b3543245; 51 buildings reached",
+        "event": "published",
+        "ts": "2026-10-04T03:34:19Z"
+      }
+    ],
+    "cache_hit": false,
+    "changes": {
+      "affected_jurisdictions": [
+        "(state level)",
+        "Cambridge"
+      ],
+      "affected_properties": 51,
+      "change_id": "chg-job-b3543245",
+      "document": "Cambridge rehearsal",
+      "existing_relationships_touched": 0,
+      "existing_rules_changed": [],
+      "graph_edges_added": 12,
+      "graph_nodes_added": 8,
+      "relationships_added": 0,
+      "rules_added": 2,
+      "rules_superseded": []
+    },
+    "cost_usd": 0.0409,
+    "findings": [],
+    "graph": {
+      "delta": {
+        "edges": 12,
+        "nodes": 8
+      },
+      "edges": [
+        {
+          "id": "jur:MA-25017>WITHIN>jur:MA",
+          "label": "is within",
+          "source": "jur:MA-25017",
+          "target": "jur:MA",
+          "type": "WITHIN"
+        },
+        {
+          "id": "jur:MA-2511000>WITHIN>jur:MA-25017",
+          "label": "is within",
+          "source": "jur:MA-2511000",
+          "target": "jur:MA-25017",
+          "type": "WITHIN"
+        },
+        {
+          "id": "rule:CAM-FEE-01>DERIVED_FROM>doc:I-b3543245",
+          "label": "derived from",
+          "source": "rule:CAM-FEE-01",
+          "target": "doc:I-b3543245",
+          "type": "DERIVED_FROM"
+        },
+        {
+          "id": "rule:CAM-FEE-01>APPLIES_TO>jur:MA-2511000",
+          "label": "applies to",
+          "source": "rule:CAM-FEE-01",
+          "target": "jur:MA-2511000",
+          "type": "APPLIES_TO"
+        },
+        {
+          "id": "rule:CAM-FEE-01>EFFECTIVE_ON>date:2027-01-01",
+          "label": "effective on",
+          "source": "rule:CAM-FEE-01",
+          "target": "date:2027-01-01",
+          "type": "EFFECTIVE_ON"
+        },
+        {
+          "id": "rule:CAM-FEE-01>REQUIRES>cond:CAM-FEE-01:Number of units >= 5",
+          "label": "requires",
+          "source": "rule:CAM-FEE-01",
+          "target": "cond:CAM-FEE-01:Number of units >= 5",
+          "type": "REQUIRES"
+        },
+        {
+          "id": "ex:CAM-FEE-01:0>EXEMPTS>rule:CAM-FEE-01",
+          "label": "exempts",
+          "source": "ex:CAM-FEE-01:0",
+          "target": "rule:CAM-FEE-01",
+          "type": "EXEMPTS"
+        },
+        {
+          "id": "rule:CAM-FEE-02>DERIVED_FROM>doc:I-b3543245",
+          "label": "derived from",
+          "source": "rule:CAM-FEE-02",
+          "target": "doc:I-b3543245",
+          "type": "DERIVED_FROM"
+        },
+        {
+          "id": "rule:CAM-FEE-02>APPLIES_TO>jur:MA-2511000",
+          "label": "applies to",
+          "source": "rule:CAM-FEE-02",
+          "target": "jur:MA-2511000",
+          "type": "APPLIES_TO"
+        },
+        {
+          "id": "rule:CAM-FEE-02>EFFECTIVE_ON>date:2027-01-01",
+          "label": "effective on",
+          "source": "rule:CAM-FEE-02",
+          "target": "date:2027-01-01",
+          "type": "EFFECTIVE_ON"
+        },
+        {
+          "id": "rule:CAM-FEE-02>REQUIRES>cond:CAM-FEE-02:Number of units >= 5",
+          "label": "requires",
+          "source": "rule:CAM-FEE-02",
+          "target": "cond:CAM-FEE-02:Number of units >= 5",
+          "type": "REQUIRES"
+        },
+        {
+          "id": "ex:CAM-FEE-02:0>EXEMPTS>rule:CAM-FEE-02",
+          "label": "exempts",
+          "source": "ex:CAM-FEE-02:0",
+          "target": "rule:CAM-FEE-02",
+          "type": "EXEMPTS"
+        }
+      ],
+      "nodes": [
+        {
+          "detail": {
+            "chars": 876,
+            "doc_type": "ordinance",
+            "sha256": "f924f569c05b5cac552043e2005a8b03275200bf3620d42ae58cddfd68f2e55b",
+            "url": "https://example.invalid/rehearsal"
+          },
+          "id": "doc:I-b3543245",
+          "label": "rehearsal",
+          "status": "new",
+          "type": "document"
+        },
+        {
+          "detail": {
+            "level": "state",
+            "priority": 1
+          },
+          "id": "jur:MA",
+          "label": "Massachusetts",
+          "status": "existing",
+          "type": "jurisdiction"
+        },
+        {
+          "detail": {
+            "level": "county",
+            "priority": 2
+          },
+          "id": "jur:MA-25017",
+          "label": "Middlesex County",
+          "status": "existing",
+          "type": "jurisdiction"
+        },
+        {
+          "detail": {
+            "level": "city",
+            "priority": 3
+          },
+          "id": "jur:MA-2511000",
+          "label": "Cambridge",
+          "status": "existing",
+          "type": "jurisdiction"
+        },
+        {
+          "detail": {
+            "category": "application_screening_fees",
+            "cite": "Cambridge, MA Ordinance No. R-2026-REHEARSAL, § 8.99.010",
+            "confidence": 0.8,
+            "lifecycle": "enacted",
+            "quote": "No landlord or agent of a landlord shall charge a prospective tenant an application fee or screening fee that exceeds fifty dollars ($50) for any rental unit in a building with five or more units.",
+            "rule_id": "CAM-FEE-01",
+            "tier": "A",
+            "title": "Application Fee Limit for Multifamily Buildings"
+          },
+          "id": "rule:CAM-FEE-01",
+          "label": "CAM-FEE-01",
+          "status": "new",
+          "type": "rule"
+        },
+        {
+          "detail": {
+            "derivation": "nj_nth_month_next_following",
+            "effective": "2027-01-01"
+          },
+          "id": "date:2027-01-01",
+          "label": "2027-01-01",
+          "status": "new",
+          "type": "date"
+        },
+        {
+          "detail": {
+            "fact": "units"
+          },
+          "id": "cond:CAM-FEE-01:Number of units >= 5",
+          "label": "Number of units >= 5",
+          "status": "new",
+          "type": "condition"
+        },
+        {
+          "detail": {
+            "description": "Buildings with fewer than five units in which the owner lives"
+          },
+          "id": "ex:CAM-FEE-01:0",
+          "label": "Buildings with fewer than five units in which the owner live",
+          "status": "new",
+          "type": "exemption"
+        },
+        {
+          "detail": {
+            "category": "application_screening_fees",
+            "cite": "Cambridge Ord. § 8.99.010",
+            "confidence": 0.9,
+            "lifecycle": "enacted",
+            "quote": "No landlord or agent of a landlord shall charge a prospective tenant an application fee or screening fee that exceeds fifty dollars ($50) for any rental unit in a building with five or more units.",
+            "rule_id": "CAM-FEE-02",
+            "tier": "A",
+            "title": "Application fee cap"
+          },
+          "id": "rule:CAM-FEE-02",
+          "label": "CAM-FEE-02",
+          "status": "new",
+          "type": "rule"
+        },
+        {
+          "detail": {
+            "fact": "units"
+          },
+          "id": "cond:CAM-FEE-02:Number of units >= 5",
+          "label": "Number of units >= 5",
+          "status": "new",
+          "type": "condition"
+        },
+        {
+          "detail": {
+            "description": "Buildings with fewer than five units in which the owner lives."
+          },
+          "id": "ex:CAM-FEE-02:0",
+          "label": "Buildings with fewer than five units in which the owner live",
+          "status": "new",
+          "type": "exemption"
+        }
+      ]
+    },
+    "hierarchy": {
+      "levels": [
+        {
+          "id": "MA",
+          "label": "Massachusetts",
+          "level": "state",
+          "priority": 1,
+          "rules": []
+        },
+        {
+          "id": "MA-25017",
+          "label": "Middlesex County",
+          "level": "county",
+          "priority": 2,
+          "rules": []
+        },
+        {
+          "id": "MA-2511000",
+          "label": "Cambridge",
+          "level": "city",
+          "priority": 3,
+          "rules": [
+            {
+              "category": "application_screening_fees",
+              "lifecycle": "enacted",
+              "new": true,
+              "rule_id": "CAM-FEE-01",
+              "title": "Application Fee Limit for Multifamily Buildings"
+            },
+            {
+              "category": "application_screening_fees",
+              "lifecycle": "enacted",
+              "new": true,
+              "rule_id": "CAM-FEE-02",
+              "title": "Application fee cap"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "en": "No stated precedence relation reaches this document: its rules sit alongside the other levels and are all shown.",
+          "es": "Ninguna relación de precedencia alcanza este documento: sus reglas conviven con los otros niveles y se muestran todas."
+        }
+      ],
+      "relations": []
+    },
+    "impact": {
+      "affected_count": 51,
+      "conflicts": 0,
+      "effective_date": "2027-01-01",
+      "sample": [
+        {
+          "address_id": "A0009",
+          "after": [
+            {
+              "result": "applies",
+              "rule_id": "CAM-FEE-01"
+            },
+            {
+              "result": "applies",
+              "rule_id": "CAM-FEE-02"
+            }
+          ],
+          "before": [
+            {
+              "result": "none",
+              "rule_id": "CAM-FEE-01"
+            },
+            {
+              "result": "none",
+              "rule_id": "CAM-FEE-02"
+            }
+          ],
+          "conflict_flag": false,
+          "label": "322-322.5 Western Ave, Cambridge, MA",
+          "lat": 42.364468228676,
+          "legal_city": "Cambridge",
+          "lon": -71.113348085886
+        },
+        {
+          "address_id": "A0010",
+          "after": [
+            {
+              "result": "applies",
+              "rule_id": "CAM-FEE-01"
+            },
+            {
+              "result": "applies",
+              "rule_id": "CAM-FEE-02"
+            }
+          ],
+          "before": [
+            {
+              "result": "none",
+              "rule_id": "CAM-FEE-01"
+            },
+            {
+              "result": "none",
+              "rule_id": "CAM-FEE-02"
+            }
+          ],
+          "conflict_flag": false,
+          "label": "134 Oxford St, Cambridge, MA",
+          "lat": 42.385333082376,
+          "legal_city": "Cambridge",
+          "lon": -71.1160583909
+        },
+        {
+          "address_id": "A0015",
+          "after": [
+            {
+              "result": "applies",
+              "rule_id": "CAM-FEE-01"
+            },
+            {
+              "result": "applies",
+              "rule_id": "CAM-FEE-02"
+            }
+          ],
+          "before": [
+            {
+              "result": "none",
+              "rule_id": "CAM-FEE-01"
+            },
+            {
+              "result": "none",
+              "rule_id": "CAM-FEE-02"
+            }
+          ],
+          "conflict_flag": false,
+          "label": "15 Everett St, Cambridge, MA",
+          "lat": 42.379980886163,
+          "legal_city": "Cambridge",
+          "lon": -71.118720021347
+        },
+        {
+          "address_id": "A0024",
+          "after": [
+            {
+              "result": "applies",
+              "rule_id": "CAM-FEE-01"
+            },
+            {
+              "result": "applies",
+              "rule_id": "CAM-FEE-02"
+            }
+          ],
+          "before": [
+            {
+              "result": "none",
+              "rule_id": "CAM-FEE-01"
+            },
+            {
+              "result": "none",
+              "rule_id": "CAM-FEE-02"
+            }
+          ],
+          "conflict_flag": false,
+          "label": "227 Charles St, Cambridge, MA",
+          "lat": 42.368207474124,
+          "legal_city": "Cambridge",
+          "lon": -71.084850671785
+        },
+        {
+          "address_id": "A0034",
+          "after": [
+            {
+              "result": "applies",
+              "rule_id": "CAM-FEE-01"
+            },
+            {
+              "result": "applies",
+              "rule_id": "CAM-FEE-02"
+            }
+          ],
+          "before": [
+            {
+              "result": "none",
+              "rule_id": "CAM-FEE-01"
+            },
+            {
+              "result": "none",
+              "rule_id": "CAM-FEE-02"
+            }
+          ],
+          "conflict_flag": false,
+          "label": "25 Gore St, Cambridge, MA",
+          "lat": 42.371703436562,
+          "legal_city": "Cambridge",
+          "lon": -71.079128226997
+        },
+        {
+          "address_id": "A0039",
+          "after": [
+            {
+              "result": "applies",
+              "rule_id": "CAM-FEE-01"
+            },
+            {
+              "result": "applies",
+              "rule_id": "CAM-FEE-02"
+            }
+          ],
+          "before": [
+            {
+              "result": "none",
+              "rule_id": "CAM-FEE-01"
+            },
+            {
+              "result": "none",
+              "rule_id": "CAM-FEE-02"
+            }
+          ],
+          "conflict_flag": false,
+          "label": "1 Craigie St, Cambridge, MA",
+          "lat": 42.379449621711,
+          "legal_city": "Cambridge",
+          "lon": -71.125838882455
+        },
+        {
+          "address_id": "A0043",
+          "after": [
+            {
+              "result": "applies",
+              "rule_id": "CAM-FEE-01"
+            },
+            {
+              "result": "applies",
+              "rule_id": "CAM-FEE-02"
+            }
+          ],
+          "before": [
+            {
+              "result": "none",
+              "rule_id": "CAM-FEE-01"
+            },
+            {
+              "result": "none",
+              "rule_id": "CAM-FEE-02"
+            }
+          ],
+          "conflict_flag": false,
+          "label": "4 Orchard St, Cambridge, MA",
+          "lat": 42.390119763731,
+          "legal_city": "Cambridge",
+          "lon": -71.119075629483
+        },
+        {
+          "address_id": "A0046",
+          "after": [
+            {
+              "result": "applies",
+              "rule_id": "CAM-FEE-01"
+            },
+            {
+              "result": "applies",
+              "rule_id": "CAM-FEE-02"
+            }
+          ],
+          "before": [
+            {
+              "result": "none",
+              "rule_id": "CAM-FEE-01"
+            },
+            {
+              "result": "none",
+              "rule_id": "CAM-FEE-02"
+            }
+          ],
+          "conflict_flag": false,
+          "label": "8-12 Soden St, Cambridge, MA",
+          "lat": 42.365425650101,
+          "legal_city": "Cambridge",
+          "lon": -71.108291600506
+        },
+        {
+          "address_id": "A0064",
+          "after": [
+            {
+              "result": "applies",
+              "rule_id": "CAM-FEE-01"
+            },
+            {
+              "result": "applies",
+              "rule_id": "CAM-FEE-02"
+            }
+          ],
+          "before": [
+            {
+              "result": "none",
+              "rule_id": "CAM-FEE-01"
+            },
+            {
+              "result": "none",
+              "rule_id": "CAM-FEE-02"
+            }
+          ],
+          "conflict_flag": false,
+          "label": "24-26 Concord Ave, Cambridge, MA",
+          "lat": 42.379346098924,
+          "legal_city": "Cambridge",
+          "lon": -71.125715638744
+        },
+        {
+          "address_id": "A0070",
+          "after": [
+            {
+              "result": "applies",
+              "rule_id": "CAM-FEE-01"
+            },
+            {
+              "result": "applies",
+              "rule_id": "CAM-FEE-02"
+            }
+          ],
+          "before": [
+            {
+              "result": "none",
+              "rule_id": "CAM-FEE-01"
+            },
+            {
+              "result": "none",
+              "rule_id": "CAM-FEE-02"
+            }
+          ],
+          "conflict_flag": false,
+          "label": "43 Fayette St, Cambridge, MA",
+          "lat": 42.372611705618,
+          "legal_city": "Cambridge",
+          "lon": -71.103267573782
+        },
+        {
+          "address_id": "A0071",
+          "after": [
+            {
+              "result": "applies",
+              "rule_id": "CAM-FEE-01"
+            },
+            {
+              "result": "applies",
+              "rule_id": "CAM-FEE-02"
+            }
+          ],
+          "before": [
+            {
+              "result": "none",
+              "rule_id": "CAM-FEE-01"
+            },
+            {
+              "result": "none",
+              "rule_id": "CAM-FEE-02"
+            }
+          ],
+          "conflict_flag": false,
+          "label": "14.5-16 Vandine St, Cambridge, MA",
+          "lat": 42.368807622044,
+          "legal_city": "Cambridge",
+          "lon": -71.090573198514
+        },
+        {
+          "address_id": "A0073",
+          "after": [
+            {
+              "result": "applies",
+              "rule_id": "CAM-FEE-01"
+            },
+            {
+              "result": "applies",
+              "rule_id": "CAM-FEE-02"
+            }
+          ],
+          "before": [
+            {
+              "result": "none",
+              "rule_id": "CAM-FEE-01"
+            },
+            {
+              "result": "none",
+              "rule_id": "CAM-FEE-02"
+            }
+          ],
+          "conflict_flag": false,
+          "label": "35-37 Inman St, Cambridge, MA",
+          "lat": 42.368591564991,
+          "legal_city": "Cambridge",
+          "lon": -71.104039667653
+        }
+      ]
+    },
+    "inferred": {
+      "effective_date": "2027-01-01",
+      "jurisdiction_method": "inferred",
+      "jurisdiction_note": "Cambridge, MA is named 4 time(s) in the text"
+    },
+    "judge": {
+      "cache_hit": false,
+      "checks": [
+        {
+          "id": "exists_in_source",
+          "label": "Each extracted rule exists in the source",
+          "note": "Both rules restate §8.99.010, but they are duplicates of the same single provision, so one is redundant.",
+          "status": "warn"
+        },
+        {
+          "id": "meaning_preserved",
+          "label": "The legal meaning is preserved",
+          "note": "The $50 cap, five-or-more-unit coverage and prohibition on landlords and agents match §8.99.010.",
+          "status": "pass"
+        },
+        {
+          "id": "conditions_complete",
+          "label": "No important condition or exemption is missing",
+          "note": "The §8.99.020 exemption for owner-occupied buildings with fewer than five units is captured in both rules, although it is logically redundant with the five-unit threshold.",
+          "status": "pass"
+        },
+        {
+          "id": "jurisdiction_correct",
+          "label": "The jurisdiction is correct",
+          "note": "The source is a Cambridge ordinance and the rules are assigned to Cambridge, MA.",
+          "status": "pass"
+        },
+        {
+          "id": "dates_correct",
+          "label": "Effective dates are correct",
+          "note": "§8.99.030 says the ordinance takes effect on the first day of the second month after enactment. The source approval date is November 20, 2026, so 2027-01-01 is a plausible reading. Even so, 'enactment' is not clearly defined, the derivation label 'nj_nth_month_next_following' is odd, and key_values carry null dates.",
+          "status": "warn"
+        },
+        {
+          "id": "citations_accurate",
+          "label": "Citations are accurate",
+          "note": "The quote comes from §8.99.010 and is correct. The exemption citations are null even though that text is in §8.99.020, and the effective-date section §8.99.030 is not cited.",
+          "status": "warn"
+        },
+        {
+          "id": "precedence_reasonable",
+          "label": "Precedence and priority relationships are reasonable",
+          "note": "No precedence relations are asserted, and the source contains none.",
+          "status": "pass"
+        },
+        {
+          "id": "no_hallucination",
+          "label": "Nothing was invented",
+          "note": "Nothing invented beyond the source. The effective-date derivation is an inference from §8.99.030.",
+          "status": "pass"
+        },
+        {
+          "id": "conflicts_considered",
+          "label": "Conflicts with existing rules are identified",
+          "note": "CAM-FEE-01 and CAM-FEE-02 are duplicates of each other. The duplicates check passed, but both rules appear in the same extraction.",
+          "status": "warn"
+        },
+        {
+          "id": "json_faithful",
+          "label": "The structured JSON represents the source faithfully",
+          "note": "The coverage structure differs between the two rules, one using 'all' and one a bare predicate. Their confidence values also differ, 0.8 and 0.9, for identical content.",
+          "status": "warn"
+        }
+      ],
+      "confidence": 0.6,
+      "issues": [
+        {
+          "message": "CAM-FEE-02 duplicates CAM-FEE-01, and both extract the same provision.",
+          "rule_id": "CAM-FEE-02",
+          "severity": "warning",
+          "source_section": "8.99.010"
+        },
+        {
+          "message": "The effective date was derived from the 'enactment' wording in §8.99.030. It was computed as 2027-01-01 with the anchor 'Approved November 20, 2026', and a human should confirm it. The date section is not cited.",
+          "rule_id": "CAM-FEE-01",
+          "severity": "warning",
+          "source_section": "8.99.030"
+        },
+        {
+          "message": "The exemption citation is null, but the exemption text comes from §8.99.020.",
+          "rule_id": "CAM-FEE-01",
+          "severity": "info",
+          "source_section": "8.99.020"
+        }
+      ],
+      "model": "claude-sonnet-5-5",
+      "rerun": 0,
+      "verdict": "review"
+    },
+    "policy": {
+      "auto_publish_enabled": false,
+      "decision": "review",
+      "min_confidence": 0.85,
+      "reasons": [
+        "the Judge verdict is review",
+        "Judge confidence 60% is below the 85% threshold"
+      ]
+    },
+    "relations": [],
+    "rules": [
+      {
+        "category": "application_screening_fees",
+        "citation": {
+          "char_end": 577,
+          "char_start": 381,
+          "cite": "Cambridge, MA Ordinance No. R-2026-REHEARSAL, § 8.99.010",
+          "doc_id": "I-b3543245",
+          "doc_sha256": "f924f569c05b5cac552043e2005a8b03275200bf3620d42ae58cddfd68f2e55b",
+          "low_signal": false,
+          "quote": "No landlord or agent of a landlord shall charge a prospective tenant an application fee or screening fee that exceeds fifty dollars ($50) for any rental unit in a building with five or more units.",
+          "quote_source": "corpus",
+          "retrieved_at": "2026-10-04T03:33:53Z",
+          "supplementary_doc": null,
+          "tier": "A",
+          "url": "https://example.invalid/rehearsal",
+          "version_label": null
+        },
+        "confidence": 0.8,
+        "counts_at_default_date": {
+          "applies": 0,
+          "not_yet_effective": 0,
+          "pending": 0,
+          "superseded": 0,
+          "unknown": 0
+        },
+        "coverage_text": {
+          "en": "Buildings with five or more rental units.",
+          "es": "Buildings with five or more rental units."
+        },
+        "effective_date": "2027-01-01",
+        "effective_note": {
+          "en": "Starts January 1, 2027.",
+          "es": "Comienza el 1 de enero de 2027."
+        },
+        "exemptions": [
+          {
+            "citation": {
+              "char_end": null,
+              "char_start": null,
+              "cite": "Cambridge, MA Ordinance No. R-2026-REHEARSAL, § 8.99.010",
+              "doc_id": "I-b3543245",
+              "doc_sha256": "f924f569c05b5cac552043e2005a8b03275200bf3620d42ae58cddfd68f2e55b",
+              "low_signal": false,
+              "quote": "This chapter does not apply to a building with fewer than five units in which the owner lives.",
+              "quote_source": "corpus",
+              "retrieved_at": "2026-10-04T03:33:53Z",
+              "supplementary_doc": null,
+              "tier": "A",
+              "url": "https://example.invalid/rehearsal",
+              "version_label": null
+            },
+            "description": {
+              "en": "Buildings with fewer than five units in which the owner lives",
+              "es": "Buildings with fewer than five units in which the owner lives"
+            }
+          }
+        ],
+        "extra_citations": [],
+        "jurisdiction": {
+          "geoid": "2511000",
+          "id": "MA-2511000",
+          "in_scope": true,
+          "label": "Cambridge, MA",
+          "level": "city",
+          "name": "Cambridge",
+          "state": "MA"
+        },
+        "key_values": [
+          {
+            "name": "Maximum application fee",
+            "stale": false,
+            "stale_note": null,
+            "text": "exceeds fifty dollars ($50)",
+            "valid_from": null,
+            "valid_to": null
+          }
+        ],
+        "open_question_ids": [],
+        "penalty": null,
+        "provenance": {
+          "adjudicated_fields": [],
+          "audit_ids": [],
+          "models": [
+            "claude-haiku-4-5-20251001",
+            "claude-sonnet-5-5"
+          ],
+          "prompt_versions": {
+            "extract": "1"
+          },
+          "votes": {
+            "pass": "B only"
+          }
+        },
+        "relations": [],
+        "requirement": "A landlord or agent shall not charge a prospective tenant an application fee or screening fee exceeding fifty dollars for any rental unit in a building with five or more units.",
+        "review_flag": false,
+        "rule_id": "CAM-FEE-01",
+        "rule_status": "not_yet_effective",
+        "summary": {
+          "en": "A landlord cannot charge more than fifty dollars as an application fee or screening fee. This applies to rental units in buildings with five or more units.",
+          "es": "Un arrendador no puede cobrar más de cincuenta dólares como cuota de solicitud o evaluación de inquilinos. Esto se aplica a unidades de alquiler en edificios con cinco o más unidades."
+        },
+        "title": "Application Fee Limit for Multifamily Buildings",
+        "who": {
+          "en": "This rule covers buildings with five or more rental units.",
+          "es": "Esta regla cubre edificios con cinco o más unidades de alquiler."
+        }
+      },
+      {
+        "category": "application_screening_fees",
+        "citation": {
+          "char_end": 577,
+          "char_start": 381,
+          "cite": "Cambridge Ord. § 8.99.010",
+          "doc_id": "I-b3543245",
+          "doc_sha256": "f924f569c05b5cac552043e2005a8b03275200bf3620d42ae58cddfd68f2e55b",
+          "low_signal": false,
+          "quote": "No landlord or agent of a landlord shall charge a prospective tenant an application fee or screening fee that exceeds fifty dollars ($50) for any rental unit in a building with five or more units.",
+          "quote_source": "corpus",
+          "retrieved_at": "2026-10-04T03:33:53Z",
+          "supplementary_doc": null,
+          "tier": "A",
+          "url": "https://example.invalid/rehearsal",
+          "version_label": null
+        },
+        "confidence": 0.9,
+        "counts_at_default_date": {
+          "applies": 0,
+          "not_yet_effective": 0,
+          "pending": 0,
+          "superseded": 0,
+          "unknown": 0
+        },
+        "coverage_text": {
+          "en": "Buildings with five or more units.",
+          "es": "Buildings with five or more units."
+        },
+        "effective_date": "2027-01-01",
+        "effective_note": {
+          "en": "Starts January 1, 2027.",
+          "es": "Comienza el 1 de enero de 2027."
+        },
+        "exemptions": [
+          {
+            "citation": {
+              "char_end": null,
+              "char_start": null,
+              "cite": "Cambridge Ord. § 8.99.010",
+              "doc_id": "I-b3543245",
+              "doc_sha256": "f924f569c05b5cac552043e2005a8b03275200bf3620d42ae58cddfd68f2e55b",
+              "low_signal": false,
+              "quote": "This chapter does not apply to a building with fewer than five units in which the owner lives.",
+              "quote_source": "corpus",
+              "retrieved_at": "2026-10-04T03:33:53Z",
+              "supplementary_doc": null,
+              "tier": "A",
+              "url": "https://example.invalid/rehearsal",
+              "version_label": null
+            },
+            "description": {
+              "en": "Buildings with fewer than five units in which the owner lives.",
+              "es": "Buildings with fewer than five units in which the owner lives."
+            }
+          }
+        ],
+        "extra_citations": [],
+        "jurisdiction": {
+          "geoid": "2511000",
+          "id": "MA-2511000",
+          "in_scope": true,
+          "label": "Cambridge, MA",
+          "level": "city",
+          "name": "Cambridge",
+          "state": "MA"
+        },
+        "key_values": [
+          {
+            "name": "max_application_fee",
+            "stale": false,
+            "stale_note": null,
+            "text": "fifty dollars ($50)",
+            "valid_from": null,
+            "valid_to": null
+          }
+        ],
+        "open_question_ids": [],
+        "penalty": null,
+        "provenance": {
+          "adjudicated_fields": [],
+          "audit_ids": [],
+          "models": [
+            "claude-haiku-4-5-20251001",
+            "claude-sonnet-5-5"
+          ],
+          "prompt_versions": {
+            "extract": "1"
+          },
+          "votes": {
+            "pass": "A only"
+          }
+        },
+        "relations": [],
+        "requirement": "Landlords and their agents may not charge a prospective tenant an application or screening fee above $50 for a unit in a building with five or more units.",
+        "review_flag": false,
+        "rule_id": "CAM-FEE-02",
+        "rule_status": "not_yet_effective",
+        "summary": {
+          "en": "Landlords cannot charge more than $50 for an application or screening fee. This fee covers the cost to check a renter's background.",
+          "es": "Los arrendadores no pueden cobrar más de $50 por una cuota de solicitud o evaluación de inquilinos. Esta cuota cubre el costo de verificar el historial del inquilino."
+        },
+        "title": "Application fee cap",
+        "who": {
+          "en": "This rule applies to buildings with five or more units.",
+          "es": "Esta regla se aplica a edificios con cinco o más unidades."
+        }
+      }
+    ],
+    "rules_json": [
+      {
+        "audio": {},
+        "category": "application_screening_fees",
+        "citation": {
+          "char_end": 577,
+          "char_start": 381,
+          "cite": "Cambridge, MA Ordinance No. R-2026-REHEARSAL, § 8.99.010",
+          "doc_id": "I-b3543245",
+          "doc_sha256": "f924f569c05b5cac552043e2005a8b03275200bf3620d42ae58cddfd68f2e55b",
+          "low_signal": false,
+          "quote": "No landlord or agent of a landlord shall charge a prospective tenant an application fee or screening fee that exceeds fifty dollars ($50) for any rental unit in a building with five or more units.",
+          "quote_source": "corpus",
+          "retrieved_at": "2026-10-04T03:33:53Z",
+          "supplementary_doc": null,
+          "tier": "A",
+          "url": "https://example.invalid/rehearsal",
+          "version_label": null
+        },
+        "confidence": 0.8,
+        "coverage": {
+          "all": [
+            {
+              "fact": "units",
+              "op": ">=",
+              "value": 5
+            }
+          ]
+        },
+        "coverage_text": "Buildings with five or more rental units.",
+        "doc_type": "ordinance",
+        "effective": {
+          "alternatives": [],
+          "anchor_quote": "Approved November 20, 2026",
+          "derivation": "nj_nth_month_next_following",
+          "hi": "2027-01-01",
+          "lo": "2027-01-01",
+          "precision": "day"
+        },
+        "exemptions": [
+          {
+            "citation": null,
+            "description": "Buildings with fewer than five units in which the owner lives",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "units",
+                  "op": "<",
+                  "value": 5
+                },
+                {
+                  "fact": "owner_occupied",
+                  "op": "==",
+                  "value": true
+                }
+              ]
+            },
+            "quote": "This chapter does not apply to a building with fewer than five units in which the owner lives."
+          }
+        ],
+        "exemptions_text": "Buildings with fewer than five units in which the owner lives",
+        "extra_citations": [],
+        "grade_level_en": 7.16,
+        "jurisdiction": {
+          "geoid": "2511000",
+          "id": "MA-2511000",
+          "label": "Cambridge, MA",
+          "level": "city",
+          "name": "Cambridge",
+          "state": "MA"
+        },
+        "key_values": [
+          {
+            "name": "Maximum application fee",
+            "source_doc_id": "I-b3543245",
+            "text": "exceeds fifty dollars ($50)",
+            "unit": "usd",
+            "valid_from": null,
+            "valid_to": null,
+            "value": 50.0
+          }
+        ],
+        "lifecycle": "enacted",
+        "open_question_ids": [],
+        "penalty": null,
+        "plain": {
+          "summary_en": "A landlord cannot charge more than fifty dollars as an application fee or screening fee. This applies to rental units in buildings with five or more units.",
+          "summary_es": "Un arrendador no puede cobrar más de cincuenta dólares como cuota de solicitud o evaluación de inquilinos. Esto se aplica a unidades de alquiler en edificios con cinco o más unidades.",
+          "who_en": "This rule covers buildings with five or more rental units.",
+          "who_es": "Esta regla cubre edificios con cinco o más unidades de alquiler."
+        },
+        "provenance": {
+          "adjudicated_fields": [],
+          "conf_delta": -0.1,
+          "model_lifecycle": "enacted",
+          "notes": [],
+          "pass": "B",
+          "passes": [
+            "B"
+          ],
+          "plain_template": false,
+          "relations_hint": [],
+          "uncertain_fields": [],
+          "votes": {
+            "pass": "B only"
+          }
+        },
+        "requirement": "A landlord or agent shall not charge a prospective tenant an application fee or screening fee exceeding fifty dollars for any rental unit in a building with five or more units.",
+        "review_flag": false,
+        "rule_id": "CAM-FEE-01",
+        "sunset": null,
+        "tenancy_conditions": [],
+        "title": "Application Fee Limit for Multifamily Buildings",
+        "votes": {
+          "pass": "B only"
+        }
+      },
+      {
+        "audio": {},
+        "category": "application_screening_fees",
+        "citation": {
+          "char_end": 577,
+          "char_start": 381,
+          "cite": "Cambridge Ord. § 8.99.010",
+          "doc_id": "I-b3543245",
+          "doc_sha256": "f924f569c05b5cac552043e2005a8b03275200bf3620d42ae58cddfd68f2e55b",
+          "low_signal": false,
+          "quote": "No landlord or agent of a landlord shall charge a prospective tenant an application fee or screening fee that exceeds fifty dollars ($50) for any rental unit in a building with five or more units.",
+          "quote_source": "corpus",
+          "retrieved_at": "2026-10-04T03:33:53Z",
+          "supplementary_doc": null,
+          "tier": "A",
+          "url": "https://example.invalid/rehearsal",
+          "version_label": null
+        },
+        "confidence": 0.9,
+        "coverage": {
+          "fact": "units",
+          "op": ">=",
+          "value": 5
+        },
+        "coverage_text": "Buildings with five or more units.",
+        "doc_type": "ordinance",
+        "effective": {
+          "alternatives": [],
+          "anchor_quote": "Approved November 20, 2026",
+          "derivation": "nj_nth_month_next_following",
+          "hi": "2027-01-01",
+          "lo": "2027-01-01",
+          "precision": "day"
+        },
+        "exemptions": [
+          {
+            "citation": null,
+            "description": "Buildings with fewer than five units in which the owner lives.",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "units",
+                  "op": "<",
+                  "value": 5
+                },
+                {
+                  "fact": "owner_occupied",
+                  "op": "==",
+                  "value": true
+                }
+              ]
+            },
+            "quote": "This chapter does not apply to a building with fewer than five units in which the owner lives."
+          }
+        ],
+        "exemptions_text": "Buildings with fewer than five units in which the owner lives.",
+        "extra_citations": [],
+        "grade_level_en": 4.79,
+        "jurisdiction": {
+          "geoid": "2511000",
+          "id": "MA-2511000",
+          "label": "Cambridge, MA",
+          "level": "city",
+          "name": "Cambridge",
+          "state": "MA"
+        },
+        "key_values": [
+          {
+            "name": "max_application_fee",
+            "source_doc_id": "I-b3543245",
+            "text": "fifty dollars ($50)",
+            "unit": "usd",
+            "valid_from": null,
+            "valid_to": null,
+            "value": 50.0
+          }
+        ],
+        "lifecycle": "enacted",
+        "open_question_ids": [],
+        "penalty": null,
+        "plain": {
+          "summary_en": "Landlords cannot charge more than $50 for an application or screening fee. This fee covers the cost to check a renter's background.",
+          "summary_es": "Los arrendadores no pueden cobrar más de $50 por una cuota de solicitud o evaluación de inquilinos. Esta cuota cubre el costo de verificar el historial del inquilino.",
+          "who_en": "This rule applies to buildings with five or more units.",
+          "who_es": "Esta regla se aplica a edificios con cinco o más unidades."
+        },
+        "provenance": {
+          "adjudicated_fields": [],
+          "conf_delta": 0.0,
+          "model_lifecycle": "enacted",
+          "notes": [],
+          "pass": "A",
+          "passes": [
+            "A"
+          ],
+          "plain_template": false,
+          "relations_hint": [],
+          "uncertain_fields": [],
+          "votes": {
+            "pass": "A only"
+          }
+        },
+        "requirement": "Landlords and their agents may not charge a prospective tenant an application or screening fee above $50 for a unit in a building with five or more units.",
+        "review_flag": false,
+        "rule_id": "CAM-FEE-02",
+        "sunset": null,
+        "tenancy_conditions": [],
+        "title": "Application fee cap",
+        "votes": {
+          "pass": "A only"
+        }
+      }
+    ],
+    "source": {
+      "chars": 876,
+      "doc_id": "I-b3543245",
+      "doc_type": "ordinance",
+      "format": "text",
+      "jurisdiction": {
+        "geoid": "2511000",
+        "id": "MA-2511000",
+        "in_scope": true,
+        "label": "Cambridge, MA",
+        "level": "city",
+        "name": "Cambridge",
+        "state": "MA"
+      },
+      "text": "REHEARSAL FIXTURE: this text is invented to rehearse Tenantly's ingest pipeline. It is not a real law.\n\nORDINANCE NO. R-2026-REHEARSAL\n\nAN ORDINANCE LIMITING RENTAL APPLICATION FEES IN THE CITY OF CAMBRIDGE\n\nBE IT ORDAINED by the City Council of the City of Cambridge:\n\nSection 8.99.010. Application fees.\nNo landlord or agent of a landlord shall charge a prospective tenant an application fee or screening fee that exceeds fifty dollars ($50) for any rental unit in a building with five or more units.\n\nSection 8.99.020. Exemptions.\nThis chapter does not apply to a building with fewer than five units in which the owner lives.\n\nSection 8.99.030. Effective date.\nThis ordinance shall take effect on the first day of the second month next following the date of enactment.\n\nApproved November 20, 2026.\n",
+      "title": "Cambridge rehearsal",
+      "url": "https://example.invalid/rehearsal"
+    },
+    "submission_json": [
+      {
+        "category": "application_screening_fees",
+        "citation": "Cambridge, MA Ordinance No. R-2026-REHEARSAL, § 8.99.010",
+        "confidence": 0.8,
+        "conflict_flag": false,
+        "conflict_note": null,
+        "coverage_conditions": "Buildings with five or more rental units.",
+        "effective_date": "2027-01-01",
+        "exemptions": "Buildings with fewer than five units in which the owner lives",
+        "interaction": null,
+        "jurisdiction": "Cambridge, MA",
+        "key_value": "exceeds fifty dollars ($50)",
+        "level": "city",
+        "overrides": [],
+        "quoted_span": "No landlord or agent of a landlord shall charge a prospective tenant an application fee or screening fee that exceeds fifty dollars ($50) for any rental unit in a building with five or more units.",
+        "requirement": "A landlord or agent shall not charge a prospective tenant an application fee or screening fee exceeding fifty dollars for any rental unit in a building with five or more units.",
+        "source_doc_id": "I-b3543245",
+        "source_url": "https://example.invalid/rehearsal",
+        "status": "not_yet_effective",
+        "team_rule_id": "CAM-FEE-01",
+        "title": "Application Fee Limit for Multifamily Buildings"
+      },
+      {
+        "category": "application_screening_fees",
+        "citation": "Cambridge Ord. § 8.99.010",
+        "confidence": 0.9,
+        "conflict_flag": false,
+        "conflict_note": null,
+        "coverage_conditions": "Buildings with five or more units.",
+        "effective_date": "2027-01-01",
+        "exemptions": "Buildings with fewer than five units in which the owner lives.",
+        "interaction": null,
+        "jurisdiction": "Cambridge, MA",
+        "key_value": "fifty dollars ($50)",
+        "level": "city",
+        "overrides": [],
+        "quoted_span": "No landlord or agent of a landlord shall charge a prospective tenant an application fee or screening fee that exceeds fifty dollars ($50) for any rental unit in a building with five or more units.",
+        "requirement": "Landlords and their agents may not charge a prospective tenant an application or screening fee above $50 for a unit in a building with five or more units.",
+        "source_doc_id": "I-b3543245",
+        "source_url": "https://example.invalid/rehearsal",
+        "status": "not_yet_effective",
+        "team_rule_id": "CAM-FEE-02",
+        "title": "Application fee cap"
+      }
+    ],
+    "validation": {
+      "checks": [
+        {
+          "detail": "all 2 rules have title, requirement, coverage and a quote",
+          "id": "required_fields",
+          "items": [],
+          "label": "Required fields present",
+          "status": "pass"
+        },
+        {
+          "detail": "every rule record validates (JSON Schema 2020-12)",
+          "id": "schema",
+          "items": [],
+          "label": "Valid against the official rule schema",
+          "status": "pass"
+        },
+        {
+          "detail": "2 quotes found at their stored offsets in the source",
+          "id": "citations",
+          "items": [],
+          "label": "Citations verified byte for byte",
+          "status": "pass"
+        },
+        {
+          "detail": "resolved to Cambridge, MA",
+          "id": "jurisdiction",
+          "items": [],
+          "label": "Jurisdiction resolved",
+          "status": "pass"
+        },
+        {
+          "detail": "effective and sunset dates are plausible and in order",
+          "id": "dates",
+          "items": [],
+          "label": "Dates valid and consistent",
+          "status": "pass"
+        },
+        {
+          "detail": "0 relations point to existing rules with verified evidence",
+          "id": "references",
+          "items": [],
+          "label": "References resolved",
+          "status": "pass"
+        },
+        {
+          "detail": "91 rule ids are unique",
+          "id": "unique_ids",
+          "items": [],
+          "label": "No duplicate rule IDs",
+          "status": "pass"
+        },
+        {
+          "detail": "no rule repeats a live rule",
+          "id": "duplicates",
+          "items": [],
+          "label": "No duplicate rules",
+          "status": "pass"
+        },
+        {
+          "detail": "every coverage and exemption predicate parses over the fact registry",
+          "id": "coverage_structure",
+          "items": [],
+          "label": "Coverage conditions well formed",
+          "status": "pass"
+        },
+        {
+          "detail": "no impossible precedence (state bars come from state rules; no self references)",
+          "id": "priority",
+          "items": [],
+          "label": "Priority relationships possible",
+          "status": "pass"
+        }
+      ],
+      "passed": true
+    },
+    "verification": {
+      "quotes_checked": 2,
+      "quotes_verified": 2,
+      "rejected": 0
+    }
+  },
+  "stage": "published",
+  "stages": [
+    {
+      "detail": "876 characters, classified as ordinance",
+      "ms": 0,
+      "stage": "received",
+      "status": "done"
+    },
+    {
+      "detail": "text text, 11 lines after removing page chrome",
+      "ms": 0,
+      "stage": "parse",
+      "status": "done"
+    },
+    {
+      "detail": "4 sections identified",
+      "ms": 0,
+      "stage": "sectionize",
+      "status": "done"
+    },
+    {
+      "detail": "all sections kept",
+      "ms": 0,
+      "stage": "triage",
+      "status": "done"
+    },
+    {
+      "detail": "2 candidate rules from two independent passes",
+      "ms": 12016,
+      "stage": "extract",
+      "status": "done"
+    },
+    {
+      "detail": "2 of 2 quotes found byte for byte in the document; 0 rejected",
+      "ms": 0,
+      "stage": "verify",
+      "status": "done"
+    },
+    {
+      "detail": "2 rules after cross-check and voting",
+      "ms": 0,
+      "stage": "crosscheck",
+      "status": "done"
+    },
+    {
+      "detail": "Cambridge, MA (inferred): Cambridge, MA is named 4 time(s) in the text",
+      "ms": 0,
+      "stage": "jurisdiction",
+      "status": "done"
+    },
+    {
+      "detail": "2027-01-01",
+      "ms": 0,
+      "stage": "calendar",
+      "status": "done"
+    },
+    {
+      "detail": "0 precedence or conflict relations found in the text",
+      "ms": 0,
+      "stage": "link",
+      "status": "done"
+    },
+    {
+      "detail": "2 rules written up in English and Spanish",
+      "ms": 4890,
+      "stage": "explain",
+      "status": "done"
+    },
+    {
+      "detail": "3 levels, 0 precedence relation(s) evaluated",
+      "ms": 0,
+      "stage": "priority",
+      "status": "done"
+    },
+    {
+      "detail": "11 nodes and 12 relationships built from the extracted data",
+      "ms": 0,
+      "stage": "graph",
+      "status": "done"
+    },
+    {
+      "detail": "10 of 10 checks passed",
+      "ms": 0,
+      "stage": "validate",
+      "status": "done"
+    },
+    {
+      "detail": "verdict review, confidence 60%",
+      "ms": 8311,
+      "stage": "judge",
+      "status": "done"
+    },
+    {
+      "detail": "51 buildings reached",
+      "ms": 360,
+      "stage": "impact",
+      "status": "done"
+    },
+    {
+      "detail": "state: review required",
+      "ms": 0,
+      "stage": "staged",
+      "status": "done"
+    }
+  ],
+  "started_at": "2026-10-04T03:33:53Z",
+  "state": "published",
+  "status": "published"
+}

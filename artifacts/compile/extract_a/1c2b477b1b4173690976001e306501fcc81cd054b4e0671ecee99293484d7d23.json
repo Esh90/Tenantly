@@ -1,0 +1,63 @@
+{
+  "cost_usd": 0.011945,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": "Approved November 20, 2026.",
+        "approval_date": "2026-11-20",
+        "category": "application_screening_fees",
+        "cite": "Cambridge Ord. § 8.99.010",
+        "coverage": {
+          "fact": "units",
+          "op": ">=",
+          "value": 5
+        },
+        "coverage_text": "Buildings with five or more units.",
+        "effective_expression": "first day of the second month next following the date of enactment",
+        "exemptions": [
+          {
+            "description": "Buildings with fewer than five units in which the owner lives.",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "units",
+                  "op": "<",
+                  "value": 5
+                },
+                {
+                  "fact": "owner_occupied",
+                  "op": "==",
+                  "value": true
+                }
+              ]
+            },
+            "quote": "This chapter does not apply to a building with fewer than five units in which the owner lives."
+          }
+        ],
+        "key_values": [
+          {
+            "name": "max_application_fee",
+            "text": "fifty dollars ($50)",
+            "unit": "usd",
+            "value": 50
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "No landlord or agent of a landlord shall charge a prospective tenant an application fee or screening fee that exceeds fifty dollars ($50) for any rental unit in a building with five or more units.",
+        "relations_hint": [],
+        "requirement": "Landlords and their agents may not charge a prospective tenant an application or screening fee above $50 for a unit in a building with five or more units.",
+        "title": "Application fee cap",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 2362,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 495,
+    "output_tokens": 505
+  }
+}

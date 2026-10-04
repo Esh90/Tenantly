@@ -1,0 +1,66 @@
+{
+  "cost_usd": 0.005175,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "rules": [
+      {
+        "anchor_quote": "Approved November 20, 2026.",
+        "approval_date": "2026-11-20",
+        "category": "application_screening_fees",
+        "cite": "Cambridge, MA Ordinance No. R-2026-REHEARSAL, § 8.99.010",
+        "coverage": {
+          "fact": "units",
+          "op": ">=",
+          "value": 5
+        },
+        "coverage_text": "Buildings with five or more rental units.",
+        "effective_date": null,
+        "effective_expression": "first day of the second month next following the date of enactment",
+        "exemptions": [
+          {
+            "description": "Buildings with fewer than five units where the owner lives",
+            "predicate": {
+              "all": [
+                {
+                  "fact": "units",
+                  "op": "<",
+                  "value": 5
+                },
+                {
+                  "fact": "owner_occupied",
+                  "op": "==",
+                  "value": true
+                }
+              ]
+            },
+            "quote": "This chapter does not apply to a building with fewer than five units in which the owner lives."
+          }
+        ],
+        "key_values": [
+          {
+            "name": "Maximum application/screening fee",
+            "text": "fifty dollars ($50)",
+            "unit": "usd",
+            "value": 50
+          }
+        ],
+        "lifecycle": "enacted",
+        "penalty": null,
+        "quote": "No landlord or agent of a landlord shall charge a prospective tenant an application fee or screening fee that exceeds fifty dollars ($50) for any rental unit in a building with five or more units.",
+        "relations_hint": [],
+        "requirement": "Landlords and agents cannot charge prospective tenants an application or screening fee exceeding $50 for rental units in buildings with five or more units.",
+        "sunset_date": null,
+        "tenancy_conditions": [],
+        "title": "Rental Application Fee Cap",
+        "uncertain_fields": []
+      }
+    ]
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 2390,
+    "output_tokens": 557
+  }
+}

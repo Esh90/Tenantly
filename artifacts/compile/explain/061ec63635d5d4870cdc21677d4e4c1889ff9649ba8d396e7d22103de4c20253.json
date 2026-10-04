@@ -1,0 +1,17 @@
+{
+  "cost_usd": 0.002177,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "summary_en": "Landlords must pay 4.2% annual interest on security deposits from March 1, 2026 through February 28, 2027. This interest goes to the tenant.",
+    "summary_es": "Los arrendadores deben pagar 4.2% de interés anual sobre el depósito de seguridad desde el 1 de marzo de 2026 hasta el 28 de febrero de 2027. Este interés va al inquilino.",
+    "who_en": "This rule applies to all residential rental properties in San Francisco.",
+    "who_es": "Esta regla se aplica a todas las propiedades residenciales de alquiler en San Francisco."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 977,
+    "output_tokens": 240
+  }
+}

@@ -63,6 +63,46 @@ def _group_key(r: Rule) -> tuple:
     return (r.jurisdiction.id, r.category, first, r.lifecycle)
 
 
+def merge_overlapping(rules: list[Rule]) -> list[Rule]:
+    """Records from one document whose quoted spans overlap describe the same provision (for
+    example two passes that cite it differently). They become one record: the longest quote is
+    primary and the key values and exemptions of the others are kept."""
+    groups: dict[tuple, list[Rule]] = defaultdict(list)
+    for r in rules:
+        groups[(r.jurisdiction.id, r.category, r.citation.doc_id, r.lifecycle)].append(r)
+    out: list[Rule] = []
+    for group in groups.values():
+        spanned = sorted(
+            (r for r in group if r.citation.char_start is not None),
+            key=lambda r: r.citation.char_start,
+        )
+        out += [r for r in group if r.citation.char_start is None]
+        cluster: list[Rule] = []
+        end = -1
+        for r in spanned + [None]:  # type: ignore[list-item]
+            if r is not None and cluster and r.citation.char_start < end:
+                cluster.append(r)
+                end = max(end, r.citation.char_end)
+                continue
+            if cluster:
+                primary = max(cluster, key=lambda x: len(x.citation.quote))
+                kvs = list(primary.key_values)
+                have = {(k.name, k.text) for k in kvs}
+                exes = list(primary.exemptions)
+                have_e = {e.description for e in exes}
+                for o in cluster:
+                    if o is primary:
+                        continue
+                    kvs += [k for k in o.key_values if (k.name, k.text) not in have]
+                    exes += [e for e in o.exemptions if e.description not in have_e]
+                out.append(primary.model_copy(update={"key_values": kvs, "exemptions": exes}))
+            if r is not None:
+                cluster, end = [r], r.citation.char_end
+            else:
+                cluster = []
+    return out
+
+
 def merge_across_docs(rules: list[Rule]) -> list[Rule]:
     """Rules with the same (jurisdiction, category, cite) from different documents become one:
     the best-tier, longest-quote record is primary and the others become extra citations."""
@@ -126,7 +166,7 @@ def assign_ids(rules: list[Rule]) -> list[Rule]:
 
 
 def finalize_rules(rules: list[Rule]) -> list[Rule]:
-    merged = assign_ids(merge_across_docs([rehome(r) for r in rules]))
+    merged = assign_ids(merge_across_docs(merge_overlapping([rehome(r) for r in rules])))
     out = []
     for r in merged:
         c = confidence(r)

@@ -1,6 +1,6 @@
 {
-  "compiled_at": "2026-10-04T03:00:39Z",
-  "data_version": "77302100c574",
+  "compiled_at": "2026-10-04T03:35:06Z",
+  "data_version": "874cced39c1c",
   "findings": [
     {
       "category": "rent_increase_limits",
@@ -1609,9 +1609,7 @@
       "oq_id": "OQ-10",
       "rule_ids": [
         "SF-DEP-01",
-        "SF-DEP-02",
-        "SF-RENT-02",
-        "SF-RENT-04"
+        "SF-RENT-02"
       ],
       "sources": [
         {
@@ -3095,10 +3093,19 @@
         "lo": "2026-01-01",
         "precision": "day"
       },
-      "exemptions": [],
+      "exemptions": [
+        {
+          "citation": null,
+          "description": "Tenancies that began on or after Jan 1, 2025 with rents set under Costa-Hawkins are not adjusted by the 2026 AGA.",
+          "predicate": {
+            "const": "unknown"
+          },
+          "quote": "The 2026 AGA may not adjust tenants’ rents when their tenancy began on or after \nJanuary 1, 2025, and who had their rents set pursuant to the Costa-Hawkins Rental \nHousing Act."
+        }
+      ],
       "exemptions_text": "unparsed: Tenants whose tenancy began on or after January 1, 2025 and whose rents were set pursuant to the Costa-Hawkins Rental Housing Act",
       "extra_citations": [],
-      "grade_level_en": 6.07,
+      "grade_level_en": 6.71,
       "jurisdiction": {
         "geoid": "0606000",
         "id": "CA-0606000",
@@ -3125,16 +3132,34 @@
           "valid_from": null,
           "valid_to": null,
           "value": 65.0
+        },
+        {
+          "name": "2026 AGA",
+          "source_doc_id": "D008",
+          "text": "1.0%",
+          "unit": "percent",
+          "valid_from": "2026-01-01",
+          "valid_to": null,
+          "value": 1.0
+        },
+        {
+          "name": "AGA formula",
+          "source_doc_id": "D008",
+          "text": "65% of the increase in the Consumer Price Index",
+          "unit": "percent",
+          "valid_from": null,
+          "valid_to": null,
+          "value": 65.0
         }
       ],
       "lifecycle": "enacted",
       "open_question_ids": [],
       "penalty": null,
       "plain": {
-        "summary_en": "Landlords can raise rent by 1.0% starting January 1, 2026. Tenants who started renting on or after January 1, 2025 cannot get a rent increase.",
-        "summary_es": "Los arrendadores pueden aumentar la renta en 1.0% a partir del 1 de enero de 2026. Los inquilinos que comenzaron a alquilar en o después del 1 de enero de 2025 no pueden recibir un aumento de renta.",
-        "who_en": "This rule applies to all homes rented in Berkeley that have rent control.",
-        "who_es": "Esta regla se aplica a todas las viviendas alquiladas en Berkeley que tienen control de renta."
+        "summary_en": "Landlords can increase rent by 1.0% starting January 1, 2026. Tenants who moved in on or after January 1, 2025 with rents set under Costa-Hawkins are not eligible for this increase.",
+        "summary_es": "Los arrendadores pueden aumentar la renta en 1.0% a partir del 1 de enero de 2026. Los inquilinos que se mudaron a partir del 1 de enero de 2025 con rentas establecidas bajo Costa-Hawkins no califican para este aumento.",
+        "who_en": "This rule applies to all residential rental properties subject to Berkeley rent stabilization.",
+        "who_es": "Esta regla se aplica a todas las propiedades residenciales de alquiler sujetas a la estabilización de rentas de Berkeley."
       },
       "provenance": {
         "adjudicated_fields": [],
@@ -3160,116 +3185,6 @@
       "title": "2026 Annual General Adjustment",
       "votes": {
         "pass": "B only"
-      }
-    },
-    {
-      "audio": {},
-      "category": "rent_increase_limits",
-      "citation": {
-        "char_end": 657,
-        "char_start": 470,
-        "cite": "BMC § 13.76.110(A); Rent Board Regulation 1148",
-        "doc_id": "D008",
-        "doc_sha256": "969848595b70aa2ff7b9e8420f610c36b914521c4ea4dd1d0656be776e90c39f",
-        "low_signal": false,
-        "quote": "adopted the Annual General Adjustment (AGA) Order for Year 2026 which will allow \neligible landlords to increase the 2025 permanent rent ceilings by 1.0% no earlier than \nJanuary 1, 2026.",
-        "quote_source": "corpus",
-        "retrieved_at": "2026-10-01T22:35Z",
-        "supplementary_doc": null,
-        "tier": "B",
-        "url": "https://rentboard.berkeleyca.gov/sites/default/files/documents/AGA%20Public%20Notice.pdf",
-        "version_label": null
-      },
-      "confidence": 0.8,
-      "coverage": {
-        "const": true
-      },
-      "coverage_text": "Rental units subject to Berkeley rent stabilization whose landlords qualify under Regulation 1148.",
-      "doc_type": "guidance",
-      "effective": {
-        "alternatives": [],
-        "anchor_quote": null,
-        "derivation": "text_explicit",
-        "hi": "2026-01-01",
-        "lo": "2026-01-01",
-        "precision": "day"
-      },
-      "exemptions": [
-        {
-          "citation": null,
-          "description": "Tenancies that began on or after Jan 1, 2025 with rents set under Costa-Hawkins are not adjusted by the 2026 AGA.",
-          "predicate": {
-            "const": "unknown"
-          },
-          "quote": "The 2026 AGA may not adjust tenants’ rents when their tenancy began on or after \nJanuary 1, 2025, and who had their rents set pursuant to the Costa-Hawkins Rental \nHousing Act."
-        }
-      ],
-      "exemptions_text": "Tenancies that began on or after Jan 1, 2025 with rents set under Costa-Hawkins are not adjusted by the 2026 AGA.",
-      "extra_citations": [],
-      "grade_level_en": 6.24,
-      "jurisdiction": {
-        "geoid": "0606000",
-        "id": "CA-0606000",
-        "label": "Berkeley, CA",
-        "level": "city",
-        "name": "Berkeley",
-        "state": "CA"
-      },
-      "key_values": [
-        {
-          "name": "2026 AGA",
-          "source_doc_id": "D008",
-          "text": "1.0%",
-          "unit": "percent",
-          "valid_from": "2026-01-01",
-          "valid_to": null,
-          "value": 1.0
-        },
-        {
-          "name": "AGA formula",
-          "source_doc_id": "D008",
-          "text": "65% of the increase in the Consumer Price Index",
-          "unit": "percent",
-          "valid_from": null,
-          "valid_to": null,
-          "value": 65.0
-        }
-      ],
-      "lifecycle": "enacted",
-      "open_question_ids": [],
-      "penalty": null,
-      "plain": {
-        "summary_en": "Eligible landlords can raise rent by 1.0% starting January 1, 2026. This amount equals 65% of the Bay Area cost increase.",
-        "summary_es": "Los arrendadores elegibles pueden aumentar la renta en 1.0% a partir del 1 de enero de 2026. Este aumento es igual al 65% del aumento de costos del Área de la Bahía.",
-        "who_en": "This rule applies to rental units under Berkeley rent control where landlords meet the requirements in Regulation 1148.",
-        "who_es": "Esta regla se aplica a unidades de alquiler bajo control de renta de Berkeley donde los arrendadores cumplen los requisitos de la Regulación 1148."
-      },
-      "provenance": {
-        "adjudicated_fields": [],
-        "conf_delta": 0.0,
-        "model_lifecycle": "enacted",
-        "notes": [
-          "exemption not expressible: Tenancies that began on or after Jan 1, 2025 with rents set under Costa-Hawkins "
-        ],
-        "pass": "A",
-        "passes": [
-          "A"
-        ],
-        "plain_template": false,
-        "relations_hint": [],
-        "uncertain_fields": [],
-        "votes": {
-          "pass": "A only"
-        }
-      },
-      "requirement": "Eligible landlords may raise 2025 permanent rent ceilings by 1.0% no earlier than January 1, 2026. The AGA equals 65% of the Bay Area CPI increase.",
-      "review_flag": false,
-      "rule_id": "BRK-RENT-02",
-      "sunset": null,
-      "tenancy_conditions": [],
-      "title": "Berkeley 2026 Annual General Adjustment",
-      "votes": {
-        "pass": "A only"
       }
     },
     {
@@ -3315,23 +3230,7 @@
         }
       ],
       "exemptions_text": "Landlords with banked (unused) AGAs from previous years may implement a rent increase greater than 5% to raise rent to the rent ceiling",
-      "extra_citations": [
-        {
-          "char_end": 11906,
-          "char_start": 11884,
-          "cite": "Berkeley Rent Ordinance (Measure BB), Annual General Adjustment",
-          "doc_id": "D006",
-          "doc_sha256": "f1960db522de7f63158e64334835b37e52ae1d8fa8b510eeb314658aef4173fa",
-          "low_signal": false,
-          "quote": "The maximum AGA is 5%.",
-          "quote_source": "corpus",
-          "retrieved_at": "2026-10-01T22:35Z",
-          "supplementary_doc": null,
-          "tier": "B",
-          "url": "https://rentboard.berkeleyca.gov/laws-regulations/measure-bb-changes-berkeleys-rent-ordinance",
-          "version_label": null
-        }
-      ],
+      "extra_citations": [],
       "grade_level_en": 8.17,
       "jurisdiction": {
         "geoid": "0606000",
@@ -3390,7 +3289,7 @@
       },
       "requirement": "Annual General Adjustments are capped at a maximum of 5%.",
       "review_flag": false,
-      "rule_id": "BRK-RENT-03",
+      "rule_id": "BRK-RENT-02",
       "sunset": null,
       "tenancy_conditions": [],
       "title": "Annual General Adjustment cap at 5%",
@@ -3501,7 +3400,7 @@
       },
       "requirement": "Most units in multifamily properties built before 1980 are fully covered and subject to rent control under Berkeley's rent stabilization ordinance.",
       "review_flag": false,
-      "rule_id": "BRK-RENT-04",
+      "rule_id": "BRK-RENT-03",
       "sunset": null,
       "tenancy_conditions": [],
       "title": "Rent Control Coverage for Pre-1980 Multifamily Units",
@@ -3913,6 +3812,14 @@
             "const": "unknown"
           },
           "quote": "landlords who own only two rental properties with no more than four residential units total can charge up to two months' rent for furnished and unfurnished units if ownership is held by a natural person, family trust, or limited liability company (LLC) where all members are natural persons"
+        },
+        {
+          "citation": null,
+          "description": "Landlords owning only two rental properties with no more than four units total, owned by a natural person, family trust, or all-natural-person LLC, may charge up to two months' rent.",
+          "predicate": {
+            "const": "unknown"
+          },
+          "quote": "Starting July 1, 2024, landlords who own only two rental properties with no more than four residential units total can charge up to two months' rent for furnished and unfurnished units if ownership is held by a natural person, family trust, or limited liability company (LLC) where all members are natural persons"
         }
       ],
       "exemptions_text": "Landlords owning only two rental properties with no more than four residential units total, where ownership is held by a natural person, family trust, or LLC with all natural person members",
@@ -3935,6 +3842,15 @@
           "valid_from": "2024-07-01",
           "valid_to": null,
           "value": 1.0
+        },
+        {
+          "name": "deposit_cap",
+          "source_doc_id": "D007",
+          "text": "one month's rent",
+          "unit": "months",
+          "valid_from": "2024-07-01",
+          "valid_to": null,
+          "value": 1.0
         }
       ],
       "lifecycle": "enacted",
@@ -3942,7 +3858,7 @@
       "penalty": null,
       "plain": {
         "summary_en": "Starting July 1, 2024, landlords can charge only one month's rent as a security deposit. This applies to both furnished and unfurnished units.",
-        "summary_es": "A partir del 1 de julio de 2024, los arrendadores pueden cobrar solo un mes de renta como depósito de seguridad. Esto se aplica a unidades amuebladas y sin amueblar.",
+        "summary_es": "A partir del 1 de julio de 2024, los arrendadores pueden cobrar solo un mes de renta como depósito de seguridad. Esto se aplica tanto a unidades amuebladas como sin amuebles.",
         "who_en": "This rule covers all residential rental units.",
         "who_es": "Esta regla cubre todas las unidades de alquiler residencial."
       },
@@ -3951,7 +3867,8 @@
         "conf_delta": -0.1,
         "model_lifecycle": "enacted",
         "notes": [
-          "exemption downgraded to unknown (predicate not faithful): Landlords owning only two rental properties with no more than four residential u: The predicate's third condition uses `{\"any\": [{\"fact\": \"owner_is_natural_person\", \"op\": \"==\", \"value\": true}, {\"fact\": "
+          "exemption downgraded to unknown (predicate not faithful): Landlords owning only two rental properties with no more than four residential u: The predicate's third condition uses `{\"any\": [{\"fact\": \"owner_is_natural_person\", \"op\": \"==\", \"value\": true}, {\"fact\": ",
+          "exemption downgraded to unknown (predicate not faithful): Landlords owning only two rental properties with no more than four units total, : The predicate is incomplete. The legal condition requires three elements: (1) landlord owns only two rental properties ("
         ],
         "pass": "B",
         "passes": [
@@ -4023,14 +3940,6 @@
             "const": "unknown"
           },
           "quote": null
-        },
-        {
-          "citation": null,
-          "description": "Landlords owning only two rental properties with no more than four units total, owned by a natural person, family trust, or all-natural-person LLC, may charge up to two months' rent.",
-          "predicate": {
-            "const": "unknown"
-          },
-          "quote": "Starting July 1, 2024, landlords who own only two rental properties with no more than four residential units total can charge up to two months' rent for furnished and unfurnished units if ownership is held by a natural person, family trust, or limited liability company (LLC) where all members are natural persons"
         }
       ],
       "exemptions_text": null,
@@ -4139,24 +4048,9 @@
           "tier": "A",
           "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
           "version_label": null
-        },
-        {
-          "char_end": 512,
-          "char_start": 406,
-          "cite": "Cal. Civ. Code § 1950.5",
-          "doc_id": "D007",
-          "doc_sha256": "2ba3028382b89ee70810a45e25dd9707297bd65512e2723f4f9bda514af57203",
-          "low_signal": false,
-          "quote": "Starting July 1, 2024, many landlords may only charge one month's rent for unfurnished and furnished units",
-          "quote_source": "corpus",
-          "retrieved_at": "2026-10-01T22:35Z",
-          "supplementary_doc": null,
-          "tier": "B",
-          "url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
-          "version_label": null
         }
       ],
-      "grade_level_en": 6.44,
+      "grade_level_en": 8.9,
       "jurisdiction": {
         "geoid": null,
         "id": "CA",
@@ -4192,40 +4086,30 @@
           "valid_from": null,
           "valid_to": null,
           "value": 1.0
-        },
-        {
-          "name": "deposit_cap",
-          "source_doc_id": "D007",
-          "text": "one month's rent",
-          "unit": "months",
-          "valid_from": "2024-07-01",
-          "valid_to": null,
-          "value": 1.0
         }
       ],
       "lifecycle": "enacted",
       "open_question_ids": [],
       "penalty": "Landlord not entitled to claim any amount of security if it fails to comply in bad faith.",
       "plain": {
-        "summary_en": "Within 21 calendar days after a tenant moves out, landlords must list what money they kept and return the rest. The list must show exactly what the money was used for.",
-        "summary_es": "Dentro de 21 días después de que el inquilino se mude, el arrendador debe hacer una lista de qué dinero guardó y devolver el resto. La lista debe mostrar exactamente para qué se usó el dinero.",
-        "who_en": "This rule applies to residential rental homes and apartments where people live.",
-        "who_es": "Esta regla se aplica a casas de alquiler y apartamentos residenciales donde viven personas."
+        "summary_en": "Return of security within 21 days: 21 calendar days.",
+        "summary_es": "Return of security within 21 days: 21 calendar days.",
+        "who_en": "Residential rental property used as a tenant's dwelling.",
+        "who_es": "Residential rental property used as a tenant's dwelling."
       },
       "provenance": {
         "adjudicated_fields": [],
         "conf_delta": 0.05,
         "model_lifecycle": "enacted",
         "notes": [
-          "exemption downgraded to unknown (predicate not faithful): Small landlords (natural person or all-natural-person LLC, owning no more than t: The predicate only checks if the owner is a natural person and has no more than 4 units, but the exemption condition has",
-          "exemption downgraded to unknown (predicate not faithful): Landlords owning only two rental properties with no more than four units total, : The predicate is incomplete. The legal condition requires that ownership be held by \"a natural person, family trust, or "
+          "exemption downgraded to unknown (predicate not faithful): Small landlords (natural person or all-natural-person LLC, owning no more than t: The predicate only checks if the owner is a natural person and has no more than 4 units, but the exemption condition has"
         ],
         "pass": "A",
         "passes": [
           "A",
           "B"
         ],
-        "plain_template": false,
+        "plain_template": true,
         "relations_hint": [],
         "uncertain_fields": [],
         "votes": {
@@ -6401,11 +6285,19 @@
             "const": "unknown"
           },
           "quote": "There are other specific exceptions to the JCO including, but not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, owner’s roommate, cooperatives under certain circumstances, some non-profit facilities for the homeless or short-term treatment centers for substance abuse, and some properties owned by HACLA or the government."
+        },
+        {
+          "citation": null,
+          "description": "Properties built on or before October 1, 1978 that are subject to RSO",
+          "predicate": {
+            "const": "unknown"
+          },
+          "quote": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO)."
         }
       ],
       "exemptions_text": "Transient hotels, licensed care facilities, fraternity/sorority houses, owner's roommate, certain cooperatives, some nonprofit facilities, some HACLA/government properties",
       "extra_citations": [],
-      "grade_level_en": 4.39,
+      "grade_level_en": 4.82,
       "jurisdiction": {
         "geoid": "0644000",
         "id": "CA-0644000",
@@ -6419,10 +6311,10 @@
       "open_question_ids": [],
       "penalty": null,
       "plain": {
-        "summary_en": "Landlords must have a valid reason to end your lease. If they evict you without a good reason, they must pay for your moving costs.",
-        "summary_es": "Los arrendadores deben tener una razón válida para terminar tu contrato de arrendamiento. Si te desalojan sin una razón válida, deben pagar tus costos de mudanza.",
-        "who_en": "This rule applies to most rental homes in Los Angeles that are not covered by the Rent Stabilization Ordinance.",
-        "who_es": "Esta regla se aplica a la mayoría de las viviendas de alquiler en Los Ángeles que no están cubiertas por la Ordenanza de Estabilización de Rentas."
+        "summary_en": "Landlords must have a valid reason to evict tenants. If there is no fault by the tenant, the landlord must pay for moving costs.",
+        "summary_es": "Los arrendadores deben tener una razón válida para desalojar inquilinos. Si no hay culpa del inquilino, el arrendador debe pagar los gastos de mudanza.",
+        "who_en": "This rule covers most residential rentals in Los Angeles that are not under the Rent Stabilization Ordinance.",
+        "who_es": "Esta regla aplica a la mayoría de propiedades residenciales de alquiler en Los Ángeles que no están bajo la Ordenanza de Estabilización de Rentas."
       },
       "provenance": {
         "adjudicated_fields": [],
@@ -6455,102 +6347,6 @@
       "title": "LA Just Cause for Eviction",
       "votes": {
         "pass": "A only"
-      }
-    },
-    {
-      "audio": {},
-      "category": "just_cause_eviction",
-      "citation": {
-        "char_end": 686,
-        "char_start": 570,
-        "cite": "Los Angeles Municipal Code, Just Cause Ordinance",
-        "doc_id": "D040",
-        "doc_sha256": "13f9d54597199b73e23ad12dcc38626d53bb30bd53d89a63b6a7f55ecc570425",
-        "low_signal": false,
-        "quote": "It prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions.",
-        "quote_source": "corpus",
-        "retrieved_at": "2026-10-01T22:36Z",
-        "supplementary_doc": null,
-        "tier": "B",
-        "url": "https://housing.lacity.gov/residents/just-cause-for-eviction-ordinance-jco",
-        "version_label": null
-      },
-      "confidence": 0.7,
-      "coverage": {
-        "const": true
-      },
-      "coverage_text": "Most residential properties in the City of Los Angeles that are not regulated by the City's Rent Stabilization Ordinance.",
-      "doc_type": "guidance",
-      "effective": {
-        "alternatives": [],
-        "anchor_quote": null,
-        "derivation": null,
-        "hi": null,
-        "lo": null,
-        "precision": "unknown"
-      },
-      "exemptions": [
-        {
-          "citation": null,
-          "description": "Properties built on or before October 1, 1978 that are subject to RSO",
-          "predicate": {
-            "const": "unknown"
-          },
-          "quote": "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO)."
-        }
-      ],
-      "exemptions_text": "Properties built on or before October 1, 1978 that are subject to RSO; unparsed: Transient hotels; Licensed care facilities; Fraternity or sorority houses; Owner's roommate; Cooperatives under certain circumstances; Some non-profit facilities for the homeless or short-term treatment centers for substance abuse; Some properties owned by HACLA or the government",
-      "extra_citations": [],
-      "grade_level_en": 6.01,
-      "jurisdiction": {
-        "geoid": "0644000",
-        "id": "CA-0644000",
-        "label": "Los Angeles, CA",
-        "level": "city",
-        "name": "Los Angeles",
-        "state": "CA"
-      },
-      "key_values": [],
-      "lifecycle": "enacted",
-      "open_question_ids": [],
-      "penalty": null,
-      "plain": {
-        "summary_en": "Landlords must have a legal reason to end a tenancy. They must pay moving costs for evictions without a reason.",
-        "summary_es": "Los arrendadores deben tener una razón legal para terminar un contrato de alquiler. Deben pagar los gastos de mudanza por desalojos sin causa.",
-        "who_en": "This rule applies to most homes and apartments in Los Angeles that are not under rent control.",
-        "who_es": "Esta regla aplica a la mayoría de casas y apartamentos en Los Ángeles que no están bajo control de rentas."
-      },
-      "provenance": {
-        "adjudicated_fields": [],
-        "conf_delta": -0.1,
-        "model_lifecycle": "enacted",
-        "notes": [
-          "coverage rejected by the DSL validator: unrecognized predicate keys ['property_type', 'value']",
-          "exemption not expressible: Properties built on or before October 1, 1978 that are subject to RSO"
-        ],
-        "pass": "B",
-        "passes": [
-          "B"
-        ],
-        "plain_template": false,
-        "relations_hint": [
-          "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City's Rent Stabilization Ordinance (RSO)."
-        ],
-        "uncertain_fields": [],
-        "votes": {
-          "pass": "B only"
-        }
-      },
-      "requirement": "Landlords may not terminate tenancies without just cause and must provide relocation assistance for no-fault evictions.",
-      "review_flag": true,
-      "rule_id": "LA-JCE-07",
-      "sunset": null,
-      "tenancy_conditions": [
-        "Tenant has lived in the same unit for at least six months or their original lease has expired, whichever comes first"
-      ],
-      "title": "Prohibition on eviction without just cause",
-      "votes": {
-        "pass": "B only"
       }
     },
     {
@@ -7799,23 +7595,7 @@
         }
       ],
       "exemptions_text": "Government entity setting or limiting rents through affordability controls",
-      "extra_citations": [
-        {
-          "char_end": 8419,
-          "char_start": 8077,
-          "cite": "N.J.S.A. 56:9-1 et seq. (P.L. 2026, c.043 § 4(a))",
-          "doc_id": "D069",
-          "doc_sha256": "1fdbfb48743a46429c3f47dbd8d08c665739202361661e1a2f19b94bb0ec43a6",
-          "low_signal": false,
-          "quote": "It\nshall be unlawful and a violation of the “New Jersey Antitrust Act,” P.L.1970,\nc.73 (C.56:9-1 et seq.) for:\na.     a rental property owner, or any agent,\nrepresentative, or subcontractor thereof, to receive, subscribe to, contract\nfor, or otherwise exchange any form of consideration in return for the use of,\nthe services of a coordinator",
-          "quote_source": "corpus",
-          "retrieved_at": "2026-10-01T22:56Z",
-          "supplementary_doc": null,
-          "tier": "A",
-          "url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
-          "version_label": null
-        }
-      ],
+      "extra_citations": [],
       "grade_level_en": 14.68,
       "jurisdiction": {
         "geoid": null,
@@ -8938,21 +8718,6 @@
           "char_end": 4369,
           "char_start": 4230,
           "cite": "N.J.S.A. 46:8-55",
-          "doc_id": "D065",
-          "doc_sha256": "c7d281ddae183438fd360bfa0b4824d6541c532efe6ae8123dad37e0f4d53e1e",
-          "low_signal": false,
-          "quote": "A housing\nprovider\nshall not make any oral or written inquiry\nregarding an applicant’s criminal record prior to making a conditional offer.",
-          "quote_source": "corpus",
-          "retrieved_at": "2026-10-01T22:37Z",
-          "supplementary_doc": null,
-          "tier": "A",
-          "url": "https://pub.njleg.gov/bills/2020/PL21/110_.HTM",
-          "version_label": null
-        },
-        {
-          "char_end": 4369,
-          "char_start": 4230,
-          "cite": "N.J.S.A. 46:8-55(a)(2)",
           "doc_id": "D065",
           "doc_sha256": "c7d281ddae183438fd360bfa0b4824d6541c532efe6ae8123dad37e0f4d53e1e",
           "low_signal": false,
@@ -10534,7 +10299,7 @@
       "exemptions": [],
       "exemptions_text": null,
       "extra_citations": [],
-      "grade_level_en": 7.76,
+      "grade_level_en": 6.38,
       "jurisdiction": {
         "geoid": "0667000",
         "id": "CA-0667000",
@@ -10552,6 +10317,15 @@
           "valid_from": "2026-03-01",
           "valid_to": "2027-02-28",
           "value": 4.2
+        },
+        {
+          "name": "security_deposit_interest",
+          "source_doc_id": "D083",
+          "text": "4.2% for March 1, 2026 – February 28, 2027",
+          "unit": "percent",
+          "valid_from": "2026-03-01",
+          "valid_to": "2027-02-28",
+          "value": 4.2
         }
       ],
       "lifecycle": "enacted",
@@ -10560,8 +10334,8 @@
       ],
       "penalty": null,
       "plain": {
-        "summary_en": "Landlords must pay 4.2% annual interest on security deposits from March 1, 2026 through February 28, 2027. Tenants receive this interest on money held as deposits.",
-        "summary_es": "Los arrendadores deben pagar 4.2% de interés anual sobre depósitos de seguridad desde el 1 de marzo de 2026 hasta el 28 de febrero de 2027. Los inquilinos reciben este interés sobre el dinero que se retiene como depósitos.",
+        "summary_en": "Landlords must pay 4.2% annual interest on security deposits from March 1, 2026 through February 28, 2027. This interest goes to the tenant.",
+        "summary_es": "Los arrendadores deben pagar 4.2% de interés anual sobre el depósito de seguridad desde el 1 de marzo de 2026 hasta el 28 de febrero de 2027. Este interés va al inquilino.",
         "who_en": "This rule applies to all residential rental properties in San Francisco.",
         "who_es": "Esta regla se aplica a todas las propiedades residenciales de alquiler en San Francisco."
       },
@@ -10589,101 +10363,6 @@
       "title": "Security Deposit Interest Rate",
       "votes": {
         "pass": "B only"
-      }
-    },
-    {
-      "audio": {},
-      "category": "security_deposits",
-      "citation": {
-        "char_end": 483,
-        "char_start": 441,
-        "cite": "Current Rates, including Rent Increase, Relocation, Sec. Deposit (SF.gov)",
-        "doc_id": "D083",
-        "doc_sha256": "764e9e3a023bd434458dfea8ffbb57e57d23e5f0a4939cc10948b9e495034d2f",
-        "low_signal": true,
-        "quote": "4.2% for March 1, 2026 – February 28, 2027",
-        "quote_source": "corpus",
-        "retrieved_at": "2026-10-01T22:37Z",
-        "supplementary_doc": null,
-        "tier": "B",
-        "url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
-        "version_label": null
-      },
-      "confidence": 0.7,
-      "coverage": {
-        "const": true
-      },
-      "coverage_text": "Page does not state coverage; applies to residential security deposits in San Francisco.",
-      "doc_type": "guidance",
-      "effective": {
-        "alternatives": [],
-        "anchor_quote": null,
-        "derivation": null,
-        "hi": null,
-        "lo": null,
-        "precision": "unknown"
-      },
-      "exemptions": [],
-      "exemptions_text": null,
-      "extra_citations": [],
-      "grade_level_en": 7.85,
-      "jurisdiction": {
-        "geoid": "0667000",
-        "id": "CA-0667000",
-        "label": "San Francisco, CA",
-        "level": "city",
-        "name": "San Francisco",
-        "state": "CA"
-      },
-      "key_values": [
-        {
-          "name": "security_deposit_interest",
-          "source_doc_id": "D083",
-          "text": "4.2% for March 1, 2026 – February 28, 2027",
-          "unit": "percent",
-          "valid_from": "2026-03-01",
-          "valid_to": "2027-02-28",
-          "value": 4.2
-        }
-      ],
-      "lifecycle": "enacted",
-      "open_question_ids": [
-        "OQ-10"
-      ],
-      "penalty": null,
-      "plain": {
-        "summary_en": "Landlords must pay 4.2% annual interest on security deposits from March 1, 2026 through February 28, 2027.",
-        "summary_es": "Los arrendadores deben pagar 4.2% de interés anual sobre los depósitos de seguridad del 1 de marzo de 2026 al 28 de febrero de 2027.",
-        "who_en": "This rule applies to residential rental properties in San Francisco.",
-        "who_es": "Esta regla se aplica a propiedades residenciales de alquiler en San Francisco."
-      },
-      "provenance": {
-        "adjudicated_fields": [],
-        "conf_delta": 0.0,
-        "model_lifecycle": "enacted",
-        "notes": [],
-        "pass": "A",
-        "passes": [
-          "A"
-        ],
-        "plain_template": false,
-        "relations_hint": [],
-        "uncertain_fields": [
-          "coverage",
-          "cite"
-        ],
-        "votes": {
-          "pass": "A only"
-        }
-      },
-      "requirement": "The security deposit interest rate is 4.2% for the period March 1, 2026 through February 28, 2027.",
-      "review_flag": false,
-      "rule_id": "SF-DEP-02",
-      "sunset": null,
-      "tenancy_conditions": [],
-      "title": "Security deposit interest rate 2026-27",
-      "votes": {
-        "pass": "A only"
       }
     },
     {
@@ -10840,16 +10519,25 @@
           "valid_from": "2026-03-01",
           "valid_to": "2027-02-28",
           "value": 1.6
+        },
+        {
+          "name": "prior_year_allowable_increase",
+          "source_doc_id": "D080",
+          "text": "1.4%",
+          "unit": "percent",
+          "valid_from": "2025-03-01",
+          "valid_to": "2026-02-28",
+          "value": 1.4
         }
       ],
       "lifecycle": "enacted",
       "open_question_ids": [],
       "penalty": null,
       "plain": {
-        "summary_en": "Landlords can increase rent by a maximum of 1.6% per year from March 1, 2026 through February 28, 2027 for rent-controlled units.",
-        "summary_es": "Los arrendadores pueden aumentar la renta un máximo de 1.6% por año del 1 de marzo de 2026 al 28 de febrero de 2027 para unidades con control de renta.",
-        "who_en": "This rule covers rent-controlled residential units in San Francisco.",
-        "who_es": "Esta regla aplica a unidades residenciales con control de renta en San Francisco."
+        "summary_en": "Landlords can increase rent by a maximum of 1.6% per year for rent-controlled units from March 1, 2026 through February 28, 2027.",
+        "summary_es": "Los arrendadores pueden aumentar la renta un máximo de 1.6% por año para unidades controladas de renta del 1 de marzo de 2026 al 28 de febrero de 2027.",
+        "who_en": "This rule applies to rent-controlled residential units in San Francisco.",
+        "who_es": "Esta regla se aplica a unidades residenciales controladas de renta en San Francisco."
       },
       "provenance": {
         "adjudicated_fields": [],
@@ -10912,7 +10600,7 @@
       "exemptions": [],
       "exemptions_text": null,
       "extra_citations": [],
-      "grade_level_en": 4.26,
+      "grade_level_en": 4.43,
       "jurisdiction": {
         "geoid": "0667000",
         "id": "CA-0667000",
@@ -10930,6 +10618,15 @@
           "valid_from": "2026-03-01",
           "valid_to": "2027-02-28",
           "value": 1.6
+        },
+        {
+          "name": "allowable_rent_increase",
+          "source_doc_id": "D083",
+          "text": "1.6% for March 1, 2026 – February 28, 2027",
+          "unit": "percent",
+          "valid_from": "2026-03-01",
+          "valid_to": "2027-02-28",
+          "value": 1.6
         }
       ],
       "lifecycle": "enacted",
@@ -10938,10 +10635,10 @@
       ],
       "penalty": null,
       "plain": {
-        "summary_en": "Landlords can increase rent by no more than 1.6% for tenancies from March 1, 2026 through February 28, 2027.",
-        "summary_es": "Los arrendadores pueden aumentar la renta en no más del 1.6% para los inquilinos del 1 de marzo de 2026 al 28 de febrero de 2027.",
+        "summary_en": "Landlords can increase rent by no more than 1.6% for tenancies from March 1, 2026 through February 28, 2027. This limits how much your rent can go up during that time period.",
+        "summary_es": "Los arrendadores pueden aumentar la renta en no más del 1.6% para arrendamientos del 1 de marzo de 2026 al 28 de febrero de 2027. Esto limita cuánto puede subir tu renta durante ese período.",
         "who_en": "This rule covers all residential rental properties in San Francisco.",
-        "who_es": "Esta regla se aplica a todas las propiedades residenciales de alquiler en San Francisco."
+        "who_es": "Esta regla cubre todas las propiedades residenciales de alquiler en San Francisco."
       },
       "provenance": {
         "adjudicated_fields": [],
@@ -10967,203 +10664,6 @@
       "title": "Allowable Rent Increase Rate",
       "votes": {
         "pass": "B only"
-      }
-    },
-    {
-      "audio": {},
-      "category": "rent_increase_limits",
-      "citation": {
-        "char_end": 380,
-        "char_start": 258,
-        "cite": "SF.gov: Annual Rent Increase for 3/1/26 - 2/28/27 Announced",
-        "doc_id": "D080",
-        "doc_sha256": "924783981b92aabf2a5200517290879d008fd1e8c579969bdddaa28ff6f9fd7d",
-        "low_signal": false,
-        "quote": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.",
-        "quote_source": "corpus",
-        "retrieved_at": "2026-10-01T22:37Z",
-        "supplementary_doc": null,
-        "tier": "B",
-        "url": "https://www.sf.gov/news--annual-rent-increase-3126-22827-announced",
-        "version_label": null
-      },
-      "confidence": 0.8,
-      "coverage": {
-        "const": true
-      },
-      "coverage_text": "Applies to rent-controlled units in San Francisco; the page does not define which buildings are covered.",
-      "doc_type": "guidance",
-      "effective": {
-        "alternatives": [],
-        "anchor_quote": null,
-        "derivation": "text_explicit",
-        "hi": "2026-03-01",
-        "lo": "2026-03-01",
-        "precision": "day"
-      },
-      "exemptions": [],
-      "exemptions_text": null,
-      "extra_citations": [],
-      "grade_level_en": 4.91,
-      "jurisdiction": {
-        "geoid": "0667000",
-        "id": "CA-0667000",
-        "label": "San Francisco, CA",
-        "level": "city",
-        "name": "San Francisco",
-        "state": "CA"
-      },
-      "key_values": [
-        {
-          "name": "annual_allowable_increase",
-          "source_doc_id": "D080",
-          "text": "1.6%",
-          "unit": "percent",
-          "valid_from": "2026-03-01",
-          "valid_to": "2027-02-28",
-          "value": 1.6
-        },
-        {
-          "name": "prior_year_allowable_increase",
-          "source_doc_id": "D080",
-          "text": "1.4%",
-          "unit": "percent",
-          "valid_from": "2025-03-01",
-          "valid_to": "2026-02-28",
-          "value": 1.4
-        }
-      ],
-      "lifecycle": "enacted",
-      "open_question_ids": [],
-      "penalty": null,
-      "plain": {
-        "summary_en": "Rent-controlled units in San Francisco can have rent increased by 1.6% starting March 1, 2026 through February 28, 2027. This is based on the tenant's current base rent.",
-        "summary_es": "Las unidades con renta controlada en San Francisco pueden tener un aumento de renta del 1.6% a partir del 1 de marzo de 2026 hasta el 28 de febrero de 2027. Esto se basa en la renta base actual del inquilino.",
-        "who_en": "This applies to rent-controlled units in San Francisco.",
-        "who_es": "Esto aplica a las unidades con renta controlada en San Francisco."
-      },
-      "provenance": {
-        "adjudicated_fields": [],
-        "conf_delta": 0.0,
-        "model_lifecycle": "enacted",
-        "notes": [],
-        "pass": "A",
-        "passes": [
-          "A"
-        ],
-        "plain_template": false,
-        "relations_hint": [],
-        "uncertain_fields": [
-          "coverage",
-          "penalty"
-        ],
-        "votes": {
-          "pass": "A only"
-        }
-      },
-      "requirement": "For rent-controlled units, the annual allowable rent increase effective March 1, 2026 through February 28, 2027 is 1.6% of the tenant's base rent.",
-      "review_flag": false,
-      "rule_id": "SF-RENT-03",
-      "sunset": null,
-      "tenancy_conditions": [],
-      "title": "SF annual allowable rent increase 2026-27",
-      "votes": {
-        "pass": "A only"
-      }
-    },
-    {
-      "audio": {},
-      "category": "rent_increase_limits",
-      "citation": {
-        "char_end": 413,
-        "char_start": 371,
-        "cite": "Current Rates, including Rent Increase, Relocation, Sec. Deposit (SF.gov)",
-        "doc_id": "D083",
-        "doc_sha256": "764e9e3a023bd434458dfea8ffbb57e57d23e5f0a4939cc10948b9e495034d2f",
-        "low_signal": true,
-        "quote": "1.6% for March 1, 2026 – February 28, 2027",
-        "quote_source": "corpus",
-        "retrieved_at": "2026-10-01T22:37Z",
-        "supplementary_doc": null,
-        "tier": "B",
-        "url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
-        "version_label": null
-      },
-      "confidence": 0.7,
-      "coverage": {
-        "const": true
-      },
-      "coverage_text": "Page does not state building coverage; applies to units under the SF Rent Ordinance.",
-      "doc_type": "guidance",
-      "effective": {
-        "alternatives": [],
-        "anchor_quote": null,
-        "derivation": null,
-        "hi": null,
-        "lo": null,
-        "precision": "unknown"
-      },
-      "exemptions": [],
-      "exemptions_text": null,
-      "extra_citations": [],
-      "grade_level_en": 6.4,
-      "jurisdiction": {
-        "geoid": "0667000",
-        "id": "CA-0667000",
-        "label": "San Francisco, CA",
-        "level": "city",
-        "name": "San Francisco",
-        "state": "CA"
-      },
-      "key_values": [
-        {
-          "name": "allowable_rent_increase",
-          "source_doc_id": "D083",
-          "text": "1.6% for March 1, 2026 – February 28, 2027",
-          "unit": "percent",
-          "valid_from": "2026-03-01",
-          "valid_to": "2027-02-28",
-          "value": 1.6
-        }
-      ],
-      "lifecycle": "enacted",
-      "open_question_ids": [
-        "OQ-10"
-      ],
-      "penalty": null,
-      "plain": {
-        "summary_en": "The allowable aumento de renta is 1.6% for the period March 1, 2026 through February 28, 2027. This is the maximum increase landlords can charge for rent during this time.",
-        "summary_es": "El aumento de renta permitido es 1.6% para el período del 1 de marzo de 2026 al 28 de febrero de 2027. Este es el aumento máximo que los arrendadores pueden cobrar durante este período.",
-        "who_en": "This rule covers rental units under the San Francisco Rent Ordinance.",
-        "who_es": "Esta regla cubre unidades de alquiler bajo la Ordenanza de Renta de San Francisco."
-      },
-      "provenance": {
-        "adjudicated_fields": [],
-        "conf_delta": 0.0,
-        "model_lifecycle": "enacted",
-        "notes": [],
-        "pass": "A",
-        "passes": [
-          "A"
-        ],
-        "plain_template": false,
-        "relations_hint": [],
-        "uncertain_fields": [
-          "coverage",
-          "cite"
-        ],
-        "votes": {
-          "pass": "A only"
-        }
-      },
-      "requirement": "The allowable annual rent increase is 1.6% for the period March 1, 2026 through February 28, 2027.",
-      "review_flag": false,
-      "rule_id": "SF-RENT-04",
-      "sunset": null,
-      "tenancy_conditions": [],
-      "title": "Allowable annual rent increase 2026-27",
-      "votes": {
-        "pass": "A only"
       }
     },
     {

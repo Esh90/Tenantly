@@ -1,0 +1,81 @@
+{
+  "cost_usd": 0.0174815,
+  "model": "claude-sonnet-5-5",
+  "output": {
+    "checks": [
+      {
+        "id": "exists_in_source",
+        "note": "The $50 cap in §8.99.010 and the owner-occupied exemption in §8.99.020 both appear in the source.",
+        "status": "pass"
+      },
+      {
+        "id": "meaning_preserved",
+        "note": "The $50 cap, the five-or-more-units threshold and the prohibition on landlords and agents are preserved. 'May not' for 'shall not' is acceptable.",
+        "status": "pass"
+      },
+      {
+        "id": "conditions_complete",
+        "note": "The exemption is captured, but its citation is null even though it comes from §8.99.020. The coverage and exemption predicates overlap awkwardly: units>=5 coverage versus an exemption for units<5.",
+        "status": "warn"
+      },
+      {
+        "id": "jurisdiction_correct",
+        "note": "The source is a Cambridge ordinance and the rule is assigned to Cambridge, MA.",
+        "status": "pass"
+      },
+      {
+        "id": "dates_correct",
+        "note": "§8.99.030 says the ordinance takes effect on the first day of the second month next following enactment, and it was approved Nov 20, 2026. That gives Jan 1, 2027 (or arguably Feb 1, 2027, depending on how 'second month next following' is read). The extraction picked Jan 1, 2027 using a derivation labelled 'nj_nth_month_next_following', which is not clearly supported. The ambiguity is not flagged, and the alternatives list is empty.",
+        "status": "fail"
+      },
+      {
+        "id": "citations_accurate",
+        "note": "The main cite §8.99.010 matches the quote. The exemption citation is null, and the effective date has no cite to §8.99.030.",
+        "status": "warn"
+      },
+      {
+        "id": "precedence_reasonable",
+        "note": "The source states no precedence or preemption relations, and none were extracted.",
+        "status": "pass"
+      },
+      {
+        "id": "no_hallucination",
+        "note": "No invented content was found, apart from the questionable date derivation method label.",
+        "status": "pass"
+      },
+      {
+        "id": "conflicts_considered",
+        "note": "No conflicts are plausible from this source alone.",
+        "status": "pass"
+      },
+      {
+        "id": "json_faithful",
+        "note": "The effective date is stated with day precision and high confidence (0.95) despite the ambiguity. review_flag is false. The exemption citation is null.",
+        "status": "warn"
+      }
+    ],
+    "confidence": 0.55,
+    "issues": [
+      {
+        "message": "The effective date is ambiguous: 'first day of the second month next following' enactment on Nov 20, 2026 could mean Jan 1 or Feb 1, 2027. The extraction asserts Jan 1, 2027 with no alternatives, using an NJ-labelled derivation, and does not flag review.",
+        "rule_id": "CAM-FEE-01",
+        "severity": "warning",
+        "source_section": "Section 8.99.030"
+      },
+      {
+        "message": "The exemption citation is null, although it comes from §8.99.020.",
+        "rule_id": "CAM-FEE-01",
+        "severity": "info",
+        "source_section": "Section 8.99.020"
+      }
+    ],
+    "verdict": "review"
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 1275,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1892,
+    "output_tokens": 1051
+  }
+}

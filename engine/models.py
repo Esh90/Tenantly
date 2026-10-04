@@ -449,21 +449,10 @@ class ChangeEvent(ChangeSummary):
 
 
 IngestStage = Literal[
-    "received",
-    "sectionize",
-    "triage",
-    "extract",
-    "verify",
-    "crosscheck",
-    "calendar",
-    "link",
-    "explain",
-    "diff",
-    "impact",
-    "ready",
-    "published",
-    "failed",
-]
+    "received", "parse", "sectionize", "triage", "extract", "verify", "crosscheck", "jurisdiction",
+    "calendar", "priority", "link", "explain", "graph", "validate", "judge", "diff", "impact",
+    "staged", "ready", "published", "failed",
+]  # fmt: skip
 
 
 class IngestStageState(Model):
@@ -486,14 +475,70 @@ class IngestVerification(Model):
     rejected: int
 
 
+class IngestSource(Model):
+    title: str
+    doc_id: str
+    chars: int
+    doc_type: str
+    format: str
+    jurisdiction: Jurisdiction
+    url: str
+    text: str
+
+
+class IngestInference(Model):
+    jurisdiction_method: str
+    jurisdiction_note: str
+    effective_date: PartialDate | None
+
+
+class IngestPolicy(Model):
+    auto_publish_enabled: bool
+    min_confidence: float
+    decision: Literal["auto_publish", "prompt", "review"]
+    reasons: list[str]
+
+
+class ChangesSummary(Model):
+    document: str
+    rules_added: int
+    relationships_added: int
+    existing_relationships_touched: int
+    rules_superseded: list[str]
+    existing_rules_changed: list[str]
+    affected_jurisdictions: list[str]
+    affected_properties: int
+    graph_nodes_added: int
+    graph_edges_added: int
+    change_id: str | None
+
+
+class AuditEvent(Model):
+    ts: str
+    event: str
+    detail: str
+
+
 class IngestResult(Model):
-    rules: list[RuleDetail]
-    findings: list[Finding]
-    relations: list[Relation]
-    impact: IngestImpact
-    verification: IngestVerification
-    cost_usd: float
-    cache_hit: bool
+    rules: list[RuleDetail] = []
+    findings: list[Finding] = []
+    relations: list[Relation] = []
+    impact: IngestImpact | None = None
+    verification: IngestVerification | None = None
+    cost_usd: float = 0.0
+    cache_hit: bool = False
+    # first-class ingestion extras (all produced by the pipeline, never hard-coded)
+    source: IngestSource | None = None
+    inferred: IngestInference | None = None
+    rules_json: list[dict] | None = None
+    submission_json: list[dict] | None = None
+    hierarchy: dict | None = None
+    graph: dict | None = None
+    validation: dict | None = None
+    judge: dict | None = None
+    policy: IngestPolicy | None = None
+    changes: ChangesSummary | None = None
+    audit: list[AuditEvent] = []
 
 
 class ErrorInfo(Model):
@@ -503,7 +548,8 @@ class ErrorInfo(Model):
 
 class IngestJob(Model):
     job_id: str
-    status: Literal["running", "ready", "published", "failed"]
+    status: Literal["running", "ready", "review_required", "published", "rejected", "failed"]
+    state: Literal["staged", "verified", "review_required", "published", "rejected"] | None = None
     stage: IngestStage
     started_at: str
     finished_at: str | None
@@ -675,6 +721,19 @@ class IngestRequest(Model):
     jurisdiction_hint: str | None = None
     source_url: str | None = None
     retrieved_at: str | None = None
+    auto_publish: bool = False
+    format: str | None = None
+
+
+class IngestEdit(Model):
+    rules: list[dict]
+
+
+class ExtractTextResponse(Model):
+    text: str
+    format: str
+    pages: int | None
+    chars: int
 
 
 class IngestAccepted(Model):
