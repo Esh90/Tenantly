@@ -30,6 +30,13 @@ target-version = "py312"
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]
 
+[tool.ruff.lint.per-file-ignores]
+# user-facing EN/ES sentences are kept on one line each so they stay greppable
+"engine/rules/templates.py" = ["E501"]
+"engine/rules/explain.py" = ["E501"]
+"engine/rules/render.py" = ["E501"]
+"engine/rules/engine.py" = ["E501"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["."]

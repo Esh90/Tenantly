@@ -49,7 +49,8 @@ class Outcome:
     result: str  # applies | unknown | superseded | not_yet_effective | pending
     would_be: str | None = None  # not_yet_effective: what the result would be once in force
     would_reach: bool | None = None  # pending: would the bill reach this building if passed
-    trace: list[dsl.TraceItem] = field(default_factory=list)
+    trace: list[dsl.TraceItem] = field(default_factory=list)  # coverage conditions
+    exemption_trace: list[dsl.TraceItem] = field(default_factory=list)
     caveats: list[str] = field(default_factory=list)
     missing_facts: list[str] = field(default_factory=list)
     superseded_by: str | None = None
@@ -145,16 +146,21 @@ def resolve_rule(
     lo, hi = _eff_bounds(rule)
     if lo is not None and d < lo:
         return Outcome(
-            rule, NOT_YET, would_be=base, trace=cov.trace + ex.trace, caveats=caveats,
+            rule,
+            NOT_YET,
+            would_be=base,
+            trace=cov.trace,
+            exemption_trace=ex.trace,
+            caveats=caveats,
             missing_facts=sorted(missing),
-        )  # fmt: skip
+        )
     if lo is not None and hi is not None and lo <= d < hi:
         base, uncertain = UNKNOWN, True
         notes.append("effective_date_uncertain")
     if rule.effective.lo is None and rule.effective.hi is None:
         notes.append("effective_date_unknown")
     return Outcome(
-        rule, base, trace=cov.trace + ex.trace, caveats=caveats, missing_facts=sorted(missing),
+        rule, base, trace=cov.trace, exemption_trace=ex.trace, caveats=caveats, missing_facts=sorted(missing),
         notes=notes, effective_uncertain=uncertain,
     )  # fmt: skip
 
