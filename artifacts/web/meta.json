@@ -1,0 +1,266 @@
+{
+  "api_version": "v1",
+  "app": "Tenantly",
+  "as_of_range": {
+    "end": "2028-12-31",
+    "start": "2025-01-01"
+  },
+  "categories": [
+    {
+      "key": "rent_increase_limits",
+      "label": {
+        "en": "Rent increase limits",
+        "es": "Límites a los aumentos de renta"
+      }
+    },
+    {
+      "key": "just_cause_eviction",
+      "label": {
+        "en": "Just-cause eviction",
+        "es": "Desalojo con causa justa"
+      }
+    },
+    {
+      "key": "security_deposits",
+      "label": {
+        "en": "Security deposits",
+        "es": "Depósitos de seguridad"
+      }
+    },
+    {
+      "key": "application_screening_fees",
+      "label": {
+        "en": "Application and screening fees",
+        "es": "Cuotas de solicitud y evaluación"
+      }
+    },
+    {
+      "key": "screening_restrictions",
+      "label": {
+        "en": "Screening restrictions",
+        "es": "Restricciones de evaluación"
+      }
+    },
+    {
+      "key": "algorithmic_rent_setting",
+      "label": {
+        "en": "Algorithmic rent setting",
+        "es": "Fijación algorítmica de rentas"
+      }
+    }
+  ],
+  "compiled_at": "2026-10-04T03:00:39Z",
+  "counts": {
+    "addresses": 500,
+    "docs_link_only": 33,
+    "docs_text": 54,
+    "findings": 40,
+    "rules": 89
+  },
+  "data_version": "77302100c574",
+  "default_as_of": "2026-10-01",
+  "demo_mode": "live",
+  "disclaimer": "Tenantly shows public housing law for information only. It is not legal advice. Check the official source or a qualified professional before acting.",
+  "jurisdictions": [
+    {
+      "geoid": null,
+      "id": "CA",
+      "in_scope": true,
+      "label": "CA",
+      "level": "state",
+      "name": "California",
+      "state": "CA"
+    },
+    {
+      "geoid": null,
+      "id": "NJ",
+      "in_scope": true,
+      "label": "NJ",
+      "level": "state",
+      "name": "New Jersey",
+      "state": "NJ"
+    },
+    {
+      "geoid": null,
+      "id": "MA",
+      "in_scope": true,
+      "label": "MA",
+      "level": "state",
+      "name": "Massachusetts",
+      "state": "MA"
+    },
+    {
+      "geoid": "0644000",
+      "id": "CA-0644000",
+      "in_scope": true,
+      "label": "Los Angeles, CA",
+      "level": "city",
+      "name": "Los Angeles",
+      "state": "CA"
+    },
+    {
+      "geoid": "0667000",
+      "id": "CA-0667000",
+      "in_scope": true,
+      "label": "San Francisco, CA",
+      "level": "city",
+      "name": "San Francisco",
+      "state": "CA"
+    },
+    {
+      "geoid": "0666000",
+      "id": "CA-0666000",
+      "in_scope": true,
+      "label": "San Diego, CA",
+      "level": "city",
+      "name": "San Diego",
+      "state": "CA"
+    },
+    {
+      "geoid": "0606000",
+      "id": "CA-0606000",
+      "in_scope": true,
+      "label": "Berkeley, CA",
+      "level": "city",
+      "name": "Berkeley",
+      "state": "CA"
+    },
+    {
+      "geoid": "0669000",
+      "id": "CA-0669000",
+      "in_scope": true,
+      "label": "Santa Ana, CA",
+      "level": "city",
+      "name": "Santa Ana",
+      "state": "CA"
+    },
+    {
+      "geoid": "3436000",
+      "id": "NJ-3436000",
+      "in_scope": true,
+      "label": "Jersey City, NJ",
+      "level": "city",
+      "name": "Jersey City",
+      "state": "NJ"
+    },
+    {
+      "geoid": "3432250",
+      "id": "NJ-3432250",
+      "in_scope": true,
+      "label": "Hoboken, NJ",
+      "level": "city",
+      "name": "Hoboken",
+      "state": "NJ"
+    },
+    {
+      "geoid": "3451000",
+      "id": "NJ-3451000",
+      "in_scope": true,
+      "label": "Newark, NJ",
+      "level": "city",
+      "name": "Newark",
+      "state": "NJ"
+    },
+    {
+      "geoid": "2507000",
+      "id": "MA-2507000",
+      "in_scope": true,
+      "label": "Boston, MA",
+      "level": "city",
+      "name": "Boston",
+      "state": "MA"
+    },
+    {
+      "geoid": "2511000",
+      "id": "MA-2511000",
+      "in_scope": true,
+      "label": "Cambridge, MA",
+      "level": "city",
+      "name": "Cambridge",
+      "state": "MA"
+    },
+    {
+      "geoid": "06001",
+      "id": "CA-06001",
+      "in_scope": false,
+      "label": "Alameda County, CA",
+      "level": "county",
+      "name": "Alameda County",
+      "state": "CA"
+    },
+    {
+      "geoid": "06037",
+      "id": "CA-06037",
+      "in_scope": false,
+      "label": "Los Angeles County, CA",
+      "level": "county",
+      "name": "Los Angeles County",
+      "state": "CA"
+    },
+    {
+      "geoid": "06059",
+      "id": "CA-06059",
+      "in_scope": false,
+      "label": "Orange County, CA",
+      "level": "county",
+      "name": "Orange County",
+      "state": "CA"
+    },
+    {
+      "geoid": "06073",
+      "id": "CA-06073",
+      "in_scope": false,
+      "label": "San Diego County, CA",
+      "level": "county",
+      "name": "San Diego County",
+      "state": "CA"
+    },
+    {
+      "geoid": "06075",
+      "id": "CA-06075",
+      "in_scope": false,
+      "label": "San Francisco County, CA",
+      "level": "county",
+      "name": "San Francisco County",
+      "state": "CA"
+    },
+    {
+      "geoid": "25017",
+      "id": "MA-25017",
+      "in_scope": false,
+      "label": "Middlesex County, MA",
+      "level": "county",
+      "name": "Middlesex County",
+      "state": "MA"
+    },
+    {
+      "geoid": "25025",
+      "id": "MA-25025",
+      "in_scope": false,
+      "label": "Suffolk County, MA",
+      "level": "county",
+      "name": "Suffolk County",
+      "state": "MA"
+    },
+    {
+      "geoid": "34013",
+      "id": "NJ-34013",
+      "in_scope": false,
+      "label": "Essex County, NJ",
+      "level": "county",
+      "name": "Essex County",
+      "state": "NJ"
+    },
+    {
+      "geoid": "34017",
+      "id": "NJ-34017",
+      "in_scope": false,
+      "label": "Hudson County, NJ",
+      "level": "county",
+      "name": "Hudson County",
+      "state": "NJ"
+    }
+  ],
+  "persistence": "memory",
+  "sources_retrieved_at": "2026-10-01"
+}

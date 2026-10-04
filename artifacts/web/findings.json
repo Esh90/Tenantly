@@ -1,0 +1,906 @@
+{
+  "items": [
+    {
+      "category": "rent_increase_limits",
+      "evidence": [],
+      "explanation": {
+        "en": "A law may exist for NJ, but its text was not supplied.",
+        "es": "Puede existir una ley para NJ, pero no se proporcionó su texto."
+      },
+      "finding_id": "F-NJ-rent_increase_limits",
+      "jurisdiction": {
+        "geoid": null,
+        "id": "NJ",
+        "in_scope": true,
+        "label": "NJ",
+        "level": "state",
+        "name": "New Jersey",
+        "state": "NJ"
+      },
+      "reason_code": "text_not_supplied"
+    },
+    {
+      "category": "application_screening_fees",
+      "evidence": [],
+      "explanation": {
+        "en": "A law may exist for MA, but its text was not supplied.",
+        "es": "Puede existir una ley para MA, pero no se proporcionó su texto."
+      },
+      "finding_id": "F-MA-application_screening_fees",
+      "jurisdiction": {
+        "geoid": null,
+        "id": "MA",
+        "in_scope": true,
+        "label": "MA",
+        "level": "state",
+        "name": "Massachusetts",
+        "state": "MA"
+      },
+      "reason_code": "text_not_supplied"
+    },
+    {
+      "category": "algorithmic_rent_setting",
+      "evidence": [
+        {
+          "char_end": 235,
+          "char_start": 192,
+          "cite": "S.2983",
+          "doc_id": "D046",
+          "doc_sha256": "6ea5313d0a656ab73b683e72b594cf143ee61bd6923ee1d9f3df46682248004d",
+          "low_signal": false,
+          "quote": "An Act prohibiting algorithmic rent setting",
+          "quote_source": "corpus",
+          "retrieved_at": "2026-10-01T22:36Z",
+          "supplementary_doc": null,
+          "tier": "B",
+          "url": "https://malegislature.gov/Bills/194/S2983",
+          "version_label": null
+        },
+        {
+          "char_end": 274,
+          "char_start": 192,
+          "cite": "H.5222",
+          "doc_id": "D045",
+          "doc_sha256": "8bc537dfe4d0e00b829147ae82ba11d40bef8a2b0696f487c417ca517673bba7",
+          "low_signal": true,
+          "quote": "An Act relative to preventing algorithmic rent fixing in the rental housing market",
+          "quote_source": "corpus",
+          "retrieved_at": "2026-10-01T22:36Z",
+          "supplementary_doc": null,
+          "tier": "B",
+          "url": "https://malegislature.gov/Bills/194/H5222",
+          "version_label": null
+        }
+      ],
+      "explanation": {
+        "en": "Only a pending bill exists for MA; it is not law yet.",
+        "es": "Solo existe un proyecto de ley pendiente para MA; todavía no es ley."
+      },
+      "finding_id": "F-MA-algorithmic_rent_setting",
+      "jurisdiction": {
+        "geoid": null,
+        "id": "MA",
+        "in_scope": true,
+        "label": "MA",
+        "level": "state",
+        "name": "Massachusetts",
+        "state": "MA"
+      },
+      "reason_code": "only_pending"
+    },
+    {
+      "category": "application_screening_fees",
+      "evidence": [],
+      "explanation": {
+        "en": "No application and screening fees rule for Los Angeles, CA appears in our sources.",
+        "es": "No aparece en nuestras fuentes una regla de cuotas de solicitud y evaluación para Los Angeles, CA."
+      },
+      "finding_id": "F-CA-0644000-application_screening_fees",
+      "jurisdiction": {
+        "geoid": "0644000",
+        "id": "CA-0644000",
+        "in_scope": true,
+        "label": "Los Angeles, CA",
+        "level": "city",
+        "name": "Los Angeles",
+        "state": "CA"
+      },
+      "reason_code": "none_in_sources"
+    },
+    {
+      "category": "screening_restrictions",
+      "evidence": [],
+      "explanation": {
+        "en": "No screening restrictions rule for Los Angeles, CA appears in our sources.",
+        "es": "No aparece en nuestras fuentes una regla de restricciones de evaluación para Los Angeles, CA."
+      },
+      "finding_id": "F-CA-0644000-screening_restrictions",
+      "jurisdiction": {
+        "geoid": "0644000",
+        "id": "CA-0644000",
+        "in_scope": true,
+        "label": "Los Angeles, CA",
+        "level": "city",
+        "name": "Los Angeles",
+        "state": "CA"
+      },
+      "reason_code": "none_in_sources"
+    },
+    {
+      "category": "algorithmic_rent_setting",
+      "evidence": [],
+      "explanation": {
+        "en": "No algorithmic rent setting rule for Los Angeles, CA appears in our sources.",
+        "es": "No aparece en nuestras fuentes una regla de fijación algorítmica de rentas para Los Angeles, CA."
+      },
+      "finding_id": "F-CA-0644000-algorithmic_rent_setting",
+      "jurisdiction": {
+        "geoid": "0644000",
+        "id": "CA-0644000",
+        "in_scope": true,
+        "label": "Los Angeles, CA",
+        "level": "city",
+        "name": "Los Angeles",
+        "state": "CA"
+      },
+      "reason_code": "none_in_sources"
+    },
+    {
+      "category": "application_screening_fees",
+      "evidence": [],
+      "explanation": {
+        "en": "A law may exist for San Francisco, CA, but its text was not supplied.",
+        "es": "Puede existir una ley para San Francisco, CA, pero no se proporcionó su texto."
+      },
+      "finding_id": "F-CA-0667000-application_screening_fees",
+      "jurisdiction": {
+        "geoid": "0667000",
+        "id": "CA-0667000",
+        "in_scope": true,
+        "label": "San Francisco, CA",
+        "level": "city",
+        "name": "San Francisco",
+        "state": "CA"
+      },
+      "reason_code": "text_not_supplied"
+    },
+    {
+      "category": "screening_restrictions",
+      "evidence": [],
+      "explanation": {
+        "en": "No screening restrictions rule for San Francisco, CA appears in our sources.",
+        "es": "No aparece en nuestras fuentes una regla de restricciones de evaluación para San Francisco, CA."
+      },
+      "finding_id": "F-CA-0667000-screening_restrictions",
+      "jurisdiction": {
+        "geoid": "0667000",
+        "id": "CA-0667000",
+        "in_scope": true,
+        "label": "San Francisco, CA",
+        "level": "city",
+        "name": "San Francisco",
+        "state": "CA"
+      },
+      "reason_code": "none_in_sources"
+    },
+    {
+      "category": "rent_increase_limits",
+      "evidence": [
+        {
+          "char_end": 601,
+          "char_start": 425,
+          "cite": "M.G.L. c. 40P, § 4",
+          "doc_id": "D048",
+          "doc_sha256": "090647f489ec5f03c114df23b74c28a107a7e0b855e382969c27dbf58a55837d",
+          "low_signal": false,
+          "quote": "No city or town may enact, maintain or enforce rent control of any kind, except that any city or town that accepts this chapter may adopt rent control regulation that provides:",
+          "quote_source": "corpus",
+          "retrieved_at": "2026-10-01T22:36Z",
+          "supplementary_doc": null,
+          "tier": "A",
+          "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40P/Section4",
+          "version_label": null
+        }
+      ],
+      "explanation": {
+        "en": "No local rent cap here. California law bars cities from adopting one.",
+        "es": "No hay límite local de renta aquí. La ley de California impide que las ciudades lo adopten."
+      },
+      "finding_id": "F-CA-0666000-rent_increase_limits",
+      "jurisdiction": {
+        "geoid": "0666000",
+        "id": "CA-0666000",
+        "in_scope": true,
+        "label": "San Diego, CA",
+        "level": "city",
+        "name": "San Diego",
+        "state": "CA"
+      },
+      "reason_code": "barred_by_state"
+    },
+    {
+      "category": "security_deposits",
+      "evidence": [],
+      "explanation": {
+        "en": "No security deposits rule for San Diego, CA appears in our sources.",
+        "es": "No aparece en nuestras fuentes una regla de depósitos de seguridad para San Diego, CA."
+      },
+      "finding_id": "F-CA-0666000-security_deposits",
+      "jurisdiction": {
+        "geoid": "0666000",
+        "id": "CA-0666000",
+        "in_scope": true,
+        "label": "San Diego, CA",
+        "level": "city",
+        "name": "San Diego",
+        "state": "CA"
+      },
+      "reason_code": "none_in_sources"
+    },
+    {
+      "category": "application_screening_fees",
+      "evidence": [],
+      "explanation": {
+        "en": "No application and screening fees rule for San Diego, CA appears in our sources.",
+        "es": "No aparece en nuestras fuentes una regla de cuotas de solicitud y evaluación para San Diego, CA."
+      },
+      "finding_id": "F-CA-0666000-application_screening_fees",
+      "jurisdiction": {
+        "geoid": "0666000",
+        "id": "CA-0666000",
+        "in_scope": true,
+        "label": "San Diego, CA",
+        "level": "city",
+        "name": "San Diego",
+        "state": "CA"
+      },
+      "reason_code": "none_in_sources"
+    },
+    {
+      "category": "screening_restrictions",
+      "evidence": [],
+      "explanation": {
+        "en": "No screening restrictions rule for San Diego, CA appears in our sources.",
+        "es": "No aparece en nuestras fuentes una regla de restricciones de evaluación para San Diego, CA."
+      },
+      "finding_id": "F-CA-0666000-screening_restrictions",
+      "jurisdiction": {
+        "geoid": "0666000",
+        "id": "CA-0666000",
+        "in_scope": true,
+        "label": "San Diego, CA",
+        "level": "city",
+        "name": "San Diego",
+        "state": "CA"
+      },
+      "reason_code": "none_in_sources"
+    },
+    {
+      "category": "algorithmic_rent_setting",
+      "evidence": [
+        {
+          "char_end": 15623,
+          "char_start": 15516,
+          "cite": "SDMC § 98.1103(a)",
+          "doc_id": "D076",
+          "doc_sha256": "31b29a40becda1c218d4f64aedcb56a44241857b0f5d8b451c7b20b5737edc1e",
+          "low_signal": false,
+          "quote": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord.",
+          "quote_source": "corpus",
+          "retrieved_at": "2026-10-01T22:37Z",
+          "supplementary_doc": null,
+          "tier": "B",
+          "url": "https://sandiego.gov/sites/default/files/2025-04/automated-rent-price-fixing-prohibition-ordinance-materials.pdf",
+          "version_label": null
+        },
+        {
+          "char_end": 16281,
+          "char_start": 16017,
+          "cite": "SDMC § 98.1104(a)",
+          "doc_id": "D076",
+          "doc_sha256": "31b29a40becda1c218d4f64aedcb56a44241857b0f5d8b451c7b20b5737edc1e",
+          "low_signal": false,
+          "quote": "A tenant may seek injunctive relief, damages, or civil penalties of up to\n$1,000 per violation of this Division, in a civil action against a landlord.\nIn an action brought under this Division, a prevailing tenant shall recover\ncosts and reasonable attorney’s fees.",
+          "quote_source": "corpus",
+          "retrieved_at": "2026-10-01T22:37Z",
+          "supplementary_doc": null,
+          "tier": "B",
+          "url": "https://sandiego.gov/sites/default/files/2025-04/automated-rent-price-fixing-prohibition-ordinance-materials.pdf",
+          "version_label": null
+        }
+      ],
+      "explanation": {
+        "en": "Only a pending bill exists for San Diego, CA; it is not law yet.",
+        "es": "Solo existe un proyecto de ley pendiente para San Diego, CA; todavía no es ley."
+      },
+      "finding_id": "F-CA-0666000-algorithmic_rent_setting",
+      "jurisdiction": {
+        "geoid": "0666000",
+        "id": "CA-0666000",
+        "in_scope": true,
+        "label": "San Diego, CA",
+        "level": "city",
+        "name": "San Diego",
+        "state": "CA"
+      },
+      "reason_code": "only_pending"
+    },
+    {
+      "category": "security_deposits",
+      "evidence": [],
+      "explanation": {
+        "en": "A law may exist for Santa Ana, CA, but its text was not supplied.",
+        "es": "Puede existir una ley para Santa Ana, CA, pero no se proporcionó su texto."
+      },
+      "finding_id": "F-CA-0669000-security_deposits",
+      "jurisdiction": {
+        "geoid": "0669000",
+        "id": "CA-0669000",
+        "in_scope": true,
+        "label": "Santa Ana, CA",
+        "level": "city",
+        "name": "Santa Ana",
+        "state": "CA"
+      },
+      "reason_code": "text_not_supplied"
+    },
+    {
+      "category": "application_screening_fees",
+      "evidence": [],
+      "explanation": {
+        "en": "A law may exist for Santa Ana, CA, but its text was not supplied.",
+        "es": "Puede existir una ley para Santa Ana, CA, pero no se proporcionó su texto."
+      },
+      "finding_id": "F-CA-0669000-application_screening_fees",
+      "jurisdiction": {
+        "geoid": "0669000",
+        "id": "CA-0669000",
+        "in_scope": true,
+        "label": "Santa Ana, CA",
+        "level": "city",
+        "name": "Santa Ana",
+        "state": "CA"
+      },
+      "reason_code": "text_not_supplied"
+    },
+    {
+      "category": "screening_restrictions",
+      "evidence": [],
+      "explanation": {
+        "en": "No screening restrictions rule for Santa Ana, CA appears in our sources.",
+        "es": "No aparece en nuestras fuentes una regla de restricciones de evaluación para Santa Ana, CA."
+      },
+      "finding_id": "F-CA-0669000-screening_restrictions",
+      "jurisdiction": {
+        "geoid": "0669000",
+        "id": "CA-0669000",
+        "in_scope": true,
+        "label": "Santa Ana, CA",
+        "level": "city",
+        "name": "Santa Ana",
+        "state": "CA"
+      },
+      "reason_code": "none_in_sources"
+    },
+    {
+      "category": "just_cause_eviction",
+      "evidence": [],
+      "explanation": {
+        "en": "No just-cause eviction rule for Jersey City, NJ appears in our sources.",
+        "es": "No aparece en nuestras fuentes una regla de desalojo con causa justa para Jersey City, NJ."
+      },
+      "finding_id": "F-NJ-3436000-just_cause_eviction",
+      "jurisdiction": {
+        "geoid": "3436000",
+        "id": "NJ-3436000",
+        "in_scope": true,
+        "label": "Jersey City, NJ",
+        "level": "city",
+        "name": "Jersey City",
+        "state": "NJ"
+      },
+      "reason_code": "none_in_sources"
+    },
+    {
+      "category": "security_deposits",
+      "evidence": [],
+      "explanation": {
+        "en": "No security deposits rule for Jersey City, NJ appears in our sources.",
+        "es": "No aparece en nuestras fuentes una regla de depósitos de seguridad para Jersey City, NJ."
+      },
+      "finding_id": "F-NJ-3436000-security_deposits",
+      "jurisdiction": {
+        "geoid": "3436000",
+        "id": "NJ-3436000",
+        "in_scope": true,
+        "label": "Jersey City, NJ",
+        "level": "city",
+        "name": "Jersey City",
+        "state": "NJ"
+      },
+      "reason_code": "none_in_sources"
+    },
+    {
+      "category": "application_screening_fees",
+      "evidence": [],
+      "explanation": {
+        "en": "A law may exist for Jersey City, NJ, but its text was not supplied.",
+        "es": "Puede existir una ley para Jersey City, NJ, pero no se proporcionó su texto."
+      },
+      "finding_id": "F-NJ-3436000-application_screening_fees",
+      "jurisdiction": {
+        "geoid": "3436000",
+        "id": "NJ-3436000",
+        "in_scope": true,
+        "label": "Jersey City, NJ",
+        "level": "city",
+        "name": "Jersey City",
+        "state": "NJ"
+      },
+      "reason_code": "text_not_supplied"
+    },
+    {
+      "category": "screening_restrictions",
+      "evidence": [],
+      "explanation": {
+        "en": "No screening restrictions rule for Jersey City, NJ appears in our sources.",
+        "es": "No aparece en nuestras fuentes una regla de restricciones de evaluación para Jersey City, NJ."
+      },
+      "finding_id": "F-NJ-3436000-screening_restrictions",
+      "jurisdiction": {
+        "geoid": "3436000",
+        "id": "NJ-3436000",
+        "in_scope": true,
+        "label": "Jersey City, NJ",
+        "level": "city",
+        "name": "Jersey City",
+        "state": "NJ"
+      },
+      "reason_code": "none_in_sources"
+    },
+    {
+      "category": "rent_increase_limits",
+      "evidence": [
+        {
+          "char_end": 601,
+          "char_start": 425,
+          "cite": "M.G.L. c. 40P, § 4",
+          "doc_id": "D048",
+          "doc_sha256": "090647f489ec5f03c114df23b74c28a107a7e0b855e382969c27dbf58a55837d",
+          "low_signal": false,
+          "quote": "No city or town may enact, maintain or enforce rent control of any kind, except that any city or town that accepts this chapter may adopt rent control regulation that provides:",
+          "quote_source": "corpus",
+          "retrieved_at": "2026-10-01T22:36Z",
+          "supplementary_doc": null,
+          "tier": "A",
+          "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40P/Section4",
+          "version_label": null
+        }
+      ],
+      "explanation": {
+        "en": "No local rent cap here. New Jersey law bars cities from adopting one.",
+        "es": "No hay límite local de renta aquí. La ley de New Jersey impide que las ciudades lo adopten."
+      },
+      "finding_id": "F-NJ-3432250-rent_increase_limits",
+      "jurisdiction": {
+        "geoid": "3432250",
+        "id": "NJ-3432250",
+        "in_scope": true,
+        "label": "Hoboken, NJ",
+        "level": "city",
+        "name": "Hoboken",
+        "state": "NJ"
+      },
+      "reason_code": "barred_by_state"
+    },
+    {
+      "category": "just_cause_eviction",
+      "evidence": [],
+      "explanation": {
+        "en": "A law may exist for Hoboken, NJ, but its text was not supplied.",
+        "es": "Puede existir una ley para Hoboken, NJ, pero no se proporcionó su texto."
+      },
+      "finding_id": "F-NJ-3432250-just_cause_eviction",
+      "jurisdiction": {
+        "geoid": "3432250",
+        "id": "NJ-3432250",
+        "in_scope": true,
+        "label": "Hoboken, NJ",
+        "level": "city",
+        "name": "Hoboken",
+        "state": "NJ"
+      },
+      "reason_code": "text_not_supplied"
+    },
+    {
+      "category": "security_deposits",
+      "evidence": [],
+      "explanation": {
+        "en": "A law may exist for Hoboken, NJ, but its text was not supplied.",
+        "es": "Puede existir una ley para Hoboken, NJ, pero no se proporcionó su texto."
+      },
+      "finding_id": "F-NJ-3432250-security_deposits",
+      "jurisdiction": {
+        "geoid": "3432250",
+        "id": "NJ-3432250",
+        "in_scope": true,
+        "label": "Hoboken, NJ",
+        "level": "city",
+        "name": "Hoboken",
+        "state": "NJ"
+      },
+      "reason_code": "text_not_supplied"
+    },
+    {
+      "category": "application_screening_fees",
+      "evidence": [],
+      "explanation": {
+        "en": "A law may exist for Hoboken, NJ, but its text was not supplied.",
+        "es": "Puede existir una ley para Hoboken, NJ, pero no se proporcionó su texto."
+      },
+      "finding_id": "F-NJ-3432250-application_screening_fees",
+      "jurisdiction": {
+        "geoid": "3432250",
+        "id": "NJ-3432250",
+        "in_scope": true,
+        "label": "Hoboken, NJ",
+        "level": "city",
+        "name": "Hoboken",
+        "state": "NJ"
+      },
+      "reason_code": "text_not_supplied"
+    },
+    {
+      "category": "screening_restrictions",
+      "evidence": [],
+      "explanation": {
+        "en": "No screening restrictions rule for Hoboken, NJ appears in our sources.",
+        "es": "No aparece en nuestras fuentes una regla de restricciones de evaluación para Hoboken, NJ."
+      },
+      "finding_id": "F-NJ-3432250-screening_restrictions",
+      "jurisdiction": {
+        "geoid": "3432250",
+        "id": "NJ-3432250",
+        "in_scope": true,
+        "label": "Hoboken, NJ",
+        "level": "city",
+        "name": "Hoboken",
+        "state": "NJ"
+      },
+      "reason_code": "none_in_sources"
+    },
+    {
+      "category": "rent_increase_limits",
+      "evidence": [
+        {
+          "char_end": 601,
+          "char_start": 425,
+          "cite": "M.G.L. c. 40P, § 4",
+          "doc_id": "D048",
+          "doc_sha256": "090647f489ec5f03c114df23b74c28a107a7e0b855e382969c27dbf58a55837d",
+          "low_signal": false,
+          "quote": "No city or town may enact, maintain or enforce rent control of any kind, except that any city or town that accepts this chapter may adopt rent control regulation that provides:",
+          "quote_source": "corpus",
+          "retrieved_at": "2026-10-01T22:36Z",
+          "supplementary_doc": null,
+          "tier": "A",
+          "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40P/Section4",
+          "version_label": null
+        }
+      ],
+      "explanation": {
+        "en": "No local rent cap here. New Jersey law bars cities from adopting one.",
+        "es": "No hay límite local de renta aquí. La ley de New Jersey impide que las ciudades lo adopten."
+      },
+      "finding_id": "F-NJ-3451000-rent_increase_limits",
+      "jurisdiction": {
+        "geoid": "3451000",
+        "id": "NJ-3451000",
+        "in_scope": true,
+        "label": "Newark, NJ",
+        "level": "city",
+        "name": "Newark",
+        "state": "NJ"
+      },
+      "reason_code": "barred_by_state"
+    },
+    {
+      "category": "just_cause_eviction",
+      "evidence": [],
+      "explanation": {
+        "en": "No just-cause eviction rule for Newark, NJ appears in our sources.",
+        "es": "No aparece en nuestras fuentes una regla de desalojo con causa justa para Newark, NJ."
+      },
+      "finding_id": "F-NJ-3451000-just_cause_eviction",
+      "jurisdiction": {
+        "geoid": "3451000",
+        "id": "NJ-3451000",
+        "in_scope": true,
+        "label": "Newark, NJ",
+        "level": "city",
+        "name": "Newark",
+        "state": "NJ"
+      },
+      "reason_code": "none_in_sources"
+    },
+    {
+      "category": "security_deposits",
+      "evidence": [],
+      "explanation": {
+        "en": "No security deposits rule for Newark, NJ appears in our sources.",
+        "es": "No aparece en nuestras fuentes una regla de depósitos de seguridad para Newark, NJ."
+      },
+      "finding_id": "F-NJ-3451000-security_deposits",
+      "jurisdiction": {
+        "geoid": "3451000",
+        "id": "NJ-3451000",
+        "in_scope": true,
+        "label": "Newark, NJ",
+        "level": "city",
+        "name": "Newark",
+        "state": "NJ"
+      },
+      "reason_code": "none_in_sources"
+    },
+    {
+      "category": "application_screening_fees",
+      "evidence": [],
+      "explanation": {
+        "en": "A law may exist for Newark, NJ, but its text was not supplied.",
+        "es": "Puede existir una ley para Newark, NJ, pero no se proporcionó su texto."
+      },
+      "finding_id": "F-NJ-3451000-application_screening_fees",
+      "jurisdiction": {
+        "geoid": "3451000",
+        "id": "NJ-3451000",
+        "in_scope": true,
+        "label": "Newark, NJ",
+        "level": "city",
+        "name": "Newark",
+        "state": "NJ"
+      },
+      "reason_code": "text_not_supplied"
+    },
+    {
+      "category": "screening_restrictions",
+      "evidence": [],
+      "explanation": {
+        "en": "No screening restrictions rule for Newark, NJ appears in our sources.",
+        "es": "No aparece en nuestras fuentes una regla de restricciones de evaluación para Newark, NJ."
+      },
+      "finding_id": "F-NJ-3451000-screening_restrictions",
+      "jurisdiction": {
+        "geoid": "3451000",
+        "id": "NJ-3451000",
+        "in_scope": true,
+        "label": "Newark, NJ",
+        "level": "city",
+        "name": "Newark",
+        "state": "NJ"
+      },
+      "reason_code": "none_in_sources"
+    },
+    {
+      "category": "algorithmic_rent_setting",
+      "evidence": [],
+      "explanation": {
+        "en": "A law may exist for Newark, NJ, but its text was not supplied.",
+        "es": "Puede existir una ley para Newark, NJ, pero no se proporcionó su texto."
+      },
+      "finding_id": "F-NJ-3451000-algorithmic_rent_setting",
+      "jurisdiction": {
+        "geoid": "3451000",
+        "id": "NJ-3451000",
+        "in_scope": true,
+        "label": "Newark, NJ",
+        "level": "city",
+        "name": "Newark",
+        "state": "NJ"
+      },
+      "reason_code": "text_not_supplied"
+    },
+    {
+      "category": "rent_increase_limits",
+      "evidence": [
+        {
+          "char_end": 601,
+          "char_start": 425,
+          "cite": "M.G.L. c. 40P, § 4",
+          "doc_id": "D048",
+          "doc_sha256": "090647f489ec5f03c114df23b74c28a107a7e0b855e382969c27dbf58a55837d",
+          "low_signal": false,
+          "quote": "No city or town may enact, maintain or enforce rent control of any kind, except that any city or town that accepts this chapter may adopt rent control regulation that provides:",
+          "quote_source": "corpus",
+          "retrieved_at": "2026-10-01T22:36Z",
+          "supplementary_doc": null,
+          "tier": "A",
+          "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40P/Section4",
+          "version_label": null
+        }
+      ],
+      "explanation": {
+        "en": "No local rent cap here. Massachusetts law bars cities from adopting one.",
+        "es": "No hay límite local de renta aquí. La ley de Massachusetts impide que las ciudades lo adopten."
+      },
+      "finding_id": "F-MA-2507000-rent_increase_limits",
+      "jurisdiction": {
+        "geoid": "2507000",
+        "id": "MA-2507000",
+        "in_scope": true,
+        "label": "Boston, MA",
+        "level": "city",
+        "name": "Boston",
+        "state": "MA"
+      },
+      "reason_code": "barred_by_state"
+    },
+    {
+      "category": "security_deposits",
+      "evidence": [],
+      "explanation": {
+        "en": "No security deposits rule for Boston, MA appears in our sources.",
+        "es": "No aparece en nuestras fuentes una regla de depósitos de seguridad para Boston, MA."
+      },
+      "finding_id": "F-MA-2507000-security_deposits",
+      "jurisdiction": {
+        "geoid": "2507000",
+        "id": "MA-2507000",
+        "in_scope": true,
+        "label": "Boston, MA",
+        "level": "city",
+        "name": "Boston",
+        "state": "MA"
+      },
+      "reason_code": "none_in_sources"
+    },
+    {
+      "category": "application_screening_fees",
+      "evidence": [],
+      "explanation": {
+        "en": "A law may exist for Boston, MA, but its text was not supplied.",
+        "es": "Puede existir una ley para Boston, MA, pero no se proporcionó su texto."
+      },
+      "finding_id": "F-MA-2507000-application_screening_fees",
+      "jurisdiction": {
+        "geoid": "2507000",
+        "id": "MA-2507000",
+        "in_scope": true,
+        "label": "Boston, MA",
+        "level": "city",
+        "name": "Boston",
+        "state": "MA"
+      },
+      "reason_code": "text_not_supplied"
+    },
+    {
+      "category": "algorithmic_rent_setting",
+      "evidence": [],
+      "explanation": {
+        "en": "No algorithmic rent setting rule for Boston, MA appears in our sources.",
+        "es": "No aparece en nuestras fuentes una regla de fijación algorítmica de rentas para Boston, MA."
+      },
+      "finding_id": "F-MA-2507000-algorithmic_rent_setting",
+      "jurisdiction": {
+        "geoid": "2507000",
+        "id": "MA-2507000",
+        "in_scope": true,
+        "label": "Boston, MA",
+        "level": "city",
+        "name": "Boston",
+        "state": "MA"
+      },
+      "reason_code": "none_in_sources"
+    },
+    {
+      "category": "rent_increase_limits",
+      "evidence": [
+        {
+          "char_end": 601,
+          "char_start": 425,
+          "cite": "M.G.L. c. 40P, § 4",
+          "doc_id": "D048",
+          "doc_sha256": "090647f489ec5f03c114df23b74c28a107a7e0b855e382969c27dbf58a55837d",
+          "low_signal": false,
+          "quote": "No city or town may enact, maintain or enforce rent control of any kind, except that any city or town that accepts this chapter may adopt rent control regulation that provides:",
+          "quote_source": "corpus",
+          "retrieved_at": "2026-10-01T22:36Z",
+          "supplementary_doc": null,
+          "tier": "A",
+          "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40P/Section4",
+          "version_label": null
+        }
+      ],
+      "explanation": {
+        "en": "No local rent cap here. Massachusetts law bars cities from adopting one.",
+        "es": "No hay límite local de renta aquí. La ley de Massachusetts impide que las ciudades lo adopten."
+      },
+      "finding_id": "F-MA-2511000-rent_increase_limits",
+      "jurisdiction": {
+        "geoid": "2511000",
+        "id": "MA-2511000",
+        "in_scope": true,
+        "label": "Cambridge, MA",
+        "level": "city",
+        "name": "Cambridge",
+        "state": "MA"
+      },
+      "reason_code": "barred_by_state"
+    },
+    {
+      "category": "just_cause_eviction",
+      "evidence": [],
+      "explanation": {
+        "en": "No just-cause eviction rule for Cambridge, MA appears in our sources.",
+        "es": "No aparece en nuestras fuentes una regla de desalojo con causa justa para Cambridge, MA."
+      },
+      "finding_id": "F-MA-2511000-just_cause_eviction",
+      "jurisdiction": {
+        "geoid": "2511000",
+        "id": "MA-2511000",
+        "in_scope": true,
+        "label": "Cambridge, MA",
+        "level": "city",
+        "name": "Cambridge",
+        "state": "MA"
+      },
+      "reason_code": "none_in_sources"
+    },
+    {
+      "category": "security_deposits",
+      "evidence": [],
+      "explanation": {
+        "en": "No security deposits rule for Cambridge, MA appears in our sources.",
+        "es": "No aparece en nuestras fuentes una regla de depósitos de seguridad para Cambridge, MA."
+      },
+      "finding_id": "F-MA-2511000-security_deposits",
+      "jurisdiction": {
+        "geoid": "2511000",
+        "id": "MA-2511000",
+        "in_scope": true,
+        "label": "Cambridge, MA",
+        "level": "city",
+        "name": "Cambridge",
+        "state": "MA"
+      },
+      "reason_code": "none_in_sources"
+    },
+    {
+      "category": "application_screening_fees",
+      "evidence": [],
+      "explanation": {
+        "en": "A law may exist for Cambridge, MA, but its text was not supplied.",
+        "es": "Puede existir una ley para Cambridge, MA, pero no se proporcionó su texto."
+      },
+      "finding_id": "F-MA-2511000-application_screening_fees",
+      "jurisdiction": {
+        "geoid": "2511000",
+        "id": "MA-2511000",
+        "in_scope": true,
+        "label": "Cambridge, MA",
+        "level": "city",
+        "name": "Cambridge",
+        "state": "MA"
+      },
+      "reason_code": "text_not_supplied"
+    },
+    {
+      "category": "algorithmic_rent_setting",
+      "evidence": [],
+      "explanation": {
+        "en": "No algorithmic rent setting rule for Cambridge, MA appears in our sources.",
+        "es": "No aparece en nuestras fuentes una regla de fijación algorítmica de rentas para Cambridge, MA."
+      },
+      "finding_id": "F-MA-2511000-algorithmic_rent_setting",
+      "jurisdiction": {
+        "geoid": "2511000",
+        "id": "MA-2511000",
+        "in_scope": true,
+        "label": "Cambridge, MA",
+        "level": "city",
+        "name": "Cambridge",
+        "state": "MA"
+      },
+      "reason_code": "none_in_sources"
+    }
+  ]
+}

@@ -1,0 +1,5005 @@
+{
+  "data_version": "77302100c574",
+  "items": [
+    {
+      "address_id": "A0001",
+      "label": "6238 De Longpre Ave, Los Angeles, CA 90028",
+      "lat": 34.096133031379,
+      "legal_city": "Los Angeles",
+      "lon": -118.324865073863,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90028"
+    },
+    {
+      "address_id": "A0002",
+      "label": "1031-1035 Clinton St, Hoboken, NJ 07030",
+      "lat": 40.749764881523,
+      "legal_city": "Hoboken",
+      "lon": -74.03183135878,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07030"
+    },
+    {
+      "address_id": "A0003",
+      "label": "876-878 S 14Th St, Newark, NJ 11219",
+      "lat": 40.724887410231,
+      "legal_city": "Newark",
+      "lon": -74.210414357377,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "11219"
+    },
+    {
+      "address_id": "A0004",
+      "label": "10050 Mountair Ave, Los Angeles, CA 91042",
+      "lat": 34.251842346844,
+      "legal_city": "Los Angeles",
+      "lon": -118.293109199528,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91042"
+    },
+    {
+      "address_id": "A0005",
+      "label": "1609 Addison St, Berkeley, CA 94703",
+      "lat": 37.869830696926,
+      "legal_city": "Berkeley",
+      "lon": -122.279293972449,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94703"
+    },
+    {
+      "address_id": "A0006",
+      "label": "69-71 Westland Av, Boston, MA 02115",
+      "lat": 42.343782153564,
+      "legal_city": "Boston",
+      "lon": -71.088686987281,
+      "postal_city": "Boston",
+      "state": "MA",
+      "zip": "02115"
+    },
+    {
+      "address_id": "A0007",
+      "label": "4257 San Pedro Pl, Los Angeles, CA 90011",
+      "lat": 34.006235579229,
+      "legal_city": "Los Angeles",
+      "lon": -118.271165204282,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90011"
+    },
+    {
+      "address_id": "A0008",
+      "label": "1065 Summit Avenue, Jersey City, NJ 78746",
+      "lat": 40.751069898526,
+      "legal_city": "Jersey City",
+      "lon": -74.049026204465,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "78746"
+    },
+    {
+      "address_id": "A0009",
+      "label": "322-322.5 Western Ave, Cambridge, MA",
+      "lat": 42.364468228676,
+      "legal_city": "Cambridge",
+      "lon": -71.113348085886,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0010",
+      "label": "134 Oxford St, Cambridge, MA",
+      "lat": 42.385333082376,
+      "legal_city": "Cambridge",
+      "lon": -71.1160583909,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0011",
+      "label": "834-836 Raymond Blvd, Newark, NJ 08805",
+      "lat": 40.732647093573,
+      "legal_city": "Newark",
+      "lon": -74.156148368781,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "08805"
+    },
+    {
+      "address_id": "A0012",
+      "label": "1064 Summit Ave., Jersey City, NJ 07728",
+      "lat": 40.751188750138,
+      "legal_city": "Jersey City",
+      "lon": -74.048775549263,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07728"
+    },
+    {
+      "address_id": "A0013",
+      "label": "137 N 11Th St, Newark, NJ 07107",
+      "lat": 40.759893850085,
+      "legal_city": "Newark",
+      "lon": -74.191694841632,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07107"
+    },
+    {
+      "address_id": "A0014",
+      "label": "5907 Cahuenga Blvd, Los Angeles, CA 91601",
+      "lat": 34.177801731811,
+      "legal_city": "Los Angeles",
+      "lon": -118.361636078081,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91601"
+    },
+    {
+      "address_id": "A0015",
+      "label": "15 Everett St, Cambridge, MA",
+      "lat": 42.379980886163,
+      "legal_city": "Cambridge",
+      "lon": -71.118720021347,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0016",
+      "label": "3515 Fillmore St, San Francisco, CA",
+      "lat": 37.801874337429,
+      "legal_city": "San Francisco",
+      "lon": -122.436684852142,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0017",
+      "label": "225 Duncan Ave., Jersey City, NJ 10949",
+      "lat": 40.7277629714,
+      "legal_city": "Jersey City",
+      "lon": -74.079234576768,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "10949"
+    },
+    {
+      "address_id": "A0018",
+      "label": "1906 Bonita Ave, Berkeley, CA 94704",
+      "lat": 37.873088577747,
+      "legal_city": "Berkeley",
+      "lon": -122.272116073506,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94704"
+    },
+    {
+      "address_id": "A0019",
+      "label": "3820 Haines St, San Diego, CA 92109",
+      "lat": 32.788734586305,
+      "legal_city": "San Diego",
+      "lon": -117.239511773112,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92109"
+    },
+    {
+      "address_id": "A0020",
+      "label": "646-648 N 6Th St, Newark, NJ 07083",
+      "lat": 40.771163010071,
+      "legal_city": "Newark",
+      "lon": -74.180619526984,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07083"
+    },
+    {
+      "address_id": "A0021",
+      "label": "22 Precita Av, San Francisco, CA",
+      "lat": 37.746697199975,
+      "legal_city": "San Francisco",
+      "lon": -122.418913690663,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0022",
+      "label": "10908 Hartsook St, Los Angeles, CA 91601",
+      "lat": 34.163485706471,
+      "legal_city": "Los Angeles",
+      "lon": -118.368312978253,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91601"
+    },
+    {
+      "address_id": "A0023",
+      "label": "843 Irolo St, Los Angeles, CA 90005",
+      "lat": 34.0569182313,
+      "legal_city": "Los Angeles",
+      "lon": -118.300958567015,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90005"
+    },
+    {
+      "address_id": "A0024",
+      "label": "227 Charles St, Cambridge, MA",
+      "lat": 42.368207474124,
+      "legal_city": "Cambridge",
+      "lon": -71.084850671785,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0025",
+      "label": "2341 8Th St, Berkeley, CA 94710",
+      "lat": 37.863231048622,
+      "legal_city": "Berkeley",
+      "lon": -122.293815269518,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94710"
+    },
+    {
+      "address_id": "A0026",
+      "label": "59 Oak St., Jersey City, NJ 07306",
+      "lat": 40.713718828723,
+      "legal_city": "Jersey City",
+      "lon": -74.076996657496,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07306"
+    },
+    {
+      "address_id": "A0027",
+      "label": "3918 Fulton St, San Francisco, CA",
+      "lat": 37.773108534668,
+      "legal_city": "San Francisco",
+      "lon": -122.473684296131,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0028",
+      "label": "585 5Th St, Newark, NJ 07107",
+      "lat": 40.768516151715,
+      "legal_city": "Newark",
+      "lon": -74.180832847404,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07107"
+    },
+    {
+      "address_id": "A0029",
+      "label": "280-284 Verona Ave, Newark, NJ 07653",
+      "lat": 40.782807564387,
+      "legal_city": "Newark",
+      "lon": -74.165985399456,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07653"
+    },
+    {
+      "address_id": "A0030",
+      "label": "2051 Divisadero St, San Francisco, CA",
+      "lat": 37.788524403095,
+      "legal_city": "San Francisco",
+      "lon": -122.440651886856,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0031",
+      "label": "5624 S San Pedro St, Los Angeles, CA 90011",
+      "lat": 33.991312087929,
+      "legal_city": "Los Angeles",
+      "lon": -118.270046050706,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90011"
+    },
+    {
+      "address_id": "A0032",
+      "label": "63 Oak St., Jersey City, NJ 08820",
+      "lat": 40.7137999274,
+      "legal_city": "Jersey City",
+      "lon": -74.077148779124,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "08820"
+    },
+    {
+      "address_id": "A0033",
+      "label": "1260 Kearny St, San Francisco, CA",
+      "lat": 37.79964889858,
+      "legal_city": "San Francisco",
+      "lon": -122.405709002561,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0034",
+      "label": "25 Gore St, Cambridge, MA",
+      "lat": 42.371703436562,
+      "legal_city": "Cambridge",
+      "lon": -71.079128226997,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0035",
+      "label": "5239 Harmony Ave, Los Angeles, CA 91601",
+      "lat": 34.165618179362,
+      "legal_city": "Los Angeles",
+      "lon": -118.366516457468,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91601"
+    },
+    {
+      "address_id": "A0036",
+      "label": "33 Ward St, South Boston, MA 02127",
+      "lat": 42.32946722555,
+      "legal_city": "Boston",
+      "lon": -71.054524489253,
+      "postal_city": "South Boston",
+      "state": "MA",
+      "zip": "02127"
+    },
+    {
+      "address_id": "A0037",
+      "label": "770 Irolo St, Los Angeles, CA 90005",
+      "lat": 34.058302827517,
+      "legal_city": "Los Angeles",
+      "lon": -118.300824624602,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90005"
+    },
+    {
+      "address_id": "A0038",
+      "label": "154 Yukon St, San Francisco, CA",
+      "lat": 37.757178828285,
+      "legal_city": "San Francisco",
+      "lon": -122.442397125228,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0039",
+      "label": "1 Craigie St, Cambridge, MA",
+      "lat": 42.379449621711,
+      "legal_city": "Cambridge",
+      "lon": -71.125838882455,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0040",
+      "label": "69-75 Jackson St, Hoboken, NJ 07030",
+      "lat": 40.738767838556,
+      "legal_city": "Hoboken",
+      "lon": -74.041111798554,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07030"
+    },
+    {
+      "address_id": "A0041",
+      "label": "122 Tiffany Av, San Francisco, CA",
+      "lat": 37.744990908268,
+      "legal_city": "San Francisco",
+      "lon": -122.421406384884,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0042",
+      "label": "320 Forrest St., Jersey City, NJ 07304",
+      "lat": 40.713202456168,
+      "legal_city": "Jersey City",
+      "lon": -74.077362139063,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07304"
+    },
+    {
+      "address_id": "A0043",
+      "label": "4 Orchard St, Cambridge, MA",
+      "lat": 42.390119763731,
+      "legal_city": "Cambridge",
+      "lon": -71.119075629483,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0044",
+      "label": "773-775 Sandford Ave, Newark, NJ 11211",
+      "lat": 40.735792625793,
+      "legal_city": "Newark",
+      "lon": -74.237007324819,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "11211"
+    },
+    {
+      "address_id": "A0045",
+      "label": "12829 Branford St, Los Angeles, CA 91331",
+      "lat": 34.241771886514,
+      "legal_city": "Los Angeles",
+      "lon": -118.41212012105,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91331"
+    },
+    {
+      "address_id": "A0046",
+      "label": "8-12 Soden St, Cambridge, MA",
+      "lat": 42.365425650101,
+      "legal_city": "Cambridge",
+      "lon": -71.108291600506,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0047",
+      "label": "14 Rutgers Ave., Jersey City, NJ 07304",
+      "lat": 40.698116647571,
+      "legal_city": "Jersey City",
+      "lon": -74.090865859165,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07304"
+    },
+    {
+      "address_id": "A0048",
+      "label": "1619 Commonwealth Av, Brighton, MA 02135",
+      "lat": 42.343402761946,
+      "legal_city": "Boston",
+      "lon": -71.143549067491,
+      "postal_city": "Brighton",
+      "state": "MA",
+      "zip": "02135"
+    },
+    {
+      "address_id": "A0049",
+      "label": "721 Clinton St, Hoboken, NJ 07856",
+      "lat": 40.745798808889,
+      "legal_city": "Hoboken",
+      "lon": -74.033058218101,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07856"
+    },
+    {
+      "address_id": "A0050",
+      "label": "36 Hoff St, San Francisco, CA",
+      "lat": 37.764124413322,
+      "legal_city": "San Francisco",
+      "lon": -122.420573521471,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0051",
+      "label": "65 Oakland Ave., Jersey City, NJ 07423",
+      "lat": 40.734681117954,
+      "legal_city": "Jersey City",
+      "lon": -74.055436604985,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07423"
+    },
+    {
+      "address_id": "A0052",
+      "label": "88 Gardner ST, Allston, MA 02134",
+      "lat": 42.353518237841,
+      "legal_city": "Boston",
+      "lon": -71.125813095903,
+      "postal_city": "Allston",
+      "state": "MA",
+      "zip": "02134"
+    },
+    {
+      "address_id": "A0053",
+      "label": "32 Garrison ST, Boston, MA 02116",
+      "lat": 42.345890982312,
+      "legal_city": "Boston",
+      "lon": -71.07944707371,
+      "postal_city": "Boston",
+      "state": "MA",
+      "zip": "02116"
+    },
+    {
+      "address_id": "A0054",
+      "label": "13 Shetland ST, Roxbury, MA 02119",
+      "lat": 42.324986499476,
+      "legal_city": "Boston",
+      "lon": -71.068028337557,
+      "postal_city": "Roxbury",
+      "state": "MA",
+      "zip": "02119"
+    },
+    {
+      "address_id": "A0055",
+      "label": "305 10Th Av, San Francisco, CA",
+      "lat": 37.782619210817,
+      "legal_city": "San Francisco",
+      "lon": -122.46876702789,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0056",
+      "label": "41-43 Edgerly RD, Boston, MA 02115",
+      "lat": 42.34565560843,
+      "legal_city": "Boston",
+      "lon": -71.087953685927,
+      "postal_city": "Boston",
+      "state": "MA",
+      "zip": "02115"
+    },
+    {
+      "address_id": "A0057",
+      "label": "57 Stone St, Newark, NJ 07012",
+      "lat": 40.753432421375,
+      "legal_city": "Newark",
+      "lon": -74.174377039669,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07012"
+    },
+    {
+      "address_id": "A0058",
+      "label": "3137 Boston Ave, San Diego, CA 92113",
+      "lat": 32.693817730505,
+      "legal_city": "San Diego",
+      "lon": -117.126888325341,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92113"
+    },
+    {
+      "address_id": "A0059",
+      "label": "84-86 Walnut St, Newark, NJ 07078",
+      "lat": 40.729245283506,
+      "legal_city": "Newark",
+      "lon": -74.170943860837,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07078"
+    },
+    {
+      "address_id": "A0060",
+      "label": "5737 Willowcrest Ave, Los Angeles, CA 91601",
+      "lat": 34.174656039346,
+      "legal_city": "Los Angeles",
+      "lon": -118.362720761505,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91601"
+    },
+    {
+      "address_id": "A0061",
+      "label": "106 18Th Av, San Francisco, CA",
+      "lat": 37.785919313984,
+      "legal_city": "San Francisco",
+      "lon": -122.477559726965,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0062",
+      "label": "77 Hoff St, San Francisco, CA",
+      "lat": 37.763766231452,
+      "legal_city": "San Francisco",
+      "lon": -122.420395727367,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0063",
+      "label": "11 Cortes ST, Boston, MA 02116",
+      "lat": 42.348290028212,
+      "legal_city": "Boston",
+      "lon": -71.069583391995,
+      "postal_city": "Boston",
+      "state": "MA",
+      "zip": "02116"
+    },
+    {
+      "address_id": "A0064",
+      "label": "24-26 Concord Ave, Cambridge, MA",
+      "lat": 42.379346098924,
+      "legal_city": "Cambridge",
+      "lon": -71.125715638744,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0065",
+      "label": "63 Bailey ST, Dorchester, MA 02124",
+      "lat": 42.284452236737,
+      "legal_city": "Boston",
+      "lon": -71.066465126331,
+      "postal_city": "Dorchester",
+      "state": "MA",
+      "zip": "02124"
+    },
+    {
+      "address_id": "A0066",
+      "label": "1318 N Orange Dr, Los Angeles, CA 90028",
+      "lat": 34.0947022093,
+      "legal_city": "Los Angeles",
+      "lon": -118.341484249454,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90028"
+    },
+    {
+      "address_id": "A0067",
+      "label": "1335 N Vista St, Los Angeles, CA 90046",
+      "lat": 34.095045778052,
+      "legal_city": "Los Angeles",
+      "lon": -118.351799391859,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90046"
+    },
+    {
+      "address_id": "A0068",
+      "label": "40-42 Clearway ST, Boston, MA 02115",
+      "lat": 42.345343961417,
+      "legal_city": "Boston",
+      "lon": -71.085817934257,
+      "postal_city": "Boston",
+      "state": "MA",
+      "zip": "02115"
+    },
+    {
+      "address_id": "A0069",
+      "label": "2277 Union St, San Francisco, CA",
+      "lat": 37.796874616444,
+      "legal_city": "San Francisco",
+      "lon": -122.436717035924,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0070",
+      "label": "43 Fayette St, Cambridge, MA",
+      "lat": 42.372611705618,
+      "legal_city": "Cambridge",
+      "lon": -71.103267573782,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0071",
+      "label": "14.5-16 Vandine St, Cambridge, MA",
+      "lat": 42.368807622044,
+      "legal_city": "Cambridge",
+      "lon": -71.090573198514,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0072",
+      "label": "1251 10Th Av, San Francisco, CA",
+      "lat": 37.764890627041,
+      "legal_city": "San Francisco",
+      "lon": -122.467520089918,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0073",
+      "label": "35-37 Inman St, Cambridge, MA",
+      "lat": 42.368591564991,
+      "legal_city": "Cambridge",
+      "lon": -71.104039667653,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0074",
+      "label": "717 S Berendo St, Los Angeles, CA 90005",
+      "lat": 34.059391478589,
+      "legal_city": "Los Angeles",
+      "lon": -118.294210099909,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90005"
+    },
+    {
+      "address_id": "A0075",
+      "label": "27 Everett St, Cambridge, MA",
+      "lat": 42.379922700614,
+      "legal_city": "Cambridge",
+      "lon": -71.117508170008,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0076",
+      "label": "304 E Kinney St, Newark, NJ 07033",
+      "lat": 40.724076460199,
+      "legal_city": "Newark",
+      "lon": -74.162836470045,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07033"
+    },
+    {
+      "address_id": "A0077",
+      "label": "91 Brookline St, Cambridge, MA",
+      "lat": 42.361566486333,
+      "legal_city": "Cambridge",
+      "lon": -71.103733351887,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0078",
+      "label": "115 Bayview Ave., Jersey City, NJ 07304",
+      "lat": 40.705324743987,
+      "legal_city": "Jersey City",
+      "lon": -74.080499166258,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07304"
+    },
+    {
+      "address_id": "A0079",
+      "label": "2361 Portland St, Los Angeles, CA 90007",
+      "lat": 34.032231820463,
+      "legal_city": "Los Angeles",
+      "lon": -118.282094130957,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90007"
+    },
+    {
+      "address_id": "A0080",
+      "label": "690 S Catalina St, Los Angeles, CA 90005",
+      "lat": 34.060127849082,
+      "legal_city": "Los Angeles",
+      "lon": -118.295327996925,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90005"
+    },
+    {
+      "address_id": "A0081",
+      "label": "145 Taylor St, San Francisco, CA",
+      "lat": 37.783758897294,
+      "legal_city": "San Francisco",
+      "lon": -122.410947938983,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0082",
+      "label": "63 Inman St, Cambridge, MA",
+      "lat": 42.370344257321,
+      "legal_city": "Cambridge",
+      "lon": -71.102833387558,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0083",
+      "label": "38 Kenilworth St, Roxbury, MA 02119",
+      "lat": 42.328651609512,
+      "legal_city": "Boston",
+      "lon": -71.087424612529,
+      "postal_city": "Roxbury",
+      "state": "MA",
+      "zip": "02119"
+    },
+    {
+      "address_id": "A0084",
+      "label": "1725 Chestnut St, San Francisco, CA",
+      "lat": 37.801332618559,
+      "legal_city": "San Francisco",
+      "lon": -122.431739349227,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0085",
+      "label": "1101 Church St, San Francisco, CA",
+      "lat": 37.753239144697,
+      "legal_city": "San Francisco",
+      "lon": -122.427505338235,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0086",
+      "label": "67 Plymouth St, Cambridge, MA",
+      "lat": 42.369083221693,
+      "legal_city": "Cambridge",
+      "lon": -71.093495991755,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0087",
+      "label": "323 Bloomfield St, Hoboken, NJ 07504",
+      "lat": 40.740414697817,
+      "legal_city": "Hoboken",
+      "lon": -74.030768159948,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07504"
+    },
+    {
+      "address_id": "A0088",
+      "label": "201 Clement St, San Francisco, CA",
+      "lat": 37.783026502307,
+      "legal_city": "San Francisco",
+      "lon": -122.461275217487,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0089",
+      "label": "935 Park Ave, Hoboken, NJ 07030",
+      "lat": 40.748211954503,
+      "legal_city": "Hoboken",
+      "lon": -74.030368120288,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07030"
+    },
+    {
+      "address_id": "A0090",
+      "label": "30 Jackson St, Newark, NJ 07105",
+      "lat": 40.731204856376,
+      "legal_city": "Newark",
+      "lon": -74.155787524567,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07105"
+    },
+    {
+      "address_id": "A0091",
+      "label": "2229 Dwight Way, Berkeley, CA 94704",
+      "lat": 37.864405329327,
+      "legal_city": "Berkeley",
+      "lon": -122.264605312198,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94704"
+    },
+    {
+      "address_id": "A0092",
+      "label": "2514 Piedmont Ave, Berkeley, CA 94704",
+      "lat": 37.865583367618,
+      "legal_city": "Berkeley",
+      "lon": -122.251697248224,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94704"
+    },
+    {
+      "address_id": "A0093",
+      "label": "90 Bickford St, Jamaica Plain, MA 02130",
+      "lat": 42.324002818423,
+      "legal_city": "Boston",
+      "lon": -71.101924371068,
+      "postal_city": "Jamaica Plain",
+      "state": "MA",
+      "zip": "02130"
+    },
+    {
+      "address_id": "A0094",
+      "label": "1371 27Th St, San Diego, CA 92154",
+      "lat": 32.571862077109,
+      "legal_city": "San Diego",
+      "lon": -117.075371141803,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92154"
+    },
+    {
+      "address_id": "A0095",
+      "label": "23 Elm St, Cambridge, MA",
+      "lat": 42.367845841037,
+      "legal_city": "Cambridge",
+      "lon": -71.098495150944,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0096",
+      "label": "81 Westland Av, Boston, MA 02115",
+      "lat": 42.343854353427,
+      "legal_city": "Boston",
+      "lon": -71.089157903457,
+      "postal_city": "Boston",
+      "state": "MA",
+      "zip": "02115"
+    },
+    {
+      "address_id": "A0097",
+      "label": "1560 Mason St, San Francisco, CA",
+      "lat": 37.79780463687,
+      "legal_city": "San Francisco",
+      "lon": -122.411949673166,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0098",
+      "label": "Willowwood St, Dorchester, MA 02124",
+      "lat": 42.2845131,
+      "legal_city": "Boston",
+      "lon": -71.0862152,
+      "postal_city": "Dorchester",
+      "state": "MA",
+      "zip": "02124"
+    },
+    {
+      "address_id": "A0099",
+      "label": "822 Washington St, Hoboken, NJ 07458",
+      "lat": 40.746308514721,
+      "legal_city": "Hoboken",
+      "lon": -74.028270964888,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07458"
+    },
+    {
+      "address_id": "A0100",
+      "label": "4732 Bancroft St, San Diego, CA 92116",
+      "lat": 32.764095185337,
+      "legal_city": "San Diego",
+      "lon": -117.123977567896,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92116"
+    },
+    {
+      "address_id": "A0101",
+      "label": "315-319 Fairmount Avenue, Jersey City, NJ 07039",
+      "lat": 40.725165683984,
+      "legal_city": "Jersey City",
+      "lon": -74.070646241263,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07039"
+    },
+    {
+      "address_id": "A0102",
+      "label": "124 Bloomfield St, Hoboken, NJ 10003",
+      "lat": 40.737933172158,
+      "legal_city": "Hoboken",
+      "lon": -74.031684861444,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "10003"
+    },
+    {
+      "address_id": "A0103",
+      "label": "2161 Allston Way, Berkeley, CA 94704",
+      "lat": 37.869701586713,
+      "legal_city": "Berkeley",
+      "lon": -122.266218694007,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94704"
+    },
+    {
+      "address_id": "A0104",
+      "label": "409 5Th St, Newark, NJ 07012",
+      "lat": 40.761814283797,
+      "legal_city": "Newark",
+      "lon": -74.184328525177,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07012"
+    },
+    {
+      "address_id": "A0105",
+      "label": "140 Portola Dr, San Francisco, CA",
+      "lat": 37.748652213279,
+      "legal_city": "San Francisco",
+      "lon": -122.444191229026,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0106",
+      "label": "250 Fremont St, San Francisco, CA",
+      "lat": 37.788294915739,
+      "legal_city": "San Francisco",
+      "lon": -122.394074444911,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0107",
+      "label": "10635 Sherman Grove Ave, Los Angeles, CA 91040",
+      "lat": 34.262255890509,
+      "legal_city": "Los Angeles",
+      "lon": -118.32017657606,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91040"
+    },
+    {
+      "address_id": "A0108",
+      "label": "13 Jefferson Ave., Jersey City, NJ 07030",
+      "lat": 40.736287315576,
+      "legal_city": "Jersey City",
+      "lon": -74.049970012264,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07030"
+    },
+    {
+      "address_id": "A0109",
+      "label": "2922 Otis St, Berkeley, CA 94703",
+      "lat": 37.8558347046,
+      "legal_city": "Berkeley",
+      "lon": -122.270269918923,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94703"
+    },
+    {
+      "address_id": "A0110",
+      "label": "130-132 2Nd Ave, Newark, NJ 07055",
+      "lat": 40.763233783015,
+      "legal_city": "Newark",
+      "lon": -74.174639118818,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07055"
+    },
+    {
+      "address_id": "A0111",
+      "label": "10075 Tujunga Canyon Blvd, Los Angeles, CA 91042",
+      "lat": 34.249924250911,
+      "legal_city": "Los Angeles",
+      "lon": -118.284430355327,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91042"
+    },
+    {
+      "address_id": "A0112",
+      "label": "448 Broderick St, San Francisco, CA",
+      "lat": 37.77431322716,
+      "legal_city": "San Francisco",
+      "lon": -122.439298239317,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0113",
+      "label": "3151 Eton Ave, Berkeley, CA 94705",
+      "lat": 37.853156920269,
+      "legal_city": "Berkeley",
+      "lon": -122.250637537308,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94705"
+    },
+    {
+      "address_id": "A0114",
+      "label": "3743 India St, San Diego, CA 92103",
+      "lat": 32.74279009558,
+      "legal_city": "San Diego",
+      "lon": -117.180736253153,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92103"
+    },
+    {
+      "address_id": "A0115",
+      "label": "397 05Th Av, San Francisco, CA",
+      "lat": 37.78123618708,
+      "legal_city": "San Francisco",
+      "lon": -122.46329611176,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0116",
+      "label": "36 Prospect St., Jersey City, NJ 07111",
+      "lat": 40.73782973401,
+      "legal_city": "Jersey City",
+      "lon": -74.049245065733,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07111"
+    },
+    {
+      "address_id": "A0117",
+      "label": "1733 N Cherokee Ave, Los Angeles, CA 90028",
+      "lat": 34.102120911287,
+      "legal_city": "Los Angeles",
+      "lon": -118.334821278665,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90028"
+    },
+    {
+      "address_id": "A0118",
+      "label": "18-34 Kingbird Rd, Dorchester, MA 02124",
+      "lat": 42.292393727282,
+      "legal_city": "Boston",
+      "lon": -71.09361381307,
+      "postal_city": "Dorchester",
+      "state": "MA",
+      "zip": "02124"
+    },
+    {
+      "address_id": "A0119",
+      "label": "607 Adams St, Hoboken, NJ 07030",
+      "lat": 40.744671445285,
+      "legal_city": "Hoboken",
+      "lon": -74.035368051004,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07030"
+    },
+    {
+      "address_id": "A0120",
+      "label": "139 Elm St, Newark, NJ 07105",
+      "lat": 40.72835234588,
+      "legal_city": "Newark",
+      "lon": -74.165047104124,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07105"
+    },
+    {
+      "address_id": "A0121",
+      "label": "4079 Front St, San Diego, CA 92103",
+      "lat": 32.751421595306,
+      "legal_city": "San Diego",
+      "lon": -117.16494526813,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92103"
+    },
+    {
+      "address_id": "A0122",
+      "label": "4812 S Broadway, Los Angeles, CA 90037",
+      "lat": 33.999020066962,
+      "legal_city": "Los Angeles",
+      "lon": -118.278252342985,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90037"
+    },
+    {
+      "address_id": "A0123",
+      "label": "123 Condor ST, East Boston, MA 02128",
+      "lat": 42.382539410028,
+      "legal_city": "Boston",
+      "lon": -71.035437146913,
+      "postal_city": "East Boston",
+      "state": "MA",
+      "zip": "02128"
+    },
+    {
+      "address_id": "A0124",
+      "label": "33-35 Brookline St, Cambridge, MA",
+      "lat": 42.363009949315,
+      "legal_city": "Cambridge",
+      "lon": -71.102397310535,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0125",
+      "label": "227 Grand St, Hoboken, NJ 07030",
+      "lat": 40.740020460669,
+      "legal_city": "Hoboken",
+      "lon": -74.035814894303,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07030"
+    },
+    {
+      "address_id": "A0126",
+      "label": "1350 Potrero Av, San Francisco, CA",
+      "lat": 37.750954392609,
+      "legal_city": "San Francisco",
+      "lon": -122.406250403098,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0127",
+      "label": "10029 Sepulveda Blvd, Los Angeles, CA 91345",
+      "lat": 34.252367056179,
+      "legal_city": "Los Angeles",
+      "lon": -118.467596873721,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91345"
+    },
+    {
+      "address_id": "A0128",
+      "label": "Harvard ST, Dorchester, MA 02124",
+      "lat": 42.2993192,
+      "legal_city": "Boston",
+      "lon": -71.0738262,
+      "postal_city": "Dorchester",
+      "state": "MA",
+      "zip": "02124"
+    },
+    {
+      "address_id": "A0129",
+      "label": "526-532 Mulberry St, Newark, NJ 07039",
+      "lat": 40.719806603386,
+      "legal_city": "Newark",
+      "lon": -74.176833067335,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07039"
+    },
+    {
+      "address_id": "A0130",
+      "label": "554 Market St, Newark, NJ 07205",
+      "lat": 40.731588087906,
+      "legal_city": "Newark",
+      "lon": -74.154426811823,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07205"
+    },
+    {
+      "address_id": "A0131",
+      "label": "43 Poplar St., Jersey City, NJ 07307",
+      "lat": 40.754136146986,
+      "legal_city": "Jersey City",
+      "lon": -74.046101194189,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07307"
+    },
+    {
+      "address_id": "A0132",
+      "label": "587 N 6Th St, Newark, NJ 11205",
+      "lat": 40.76934816412,
+      "legal_city": "Newark",
+      "lon": -74.181410596224,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "11205"
+    },
+    {
+      "address_id": "A0133",
+      "label": "8819 Lankershim Blvd, Los Angeles, CA 91352",
+      "lat": 34.229428423859,
+      "legal_city": "Los Angeles",
+      "lon": -118.387834588124,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91352"
+    },
+    {
+      "address_id": "A0134",
+      "label": "101 Norfolk ST, Dorchester, MA 02124",
+      "lat": 42.288488914986,
+      "legal_city": "Boston",
+      "lon": -71.076008765993,
+      "postal_city": "Dorchester",
+      "state": "MA",
+      "zip": "02124"
+    },
+    {
+      "address_id": "A0135",
+      "label": "843 Clay St, San Francisco, CA",
+      "lat": 37.794118952125,
+      "legal_city": "San Francisco",
+      "lon": -122.40698604858,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0136",
+      "label": "920 Hudson St, Hoboken, NJ 07030",
+      "lat": 40.747367988246,
+      "legal_city": "Hoboken",
+      "lon": -74.026733524669,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07030"
+    },
+    {
+      "address_id": "A0137",
+      "label": "65-71 Norflok St, Newark, NJ 07003",
+      "lat": 40.746701068528,
+      "legal_city": "Newark",
+      "lon": -74.182557707489,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07003"
+    },
+    {
+      "address_id": "A0138",
+      "label": "1033 E 51St St, Los Angeles, CA 90011",
+      "lat": 33.996685074769,
+      "legal_city": "Los Angeles",
+      "lon": -118.257577562794,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90011"
+    },
+    {
+      "address_id": "A0139",
+      "label": "54 Stuyvesant Ave., Jersey City, NJ 07042",
+      "lat": 40.729943720291,
+      "legal_city": "Jersey City",
+      "lon": -74.071034378592,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07042"
+    },
+    {
+      "address_id": "A0140",
+      "label": "459 Beacon St, Boston, MA 02115",
+      "lat": 42.351156189935,
+      "legal_city": "Boston",
+      "lon": -71.088098655836,
+      "postal_city": "Boston",
+      "state": "MA",
+      "zip": "02115"
+    },
+    {
+      "address_id": "A0141",
+      "label": "2601 43Rd Av, San Francisco, CA",
+      "lat": 37.73813158911,
+      "legal_city": "San Francisco",
+      "lon": -122.501210314083,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0142",
+      "label": "4615 Avalon Blvd, Los Angeles, CA 90011",
+      "lat": 34.001426079007,
+      "legal_city": "Los Angeles",
+      "lon": -118.265290530936,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90011"
+    },
+    {
+      "address_id": "A0143",
+      "label": "75 Elm Hill Av, Dorchester, MA 02121",
+      "lat": 42.310212727666,
+      "legal_city": "Boston",
+      "lon": -71.087061380822,
+      "postal_city": "Dorchester",
+      "state": "MA",
+      "zip": "02121"
+    },
+    {
+      "address_id": "A0144",
+      "label": "112-114 Amory ST, Roxbury, MA 02119",
+      "lat": 42.319531661123,
+      "legal_city": "Boston",
+      "lon": -71.100170587998,
+      "postal_city": "Roxbury",
+      "state": "MA",
+      "zip": "02119"
+    },
+    {
+      "address_id": "A0145",
+      "label": "4515 Felton St, San Diego, CA 92116",
+      "lat": 32.759371284084,
+      "legal_city": "San Diego",
+      "lon": -117.121714561521,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92116"
+    },
+    {
+      "address_id": "A0146",
+      "label": "93-95 Hawkins St, Newark, NJ 07105",
+      "lat": 40.728510932777,
+      "legal_city": "Newark",
+      "lon": -74.139007499031,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07105"
+    },
+    {
+      "address_id": "A0147",
+      "label": "2850 Golden Gate Av, San Francisco, CA",
+      "lat": 37.776358944957,
+      "legal_city": "San Francisco",
+      "lon": -122.457612633148,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0148",
+      "label": "162-166 5Th St, Newark, NJ 07105",
+      "lat": 40.751353301519,
+      "legal_city": "Newark",
+      "lon": -74.190080142452,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07105"
+    },
+    {
+      "address_id": "A0149",
+      "label": "25 Everett ST, East Boston, MA 02128",
+      "lat": 42.368309769533,
+      "legal_city": "Boston",
+      "lon": -71.036711056222,
+      "postal_city": "East Boston",
+      "state": "MA",
+      "zip": "02128"
+    },
+    {
+      "address_id": "A0150",
+      "label": "3784 E Broadway, San Diego, CA 92102",
+      "lat": 32.716024799043,
+      "legal_city": "San Diego",
+      "lon": -117.11184048031,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92102"
+    },
+    {
+      "address_id": "A0151",
+      "label": "16 Queensberry ST, Boston, MA 02215",
+      "lat": 42.343098317562,
+      "legal_city": "Boston",
+      "lon": -71.095965021374,
+      "postal_city": "Boston",
+      "state": "MA",
+      "zip": "02215"
+    },
+    {
+      "address_id": "A0152",
+      "label": "1669 Sunset Cliffs Blvd, San Diego, CA 92107",
+      "lat": 32.74094590948,
+      "legal_city": "San Diego",
+      "lon": -117.25076493005,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92107"
+    },
+    {
+      "address_id": "A0153",
+      "label": "366 E 55Th St, Los Angeles, CA 90011",
+      "lat": 33.992394354537,
+      "legal_city": "Los Angeles",
+      "lon": -118.268297439622,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90011"
+    },
+    {
+      "address_id": "A0154",
+      "label": "4568 Idaho St, San Diego, CA 92116",
+      "lat": 32.760412374063,
+      "legal_city": "San Diego",
+      "lon": -117.133977948208,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92116"
+    },
+    {
+      "address_id": "A0155",
+      "label": "473 Harvard ST, Dorchester, MA 02124",
+      "lat": 42.288741879366,
+      "legal_city": "Boston",
+      "lon": -71.09239312943,
+      "postal_city": "Dorchester",
+      "state": "MA",
+      "zip": "02124"
+    },
+    {
+      "address_id": "A0156",
+      "label": "290 Green St, San Francisco, CA",
+      "lat": 37.80031526334,
+      "legal_city": "San Francisco",
+      "lon": -122.402990211203,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0157",
+      "label": "2701 Ridge Rd, Berkeley, CA 94709",
+      "lat": 37.876494513292,
+      "legal_city": "Berkeley",
+      "lon": -122.257026606732,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94709"
+    },
+    {
+      "address_id": "A0158",
+      "label": "2522 Hilgard Ave, Berkeley, CA 94709",
+      "lat": 37.878591221585,
+      "legal_city": "Berkeley",
+      "lon": -122.260493108118,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94709"
+    },
+    {
+      "address_id": "A0159",
+      "label": "104 Sunset Ave, Newark, NJ 11211",
+      "lat": 40.74245866913,
+      "legal_city": "Newark",
+      "lon": -74.226709353047,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "11211"
+    },
+    {
+      "address_id": "A0160",
+      "label": "86 Charles St., Jersey City, NJ 07642",
+      "lat": 40.749433761671,
+      "legal_city": "Jersey City",
+      "lon": -74.05173810144,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07642"
+    },
+    {
+      "address_id": "A0161",
+      "label": "317 Union St., Jersey City, NJ 07013",
+      "lat": 40.717916452711,
+      "legal_city": "Jersey City",
+      "lon": -74.083091056543,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07013"
+    },
+    {
+      "address_id": "A0162",
+      "label": "1640 N Poinsettia Pl, Los Angeles, CA 90046",
+      "lat": 34.100552498586,
+      "legal_city": "Los Angeles",
+      "lon": -118.347788965715,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90046"
+    },
+    {
+      "address_id": "A0163",
+      "label": "233-235 Second St., Jersey City, NJ 07042",
+      "lat": 40.722390774695,
+      "legal_city": "Jersey City",
+      "lon": -74.043498156328,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07042"
+    },
+    {
+      "address_id": "A0164",
+      "label": "725 14Th St, San Francisco, CA",
+      "lat": 37.76763837901,
+      "legal_city": "San Francisco",
+      "lon": -122.42951948205,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0165",
+      "label": "734 Jamaica Ct, San Diego, CA 92109",
+      "lat": 32.773642646317,
+      "legal_city": "San Diego",
+      "lon": -117.252245356556,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92109"
+    },
+    {
+      "address_id": "A0166",
+      "label": "1 Potter Pk, Cambridge, MA",
+      "lat": 42.384310248934,
+      "legal_city": "Cambridge",
+      "lon": -71.12020099261,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0167",
+      "label": "4616 Florida St, San Diego, CA 92116",
+      "lat": 32.76124264042,
+      "legal_city": "San Diego",
+      "lon": -117.143850889032,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92116"
+    },
+    {
+      "address_id": "A0168",
+      "label": "600 Jackson/601 Harrison, Hoboken, NJ 07030",
+      "lat": 40.745283626731,
+      "legal_city": "Hoboken",
+      "lon": -74.039281685445,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07030"
+    },
+    {
+      "address_id": "A0169",
+      "label": "115 Kilsyth Rd, Brighton, MA 02135",
+      "lat": 42.340367940381,
+      "legal_city": "Boston",
+      "lon": -71.146633078674,
+      "postal_city": "Brighton",
+      "state": "MA",
+      "zip": "02135"
+    },
+    {
+      "address_id": "A0170",
+      "label": "8917 Cedros Ave, Los Angeles, CA 91402",
+      "lat": 34.232064015614,
+      "legal_city": "Los Angeles",
+      "lon": -118.453618335394,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91402"
+    },
+    {
+      "address_id": "A0171",
+      "label": "127 Ogden Ave., Jersey City, NJ 07660",
+      "lat": 40.738902438048,
+      "legal_city": "Jersey City",
+      "lon": -74.04663280324,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07660"
+    },
+    {
+      "address_id": "A0172",
+      "label": "8504 Willis Ave, Los Angeles, CA 91402",
+      "lat": 34.224850838975,
+      "legal_city": "Los Angeles",
+      "lon": -118.455218605953,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91402"
+    },
+    {
+      "address_id": "A0173",
+      "label": "13180 Foothill Blvd, Los Angeles, CA 91342",
+      "lat": 34.299371281369,
+      "legal_city": "Los Angeles",
+      "lon": -118.421538456805,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91342"
+    },
+    {
+      "address_id": "A0174",
+      "label": "84 Hampshire St, Cambridge, MA",
+      "lat": 42.368359091009,
+      "legal_city": "Cambridge",
+      "lon": -71.0943940217,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0175",
+      "label": "10 Dover St, Cambridge, MA",
+      "lat": 42.394678131873,
+      "legal_city": "Cambridge",
+      "lon": -71.126686968537,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0176",
+      "label": "15 Chester St, Cambridge, MA",
+      "lat": 42.393657148181,
+      "legal_city": "Cambridge",
+      "lon": -71.124477534158,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0177",
+      "label": "166 Highland Ave., Jersey City, NJ 11201",
+      "lat": 40.729583045817,
+      "legal_city": "Jersey City",
+      "lon": -74.073105945172,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "11201"
+    },
+    {
+      "address_id": "A0178",
+      "label": "5308 Riverton Ave, Los Angeles, CA 91601",
+      "lat": 34.166828679585,
+      "legal_city": "Los Angeles",
+      "lon": -118.365290745355,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91601"
+    },
+    {
+      "address_id": "A0179",
+      "label": "7006 Lanewood Ave, Los Angeles, CA 90028",
+      "lat": 34.09915207252,
+      "legal_city": "Los Angeles",
+      "lon": -118.341635208217,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90028"
+    },
+    {
+      "address_id": "A0180",
+      "label": "845 S Kingsley Dr, Los Angeles, CA 90005",
+      "lat": 34.056870603736,
+      "legal_city": "Los Angeles",
+      "lon": -118.303137913263,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90005"
+    },
+    {
+      "address_id": "A0181",
+      "label": "931 Garden St, Hoboken, NJ 07030",
+      "lat": 40.748003289428,
+      "legal_city": "Hoboken",
+      "lon": -74.029444711794,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07030"
+    },
+    {
+      "address_id": "A0182",
+      "label": "911-923 Clinton St, Hoboken, NJ 07030",
+      "lat": 40.748236599023,
+      "legal_city": "Hoboken",
+      "lon": -74.032304373623,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07030"
+    },
+    {
+      "address_id": "A0183",
+      "label": "2427 Hilgard Ave, Berkeley, CA 94709",
+      "lat": 37.87845544308,
+      "legal_city": "Berkeley",
+      "lon": -122.262349376787,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94709"
+    },
+    {
+      "address_id": "A0184",
+      "label": "156 W 32Nd St, Los Angeles, CA 90007",
+      "lat": 34.020782218595,
+      "legal_city": "Los Angeles",
+      "lon": -118.273514783778,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90007"
+    },
+    {
+      "address_id": "A0185",
+      "label": "154 Terhune Ave., Jersey City, NJ 07103",
+      "lat": 40.705096415554,
+      "legal_city": "Jersey City",
+      "lon": -74.096225420442,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07103"
+    },
+    {
+      "address_id": "A0186",
+      "label": "107 Beacon Ave., Jersey City, NJ 07306",
+      "lat": 40.736920404507,
+      "legal_city": "Jersey City",
+      "lon": -74.054827866989,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07306"
+    },
+    {
+      "address_id": "A0187",
+      "label": "146 Carlton Ave., Jersey City, NJ 07423",
+      "lat": 40.744920038222,
+      "legal_city": "Jersey City",
+      "lon": -74.060798217241,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07423"
+    },
+    {
+      "address_id": "A0188",
+      "label": "2819 Mcgee Ave, Berkeley, CA 94703",
+      "lat": 37.856959944236,
+      "legal_city": "Berkeley",
+      "lon": -122.275258218951,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94703"
+    },
+    {
+      "address_id": "A0189",
+      "label": "1811 Carleton St, Berkeley, CA 94703",
+      "lat": 37.860487333983,
+      "legal_city": "Berkeley",
+      "lon": -122.273498335777,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94703"
+    },
+    {
+      "address_id": "A0190",
+      "label": "283 Adams St, Newark, NJ 07105",
+      "lat": 40.722831839974,
+      "legal_city": "Newark",
+      "lon": -74.16236498265,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07105"
+    },
+    {
+      "address_id": "A0191",
+      "label": "60 Kirkland St, Cambridge, MA",
+      "lat": 42.377309547812,
+      "legal_city": "Cambridge",
+      "lon": -71.110680713996,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0192",
+      "label": "780 Post St, San Francisco, CA",
+      "lat": 37.787554937568,
+      "legal_city": "San Francisco",
+      "lon": -122.414659903737,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0193",
+      "label": "1626 Bonita Ave, Berkeley, CA 94709",
+      "lat": 37.877436210953,
+      "legal_city": "Berkeley",
+      "lon": -122.272592199936,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94709"
+    },
+    {
+      "address_id": "A0194",
+      "label": "72 Burbank ST, Boston, MA 02115",
+      "lat": 42.34449244891,
+      "legal_city": "Boston",
+      "lon": -71.08932121797,
+      "postal_city": "Boston",
+      "state": "MA",
+      "zip": "02115"
+    },
+    {
+      "address_id": "A0195",
+      "label": "1850-1848 Commonwealth Av, Brighton, MA 02135",
+      "lat": 42.338962456382,
+      "legal_city": "Boston",
+      "lon": -71.152168954882,
+      "postal_city": "Brighton",
+      "state": "MA",
+      "zip": "02135"
+    },
+    {
+      "address_id": "A0196",
+      "label": "16915 Blackhawk St, Los Angeles, CA 91344",
+      "lat": 34.258955182522,
+      "legal_city": "Los Angeles",
+      "lon": -118.500920253647,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91344"
+    },
+    {
+      "address_id": "A0197",
+      "label": "1611 62Nd St, Berkeley, CA 94703",
+      "lat": 37.846527054842,
+      "legal_city": "Berkeley",
+      "lon": -122.274812039507,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94703"
+    },
+    {
+      "address_id": "A0198",
+      "label": "194 Havre ST, East Boston, MA 02128",
+      "lat": 42.374496794147,
+      "legal_city": "Boston",
+      "lon": -71.036497835188,
+      "postal_city": "East Boston",
+      "state": "MA",
+      "zip": "02128"
+    },
+    {
+      "address_id": "A0199",
+      "label": "42 Bay State Rd, Cambridge, MA",
+      "lat": 42.387191106272,
+      "legal_city": "Cambridge",
+      "lon": -71.140083871382,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0200",
+      "label": "1853 N Highland Ave, Los Angeles, CA 90028",
+      "lat": 34.105004287023,
+      "legal_city": "Los Angeles",
+      "lon": -118.337549044749,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90028"
+    },
+    {
+      "address_id": "A0201",
+      "label": "2737 Benvenue Ave, Berkeley, CA 94705",
+      "lat": 37.861084663474,
+      "legal_city": "Berkeley",
+      "lon": -122.25463879726,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94705"
+    },
+    {
+      "address_id": "A0202",
+      "label": "1446 Jackson St, San Francisco, CA",
+      "lat": 37.794522791984,
+      "legal_city": "San Francisco",
+      "lon": -122.41889836579,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0203",
+      "label": "2986-2930 Washington ST, Roxbury, MA 02119",
+      "lat": 42.317725876641,
+      "legal_city": "Boston",
+      "lon": -71.096287187104,
+      "postal_city": "Roxbury",
+      "state": "MA",
+      "zip": "02119"
+    },
+    {
+      "address_id": "A0204",
+      "label": "202-208 6Th Ave W, Newark, NJ 08736",
+      "lat": 40.756199520614,
+      "legal_city": "Newark",
+      "lon": -74.186136799349,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "08736"
+    },
+    {
+      "address_id": "A0205",
+      "label": "2425 Grant St, Berkeley, CA 94703",
+      "lat": 37.864419418207,
+      "legal_city": "Berkeley",
+      "lon": -122.274486388915,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94703"
+    },
+    {
+      "address_id": "A0206",
+      "label": "401 43Rd Av, San Francisco, CA",
+      "lat": 37.78106651207,
+      "legal_city": "San Francisco",
+      "lon": -122.504228232138,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0207",
+      "label": "705 W 23Rd St, Los Angeles, CA 90007",
+      "lat": 34.032030548439,
+      "legal_city": "Los Angeles",
+      "lon": -118.276733095547,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90007"
+    },
+    {
+      "address_id": "A0208",
+      "label": "126 Adams St, Hoboken, NJ 07604",
+      "lat": 40.738937251272,
+      "legal_city": "Hoboken",
+      "lon": -74.037275318111,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07604"
+    },
+    {
+      "address_id": "A0209",
+      "label": "19 Trowbridge St, Cambridge, MA",
+      "lat": 42.371041072612,
+      "legal_city": "Cambridge",
+      "lon": -71.11237412069,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0210",
+      "label": "1432 N Curson Ave, Los Angeles, CA 90046",
+      "lat": 34.096815880701,
+      "legal_city": "Los Angeles",
+      "lon": -118.354938535163,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90046"
+    },
+    {
+      "address_id": "A0211",
+      "label": "499 Beacon St, Boston, MA 02215",
+      "lat": 42.350692439566,
+      "legal_city": "Boston",
+      "lon": -71.089845858115,
+      "postal_city": "Boston",
+      "state": "MA",
+      "zip": "02215"
+    },
+    {
+      "address_id": "A0212",
+      "label": "1311 South Van Ness Av, San Francisco, CA",
+      "lat": 37.752168513331,
+      "legal_city": "San Francisco",
+      "lon": -122.4161731875,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0213",
+      "label": "11649 Acama St, Los Angeles, CA 91604",
+      "lat": 34.145584078078,
+      "legal_city": "Los Angeles",
+      "lon": -118.386856598286,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91604"
+    },
+    {
+      "address_id": "A0214",
+      "label": "358 Harvard St, Cambridge, MA",
+      "lat": 42.371082219474,
+      "legal_city": "Cambridge",
+      "lon": -71.110911398922,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0215",
+      "label": "2295 California St, San Francisco, CA",
+      "lat": 37.789075325053,
+      "legal_city": "San Francisco",
+      "lon": -122.432052589153,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0216",
+      "label": "2309 Haste St, Berkeley, CA 94704",
+      "lat": 37.865531910644,
+      "legal_city": "Berkeley",
+      "lon": -122.262957356662,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94704"
+    },
+    {
+      "address_id": "A0217",
+      "label": "170-172 Maverick ST, East Boston, MA 02128",
+      "lat": 42.3695452992,
+      "legal_city": "Boston",
+      "lon": -71.037420846277,
+      "postal_city": "East Boston",
+      "state": "MA",
+      "zip": "02128"
+    },
+    {
+      "address_id": "A0218",
+      "label": "15 Richdale Ave, Cambridge, MA",
+      "lat": 42.388324409245,
+      "legal_city": "Cambridge",
+      "lon": -71.121620396425,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0219",
+      "label": "3735 32Nd St, San Diego, CA 92104",
+      "lat": 32.746245203063,
+      "legal_city": "San Diego",
+      "lon": -117.124937736826,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92104"
+    },
+    {
+      "address_id": "A0220",
+      "label": "21-23 Faulkner ST, Dorchester, MA 02122",
+      "lat": 42.299546456651,
+      "legal_city": "Boston",
+      "lon": -71.061434029601,
+      "postal_city": "Dorchester",
+      "state": "MA",
+      "zip": "02122"
+    },
+    {
+      "address_id": "A0221",
+      "label": "191 Park DR, Boston, MA 02215",
+      "lat": 42.341033010088,
+      "legal_city": "Boston",
+      "lon": -71.100162328229,
+      "postal_city": "Boston",
+      "state": "MA",
+      "zip": "02215"
+    },
+    {
+      "address_id": "A0222",
+      "label": "1901 Vallejo St, San Francisco, CA",
+      "lat": 37.795996387914,
+      "legal_city": "San Francisco",
+      "lon": -122.428597910742,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0223",
+      "label": "504 Court St, Hoboken, NJ 07030",
+      "lat": 40.742214718476,
+      "legal_city": "Hoboken",
+      "lon": -74.028940035026,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07030"
+    },
+    {
+      "address_id": "A0224",
+      "label": "8727 Tobias Ave, Los Angeles, CA 91402",
+      "lat": 34.228507480493,
+      "legal_city": "Los Angeles",
+      "lon": -118.451718756162,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91402"
+    },
+    {
+      "address_id": "A0225",
+      "label": "1627 Jackson St, San Francisco, CA",
+      "lat": 37.794030087633,
+      "legal_city": "San Francisco",
+      "lon": -122.421842293682,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0226",
+      "label": "663 Massachusetts Av, Boston, MA 02118",
+      "lat": 42.335912589034,
+      "legal_city": "Boston",
+      "lon": -71.0764696579,
+      "postal_city": "Boston",
+      "state": "MA",
+      "zip": "02118"
+    },
+    {
+      "address_id": "A0227",
+      "label": "1401 Hudson St, Hoboken, NJ 07030",
+      "lat": 40.752162276083,
+      "legal_city": "Hoboken",
+      "lon": -74.025132220092,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07030"
+    },
+    {
+      "address_id": "A0228",
+      "label": "225 Collingwood St, San Francisco, CA",
+      "lat": 37.758806229242,
+      "legal_city": "San Francisco",
+      "lon": -122.43584550357,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0229",
+      "label": "5164 03Rd St, San Francisco, CA",
+      "lat": 37.731288264664,
+      "legal_city": "San Francisco",
+      "lon": -122.392090570269,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0230",
+      "label": "85 Hancock St, Cambridge, MA",
+      "lat": 42.36894090845,
+      "legal_city": "Cambridge",
+      "lon": -71.10823462185,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0231",
+      "label": "521 Arguello Bl, San Francisco, CA",
+      "lat": 37.780784398048,
+      "legal_city": "San Francisco",
+      "lon": -122.458904742326,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0232",
+      "label": "189 Third St, Cambridge, MA",
+      "lat": 42.367926768436,
+      "legal_city": "Cambridge",
+      "lon": -71.080956110328,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0233",
+      "label": "30 Medfield St, Boston, MA 02215",
+      "lat": 42.345263577025,
+      "legal_city": "Boston",
+      "lon": -71.105981333095,
+      "postal_city": "Boston",
+      "state": "MA",
+      "zip": "02215"
+    },
+    {
+      "address_id": "A0234",
+      "label": "2212 Blake St, Berkeley, CA 94704",
+      "lat": 37.863354369764,
+      "legal_city": "Berkeley",
+      "lon": -122.26472014852,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94704"
+    },
+    {
+      "address_id": "A0235",
+      "label": "6736 Selma Ave, Los Angeles, CA 90028",
+      "lat": 34.099644694718,
+      "legal_city": "Los Angeles",
+      "lon": -118.337259232832,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90028"
+    },
+    {
+      "address_id": "A0236",
+      "label": "1110 Jackson St, San Francisco, CA",
+      "lat": 37.795227211112,
+      "legal_city": "San Francisco",
+      "lon": -122.41341354471,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0237",
+      "label": "36 Valley St, San Francisco, CA",
+      "lat": 37.744772339215,
+      "legal_city": "San Francisco",
+      "lon": -122.423160521356,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0238",
+      "label": "15256 Acre St, Los Angeles, CA 91343",
+      "lat": 34.229903219394,
+      "legal_city": "Los Angeles",
+      "lon": -118.465059354597,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91343"
+    },
+    {
+      "address_id": "A0239",
+      "label": "1476 University Ave, Berkeley, CA 94702",
+      "lat": 37.870240703252,
+      "legal_city": "Berkeley",
+      "lon": -122.282479272768,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94702"
+    },
+    {
+      "address_id": "A0240",
+      "label": "4135 38Th St, San Diego, CA 92105",
+      "lat": 32.752138713798,
+      "legal_city": "San Diego",
+      "lon": -117.111779263182,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92105"
+    },
+    {
+      "address_id": "A0241",
+      "label": "913 Garden St, Hoboken, NJ 07030",
+      "lat": 40.747790932129,
+      "legal_city": "Hoboken",
+      "lon": -74.029507685512,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07030"
+    },
+    {
+      "address_id": "A0242",
+      "label": "85-87 Sierra Rd, Hyde Park, MA 02136",
+      "lat": 42.2377982,
+      "legal_city": "Boston",
+      "lon": -71.1266635,
+      "postal_city": "Hyde Park",
+      "state": "MA",
+      "zip": "02136"
+    },
+    {
+      "address_id": "A0243",
+      "label": "664 Ocean Ave., Jersey City, NJ 07305",
+      "lat": 40.709014299361,
+      "legal_city": "Jersey City",
+      "lon": -74.076659540243,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07305"
+    },
+    {
+      "address_id": "A0244",
+      "label": "1126 Hudson St, Hoboken, NJ 07030",
+      "lat": 40.75007710711,
+      "legal_city": "Hoboken",
+      "lon": -74.025921583962,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07030"
+    },
+    {
+      "address_id": "A0245",
+      "label": "30 West Howell St M-D, Dorchester, MA 02125",
+      "lat": 42.325356355842,
+      "legal_city": "Boston",
+      "lon": -71.059503187262,
+      "postal_city": "Dorchester",
+      "state": "MA",
+      "zip": "02125"
+    },
+    {
+      "address_id": "A0246",
+      "label": "4386 Copeland Ave, San Diego, CA 92105",
+      "lat": 32.756800937083,
+      "legal_city": "San Diego",
+      "lon": -117.104047557974,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92105"
+    },
+    {
+      "address_id": "A0247",
+      "label": "4957 Cape May Ave, San Diego, CA 92107",
+      "lat": 32.748875084016,
+      "legal_city": "San Diego",
+      "lon": -117.248171449465,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92107"
+    },
+    {
+      "address_id": "A0248",
+      "label": "941 S Kenmore Ave, Los Angeles, CA 90006",
+      "lat": 34.054561165408,
+      "legal_city": "Los Angeles",
+      "lon": -118.296589306557,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90006"
+    },
+    {
+      "address_id": "A0249",
+      "label": "498-500 Hawthorne Ave, Newark, NJ 10013",
+      "lat": 40.719599722122,
+      "legal_city": "Newark",
+      "lon": -74.214898297483,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "10013"
+    },
+    {
+      "address_id": "A0250",
+      "label": "211 Baldwin Ave., Jersey City, NJ 07002",
+      "lat": 40.729192320523,
+      "legal_city": "Jersey City",
+      "lon": -74.060120792112,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07002"
+    },
+    {
+      "address_id": "A0251",
+      "label": "4663 33Rd St, San Diego, CA 92116",
+      "lat": 32.762436259509,
+      "legal_city": "San Diego",
+      "lon": -117.122794711786,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92116"
+    },
+    {
+      "address_id": "A0252",
+      "label": "15514 Chase St, Los Angeles, CA 91343",
+      "lat": 34.224605812398,
+      "legal_city": "Los Angeles",
+      "lon": -118.470326035112,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91343"
+    },
+    {
+      "address_id": "A0253",
+      "label": "2250 North Point St, San Francisco, CA",
+      "lat": 37.802722582821,
+      "legal_city": "San Francisco",
+      "lon": -122.444275084577,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0254",
+      "label": "805 Washington St, Hoboken, NJ 07030",
+      "lat": 40.746063788663,
+      "legal_city": "Hoboken",
+      "lon": -74.028189698217,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07030"
+    },
+    {
+      "address_id": "A0255",
+      "label": "851 E 51St St, Los Angeles, CA 90011",
+      "lat": 33.996666263731,
+      "legal_city": "Los Angeles",
+      "lon": -118.260152086488,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90011"
+    },
+    {
+      "address_id": "A0256",
+      "label": "327 Jackson St, Hoboken, NJ 07017",
+      "lat": 40.742101329412,
+      "legal_city": "Hoboken",
+      "lon": -74.0400671093,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07017"
+    },
+    {
+      "address_id": "A0257",
+      "label": "5 Commer Ct, San Francisco, CA",
+      "lat": 37.732351895037,
+      "legal_city": "San Francisco",
+      "lon": -122.384674255589,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0258",
+      "label": "471 Columbia Rd, Dorchester, MA 02125",
+      "lat": 42.314021035494,
+      "legal_city": "Boston",
+      "lon": -71.067499784037,
+      "postal_city": "Dorchester",
+      "state": "MA",
+      "zip": "02125"
+    },
+    {
+      "address_id": "A0259",
+      "label": "872 North Point St, San Francisco, CA",
+      "lat": 37.805617181224,
+      "legal_city": "San Francisco",
+      "lon": -122.421551166436,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0260",
+      "label": "2479 Le Conte Ave, Berkeley, CA 94709",
+      "lat": 37.87682628993,
+      "legal_city": "Berkeley",
+      "lon": -122.261370866713,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94709"
+    },
+    {
+      "address_id": "A0261",
+      "label": "525 Adams St, Hoboken, NJ 07030",
+      "lat": 40.743627056924,
+      "legal_city": "Hoboken",
+      "lon": -74.03569006655,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07030"
+    },
+    {
+      "address_id": "A0262",
+      "label": "2924 E Juniper St, San Diego, CA 92104",
+      "lat": 32.729713456435,
+      "legal_city": "San Diego",
+      "lon": -117.13126954968,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92104"
+    },
+    {
+      "address_id": "A0263",
+      "label": "1636 M L King Jr Way, Berkeley, CA 94709",
+      "lat": 37.877104430999,
+      "legal_city": "Berkeley",
+      "lon": -122.273753258644,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94709"
+    },
+    {
+      "address_id": "A0264",
+      "label": "583-589 Elizabeth Ave, Newark, NJ 11516",
+      "lat": 40.706796982365,
+      "legal_city": "Newark",
+      "lon": -74.203805296449,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "11516"
+    },
+    {
+      "address_id": "A0265",
+      "label": "102 Baldwin Ave., Jersey City, NJ 07306",
+      "lat": 40.725395005355,
+      "legal_city": "Jersey City",
+      "lon": -74.062860646313,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07306"
+    },
+    {
+      "address_id": "A0266",
+      "label": "52 Bright St., Jersey City, NJ 10016",
+      "lat": 40.716964287987,
+      "legal_city": "Jersey City",
+      "lon": -74.04716146876,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "10016"
+    },
+    {
+      "address_id": "A0267",
+      "label": "1314 N Van Ness Ave, Los Angeles, CA 90028",
+      "lat": 34.095065338349,
+      "legal_city": "Los Angeles",
+      "lon": -118.31568631956,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90028"
+    },
+    {
+      "address_id": "A0268",
+      "label": "1848 Franklin St, San Francisco, CA",
+      "lat": 37.791524228684,
+      "legal_city": "San Francisco",
+      "lon": -122.42417782805,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0269",
+      "label": "1015 Clinton St, Hoboken, NJ 10003",
+      "lat": 40.749581279292,
+      "legal_city": "Hoboken",
+      "lon": -74.031887796981,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "10003"
+    },
+    {
+      "address_id": "A0270",
+      "label": "29 Concord St, Jersey City, NJ 07306",
+      "lat": 40.733442605846,
+      "legal_city": "Jersey City",
+      "lon": -74.052574845456,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07306"
+    },
+    {
+      "address_id": "A0271",
+      "label": "4115 Lincoln Wy, San Francisco, CA",
+      "lat": 37.764244000512,
+      "legal_city": "San Francisco",
+      "lon": -122.502100180635,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0272",
+      "label": "5 Everett St, Cambridge, MA",
+      "lat": 42.380002159495,
+      "legal_city": "Cambridge",
+      "lon": -71.11923068717,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0273",
+      "label": "3911 Centre St, San Diego, CA 92103",
+      "lat": 32.749136257741,
+      "legal_city": "San Diego",
+      "lon": -117.147965593551,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92103"
+    },
+    {
+      "address_id": "A0274",
+      "label": "7072 Eastman St, San Diego, CA 92111",
+      "lat": 32.789776238445,
+      "legal_city": "San Diego",
+      "lon": -117.168439360297,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92111"
+    },
+    {
+      "address_id": "A0275",
+      "label": "4091 Morrell St, San Diego, CA 92109",
+      "lat": 32.795607414483,
+      "legal_city": "San Diego",
+      "lon": -117.231646719173,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92109"
+    },
+    {
+      "address_id": "A0276",
+      "label": "4361 Illinois St, San Diego, CA 92104",
+      "lat": 32.756358147896,
+      "legal_city": "San Diego",
+      "lon": -117.127636770855,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92104"
+    },
+    {
+      "address_id": "A0277",
+      "label": "2736 Grant St, Berkeley, CA 94703",
+      "lat": 37.85849365947,
+      "legal_city": "Berkeley",
+      "lon": -122.273424660577,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94703"
+    },
+    {
+      "address_id": "A0278",
+      "label": "1800 Franklin St, San Francisco, CA",
+      "lat": 37.791146664293,
+      "legal_city": "San Francisco",
+      "lon": -122.424100965563,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0279",
+      "label": "90 Kensington Ave., Jersey City, NJ 07302",
+      "lat": 40.723144945194,
+      "legal_city": "Jersey City",
+      "lon": -74.075287274906,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07302"
+    },
+    {
+      "address_id": "A0280",
+      "label": "1215 11Th Av, San Francisco, CA",
+      "lat": 37.76547270684,
+      "legal_city": "San Francisco",
+      "lon": -122.468630232306,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0281",
+      "label": "1725 N Gower St, Los Angeles, CA 90028",
+      "lat": 34.102103469042,
+      "legal_city": "Los Angeles",
+      "lon": -118.32242566214,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90028"
+    },
+    {
+      "address_id": "A0282",
+      "label": "2240 10Th St, Berkeley, CA 94710",
+      "lat": 37.865429346313,
+      "legal_city": "Berkeley",
+      "lon": -122.292299289201,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94710"
+    },
+    {
+      "address_id": "A0283",
+      "label": "90 Bartlett St, San Francisco, CA",
+      "lat": 37.755542885749,
+      "legal_city": "San Francisco",
+      "lon": -122.41994757491,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0284",
+      "label": "345 Columbia St, Cambridge, MA",
+      "lat": 42.371521199602,
+      "legal_city": "Cambridge",
+      "lon": -71.095359909702,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0285",
+      "label": "5255 Harmony Ave, Los Angeles, CA 91601",
+      "lat": 34.165894818542,
+      "legal_city": "Los Angeles",
+      "lon": -118.366517318934,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91601"
+    },
+    {
+      "address_id": "A0286",
+      "label": "27 Irving Ter, Cambridge, MA",
+      "lat": 42.375840853959,
+      "legal_city": "Cambridge",
+      "lon": -71.111412032264,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0287",
+      "label": "404 Grand St, Hoboken, NJ 07075",
+      "lat": 40.742295062797,
+      "legal_city": "Hoboken",
+      "lon": -74.035272884466,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07075"
+    },
+    {
+      "address_id": "A0288",
+      "label": "75 Clendenny Ave., Jersey City, NJ 11211",
+      "lat": 40.718013229375,
+      "legal_city": "Jersey City",
+      "lon": -74.0811726863,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "11211"
+    },
+    {
+      "address_id": "A0289",
+      "label": "1741 M L King Jr Way, Berkeley, CA 94709",
+      "lat": 37.874873789784,
+      "legal_city": "Berkeley",
+      "lon": -122.273285380013,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94709"
+    },
+    {
+      "address_id": "A0290",
+      "label": "21 Forest St, Cambridge, MA",
+      "lat": 42.385243189976,
+      "legal_city": "Cambridge",
+      "lon": -71.116197964756,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0291",
+      "label": "165 Cambridgepark Dr, Cambridge, MA",
+      "lat": 42.395099011822,
+      "legal_city": "Cambridge",
+      "lon": -71.146981411789,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0292",
+      "label": "24 Berkshire St, Cambridge, MA",
+      "lat": 42.368859452865,
+      "legal_city": "Cambridge",
+      "lon": -71.091628846996,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0293",
+      "label": "1314 Natoma St, San Francisco, CA",
+      "lat": 37.768086302987,
+      "legal_city": "San Francisco",
+      "lon": -122.418602494007,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0294",
+      "label": "178 Richdale Ave, Cambridge, MA",
+      "lat": 42.389122123461,
+      "legal_city": "Cambridge",
+      "lon": -71.126525304753,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0295",
+      "label": "Harvard ST LOT 2A-13, Dorchester, MA 02124",
+      "lat": null,
+      "legal_city": null,
+      "lon": null,
+      "postal_city": "Dorchester",
+      "state": "MA",
+      "zip": "02124"
+    },
+    {
+      "address_id": "A0296",
+      "label": "83-85 Mcwhorter St, Newark, NJ 07105",
+      "lat": 40.730201050389,
+      "legal_city": "Newark",
+      "lon": -74.16616452533,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07105"
+    },
+    {
+      "address_id": "A0297",
+      "label": "211-213 Summer Ave, Newark, NJ 11205",
+      "lat": 40.758859454382,
+      "legal_city": "Newark",
+      "lon": -74.171723193198,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "11205"
+    },
+    {
+      "address_id": "A0298",
+      "label": "361 Washington St, Cambridge, MA",
+      "lat": 42.365668497367,
+      "legal_city": "Cambridge",
+      "lon": -71.099392946846,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0299",
+      "label": "1037 Washington St, Hoboken, NJ 10994",
+      "lat": 40.749050177411,
+      "legal_city": "Hoboken",
+      "lon": -74.027266530035,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "10994"
+    },
+    {
+      "address_id": "A0300",
+      "label": "36 Trowbridge St, Cambridge, MA",
+      "lat": 42.371850975157,
+      "legal_city": "Cambridge",
+      "lon": -71.111648701864,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0301",
+      "label": "165 Hampshire St, Cambridge, MA",
+      "lat": 42.371842605201,
+      "legal_city": "Cambridge",
+      "lon": -71.098439445715,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0302",
+      "label": "4-6 Clinton St, Cambridge, MA",
+      "lat": 42.367476629021,
+      "legal_city": "Cambridge",
+      "lon": -71.106864979314,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0303",
+      "label": "188 E 35Th St, Los Angeles, CA 90011",
+      "lat": 34.016877079827,
+      "legal_city": "Los Angeles",
+      "lon": -118.271171829397,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90011"
+    },
+    {
+      "address_id": "A0304",
+      "label": "4541 Hamilton St, San Diego, CA 92116",
+      "lat": 32.759898286948,
+      "legal_city": "San Diego",
+      "lon": -117.136296909949,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92116"
+    },
+    {
+      "address_id": "A0305",
+      "label": "638 45Th Av, San Francisco, CA",
+      "lat": 37.776456954836,
+      "legal_city": "San Francisco",
+      "lon": -122.505895195699,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0306",
+      "label": "335A Harvard St, Cambridge, MA",
+      "lat": 42.370715584888,
+      "legal_city": "Cambridge",
+      "lon": -71.109090354517,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0307",
+      "label": "294-296 Van Buren St, Newark, NJ 07512",
+      "lat": 40.721886586056,
+      "legal_city": "Newark",
+      "lon": -74.160772689624,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07512"
+    },
+    {
+      "address_id": "A0308",
+      "label": "1032 Hudson St, Hoboken, NJ 07024",
+      "lat": 40.748749351079,
+      "legal_city": "Hoboken",
+      "lon": -74.026323440877,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07024"
+    },
+    {
+      "address_id": "A0309",
+      "label": "1706 N Stanley Ave, Los Angeles, CA 90046",
+      "lat": 34.101835421105,
+      "legal_city": "Los Angeles",
+      "lon": -118.356114053762,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90046"
+    },
+    {
+      "address_id": "A0310",
+      "label": "53-55 Ashford ST, Allston, MA 02134",
+      "lat": 42.354511450817,
+      "legal_city": "Boston",
+      "lon": -71.12661393612,
+      "postal_city": "Allston",
+      "state": "MA",
+      "zip": "02134"
+    },
+    {
+      "address_id": "A0311",
+      "label": "38-38- Somme St, Newark, NJ 07032",
+      "lat": 40.731405439225,
+      "legal_city": "Newark",
+      "lon": -74.150647497602,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07032"
+    },
+    {
+      "address_id": "A0312",
+      "label": "25 Orlando St, Mattapan, MA 02126",
+      "lat": 42.274643004403,
+      "legal_city": "Boston",
+      "lon": -71.0991080589,
+      "postal_city": "Mattapan",
+      "state": "MA",
+      "zip": "02126"
+    },
+    {
+      "address_id": "A0313",
+      "label": "317-319 W Runyon St, Newark, NJ 11205",
+      "lat": 40.719479811457,
+      "legal_city": "Newark",
+      "lon": -74.209122198994,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "11205"
+    },
+    {
+      "address_id": "A0314",
+      "label": "6640 Leland Way, Los Angeles, CA 90028",
+      "lat": 34.096954047102,
+      "legal_city": "Los Angeles",
+      "lon": -118.334062631211,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90028"
+    },
+    {
+      "address_id": "A0315",
+      "label": "5233 Cartwright Ave, Los Angeles, CA 91601",
+      "lat": 34.165516896714,
+      "legal_city": "Los Angeles",
+      "lon": -118.363242167449,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91601"
+    },
+    {
+      "address_id": "A0316",
+      "label": "3978 Florida St, San Diego, CA 92104",
+      "lat": 32.749889290623,
+      "legal_city": "San Diego",
+      "lon": -117.143805824838,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92104"
+    },
+    {
+      "address_id": "A0317",
+      "label": "2233 Channing Way, Berkeley, CA 94704",
+      "lat": 37.866269484742,
+      "legal_city": "Berkeley",
+      "lon": -122.264363578265,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94704"
+    },
+    {
+      "address_id": "A0318",
+      "label": "2041 Francisco St, Berkeley, CA 94709",
+      "lat": 37.875520264007,
+      "legal_city": "Berkeley",
+      "lon": -122.270236431385,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94709"
+    },
+    {
+      "address_id": "A0319",
+      "label": "2315 Grant St, Berkeley, CA 94703",
+      "lat": 37.866407956138,
+      "legal_city": "Berkeley",
+      "lon": -122.27469711854,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94703"
+    },
+    {
+      "address_id": "A0320",
+      "label": "408 Madison St, Hoboken, NJ 07030",
+      "lat": 40.742822649905,
+      "legal_city": "Hoboken",
+      "lon": -74.038062021201,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07030"
+    },
+    {
+      "address_id": "A0321",
+      "label": "200 Nunda Ave., Jersey City, NJ 07306",
+      "lat": 40.729025280221,
+      "legal_city": "Jersey City",
+      "lon": -74.079221896001,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07306"
+    },
+    {
+      "address_id": "A0322",
+      "label": "227 Cypress Dr, San Ysidro, CA 92173",
+      "lat": 32.555470956839,
+      "legal_city": "San Diego",
+      "lon": -117.045151967648,
+      "postal_city": "San Ysidro",
+      "state": "CA",
+      "zip": "92173"
+    },
+    {
+      "address_id": "A0323",
+      "label": "4627 Compton Ave, Los Angeles, CA 90011",
+      "lat": 34.001632563866,
+      "legal_city": "Los Angeles",
+      "lon": -118.247839866285,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90011"
+    },
+    {
+      "address_id": "A0324",
+      "label": "2003 Franklin St, San Francisco, CA",
+      "lat": 37.792904441436,
+      "legal_city": "San Francisco",
+      "lon": -122.424604033397,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0325",
+      "label": "38A Gautier Ave., Jersey City, NJ 07302",
+      "lat": 40.72613987341,
+      "legal_city": "Jersey City",
+      "lon": -74.079307176087,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07302"
+    },
+    {
+      "address_id": "A0326",
+      "label": "46 Jefferson St, Newark, NJ 07105",
+      "lat": 40.731191686503,
+      "legal_city": "Newark",
+      "lon": -74.16011411828,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07105"
+    },
+    {
+      "address_id": "A0327",
+      "label": "1605 N Martel Ave, Los Angeles, CA 90046",
+      "lat": 34.099942749927,
+      "legal_city": "Los Angeles",
+      "lon": -118.350240944927,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90046"
+    },
+    {
+      "address_id": "A0328",
+      "label": "1845 08Th Av, San Francisco, CA",
+      "lat": 37.753910517548,
+      "legal_city": "San Francisco",
+      "lon": -122.464604457855,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0329",
+      "label": "51 Madison St, Newark, NJ 07105",
+      "lat": 40.730936900745,
+      "legal_city": "Newark",
+      "lon": -74.159407511479,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07105"
+    },
+    {
+      "address_id": "A0330",
+      "label": "5229 Willowcrest Ave, Los Angeles, CA 91601",
+      "lat": 34.165448094429,
+      "legal_city": "Los Angeles",
+      "lon": -118.362200030188,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91601"
+    },
+    {
+      "address_id": "A0331",
+      "label": "342-344 Irvine Turner Blv, Newark, NJ 11219",
+      "lat": 40.722575256637,
+      "legal_city": "Newark",
+      "lon": -74.193293266905,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "11219"
+    },
+    {
+      "address_id": "A0332",
+      "label": "26 Sonoma St, Dorchester, MA 02121",
+      "lat": 42.308190903587,
+      "legal_city": "Boston",
+      "lon": -71.086856518884,
+      "postal_city": "Dorchester",
+      "state": "MA",
+      "zip": "02121"
+    },
+    {
+      "address_id": "A0333",
+      "label": "3752 33Rd St, San Diego, CA 92104",
+      "lat": 32.746101678529,
+      "legal_city": "San Diego",
+      "lon": -117.12293391208,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92104"
+    },
+    {
+      "address_id": "A0334",
+      "label": "2025 Francisco St, Berkeley, CA 94709",
+      "lat": 37.875475369217,
+      "legal_city": "Berkeley",
+      "lon": -122.270586610925,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94709"
+    },
+    {
+      "address_id": "A0335",
+      "label": "125 Bemis St, San Francisco, CA",
+      "lat": 37.737182683157,
+      "legal_city": "San Francisco",
+      "lon": -122.430367276697,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0336",
+      "label": "151 North First St, Cambridge, MA",
+      "lat": 42.372482137906,
+      "legal_city": "Cambridge",
+      "lon": -71.075526736217,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0337",
+      "label": "66 Monroe St, Newark, NJ 07032",
+      "lat": 40.730254220709,
+      "legal_city": "Newark",
+      "lon": -74.158991782803,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07032"
+    },
+    {
+      "address_id": "A0338",
+      "label": "521-523 S 17Th, Newark, NJ 07417",
+      "lat": 40.738187740265,
+      "legal_city": "Newark",
+      "lon": -74.20839765431,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07417"
+    },
+    {
+      "address_id": "A0339",
+      "label": "124 Berkshire St, Cambridge, MA",
+      "lat": 42.371616346646,
+      "legal_city": "Cambridge",
+      "lon": -71.090029432444,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0340",
+      "label": "14735 Roscoe Blvd, Los Angeles, CA 91402",
+      "lat": 34.22154746833,
+      "legal_city": "Los Angeles",
+      "lon": -118.454598749429,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91402"
+    },
+    {
+      "address_id": "A0341",
+      "label": "4225 50Th St, San Diego, CA 92115",
+      "lat": 32.753521698227,
+      "legal_city": "San Diego",
+      "lon": -117.086787563421,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92115"
+    },
+    {
+      "address_id": "A0342",
+      "label": "49 Roseland St, Cambridge, MA",
+      "lat": 42.386748328179,
+      "legal_city": "Cambridge",
+      "lon": -71.116972926785,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0343",
+      "label": "408-410 5Th St, Newark, NJ 10997",
+      "lat": 40.762113405795,
+      "legal_city": "Newark",
+      "lon": -74.184334826891,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "10997"
+    },
+    {
+      "address_id": "A0344",
+      "label": "238 & 242 Garfield Ave., Jersey City, NJ 07304",
+      "lat": 40.692246111645,
+      "legal_city": "Jersey City",
+      "lon": -74.091122112815,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07304"
+    },
+    {
+      "address_id": "A0345",
+      "label": "153 W Vernon Ave, Los Angeles, CA 90037",
+      "lat": 34.003875826453,
+      "legal_city": "Los Angeles",
+      "lon": -118.275158399166,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90037"
+    },
+    {
+      "address_id": "A0346",
+      "label": "Auburn Dr, San Diego, CA 92105",
+      "lat": 32.7418607,
+      "legal_city": "San Diego",
+      "lon": -117.0887578,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92105"
+    },
+    {
+      "address_id": "A0347",
+      "label": "2142 2Nd Ave, San Diego, CA 92101",
+      "lat": 32.727653319366,
+      "legal_city": "San Diego",
+      "lon": -117.163065698172,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92101"
+    },
+    {
+      "address_id": "A0348",
+      "label": "229 Clinton St, Hoboken, NJ 08755",
+      "lat": 40.739876679452,
+      "legal_city": "Hoboken",
+      "lon": -74.034849797859,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "08755"
+    },
+    {
+      "address_id": "A0349",
+      "label": "2400 Dana St, Berkeley, CA 94704",
+      "lat": 37.866568691092,
+      "legal_city": "Berkeley",
+      "lon": -122.261163802946,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94704"
+    },
+    {
+      "address_id": "A0350",
+      "label": "1051 West Side Ave., Jersey City, NJ 07446",
+      "lat": 40.735168801416,
+      "legal_city": "Jersey City",
+      "lon": -74.070961149168,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07446"
+    },
+    {
+      "address_id": "A0351",
+      "label": "628 Hyde St, San Francisco, CA",
+      "lat": 37.786610489702,
+      "legal_city": "San Francisco",
+      "lon": -122.41643664948,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0352",
+      "label": "40-42 Mt Prospect Ave, Newark, NJ 07083",
+      "lat": 40.753102426289,
+      "legal_city": "Newark",
+      "lon": -74.177853113095,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07083"
+    },
+    {
+      "address_id": "A0353",
+      "label": "1044 E Jefferson Blvd, Los Angeles, CA 90011",
+      "lat": 34.012089330967,
+      "legal_city": "Los Angeles",
+      "lon": -118.257806027731,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90011"
+    },
+    {
+      "address_id": "A0354",
+      "label": "73 Lubec St, East Boston, MA 02128",
+      "lat": 42.370721531914,
+      "legal_city": "Boston",
+      "lon": -71.033000779013,
+      "postal_city": "East Boston",
+      "state": "MA",
+      "zip": "02128"
+    },
+    {
+      "address_id": "A0355",
+      "label": "10701 Amestoy Ave, Los Angeles, CA 91344",
+      "lat": 34.264856666784,
+      "legal_city": "Los Angeles",
+      "lon": -118.506705841287,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91344"
+    },
+    {
+      "address_id": "A0356",
+      "label": "16 Brainerd RD, Allston, MA 02134",
+      "lat": 42.348858680092,
+      "legal_city": "Boston",
+      "lon": -71.130629546012,
+      "postal_city": "Allston",
+      "state": "MA",
+      "zip": "02134"
+    },
+    {
+      "address_id": "A0357",
+      "label": "173 07Th St, San Francisco, CA",
+      "lat": 37.778180361844,
+      "legal_city": "San Francisco",
+      "lon": -122.409540179118,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0358",
+      "label": "717 N 6Th St, Newark, NJ 07110",
+      "lat": 40.773922773441,
+      "legal_city": "Newark",
+      "lon": -74.179007529056,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07110"
+    },
+    {
+      "address_id": "A0359",
+      "label": "925 Park Ave, Hoboken, NJ 07306",
+      "lat": 40.748092459219,
+      "legal_city": "Hoboken",
+      "lon": -74.030402774821,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07306"
+    },
+    {
+      "address_id": "A0360",
+      "label": "140 New York Ave., Jersey City, NJ 10977",
+      "lat": 40.741104245751,
+      "legal_city": "Jersey City",
+      "lon": -74.047111900025,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "10977"
+    },
+    {
+      "address_id": "A0361",
+      "label": "15 Berkshire St, Cambridge, MA",
+      "lat": 42.368426537915,
+      "legal_city": "Cambridge",
+      "lon": -71.092040596292,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0362",
+      "label": "368 Riverway St, Boston, MA 02115",
+      "lat": 42.334291810524,
+      "legal_city": "Boston",
+      "lon": -71.110791246894,
+      "postal_city": "Boston",
+      "state": "MA",
+      "zip": "02115"
+    },
+    {
+      "address_id": "A0363",
+      "label": "2451 Shattuck Ave, Berkeley, CA 94704",
+      "lat": 37.864690284096,
+      "legal_city": "Berkeley",
+      "lon": -122.267324831145,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94704"
+    },
+    {
+      "address_id": "A0364",
+      "label": "125 03Rd Av, San Francisco, CA",
+      "lat": 37.786437508473,
+      "legal_city": "San Francisco",
+      "lon": -122.461516266857,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0365",
+      "label": "3940 Idaho St, San Diego, CA 92104",
+      "lat": 32.749235987165,
+      "legal_city": "San Diego",
+      "lon": -117.13391504862,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92104"
+    },
+    {
+      "address_id": "A0366",
+      "label": "230 Everett ST, East Boston, MA 02128",
+      "lat": 42.365643672949,
+      "legal_city": "Boston",
+      "lon": -71.030306589214,
+      "postal_city": "East Boston",
+      "state": "MA",
+      "zip": "02128"
+    },
+    {
+      "address_id": "A0367",
+      "label": "219 S 35Th St, San Diego, CA 92113",
+      "lat": 32.704217966085,
+      "legal_city": "San Diego",
+      "lon": -117.118695602941,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92113"
+    },
+    {
+      "address_id": "A0368",
+      "label": "1430 Francisco St, San Francisco, CA",
+      "lat": 37.802780409256,
+      "legal_city": "San Francisco",
+      "lon": -122.428752796943,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0369",
+      "label": "3260 California St, Berkeley, CA 94703",
+      "lat": 37.848609498456,
+      "legal_city": "Berkeley",
+      "lon": -122.276013172823,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94703"
+    },
+    {
+      "address_id": "A0370",
+      "label": "2222 Toberman St, Los Angeles, CA 90007",
+      "lat": 34.034721924415,
+      "legal_city": "Los Angeles",
+      "lon": -118.281203744904,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90007"
+    },
+    {
+      "address_id": "A0371",
+      "label": "76-80 Bruen St, Newark, NJ 07105",
+      "lat": 40.730460077472,
+      "legal_city": "Newark",
+      "lon": -74.166804174279,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07105"
+    },
+    {
+      "address_id": "A0372",
+      "label": "314 Seventh St., Jersey City, NJ 07302",
+      "lat": 40.726486238182,
+      "legal_city": "Jersey City",
+      "lon": -74.047955557321,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07302"
+    },
+    {
+      "address_id": "A0373",
+      "label": "1315 Spruce St, Berkeley, CA 94709",
+      "lat": 37.883557224033,
+      "legal_city": "Berkeley",
+      "lon": -122.266249122343,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94709"
+    },
+    {
+      "address_id": "A0374",
+      "label": "686 S Ardmore Ave, Los Angeles, CA 90005",
+      "lat": 34.060247782434,
+      "legal_city": "Los Angeles",
+      "lon": -118.301920522459,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90005"
+    },
+    {
+      "address_id": "A0375",
+      "label": "1880 Fulton St, San Francisco, CA",
+      "lat": 37.775695071124,
+      "legal_city": "San Francisco",
+      "lon": -122.447766948778,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0376",
+      "label": "St James St, Roxbury, MA 02119",
+      "lat": 42.3266526,
+      "legal_city": "Boston",
+      "lon": -71.0854415,
+      "postal_city": "Roxbury",
+      "state": "MA",
+      "zip": "02119"
+    },
+    {
+      "address_id": "A0377",
+      "label": "206 Bloomfield St, Hoboken, NJ 10003",
+      "lat": 40.738998730944,
+      "legal_city": "Hoboken",
+      "lon": -74.031363571985,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "10003"
+    },
+    {
+      "address_id": "A0378",
+      "label": "4053 Idaho St, San Diego, CA 92104",
+      "lat": 32.751323560417,
+      "legal_city": "San Diego",
+      "lon": -117.133775905803,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92104"
+    },
+    {
+      "address_id": "A0379",
+      "label": "1336 Brunner St, San Diego, CA 92110",
+      "lat": 32.769172247535,
+      "legal_city": "San Diego",
+      "lon": -117.189895788824,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92110"
+    },
+    {
+      "address_id": "A0380",
+      "label": "Greenville St, Roxbury, MA 02119",
+      "lat": 42.3272463,
+      "legal_city": "Boston",
+      "lon": -71.0805833,
+      "postal_city": "Roxbury",
+      "state": "MA",
+      "zip": "02119"
+    },
+    {
+      "address_id": "A0381",
+      "label": "521-523 Market St, Newark, NJ 07105",
+      "lat": 40.732033823888,
+      "legal_city": "Newark",
+      "lon": -74.15594387805,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07105"
+    },
+    {
+      "address_id": "A0382",
+      "label": "119 Day St, San Francisco, CA",
+      "lat": 37.742927740317,
+      "legal_city": "San Francisco",
+      "lon": -122.425132126354,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0383",
+      "label": "1908 California St, Berkeley, CA 94703",
+      "lat": 37.872036512971,
+      "legal_city": "Berkeley",
+      "lon": -122.280023113182,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94703"
+    },
+    {
+      "address_id": "A0384",
+      "label": "21 Guerrero St, San Francisco, CA",
+      "lat": 37.7705152,
+      "legal_city": "San Francisco",
+      "lon": -122.4244127,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0385",
+      "label": "1059 Union St, San Francisco, CA",
+      "lat": 37.79947735291,
+      "legal_city": "San Francisco",
+      "lon": -122.416408067433,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0386",
+      "label": "3654 Arizona St, San Diego, CA 92104",
+      "lat": 32.744723856404,
+      "legal_city": "San Diego",
+      "lon": -117.1379712012,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92104"
+    },
+    {
+      "address_id": "A0387",
+      "label": "10303 Caminito Alvarez, San Diego, CA 92126",
+      "lat": 32.9053438981,
+      "legal_city": "San Diego",
+      "lon": -117.169286391696,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92126"
+    },
+    {
+      "address_id": "A0388",
+      "label": "157-155 Clerk St., Jersey City, NJ 07305",
+      "lat": 40.708973882371,
+      "legal_city": "Jersey City",
+      "lon": -74.075697770314,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07305"
+    },
+    {
+      "address_id": "A0389",
+      "label": "923 Garden St, Hoboken, NJ 07068",
+      "lat": 40.747908908406,
+      "legal_city": "Hoboken",
+      "lon": -74.029472700113,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07068"
+    },
+    {
+      "address_id": "A0390",
+      "label": "70 Darcy St, Newark, NJ 07202",
+      "lat": 40.726005356196,
+      "legal_city": "Newark",
+      "lon": -74.149929644264,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07202"
+    },
+    {
+      "address_id": "A0391",
+      "label": "265 22Nd St, San Diego, CA 92102",
+      "lat": 32.707989329138,
+      "legal_city": "San Diego",
+      "lon": -117.143904241304,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92102"
+    },
+    {
+      "address_id": "A0392",
+      "label": "4545 N 39Th St, San Diego, CA 92116",
+      "lat": 32.759875365223,
+      "legal_city": "San Diego",
+      "lon": -117.110733157421,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92116"
+    },
+    {
+      "address_id": "A0393",
+      "label": "91 Jordan Ave., Jersey City, NJ 07081",
+      "lat": 40.72674257266,
+      "legal_city": "Jersey City",
+      "lon": -74.064895908212,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07081"
+    },
+    {
+      "address_id": "A0394",
+      "label": "45 Ravine Ave., Jersey City, NJ 07302",
+      "lat": 40.74028302667,
+      "legal_city": "Jersey City",
+      "lon": -74.049129869145,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07302"
+    },
+    {
+      "address_id": "A0395",
+      "label": "1632 Russell St, Berkeley, CA 94703",
+      "lat": 37.85541480374,
+      "legal_city": "Berkeley",
+      "lon": -122.275797862561,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94703"
+    },
+    {
+      "address_id": "A0396",
+      "label": "3244 Clairemont Dr, San Diego, CA 92117",
+      "lat": 32.800141615463,
+      "legal_city": "San Diego",
+      "lon": -117.195770657922,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92117"
+    },
+    {
+      "address_id": "A0397",
+      "label": "1677 Bush St, San Francisco, CA",
+      "lat": 37.788065631555,
+      "legal_city": "San Francisco",
+      "lon": -122.424817163952,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0398",
+      "label": "890 Green St, San Francisco, CA",
+      "lat": 37.798969157635,
+      "legal_city": "San Francisco",
+      "lon": -122.413748040152,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0399",
+      "label": "227 Willow Ave, Hoboken, NJ 07643",
+      "lat": 40.739690854009,
+      "legal_city": "Hoboken",
+      "lon": -74.033923758593,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07643"
+    },
+    {
+      "address_id": "A0400",
+      "label": "174 Mt Prospect Ave, Newark, NJ 07107",
+      "lat": 40.757731471944,
+      "legal_city": "Newark",
+      "lon": -74.17546726324,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07107"
+    },
+    {
+      "address_id": "A0401",
+      "label": "257 14Th St, San Francisco, CA",
+      "lat": 37.768275245554,
+      "legal_city": "San Francisco",
+      "lon": -122.419001453676,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0402",
+      "label": "2914 Larkin St, San Francisco, CA",
+      "lat": 37.804747750317,
+      "legal_city": "San Francisco",
+      "lon": -122.421779262494,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0403",
+      "label": "45 Myrtle ST, Boston, MA 02114",
+      "lat": 42.359416672345,
+      "legal_city": "Boston",
+      "lon": -71.066075463637,
+      "postal_city": "Boston",
+      "state": "MA",
+      "zip": "02114"
+    },
+    {
+      "address_id": "A0404",
+      "label": "240 Bowers St., Jersey City, NJ 07603",
+      "lat": 40.749176716976,
+      "legal_city": "Jersey City",
+      "lon": -74.053172054328,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07603"
+    },
+    {
+      "address_id": "A0405",
+      "label": "10214 Fernglen Ave, Los Angeles, CA 91042",
+      "lat": 34.254405539147,
+      "legal_city": "Los Angeles",
+      "lon": -118.294269681844,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91042"
+    },
+    {
+      "address_id": "A0406",
+      "label": "170 W Springfield ST, Boston, MA 02118",
+      "lat": 42.339468331482,
+      "legal_city": "Boston",
+      "lon": -71.079433474181,
+      "postal_city": "Boston",
+      "state": "MA",
+      "zip": "02118"
+    },
+    {
+      "address_id": "A0407",
+      "label": "4188 Greenbush Ave, Los Angeles, CA 91423",
+      "lat": 34.146796782796,
+      "legal_city": "Los Angeles",
+      "lon": -118.426009923389,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91423"
+    },
+    {
+      "address_id": "A0408",
+      "label": "14375 Polk St, Los Angeles, CA 91342",
+      "lat": 34.310760350581,
+      "legal_city": "Los Angeles",
+      "lon": -118.446247129705,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91342"
+    },
+    {
+      "address_id": "A0409",
+      "label": "4428 Gresham St, San Diego, CA 92109",
+      "lat": 32.79763108496,
+      "legal_city": "San Diego",
+      "lon": -117.244179056101,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92109"
+    },
+    {
+      "address_id": "A0410",
+      "label": "319 Summit Ave., Jersey City, NJ 07306",
+      "lat": 40.726387646101,
+      "legal_city": "Jersey City",
+      "lon": -74.064026798734,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07306"
+    },
+    {
+      "address_id": "A0411",
+      "label": "1833 Berkeley Way, Berkeley, CA 94703",
+      "lat": 37.87232876757,
+      "legal_city": "Berkeley",
+      "lon": -122.27465308516,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94703"
+    },
+    {
+      "address_id": "A0412",
+      "label": "229-231 Grafton Ave, Newark, NJ 07003",
+      "lat": 40.77821909329,
+      "legal_city": "Newark",
+      "lon": -74.167180273305,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07003"
+    },
+    {
+      "address_id": "A0413",
+      "label": "2209 Grand Ave, San Diego, CA 92109",
+      "lat": 32.800271149641,
+      "legal_city": "San Diego",
+      "lon": -117.229073590912,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92109"
+    },
+    {
+      "address_id": "A0414",
+      "label": "1987 California St, San Francisco, CA",
+      "lat": 37.789718887946,
+      "legal_city": "San Francisco",
+      "lon": -122.426993113372,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0415",
+      "label": "95 Wayne St., Jersey City, NJ 07302",
+      "lat": 40.719860194431,
+      "legal_city": "Jersey City",
+      "lon": -74.046863038788,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07302"
+    },
+    {
+      "address_id": "A0416",
+      "label": "882 Pavonia Ave., Jersey City, NJ 10281",
+      "lat": 40.734106488592,
+      "legal_city": "Jersey City",
+      "lon": -74.069855824873,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "10281"
+    },
+    {
+      "address_id": "A0417",
+      "label": "4957 Cahuenga Blvd, Los Angeles, CA 91601",
+      "lat": 34.160498077424,
+      "legal_city": "Los Angeles",
+      "lon": -118.361590637042,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91601"
+    },
+    {
+      "address_id": "A0418",
+      "label": "221 Sip Ave., Jersey City, NJ 07009",
+      "lat": 40.731794725913,
+      "legal_city": "Jersey City",
+      "lon": -74.070139397713,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07009"
+    },
+    {
+      "address_id": "A0419",
+      "label": "1538 Henry St, Berkeley, CA 94709",
+      "lat": 37.879313015271,
+      "legal_city": "Berkeley",
+      "lon": -122.2705189327,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94709"
+    },
+    {
+      "address_id": "A0420",
+      "label": "4419 Cleveland Ave, San Diego, CA 92116",
+      "lat": 32.757581273133,
+      "legal_city": "San Diego",
+      "lon": -117.149951913385,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92116"
+    },
+    {
+      "address_id": "A0421",
+      "label": "17106 Chatsworth St   Apt 0001, Los Angeles, CA 91344",
+      "lat": 34.264737200693,
+      "legal_city": "Los Angeles",
+      "lon": -118.505814381942,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91344"
+    },
+    {
+      "address_id": "A0422",
+      "label": "21-23 Marion St, Cambridge, MA",
+      "lat": 42.372394786904,
+      "legal_city": "Cambridge",
+      "lon": -71.088995126672,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0423",
+      "label": "10 Camelot Ct, Brighton, MA 02135",
+      "lat": 42.349362810146,
+      "legal_city": "Boston",
+      "lon": -71.141330315148,
+      "postal_city": "Brighton",
+      "state": "MA",
+      "zip": "02135"
+    },
+    {
+      "address_id": "A0424",
+      "label": "208 Jefferson St, Hoboken, NJ 07030",
+      "lat": 40.740157173654,
+      "legal_city": "Hoboken",
+      "lon": -74.037883549718,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07030"
+    },
+    {
+      "address_id": "A0425",
+      "label": "650 Post St, San Francisco, CA",
+      "lat": 37.787814500247,
+      "legal_city": "San Francisco",
+      "lon": -122.412614041685,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0426",
+      "label": "1307 Colusa St, San Diego, CA 92110",
+      "lat": 32.768532440161,
+      "legal_city": "San Diego",
+      "lon": -117.190773729749,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92110"
+    },
+    {
+      "address_id": "A0427",
+      "label": "7665 Fountain Ave, Los Angeles, CA 90046",
+      "lat": 34.094477803207,
+      "legal_city": "Los Angeles",
+      "lon": -118.356732566622,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90046"
+    },
+    {
+      "address_id": "A0428",
+      "label": "312-314 Mt Prospect Ave, Newark, NJ 07109",
+      "lat": 40.762248311177,
+      "legal_city": "Newark",
+      "lon": -74.172434078437,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07109"
+    },
+    {
+      "address_id": "A0429",
+      "label": "12 Blackwood St, Boston, MA 02115",
+      "lat": 42.34315888883,
+      "legal_city": "Boston",
+      "lon": -71.082683836307,
+      "postal_city": "Boston",
+      "state": "MA",
+      "zip": "02115"
+    },
+    {
+      "address_id": "A0430",
+      "label": "1950 Addison St, Berkeley, CA 94704",
+      "lat": 37.870562012406,
+      "legal_city": "Berkeley",
+      "lon": -122.272637519825,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94704"
+    },
+    {
+      "address_id": "A0431",
+      "label": "245 Euclid Ave, San Diego, CA 92114",
+      "lat": 32.706728960145,
+      "legal_city": "San Diego",
+      "lon": -117.084936538347,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92114"
+    },
+    {
+      "address_id": "A0432",
+      "label": "14605 Rayen St, Los Angeles, CA 91402",
+      "lat": 34.231842925425,
+      "legal_city": "Los Angeles",
+      "lon": -118.450479396041,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91402"
+    },
+    {
+      "address_id": "A0433",
+      "label": "720 W 27Th St, Los Angeles, CA 90007",
+      "lat": 34.028044141305,
+      "legal_city": "Los Angeles",
+      "lon": -118.278944633921,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90007"
+    },
+    {
+      "address_id": "A0434",
+      "label": "1225 Hyde St, San Francisco, CA",
+      "lat": 37.792202707791,
+      "legal_city": "San Francisco",
+      "lon": -122.417712027591,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0435",
+      "label": "310 Monroe St, Hoboken, NJ 07632",
+      "lat": 40.741775604922,
+      "legal_city": "Hoboken",
+      "lon": -74.039361820557,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07632"
+    },
+    {
+      "address_id": "A0436",
+      "label": "832 Willow Ave, Hoboken, NJ 07030",
+      "lat": 40.747085607112,
+      "legal_city": "Hoboken",
+      "lon": -74.031844915269,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07030"
+    },
+    {
+      "address_id": "A0437",
+      "label": "2969 San Marino St, Los Angeles, CA 90006",
+      "lat": 34.05457350989,
+      "legal_city": "Los Angeles",
+      "lon": -118.293871486247,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90006"
+    },
+    {
+      "address_id": "A0438",
+      "label": "60-62 Cambridge Ave, Jersey City, NJ 07430",
+      "lat": 40.744834267004,
+      "legal_city": "Jersey City",
+      "lon": -74.048728066645,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07430"
+    },
+    {
+      "address_id": "A0439",
+      "label": "225 25Th Av, San Francisco, CA",
+      "lat": 37.78525700396,
+      "legal_city": "San Francisco",
+      "lon": -122.485184671551,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0440",
+      "label": "4042 Fulton St, San Francisco, CA",
+      "lat": 37.773046725887,
+      "legal_city": "San Francisco",
+      "lon": -122.47502114247,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0441",
+      "label": "4017 Illinois St, San Diego, CA 92104",
+      "lat": 32.750692356257,
+      "legal_city": "San Diego",
+      "lon": -117.127623761555,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92104"
+    },
+    {
+      "address_id": "A0442",
+      "label": "7014 Lanewood Ave, Los Angeles, CA 90028",
+      "lat": 34.099151448276,
+      "legal_city": "Los Angeles",
+      "lon": -118.341876805569,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90028"
+    },
+    {
+      "address_id": "A0443",
+      "label": "3526 Fairmount Ave, San Diego, CA 92105",
+      "lat": 32.742658851729,
+      "legal_city": "San Diego",
+      "lon": -117.101032546312,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92105"
+    },
+    {
+      "address_id": "A0444",
+      "label": "231 Commonwealth Av, Boston, MA 02116",
+      "lat": 42.351030509952,
+      "legal_city": "Boston",
+      "lon": -71.082259034359,
+      "postal_city": "Boston",
+      "state": "MA",
+      "zip": "02116"
+    },
+    {
+      "address_id": "A0445",
+      "label": "8790 Van Nuys Blvd, Los Angeles, CA 91402",
+      "lat": 34.229751001698,
+      "legal_city": "Los Angeles",
+      "lon": -118.450185423298,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91402"
+    },
+    {
+      "address_id": "A0446",
+      "label": "610 Columbus Av, Boston, MA 02118",
+      "lat": 42.339112790328,
+      "legal_city": "Boston",
+      "lon": -71.083459763098,
+      "postal_city": "Boston",
+      "state": "MA",
+      "zip": "02118"
+    },
+    {
+      "address_id": "A0447",
+      "label": "208 Clinton St, Hoboken, NJ 07030",
+      "lat": 40.73966668696,
+      "legal_city": "Hoboken",
+      "lon": -74.035067789528,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07030"
+    },
+    {
+      "address_id": "A0448",
+      "label": "151-153 Lafayette St, Newark, NJ 07105",
+      "lat": 40.730805854988,
+      "legal_city": "Newark",
+      "lon": -74.166461328187,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07105"
+    },
+    {
+      "address_id": "A0449",
+      "label": "338 Clinton Pl, Newark, NJ 08701",
+      "lat": 40.712312782686,
+      "legal_city": "Newark",
+      "lon": -74.215190276398,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "08701"
+    },
+    {
+      "address_id": "A0450",
+      "label": "94 Neptune Ave., Jersey City, NJ 11211",
+      "lat": 40.691942000511,
+      "legal_city": "Jersey City",
+      "lon": -74.094734510649,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "11211"
+    },
+    {
+      "address_id": "A0451",
+      "label": "7300 Valmont St, Los Angeles, CA 91042",
+      "lat": 34.252257110602,
+      "legal_city": "Los Angeles",
+      "lon": -118.291114794412,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91042"
+    },
+    {
+      "address_id": "A0452",
+      "label": "1310 N Las Palmas Ave, Los Angeles, CA 90028",
+      "lat": 34.094610686343,
+      "legal_city": "Los Angeles",
+      "lon": -118.336242443207,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90028"
+    },
+    {
+      "address_id": "A0453",
+      "label": "11 Carlisle St, Cambridge, MA",
+      "lat": 42.372350092405,
+      "legal_city": "Cambridge",
+      "lon": -71.097785158487,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0454",
+      "label": "8944 Columbus Ave, Los Angeles, CA 91343",
+      "lat": 34.232706363083,
+      "legal_city": "Los Angeles",
+      "lon": -118.465331558771,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91343"
+    },
+    {
+      "address_id": "A0455",
+      "label": "78 Stevens Ave., Jersey City, NJ 07108",
+      "lat": 40.701284285212,
+      "legal_city": "Jersey City",
+      "lon": -74.087633111396,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07108"
+    },
+    {
+      "address_id": "A0456",
+      "label": "2151 Chatsworth Blvd, San Diego, CA 92107",
+      "lat": 32.738822467011,
+      "legal_city": "San Diego",
+      "lon": -117.228546774402,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92107"
+    },
+    {
+      "address_id": "A0457",
+      "label": "1856 Green St, San Francisco, CA",
+      "lat": 37.796928164046,
+      "legal_city": "San Francisco",
+      "lon": -122.429684738163,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0458",
+      "label": "1670 E 48Th Pl, Los Angeles, CA 90011",
+      "lat": 33.999307703621,
+      "legal_city": "Los Angeles",
+      "lon": -118.243996855675,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90011"
+    },
+    {
+      "address_id": "A0459",
+      "label": "202 South St., Jersey City, NJ 07423",
+      "lat": 40.750737802252,
+      "legal_city": "Jersey City",
+      "lon": -74.051069939161,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "07423"
+    },
+    {
+      "address_id": "A0460",
+      "label": "223-229 Shephard Ave, Newark, NJ 11204",
+      "lat": 40.71231825405,
+      "legal_city": "Newark",
+      "lon": -74.211485813318,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "11204"
+    },
+    {
+      "address_id": "A0461",
+      "label": "735 11Th Av, San Francisco, CA",
+      "lat": 37.774456141897,
+      "legal_city": "San Francisco",
+      "lon": -122.469251256406,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0462",
+      "label": "128 St. Pauls Ave., Jersey City, NJ 11211",
+      "lat": 40.736518619808,
+      "legal_city": "Jersey City",
+      "lon": -74.05676729519,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "11211"
+    },
+    {
+      "address_id": "A0463",
+      "label": "4 Beechwood St, Dorchester, MA 02121",
+      "lat": 42.30507257807,
+      "legal_city": "Boston",
+      "lon": -71.074772762892,
+      "postal_city": "Dorchester",
+      "state": "MA",
+      "zip": "02121"
+    },
+    {
+      "address_id": "A0464",
+      "label": "2-98 Dabney St, Roxbury, MA 02119",
+      "lat": 42.325243458888,
+      "legal_city": "Boston",
+      "lon": -71.084506386968,
+      "postal_city": "Roxbury",
+      "state": "MA",
+      "zip": "02119"
+    },
+    {
+      "address_id": "A0465",
+      "label": "141 Oxford St, Cambridge, MA",
+      "lat": 42.385287646163,
+      "legal_city": "Cambridge",
+      "lon": -71.116210705332,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0466",
+      "label": "115 Norway St, Boston, MA 02115",
+      "lat": 42.345351761852,
+      "legal_city": "Boston",
+      "lon": -71.088829313111,
+      "postal_city": "Boston",
+      "state": "MA",
+      "zip": "02115"
+    },
+    {
+      "address_id": "A0467",
+      "label": "24 St Albans Rd, Boston, MA 02115",
+      "lat": 42.333878417918,
+      "legal_city": "Boston",
+      "lon": -71.106997184859,
+      "postal_city": "Boston",
+      "state": "MA",
+      "zip": "02115"
+    },
+    {
+      "address_id": "A0468",
+      "label": "13 Shepard St, Cambridge, MA",
+      "lat": 42.381661514871,
+      "legal_city": "Cambridge",
+      "lon": -71.121015754447,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0469",
+      "label": "2701 Shattuck Ave, Berkeley, CA 94705",
+      "lat": 37.860021095027,
+      "legal_city": "Berkeley",
+      "lon": -122.266948509568,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94705"
+    },
+    {
+      "address_id": "A0470",
+      "label": "1919 Curtis St, Berkeley, CA 94702",
+      "lat": 37.870650504933,
+      "legal_city": "Berkeley",
+      "lon": -122.289620577483,
+      "postal_city": "Berkeley",
+      "state": "CA",
+      "zip": "94702"
+    },
+    {
+      "address_id": "A0471",
+      "label": "332-334 Garden St, Hoboken, NJ 07604",
+      "lat": 40.74072422878,
+      "legal_city": "Hoboken",
+      "lon": -74.031824704958,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07604"
+    },
+    {
+      "address_id": "A0472",
+      "label": "321 Willow Ave, Hoboken, NJ 07030",
+      "lat": 40.740882326316,
+      "legal_city": "Hoboken",
+      "lon": -74.033572724402,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07030"
+    },
+    {
+      "address_id": "A0473",
+      "label": "20 Phillips ST, Boston, MA 02114",
+      "lat": 42.360298905905,
+      "legal_city": "Boston",
+      "lon": -71.067296757754,
+      "postal_city": "Boston",
+      "state": "MA",
+      "zip": "02114"
+    },
+    {
+      "address_id": "A0474",
+      "label": "3438 Mckinley Ave, Los Angeles, CA 90011",
+      "lat": 34.012650923784,
+      "legal_city": "Los Angeles",
+      "lon": -118.260382953065,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90011"
+    },
+    {
+      "address_id": "A0475",
+      "label": "361 First St, Hoboken, NJ 07030",
+      "lat": 40.73824152843,
+      "legal_city": "Hoboken",
+      "lon": -74.035828506414,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07030"
+    },
+    {
+      "address_id": "A0476",
+      "label": "26-28 Cottage St, Newark, NJ 07840",
+      "lat": 40.728832303948,
+      "legal_city": "Newark",
+      "lon": -74.171995425732,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07840"
+    },
+    {
+      "address_id": "A0477",
+      "label": "2250 Mission St, San Francisco, CA",
+      "lat": 37.761016013708,
+      "legal_city": "San Francisco",
+      "lon": -122.419353294864,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0478",
+      "label": "3860 Cherokee Ave, San Diego, CA 92104",
+      "lat": 32.748446614415,
+      "legal_city": "San Diego",
+      "lon": -117.114420057856,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92104"
+    },
+    {
+      "address_id": "A0479",
+      "label": "12948 Moorpark St, Los Angeles, CA 91604",
+      "lat": 34.150301392175,
+      "legal_city": "Los Angeles",
+      "lon": -118.415275590675,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91604"
+    },
+    {
+      "address_id": "A0480",
+      "label": "4046 N 43Rd St, San Diego, CA 92105",
+      "lat": 32.750481775488,
+      "legal_city": "San Diego",
+      "lon": -117.102033252477,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92105"
+    },
+    {
+      "address_id": "A0481",
+      "label": "536 Leavenworth St, San Francisco, CA",
+      "lat": 37.786028326648,
+      "legal_city": "San Francisco",
+      "lon": -122.414634028725,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0482",
+      "label": "101 Clifton Pl., Jersey City, NJ 10982",
+      "lat": 40.721027897402,
+      "legal_city": "Jersey City",
+      "lon": -74.06487503221,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "10982"
+    },
+    {
+      "address_id": "A0483",
+      "label": "1580 Market St, San Francisco, CA",
+      "lat": 37.774588554781,
+      "legal_city": "San Francisco",
+      "lon": -122.420119239496,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0484",
+      "label": "1801 08Th Av, San Francisco, CA",
+      "lat": 37.754690646826,
+      "legal_city": "San Francisco",
+      "lon": -122.464658373009,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0485",
+      "label": "296-302 Western Ave, Cambridge, MA",
+      "lat": 42.364528330341,
+      "legal_city": "Cambridge",
+      "lon": -71.112705698148,
+      "postal_city": "Cambridge",
+      "state": "MA",
+      "zip": null
+    },
+    {
+      "address_id": "A0486",
+      "label": "2280 Mission St, San Francisco, CA",
+      "lat": 37.760560895514,
+      "legal_city": "San Francisco",
+      "lon": -122.419309809634,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0487",
+      "label": "2118 Fillmore St, San Francisco, CA",
+      "lat": 37.789124926129,
+      "legal_city": "San Francisco",
+      "lon": -122.433810595937,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0488",
+      "label": "197 Beacon St, Boston, MA 02116",
+      "lat": 42.354230756113,
+      "legal_city": "Boston",
+      "lon": -71.076768182377,
+      "postal_city": "Boston",
+      "state": "MA",
+      "zip": "02116"
+    },
+    {
+      "address_id": "A0489",
+      "label": "204 Grand St, Hoboken, NJ 06901",
+      "lat": 40.739786868515,
+      "legal_city": "Hoboken",
+      "lon": -74.036041272823,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "06901"
+    },
+    {
+      "address_id": "A0490",
+      "label": "526 Adams St, Hoboken, NJ 07030",
+      "lat": 40.743676400471,
+      "legal_city": "Hoboken",
+      "lon": -74.035830171347,
+      "postal_city": "Hoboken",
+      "state": "NJ",
+      "zip": "07030"
+    },
+    {
+      "address_id": "A0491",
+      "label": "37 Irving St, Newark, NJ 07104",
+      "lat": 40.778727063623,
+      "legal_city": "Newark",
+      "lon": -74.158667478138,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07104"
+    },
+    {
+      "address_id": "A0492",
+      "label": "800 S Harvard Blvd, Los Angeles, CA 90005",
+      "lat": 34.057623861111,
+      "legal_city": "Los Angeles",
+      "lon": -118.304091662787,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "90005"
+    },
+    {
+      "address_id": "A0493",
+      "label": "4450 Geary Bl, San Francisco, CA",
+      "lat": 37.781029854011,
+      "legal_city": "San Francisco",
+      "lon": -122.466976349979,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0494",
+      "label": "2641 Franklin St, San Francisco, CA",
+      "lat": 37.798725772954,
+      "legal_city": "San Francisco",
+      "lon": -122.425776460433,
+      "postal_city": "San Francisco",
+      "state": "CA",
+      "zip": null
+    },
+    {
+      "address_id": "A0495",
+      "label": "230 Van Horne St., Jersey City, NJ 11219",
+      "lat": 40.713022199008,
+      "legal_city": "Jersey City",
+      "lon": -74.063078920845,
+      "postal_city": "Jersey City",
+      "state": "NJ",
+      "zip": "11219"
+    },
+    {
+      "address_id": "A0496",
+      "label": "512 32Nd St, San Diego, CA 92102",
+      "lat": 32.710782090084,
+      "legal_city": "San Diego",
+      "lon": -117.125336741291,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92102"
+    },
+    {
+      "address_id": "A0497",
+      "label": "3750 29Th St, San Diego, CA 92104",
+      "lat": 32.74637529596,
+      "legal_city": "San Diego",
+      "lon": -117.131053086987,
+      "postal_city": "San Diego",
+      "state": "CA",
+      "zip": "92104"
+    },
+    {
+      "address_id": "A0498",
+      "label": "684-686 Summer Ave, Newark, NJ 07644",
+      "lat": 40.775329535647,
+      "legal_city": "Newark",
+      "lon": -74.163418012627,
+      "postal_city": "Newark",
+      "state": "NJ",
+      "zip": "07644"
+    },
+    {
+      "address_id": "A0499",
+      "label": "8519 Willis Ave, Los Angeles, CA 91402",
+      "lat": 34.225076986186,
+      "legal_city": "Los Angeles",
+      "lon": -118.455356959313,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91402"
+    },
+    {
+      "address_id": "A0500",
+      "label": "8811 Burnet Ave, Los Angeles, CA 91343",
+      "lat": 34.230253637086,
+      "legal_city": "Los Angeles",
+      "lon": -118.463342888059,
+      "postal_city": "Los Angeles",
+      "state": "CA",
+      "zip": "91343"
+    }
+  ]
+}

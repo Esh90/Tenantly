@@ -1,0 +1,2824 @@
+{
+  "affected": [
+    {
+      "address_id": "A0002",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "1031-1035 Clinton St, Hoboken, NJ 07030",
+      "lat": 40.749764881523,
+      "legal_city": "Hoboken",
+      "lon": -74.03183135878
+    },
+    {
+      "address_id": "A0003",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "876-878 S 14Th St, Newark, NJ 11219",
+      "lat": 40.724887410231,
+      "legal_city": "Newark",
+      "lon": -74.210414357377
+    },
+    {
+      "address_id": "A0008",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "1065 Summit Avenue, Jersey City, NJ 78746",
+      "lat": 40.751069898526,
+      "legal_city": "Jersey City",
+      "lon": -74.049026204465
+    },
+    {
+      "address_id": "A0011",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "834-836 Raymond Blvd, Newark, NJ 08805",
+      "lat": 40.732647093573,
+      "legal_city": "Newark",
+      "lon": -74.156148368781
+    },
+    {
+      "address_id": "A0012",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "1064 Summit Ave., Jersey City, NJ 07728",
+      "lat": 40.751188750138,
+      "legal_city": "Jersey City",
+      "lon": -74.048775549263
+    },
+    {
+      "address_id": "A0013",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "137 N 11Th St, Newark, NJ 07107",
+      "lat": 40.759893850085,
+      "legal_city": "Newark",
+      "lon": -74.191694841632
+    },
+    {
+      "address_id": "A0017",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "225 Duncan Ave., Jersey City, NJ 10949",
+      "lat": 40.7277629714,
+      "legal_city": "Jersey City",
+      "lon": -74.079234576768
+    },
+    {
+      "address_id": "A0020",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "646-648 N 6Th St, Newark, NJ 07083",
+      "lat": 40.771163010071,
+      "legal_city": "Newark",
+      "lon": -74.180619526984
+    },
+    {
+      "address_id": "A0026",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "59 Oak St., Jersey City, NJ 07306",
+      "lat": 40.713718828723,
+      "legal_city": "Jersey City",
+      "lon": -74.076996657496
+    },
+    {
+      "address_id": "A0028",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "585 5Th St, Newark, NJ 07107",
+      "lat": 40.768516151715,
+      "legal_city": "Newark",
+      "lon": -74.180832847404
+    },
+    {
+      "address_id": "A0029",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "280-284 Verona Ave, Newark, NJ 07653",
+      "lat": 40.782807564387,
+      "legal_city": "Newark",
+      "lon": -74.165985399456
+    },
+    {
+      "address_id": "A0032",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "63 Oak St., Jersey City, NJ 08820",
+      "lat": 40.7137999274,
+      "legal_city": "Jersey City",
+      "lon": -74.077148779124
+    },
+    {
+      "address_id": "A0040",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "69-75 Jackson St, Hoboken, NJ 07030",
+      "lat": 40.738767838556,
+      "legal_city": "Hoboken",
+      "lon": -74.041111798554
+    },
+    {
+      "address_id": "A0042",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "320 Forrest St., Jersey City, NJ 07304",
+      "lat": 40.713202456168,
+      "legal_city": "Jersey City",
+      "lon": -74.077362139063
+    },
+    {
+      "address_id": "A0044",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "773-775 Sandford Ave, Newark, NJ 11211",
+      "lat": 40.735792625793,
+      "legal_city": "Newark",
+      "lon": -74.237007324819
+    },
+    {
+      "address_id": "A0047",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "14 Rutgers Ave., Jersey City, NJ 07304",
+      "lat": 40.698116647571,
+      "legal_city": "Jersey City",
+      "lon": -74.090865859165
+    },
+    {
+      "address_id": "A0049",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "721 Clinton St, Hoboken, NJ 07856",
+      "lat": 40.745798808889,
+      "legal_city": "Hoboken",
+      "lon": -74.033058218101
+    },
+    {
+      "address_id": "A0051",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "65 Oakland Ave., Jersey City, NJ 07423",
+      "lat": 40.734681117954,
+      "legal_city": "Jersey City",
+      "lon": -74.055436604985
+    },
+    {
+      "address_id": "A0057",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "57 Stone St, Newark, NJ 07012",
+      "lat": 40.753432421375,
+      "legal_city": "Newark",
+      "lon": -74.174377039669
+    },
+    {
+      "address_id": "A0059",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "84-86 Walnut St, Newark, NJ 07078",
+      "lat": 40.729245283506,
+      "legal_city": "Newark",
+      "lon": -74.170943860837
+    },
+    {
+      "address_id": "A0076",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "304 E Kinney St, Newark, NJ 07033",
+      "lat": 40.724076460199,
+      "legal_city": "Newark",
+      "lon": -74.162836470045
+    },
+    {
+      "address_id": "A0078",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "115 Bayview Ave., Jersey City, NJ 07304",
+      "lat": 40.705324743987,
+      "legal_city": "Jersey City",
+      "lon": -74.080499166258
+    },
+    {
+      "address_id": "A0087",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "323 Bloomfield St, Hoboken, NJ 07504",
+      "lat": 40.740414697817,
+      "legal_city": "Hoboken",
+      "lon": -74.030768159948
+    },
+    {
+      "address_id": "A0089",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "935 Park Ave, Hoboken, NJ 07030",
+      "lat": 40.748211954503,
+      "legal_city": "Hoboken",
+      "lon": -74.030368120288
+    },
+    {
+      "address_id": "A0090",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "30 Jackson St, Newark, NJ 07105",
+      "lat": 40.731204856376,
+      "legal_city": "Newark",
+      "lon": -74.155787524567
+    },
+    {
+      "address_id": "A0099",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "822 Washington St, Hoboken, NJ 07458",
+      "lat": 40.746308514721,
+      "legal_city": "Hoboken",
+      "lon": -74.028270964888
+    },
+    {
+      "address_id": "A0101",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "315-319 Fairmount Avenue, Jersey City, NJ 07039",
+      "lat": 40.725165683984,
+      "legal_city": "Jersey City",
+      "lon": -74.070646241263
+    },
+    {
+      "address_id": "A0102",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "124 Bloomfield St, Hoboken, NJ 10003",
+      "lat": 40.737933172158,
+      "legal_city": "Hoboken",
+      "lon": -74.031684861444
+    },
+    {
+      "address_id": "A0104",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "409 5Th St, Newark, NJ 07012",
+      "lat": 40.761814283797,
+      "legal_city": "Newark",
+      "lon": -74.184328525177
+    },
+    {
+      "address_id": "A0108",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "13 Jefferson Ave., Jersey City, NJ 07030",
+      "lat": 40.736287315576,
+      "legal_city": "Jersey City",
+      "lon": -74.049970012264
+    },
+    {
+      "address_id": "A0110",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "130-132 2Nd Ave, Newark, NJ 07055",
+      "lat": 40.763233783015,
+      "legal_city": "Newark",
+      "lon": -74.174639118818
+    },
+    {
+      "address_id": "A0116",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "36 Prospect St., Jersey City, NJ 07111",
+      "lat": 40.73782973401,
+      "legal_city": "Jersey City",
+      "lon": -74.049245065733
+    },
+    {
+      "address_id": "A0119",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "607 Adams St, Hoboken, NJ 07030",
+      "lat": 40.744671445285,
+      "legal_city": "Hoboken",
+      "lon": -74.035368051004
+    },
+    {
+      "address_id": "A0120",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "139 Elm St, Newark, NJ 07105",
+      "lat": 40.72835234588,
+      "legal_city": "Newark",
+      "lon": -74.165047104124
+    },
+    {
+      "address_id": "A0125",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "227 Grand St, Hoboken, NJ 07030",
+      "lat": 40.740020460669,
+      "legal_city": "Hoboken",
+      "lon": -74.035814894303
+    },
+    {
+      "address_id": "A0129",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "526-532 Mulberry St, Newark, NJ 07039",
+      "lat": 40.719806603386,
+      "legal_city": "Newark",
+      "lon": -74.176833067335
+    },
+    {
+      "address_id": "A0130",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "554 Market St, Newark, NJ 07205",
+      "lat": 40.731588087906,
+      "legal_city": "Newark",
+      "lon": -74.154426811823
+    },
+    {
+      "address_id": "A0131",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "43 Poplar St., Jersey City, NJ 07307",
+      "lat": 40.754136146986,
+      "legal_city": "Jersey City",
+      "lon": -74.046101194189
+    },
+    {
+      "address_id": "A0132",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "587 N 6Th St, Newark, NJ 11205",
+      "lat": 40.76934816412,
+      "legal_city": "Newark",
+      "lon": -74.181410596224
+    },
+    {
+      "address_id": "A0136",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "920 Hudson St, Hoboken, NJ 07030",
+      "lat": 40.747367988246,
+      "legal_city": "Hoboken",
+      "lon": -74.026733524669
+    },
+    {
+      "address_id": "A0137",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "65-71 Norflok St, Newark, NJ 07003",
+      "lat": 40.746701068528,
+      "legal_city": "Newark",
+      "lon": -74.182557707489
+    },
+    {
+      "address_id": "A0139",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "54 Stuyvesant Ave., Jersey City, NJ 07042",
+      "lat": 40.729943720291,
+      "legal_city": "Jersey City",
+      "lon": -74.071034378592
+    },
+    {
+      "address_id": "A0146",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "93-95 Hawkins St, Newark, NJ 07105",
+      "lat": 40.728510932777,
+      "legal_city": "Newark",
+      "lon": -74.139007499031
+    },
+    {
+      "address_id": "A0148",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "162-166 5Th St, Newark, NJ 07105",
+      "lat": 40.751353301519,
+      "legal_city": "Newark",
+      "lon": -74.190080142452
+    },
+    {
+      "address_id": "A0159",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "104 Sunset Ave, Newark, NJ 11211",
+      "lat": 40.74245866913,
+      "legal_city": "Newark",
+      "lon": -74.226709353047
+    },
+    {
+      "address_id": "A0160",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "86 Charles St., Jersey City, NJ 07642",
+      "lat": 40.749433761671,
+      "legal_city": "Jersey City",
+      "lon": -74.05173810144
+    },
+    {
+      "address_id": "A0161",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "317 Union St., Jersey City, NJ 07013",
+      "lat": 40.717916452711,
+      "legal_city": "Jersey City",
+      "lon": -74.083091056543
+    },
+    {
+      "address_id": "A0163",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "233-235 Second St., Jersey City, NJ 07042",
+      "lat": 40.722390774695,
+      "legal_city": "Jersey City",
+      "lon": -74.043498156328
+    },
+    {
+      "address_id": "A0168",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "600 Jackson/601 Harrison, Hoboken, NJ 07030",
+      "lat": 40.745283626731,
+      "legal_city": "Hoboken",
+      "lon": -74.039281685445
+    },
+    {
+      "address_id": "A0171",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "127 Ogden Ave., Jersey City, NJ 07660",
+      "lat": 40.738902438048,
+      "legal_city": "Jersey City",
+      "lon": -74.04663280324
+    },
+    {
+      "address_id": "A0177",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "166 Highland Ave., Jersey City, NJ 11201",
+      "lat": 40.729583045817,
+      "legal_city": "Jersey City",
+      "lon": -74.073105945172
+    },
+    {
+      "address_id": "A0181",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "931 Garden St, Hoboken, NJ 07030",
+      "lat": 40.748003289428,
+      "legal_city": "Hoboken",
+      "lon": -74.029444711794
+    },
+    {
+      "address_id": "A0182",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "911-923 Clinton St, Hoboken, NJ 07030",
+      "lat": 40.748236599023,
+      "legal_city": "Hoboken",
+      "lon": -74.032304373623
+    },
+    {
+      "address_id": "A0185",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "154 Terhune Ave., Jersey City, NJ 07103",
+      "lat": 40.705096415554,
+      "legal_city": "Jersey City",
+      "lon": -74.096225420442
+    },
+    {
+      "address_id": "A0186",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "107 Beacon Ave., Jersey City, NJ 07306",
+      "lat": 40.736920404507,
+      "legal_city": "Jersey City",
+      "lon": -74.054827866989
+    },
+    {
+      "address_id": "A0187",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "146 Carlton Ave., Jersey City, NJ 07423",
+      "lat": 40.744920038222,
+      "legal_city": "Jersey City",
+      "lon": -74.060798217241
+    },
+    {
+      "address_id": "A0190",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "283 Adams St, Newark, NJ 07105",
+      "lat": 40.722831839974,
+      "legal_city": "Newark",
+      "lon": -74.16236498265
+    },
+    {
+      "address_id": "A0204",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "202-208 6Th Ave W, Newark, NJ 08736",
+      "lat": 40.756199520614,
+      "legal_city": "Newark",
+      "lon": -74.186136799349
+    },
+    {
+      "address_id": "A0208",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "126 Adams St, Hoboken, NJ 07604",
+      "lat": 40.738937251272,
+      "legal_city": "Hoboken",
+      "lon": -74.037275318111
+    },
+    {
+      "address_id": "A0223",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "504 Court St, Hoboken, NJ 07030",
+      "lat": 40.742214718476,
+      "legal_city": "Hoboken",
+      "lon": -74.028940035026
+    },
+    {
+      "address_id": "A0227",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "1401 Hudson St, Hoboken, NJ 07030",
+      "lat": 40.752162276083,
+      "legal_city": "Hoboken",
+      "lon": -74.025132220092
+    },
+    {
+      "address_id": "A0241",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "913 Garden St, Hoboken, NJ 07030",
+      "lat": 40.747790932129,
+      "legal_city": "Hoboken",
+      "lon": -74.029507685512
+    },
+    {
+      "address_id": "A0243",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "664 Ocean Ave., Jersey City, NJ 07305",
+      "lat": 40.709014299361,
+      "legal_city": "Jersey City",
+      "lon": -74.076659540243
+    },
+    {
+      "address_id": "A0244",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "1126 Hudson St, Hoboken, NJ 07030",
+      "lat": 40.75007710711,
+      "legal_city": "Hoboken",
+      "lon": -74.025921583962
+    },
+    {
+      "address_id": "A0249",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "498-500 Hawthorne Ave, Newark, NJ 10013",
+      "lat": 40.719599722122,
+      "legal_city": "Newark",
+      "lon": -74.214898297483
+    },
+    {
+      "address_id": "A0250",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "211 Baldwin Ave., Jersey City, NJ 07002",
+      "lat": 40.729192320523,
+      "legal_city": "Jersey City",
+      "lon": -74.060120792112
+    },
+    {
+      "address_id": "A0254",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "805 Washington St, Hoboken, NJ 07030",
+      "lat": 40.746063788663,
+      "legal_city": "Hoboken",
+      "lon": -74.028189698217
+    },
+    {
+      "address_id": "A0256",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "327 Jackson St, Hoboken, NJ 07017",
+      "lat": 40.742101329412,
+      "legal_city": "Hoboken",
+      "lon": -74.0400671093
+    },
+    {
+      "address_id": "A0261",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "525 Adams St, Hoboken, NJ 07030",
+      "lat": 40.743627056924,
+      "legal_city": "Hoboken",
+      "lon": -74.03569006655
+    },
+    {
+      "address_id": "A0264",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "583-589 Elizabeth Ave, Newark, NJ 11516",
+      "lat": 40.706796982365,
+      "legal_city": "Newark",
+      "lon": -74.203805296449
+    },
+    {
+      "address_id": "A0265",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "102 Baldwin Ave., Jersey City, NJ 07306",
+      "lat": 40.725395005355,
+      "legal_city": "Jersey City",
+      "lon": -74.062860646313
+    },
+    {
+      "address_id": "A0266",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "52 Bright St., Jersey City, NJ 10016",
+      "lat": 40.716964287987,
+      "legal_city": "Jersey City",
+      "lon": -74.04716146876
+    },
+    {
+      "address_id": "A0269",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "1015 Clinton St, Hoboken, NJ 10003",
+      "lat": 40.749581279292,
+      "legal_city": "Hoboken",
+      "lon": -74.031887796981
+    },
+    {
+      "address_id": "A0270",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "29 Concord St, Jersey City, NJ 07306",
+      "lat": 40.733442605846,
+      "legal_city": "Jersey City",
+      "lon": -74.052574845456
+    },
+    {
+      "address_id": "A0279",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "90 Kensington Ave., Jersey City, NJ 07302",
+      "lat": 40.723144945194,
+      "legal_city": "Jersey City",
+      "lon": -74.075287274906
+    },
+    {
+      "address_id": "A0287",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "404 Grand St, Hoboken, NJ 07075",
+      "lat": 40.742295062797,
+      "legal_city": "Hoboken",
+      "lon": -74.035272884466
+    },
+    {
+      "address_id": "A0288",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "75 Clendenny Ave., Jersey City, NJ 11211",
+      "lat": 40.718013229375,
+      "legal_city": "Jersey City",
+      "lon": -74.0811726863
+    },
+    {
+      "address_id": "A0296",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "83-85 Mcwhorter St, Newark, NJ 07105",
+      "lat": 40.730201050389,
+      "legal_city": "Newark",
+      "lon": -74.16616452533
+    },
+    {
+      "address_id": "A0297",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "211-213 Summer Ave, Newark, NJ 11205",
+      "lat": 40.758859454382,
+      "legal_city": "Newark",
+      "lon": -74.171723193198
+    },
+    {
+      "address_id": "A0299",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "1037 Washington St, Hoboken, NJ 10994",
+      "lat": 40.749050177411,
+      "legal_city": "Hoboken",
+      "lon": -74.027266530035
+    },
+    {
+      "address_id": "A0307",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "294-296 Van Buren St, Newark, NJ 07512",
+      "lat": 40.721886586056,
+      "legal_city": "Newark",
+      "lon": -74.160772689624
+    },
+    {
+      "address_id": "A0308",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "1032 Hudson St, Hoboken, NJ 07024",
+      "lat": 40.748749351079,
+      "legal_city": "Hoboken",
+      "lon": -74.026323440877
+    },
+    {
+      "address_id": "A0311",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "38-38- Somme St, Newark, NJ 07032",
+      "lat": 40.731405439225,
+      "legal_city": "Newark",
+      "lon": -74.150647497602
+    },
+    {
+      "address_id": "A0313",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "317-319 W Runyon St, Newark, NJ 11205",
+      "lat": 40.719479811457,
+      "legal_city": "Newark",
+      "lon": -74.209122198994
+    },
+    {
+      "address_id": "A0320",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "408 Madison St, Hoboken, NJ 07030",
+      "lat": 40.742822649905,
+      "legal_city": "Hoboken",
+      "lon": -74.038062021201
+    },
+    {
+      "address_id": "A0321",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "200 Nunda Ave., Jersey City, NJ 07306",
+      "lat": 40.729025280221,
+      "legal_city": "Jersey City",
+      "lon": -74.079221896001
+    },
+    {
+      "address_id": "A0325",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "38A Gautier Ave., Jersey City, NJ 07302",
+      "lat": 40.72613987341,
+      "legal_city": "Jersey City",
+      "lon": -74.079307176087
+    },
+    {
+      "address_id": "A0326",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "46 Jefferson St, Newark, NJ 07105",
+      "lat": 40.731191686503,
+      "legal_city": "Newark",
+      "lon": -74.16011411828
+    },
+    {
+      "address_id": "A0329",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "51 Madison St, Newark, NJ 07105",
+      "lat": 40.730936900745,
+      "legal_city": "Newark",
+      "lon": -74.159407511479
+    },
+    {
+      "address_id": "A0331",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "342-344 Irvine Turner Blv, Newark, NJ 11219",
+      "lat": 40.722575256637,
+      "legal_city": "Newark",
+      "lon": -74.193293266905
+    },
+    {
+      "address_id": "A0337",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "66 Monroe St, Newark, NJ 07032",
+      "lat": 40.730254220709,
+      "legal_city": "Newark",
+      "lon": -74.158991782803
+    },
+    {
+      "address_id": "A0338",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "521-523 S 17Th, Newark, NJ 07417",
+      "lat": 40.738187740265,
+      "legal_city": "Newark",
+      "lon": -74.20839765431
+    },
+    {
+      "address_id": "A0343",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "408-410 5Th St, Newark, NJ 10997",
+      "lat": 40.762113405795,
+      "legal_city": "Newark",
+      "lon": -74.184334826891
+    },
+    {
+      "address_id": "A0344",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "238 & 242 Garfield Ave., Jersey City, NJ 07304",
+      "lat": 40.692246111645,
+      "legal_city": "Jersey City",
+      "lon": -74.091122112815
+    },
+    {
+      "address_id": "A0348",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "229 Clinton St, Hoboken, NJ 08755",
+      "lat": 40.739876679452,
+      "legal_city": "Hoboken",
+      "lon": -74.034849797859
+    },
+    {
+      "address_id": "A0350",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "1051 West Side Ave., Jersey City, NJ 07446",
+      "lat": 40.735168801416,
+      "legal_city": "Jersey City",
+      "lon": -74.070961149168
+    },
+    {
+      "address_id": "A0352",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "40-42 Mt Prospect Ave, Newark, NJ 07083",
+      "lat": 40.753102426289,
+      "legal_city": "Newark",
+      "lon": -74.177853113095
+    },
+    {
+      "address_id": "A0358",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "717 N 6Th St, Newark, NJ 07110",
+      "lat": 40.773922773441,
+      "legal_city": "Newark",
+      "lon": -74.179007529056
+    },
+    {
+      "address_id": "A0359",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "925 Park Ave, Hoboken, NJ 07306",
+      "lat": 40.748092459219,
+      "legal_city": "Hoboken",
+      "lon": -74.030402774821
+    },
+    {
+      "address_id": "A0360",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "140 New York Ave., Jersey City, NJ 10977",
+      "lat": 40.741104245751,
+      "legal_city": "Jersey City",
+      "lon": -74.047111900025
+    },
+    {
+      "address_id": "A0371",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "76-80 Bruen St, Newark, NJ 07105",
+      "lat": 40.730460077472,
+      "legal_city": "Newark",
+      "lon": -74.166804174279
+    },
+    {
+      "address_id": "A0372",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "314 Seventh St., Jersey City, NJ 07302",
+      "lat": 40.726486238182,
+      "legal_city": "Jersey City",
+      "lon": -74.047955557321
+    },
+    {
+      "address_id": "A0377",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "206 Bloomfield St, Hoboken, NJ 10003",
+      "lat": 40.738998730944,
+      "legal_city": "Hoboken",
+      "lon": -74.031363571985
+    },
+    {
+      "address_id": "A0381",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "521-523 Market St, Newark, NJ 07105",
+      "lat": 40.732033823888,
+      "legal_city": "Newark",
+      "lon": -74.15594387805
+    },
+    {
+      "address_id": "A0388",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "157-155 Clerk St., Jersey City, NJ 07305",
+      "lat": 40.708973882371,
+      "legal_city": "Jersey City",
+      "lon": -74.075697770314
+    },
+    {
+      "address_id": "A0389",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "923 Garden St, Hoboken, NJ 07068",
+      "lat": 40.747908908406,
+      "legal_city": "Hoboken",
+      "lon": -74.029472700113
+    },
+    {
+      "address_id": "A0390",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "70 Darcy St, Newark, NJ 07202",
+      "lat": 40.726005356196,
+      "legal_city": "Newark",
+      "lon": -74.149929644264
+    },
+    {
+      "address_id": "A0393",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "91 Jordan Ave., Jersey City, NJ 07081",
+      "lat": 40.72674257266,
+      "legal_city": "Jersey City",
+      "lon": -74.064895908212
+    },
+    {
+      "address_id": "A0394",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "45 Ravine Ave., Jersey City, NJ 07302",
+      "lat": 40.74028302667,
+      "legal_city": "Jersey City",
+      "lon": -74.049129869145
+    },
+    {
+      "address_id": "A0399",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "227 Willow Ave, Hoboken, NJ 07643",
+      "lat": 40.739690854009,
+      "legal_city": "Hoboken",
+      "lon": -74.033923758593
+    },
+    {
+      "address_id": "A0400",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "174 Mt Prospect Ave, Newark, NJ 07107",
+      "lat": 40.757731471944,
+      "legal_city": "Newark",
+      "lon": -74.17546726324
+    },
+    {
+      "address_id": "A0404",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "240 Bowers St., Jersey City, NJ 07603",
+      "lat": 40.749176716976,
+      "legal_city": "Jersey City",
+      "lon": -74.053172054328
+    },
+    {
+      "address_id": "A0410",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "319 Summit Ave., Jersey City, NJ 07306",
+      "lat": 40.726387646101,
+      "legal_city": "Jersey City",
+      "lon": -74.064026798734
+    },
+    {
+      "address_id": "A0412",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "229-231 Grafton Ave, Newark, NJ 07003",
+      "lat": 40.77821909329,
+      "legal_city": "Newark",
+      "lon": -74.167180273305
+    },
+    {
+      "address_id": "A0415",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "95 Wayne St., Jersey City, NJ 07302",
+      "lat": 40.719860194431,
+      "legal_city": "Jersey City",
+      "lon": -74.046863038788
+    },
+    {
+      "address_id": "A0416",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "882 Pavonia Ave., Jersey City, NJ 10281",
+      "lat": 40.734106488592,
+      "legal_city": "Jersey City",
+      "lon": -74.069855824873
+    },
+    {
+      "address_id": "A0418",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "221 Sip Ave., Jersey City, NJ 07009",
+      "lat": 40.731794725913,
+      "legal_city": "Jersey City",
+      "lon": -74.070139397713
+    },
+    {
+      "address_id": "A0424",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "208 Jefferson St, Hoboken, NJ 07030",
+      "lat": 40.740157173654,
+      "legal_city": "Hoboken",
+      "lon": -74.037883549718
+    },
+    {
+      "address_id": "A0428",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "312-314 Mt Prospect Ave, Newark, NJ 07109",
+      "lat": 40.762248311177,
+      "legal_city": "Newark",
+      "lon": -74.172434078437
+    },
+    {
+      "address_id": "A0435",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "310 Monroe St, Hoboken, NJ 07632",
+      "lat": 40.741775604922,
+      "legal_city": "Hoboken",
+      "lon": -74.039361820557
+    },
+    {
+      "address_id": "A0436",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "832 Willow Ave, Hoboken, NJ 07030",
+      "lat": 40.747085607112,
+      "legal_city": "Hoboken",
+      "lon": -74.031844915269
+    },
+    {
+      "address_id": "A0438",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "60-62 Cambridge Ave, Jersey City, NJ 07430",
+      "lat": 40.744834267004,
+      "legal_city": "Jersey City",
+      "lon": -74.048728066645
+    },
+    {
+      "address_id": "A0447",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "208 Clinton St, Hoboken, NJ 07030",
+      "lat": 40.73966668696,
+      "legal_city": "Hoboken",
+      "lon": -74.035067789528
+    },
+    {
+      "address_id": "A0448",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "151-153 Lafayette St, Newark, NJ 07105",
+      "lat": 40.730805854988,
+      "legal_city": "Newark",
+      "lon": -74.166461328187
+    },
+    {
+      "address_id": "A0449",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "338 Clinton Pl, Newark, NJ 08701",
+      "lat": 40.712312782686,
+      "legal_city": "Newark",
+      "lon": -74.215190276398
+    },
+    {
+      "address_id": "A0450",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "94 Neptune Ave., Jersey City, NJ 11211",
+      "lat": 40.691942000511,
+      "legal_city": "Jersey City",
+      "lon": -74.094734510649
+    },
+    {
+      "address_id": "A0455",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "78 Stevens Ave., Jersey City, NJ 07108",
+      "lat": 40.701284285212,
+      "legal_city": "Jersey City",
+      "lon": -74.087633111396
+    },
+    {
+      "address_id": "A0459",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "202 South St., Jersey City, NJ 07423",
+      "lat": 40.750737802252,
+      "legal_city": "Jersey City",
+      "lon": -74.051069939161
+    },
+    {
+      "address_id": "A0460",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "223-229 Shephard Ave, Newark, NJ 11204",
+      "lat": 40.71231825405,
+      "legal_city": "Newark",
+      "lon": -74.211485813318
+    },
+    {
+      "address_id": "A0462",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "128 St. Pauls Ave., Jersey City, NJ 11211",
+      "lat": 40.736518619808,
+      "legal_city": "Jersey City",
+      "lon": -74.05676729519
+    },
+    {
+      "address_id": "A0471",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "332-334 Garden St, Hoboken, NJ 07604",
+      "lat": 40.74072422878,
+      "legal_city": "Hoboken",
+      "lon": -74.031824704958
+    },
+    {
+      "address_id": "A0472",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "321 Willow Ave, Hoboken, NJ 07030",
+      "lat": 40.740882326316,
+      "legal_city": "Hoboken",
+      "lon": -74.033572724402
+    },
+    {
+      "address_id": "A0475",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "361 First St, Hoboken, NJ 07030",
+      "lat": 40.73824152843,
+      "legal_city": "Hoboken",
+      "lon": -74.035828506414
+    },
+    {
+      "address_id": "A0476",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "26-28 Cottage St, Newark, NJ 07840",
+      "lat": 40.728832303948,
+      "legal_city": "Newark",
+      "lon": -74.171995425732
+    },
+    {
+      "address_id": "A0482",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "101 Clifton Pl., Jersey City, NJ 10982",
+      "lat": 40.721027897402,
+      "legal_city": "Jersey City",
+      "lon": -74.06487503221
+    },
+    {
+      "address_id": "A0489",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "204 Grand St, Hoboken, NJ 06901",
+      "lat": 40.739786868515,
+      "legal_city": "Hoboken",
+      "lon": -74.036041272823
+    },
+    {
+      "address_id": "A0490",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "526 Adams St, Hoboken, NJ 07030",
+      "lat": 40.743676400471,
+      "legal_city": "Hoboken",
+      "lon": -74.035830171347
+    },
+    {
+      "address_id": "A0491",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "37 Irving St, Newark, NJ 07104",
+      "lat": 40.778727063623,
+      "legal_city": "Newark",
+      "lon": -74.158667478138
+    },
+    {
+      "address_id": "A0495",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "230 Van Horne St., Jersey City, NJ 11219",
+      "lat": 40.713022199008,
+      "legal_city": "Jersey City",
+      "lon": -74.063078920845
+    },
+    {
+      "address_id": "A0498",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": false,
+      "label": "684-686 Summer Ave, Newark, NJ 07644",
+      "lat": 40.775329535647,
+      "legal_city": "Newark",
+      "lon": -74.163418012627
+    }
+  ],
+  "affected_count": 140,
+  "change_id": "chg-T3",
+  "compare": {
+    "after": "2027-07-02",
+    "before": "2026-10-01"
+  },
+  "conflict_count": 90,
+  "created_at": "2026-10-04T03:00:39Z",
+  "expected_check": null,
+  "kind": "test",
+  "rule_ids": [
+    "NJ-ALG-01"
+  ],
+  "summary": {
+    "en": "Compared 2026-10-01 with 2027-07-02 for NJ-ALG-01 (NJ). 140 of 140 addresses change (140 addresses: not_yet_effective -> applies). 90 carry a conflict flag on 2027-07-02 (possible preemption between NJ-ALG-01 and JC-ALG-01 and HOB-ALG-01), for human review.",
+    "es": "Compared 2026-10-01 with 2027-07-02 for NJ-ALG-01 (NJ). 140 of 140 addresses change (140 addresses: not_yet_effective -> applies). 90 carry a conflict flag on 2027-07-02 (possible preemption between NJ-ALG-01 and JC-ALG-01 and HOB-ALG-01), for human review."
+  },
+  "test_id": "T3",
+  "test_type": "as_of",
+  "title": "NJ FAIR Act: enacted, not yet effective; possible preemption"
+}
