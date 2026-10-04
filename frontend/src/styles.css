@@ -1,0 +1,248 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+@import "@fontsource-variable/public-sans";
+@import "@fontsource-variable/source-serif-4";
+@import "maplibre-gl/dist/maplibre-gl.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Tenantly design system: "Survey & Highlighter".
+ * The highlighter is used ONLY as a fill for: the legal city on the map,
+ * the quoted words inside law text, and the current timeline segment.
+ */
+
+@theme inline {
+  --font-sans: "Public Sans Variable", system-ui, sans-serif;
+  --font-serif: "Source Serif 4 Variable", Georgia, serif;
+
+  --text-xs: 13px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-body: 17px;
+  --text-lg: 19px;
+  --text-xl: 23px;
+  --text-2xl: 28px;
+  --text-3xl: 34px;
+  --text-4xl: 44px;
+
+  --radius-sm: 4px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-xl: 8px;
+
+  --shadow-float: var(--float-shadow);
+
+  --color-survey: var(--survey);
+  --color-sheet: var(--sheet);
+  --color-deed: var(--deed);
+  --color-graphite: var(--graphite);
+  --color-hairline: var(--hairline);
+  --color-highlighter: var(--highlighter);
+  --color-highlighter-ink: var(--highlighter-ink);
+  --color-permit: var(--permit);
+  --color-sage: var(--sage);
+  --color-sage-tint: var(--sage-tint);
+
+  --color-applies: var(--applies);
+  --color-applies-bg: var(--applies-bg);
+  --color-applies-border: var(--applies-border);
+  --color-unknown: var(--unknown);
+  --color-unknown-bg: var(--unknown-bg);
+  --color-unknown-border: var(--unknown-border);
+  --color-superseded: var(--superseded);
+  --color-superseded-bg: var(--superseded-bg);
+  --color-superseded-border: var(--superseded-border);
+  --color-notyet: var(--notyet);
+  --color-notyet-bg: var(--notyet-bg);
+  --color-notyet-border: var(--notyet-border);
+  --color-pending: var(--pending);
+  --color-pending-bg: var(--pending-bg);
+  --color-pending-border: var(--pending-border);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+}
+
+:root {
+  --survey: oklch(0.968 0.002 165.1);
+  --sheet: oklch(1 0 0);
+  --deed: oklch(0.276 0.026 235.3);
+  --graphite: oklch(0.492 0.024 239.1);
+  --hairline: oklch(0.887 0.009 232.4);
+  --highlighter: oklch(0.873 0.14 93.5);
+  --highlighter-ink: oklch(0.276 0.026 235.3);
+  --highlighter-map: oklch(0.873 0.14 93.5 / 0.55);
+  --permit: oklch(0.432 0.159 264.7);
+  --sage: oklch(0.553 0.04 161.4);
+  --sage-tint: oklch(0.939 0.01 155.1);
+
+  --applies: oklch(0.469 0.097 162.6);
+  --applies-bg: oklch(0.947 0.02 164.6);
+  --applies-border: oklch(0.817 0.061 164.6);
+  --unknown: oklch(0.477 0.113 59.1);
+  --unknown-bg: oklch(0.957 0.032 81);
+  --unknown-border: oklch(0.837 0.085 77.3);
+  --superseded: oklch(0.464 0.021 240.4);
+  --superseded-bg: oklch(0.953 0.004 236.5);
+  --superseded-border: oklch(0.844 0.012 239.9);
+  --notyet: oklch(0.42 0.153 275.8);
+  --notyet-bg: oklch(0.935 0.022 283.1);
+  --notyet-border: oklch(0.809 0.066 281.9);
+  --pending: oklch(0.444 0.153 317);
+  --pending-bg: oklch(0.94 0.025 319.9);
+  --pending-border: oklch(0.817 0.071 318.5);
+
+  --float-shadow: 0 12px 32px -12px oklch(0.276 0.026 235.3 / 0.22);
+
+  --background: var(--survey);
+  --foreground: var(--deed);
+  --card: var(--sheet);
+  --card-foreground: var(--deed);
+  --popover: var(--sheet);
+  --popover-foreground: var(--deed);
+  --primary: var(--deed);
+  --primary-foreground: oklch(0.985 0.002 165);
+  --secondary: oklch(0.953 0.004 236.5);
+  --secondary-foreground: var(--deed);
+  --muted: oklch(0.953 0.004 236.5);
+  --muted-foreground: var(--graphite);
+  --accent: oklch(0.953 0.004 236.5);
+  --accent-foreground: var(--deed);
+  --destructive: oklch(0.55 0.19 27);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: var(--hairline);
+  --input: var(--hairline);
+  --ring: var(--permit);
+}
+
+.dark {
+  --survey: oklch(0.203 0.016 236);
+  --sheet: oklch(0.245 0.02 236.6);
+  --deed: oklch(0.943 0.006 223.5);
+  --graphite: oklch(0.747 0.018 236.8);
+  --hairline: oklch(0.336 0.026 239.6);
+  --highlighter-map: oklch(0.873 0.14 93.5 / 0.3);
+  --highlighter-ink: oklch(0.276 0.026 235.3);
+  --permit: oklch(0.72 0.12 262);
+  --sage: oklch(0.72 0.05 161);
+  --sage-tint: oklch(0.28 0.02 165);
+
+  --applies: oklch(0.803 0.098 164.2);
+  --applies-bg: oklch(0.299 0.045 169.7);
+  --applies-border: oklch(0.45 0.06 166);
+  --unknown: oklch(0.83 0.11 75);
+  --unknown-bg: oklch(0.31 0.05 65);
+  --unknown-border: oklch(0.47 0.08 70);
+  --superseded: oklch(0.8 0.015 236);
+  --superseded-bg: oklch(0.3 0.015 236);
+  --superseded-border: oklch(0.45 0.02 236);
+  --notyet: oklch(0.82 0.08 280);
+  --notyet-bg: oklch(0.3 0.06 278);
+  --notyet-border: oklch(0.45 0.09 278);
+  --pending: oklch(0.82 0.09 318);
+  --pending-bg: oklch(0.3 0.06 318);
+  --pending-border: oklch(0.46 0.09 318);
+
+  --float-shadow: 0 12px 32px -12px oklch(0 0 0 / 0.6);
+
+  --primary: var(--deed);
+  --primary-foreground: oklch(0.203 0.016 236);
+  --secondary: oklch(0.29 0.02 236);
+  --muted: oklch(0.29 0.02 236);
+  --accent: oklch(0.29 0.02 236);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 600;
+    line-height: 1.18;
+    letter-spacing: -0.01em;
+  }
+  :focus-visible {
+    outline: 3px solid var(--permit);
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* Law text: the law speaks in serif. */
+@utility law-quote {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  line-height: 1.65;
+  max-width: 72ch;
+}
+
+/* The highlighter: fill only, never text color. */
+@utility mark-highlight {
+  background-color: var(--highlighter);
+  color: var(--highlighter-ink);
+  padding: 0.05em 0.15em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+@utility prose-width {
+  max-width: 68ch;
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Floor-plan inspired hairline grid used sparingly as a background detail. */
+@utility plan-grid {
+  background-image:
+    linear-gradient(var(--hairline) 1px, transparent 1px),
+    linear-gradient(90deg, var(--hairline) 1px, transparent 1px);
+  background-size: 48px 48px;
+  background-position: -1px -1px;
+}
+
+@utility ledger-rail {
+  border-left-width: 4px;
+  border-left-style: solid;
+}

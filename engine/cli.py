@@ -70,6 +70,32 @@ def resolve() -> None:
 
 
 @app.command()
+def compile(
+    explain: bool = typer.Option(False, "--explain", help="Plan and estimate cost; spend nothing"),
+    only: str = typer.Option("", help="Comma-separated doc ids, for a partial run"),
+) -> None:
+    """Run the Law Compiler DAG -> artifacts/rules.compiled.json."""
+    import logging
+
+    from engine.compile import dag
+    from engine.compile.llm import LLM
+
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(name)s %(message)s")
+    docs = [d for d in only.split(",") if d] or None
+    llm = LLM()
+    if explain:
+        typer.echo(dag.dump_plan(dag.explain_plan(llm, docs)))
+        return
+    rules, relations, findings, oqs, extra = dag.compile_all(llm, docs)
+    rs = dag.write_artifacts(rules, relations, findings, oqs, extra)
+    typer.echo(
+        f"compiled {len(rs.rules)} rules, {len(rs.relations)} relations, {len(rs.findings)} findings, "
+        f"{len(rs.open_questions)} open questions; data_version {rs.data_version}; "
+        f"spent ${llm.ledger.total:.3f} of ${llm.ledger.cap:.2f}"
+    )
+
+
+@app.command()
 def serve(port: int = 8000, reload: bool = False) -> None:
     """Run the API locally."""
     import uvicorn

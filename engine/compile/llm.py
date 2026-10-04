@@ -149,6 +149,8 @@ class LLM:
         self.audit_path = audit_path
         self._sem = threading.Semaphore(concurrency)
         self._audit_lock = threading.Lock()
+        self.dry = False  # --explain: record what would run, spend nothing
+        self.plan: list[dict] = []
 
     @property
     def client(self):
@@ -209,6 +211,10 @@ class LLM:
 
         pin, pout = PRICES[model]
         est = (estimate_tokens(system + user) * pin + 4000 * pout) / 1_000_000
+        if self.dry:
+            self.plan.append({"stage": stage, "model": model, "ref": ref, "est_usd": est,
+                              "in_tokens": estimate_tokens(system + user)})  # fmt: skip
+            return Result({}, False, 0.0, key)
         self.ledger.check(est)
 
         instruction = (
@@ -231,7 +237,7 @@ class LLM:
         with self._sem:
             for attempt in range(1, 4):
                 t0 = time.monotonic()
-                resp = self.client.messages.create(**kwargs)
+                resp = self._send(kwargs)
                 usage = _usage_dict(resp)
                 for k, v in usage.items():
                     usage_total[k] = usage_total.get(k, 0) + (v or 0)
@@ -256,6 +262,17 @@ class LLM:
         self._audit({**base, "cache_hit": False, "output_sha": sha(canonical(tool_input)),
                      "cost_usd": round(total_cost, 6), "verifier": None})  # fmt: skip
         return Result(tool_input, False, total_cost, key)
+
+
+def _send_impl(self, kwargs: dict):
+    """Large outputs must stream (the SDK refuses long non-streaming requests)."""
+    if kwargs["max_tokens"] > 16000:
+        with self.client.messages.stream(**kwargs) as stream:
+            return stream.get_final_message()
+    return self.client.messages.create(**kwargs)
+
+
+LLM._send = _send_impl  # type: ignore[attr-defined]
 
 
 def _usage_dict(resp: Any) -> dict:

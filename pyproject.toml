@@ -13,6 +13,8 @@ dependencies = [
   "python-dateutil>=2.9",
   "shapely>=2.1.2",
   "anthropic>=1.11.0",
+  "pypdf>=6.19.0",
+  "textstat>=0.7.13",
 ]
 
 [dependency-groups]
@@ -38,6 +40,8 @@ select = ["E", "F", "I", "UP", "B"]
 "engine/rules/render.py" = ["E501"]
 "engine/rules/engine.py" = ["E501"]
 "engine/compile/*.py" = ["E501"]
+"engine/cli.py" = ["E501"]
+"tests/*.py" = ["E501"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

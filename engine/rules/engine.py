@@ -143,6 +143,9 @@ def resolve_rule(
             caveats = list(ex.unknown_descriptions)
     notes: list[str] = []
     uncertain = False
+    if rule.citation.tier == "C1" and base == APPLIES:
+        base = UNKNOWN  # one supplied signal is not enough to say a law applies
+        notes.append("single_signal")
     lo, hi = _eff_bounds(rule)
     if lo is not None and d < lo:
         return Outcome(
