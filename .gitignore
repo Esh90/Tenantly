@@ -10,6 +10,9 @@ __pycache__/
 artifacts/cache/
 artifacts/compile/explain/
 artifacts/compile/adjudicate/
+artifacts/compile/extract_a/
+artifacts/compile/extract_b/
+artifacts/compile/judge/
 build/
 artifacts/web/
 artifacts/watch/*.sqlite3*
