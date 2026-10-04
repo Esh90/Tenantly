@@ -263,3 +263,14 @@ EMIT_TRANSLATION = {
         "required": ["title_es", "detail_es"],
     },
 }
+
+
+EMIT_FAITHFUL = {
+    "name": "emit_faithful",
+    "description": "Is the predicate a faithful encoding of the legal condition?",
+    "input_schema": {
+        "type": "object",
+        "properties": {"faithful": {"type": "boolean"}, "reason": STR},
+        "required": ["faithful", "reason"],
+    },
+}

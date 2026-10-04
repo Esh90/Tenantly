@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.00169,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": true,
+    "reason": "The predicate \"units <= 4\" faithfully encodes the legal condition that properties with 1-4 units are exempt from rent control. The quoted text states \"All 1-4 Unit Properties are exempt,\" which is accurately captured by checking if the number of units is less than or equal to 4. The predicate uses only the available building fact 'units' and correctly expresses the exemption condition."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 900,
+    "output_tokens": 158
+  }
+}

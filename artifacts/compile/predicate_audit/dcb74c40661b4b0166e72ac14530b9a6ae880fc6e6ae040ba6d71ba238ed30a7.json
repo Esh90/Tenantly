@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001762,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The predicate only checks property_type == \"other\", but the legal condition concerns rent increase limitations based on CPI (Consumer Price Index) and specific percentage caps (3% per year or 80% of CPI change). The predicate does not encode any of these substantive rent increase limitations. Additionally, the condition involves actions by parties (calculating CPI, setting rent) and economic data (CPI changes) that cannot be expressed using the available building facts."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 937,
+    "output_tokens": 165
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001831,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The legal condition describes the minimum debt threshold for nonpayment eviction (rent owed must equal or exceed one month of Fair Market Rent as determined by HUD). The predicate checks whether the tenant shares a kitchen/bath with the owner, which is completely unrelated to the debt threshold requirement. The predicate does not capture the actual legal condition about the amount of rental debt owed or FMR valuation, and it states something the quoted text does not address."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 991,
+    "output_tokens": 168
+  }
+}

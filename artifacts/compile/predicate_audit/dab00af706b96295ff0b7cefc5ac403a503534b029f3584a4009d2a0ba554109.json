@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001951,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The quote states a general rule that \"an owner shall not terminate a tenancy without just cause\" after 30 days. The predicate only checks if the property is subsidized_or_affordable, but the quote does not define an exemption based on affordability status. Rather, the quote establishes an affirmative obligation that applies to tenancies, and the context suggests this exemption applies to deed-restricted affordable housing. However, the predicate as written merely checks for a property attribute without capturing the actual legal condition about the requirement to provide just cause for eviction. The predicate should encode whether just cause exists or is required, not merely whether the property is affordable."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 906,
+    "output_tokens": 209
+  }
+}

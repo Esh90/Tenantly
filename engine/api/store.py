@@ -547,6 +547,17 @@ class Store(FixtureStore):
             score = {k: score[k] for k in ("components", "key", "raw_report")}
         checks = _read(EVAL / "changes_check.json", [])
         lat = _read(EVAL / "latency.json")
+        if lat:
+            lat = {
+                k: lat.get(k)
+                for k in (
+                    "measured_at",
+                    "lookup_p50_ms",
+                    "lookup_p95_ms",
+                    "custom_p50_ms",
+                    "llm_baseline_ms",
+                )
+            }
         plain = _read(EVAL / "reading_level.json", {})
         return {
             "data_version": self.data_version, "compiled_at": self.rs.compiled_at,

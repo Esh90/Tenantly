@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001985,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The quoted legal condition is about the requirement for an owner to have just cause before terminating a tenancy after 30 days. The predicate only checks whether property_type is \"other\", which does not capture the core legal requirement. The predicate also does not encode the 30-day threshold or the requirement for written notice with stated cause. Additionally, the exemption lists specific property types (hotels, hospitals, dormitories, etc.) that should be excluded, but the predicate does not properly implement these exclusions or the affirmative requirement about just cause itself. The predicate states a condition about property type classification but fails to encode the substantive legal obligation regarding just cause termination."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 920,
+    "output_tokens": 213
+  }
+}

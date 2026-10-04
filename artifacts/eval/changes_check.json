@@ -16,11 +16,11 @@
     "test_id": "T2"
   },
   {
-    "affected": 139,
-    "conflicts": 89,
+    "affected": 140,
+    "conflicts": 90,
     "expected": 140,
     "expected_conflicts": 90,
-    "passed": false,
+    "passed": true,
     "test_id": "T3"
   },
   {

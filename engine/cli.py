@@ -143,6 +143,15 @@ def score() -> None:
     typer.echo(importlib.import_module("eval.selfscore").main())
 
 
+@app.command("method-note")
+def method_note() -> None:
+    """Write METHOD_NOTE.md and fill the README results tables from artifacts/eval."""
+    from engine.export.method_note import write
+
+    path, filled = write()
+    typer.echo(f"wrote {path}; filled {filled} README cells")
+
+
 @app.command()
 def serve(port: int = 8000, reload: bool = False) -> None:
     """Run the API locally."""

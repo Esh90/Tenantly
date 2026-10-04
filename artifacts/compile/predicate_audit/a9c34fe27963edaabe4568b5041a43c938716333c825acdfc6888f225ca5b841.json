@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001784,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The legal condition specifies \"Most units in multifamily properties built before 1980\" and describes this as \"Fully Covered Yes.\" The predicate only checks if owner_occupied == true, which addresses the \"golden duplex\" exemption but fails to encode the core coverage condition about year_built < 1980, property_type = multifamily, and the general applicability to most units. The predicate is incomplete and does not capture the essential temporal and property-type requirements from the text."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 904,
+    "output_tokens": 176
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001872,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The legal text defines an exemption for government entities that set or limit rents through affordability controls—it concerns WHO (a government entity) is acting. The predicate only checks whether a building is subsidized_or_affordable, which is a property characteristic, not an identification of the actor or the actor's legal status. The predicate cannot distinguish between rents limited by a government entity versus rents that are low for other reasons. The condition requires checking who is setting/limiting rents (a government agency), but the available facts cannot express agency or intentional action by a government entity."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 917,
+    "output_tokens": 191
+  }
+}

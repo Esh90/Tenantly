@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001944,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The predicate only checks if the owner is a natural person and has no more than 4 units, but the exemption condition has two additional requirements: (1) \"owning no more than two properties\" (the predicate only checks landlord_unit_count, not landlord_property_count), and (2) \"except for service members\" (a tenant characteristic that cannot be encoded in the available facts). The predicate is incomplete and does not capture the full exemption condition."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1084,
+    "output_tokens": 172
+  }
+}

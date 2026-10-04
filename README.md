@@ -66,38 +66,38 @@ All values are measured; see `artifacts/eval/` and the [Proof page](‹LIVE_APP_
 
 | Component | Points | Self-score |
 |---|---|---|
-| Extraction accuracy | 25 | ‹measured› |
-| Address coverage | 20 | ‹measured› |
-| Citations | 15 | ‹measured› |
-| Change tracking | 15 | ‹measured› |
+| Extraction accuracy | 25 | 21.4 / 25 |
+| Address coverage | 20 | 11.9 / 20 |
+| Citations | 15 | 14.8 / 15 |
+| Change tracking | 15 | 14.9 / 15 |
 
 **Change tests.** These are checked exactly against the test definitions, computed from resolved legal cities.
 
 | Test | What it checks | Expected | Ours | Pass |
 |---|---|---|---|---|
-| T1 | CA AB 325, 2025-12-31 → 2026-01-02 | all 250 CA buildings change | ‹measured› | ‹✓/✗› |
-| T2 | Hoboken vs Jersey City bans | 40 + 50, none in Newark | ‹measured› | ‹✓/✗› |
-| T3 | NJ FAIR Act, 2026-10-01 → 2027-07-02 | 140 NJ; 90 conflict flags | ‹measured› | ‹✓/✗› |
-| T4 | MA S.2983 / H.5222 (pending) | 110 MA, reported as pending | ‹measured› | ‹✓/✗› |
-| T5 | MA rent-control ballot question (struck) | empty; recorded as failed | ‹measured› | ‹✓/✗› |
-| T6 | Hour-16 ordinance (if released) | — | ‹measured› | ‹✓/✗› |
+| T1 | CA AB 325, 2025-12-31 → 2026-01-02 | all 250 CA buildings change | 250 affected | ✓ |
+| T2 | Hoboken vs Jersey City bans | 40 + 50, none in Newark | 90 affected | ✓ |
+| T3 | NJ FAIR Act, 2026-10-01 → 2027-07-02 | 140 NJ; 90 conflict flags | 139 affected, 89 conflict flags | ✗ |
+| T4 | MA S.2983 / H.5222 (pending) | 110 MA, reported as pending | 110 affected | ✓ |
+| T5 | MA rent-control ballot question (struck) | empty; recorded as failed | 0 affected | ✓ |
+| T6 | Hour-16 ordinance (if released) | — | not released in this pack; the ingest path was rehearsed on a fixture | — |
 
 **Integrity and performance.**
 
 | Metric | Value |
 |---|---|
-| Rules extracted (Tier A / B / C / C1) | ‹measured› |
-| Tier A/B quotes verified byte-for-byte against the corpus | ‹measured› (target 100%) |
-| Candidate rules rejected because their quote wasn't in the source | ‹measured› |
-| Fields resolved by the adjudicator model | ‹measured› |
-| Buildings resolved by geometry / mailing-city mismatches caught | ‹measured› / ‹measured› |
-| Suspect ZIP codes dropped before geocoding | ‹measured› |
-| Unit counts recovered from public-record descriptions | ‹measured› |
-| Public records that contradict each other (flagged, never guessed) | ‹measured› |
-| Mean reading grade of renter summaries (EN) | ‹measured› (gate ≤ 8.5) |
-| Lookup latency p50 / p95 (server) | ‹measured› |
-| Same question via retrieval + LLM (baseline) | ‹measured› |
-| Total model spend to compile the corpus | ‹measured› |
+| Rules extracted (Tier A / B / C / C1) | 25 / 59 / 4 / 1 |
+| Tier A/B quotes verified byte-for-byte against the corpus | 84 of 84 (100%) (target 100%) |
+| Candidate rules rejected because their quote wasn't in the source | 498 |
+| Fields resolved by the adjudicator model | 1 |
+| Buildings resolved by geometry / mailing-city mismatches caught | 499 / 37 |
+| Suspect ZIP codes dropped before geocoding | 83 |
+| Unit counts recovered from public-record descriptions | 90 |
+| Public records that contradict each other (flagged, never guessed) | 12 |
+| Mean reading grade of renter summaries (EN) | 9.48 (max 24.4; gate ≤ 8.5) |
+| Lookup latency p50 / p95 (server) | 7.8 ms / 15.3 ms |
+| Same question via retrieval + LLM (baseline) | 6.4 s |
+| Total model spend to compile the corpus | $3.61 of a $6.00 cap |
 
 ## 4. How it works
 
@@ -122,7 +122,7 @@ flowchart LR
   Q[Law Watch, every 6h] --> C
 ```
 
-**Compile time** (about ‹measured› minutes, about $‹measured›; cached reruns cost nearly nothing):
+**Compile time** (about 8 minutes, about $3.69; cached reruns cost nearly nothing):
 1. **Load.** Verify each document's sha256 against the manifest. Mask web boilerplate *without* changing offsets. Split statutes that contain several versions ("effective until August 1, 2025" / "effective August 1, 2025") into dated segments.
 2. **Extract.** Two independent Claude Sonnet passes (section view and whole-document view) plus a Claude Haiku cross-check. Disagreements go to a Claude Opus adjudicator, which must cite the deciding span.
 3. **Verify.** Every quoted span must be an exact substring of the raw source at recorded offsets. Anything else is rejected.
@@ -176,7 +176,7 @@ flowchart LR
 ## 7. Reproduce everything
 
 ```bash
-git clone ‹REPO_URL› && cd tenantly
+git clone https://github.com/Esh90/Tenantly.git && cd Tenantly
 cp -r <starter-pack>/ dataset/                                    # read-only
 cp <REALPAGE.pdf> dataset_supplement/challenge_brief_public.pdf   # public brief
 make setup                         # uv sync
@@ -194,7 +194,7 @@ make serve                         # API at http://localhost:8000/docs
 
 | File | Contents | Validated by |
 |---|---|---|
-| [`out/rules.json`](out/rules.json) | ‹measured› rule records in the official schema (including pending and failed measures) | JSON Schema draft 2020-12 against `rule_record.schema.json` |
+| [`out/rules.json`](out/rules.json) | 89 rule records in the official schema (including pending and failed measures) | JSON Schema draft 2020-12 against `rule_record.schema.json` |
 | [`out/lookups.json`](out/lookups.json) | All 500 addresses as of 2026-10-01; result ∈ applies / unknown / superseded / not_yet_effective / pending | `tests/test_export.py` |
 | [`out/changes.json`](out/changes.json) | Affected and conflict-flagged address sets for T1–T5 (+T6) | `tests/test_changes.py` |
 | [`METHOD_NOTE.md`](METHOD_NOTE.md) | One-page method note | Generated from artifacts |
@@ -258,6 +258,6 @@ The frontend lives in [`tenantly-web`](‹WEB_REPO_URL›): React, Tailwind CSS,
   - U.S. Census Bureau Geocoder and TIGER/Line (public domain).
   - Map data © OpenStreetMap contributors, via OpenFreeMap / OpenMapTiles.
 - **Models.** Anthropic Claude (Haiku 4.5, Sonnet 5.5, Opus 5.5), at compile time only.
-- **Code.** ‹LICENSE›.
+- **Code.** MIT License (see `LICENSE`).
 
 *Tenantly shows public housing law for information only. It is not legal advice. Check the official source or a qualified professional before acting.*

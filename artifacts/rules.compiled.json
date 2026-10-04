@@ -1,6 +1,6 @@
 {
-  "compiled_at": "2026-10-04T02:46:52Z",
-  "data_version": "472e8345327e",
+  "compiled_at": "2026-10-04T03:00:39Z",
+  "data_version": "77302100c574",
   "findings": [
     {
       "category": "rent_increase_limits",
@@ -1760,9 +1760,7 @@
           "citation": null,
           "description": "Residences in hospitals, skilled nursing or health facilities, or non-profit short-term substance abuse treatment facilities.",
           "predicate": {
-            "fact": "property_type",
-            "op": "==",
-            "value": "other"
+            "const": "unknown"
           },
           "quote": null
         }
@@ -1829,7 +1827,9 @@
         "adjudicated_fields": [],
         "conf_delta": 0.05,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "exemption downgraded to unknown (predicate not faithful): Residences in hospitals, skilled nursing or health facilities, or non-profit sho: The legal condition states that ALL LANDLORDS planning to end a tenancy must provide notice. The predicate checks if pro"
+        ],
         "pass": "A",
         "passes": [
           "A",
@@ -2751,9 +2751,7 @@
           "citation": null,
           "description": "Exemption does not apply if landlord did not reside at the property at the start of the tenancy",
           "predicate": {
-            "fact": "shares_kitchen_bath_with_owner",
-            "op": "==",
-            "value": false
+            "const": "unknown"
           },
           "quote": null
         }
@@ -2809,7 +2807,9 @@
         "adjudicated_fields": [],
         "conf_delta": 0.0,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "exemption downgraded to unknown (predicate not faithful): Exemption does not apply if landlord did not reside at the property at the start: The legal condition describes the minimum debt threshold for nonpayment eviction (rent owed must equal or exceed one mon"
+        ],
         "pass": "A",
         "passes": [
           "A"
@@ -2881,9 +2881,7 @@
           "citation": null,
           "description": "Owner shares kitchen or bath with tenant",
           "predicate": {
-            "fact": "shares_kitchen_bath_with_owner",
-            "op": "==",
-            "value": true
+            "const": "unknown"
           },
           "quote": null
         }
@@ -2929,7 +2927,9 @@
         "adjudicated_fields": [],
         "conf_delta": -0.1,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "exemption downgraded to unknown (predicate not faithful): Owner shares kitchen or bath with tenant: The predicate states that a unit IS covered (or qualifies for an exemption) when shares_kitchen_bath_with_owner == true,"
+        ],
         "pass": "B",
         "passes": [
           "B"
@@ -3446,9 +3446,7 @@
           "citation": null,
           "description": "Owner-occupied golden duplex",
           "predicate": {
-            "fact": "owner_occupied",
-            "op": "==",
-            "value": true
+            "const": "unknown"
           },
           "quote": null
         },
@@ -3456,9 +3454,7 @@
           "citation": null,
           "description": "Owner shares kitchen or bath with tenant",
           "predicate": {
-            "fact": "shares_kitchen_bath_with_owner",
-            "op": "==",
-            "value": true
+            "const": "unknown"
           },
           "quote": null
         }
@@ -3488,7 +3484,10 @@
         "adjudicated_fields": [],
         "conf_delta": -0.1,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "exemption downgraded to unknown (predicate not faithful): Owner-occupied golden duplex: The legal condition specifies \"Most units in multifamily properties built before 1980\" and describes this as \"Fully Cove",
+          "exemption downgraded to unknown (predicate not faithful): Owner shares kitchen or bath with tenant: The legal text states \"Owner shares kitchen or bath with tenant\" is an EXEMPTION (meaning units where this is true are N"
+        ],
         "pass": "B",
         "passes": [
           "B"
@@ -3547,18 +3546,7 @@
           "citation": null,
           "description": "Owner-occupied properties of 1-3 units where an owner of record resides in one unit as primary residence",
           "predicate": {
-            "all": [
-              {
-                "fact": "owner_occupied",
-                "op": "==",
-                "value": true
-              },
-              {
-                "fact": "units",
-                "op": "<=",
-                "value": 3
-              }
-            ]
+            "const": "unknown"
           },
           "quote": "Owner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence"
         },
@@ -3566,7 +3554,7 @@
           "citation": null,
           "description": "Lifetime sex offenders; limited Section 8/public housing exemptions; owner move-back units; existing tenants subletting or adding roommates",
           "predicate": {
-            "const": false
+            "const": "unknown"
           },
           "quote": "Lifetime sex offenders"
         }
@@ -3606,7 +3594,10 @@
         "adjudicated_fields": [],
         "conf_delta": 0.0,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "exemption downgraded to unknown (predicate not faithful): Owner-occupied properties of 1-3 units where an owner of record resides in one u: The predicate checks that the property is owner-occupied and has 1-3 units, but it does not verify that \"an owner of rec",
+          "exemption downgraded to unknown (predicate not faithful): Lifetime sex offenders; limited Section 8/public housing exemptions; owner move-: The predicate {\"const\": false} cannot faithfully encode the legal condition \"Lifetime sex offenders\" because the conditi"
+        ],
         "pass": "A",
         "passes": [
           "A"
@@ -3919,32 +3910,7 @@
           "citation": null,
           "description": "Landlords owning only two rental properties with no more than four residential units total, where ownership is held by a natural person, family trust, or LLC with all natural person members",
           "predicate": {
-            "all": [
-              {
-                "fact": "landlord_property_count",
-                "op": "==",
-                "value": 2
-              },
-              {
-                "fact": "landlord_unit_count",
-                "op": "<=",
-                "value": 4
-              },
-              {
-                "any": [
-                  {
-                    "fact": "owner_is_natural_person",
-                    "op": "==",
-                    "value": true
-                  },
-                  {
-                    "fact": "owner_is_natural_person",
-                    "op": "==",
-                    "value": false
-                  }
-                ]
-              }
-            ]
+            "const": "unknown"
           },
           "quote": "landlords who own only two rental properties with no more than four residential units total can charge up to two months' rent for furnished and unfurnished units if ownership is held by a natural person, family trust, or limited liability company (LLC) where all members are natural persons"
         }
@@ -3984,7 +3950,9 @@
         "adjudicated_fields": [],
         "conf_delta": -0.1,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "exemption downgraded to unknown (predicate not faithful): Landlords owning only two rental properties with no more than four residential u: The predicate's third condition uses `{\"any\": [{\"fact\": \"owner_is_natural_person\", \"op\": \"==\", \"value\": true}, {\"fact\": "
+        ],
         "pass": "B",
         "passes": [
           "B"
@@ -4052,18 +4020,7 @@
           "citation": null,
           "description": "Small landlords (natural person or all-natural-person LLC, owning no more than two properties with no more than four units) may charge up to two months' rent, except for service members.",
           "predicate": {
-            "all": [
-              {
-                "fact": "owner_is_natural_person",
-                "op": "==",
-                "value": true
-              },
-              {
-                "fact": "landlord_unit_count",
-                "op": "<=",
-                "value": 4
-              }
-            ]
+            "const": "unknown"
           },
           "quote": null
         },
@@ -4071,18 +4028,7 @@
           "citation": null,
           "description": "Landlords owning only two rental properties with no more than four units total, owned by a natural person, family trust, or all-natural-person LLC, may charge up to two months' rent.",
           "predicate": {
-            "all": [
-              {
-                "fact": "landlord_property_count",
-                "op": "<=",
-                "value": 2
-              },
-              {
-                "fact": "landlord_unit_count",
-                "op": "<=",
-                "value": 4
-              }
-            ]
+            "const": "unknown"
           },
           "quote": "Starting July 1, 2024, landlords who own only two rental properties with no more than four residential units total can charge up to two months' rent for furnished and unfurnished units if ownership is held by a natural person, family trust, or limited liability company (LLC) where all members are natural persons"
         }
@@ -4270,7 +4216,10 @@
         "adjudicated_fields": [],
         "conf_delta": 0.05,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "exemption downgraded to unknown (predicate not faithful): Small landlords (natural person or all-natural-person LLC, owning no more than t: The predicate only checks if the owner is a natural person and has no more than 4 units, but the exemption condition has",
+          "exemption downgraded to unknown (predicate not faithful): Landlords owning only two rental properties with no more than four units total, : The predicate is incomplete. The legal condition requires that ownership be held by \"a natural person, family trust, or "
+        ],
         "pass": "A",
         "passes": [
           "A",
@@ -4748,9 +4697,7 @@
           "citation": null,
           "description": "Affordable/subsidized housing",
           "predicate": {
-            "fact": "subsidized_or_affordable",
-            "op": "==",
-            "value": true
+            "const": "unknown"
           },
           "quote": null
         },
@@ -4758,18 +4705,7 @@
           "citation": null,
           "description": "Separately alienable property with non-corporate owner and notice",
           "predicate": {
-            "all": [
-              {
-                "fact": "unit_separately_alienable",
-                "op": "==",
-                "value": true
-              },
-              {
-                "fact": "owner_is_natural_person",
-                "op": "==",
-                "value": true
-              }
-            ]
+            "const": "unknown"
           },
           "quote": null
         }
@@ -4891,7 +4827,10 @@
         "adjudicated_fields": [],
         "conf_delta": -0.1,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "exemption downgraded to unknown (predicate not faithful): Affordable/subsidized housing: The legal text states that relocation assistance or rent waiver requirements apply to a tenancy \"for which just cause is",
+          "exemption downgraded to unknown (predicate not faithful): Separately alienable property with non-corporate owner and notice: The quote describes obligations triggered by \"a termination notice based on a no-fault just cause\" and applies to \"a ten"
+        ],
         "pass": "B",
         "passes": [
           "B"
@@ -4979,18 +4918,7 @@
           "citation": null,
           "description": "Separately alienable property whose owner is not a REIT, corporation or LLC with corporate member, with notice",
           "predicate": {
-            "all": [
-              {
-                "fact": "unit_separately_alienable",
-                "op": "==",
-                "value": true
-              },
-              {
-                "fact": "owner_is_natural_person",
-                "op": "==",
-                "value": true
-              }
-            ]
+            "const": "unknown"
           },
           "quote": null
         },
@@ -4998,23 +4926,7 @@
           "citation": null,
           "description": "Duplex where owner occupies one unit",
           "predicate": {
-            "all": [
-              {
-                "fact": "property_type",
-                "op": "==",
-                "value": "multifamily_2_4"
-              },
-              {
-                "fact": "units",
-                "op": "==",
-                "value": 2
-              },
-              {
-                "fact": "owner_occupied",
-                "op": "==",
-                "value": true
-              }
-            ]
+            "const": "unknown"
           },
           "quote": null
         }
@@ -5056,7 +4968,10 @@
         ],
         "conf_delta": -0.15,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "exemption downgraded to unknown (predicate not faithful): Separately alienable property whose owner is not a REIT, corporation or LLC with: The predicate only captures two conditions from the exemption (separately alienable property and natural person owner), ",
+          "exemption downgraded to unknown (predicate not faithful): Duplex where owner occupies one unit: The predicate attempts to encode an exemption (duplex where owner occupies one unit) from a rent cap rule, but the quote"
+        ],
         "pass": "A",
         "passes": [
           "A",
@@ -5131,9 +5046,7 @@
           "citation": null,
           "description": "Owner-occupied home renting to one additional person may exclude applicants on protected characteristics (not specific to criminal history).",
           "predicate": {
-            "fact": "owner_occupied",
-            "op": "==",
-            "value": true
+            "const": "unknown"
           },
           "quote": null
         }
@@ -5209,7 +5122,9 @@
         "adjudicated_fields": [],
         "conf_delta": -0.1,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "exemption downgraded to unknown (predicate not faithful): Owner-occupied home renting to one additional person may exclude applicants on p: The quoted text concerns appraisal discrimination performed by appraisers and other entities whose business includes per"
+        ],
         "pass": "B",
         "passes": [
           "B"
@@ -5359,18 +5274,7 @@
           "citation": null,
           "description": "2-family dwellings where the owner lives there",
           "predicate": {
-            "all": [
-              {
-                "fact": "property_type",
-                "op": "==",
-                "value": "multifamily_2_4"
-              },
-              {
-                "fact": "owner_occupied",
-                "op": "==",
-                "value": true
-              }
-            ]
+            "const": "unknown"
           },
           "quote": null
         }
@@ -5410,7 +5314,9 @@
         "adjudicated_fields": [],
         "conf_delta": 0.0,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "exemption downgraded to unknown (predicate not faithful): 2-family dwellings where the owner lives there: The quote describes a legal condition about how landlords *may use* selection standards (reasonableness and uniform appl"
+        ],
         "pass": "A",
         "passes": [
           "A"
@@ -6785,9 +6691,7 @@
           "citation": null,
           "description": "Condominiums and townhomes: rent not regulated for tenancies commencing after December 31, 1995",
           "predicate": {
-            "fact": "property_type",
-            "op": "==",
-            "value": "condo"
+            "const": "unknown"
           },
           "quote": null
         }
@@ -6829,7 +6733,9 @@
         "adjudicated_fields": [],
         "conf_delta": 0.0,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "exemption downgraded to unknown (predicate not faithful): Condominiums and townhomes: rent not regulated for tenancies commencing after De: The quote describes when rent may be increased (once every 12 months by an allowable percentage), which is about the all"
+        ],
         "pass": "A",
         "passes": [
           "A"
@@ -7280,9 +7186,7 @@
           "citation": null,
           "description": "Vacation or recreational leases of 100 days or less",
           "predicate": {
-            "fact": "property_type",
-            "op": "==",
-            "value": "other"
+            "const": "unknown"
           },
           "quote": "The provisions of this section shall not apply to any lease, rental, occupancy or tenancy of one hundred days or less in duration which lease or rental is for a vacation or recreational purpose."
         }
@@ -7356,7 +7260,9 @@
         "adjudicated_fields": [],
         "conf_delta": -0.1,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "exemption downgraded to unknown (predicate not faithful): Vacation or recreational leases of 100 days or less: The legal condition exempts leases of 100 days or less that are for vacation or recreational purposes. This concerns the"
+        ],
         "pass": "B",
         "passes": [
           "B"
@@ -7887,9 +7793,7 @@
           "citation": null,
           "description": "Government entity setting or limiting rents through affordability controls",
           "predicate": {
-            "fact": "subsidized_or_affordable",
-            "op": "==",
-            "value": true
+            "const": "unknown"
           },
           "quote": "“Coordinator” shall not include a government entity that sets or limits rents\nor sale prices of residential property through affordability controls in\naccordance with law."
         }
@@ -7937,7 +7841,9 @@
         "adjudicated_fields": [],
         "conf_delta": 0.0,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "exemption downgraded to unknown (predicate not faithful): Government entity setting or limiting rents through affordability controls: The legal text defines an exemption for government entities that set or limit rents through affordability controls—it co"
+        ],
         "pass": "A",
         "passes": [
           "A"
@@ -8000,11 +7906,7 @@
           "citation": null,
           "description": "Seasonal use or rental means use or rental for a term of not more than 125 consecutive days for residential purposes by a person having a permanent place of residence elsewhere",
           "predicate": {
-            "not": {
-              "fact": "unit_separately_alienable",
-              "op": "==",
-              "value": true
-            }
+            "const": "unknown"
           },
           "quote": null
         }
@@ -8034,7 +7936,9 @@
         "adjudicated_fields": [],
         "conf_delta": -0.1,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "exemption downgraded to unknown (predicate not faithful): Seasonal use or rental means use or rental for a term of not more than 125 conse: The legal condition concerns the tenant's right to receive interest or earnings paid on a security deposit and the timin"
+        ],
         "pass": "B",
         "passes": [
           "B"
@@ -8307,12 +8211,7 @@
           "citation": null,
           "description": "Dwelling unit in a one-family or two-family dwelling offered for rent",
           "predicate": {
-            "fact": "property_type",
-            "op": "in",
-            "value": [
-              "single_family",
-              "multifamily_2_4"
-            ]
+            "const": "unknown"
           },
           "quote": "(1) a dwelling unit\nlocated in a one-family or two-family dwelling that is offered for rent; or"
         },
@@ -8320,7 +8219,7 @@
           "citation": null,
           "description": "Licensee of the NJ Real Estate Commission, unless the licensee is the landlord",
           "predicate": {
-            "const": false
+            "const": "unknown"
           },
           "quote": "(2)  a licensee of the New Jersey Real Estate\nCommission, unless the licensee is the landlord of the residential rental\nproperty."
         }
@@ -8387,7 +8286,10 @@
         "adjudicated_fields": [],
         "conf_delta": 0.05,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "exemption downgraded to unknown (predicate not faithful): Dwelling unit in a one-family or two-family dwelling offered for rent: The predicate checks if property_type is \"single_family\" or \"multifamily_2_4\", but the legal condition specifies \"a one-",
+          "exemption downgraded to unknown (predicate not faithful): Licensee of the NJ Real Estate Commission, unless the licensee is the landlord: The predicate is a constant false value that cannot faithfully encode the legal condition. The condition concerns who is"
+        ],
         "pass": "A",
         "passes": [
           "A",
@@ -8451,18 +8353,7 @@
           "citation": null,
           "description": "Owner-occupied premises with two or fewer rental units",
           "predicate": {
-            "all": [
-              {
-                "fact": "owner_occupied",
-                "op": "==",
-                "value": true
-              },
-              {
-                "fact": "units",
-                "op": "<=",
-                "value": 3
-              }
-            ]
+            "const": "unknown"
           },
           "quote": null
         }
@@ -8492,7 +8383,9 @@
         "adjudicated_fields": [],
         "conf_delta": 0.0,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "exemption downgraded to unknown (predicate not faithful): Owner-occupied premises with two or fewer rental units: The legal text states that a landlord must have good cause to evict a tenant (an affirmative requirement). The predicate"
+        ],
         "pass": "A",
         "passes": [
           "A"
@@ -8779,9 +8672,7 @@
           "citation": null,
           "description": "Hotel, motel, or guest house with transient or seasonal tenants",
           "predicate": {
-            "fact": "property_type",
-            "op": "==",
-            "value": "other"
+            "const": "unknown"
           },
           "quote": null
         }
@@ -8811,7 +8702,9 @@
         "adjudicated_fields": [],
         "conf_delta": -0.1,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "exemption downgraded to unknown (predicate not faithful): Hotel, motel, or guest house with transient or seasonal tenants: The predicate checks whether property_type equals \"other\", but the legal text states the rule applies to \"No residential"
+        ],
         "pass": "B",
         "passes": [
           "B"
@@ -9519,9 +9412,7 @@
           "citation": null,
           "description": "Software used to set rents or income limits under affordable housing program guidelines",
           "predicate": {
-            "fact": "subsidized_or_affordable",
-            "op": "==",
-            "value": true
+            "const": "unknown"
           },
           "quote": null
         }
@@ -9562,7 +9453,8 @@
         "conf_delta": 0.05,
         "model_lifecycle": "pending",
         "notes": [
-          "exemption not expressible: Software that publishes reports from aggregated historical nonpublic data more t"
+          "exemption not expressible: Software that publishes reports from aggregated historical nonpublic data more t",
+          "exemption downgraded to unknown (predicate not faithful): Software used to set rents or income limits under affordable housing program gui: The legal condition concerns who is acting (a person selling, licensing, or providing an algorithmic device to a landlor"
         ],
         "pass": "A",
         "passes": [
@@ -9729,9 +9621,7 @@
           "citation": null,
           "description": "Tenant shares bathroom or kitchen with landlord who lives there",
           "predicate": {
-            "fact": "shares_kitchen_bath_with_owner",
-            "op": "==",
-            "value": true
+            "const": "unknown"
           },
           "quote": null
         },
@@ -9739,9 +9629,7 @@
           "citation": null,
           "description": "Deed-restricted or subsidized affordable housing (not Section 8)",
           "predicate": {
-            "fact": "subsidized_or_affordable",
-            "op": "==",
-            "value": true
+            "const": "unknown"
           },
           "quote": null
         },
@@ -9749,18 +9637,7 @@
           "citation": null,
           "description": "Separately alienable property where landlord is not REIT, corporation, etc., with written notice",
           "predicate": {
-            "all": [
-              {
-                "fact": "unit_separately_alienable",
-                "op": "==",
-                "value": true
-              },
-              {
-                "fact": "owner_is_natural_person",
-                "op": "==",
-                "value": true
-              }
-            ]
+            "const": "unknown"
           },
           "quote": null
         }
@@ -10008,7 +9885,11 @@
         "adjudicated_fields": [],
         "conf_delta": -0.1,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "exemption downgraded to unknown (predicate not faithful): Tenant shares bathroom or kitchen with landlord who lives there: The quote describes a \"no-fault just cause\" ground for eviction based on habitability orders issued by government agenci",
+          "exemption downgraded to unknown (predicate not faithful): Deed-restricted or subsidized affordable housing (not Section 8): The predicate only checks if the property is subsidized_or_affordable==true, but the legal text does not establish a jus",
+          "exemption downgraded to unknown (predicate not faithful): Separately alienable property where landlord is not REIT, corporation, etc., wit: The quoted legal text describes a \"just cause\" reason for eviction based on a government agency or court order relating "
+        ],
         "pass": "B",
         "passes": [
           "B"
@@ -11439,9 +11320,7 @@
           "citation": null,
           "description": "Deed-restricted affordable housing",
           "predicate": {
-            "fact": "subsidized_or_affordable",
-            "op": "==",
-            "value": true
+            "const": "unknown"
           },
           "quote": null
         },
@@ -11449,11 +11328,7 @@
           "citation": null,
           "description": "Hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters",
           "predicate": {
-            "fact": "property_type",
-            "op": "in",
-            "value": [
-              "other"
-            ]
+            "const": "unknown"
           },
           "quote": null
         },
@@ -11461,18 +11336,7 @@
           "citation": null,
           "description": "Housing produced in last 15 years, deed-restricted affordable housing, hotels, care facilities, dormitories, shared living",
           "predicate": {
-            "any": [
-              {
-                "fact": "building_age_years",
-                "op": "<=",
-                "value": 15
-              },
-              {
-                "fact": "subsidized_or_affordable",
-                "op": "==",
-                "value": true
-              }
-            ]
+            "const": "unknown"
           },
           "quote": "The Just Cause Ordinance shall not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters."
         }
@@ -11521,7 +11385,11 @@
         "adjudicated_fields": [],
         "conf_delta": -0.1,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "exemption downgraded to unknown (predicate not faithful): Deed-restricted affordable housing: The quote states a general rule that \"an owner shall not terminate a tenancy without just cause\" after 30 days. The pred",
+          "exemption downgraded to unknown (predicate not faithful): Hotel and transient occupancy, hospital and care facilities, dormitories, and ot: The quoted legal condition is about the requirement for an owner to have just cause before terminating a tenancy after 3",
+          "exemption downgraded to unknown (predicate not faithful): Housing produced in last 15 years, deed-restricted affordable housing, hotels, c: The predicate is incomplete. The quoted legal condition lists six categories of exempt properties: (1) housing produced "
+        ],
         "pass": "B",
         "passes": [
           "B"
@@ -11684,9 +11552,7 @@
           "citation": null,
           "description": "Residential buildings constructed after February 1, 1995",
           "predicate": {
-            "fact": "co_date",
-            "op": ">",
-            "value": "1995-02-01"
+            "const": "unknown"
           },
           "quote": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990."
         },
@@ -11694,9 +11560,7 @@
           "citation": null,
           "description": "Mobile home spaces offered for rent after January 1, 1990",
           "predicate": {
-            "fact": "property_type",
-            "op": "==",
-            "value": "other"
+            "const": "unknown"
           },
           "quote": null
         },
@@ -11704,9 +11568,7 @@
           "citation": null,
           "description": "Buildings constructed after February 1, 1995",
           "predicate": {
-            "fact": "co_date",
-            "op": ">",
-            "value": "1995-02-01"
+            "const": "unknown"
           },
           "quote": "The rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990."
         }
@@ -11773,7 +11635,11 @@
         "adjudicated_fields": [],
         "conf_delta": -0.1,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "exemption downgraded to unknown (predicate not faithful): Residential buildings constructed after February 1, 1995: The predicate uses co_date (certificate of occupancy date) but the legal text specifies \"constructed after February 1, 1",
+          "exemption downgraded to unknown (predicate not faithful): Mobile home spaces offered for rent after January 1, 1990: The predicate only checks property_type == \"other\", but the legal condition concerns rent increase limitations based on ",
+          "exemption downgraded to unknown (predicate not faithful): Buildings constructed after February 1, 1995: The predicate uses co_date (certificate of occupancy date) but the legal text specifies \"constructed after February 1, 1"
+        ],
         "pass": "B",
         "passes": [
           "B"

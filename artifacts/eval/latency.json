@@ -1,0 +1,18 @@
+{
+  "api": "http://127.0.0.1:8000",
+  "custom_p50_ms": 17.06,
+  "custom_p95_ms": 19.52,
+  "llm_baseline_ms": 6363.0,
+  "llm_baseline_runs_ms": [
+    6892,
+    5834
+  ],
+  "lookup_client_p50_ms": 17.58,
+  "lookup_client_p95_ms": 26.84,
+  "lookup_p50_ms": 7.84,
+  "lookup_p95_ms": 15.3,
+  "measured_at": "2026-10-04T03:19:11Z",
+  "samples": 60,
+  "timeline_p50_ms": 24.55,
+  "timeline_p95_ms": 48.39
+}

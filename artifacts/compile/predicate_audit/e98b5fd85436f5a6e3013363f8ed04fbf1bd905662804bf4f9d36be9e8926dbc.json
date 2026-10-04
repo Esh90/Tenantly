@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001646,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": true,
+    "reason": "The predicate correctly captures the legal condition: it checks that the property is owner-occupied AND is a two- or three-family dwelling (multifamily_2_4). This matches the quoted text \"The exception is an owner-occupied two-, or three-family dwelling.\" Both conditions are about building/property characteristics that can be expressed using the available facts."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 926,
+    "output_tokens": 144
+  }
+}

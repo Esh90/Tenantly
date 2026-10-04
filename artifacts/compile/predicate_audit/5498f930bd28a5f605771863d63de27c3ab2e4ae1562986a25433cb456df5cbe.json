@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001807,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The quote describes a legal condition about how landlords *may use* selection standards (reasonableness and uniform application), which is tenant conduct/procedural behavior that cannot be captured by building facts. The predicate only checks property type and owner occupancy, which are relevant to the exemption itself but do not encode the actual legal condition about uniform application of reasonable selection standards. The predicate appears to identify when the exemption applies (2-family owner-occupied), not what the underlying rule requires."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 952,
+    "output_tokens": 171
+  }
+}

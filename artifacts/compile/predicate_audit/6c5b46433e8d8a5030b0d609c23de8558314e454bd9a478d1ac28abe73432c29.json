@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001675,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The predicate uses co_date (certificate of occupancy date) but the legal text specifies \"constructed after February 1, 1995.\" Construction date and certificate of occupancy date are different facts. The predicate should use year_built or a construction-date fact, not co_date. Additionally, the predicate does not capture the mobile home space exemption mentioned in the quote."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 920,
+    "output_tokens": 151
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001962,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The quote describes a \"no-fault just cause\" ground for eviction based on habitability orders issued by government agencies or courts, which requires action by a government body. The predicate only checks if the tenant shares kitchen/bath with the owner. The predicate does not capture the legal condition at all—the condition is about a government/court order requiring 30+ days of vacation, not about physical living arrangement sharing. Additionally, the predicate concerns a government agency action (issuing orders), which cannot be faithfully encoded using only building and landlord facts."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1037,
+    "output_tokens": 185
+  }
+}

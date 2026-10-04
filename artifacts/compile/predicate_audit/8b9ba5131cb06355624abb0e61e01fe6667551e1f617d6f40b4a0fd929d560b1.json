@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001903,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The predicate is incomplete. The legal condition requires that ownership be held by \"a natural person, family trust, or limited liability company (LLC) where all members are natural persons.\" The predicate captures the property and unit count limits but fails to encode the ownership structure requirement. The available fact \"owner_is_natural_person\" only covers one of the three allowed ownership types and does not address family trusts or all-natural-person LLCs. A faithful predicate must capture all conjunctive conditions stated in the rule."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1008,
+    "output_tokens": 179
+  }
+}

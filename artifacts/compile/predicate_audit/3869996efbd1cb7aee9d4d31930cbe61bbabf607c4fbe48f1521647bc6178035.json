@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002147,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The predicate attempts to encode an exemption (duplex where owner occupies one unit) from a rent cap rule, but the quote provided is the operative rule text itself, not the exemption condition. The quote describes who must comply with the rent cap and how it applies—it does not state the exemption criteria. The predicate cannot be faithful to a condition that is not present in the quoted text. Additionally, \"owner occupies one unit\" is not the same as \"owner_occupied=true\" for the building; the rule specifically requires the owner to occupy one of the two units in a duplex, which cannot be faithfully expressed with the available facts (there is no fact distinguishing which unit or how many units the owner occupies)."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1022,
+    "output_tokens": 225
+  }
+}

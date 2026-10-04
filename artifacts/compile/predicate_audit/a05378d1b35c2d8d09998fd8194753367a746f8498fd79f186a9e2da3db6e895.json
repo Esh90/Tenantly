@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002037,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The legal condition states that ALL LANDLORDS planning to end a tenancy must provide notice. The predicate checks if property_type == \"other\", which does not faithfully encode the condition. The condition is about landlord action (providing notice) and is universal (\"all landlords\"), not about property type. The predicate would need to capture whether a landlord is planning to end a tenancy and whether notice was provided, neither of which are available in the given facts. Additionally, the predicate uses property_type to exclude certain facility types mentioned in the exemption, but the quote itself does not restrict the requirement by property type—it applies to all landlords. The predicate does not faithfully represent what the text states."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 937,
+    "output_tokens": 220
+  }
+}

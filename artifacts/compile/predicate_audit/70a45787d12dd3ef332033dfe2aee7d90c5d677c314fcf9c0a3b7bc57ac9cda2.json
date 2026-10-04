@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002048,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The quoted text concerns appraisal discrimination performed by appraisers and other entities whose business includes performing appraisals—it is about who is acting (an appraiser or entity performing appraisals). The predicate simply checks if owner_occupied==true, which is a building/landlord fact, but does not capture the substantive legal condition about appraisal discrimination or the identity of the actor (an appraiser). The exemption mentions owner-occupied homes but the rule text itself is about appraisers' conduct in performing appraisals, not about the building status. The predicate does not faithfully encode the legal condition."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1003,
+    "output_tokens": 209
+  }
+}

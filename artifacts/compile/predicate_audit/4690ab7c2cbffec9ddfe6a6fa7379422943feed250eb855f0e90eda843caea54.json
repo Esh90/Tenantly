@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002171,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The predicate only checks if the property is subsidized_or_affordable==true, but the legal text does not establish a just-cause ground based on affordability status. Rather, the text describes a just-cause ground for eviction: when a landlord seeks to recover possession to comply with a government agency or court order relating to habitability that requires vacating for at least 30 days. The predicate fails to capture any of the actual conditions in the rule (the existence of a government/court order, habitability-related requirement, 30+ day vacation requirement). The quoted text is part of an exemption section, not the main rule. The predicate's focus on affordability status does not faithfully encode the legal condition about habitability orders."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1036,
+    "output_tokens": 227
+  }
+}

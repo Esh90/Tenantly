@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002071,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The quote describes when rent may be increased (once every 12 months by an allowable percentage), which is about the allowable increase itself—not about exemptions from regulation. The predicate only checks if property_type equals \"condo\", but the actual exemption text requires checking both property type (condo or townhome) AND that the tenancy commenced after December 31, 1995. The predicate does not check the tenancy commencement date, so it does not faithfully capture the legal condition for the exemption. Additionally, the quote provided does not state the exemption condition—it merely describes the general rent increase rule. The predicate appears to be encoding the exemption from the rule metadata rather than from the quoted legal text itself."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 931,
+    "output_tokens": 228
+  }
+}

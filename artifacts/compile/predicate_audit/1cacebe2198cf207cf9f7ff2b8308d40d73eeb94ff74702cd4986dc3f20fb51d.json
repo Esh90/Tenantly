@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001912,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The predicate only captures two conditions from the exemption (separately alienable property and natural person owner), but omits the third critical requirement: that the owner is \"not a REIT, corporation or LLC with corporate member.\" The predicate states the owner IS a natural person, but this alone does not ensure they are not a corporation or LLC with corporate member. The exemption requires all three conditions to be met for the rent cap to not apply, so the predicate is incomplete and does not faithfully encode the full legal condition."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1017,
+    "output_tokens": 179
+  }
+}

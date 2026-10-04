@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002215,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The legal text states that relocation assistance or rent waiver requirements apply to a tenancy \"for which just cause is required to terminate the tenancy\" and when a \"no-fault just cause\" termination notice is issued. The predicate only checks whether the property is subsidized or affordable, but the rule does not say it applies only to affordable/subsidized housing. Rather, the rule applies broadly to any residential tenancy requiring just cause, and then provides an exemption for affordable/subsidized housing (per the exemption field). The predicate should encode the trigger conditions (just cause required, no-fault termination notice issued) not merely whether the property is affordable. The predicate does not faithfully capture the legal condition because it inverts the logic and misses the core requirement about when the obligation arises."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1020,
+    "output_tokens": 239
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001805,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": true,
+    "reason": "The predicate correctly encodes the exemption for \"two- or three-unit owner-occupied premises\" using available facts. It checks that the property type is either single-family or 2-4 unit multifamily AND that the property is owner-occupied. This faithfully captures the conditions under which this good cause eviction requirement exemption applies. The predicate is about building characteristics (property type and occupancy status) that can be expressed with the available facts."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 970,
+    "output_tokens": 167
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001754,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": true,
+    "reason": "The predicate correctly encodes the exemption condition from the legal text. It captures two essential requirements: (1) the property must be owner-occupied (owner_occupied == true), and (2) it must have no more than four dwelling units (units <= 4). These are factual conditions about the building and landlord that can be directly expressed using the provided building facts. The predicate accurately reflects the exemption scope without adding or omitting material requirements."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 929,
+    "output_tokens": 165
+  }
+}

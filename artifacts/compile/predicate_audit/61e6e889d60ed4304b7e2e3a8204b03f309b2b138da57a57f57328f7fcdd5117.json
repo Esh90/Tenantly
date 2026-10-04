@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001965,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": true,
+    "reason": "The exemption states that the rent cap does not apply to \"Housing with certificate of occupancy within previous 15 years.\" The predicate {fact: \"co_date\", op: \">\", value: {as_of_minus_years: 15}} correctly encodes this condition by checking whether the certificate of occupancy date is more recent than 15 years ago (i.e., within the previous 15 years). This is a factual property of the building that can be expressed using the available building facts, specifically co_date. The predicate faithfully captures the exemption criteria."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 985,
+    "output_tokens": 196
+  }
+}

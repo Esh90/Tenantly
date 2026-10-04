@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.0024,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The predicate's third condition uses `{\"any\": [{\"fact\": \"owner_is_natural_person\", \"op\": \"==\", \"value\": true}, {\"fact\": \"owner_is_natural_person\", \"op\": \"==\", \"value\": false}]}`, which is a tautology that is always true regardless of the actual ownership structure. The legal text requires ownership to be held by \"a natural person, family trust, or limited liability company (LLC) where all members are natural persons.\" The predicate cannot distinguish between an LLC where all members are natural persons versus an LLC where some members are not natural persons, nor can it distinguish family trusts. The available fact `owner_is_natural_person` is insufficient to capture the full scope of permitted ownership structures specified in the legal condition. The predicate should either reject non-natural-person-only ownership structures or accurately represent all three permitted ownership categories, which the current facts do not enable."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1045,
+    "output_tokens": 271
+  }
+}

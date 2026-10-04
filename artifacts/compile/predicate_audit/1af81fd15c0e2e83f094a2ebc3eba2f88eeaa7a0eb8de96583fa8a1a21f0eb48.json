@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001929,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The predicate {\"const\": false} cannot faithfully encode the legal condition \"Lifetime sex offenders\" because the condition concerns a tenant's status/conduct (criminal history), which is not expressible using only the available building facts (units, year_built, co_date, building_age_years, property_type, subsidized_or_affordable, owner_is_natural_person, owner_occupied, landlord_property_count, landlord_unit_count, unit_separately_alienable, shares_kitchen_bath_with_owner). Additionally, a constant false predicate fails to capture any meaningful information about the actual exemption being described."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 889,
+    "output_tokens": 208
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001562,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": true,
+    "reason": "The predicate correctly captures the legal condition that the exemption applies to housing produced in the last 15 years. The predicate `building_age_years < 15` faithfully encodes this requirement using the available building fact `building_age_years`."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 937,
+    "output_tokens": 125
+  }
+}

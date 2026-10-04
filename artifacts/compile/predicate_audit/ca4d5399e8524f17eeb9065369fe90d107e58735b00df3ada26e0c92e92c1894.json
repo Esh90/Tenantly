@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001722,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": true,
+    "reason": "The predicate correctly encodes the legal condition. It checks that the certificate of occupancy date (co_date) is greater than 15 years ago (using as_of_minus_years: 15), which faithfully represents \"issued a certificate of occupancy within the previous 15 years.\" The condition about mobilehome exclusion cannot be expressed with the available facts, but the core temporal condition is accurately captured."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 932,
+    "output_tokens": 158
+  }
+}

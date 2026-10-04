@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001593,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": true,
+    "reason": "The predicate directly encodes the legal condition: it checks if the tenant shares bathroom or kitchen facilities with the owner who lives there using the available fact 'shares_kitchen_bath_with_owner'. This fact captures the essential legal requirement that the owner maintains their principal residence at the property and that facilities are shared."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 923,
+    "output_tokens": 134
+  }
+}

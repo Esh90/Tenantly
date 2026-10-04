@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002053,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The predicate is incomplete. The quoted legal condition lists six categories of exempt properties: (1) housing produced in the last 15 years, (2) deed-restricted affordable housing, (3) hotels and transient occupancy, (4) hospitals and care facilities, (5) dormitories, and (6) other shared living quarters. The predicate only encodes the first two categories using building_age_years and subsidized_or_affordable. It omits hotels, care facilities, dormitories, and shared living quarters, which cannot be adequately expressed with the available facts but are explicitly part of the legal condition. The predicate states something narrower than the text requires."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 983,
+    "output_tokens": 214
+  }
+}

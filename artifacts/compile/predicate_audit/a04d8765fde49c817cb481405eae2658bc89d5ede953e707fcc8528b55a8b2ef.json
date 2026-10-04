@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001732,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": true,
+    "reason": "The predicate correctly encodes the legal condition by checking whether the certificate of occupancy date (co_date) is within the previous 15 years. The condition \"co_date > value (as_of_minus_years 15)\" faithfully captures that the housing must have been issued a certificate of occupancy within the previous 15 years. This is a building-related fact that can be directly expressed using the available facts."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 932,
+    "output_tokens": 160
+  }
+}

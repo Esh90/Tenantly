@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.00201,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The predicate checks that the property is owner-occupied and has 1-3 units, but it does not verify that \"an owner of record resides in one of the units as their primary residence.\" The text requires two conditions: (1) the property is owner-occupied, AND (2) an owner of record resides in one unit as their primary residence. The predicate only captures the first condition through the owner_occupied flag. It does not distinguish between an owner-occupied property where an owner merely holds title but does not reside there as a primary residence versus one where an owner actually resides there. The predicate is incomplete and does not faithfully encode the full legal condition."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 945,
+    "output_tokens": 213
+  }
+}

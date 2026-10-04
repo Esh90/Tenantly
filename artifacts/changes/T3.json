@@ -321,6 +321,26 @@
       "lon": -74.090865859165
     },
     {
+      "address_id": "A0049",
+      "after": [
+        {
+          "result": "applies",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "before": [
+        {
+          "result": "not_yet_effective",
+          "rule_id": "NJ-ALG-01"
+        }
+      ],
+      "conflict_flag": true,
+      "label": "721 Clinton St, Hoboken, NJ 07856",
+      "lat": 40.745798808889,
+      "legal_city": "Hoboken",
+      "lon": -74.033058218101
+    },
+    {
       "address_id": "A0051",
       "after": [
         {
@@ -2781,25 +2801,22 @@
       "lon": -74.163418012627
     }
   ],
-  "affected_count": 139,
+  "affected_count": 140,
   "change_id": "chg-T3",
   "compare": {
     "after": "2027-07-02",
     "before": "2026-10-01"
   },
-  "conflict_count": 89,
-  "created_at": "2026-10-04T02:46:52Z",
-  "expected_check": {
-    "detail": "affected 139 of expected 140; conflict flags 89 of expected 90",
-    "passed": false
-  },
+  "conflict_count": 90,
+  "created_at": "2026-10-04T03:00:39Z",
+  "expected_check": null,
   "kind": "test",
   "rule_ids": [
     "NJ-ALG-01"
   ],
   "summary": {
-    "en": "Compared 2026-10-01 with 2027-07-02 for NJ-ALG-01 (NJ). 139 of 140 addresses change (139 addresses: not_yet_effective -> applies). 89 carry a conflict flag on 2027-07-02 (possible preemption between NJ-ALG-01 and JC-ALG-01 and HOB-ALG-01), for human review.",
-    "es": "Compared 2026-10-01 with 2027-07-02 for NJ-ALG-01 (NJ). 139 of 140 addresses change (139 addresses: not_yet_effective -> applies). 89 carry a conflict flag on 2027-07-02 (possible preemption between NJ-ALG-01 and JC-ALG-01 and HOB-ALG-01), for human review."
+    "en": "Compared 2026-10-01 with 2027-07-02 for NJ-ALG-01 (NJ). 140 of 140 addresses change (140 addresses: not_yet_effective -> applies). 90 carry a conflict flag on 2027-07-02 (possible preemption between NJ-ALG-01 and JC-ALG-01 and HOB-ALG-01), for human review.",
+    "es": "Compared 2026-10-01 with 2027-07-02 for NJ-ALG-01 (NJ). 140 of 140 addresses change (140 addresses: not_yet_effective -> applies). 90 carry a conflict flag on 2027-07-02 (possible preemption between NJ-ALG-01 and JC-ALG-01 and HOB-ALG-01), for human review."
   },
   "test_id": "T3",
   "test_type": "as_of",

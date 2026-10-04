@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001923,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": true,
+    "reason": "The predicate correctly encodes the exemption condition stated in the rule: \"Owner-occupied premises of not more than four units.\" The two facts used—owner_occupied == true and units <= 4—are directly available building/landlord characteristics that faithfully capture this exemption requirement. The quote describes factors the housing provider must assess, but the rule category and exemption label clarify that this exemption applies to owner-occupied buildings of 4 or fewer units, which the predicate accurately represents."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1053,
+    "output_tokens": 174
+  }
+}

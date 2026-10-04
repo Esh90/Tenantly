@@ -15,14 +15,14 @@
     {
       "max": 15,
       "name": "Citations",
-      "note": "6890 of 6980 'applies' answers cite a quote found at its stored offsets in the corpus (98.7%)",
+      "note": "6912 of 7002 'applies' answers cite a quote found at its stored offsets in the corpus (98.7%)",
       "score": 14.81
     },
     {
       "max": 15,
       "name": "Change tracking",
-      "note": "4 of 5 tests match the expected sets exactly (Jaccard mean 1.00)",
-      "score": 14.95
+      "note": "5 of 5 tests match the expected sets exactly (Jaccard mean 1.00)",
+      "score": 15.0
     }
   ],
   "coverage_detail": [
@@ -670,5 +670,5 @@
     "reason_codes_matched": 2
   },
   "key": "silver",
-  "raw_report": "Tenantly self-score against the silver key (not the official scorer)\n\nExtraction          21.35 / 25  41 of 48 expected rules matched by jurisdiction, category and cite; mean field accuracy 0.85\nAddress coverage    11.88 / 20  26 of 32 address expectations exactly right; a missed 'applies' costs 2, unknown earns half\nCitations           14.81 / 15  6890 of 6980 'applies' answers cite a quote found at its stored offsets in the corpus (98.7%)\nChange tracking     14.95 / 15  4 of 5 tests match the expected sets exactly (Jaccard mean 1.00)\n\nAutomatic components total 62.99 / 75\nJudged components (plain language, responsible design, scalability) are not scored here."
+  "raw_report": "Tenantly self-score against the silver key (not the official scorer)\n\nExtraction          21.35 / 25  41 of 48 expected rules matched by jurisdiction, category and cite; mean field accuracy 0.85\nAddress coverage    11.88 / 20  26 of 32 address expectations exactly right; a missed 'applies' costs 2, unknown earns half\nCitations           14.81 / 15  6912 of 7002 'applies' answers cite a quote found at its stored offsets in the corpus (98.7%)\nChange tracking     15.00 / 15  5 of 5 tests match the expected sets exactly (Jaccard mean 1.00)\n\nAutomatic components total 63.04 / 75\nJudged components (plain language, responsible design, scalability) are not scored here."
 }

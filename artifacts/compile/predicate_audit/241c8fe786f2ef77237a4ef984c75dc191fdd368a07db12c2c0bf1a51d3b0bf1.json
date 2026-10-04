@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001762,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The predicate is a constant false value that cannot faithfully encode the legal condition. The condition concerns who is acting (a licensee of the NJ Real Estate Commission, unless that licensee is also the landlord). This involves the licensee's status and their relationship to the property, which falls under \"government agency\" licensing status and professional credentials—facts not available in the provided building, landlord, and tenancy facts. The predicate's constant false cannot capture this conditional exemption logic."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 907,
+    "output_tokens": 171
+  }
+}

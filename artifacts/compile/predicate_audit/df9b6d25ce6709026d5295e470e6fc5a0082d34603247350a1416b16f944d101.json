@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002181,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The legal text states \"Owner shares kitchen or bath with tenant\" is an EXEMPTION (meaning units where this is true are NOT covered). However, the predicate checks if shares_kitchen_bath_with_owner == true, which would indicate the unit IS exempt from rent control. The predicate appears to correctly identify exemptions but doesn't capture the full condition about \"multifamily properties built before 1980\" or establish that coverage applies to such properties EXCEPT where the exemption holds. Additionally, the quote is incomplete/fragmented (\"Yes Yes Yes Yes\") making it unclear whether the predicate should identify properties covered (pre-1980 multifamily) or those exempt (sharing kitchen/bath). The predicate alone cannot faithfully represent the rule because it only checks one condition (kitchen/bath sharing) without verifying the building is multifamily and pre-1980."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 911,
+    "output_tokens": 254
+  }
+}

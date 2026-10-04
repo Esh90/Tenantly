@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.00215,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The quote describes obligations triggered by \"a termination notice based on a no-fault just cause\" and applies to \"a tenancy for which just cause is required.\" The predicate only checks that the unit is separately alienable and the owner is a natural person. It does not encode the critical trigger conditions: (1) that this is a no-fault termination, (2) that just cause is required for the tenancy, or (3) that a notice based on paragraph (2) of subdivision (b) has been issued. The predicate captures only two static property characteristics but misses the action-dependent conditions (notice issuance, type of termination) that actually trigger the owner's obligation under the statute."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1055,
+    "output_tokens": 219
+  }
+}

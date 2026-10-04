@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002257,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The quoted legal text describes a \"just cause\" reason for eviction based on a government agency or court order relating to habitability that requires vacating for at least 30 days. The predicate only checks whether the unit is separately alienable and the owner is a natural person. The predicate does not capture the actual legal condition from the text—which concerns whether there is an order issued by a government agency or court relating to habitability requiring vacation for at least 30 days. The text describes what a government agency or court must do (issue an order), which is outside the scope of building/landlord/tenancy facts that the available building facts can express. The predicate is faithful only to the exemption conditions (separately alienable unit + natural person owner), not to the quoted just cause ground itself."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1072,
+    "output_tokens": 237
+  }
+}

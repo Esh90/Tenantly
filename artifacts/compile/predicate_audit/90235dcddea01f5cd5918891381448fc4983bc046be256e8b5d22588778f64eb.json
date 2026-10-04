@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002023,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The legal condition exempts leases of 100 days or less that are for vacation or recreational purposes. This concerns the duration and purpose of the lease/tenancy, which are tenant conduct and lease terms not capturable by the available building facts (units, year_built, co_date, building_age_years, property_type, subsidized_or_affordable, owner_is_natural_person, owner_occupied, landlord_property_count, landlord_unit_count, unit_separately_alienable, shares_kitchen_bath_with_owner). The predicate merely checks if property_type equals \"other,\" which does not faithfully encode the legal requirement about lease duration and vacation/recreational purpose."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 918,
+    "output_tokens": 221
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.002075,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The legal condition concerns the tenant's right to receive interest or earnings paid on a security deposit and the timing/method of payment. This is about tenant conduct/entitlements and payment obligations—who acts (the landlord must pay), how (cash or credit toward rent), and when (renewal/anniversary of lease or January 31). The predicate uses \"unit_separately_alienable\" which concerns property characterization, not security deposit interest accrual or payment. The predicate does not capture any aspect of the legal condition about security deposit interest, payment timing, or payment method. The available facts cannot express this condition, which involves obligations and entitlements rather than building or landlord characteristics."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 1010,
+    "output_tokens": 213
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.00176,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The predicate states that a unit IS covered (or qualifies for an exemption) when shares_kitchen_bath_with_owner == true, but the quote indicates that the exemption applies when the owner SHARES kitchen or bath with the tenant. The predicate should instead state that when shares_kitchen_bath_with_owner == true, the unit is NOT fully covered (i.e., it is exempt from just cause eviction coverage). The logical sense is inverted."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 915,
+    "output_tokens": 169
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "cost_usd": 0.001788,
+  "model": "claude-haiku-4-5-20251001",
+  "output": {
+    "faithful": false,
+    "reason": "The legal condition concerns who is acting (a person selling, licensing, or providing an algorithmic device to a landlord) and a product (an algorithmic device). These are not building, landlord, or tenancy characteristics. The predicate checks if a property is subsidized_or_affordable, which does not capture the prohibition on selling algorithmic devices. The predicate should express conditions about the algorithmic device and the sale/licensing transaction itself, neither of which can be encoded in the available building facts."
+  },
+  "prompt_version": 1,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 918,
+    "output_tokens": 174
+  }
+}

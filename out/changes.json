@@ -369,6 +369,7 @@
       "A0042",
       "A0044",
       "A0047",
+      "A0049",
       "A0051",
       "A0057",
       "A0059",
@@ -503,6 +504,7 @@
       "A0040",
       "A0042",
       "A0047",
+      "A0049",
       "A0051",
       "A0078",
       "A0087",
@@ -584,7 +586,7 @@
       "A0490",
       "A0495"
     ],
-    "notes": "Compared 2026-10-01 with 2027-07-02 for NJ-ALG-01 (NJ). 139 of 140 addresses change (139 addresses: not_yet_effective -> applies). 89 carry a conflict flag on 2027-07-02 (possible preemption between NJ-ALG-01 and JC-ALG-01 and HOB-ALG-01), for human review."
+    "notes": "Compared 2026-10-01 with 2027-07-02 for NJ-ALG-01 (NJ). 140 of 140 addresses change (140 addresses: not_yet_effective -> applies). 90 carry a conflict flag on 2027-07-02 (possible preemption between NJ-ALG-01 and JC-ALG-01 and HOB-ALG-01), for human review."
   },
   "T4": {
     "affected_address_ids": [
