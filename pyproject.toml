@@ -1,0 +1,34 @@
+[project]
+name = "tenantly"
+version = "0.0.0"
+description = "Address-level housing-law lookup compiled from statutes and ordinances."
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "fastapi>=0.115",
+  "uvicorn>=0.30",
+  "orjson>=3.10",
+  "pydantic>=2.8",
+  "jsonschema>=4.23",
+  "typer>=0.12",
+  "python-dateutil>=2.9",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "ruff>=0.6",
+    "httpx>=0.27",
+    "huggingface-hub>=2.1.1",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+filterwarnings = ["ignore::DeprecationWarning"]

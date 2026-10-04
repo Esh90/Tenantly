@@ -1,0 +1,5 @@
+* text=auto eol=lf
+# The corpus and data are byte-exact: never convert line endings.
+dataset/** -text
+dataset_supplement/** -text
+*.pdf binary
