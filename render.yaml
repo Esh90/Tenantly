@@ -12,8 +12,16 @@ services:
         sync: false
       - key: ADMIN_TOKEN
         sync: false
+      - key: PUBLIC_INGEST_ENABLED
+        value: "true"
       - key: GROQ_API_KEY
         sync: false
+      - key: RESEND_API_KEY
+        sync: false
+      - key: ALERT_FROM
+        sync: false
+      - key: PUBLIC_APP_URL
+        value: https://tenantlyrent.me
       - key: ALLOWED_ORIGINS
         value: "*"
       - key: DEMO_MODE

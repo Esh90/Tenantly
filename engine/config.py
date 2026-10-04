@@ -11,12 +11,15 @@ ROOT = Path(__file__).resolve().parent.parent
 def _load_dotenv(path: Path) -> None:
     if not path.exists():
         return
+    parsed: dict[str, str] = {}
     for line in path.read_text(encoding="utf-8").splitlines():
         line = line.strip()
         if not line or line.startswith("#") or "=" not in line:
             continue
         key, _, value = line.partition("=")
-        os.environ.setdefault(key.strip(), value.strip())
+        parsed[key.strip()] = value.strip()
+    for key, value in parsed.items():
+        os.environ.setdefault(key, value)
 
 
 _load_dotenv(ROOT / ".env")
@@ -47,9 +50,20 @@ PROXY_CO_FROM_YEAR_BUILT = os.environ.get("PROXY_CO_FROM_YEAR_BUILT", "calendar_
 CONFLICT_FLAG_MODE = os.environ.get("CONFLICT_FLAG_MODE", "explicit_only")
 TIER_C_MIN_SIGNALS = int(os.environ.get("TIER_C_MIN_SIGNALS", "2"))
 
-ADMIN_TOKEN = os.environ.get("ADMIN_TOKEN", "change-me")
+ADMIN_TOKEN = os.environ.get("ADMIN_TOKEN", "tenantly-demo")
 ALLOWED_ORIGINS = [o for o in os.environ.get("ALLOWED_ORIGINS", "*").split(",") if o]
 DEMO_MODE = os.environ.get("DEMO_MODE", "live")
+PUBLIC_INGEST_ENABLED = os.environ.get("PUBLIC_INGEST_ENABLED", "true").lower() in {
+    "1",
+    "true",
+    "yes",
+}
+RESEND_API_KEY = os.environ.get("RESEND_API_KEY", "")
+ALERT_FROM = os.environ.get("ALERT_FROM", "onboarding@resend.dev")
+PUBLIC_APP_URL = os.environ.get("PUBLIC_APP_URL", "http://localhost:5173")
+ALERT_DB_PATH = Path(
+    os.environ.get("ALERT_DB_PATH") or str(ARTIFACTS / "watch" / "alerts.sqlite3")
+)
 
 DISCLAIMER = (
     "Tenantly shows public housing law for information only. It is not legal advice. "

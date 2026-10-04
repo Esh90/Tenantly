@@ -1,10 +1,11 @@
 // The only data-access surface for components.
 import Fuse from "fuse.js";
 import { z } from "zod";
-import { API_BASE_URL, IS_MOCK } from "@/config";
+import { ADMIN_TOKEN, API_BASE_URL, IS_MOCK } from "@/config";
 import { request } from "./client";
 import { withFallback } from "./fallback";
 import { mockStreamIngest } from "./mock";
+import { filterRules } from "./ruleQuery";
 import type {
   AddressIndexItem,
   Category,
@@ -23,7 +24,9 @@ import type {
   RuleStatus,
   SourceDoc,
   StateCode,
+  SubscriptionCreated,
   TimelineResponse,
+  WatchStatus,
 } from "./types";
 
 export type { AddressIndexItem };
@@ -61,11 +64,6 @@ export interface SubscribeBody {
   address_id: string;
   lang: Lang;
 }
-export interface Subscription {
-  subscription_id: string;
-  unsubscribe_token: string;
-  feeds: { atom: string; ics: string };
-}
 export interface AuditEntry {
   audit_id: string;
   rule_id: string;
@@ -85,6 +83,9 @@ const qs = (params: Record<string, string | number | undefined | null>) => {
   const out = s.toString();
   return out ? `?${out}` : "";
 };
+const adminHeaders = (): Record<string, string> =>
+  ADMIN_TOKEN ? { "X-Admin-Token": ADMIN_TOKEN } : {};
+
 const post = (body: unknown, headers: Record<string, string> = {}): RequestInit => ({
   method: "POST",
   body: JSON.stringify(body),
@@ -136,6 +137,7 @@ export const listRules = (filters: RuleFilters = {}) =>
     withFallback(
       () => request<{ items: RuleDetail[] }>(`/rules${qs({ ...filters })}`, { fn: "listRules" }),
       "/rules.json",
+      (snap: RuleDetail[] | { items: RuleDetail[] }) => ({ items: filterRules(Array.isArray(snap) ? snap : snap.items, filters) }),
     ),
   );
 
@@ -147,6 +149,9 @@ export const listFindings = (filters: { state?: StateCode | undefined } = {}) =>
     withFallback(
       () => request<{ items: Finding[] }>(`/findings${qs({ ...filters })}`, { fn: "listFindings" }),
       "/findings.json",
+      (snap: Finding[] | { items: Finding[] }) => ({
+        items: (Array.isArray(snap) ? snap : snap.items).filter((f) => !filters.state || f.jurisdiction.state === filters.state),
+      }),
     ),
   );
 
@@ -161,16 +166,25 @@ export const listOpenQuestions = () =>
 export const getSource = (docId: string, ruleId?: string, window?: number) =>
   request<SourceDoc>(`/sources/${encodeURIComponent(docId)}${qs({ rule_id: ruleId, window })}`, { fn: "getSource" });
 
+/** GET /v1/changes returns summaries; `affected` is only on GET /v1/changes/{id}. */
+export type ChangeSummary = Omit<ChangeEvent, "affected">;
+
 export const listChanges = () =>
   unwrap(
-    withFallback(() => request<{ items: ChangeEvent[] }>("/changes", { fn: "listChanges" }), "/changes.json"),
+    withFallback(() => request<{ items: ChangeSummary[] }>("/changes", { fn: "listChanges" }), "/changes.json"),
   );
 
 export const getChange = (changeId: string) =>
   withFallback(() => request<ChangeEvent>(`/changes/${encodeURIComponent(changeId)}`, { fn: "getChange" }), `/changes/${changeId}.json`);
 
-export const startIngest = (body: IngestBody, adminToken: string) =>
-  request<IngestStarted>("/ingest", { fn: "startIngest", ...post(body, { "X-Admin-Token": adminToken }) });
+export const startIngest = (body: IngestBody) =>
+  request<IngestStarted>("/ingest", {
+    fn: "startIngest",
+    ...post(
+      { ...body, auto_publish: Boolean(body.auto_publish) },
+      adminHeaders(),
+    ),
+  });
 
 export const getIngest = (jobId: string) => request<IngestJob>(`/ingest/${encodeURIComponent(jobId)}`, { fn: "getIngest" });
 
@@ -194,44 +208,47 @@ export function streamIngest(jobId: string, onEvent: (e: IngestEvent) => void): 
   return () => es.close();
 }
 
-export const publishIngest = (jobId: string, adminToken: string, approve = false) =>
+export const publishIngest = (jobId: string, approve = false) =>
   request<{ change_id: string; published_at: string }>(
     `/ingest/${encodeURIComponent(jobId)}/publish${qs({ approve: approve ? "true" : undefined })}`,
-    { fn: "publishIngest", ...post({}, { "X-Admin-Token": adminToken }) },
+    { fn: "publishIngest", ...post({}, adminHeaders()) },
   );
 
-export const rejectIngest = (jobId: string, adminToken: string) =>
+export const rejectIngest = (jobId: string) =>
   request<{ job_id: string; state: string }>(`/ingest/${encodeURIComponent(jobId)}/reject`, {
     fn: "rejectIngest",
-    ...post({}, { "X-Admin-Token": adminToken }),
+    ...post({}, adminHeaders()),
   });
 
-export const rejudgeIngest = (jobId: string, adminToken: string) =>
+export const rejudgeIngest = (jobId: string) =>
   request<{ job_id: string; state: string }>(`/ingest/${encodeURIComponent(jobId)}/rejudge`, {
     fn: "rejudgeIngest",
-    ...post({}, { "X-Admin-Token": adminToken }),
+    ...post({}, adminHeaders()),
   });
 
-export const editIngest = (jobId: string, rules: Record<string, unknown>[], adminToken: string) =>
+export const editIngest = (jobId: string, rules: Record<string, unknown>[]) =>
   request<{ job_id: string; state: string }>(`/ingest/${encodeURIComponent(jobId)}/edit`, {
     fn: "editIngest",
-    ...post({ rules }, { "X-Admin-Token": adminToken }),
+    ...post({ rules }, adminHeaders()),
   });
 
 /** Uploaded PDF and DOCX files are turned into text by the server; plain text is read in the browser. */
-export const extractText = (file: File, adminToken: string) =>
+export const extractText = (file: File) =>
   request<{ text: string; format: string; pages: number | null; chars: number }>(
     `/ingest/extract-text${qs({ filename: file.name })}`,
     {
       fn: "extractText",
       method: "POST",
       body: file,
-      headers: { "Content-Type": "application/octet-stream", "X-Admin-Token": adminToken },
+      headers: { "Content-Type": "application/octet-stream" },
     },
   );
 
 export const subscribeAlerts = (body: SubscribeBody) =>
-  request<Subscription>("/alerts/subscriptions", { fn: "subscribeAlerts", ...post(body) });
+  request<SubscriptionCreated>("/alerts/subscriptions", { fn: "subscribeAlerts", ...post(body) });
+
+export const getAlertStatus = (token: string) =>
+  request<WatchStatus>(`/alerts/subscriptions/${encodeURIComponent(token)}`, { fn: "getAlertStatus" });
 
 export const unsubscribeAlerts = (token: string) =>
   request<{ ok: boolean }>(`/alerts/subscriptions/${encodeURIComponent(token)}`, { fn: "unsubscribeAlerts", method: "DELETE" });

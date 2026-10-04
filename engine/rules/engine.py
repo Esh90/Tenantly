@@ -171,13 +171,16 @@ def resolve_rule(
 # ---- precedence, conflicts and bars (PLAN.md 8.6) ----
 
 
-def _scope_matches(scope: dict, rule: Rule) -> bool:
+def _scope_matches(scope: dict, rule: Rule, source: Rule | None = None) -> bool:
     j = rule.jurisdiction
+    if source is not None and j.state != source.jurisdiction.state:
+        return False
     if "category" in scope and rule.category != scope["category"]:
         return False
     if "level" in scope and j.level != scope["level"]:
         return False
-    if "state" in scope and j.state != scope["state"]:
+    want_state = scope.get("state") or (source.jurisdiction.state if source else None)
+    if want_state and j.state != want_state:
         return False
     if "jurisdiction_ids" in scope and j.id not in scope["jurisdiction_ids"]:
         return False
@@ -191,7 +194,7 @@ def _targets(rel: Relation, by_rule: dict[str, Outcome], source: Rule) -> list[O
     if rel.target_scope:
         return [
             o for o in by_rule.values()
-            if o.rule_id != source.rule_id and _scope_matches(rel.target_scope, o.rule)
+            if o.rule_id != source.rule_id and _scope_matches(rel.target_scope, o.rule, source)
         ]  # fmt: skip
     return []
 

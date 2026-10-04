@@ -1,7 +1,7 @@
 import type { ChangeEvent } from "@/lib/api/types";
 import { fmtDate } from "@/lib/format";
 
-export function compareText(c: ChangeEvent, lang: "en" | "es", tr: (a: string, b: string) => string) {
+export function compareText(c: Pick<ChangeEvent, "compare">, lang: "en" | "es", tr: (a: string, b: string) => string) {
   const cmp = c.compare;
   if ("mode" in cmp) return `${tr("With and without, on", "Con y sin, el")} ${fmtDate(cmp.on, lang, "short")}`;
   if ("before" in cmp) return `${fmtDate(cmp.before, lang, "short")} → ${fmtDate(cmp.after, lang, "short")}`;

@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Download, Search } from "lucide-react";
 import { Page, PageHeader } from "@/components/layout/PageHeader";
@@ -50,6 +50,11 @@ function RulesPage() {
   const [status, setStatus] = useState(ALL);
   const [tier, setTier] = useState(ALL);
   const [q, setQ] = useState("");
+  const [debouncedQ, setDebouncedQ] = useState("");
+  useEffect(() => {
+    const t = setTimeout(() => setDebouncedQ(q), 250);
+    return () => clearTimeout(t);
+  }, [q]);
 
   const filters: RuleFilters = useMemo(() => {
     const f: RuleFilters = {};
@@ -58,9 +63,9 @@ function RulesPage() {
     if (category !== ALL) f.category = category as Category;
     if (status !== ALL) f.status = status as RuleStatus;
     if (tier !== ALL) f.tier = tier as EvidenceTier;
-    if (q.trim()) f.q = q.trim();
+    if (debouncedQ.trim()) f.q = debouncedQ.trim();
     return f;
-  }, [state, city, category, status, tier, q]);
+  }, [state, city, category, status, tier, debouncedQ]);
   const rules = useRules(filters);
   const L = (p: [string, string]) => (lang === "es" ? p[1] : p[0]);
 
@@ -78,7 +83,7 @@ function RulesPage() {
           <span className="sr-only">{tr("Search rules", "Buscar reglas")}</span>
           <span className="relative block">
             <Search className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-graphite" aria-hidden="true" />
-            <input value={q} onChange={(e) => setQ(e.target.value)} placeholder={tr("Search by name or citation", "Buscar por nombre o cita")} className="h-11 w-full rounded-md border border-hairline bg-sheet pl-9 pr-3 text-base focus:border-permit focus:outline-none" />
+            <input value={q} onChange={(e) => setQ(e.target.value)} placeholder={tr("Search by name, citation, state or city", "Buscar por nombre, cita, estado o ciudad")} className="h-11 w-full rounded-md border border-hairline bg-sheet pl-9 pr-3 text-base focus:border-permit focus:outline-none" />
           </span>
         </label>
         <FilterSelect label={tr("State", "Estado")} value={state} onChange={(v) => { setState(v); setCity(ALL); }} options={[["CA", "California"], ["NJ", "New Jersey"], ["MA", "Massachusetts"]]} />
@@ -119,7 +124,15 @@ function RulesPage() {
                 <td className="py-3 pr-5 text-right text-sm text-deed tabular md:pr-0">{pct(r.confidence)}</td>
               </tr>
             ))}
-            {rules.data?.length === 0 && (
+            {rules.isError && (
+              <tr>
+                <td colSpan={7} className="py-10 text-center text-base text-graphite" role="alert">
+                  {tr("We couldn't load the rules.", "No pudimos cargar las reglas.")}{" "}
+                  <button type="button" onClick={() => rules.refetch()} className="text-permit underline-offset-4 hover:underline">{tr("Try again", "Intentar de nuevo")}</button>
+                </td>
+              </tr>
+            )}
+            {!rules.isError && rules.data?.length === 0 && (
               <tr><td colSpan={7} className="py-10 text-center text-base text-graphite">{tr("No rules match these filters.", "Ninguna regla coincide con estos filtros.")}</td></tr>
             )}
           </tbody>

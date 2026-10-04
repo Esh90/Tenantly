@@ -2,6 +2,25 @@
 
 Changes to the API contract (PLAN.md section 14) that the frontend must follow. Newest first.
 
+## v0.6 - judges need no ingest token
+- Extract, review, publish, reject, edit and rejudge are public whenever `PUBLIC_INGEST_ENABLED=true`.
+- The documented demo header is `X-Admin-Token: tenantly-demo` if a host later locks the API.
+- Failed primary-model and Groq-backup calls surface as `PROVIDER_UNAVAILABLE`; failed jobs never
+  publish.
+
+## v0.5 - public ingestion demo
+- In hackathon demo mode, ingest mutations no longer require visitors to know `ADMIN_TOKEN`.
+  The independent `INGEST_BUDGET_USD` model-spend cap is the only ingestion usage limit.
+- `X-Admin-Token` remains a server-side override when public ingestion is disabled.
+
+## v0.4 - persistent watched-address notifications
+- `POST /v1/alerts/subscriptions` now returns the canonical `address_id`, creation state and whether
+  server-side email delivery is configured, in addition to the private unsubscribe token and feeds.
+- `GET /v1/alerts/subscriptions/{token}` returns watch and last-delivery status without exposing the
+  recipient email. The token is the only client-side credential for this record.
+- Publication dispatches notifications only from the real `ChangeEvent.affected` set. Delivery
+  failures are audited and never roll back publication.
+
 ## v0.3 - unsubscribe response
 - `DELETE /v1/alerts/subscriptions/{token}` returns `200 {"ok": true}` instead of `204`, because the
   frontend client requires a JSON body on every success.

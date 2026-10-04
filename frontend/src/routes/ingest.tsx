@@ -11,7 +11,7 @@ import { KnowledgeGraphView } from "@/components/ingest/KnowledgeGraphView";
 import { JudgePanel, ValidationPanel } from "@/components/ingest/VerificationPanels";
 import { ReviewScreen } from "@/components/ingest/ReviewScreen";
 import { AuditTrail, ChangeSummaryPanel } from "@/components/ingest/ChangeSummaryPanel";
-import { AUTO, LIMIT, UploadPanel, type UploadValues } from "@/components/ingest/UploadPanel";
+import { AUTO, UploadPanel, type UploadValues } from "@/components/ingest/UploadPanel";
 import { getIngest, streamIngest } from "@/lib/api/api";
 import { useEditIngest, useExtractText, useMeta, usePublishIngest, useRejectIngest, useRejudgeIngest, useStartIngest } from "@/lib/api/hooks";
 import { ApiError } from "@/lib/api/errors";
@@ -36,9 +36,9 @@ const TERMINAL = new Set(["ready", "review_required", "published", "rejected", "
 
 function errText(err: unknown, tr: (en: string, es: string) => string): string {
   if (err instanceof ApiError) {
-    if (err.status === 401) return tr("That admin token isn't valid.", "Ese token de administrador no es válido.");
-    if (err.status === 413) return tr("This text is too long (limit 200,000 characters).", "Este texto es demasiado largo (límite 200,000 caracteres).");
+    if (err.status === 401) return tr("Public law ingestion is not enabled on this server.", "La ingesta pública de leyes no está habilitada en este servidor.");
     if (err.status === 503 && err.code.toUpperCase() === "BUDGET_EXCEEDED") return tr("The extraction budget is used up.", "Se agotó el presupuesto de extracción.");
+    if (err.status === 503 && err.code.toUpperCase() === "PROVIDER_UNAVAILABLE") return tr("AI analysis is temporarily unavailable. The primary provider and Groq backup could not complete the request. No law was published; please try again later.", "El análisis de IA no está disponible temporalmente. El proveedor principal y el respaldo de Groq no pudieron completar la solicitud. No se publicó ninguna ley; inténtelo de nuevo más tarde.");
     return err.message;
   }
   return tr("Something went wrong.", "Algo salió mal.");
@@ -53,7 +53,7 @@ function IngestPage() {
   const rejudge = useRejudgeIngest();
   const edit = useEditIngest();
   const extractText = useExtractText();
-  const [values, setValues] = useState<UploadValues>({ token: "", title: "", jurisdiction: AUTO, url: "", text: "", format: "text", autoPublish: false });
+  const [values, setValues] = useState<UploadValues>({ title: "", jurisdiction: AUTO, url: "", text: "", format: "text", autoPublish: false });
   const [jobId, setJobId] = useState<string | null>(null);
   const [job, setJob] = useState<IngestJob | null>(null);
   const [error, setError] = useState("");
@@ -64,7 +64,6 @@ function IngestPage() {
   const reviewRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    setValues((v) => ({ ...v, token: window.sessionStorage.getItem("tenantly.admin") ?? "" }));
     return () => {
       unsub.current?.();
       if (poll.current) clearInterval(poll.current);
@@ -90,10 +89,7 @@ function IngestPage() {
   const run = async () => {
     setError("");
     const t = values.text.trim();
-    if (!values.token) return setError(tr("Enter the admin token.", "Escriba el token de administrador."));
     if (t.length < 40) return setError(tr("Upload a file or paste the full text of the law.", "Suba un archivo o pegue el texto completo de la ley."));
-    if (t.length > LIMIT) return setError(tr("This text is longer than 200,000 characters.", "Este texto supera los 200,000 caracteres."));
-    window.sessionStorage.setItem("tenantly.admin", values.token);
     unsub.current?.();
     setJob(null);
     try {
@@ -107,7 +103,6 @@ function IngestPage() {
           auto_publish: values.autoPublish,
           format: values.format,
         },
-        token: values.token,
       });
       setJobId(r.job_id);
       await refresh(r.job_id);
@@ -133,8 +128,7 @@ function IngestPage() {
         const text = await file.text();
         setValues((v) => ({ ...v, text, format: "text", title: v.title || file.name.replace(/\.[^.]+$/, "") }));
       } else {
-        if (!values.token) throw new Error(tr("Enter the admin token to read PDF and DOCX files.", "Escriba el token para leer archivos PDF y DOCX."));
-        const r = await extractText.mutateAsync({ file, token: values.token });
+        const r = await extractText.mutateAsync({ file });
         setValues((v) => ({ ...v, text: r.text, format: r.format, title: v.title || file.name.replace(/\.[^.]+$/, "") }));
         toast.success(tr(`Read ${r.chars.toLocaleString()} characters${r.pages ? ` from ${r.pages} pages` : ""}`, `Se leyeron ${r.chars.toLocaleString()} caracteres`));
       }
@@ -210,7 +204,7 @@ function IngestPage() {
             {canPublish && (
               <div className="flex flex-wrap items-center gap-4 rounded-lg border border-applies-border bg-applies-bg px-5 py-4">
                 <p className="flex-1 text-base text-deed"><strong>{tr("VERIFIED.", "VERIFICADA.")}</strong> {tr("Validation and the Judge passed. The rules are staged and not yet live.", "La validación y el Juez aprobaron. Las reglas están preparadas pero aún no vigentes.")}</p>
-                <Button size="lg" disabled={publish.isPending} onClick={() => void act(() => publish.mutateAsync({ jobId: jobId!, token: values.token }), tr("Published to the live law engine", "Publicada en el motor de leyes"))}>{tr("Publish to live law", "Publicar en la ley vigente")}</Button>
+                <Button size="lg" disabled={publish.isPending} onClick={() => void act(() => publish.mutateAsync({ jobId: jobId! }), tr("Published to the live law engine", "Publicada en el motor de leyes"))}>{tr("Publish to live law", "Publicar en la ley vigente")}</Button>
               </div>
             )}
 
@@ -275,6 +269,19 @@ function IngestPage() {
                     {res.impact.sample.slice(0, 4).map((a) => <Link key={a.address_id} to="/a/$addressId" params={{ addressId: a.address_id }} search={{ asOf: res.impact?.effective_date ?? undefined }} className="mr-3 text-permit underline underline-offset-2">{a.label.split(",")[0]}</Link>)}
                   </p>
                 )}
+                {job.status === "published" && res.changes?.notifications && (
+                  <div className="mt-4 rounded-lg border border-hairline bg-sheet px-4 py-3 text-sm text-deed">
+                    <p className="font-semibold">{tr("Watched-address notifications", "Notificaciones de direcciones seguidas")}</p>
+                    {!res.changes.notifications.configured ? (
+                      <p className="mt-1 text-unknown">{tr("Email notifications are not configured. Publication succeeded.", "Las notificaciones por correo no están configuradas. La publicación se realizó.")}</p>
+                    ) : (
+                      <p className="mt-1">{tr(
+                        `${res.changes.notifications.matched_watchers} matched · ${res.changes.notifications.sent} sent · ${res.changes.notifications.failed} failed · ${res.changes.notifications.skipped_duplicate} duplicate skipped`,
+                        `${res.changes.notifications.matched_watchers} coincidencias · ${res.changes.notifications.sent} enviadas · ${res.changes.notifications.failed} fallidas · ${res.changes.notifications.skipped_duplicate} duplicada omitida`,
+                      )}</p>
+                    )}
+                  </div>
+                )}
               </section>
             )}
 
@@ -284,10 +291,10 @@ function IngestPage() {
                   job={job}
                   focusRule={focusRule}
                   busy={publish.isPending || reject.isPending || rejudge.isPending || edit.isPending}
-                  onApprove={() => void act(() => publish.mutateAsync({ jobId: jobId!, token: values.token, approve: true }), tr("Approved and published", "Aprobada y publicada"))}
-                  onReject={() => void act(() => reject.mutateAsync({ jobId: jobId!, token: values.token }), tr("Rejected. Nothing was published.", "Rechazada. No se publicó nada."))}
-                  onRejudge={() => void act(() => rejudge.mutateAsync({ jobId: jobId!, token: values.token }), tr("The Judge reviewed it again", "El Juez la revisó otra vez"))}
-                  onSaveEdit={(rules) => void act(() => edit.mutateAsync({ jobId: jobId!, rules, token: values.token }), tr("Saved. Validation ran again; run the Judge to re-verify.", "Guardado. La validación se ejecutó otra vez; ejecute el Juez para verificar de nuevo."))}
+                  onApprove={() => void act(() => publish.mutateAsync({ jobId: jobId!, approve: true }), tr("Approved and published", "Aprobada y publicada"))}
+                  onReject={() => void act(() => reject.mutateAsync({ jobId: jobId! }), tr("Rejected. Nothing was published.", "Rechazada. No se publicó nada."))}
+                  onRejudge={() => void act(() => rejudge.mutateAsync({ jobId: jobId! }), tr("The Judge reviewed it again", "El Juez la revisó otra vez"))}
+                  onSaveEdit={(rules) => void act(() => edit.mutateAsync({ jobId: jobId!, rules }), tr("Saved. Validation ran again; run the Judge to re-verify.", "Guardado. La validación se ejecutó otra vez; ejecute el Juez para verificar de nuevo."))}
                 />
               </div>
             )}

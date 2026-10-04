@@ -1718,6 +1718,35 @@
         "level": "city"
       },
       "type": "conflicts_with"
+    },
+    {
+      "active_from": null,
+      "condition": null,
+      "effect": "supersede",
+      "evidence": {
+        "char_end": 4142,
+        "char_start": 3871,
+        "cite": "Cal. Civ. Code § 1947.12",
+        "doc_id": "D024",
+        "doc_sha256": "eb9c42af2b9a5c220ca37816f409f0bd3ea92a002a973283e779fdb72de18bd7",
+        "low_signal": false,
+        "quote": "Housing subject to rent or price control through a public entity’s valid exercise of its police power consistent with Chapter 2.7 (commencing with Section 1954.50) that restricts annual increases in the rental rate to an amount less than that provided in subdivision (a).",
+        "quote_source": "corpus",
+        "retrieved_at": "2026-10-01T22:35Z",
+        "supplementary_doc": null,
+        "tier": "A",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1947.12",
+        "version_label": null
+      },
+      "relation_id": "REL-004",
+      "source_rule_id": "CA-RENT-01",
+      "target_rule_id": null,
+      "target_scope": {
+        "category": "rent_increase_limits",
+        "level": "city",
+        "state": "CA"
+      },
+      "type": "yields_to"
     }
   ],
   "rules": [
@@ -2092,7 +2121,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "All housing in the City of Boston.",
+      "coverage_text": "Housing providers with DND funding or land, or income-restricted units under the BPDA Inclusionary Development Policy.",
       "doc_type": "guidance",
       "effective": {
         "alternatives": [],
@@ -2293,7 +2322,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "Units fully or partially covered by Berkeley's Rent Ordinance.",
+      "coverage_text": "Most units in multifamily properties built before 1980.",
       "doc_type": "guidance",
       "effective": {
         "alternatives": [],
@@ -2380,7 +2409,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "All fully covered residential rental units in Berkeley with tenancies starting on or after February 6, 2024.",
+      "coverage_text": "Most units in multifamily properties built before 1980.",
       "doc_type": "guidance",
       "effective": {
         "alternatives": [],
@@ -2734,7 +2763,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "Fully or partially covered units under the Berkeley Rent Ordinance.",
+      "coverage_text": "Most units in multifamily properties built before 1980.",
       "doc_type": "guidance",
       "effective": {
         "alternatives": [],
@@ -2971,7 +3000,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "Rental units subject to Berkeley's rent stabilization and Ellis ordinances where owner move-in or Ellis Act evictions occur.",
+      "coverage_text": "Most units in multifamily properties built before 1980.",
       "doc_type": "guidance",
       "effective": {
         "alternatives": [],
@@ -3081,9 +3110,20 @@
       },
       "confidence": 0.7,
       "coverage": {
-        "const": true
+        "all": [
+          {
+            "fact": "property_type",
+            "op": "==",
+            "value": "multifamily_5plus"
+          },
+          {
+            "fact": "co_date",
+            "op": "<",
+            "value": "1980-01-01"
+          }
+        ]
       },
-      "coverage_text": "All residential rental properties subject to Berkeley rent stabilization.",
+      "coverage_text": "Most units in multifamily properties built before 1980.",
       "doc_type": "guidance",
       "effective": {
         "alternatives": [],
@@ -3165,7 +3205,9 @@
         "adjudicated_fields": [],
         "conf_delta": -0.1,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "coverage repaired from sibling rule or same-jurisdiction source text"
+        ],
         "pass": "B",
         "passes": [
           "B"
@@ -3207,9 +3249,20 @@
       },
       "confidence": 0.7,
       "coverage": {
-        "const": true
+        "all": [
+          {
+            "fact": "property_type",
+            "op": "==",
+            "value": "multifamily_5plus"
+          },
+          {
+            "fact": "co_date",
+            "op": "<",
+            "value": "1980-01-01"
+          }
+        ]
       },
-      "coverage_text": "All fully covered residential rental units in Berkeley.",
+      "coverage_text": "Most units in multifamily properties built before 1980.",
       "doc_type": "guidance",
       "effective": {
         "alternatives": [],
@@ -3274,7 +3327,8 @@
         "conf_delta": -0.1,
         "model_lifecycle": "enacted",
         "notes": [
-          "exemption not expressible: Landlords with banked (unused) AGAs from previous years may implement a rent inc"
+          "exemption not expressible: Landlords with banked (unused) AGAs from previous years may implement a rent inc",
+          "coverage repaired from sibling rule or same-jurisdiction source text"
         ],
         "pass": "B",
         "passes": [
@@ -3624,7 +3678,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "Applies to any person using or distributing a common pricing algorithm, not limited to housing.",
+      "coverage_text": "California coverage depends on the certificate-of-occupancy date stated in the city's own sources (1979-06-13).",
       "doc_type": "statute",
       "effective": {
         "alternatives": [],
@@ -3714,7 +3768,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "All persons subject to Cartwright Act enforcement in California.",
+      "coverage_text": "California coverage depends on the certificate-of-occupancy date stated in the city's own sources (1979-06-13).",
       "doc_type": "statute",
       "effective": {
         "alternatives": [],
@@ -3776,126 +3830,6 @@
       "audio": {},
       "category": "security_deposits",
       "citation": {
-        "char_end": 512,
-        "char_start": 406,
-        "cite": "Cal. Civ. Code § 1947.12 (as applied in Berkeley, CA)",
-        "doc_id": "D007",
-        "doc_sha256": "2ba3028382b89ee70810a45e25dd9707297bd65512e2723f4f9bda514af57203",
-        "low_signal": false,
-        "quote": "Starting July 1, 2024, many landlords may only charge one month's rent for unfurnished and furnished units",
-        "quote_source": "corpus",
-        "retrieved_at": "2026-10-01T22:35Z",
-        "supplementary_doc": null,
-        "tier": "B",
-        "url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
-        "version_label": null
-      },
-      "confidence": 0.7,
-      "coverage": {
-        "const": true
-      },
-      "coverage_text": "All residential rental units.",
-      "doc_type": "guidance",
-      "effective": {
-        "alternatives": [],
-        "anchor_quote": null,
-        "derivation": "text_explicit",
-        "hi": "2024-07-01",
-        "lo": "2024-07-01",
-        "precision": "day"
-      },
-      "exemptions": [
-        {
-          "citation": null,
-          "description": "Landlords owning only two rental properties with no more than four residential units total, where ownership is held by a natural person, family trust, or LLC with all natural person members",
-          "predicate": {
-            "const": "unknown"
-          },
-          "quote": "landlords who own only two rental properties with no more than four residential units total can charge up to two months' rent for furnished and unfurnished units if ownership is held by a natural person, family trust, or limited liability company (LLC) where all members are natural persons"
-        },
-        {
-          "citation": null,
-          "description": "Landlords owning only two rental properties with no more than four units total, owned by a natural person, family trust, or all-natural-person LLC, may charge up to two months' rent.",
-          "predicate": {
-            "const": "unknown"
-          },
-          "quote": "Starting July 1, 2024, landlords who own only two rental properties with no more than four residential units total can charge up to two months' rent for furnished and unfurnished units if ownership is held by a natural person, family trust, or limited liability company (LLC) where all members are natural persons"
-        }
-      ],
-      "exemptions_text": "Landlords owning only two rental properties with no more than four residential units total, where ownership is held by a natural person, family trust, or LLC with all natural person members",
-      "extra_citations": [],
-      "grade_level_en": 7.88,
-      "jurisdiction": {
-        "geoid": null,
-        "id": "CA",
-        "label": "CA",
-        "level": "state",
-        "name": "California",
-        "state": "CA"
-      },
-      "key_values": [
-        {
-          "name": "Security Deposit Limit",
-          "source_doc_id": "D007",
-          "text": "one month's rent",
-          "unit": "months",
-          "valid_from": "2024-07-01",
-          "valid_to": null,
-          "value": 1.0
-        },
-        {
-          "name": "deposit_cap",
-          "source_doc_id": "D007",
-          "text": "one month's rent",
-          "unit": "months",
-          "valid_from": "2024-07-01",
-          "valid_to": null,
-          "value": 1.0
-        }
-      ],
-      "lifecycle": "enacted",
-      "open_question_ids": [],
-      "penalty": null,
-      "plain": {
-        "summary_en": "Starting July 1, 2024, landlords can charge only one month's rent as a security deposit. This applies to both furnished and unfurnished units.",
-        "summary_es": "A partir del 1 de julio de 2024, los arrendadores pueden cobrar solo un mes de renta como depósito de seguridad. Esto se aplica tanto a unidades amuebladas como sin amuebles.",
-        "who_en": "This rule covers all residential rental units.",
-        "who_es": "Esta regla cubre todas las unidades de alquiler residencial."
-      },
-      "provenance": {
-        "adjudicated_fields": [],
-        "conf_delta": -0.1,
-        "model_lifecycle": "enacted",
-        "notes": [
-          "exemption downgraded to unknown (predicate not faithful): Landlords owning only two rental properties with no more than four residential u: The predicate's third condition uses `{\"any\": [{\"fact\": \"owner_is_natural_person\", \"op\": \"==\", \"value\": true}, {\"fact\": ",
-          "exemption downgraded to unknown (predicate not faithful): Landlords owning only two rental properties with no more than four units total, : The predicate is incomplete. The legal condition requires three elements: (1) landlord owns only two rental properties ("
-        ],
-        "pass": "B",
-        "passes": [
-          "B"
-        ],
-        "plain_template": false,
-        "rehomed_from": "Berkeley, CA",
-        "relations_hint": [],
-        "uncertain_fields": [],
-        "votes": {
-          "pass": "B only"
-        }
-      },
-      "requirement": "Effective July 1, 2024, landlords may charge only one month's rent as a security deposit for unfurnished and furnished residential units.",
-      "review_flag": false,
-      "rule_id": "CA-DEP-01",
-      "sunset": null,
-      "tenancy_conditions": [],
-      "title": "Security Deposit Amount Limit - General",
-      "votes": {
-        "pass": "B only"
-      }
-    },
-    {
-      "audio": {},
-      "category": "security_deposits",
-      "citation": {
         "char_end": 12937,
         "char_start": 12329,
         "cite": "Cal. Civ. Code § 1950.5(h)",
@@ -3914,7 +3848,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "Residential rental property used as a tenant's dwelling.",
+      "coverage_text": "California coverage depends on the certificate-of-occupancy date stated in the city's own sources (1979-06-13).",
       "doc_type": "statute",
       "effective": {
         "alternatives": [],
@@ -4152,7 +4086,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "All residential rental units.",
+      "coverage_text": "California coverage depends on the certificate-of-occupancy date stated in the city's own sources (1979-06-13).",
       "doc_type": "guidance",
       "effective": {
         "alternatives": [],
@@ -4233,7 +4167,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "All rental housing accommodations.",
+      "coverage_text": "California coverage depends on the certificate-of-occupancy date stated in the city's own sources (1979-06-13).",
       "doc_type": "statute",
       "effective": {
         "alternatives": [],
@@ -4315,7 +4249,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "All residential rental properties.",
+      "coverage_text": "California coverage depends on the certificate-of-occupancy date stated in the city's own sources (1979-06-13).",
       "doc_type": "statute",
       "effective": {
         "alternatives": [],
@@ -4462,7 +4396,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "All housing accommodations.",
+      "coverage_text": "California coverage depends on the certificate-of-occupancy date stated in the city's own sources (1979-06-13).",
       "doc_type": "statute",
       "effective": {
         "alternatives": [],
@@ -4544,7 +4478,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "All residential real properties subject to just cause requirements.",
+      "coverage_text": "California coverage depends on the certificate-of-occupancy date stated in the city's own sources (1979-06-13).",
       "doc_type": "statute",
       "effective": {
         "alternatives": [],
@@ -4765,7 +4699,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "All residential real property unless exempted.",
+      "coverage_text": "California coverage depends on the certificate-of-occupancy date stated in the city's own sources (1979-06-13).",
       "doc_type": "statute",
       "effective": {
         "alternatives": [],
@@ -4915,7 +4849,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "All residential real property.",
+      "coverage_text": "California coverage depends on the certificate-of-occupancy date stated in the city's own sources (1979-06-13).",
       "doc_type": "statute",
       "effective": {
         "alternatives": [],
@@ -5052,7 +4986,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "All residential rental properties in Berkeley.",
+      "coverage_text": "California coverage depends on the certificate-of-occupancy date stated in the city's own sources (1979-06-13).",
       "doc_type": "guidance",
       "effective": {
         "alternatives": [],
@@ -5120,6 +5054,84 @@
       "votes": {
         "pass": "B only"
       }
+    },
+    {
+      "audio": {},
+      "category": "just_cause_eviction",
+      "citation": {
+        "char_end": 802,
+        "char_start": 544,
+        "cite": "Cambridge Municipal Code ch. 8.71",
+        "doc_id": "D031",
+        "doc_sha256": "65ffa9dca5815b925debf63d1ff0974f710aed6614723f28d722209094a36b20",
+        "low_signal": false,
+        "quote": "The City of Cambridge Tenants Rights and Resources Ordinance, Chapter 8.71 of the Cambridge Municipal Code was established to inform and educate both residential tenants and landlords in Cambridge of their rights and responsibilities as a landlord or tenant.",
+        "quote_source": "corpus",
+        "retrieved_at": "2026-10-01T22:36Z",
+        "supplementary_doc": null,
+        "tier": "B",
+        "url": "https://www.cambridgema.gov/tenantrights",
+        "version_label": null
+      },
+      "confidence": 0.75,
+      "coverage": {
+        "const": true
+      },
+      "coverage_text": "Residential rental agreements in Cambridge, including a single dwelling unit.",
+      "doc_type": "guidance",
+      "effective": {
+        "alternatives": [],
+        "anchor_quote": null,
+        "derivation": null,
+        "hi": null,
+        "lo": null,
+        "precision": "unknown"
+      },
+      "exemptions": [],
+      "exemptions_text": null,
+      "extra_citations": [],
+      "grade_level_en": null,
+      "jurisdiction": {
+        "geoid": "2511000",
+        "id": "MA-2511000",
+        "label": "Cambridge, MA",
+        "level": "city",
+        "name": "Cambridge",
+        "state": "MA"
+      },
+      "key_values": [
+        {
+          "name": "key",
+          "source_doc_id": "D031",
+          "text": "$300 per day",
+          "unit": null,
+          "valid_from": null,
+          "valid_to": null,
+          "value": null
+        }
+      ],
+      "lifecycle": "enacted",
+      "open_question_ids": [],
+      "penalty": "$300 for each day's violation",
+      "plain": {
+        "summary_en": "Landlords must give tenants the city's rights-and-resources guide at the start of a tenancy and when the tenancy is being ended.",
+        "summary_es": "Landlords must give tenants the city's rights-and-resources guide at the start of a tenancy and when the tenancy is being ended.",
+        "who_en": "Landlords must give tenants the city's rights-and-resources guide at the start of a tenancy and when the tenancy is being ended.",
+        "who_es": "Landlords must give tenants the city's rights-and-resources guide at the start of a tenancy and when the tenancy is being ended."
+      },
+      "provenance": {
+        "notes": [
+          "recovered from corpus by deterministic gap fill"
+        ],
+        "pass": "repair"
+      },
+      "requirement": "Landlords must give tenants the city's rights-and-resources guide at the start of a tenancy and when the tenancy is being ended.",
+      "review_flag": false,
+      "rule_id": "CAM-JCE-01",
+      "sunset": null,
+      "tenancy_conditions": [],
+      "title": "Tenants Rights and Resources Notification Ordinance",
+      "votes": {}
     },
     {
       "audio": {},
@@ -5702,7 +5714,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "All residential rental units covered by the RSO or JCO.",
+      "coverage_text": "Rental properties in Los Angeles that were first built on or before October 1, 1978.",
       "doc_type": "guidance",
       "effective": {
         "alternatives": [],
@@ -6167,7 +6179,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "All residential rental units subject to condominium conversion with approved tentative parcel or tract map.",
+      "coverage_text": "Rental properties in Los Angeles that were first built on or before October 1, 1978.",
       "doc_type": "guidance",
       "effective": {
         "alternatives": [],
@@ -6369,9 +6381,15 @@
       },
       "confidence": 0.8,
       "coverage": {
-        "const": true
+        "all": [
+          {
+            "fact": "co_date",
+            "op": "<=",
+            "value": "1978-10-01"
+          }
+        ]
       },
-      "coverage_text": "Rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO).",
+      "coverage_text": "Rental properties first built on or before October 1, 1978 (plus replacement units) in the City of Los Angeles.",
       "doc_type": "guidance",
       "effective": {
         "alternatives": [],
@@ -6419,7 +6437,9 @@
         "adjudicated_fields": [],
         "conf_delta": 0.0,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "coverage repaired from sibling rule or same-jurisdiction source text"
+        ],
         "pass": "A",
         "passes": [
           "A"
@@ -6708,11 +6728,13 @@
       "coverage": {
         "all": [
           {
-            "const": true
+            "fact": "co_date",
+            "op": "<=",
+            "value": "1978-10-01"
           }
         ]
       },
-      "coverage_text": "Rental units subject to the City of Los Angeles Rent Stabilization Ordinance.",
+      "coverage_text": "Rental properties first built on or before October 1, 1978 (plus replacement units) in the City of Los Angeles.",
       "doc_type": "guidance",
       "effective": {
         "alternatives": [],
@@ -6750,7 +6772,9 @@
         "adjudicated_fields": [],
         "conf_delta": -0.1,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "coverage repaired from sibling rule or same-city source text"
+        ],
         "pass": "B",
         "passes": [
           "B"
@@ -7082,6 +7106,142 @@
     },
     {
       "audio": {},
+      "category": "application_screening_fees",
+      "citation": {
+        "char_end": 2022,
+        "char_start": 1808,
+        "cite": "M.G.L. c. 186, § 15B",
+        "doc_id": "D052",
+        "doc_sha256": "f24c21cb2b32330c0f2f112f066d02b784887a8552cc3777ea96f1d53dd0171f",
+        "low_signal": false,
+        "quote": "At or prior to the commencement of any tenancy, no lessor or agent of the lessor may require a tenant or prospective tenant to pay, to the lessor or to an agent of the lessor, any amount in excess of the following:",
+        "quote_source": "corpus",
+        "retrieved_at": "2026-10-01T22:37Z",
+        "supplementary_doc": null,
+        "tier": "A",
+        "url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+        "version_label": "Introductory paragraph of clause (b) of subsection (1) as amended by 2025, 9, Secs. 54 and 55, effective 2025-08-01"
+      },
+      "confidence": 0.75,
+      "coverage": {
+        "const": true
+      },
+      "coverage_text": "Residential tenancies in Massachusetts.",
+      "doc_type": "statute",
+      "effective": {
+        "alternatives": [],
+        "anchor_quote": null,
+        "derivation": "text_explicit",
+        "hi": "2025-08-01",
+        "lo": "2025-08-01",
+        "precision": "day"
+      },
+      "exemptions": [],
+      "exemptions_text": null,
+      "extra_citations": [],
+      "grade_level_en": null,
+      "jurisdiction": {
+        "geoid": null,
+        "id": "MA",
+        "label": "MA",
+        "level": "state",
+        "name": "Massachusetts",
+        "state": "MA"
+      },
+      "key_values": [],
+      "lifecycle": "enacted",
+      "open_question_ids": [],
+      "penalty": null,
+      "plain": {
+        "summary_en": "At the start of a tenancy a lessor may require only first month's rent, last month's rent, a security deposit equal to the first month's rent, and the cost of a key and lock.",
+        "summary_es": "At the start of a tenancy a lessor may require only first month's rent, last month's rent, a security deposit equal to the first month's rent, and the cost of a key and lock.",
+        "who_en": "At the start of a tenancy a lessor may require only first month's rent, last month's rent, a security deposit equal to the first month's rent, and the cost of a key and lock.",
+        "who_es": "At the start of a tenancy a lessor may require only first month's rent, last month's rent, a security deposit equal to the first month's rent, and the cost of a key and lock."
+      },
+      "provenance": {
+        "notes": [
+          "recovered from corpus by deterministic gap fill"
+        ],
+        "pass": "repair"
+      },
+      "requirement": "At the start of a tenancy a lessor may require only first month's rent, last month's rent, a security deposit equal to the first month's rent, and the cost of a key and lock.",
+      "review_flag": false,
+      "rule_id": "MA-FEE-01",
+      "sunset": null,
+      "tenancy_conditions": [],
+      "title": "Limits on amounts a lessor may require at the start of a tenancy",
+      "votes": {}
+    },
+    {
+      "audio": {},
+      "category": "application_screening_fees",
+      "citation": {
+        "char_end": 1875,
+        "char_start": 1726,
+        "cite": "M.G.L. c. 112, § 87DDD½",
+        "doc_id": "D057",
+        "doc_sha256": "c678b42f8fc6ecfc7c7a6b1bdf6c68aec877daa80a53d62d5d2ca8176c967d7b",
+        "low_signal": false,
+        "quote": "Any fee shall only be paid by the party, lessor or tenant who originally engaged and entered into a contract with the licensed broker or salesperson.",
+        "quote_source": "corpus",
+        "retrieved_at": "2026-10-01T22:56Z",
+        "supplementary_doc": null,
+        "tier": "A",
+        "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXVI/Chapter112/Section87DDD%201~2",
+        "version_label": "Text of section as amended by 2025, 9, Sec. 43, effective 2025-08-01"
+      },
+      "confidence": 0.75,
+      "coverage": {
+        "const": true
+      },
+      "coverage_text": "Residential brokerage in Massachusetts.",
+      "doc_type": "statute",
+      "effective": {
+        "alternatives": [],
+        "anchor_quote": null,
+        "derivation": "text_explicit",
+        "hi": "2025-08-01",
+        "lo": "2025-08-01",
+        "precision": "day"
+      },
+      "exemptions": [],
+      "exemptions_text": null,
+      "extra_citations": [],
+      "grade_level_en": null,
+      "jurisdiction": {
+        "geoid": null,
+        "id": "MA",
+        "label": "MA",
+        "level": "state",
+        "name": "Massachusetts",
+        "state": "MA"
+      },
+      "key_values": [],
+      "lifecycle": "enacted",
+      "open_question_ids": [],
+      "penalty": null,
+      "plain": {
+        "summary_en": "A licensed broker may contract with a tenant or with a landlord, and any fee is paid only by the party who originally engaged the broker.",
+        "summary_es": "A licensed broker may contract with a tenant or with a landlord, and any fee is paid only by the party who originally engaged the broker.",
+        "who_en": "A licensed broker may contract with a tenant or with a landlord, and any fee is paid only by the party who originally engaged the broker.",
+        "who_es": "A licensed broker may contract with a tenant or with a landlord, and any fee is paid only by the party who originally engaged the broker."
+      },
+      "provenance": {
+        "notes": [
+          "recovered from corpus by deterministic gap fill"
+        ],
+        "pass": "repair"
+      },
+      "requirement": "A licensed broker may contract with a tenant or with a landlord, and any fee is paid only by the party who originally engaged the broker.",
+      "review_flag": false,
+      "rule_id": "MA-FEE-02",
+      "sunset": null,
+      "tenancy_conditions": [],
+      "title": "Broker fee paid only by the party who hired the broker",
+      "votes": {}
+    },
+    {
+      "audio": {},
       "category": "just_cause_eviction",
       "citation": {
         "char_end": 1122,
@@ -7389,7 +7549,7 @@
       "citation": {
         "char_end": null,
         "char_start": null,
-        "cite": "Massachusetts rent-control ballot question",
+        "cite": "Massachusetts rent-control ballot question; IP 25-21",
         "doc_id": "D059",
         "doc_sha256": null,
         "low_signal": false,
@@ -8118,7 +8278,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "Most residential rentals including single-family homes and apartments.",
+      "coverage_text": "All residential rental properties are covered except two- or three-unit owner-occupied premises, hotels, motels, and seasonal rental units.",
       "doc_type": "guidance",
       "effective": {
         "alternatives": [],
@@ -8209,7 +8369,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "All residential rental properties are covered.",
+      "coverage_text": "All residential rental properties are covered except two- or three-unit owner-occupied premises, hotels, motels, and seasonal rental units.",
       "doc_type": "guidance",
       "effective": {
         "alternatives": [],
@@ -8308,7 +8468,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "All residential rental properties are covered.",
+      "coverage_text": "All residential rental properties are covered except two- or three-unit owner-occupied premises, hotels, motels, and seasonal rental units.",
       "doc_type": "guidance",
       "effective": {
         "alternatives": [],
@@ -8634,7 +8794,7 @@
       "citation": {
         "char_end": 4225,
         "char_start": 3676,
-        "cite": "N.J.S.A. 46:8-55(a)(1)",
+        "cite": "N.J.S.A. 46:8-55(a)(1); P.L.2021, c.110",
         "doc_id": "D065",
         "doc_sha256": "c7d281ddae183438fd360bfa0b4824d6541c532efe6ae8123dad37e0f4d53e1e",
         "low_signal": false,
@@ -8784,7 +8944,7 @@
       "citation": {
         "char_end": 8491,
         "char_start": 7681,
-        "cite": "N.J.S.A. 46:8-56(c)(3)",
+        "cite": "N.J.S.A. 46:8-56(c)(3); P.L.2021, c.110",
         "doc_id": "D065",
         "doc_sha256": "c7d281ddae183438fd360bfa0b4824d6541c532efe6ae8123dad37e0f4d53e1e",
         "low_signal": false,
@@ -8958,7 +9118,7 @@
       "citation": {
         "char_end": 11461,
         "char_start": 10926,
-        "cite": "N.J.S.A. 46:8-58(a)",
+        "cite": "N.J.S.A. 46:8-58(a); P.L.2021, c.110",
         "doc_id": "D065",
         "doc_sha256": "c7d281ddae183438fd360bfa0b4824d6541c532efe6ae8123dad37e0f4d53e1e",
         "low_signal": false,
@@ -9058,7 +9218,7 @@
       "citation": {
         "char_end": 14083,
         "char_start": 13902,
-        "cite": "N.J.S.A. 46:8-60",
+        "cite": "N.J.S.A. 46:8-60; P.L.2021, c.110",
         "doc_id": "D065",
         "doc_sha256": "c7d281ddae183438fd360bfa0b4824d6541c532efe6ae8123dad37e0f4d53e1e",
         "low_signal": false,
@@ -9158,11 +9318,11 @@
       "doc_type": "draft_materials",
       "effective": {
         "alternatives": [],
-        "anchor_quote": null,
-        "derivation": null,
-        "hi": null,
-        "lo": null,
-        "precision": "unknown"
+        "anchor_quote": "2025",
+        "derivation": "text_explicit",
+        "hi": "2025-12-31",
+        "lo": "2025-01-01",
+        "precision": "year"
       },
       "exemptions": [
         {
@@ -9204,7 +9364,7 @@
           "value": 1000.0
         }
       ],
-      "lifecycle": "pending",
+      "lifecycle": "enacted",
       "open_question_ids": [],
       "penalty": "Civil action by tenant: injunctive relief, damages, or civil penalties up to $1,000 per violation",
       "plain": {
@@ -9237,7 +9397,7 @@
       },
       "requirement": "No person may sell, license, or otherwise provide an algorithmic device to a landlord.",
       "review_flag": false,
-      "rule_id": "SD-ALG-P1",
+      "rule_id": "SD-ALG-01",
       "sunset": null,
       "tenancy_conditions": [],
       "title": "Sale of algorithmic rent-setting devices prohibited",
@@ -9273,11 +9433,11 @@
       "doc_type": "draft_materials",
       "effective": {
         "alternatives": [],
-        "anchor_quote": null,
-        "derivation": null,
-        "hi": null,
-        "lo": null,
-        "precision": "unknown"
+        "anchor_quote": "2025",
+        "derivation": "text_explicit",
+        "hi": "2025-12-31",
+        "lo": "2025-01-01",
+        "precision": "year"
       },
       "exemptions": [],
       "exemptions_text": null,
@@ -9302,7 +9462,7 @@
           "value": 1000.0
         }
       ],
-      "lifecycle": "pending",
+      "lifecycle": "enacted",
       "open_question_ids": [],
       "penalty": null,
       "plain": {
@@ -9329,7 +9489,7 @@
       },
       "requirement": "A tenant may seek injunctive relief, damages, or civil penalties of up to $1,000 per violation against a landlord. A prevailing tenant recovers costs and reasonable attorney's fees, and lease provisions limiting attorney's fees recovery are unenforceable for claims under this Division.",
       "review_flag": false,
-      "rule_id": "SD-ALG-P2",
+      "rule_id": "SD-ALG-02",
       "sunset": null,
       "tenancy_conditions": [],
       "title": "Tenant Remedies for Algorithmic Rent-Setting Violations",
@@ -10206,7 +10366,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "All residential units in San Francisco.",
+      "coverage_text": "San Francisco coverage depends on the certificate-of-occupancy date stated in the city's own sources (1979-06-13).",
       "doc_type": "guidance",
       "effective": {
         "alternatives": [],
@@ -10286,7 +10446,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "All residential rental properties in San Francisco.",
+      "coverage_text": "San Francisco coverage depends on the certificate-of-occupancy date stated in the city's own sources (1979-06-13).",
       "doc_type": "guidance",
       "effective": {
         "alternatives": [],
@@ -10387,7 +10547,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "Rental units covered by the San Francisco Rent Ordinance, including some units exempt from rent increase limits.",
+      "coverage_text": "San Francisco coverage depends on the certificate-of-occupancy date stated in the city's own sources (1979-06-13).",
       "doc_type": "guidance",
       "effective": {
         "alternatives": [],
@@ -10482,13 +10642,11 @@
       },
       "confidence": 0.7,
       "coverage": {
-        "all": [
-          {
-            "const": true
-          }
-        ]
+        "fact": "co_date",
+        "op": "<=",
+        "value": "1979-06-13"
       },
-      "coverage_text": "Rent-controlled residential units in San Francisco.",
+      "coverage_text": "San Francisco rent limits depend on the certificate-of-occupancy date in the city's sources (1979-06-13).",
       "doc_type": "guidance",
       "effective": {
         "alternatives": [],
@@ -10543,7 +10701,9 @@
         "adjudicated_fields": [],
         "conf_delta": -0.1,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "coverage repaired from sibling rule or same-city source text"
+        ],
         "pass": "B",
         "passes": [
           "B"
@@ -10585,9 +10745,11 @@
       },
       "confidence": 0.6,
       "coverage": {
-        "const": true
+        "fact": "co_date",
+        "op": "<=",
+        "value": "1979-06-13"
       },
-      "coverage_text": "All residential rental properties in San Francisco.",
+      "coverage_text": "San Francisco rent limits depend on the certificate-of-occupancy date in the city's sources (1979-06-13).",
       "doc_type": "guidance",
       "effective": {
         "alternatives": [],
@@ -10644,7 +10806,9 @@
         "adjudicated_fields": [],
         "conf_delta": -0.1,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "coverage repaired from sibling rule or same-jurisdiction source text"
+        ],
         "pass": "B",
         "passes": [
           "B"
@@ -10665,6 +10829,76 @@
       "votes": {
         "pass": "B only"
       }
+    },
+    {
+      "audio": {},
+      "category": "screening_restrictions",
+      "citation": {
+        "char_end": 5237,
+        "char_start": 5114,
+        "cite": "S.F. Fair Chance Ordinance",
+        "doc_id": "D078",
+        "doc_sha256": "448b85d4e40d5f17d12acf18db20aab4b9337b2e196099fee46c65f46dae91cc",
+        "low_signal": true,
+        "quote": "San Francisco's Fair Chance Ordinance protects residents with arrest or conviction history in affordable housing decisions.",
+        "quote_source": "corpus",
+        "retrieved_at": "2026-10-01T22:37Z",
+        "supplementary_doc": null,
+        "tier": "B",
+        "url": "https://sf-hrc.org/fair-chance-ordinance",
+        "version_label": null
+      },
+      "confidence": 0.75,
+      "coverage": {
+        "fact": "subsidized_or_affordable",
+        "op": "==",
+        "value": true
+      },
+      "coverage_text": "Affordable housing decisions in San Francisco.",
+      "doc_type": "guidance",
+      "effective": {
+        "alternatives": [],
+        "anchor_quote": null,
+        "derivation": null,
+        "hi": null,
+        "lo": null,
+        "precision": "unknown"
+      },
+      "exemptions": [],
+      "exemptions_text": null,
+      "extra_citations": [],
+      "grade_level_en": null,
+      "jurisdiction": {
+        "geoid": "0667000",
+        "id": "CA-0667000",
+        "label": "San Francisco, CA",
+        "level": "city",
+        "name": "San Francisco",
+        "state": "CA"
+      },
+      "key_values": [],
+      "lifecycle": "enacted",
+      "open_question_ids": [],
+      "penalty": null,
+      "plain": {
+        "summary_en": "The Fair Chance Ordinance limits the use of arrest or conviction history in affordable housing decisions.",
+        "summary_es": "The Fair Chance Ordinance limits the use of arrest or conviction history in affordable housing decisions.",
+        "who_en": "The Fair Chance Ordinance limits the use of arrest or conviction history in affordable housing decisions.",
+        "who_es": "The Fair Chance Ordinance limits the use of arrest or conviction history in affordable housing decisions."
+      },
+      "provenance": {
+        "notes": [
+          "recovered from corpus by deterministic gap fill"
+        ],
+        "pass": "repair"
+      },
+      "requirement": "The Fair Chance Ordinance limits the use of arrest or conviction history in affordable housing decisions.",
+      "review_flag": false,
+      "rule_id": "SF-SCR-01",
+      "sunset": null,
+      "tenancy_conditions": [],
+      "title": "Fair Chance Ordinance (affordable housing)",
+      "votes": {}
     },
     {
       "audio": {},
@@ -10937,7 +11171,7 @@
       "coverage": {
         "const": true
       },
-      "coverage_text": "Guidance does not state coverage limits; applies to units covered by the ordinance.",
+      "coverage_text": "Residential rental property excluding housing produced in the last 15 years, deed-restricted affordable housing, hotel and transient occupancy, hospital and care facilities, dormitories, and other shared living quarters.",
       "doc_type": "guidance",
       "effective": {
         "alternatives": [],
@@ -11183,9 +11417,22 @@
       },
       "confidence": 0.85,
       "coverage": {
-        "const": true
+        "not": {
+          "any": [
+            {
+              "fact": "co_date",
+              "op": ">",
+              "value": "1995-02-01"
+            },
+            {
+              "fact": "property_type",
+              "op": "==",
+              "value": "other"
+            }
+          ]
+        }
       },
-      "coverage_text": "Guidance does not state coverage limits; applies to rental units covered by the ordinance.",
+      "coverage_text": "Residential buildings constructed on or before February 1, 1995, excluding mobile home spaces offered for rent after January 1, 1990.",
       "doc_type": "guidance",
       "effective": {
         "alternatives": [],
@@ -11249,7 +11496,9 @@
         "adjudicated_fields": [],
         "conf_delta": 0.05,
         "model_lifecycle": "enacted",
-        "notes": [],
+        "notes": [
+          "coverage repaired from sibling rule or same-jurisdiction source text"
+        ],
         "pass": "A",
         "passes": [
           "A",

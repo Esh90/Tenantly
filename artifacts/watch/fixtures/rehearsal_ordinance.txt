@@ -1,18 +1,19 @@
 REHEARSAL FIXTURE: this text is invented to rehearse Tenantly's ingest pipeline. It is not a real law.
 
-ORDINANCE NO. R-2026-REHEARSAL
+ORDINANCE NO. R-2026-REHEARSAL-3
 
-AN ORDINANCE LIMITING RENTAL APPLICATION FEES IN THE CITY OF CAMBRIDGE
+AN ORDINANCE REQUIRING NOTICE BEFORE AUTOMATED TENANT SCREENING
+IN THE CITY OF CAMBRIDGE
 
 BE IT ORDAINED by the City Council of the City of Cambridge:
 
-Section 8.99.010. Application fees.
-No landlord or agent of a landlord shall charge a prospective tenant an application fee or screening fee that exceeds fifty dollars ($50) for any rental unit in a building with five or more units.
+Section 8.100.010. Automated tenant screening notice.
+Before using an automated tenant-screening system to evaluate an application for a residential rental unit in the City of Cambridge, a landlord or the landlord's agent shall give the applicant a written notice that identifies the system's provider and the categories of information the system will consider.
 
-Section 8.99.020. Exemptions.
-This chapter does not apply to a building with fewer than five units in which the owner lives.
+Section 8.100.020. Coverage.
+This chapter applies to every application for a residential rental unit located in the City of Cambridge.
 
-Section 8.99.030. Effective date.
-This ordinance shall take effect on the first day of the second month next following the date of enactment.
+Section 8.100.030. Effective date.
+This ordinance takes effect on January 20, 2027.
 
-Approved November 20, 2026.
+Enacted December 5, 2026.

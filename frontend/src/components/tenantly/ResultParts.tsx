@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AlertTriangle, BellRing, CalendarPlus, Check, Rss } from "lucide-react";
+import { AlertTriangle, BellRing, Check } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog";
@@ -7,12 +7,12 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { RESULT_META } from "./ResultPill";
-import { useSubscribeAlerts } from "@/lib/api/hooks";
-import type { BuildingFacts as Facts, DecisiveQuestion, FactValue, Lang, LookupResponse, ReasoningBoundary, Result } from "@/lib/api/types";
+import { useAlertStatus, useSubscribeAlerts } from "@/lib/api/hooks";
+import type { BuildingFacts as Facts, DecisiveQuestion, FactValue, LookupResponse, ReasoningBoundary, Result } from "@/lib/api/types";
 import { useI18n } from "@/lib/i18n";
 import { useWatched } from "@/lib/watch";
-import { API_BASE_URL } from "@/config";
 import { cn } from "@/lib/utils";
+import { fmtDate } from "@/lib/format";
 
 /* ---------- summary line ---------- */
 export function SummaryLine({ counts }: { counts: Record<Result, number> }) {
@@ -94,7 +94,12 @@ export function DecisivePanel({
                 ))}
               </ToggleGroup>
             ) : q.input === "select" && q.options ? (
-              <select value={val} onChange={(e) => setVal(e.target.value)} className="h-11 rounded-md border border-hairline bg-sheet px-3">
+              <select
+                aria-label={tb(q.prompt)}
+                value={val}
+                onChange={(e) => setVal(e.target.value)}
+                className="h-11 rounded-md border border-hairline bg-sheet px-3"
+              >
                 <option value="">{tr("Choose one", "Elija una")}</option>
                 {q.options.map((o) => <option key={o.value} value={o.value}>{tb(o.label)}</option>)}
               </select>
@@ -202,22 +207,21 @@ export function BoundaryBlock({ b }: { b: ReasoningBoundary }) {
 }
 
 /* ---------- watch ---------- */
-const feedUrl = (p: string) => (API_BASE_URL ? `${API_BASE_URL}${p}` : p);
-
 export function WatchBlock({ lookup }: { lookup: LookupResponse }) {
   const { tr, lang } = useI18n();
-  const { isWatched, add } = useWatched();
+  const { list, isWatched, add } = useWatched();
   const [open, setOpen] = useState(false);
   const [email, setEmail] = useState("");
-  const [l, setL] = useState<Lang>(lang);
   const sub = useSubscribeAlerts();
   const watched = isWatched(lookup.address.address_id);
+  const entry = list.find((item) => item.address_id === lookup.address.address_id);
+  const status = useAlertStatus(entry?.token);
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const r = await sub.mutateAsync({ email, address_id: lookup.address.address_id, lang: l });
-      add({ address_id: lookup.address.address_id, label: lookup.address.label, since: new Date().toISOString(), token: r.unsubscribe_token, atom: r.feeds.atom, ics: r.feeds.ics });
+      const r = await sub.mutateAsync({ email, address_id: lookup.address.address_id, lang });
+      add({ address_id: r.address_id, label: lookup.address.label, since: r.created_at, token: r.unsubscribe_token, atom: r.feeds.atom, ics: r.feeds.ics });
       toast.success(tr("Watching this address", "Siguiendo esta dirección"));
     } catch {
       toast.error(tr("We couldn't save that. Try again.", "No pudimos guardarlo. Intente de nuevo."));
@@ -227,11 +231,29 @@ export function WatchBlock({ lookup }: { lookup: LookupResponse }) {
   return (
     <section>
       <h2 className="text-base font-semibold text-deed">{tr("Watch this address", "Seguir esta dirección")}</h2>
-      <p className="mt-1 text-sm text-graphite">{tr("Get told when a rule for this building changes.", "Reciba aviso cuando cambie una regla para este edificio.")}</p>
+      <p className="mt-1 text-sm text-graphite">{tr("We'll notify you when a published housing-law change affects this address.", "Le avisaremos cuando un cambio publicado en la ley de vivienda afecte esta dirección.")}</p>
       <Button variant={watched ? "outline" : "default"} className="mt-3 w-full" onClick={() => setOpen(true)}>
         {watched ? <Check /> : <BellRing />}
-        {watched ? tr("Watching this address", "Siguiendo esta dirección") : tr("Watch this address", "Seguir esta dirección")}
+        {watched ? tr("✓ You're watching this property", "✓ Está siguiendo esta propiedad") : tr("Watch this address", "Seguir esta dirección")}
       </Button>
+      {watched && (
+        <div className="mt-3 rounded-md border border-hairline bg-sheet px-3 py-3 text-sm">
+          <p className="font-semibold text-deed">{tr("Notification status", "Estado de notificación")}</p>
+          <p className="mt-1 text-applies">{tr("✓ Watching this address", "✓ Siguiendo esta dirección")}</p>
+          {status.data && !status.data.notifications_configured && (
+            <p className="mt-1 text-unknown">{tr("Email notifications are not configured.", "Las notificaciones por correo no están configuradas.")}</p>
+          )}
+          {status.data?.last_notification?.status === "sent" && (
+            <p className="mt-1 text-graphite">{tr("Last notification", "Última notificación")}: {fmtDate(status.data.last_notification.attempted_at.slice(0, 10), lang)}</p>
+          )}
+          {status.data?.last_notification?.status === "failed" && (
+            <p className="mt-1 text-destructive">⚠ {tr("Notification could not be sent", "No se pudo enviar la notificación")}</p>
+          )}
+          {status.data && !status.data.last_notification && (
+            <p className="mt-1 text-graphite">{tr("No notifications yet.", "Aún no hay notificaciones.")}</p>
+          )}
+        </div>
+      )}
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="bg-sheet sm:max-w-md">
           <DialogHeader>
@@ -240,13 +262,12 @@ export function WatchBlock({ lookup }: { lookup: LookupResponse }) {
           </DialogHeader>
           {sub.data || watched ? (
             <div className="space-y-3">
-              <p className="text-base text-deed">{tr("You're watching this address.", "Está siguiendo esta dirección.")}</p>
-              {sub.data && (
-                <>
-                  <a href={feedUrl(sub.data.feeds.ics)} className="flex items-center gap-2 text-permit underline-offset-4 hover:underline"><CalendarPlus className="size-4" />{tr("Add effective dates to your calendar", "Agregar fechas de vigencia a su calendario")}</a>
-                  <a href={feedUrl(sub.data.feeds.atom)} className="flex items-center gap-2 text-permit underline-offset-4 hover:underline"><Rss className="size-4" />{tr("Follow changes in a feed reader", "Seguir cambios en un lector de noticias")}</a>
-                </>
-              )}
+              <p className="text-base font-semibold text-deed">{tr("✓ You're watching this property", "✓ Está siguiendo esta propiedad")}</p>
+              <p className="text-sm text-graphite">{tr("We'll notify you when a published housing-law change affects this address.", "Le avisaremos cuando un cambio publicado en la ley de vivienda afecte esta dirección.")}</p>
+              {sub.data && !sub.data.notifications_configured && <p className="text-sm text-unknown">{tr("Email notifications are not configured.", "Las notificaciones por correo no están configuradas.")}</p>}
+              <DialogFooter>
+                <Button type="button" onClick={() => setOpen(false)}>{tr("Done", "Listo")}</Button>
+              </DialogFooter>
             </div>
           ) : (
             <form onSubmit={submit} className="space-y-4">
@@ -254,18 +275,8 @@ export function WatchBlock({ lookup }: { lookup: LookupResponse }) {
                 <Label htmlFor="w-email">{tr("Email", "Correo")}</Label>
                 <Input id="w-email" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} className="mt-1.5 h-11" />
               </div>
-              <div>
-                <Label>{tr("Language", "Idioma")}</Label>
-                <ToggleGroup type="single" value={l} onValueChange={(v) => v && setL(v as Lang)} className="mt-1.5 justify-start gap-2">
-                  {(["en", "es"] as const).map((x) => (
-                    <ToggleGroupItem key={x} value={x} className="h-10 rounded-md border border-hairline px-4 data-[state=on]:border-deed data-[state=on]:bg-deed data-[state=on]:text-primary-foreground">
-                      {x === "en" ? "English" : "Español"}
-                    </ToggleGroupItem>
-                  ))}
-                </ToggleGroup>
-              </div>
               <DialogFooter>
-                <Button type="submit" disabled={sub.isPending}>{tr("Watch this address", "Seguir esta dirección")}</Button>
+                <Button type="submit" disabled={sub.isPending}>{tr("Start Watching", "Empezar a seguir")}</Button>
               </DialogFooter>
             </form>
           )}

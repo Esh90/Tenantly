@@ -231,6 +231,7 @@ class FixtureStore:
         self.started = time.monotonic()
         self.jobs: dict[str, dict] = {}
         self.published: dict[str, dict] = {}
+        self.subscriptions: dict[str, dict] = {}
 
     # ---- addresses ----
     def row(self, address_id: str) -> dict:
@@ -557,12 +558,6 @@ class FixtureStore:
 
     # ---- ingest ----
     def ingest_start(self, req) -> dict:
-        if len(req.text) > 200_000:
-            raise ApiError(
-                "DOCUMENT_TOO_LARGE",
-                "Documents are limited to 200,000 characters.",
-                {"chars": len(req.text)},
-            )
         job_id = "job-" + hashlib.sha256((req.title + req.text).encode()).hexdigest()[:10]
         now = datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
         stages = [
@@ -640,14 +635,51 @@ class FixtureStore:
         self.row(req.address_id)
         digest = hashlib.sha256(f"{req.email}|{req.address_id}".encode()).hexdigest()
         sid = f"sub-{digest[:10]}"
-        return {
+        token = digest[:32]
+        created = datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
+        prior = self.subscriptions.get(token)
+        result = {
             "subscription_id": sid,
-            "unsubscribe_token": digest[:32],
+            "unsubscribe_token": token,
+            "address_id": req.address_id,
+            "created_at": prior["created_at"] if prior else created,
+            "active": True,
+            "created": prior is None,
+            "notifications_configured": False,
             "feeds": {
                 "atom": f"/v1/alerts/feed/{req.address_id}.atom",
                 "ics": f"/v1/alerts/calendar/{req.address_id}.ics",
             },
         }
+        self.subscriptions[token] = {
+            **result,
+            "created_at": result["created_at"],
+            "last_notification": None,
+        }
+        return result
+
+    def alert_status(self, token: str) -> dict:
+        row = self.subscriptions.get(token)
+        if row is None:
+            raise ApiError("SUBSCRIPTION_NOT_FOUND", "We couldn't find this watch.", {})
+        return {
+            k: row[k]
+            for k in (
+                "subscription_id",
+                "address_id",
+                "created_at",
+                "active",
+                "notifications_configured",
+                "last_notification",
+            )
+        }
+
+    def unsubscribe(self, token: str) -> dict:
+        row = self.subscriptions.get(token)
+        if row is None:
+            raise ApiError("SUBSCRIPTION_NOT_FOUND", "We couldn't find this watch.", {})
+        row["active"] = False
+        return {"ok": True}
 
     def atom(self, address_id: str) -> str:
         row = self.row(address_id)

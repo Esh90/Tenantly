@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import logging
 import re
 import time
 from datetime import UTC, date, datetime
@@ -19,7 +20,7 @@ from engine.api.errors import ApiError
 from engine.api.fixtures.store import FixtureStore
 from engine.corpus import versions
 from engine.geo import geocode
-from engine.geo.jurisdictions import CITIES, COUNTIES
+from engine.geo.jurisdictions import CITIES, COUNTIES, STATES
 from engine.geo.pip import default_locator
 from engine.io import atomic_write_json
 from engine.ir import Rule, RuleSet
@@ -44,6 +45,7 @@ RANGE = {"start": config.AS_OF_RANGE[0], "end": config.AS_OF_RANGE[1]}
 RULES_PATH = config.ARTIFACTS / "rules.compiled.json"
 RESOLVED_PATH = config.ARTIFACTS / "addresses.resolved.json"
 EVAL = config.ARTIFACTS / "eval"
+log = logging.getLogger("tenantly.store")
 
 
 def available() -> bool:
@@ -52,6 +54,34 @@ def available() -> bool:
 
 def _read(path: Path, default=None):
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else default
+
+
+_FILE_CACHE: dict[Path, tuple[tuple[int, int], object]] = {}
+
+
+def _cached(path: Path, load):
+    """Parse a file once and reuse it until its mtime or size changes. Callers must not mutate."""
+    try:
+        st = path.stat()
+    except FileNotFoundError:
+        return None
+    stamp = (st.st_mtime_ns, st.st_size)
+    hit = _FILE_CACHE.get(path)
+    if hit is None or hit[0] != stamp:
+        hit = (stamp, load(path))
+        _FILE_CACHE[path] = hit
+    return hit[1]
+
+
+def _load_json(path: Path):
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _load_manifest(path: Path) -> dict[str, dict]:
+    import csv
+
+    with open(path, newline="", encoding="utf-8") as fh:
+        return {r["doc_id"]: r for r in csv.DictReader(fh)}
 
 
 def _check_as_of(as_of: str) -> date:
@@ -81,7 +111,10 @@ class Store(FixtureStore):
         self._counts = self._counts_at_default()
         self.n_text, self.n_link = self._manifest_counts()
         self.extra_changes: dict[str, dict] = {}
+        self.notification_dispatches: dict[str, dict] = {}
         self._ingest = None
+        self._alerts = None
+        self._audit_cache: tuple | None = None
 
     # ---- startup ----
     def _manifest_counts(self) -> tuple[int, int]:
@@ -286,11 +319,7 @@ class Store(FixtureStore):
                 rels.append({"type": rel.type, "other_rule_id": other,
                              "explanation": T.bi(f"{verb} {who}.", f"{verb} {who}."), "evidence": citation_json(rel.evidence),
                              "active_from": rel.active_from.isoformat() if rel.active_from else None})  # fmt: skip
-        audit = [
-            row["key"]
-            for row in self._audit_rows()
-            if row.get("ref") in (r.citation.doc_id, r.rule_id)
-        ][:12]
+        audit = self._audit_ids((r.citation.doc_id, r.rule_id))
         return {
             "rule_id": r.rule_id, "category": r.category, "title": r.title,
             "jurisdiction": jurisdiction_json(r.jurisdiction), "rule_status": rule_status(r, self.default_date),
@@ -316,25 +345,28 @@ class Store(FixtureStore):
         }  # fmt: skip
 
     def rules(self, state, jurisdiction_id, category, status, tier, q) -> dict:
+        from engine.rules.render import rule_status
+
+        q_states, terms = parse_rule_query(q)
         items = []
         for r in self.rs.rules:
-            d = self._detail(r)
-            if state and r.jurisdiction.state != state:
+            if state and r.jurisdiction.state != state.upper():
+                continue
+            if q_states and r.jurisdiction.state not in q_states:
                 continue
             if jurisdiction_id and r.jurisdiction.id != jurisdiction_id:
                 continue
             if category and r.category != category:
                 continue
-            if status and d["rule_status"] != status:
+            if status and rule_status(r, self.default_date) != status:
                 continue
             if tier and r.citation.tier != tier:
                 continue
-            if (
-                q
-                and q.lower() not in (r.title + " " + r.citation.cite + " " + r.requirement).lower()
-            ):
-                continue
-            items.append(d)
+            if terms:
+                hay = rule_search_text(r)
+                if not all(t in hay for t in terms):
+                    continue
+            items.append(self._detail(r))
         return {"items": items, "total": len(items)}
 
     def rule(self, rule_id: str) -> dict:
@@ -362,10 +394,7 @@ class Store(FixtureStore):
                 "changes_answer_between": [x.isoformat() for x in q.changes_answer_between] if q.changes_answer_between else None}  # fmt: skip
 
     def source(self, doc_id: str, rule_id: str | None, window: int) -> dict:
-        import csv
-
-        with open(config.MANIFEST_CSV, newline="", encoding="utf-8") as fh:
-            rows = {r["doc_id"]: r for r in csv.DictReader(fh)}
+        rows = _cached(config.MANIFEST_CSV, _load_manifest) or {}
         m = rows.get(doc_id)
         if not m:
             raise ApiError("DOC_NOT_FOUND", "We couldn't find this document.", {"doc_id": doc_id})
@@ -399,8 +428,8 @@ class Store(FixtureStore):
 
     # ---- geography ----
     def _features(self) -> dict[str, dict]:
-        gj = _read(config.ARTIFACTS / "geo" / "jurisdictions.geojson", {"features": []})
-        return {f["id"]: f for f in gj["features"]}
+        path = config.ARTIFACTS / "geo" / "jurisdictions.geojson"
+        return _cached(path, lambda p: {f["id"]: f for f in _load_json(p)["features"]}) or {}
 
     def geo(self, jurisdiction_id: str) -> dict:
         f = self._features().get(jurisdiction_id)
@@ -424,7 +453,8 @@ class Store(FixtureStore):
         o = cls.__new__(cls)
         o.rs, o.rules_by_id = overlay, {r.rule_id: r for r in overlay.rules}
         o.default_date, o._counts, o._docs = live.default_date, {}, live._docs
-        o._audit_cache = live._audit_rows()
+        live._audit_rows()
+        o._audit_cache = getattr(live, "_audit_cache", None)
         o.data_version = "preview"
         return o
 
@@ -458,12 +488,41 @@ class Store(FixtureStore):
     def ingest_edit(self, job_id: str, rules: list[dict]) -> dict:
         return self.ingest.edit(job_id, rules)
 
+    # ---- watched addresses ----
+    @property
+    def alerts(self):
+        if self._alerts is None:
+            from engine.watch.notify import AlertRepository, AlertService, ResendClient
+
+            self._alerts = AlertService(
+                AlertRepository(config.ALERT_DB_PATH),
+                ResendClient(config.RESEND_API_KEY, config.ALERT_FROM),
+                config.PUBLIC_APP_URL,
+            )
+        return self._alerts
+
+    def subscribe(self, req) -> dict:
+        self.record(req.address_id)
+        return self.alerts.subscribe(req.address_id, req.email, req.lang)
+
+    def alert_status(self, token: str) -> dict:
+        status = self.alerts.status(token)
+        if status is None:
+            raise ApiError("SUBSCRIPTION_NOT_FOUND", "We couldn't find this watch.", {})
+        return status
+
+    def unsubscribe(self, token: str) -> dict:
+        if not self.alerts.repository.unsubscribe(token):
+            raise ApiError("SUBSCRIPTION_NOT_FOUND", "We couldn't find this watch.", {})
+        return {"ok": True}
+
     def apply_overlay(
         self, overlay: RuleSet, new_ids: set[str], job: dict, affected: list, on: str
     ) -> str:
         """Publish: swap in the overlay, recompute counts and record a change event."""
         from engine.compile.dag import data_version
 
+        before = self.rs
         dv = data_version(overlay.rules, overlay.relations, overlay.findings)
         self.rs = overlay.model_copy(update={"data_version": dv})
         self.rules_by_id = {r.rule_id: r for r in self.rs.rules}
@@ -482,13 +541,29 @@ class Store(FixtureStore):
             "conflict_count": sum(1 for a in affected if a["conflict_flag"]), "expected_check": None,
             "affected": affected,
         }  # fmt: skip
+        try:
+            self.notification_dispatches[cid] = self.alerts.notify_published_change(
+                self.extra_changes[cid], {**self.records, **self.geo_records}, before, self.rs
+            )
+        except Exception as exc:  # noqa: BLE001 - publication is already committed
+            log.exception("post-publication notification dispatch failed change=%s", cid)
+            self.notification_dispatches[cid] = {
+                "matched_watchers": 0,
+                "sent": 0,
+                "failed": 0,
+                "skipped_duplicate": 0,
+                "configured": self.alerts.configured,
+                "error": f"{type(exc).__name__}: {exc}",
+            }
         return cid
 
     # ---- changes ----
     def _change_files(self) -> dict[str, dict]:
         out = {}
         for p in sorted((config.ARTIFACTS / "changes").glob("T*.json")):
-            out[f"chg-{p.stem}"] = json.loads(p.read_text(encoding="utf-8"))
+            ev = _cached(p, _load_json)
+            if ev is not None:
+                out[f"chg-{p.stem}"] = ev
         return out
 
     def changes(self) -> dict:
@@ -540,11 +615,28 @@ class Store(FixtureStore):
         path = config.ARTIFACTS / "audit" / "compile_audit.jsonl"
         if not path.exists():
             return []
-        return [
-            json.loads(line)
-            for line in path.read_text(encoding="utf-8").splitlines()
-            if line.strip()
-        ]
+        st = path.stat()
+        stamp = (st.st_mtime_ns, st.st_size)
+        cached = getattr(self, "_audit_cache", None)
+        if cached is None or cached[0] != stamp:
+            rows = [
+                json.loads(line)
+                for line in path.read_text(encoding="utf-8").splitlines()
+                if line.strip()
+            ]
+            by_ref: dict[str, list[tuple[int, str]]] = {}
+            for i, row in enumerate(rows):
+                by_ref.setdefault(row.get("ref"), []).append((i, row["key"]))
+            cached = self._audit_cache = (stamp, rows, by_ref)
+        return cached[1]
+
+    def _audit_ids(self, refs: tuple[str, ...], limit: int = 12) -> list[str]:
+        self._audit_rows()
+        cached = getattr(self, "_audit_cache", None)
+        if cached is None:
+            return []
+        hits = sorted(h for ref in set(refs) for h in cached[2].get(ref, []))
+        return [key for _i, key in hits[:limit]]
 
     def audit(self, rule_id: str | None, limit: int) -> dict:
         rows = self._audit_rows()
@@ -635,6 +727,38 @@ class Store(FixtureStore):
             for t in ups
         )
         return f"BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Tenantly//EN\r\n{ev}END:VCALENDAR\r\n"
+
+
+_QUERY_STOPWORDS = frozenset(
+    {"rule", "rules", "law", "laws", "in", "of", "the", "for", "and", "a", "an", "on", "state"}
+)
+
+
+def parse_rule_query(q: str | None) -> tuple[set[str], list[str]]:
+    """Split free text into state codes (named or abbreviated) and the remaining search terms."""
+    text = (q or "").lower().strip()
+    found: set[str] = set()
+    for code, (_fips, name) in STATES.items():
+        pattern = rf"\b{re.escape(name.lower())}\b"
+        if re.search(pattern, text):
+            found.add(code)
+            text = re.sub(pattern, " ", text)
+    terms = []
+    for tok in re.findall(r"[\w.§'-]+", text):
+        if tok.upper() in STATES:
+            found.add(tok.upper())
+        elif tok not in _QUERY_STOPWORDS:
+            terms.append(tok)
+    return found, terms
+
+
+def rule_search_text(r: Rule) -> str:
+    j = r.jurisdiction
+    labels = T.CATEGORY_LABELS.get(r.category, ("", ""))
+    state_name = STATES.get(j.state, ("", ""))[1]
+    parts = [r.rule_id, r.title, r.citation.cite, r.requirement, r.coverage_text, j.name, j.label,
+             state_name, r.category.replace("_", " "), *labels]  # fmt: skip
+    return " ".join(p for p in parts if p).lower()
 
 
 def jurisdiction_ref(jid: str):

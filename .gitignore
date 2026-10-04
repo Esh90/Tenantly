@@ -5,7 +5,21 @@ __pycache__/
 *.pyc
 .pytest_cache/
 .ruff_cache/
-# bulky regenerable caches
+
+# bulky regenerable caches (rebuild with make compile / make all)
 artifacts/cache/
+artifacts/compile/explain/
+artifacts/compile/adjudicate/
 build/
 artifacts/web/
+artifacts/watch/*.sqlite3*
+
+# ingest job detail records (runtime state, not submission artefacts)
+artifacts/audit/ingest_jobs/
+
+# internal working instructions – judges should see only the app
+CLAUDE.md
+PLAN.md
+
+# Hugging Face Space deployment (using Render instead)
+deploy/hf/

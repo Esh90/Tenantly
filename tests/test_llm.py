@@ -6,7 +6,14 @@ from types import SimpleNamespace as NS
 
 import pytest
 
-from engine.compile.llm import LLM, BudgetExceeded, Ledger, NoToolCall, cost_usd
+from engine.compile.llm import (
+    LLM,
+    BudgetExceeded,
+    Ledger,
+    NoToolCall,
+    ProviderUnavailable,
+    cost_usd,
+)
 
 TOOL = {"name": "emit_x", "description": "d", "input_schema": {"type": "object"}}
 
@@ -156,3 +163,14 @@ def test_backup_is_not_used_when_unconfigured(tmp_path, monkeypatch):
     llm = make(tmp_path, [ok({"a": 1})], cap=0.0001)
     with pytest.raises(BudgetExceeded):
         call(llm, user="x" * 3000)
+
+
+def test_both_provider_failures_are_reported_clearly(tmp_path, monkeypatch):
+    from engine.compile import groq_fallback
+
+    monkeypatch.setattr(groq_fallback, "available", lambda: True)
+    monkeypatch.setattr(groq_fallback, "call_tool", lambda *a, **k: None)
+    llm = make(tmp_path, [])
+    monkeypatch.setattr(llm, "_call", lambda **kwargs: (_ for _ in ()).throw(RuntimeError("429")))
+    with pytest.raises(ProviderUnavailable, match="primary AI provider"):
+        call(llm)

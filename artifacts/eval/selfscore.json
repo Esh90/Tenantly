@@ -3,20 +3,20 @@
     {
       "max": 25,
       "name": "Extraction",
-      "note": "41 of 48 expected rules matched by jurisdiction, category and cite; mean field accuracy 0.85",
-      "score": 21.35
+      "note": "48 of 48 expected rules matched by jurisdiction, category and cite; mean field accuracy 1.00",
+      "score": 25.0
     },
     {
       "max": 20,
       "name": "Address coverage",
-      "note": "26 of 32 address expectations exactly right; a missed 'applies' costs 2, unknown earns half",
-      "score": 11.88
+      "note": "30 of 32 address expectations exactly right; a missed 'applies' costs 2, unknown earns half",
+      "score": 17.5
     },
     {
       "max": 15,
       "name": "Citations",
-      "note": "6552 of 6642 'applies' answers cite a quote found at its stored offsets in the corpus (98.6%)",
-      "score": 14.8
+      "note": "6428 of 6518 'applies' answers cite a quote found at its stored offsets in the corpus (98.6%)",
+      "score": 14.79
     },
     {
       "max": 15,
@@ -40,9 +40,9 @@
       "cell": "CA/rent_increase_limits",
       "expected": "superseded",
       "got": [
-        "applies"
+        "superseded"
       ],
-      "points": -1.0
+      "points": 1.0
     },
     {
       "address": "A0001",
@@ -58,7 +58,6 @@
       "cell": "LA/rent_increase_limits",
       "expected": "unknown",
       "got": [
-        "applies",
         "unknown"
       ],
       "points": 1.0
@@ -84,9 +83,9 @@
       "cell": "CA/rent_increase_limits",
       "expected": "superseded",
       "got": [
-        "applies"
+        "superseded"
       ],
-      "points": -1.0
+      "points": 1.0
     },
     {
       "address": "A0016",
@@ -121,9 +120,9 @@
       "cell": "SF/rent_increase_limits",
       "expected": "unknown",
       "got": [
-        "applies"
+        "unknown"
       ],
-      "points": -1.0
+      "points": 1.0
     },
     {
       "address": "A0019",
@@ -283,8 +282,10 @@
       "address": "A0009",
       "cell": "CAM/just_cause_eviction",
       "expected": "applies",
-      "got": [],
-      "points": -2.0
+      "got": [
+        "applies"
+      ],
+      "points": 1.0
     },
     {
       "address": "A0199",
@@ -393,8 +394,8 @@
     {
       "cell": "SF/screening_restrictions/R",
       "cites": [],
-      "matched": null,
-      "score": 0.0
+      "matched": "SF-SCR-01",
+      "score": 1.0
     },
     {
       "cell": "SF/algorithmic_rent_setting/R",
@@ -423,8 +424,8 @@
       "cites": [
         "98.1103"
       ],
-      "matched": null,
-      "score": 0.0
+      "matched": "SD-ALG-01",
+      "score": 1.0
     },
     {
       "cell": "BRK/rent_increase_limits/R",
@@ -516,8 +517,8 @@
         "2021",
         "110"
       ],
-      "matched": null,
-      "score": 0.0
+      "matched": "NJ-SCR-01",
+      "score": 1.0
     },
     {
       "cell": "NJ/algorithmic_rent_setting/R",
@@ -566,8 +567,8 @@
       "cites": [
         "25-21"
       ],
-      "matched": null,
-      "score": 0.0
+      "matched": "MA-RENT-P1",
+      "score": 1.0
     },
     {
       "cell": "MA/just_cause_eviction/R",
@@ -591,16 +592,16 @@
       "cites": [
         "15b"
       ],
-      "matched": null,
-      "score": 0.0
+      "matched": "MA-FEE-01",
+      "score": 1.0
     },
     {
       "cell": "MA/application_screening_fees/R",
       "cites": [
         "112"
       ],
-      "matched": null,
-      "score": 0.0
+      "matched": "MA-FEE-02",
+      "score": 1.0
     },
     {
       "cell": "MA/screening_restrictions/R",
@@ -651,8 +652,8 @@
       "cites": [
         "8.71"
       ],
-      "matched": null,
-      "score": 0.0
+      "matched": "CAM-JCE-01",
+      "score": 1.0
     },
     {
       "cell": "CAM/screening_restrictions/R",
@@ -670,5 +671,5 @@
     "reason_codes_matched": 2
   },
   "key": "silver",
-  "raw_report": "Tenantly self-score against the silver key (not the official scorer)\n\nExtraction          21.35 / 25  41 of 48 expected rules matched by jurisdiction, category and cite; mean field accuracy 0.85\nAddress coverage    11.88 / 20  26 of 32 address expectations exactly right; a missed 'applies' costs 2, unknown earns half\nCitations           14.80 / 15  6552 of 6642 'applies' answers cite a quote found at its stored offsets in the corpus (98.6%)\nChange tracking     15.00 / 15  5 of 5 tests match the expected sets exactly (Jaccard mean 1.00)\n\nAutomatic components total 63.03 / 75\nJudged components (plain language, responsible design, scalability) are not scored here."
+  "raw_report": "Tenantly self-score against the silver key (not the official scorer)\n\nExtraction          25.00 / 25  48 of 48 expected rules matched by jurisdiction, category and cite; mean field accuracy 1.00\nAddress coverage    17.50 / 20  30 of 32 address expectations exactly right; a missed 'applies' costs 2, unknown earns half\nCitations           14.79 / 15  6428 of 6518 'applies' answers cite a quote found at its stored offsets in the corpus (98.6%)\nChange tracking     15.00 / 15  5 of 5 tests match the expected sets exactly (Jaccard mean 1.00)\n\nAutomatic components total 72.29 / 75\nJudged components (plain language, responsible design, scalability) are not scored here."
 }

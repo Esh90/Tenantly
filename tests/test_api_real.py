@@ -170,6 +170,20 @@ def test_findings_open_questions_changes_proof_audit(client):
     AuditList.model_validate(client.get("/v1/audit?limit=5").json())
 
 
+def test_rules_search_understands_places(client):
+    def total(qs: str) -> int:
+        return client.get(f"/v1/rules?{qs}").json()["total"]
+
+    for code, name in (("CA", "California"), ("NJ", "New Jersey"), ("MA", "Massachusetts")):
+        n = total(f"state={code}")
+        assert n > 0
+        assert total(f"q={name}") == n
+        assert total(f"q={code}") == n
+        assert total(f"q={code.lower()}") == n
+    assert total("q=Boston") == total("jurisdiction_id=MA-2507000") > 0
+    assert total("state=CA&q=Massachusetts") == 0
+
+
 def test_resolve_sample_and_unknown(client):
     r = ResolveResponse.model_validate(
         client.post("/v1/resolve", json={"query": "Fillmore"}).json()

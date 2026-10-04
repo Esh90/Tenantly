@@ -53,6 +53,10 @@ class NoToolCall(RuntimeError):
     pass
 
 
+class ProviderUnavailable(RuntimeError):
+    pass
+
+
 def sha(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
@@ -204,28 +208,38 @@ class LLM:
             return self._call(stage=stage, model=model, system=system, user=user, tool=tool,
                               prompt_version=prompt_version, stage_version=stage_version,
                               effort=effort, max_tokens=max_tokens, ref=ref)  # fmt: skip
-        except (BudgetExceeded, NoToolCall, Exception) as exc:  # noqa: BLE001
-            if self.dry or not groq_fallback.available() or model.startswith("groq:"):
+        except Exception as exc:  # noqa: BLE001
+            if self.dry:
                 raise
-            log.warning("paid call failed (%s); trying the free backup model", type(exc).__name__)
-            fb = groq_fallback.model_name()
-            key = self.key(stage, stage_version, fb, prompt_version, system, user, tool, None)
-            hit = self.cached(stage, key)
-            out = (
-                hit["output"]
-                if hit
-                else groq_fallback.call_tool(system, user, tool, min(max_tokens, 8000))
-            )
-            if out is None:
+            if groq_fallback.available() and not model.startswith("groq:"):
+                log.warning("paid call failed (%s); trying the free backup model", type(exc).__name__)
+                fb = groq_fallback.model_name()
+                key = self.key(stage, stage_version, fb, prompt_version, system, user, tool, None)
+                hit = self.cached(stage, key)
+                out = (
+                    hit["output"]
+                    if hit
+                    else groq_fallback.call_tool(system, user, tool, min(max_tokens, 8000))
+                )
+                if out is not None:
+                    if not hit:
+                        atomic_write_json(self._path(stage, key), {"output": out, "usage": {}, "cost_usd": 0.0,
+                                                                  "model": fb, "prompt_version": prompt_version})  # fmt: skip
+                    self._audit({"ts": datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ"), "stage": stage, "model": fb,
+                                 "prompt_version": prompt_version, "input_sha": sha(system + "\n" + user), "ref": ref,
+                                 "key": key, "cache_hit": bool(hit), "output_sha": sha(canonical(out)),
+                                 "cost_usd": 0.0, "verifier": None, "fallback_for": model})  # fmt: skip
+                    return Result(out, bool(hit), 0.0, key)
+                raise ProviderUnavailable(
+                    "The primary AI provider failed and the Groq backup also failed."
+                ) from exc
+            if isinstance(exc, BudgetExceeded):
                 raise
-            if not hit:
-                atomic_write_json(self._path(stage, key), {"output": out, "usage": {}, "cost_usd": 0.0,
-                                                           "model": fb, "prompt_version": prompt_version})  # fmt: skip
-            self._audit({"ts": datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ"), "stage": stage, "model": fb,
-                         "prompt_version": prompt_version, "input_sha": sha(system + "\n" + user), "ref": ref,
-                         "key": key, "cache_hit": bool(hit), "output_sha": sha(canonical(out)),
-                         "cost_usd": 0.0, "verifier": None, "fallback_for": model})  # fmt: skip
-            return Result(out, bool(hit), 0.0, key)
+            if isinstance(exc, NoToolCall):
+                raise
+            raise ProviderUnavailable(
+                "The AI provider is unavailable and no Groq backup is configured."
+            ) from exc
 
     def _call(
         self,

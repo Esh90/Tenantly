@@ -2,10 +2,11 @@
 
 from __future__ import annotations
 
-from fastapi import APIRouter, Depends, Query, Request, Response
+from fastapi import APIRouter, Depends, Header, Query, Request, Response
 from fastapi.responses import StreamingResponse
 
-from engine.api.deps import engine_timer, get_store, require_admin
+from engine import config
+from engine.api.deps import engine_timer, get_store, require_ingest_access
 from engine.models import (
     AuditList,
     ExtractTextResponse,
@@ -17,6 +18,7 @@ from engine.models import (
     PublishResult,
     SubscriptionCreated,
     SubscriptionRequest,
+    WatchStatus,
 )
 
 router = APIRouter()
@@ -26,10 +28,13 @@ router = APIRouter()
     "/ingest",
     status_code=202,
     response_model=IngestAccepted,
-    dependencies=[Depends(require_admin)],
+    dependencies=[Depends(require_ingest_access)],
 )
-def ingest(body: IngestRequest):
+def ingest(body: IngestRequest, x_admin_token: str | None = Header(default=None)):
     with engine_timer():
+        allowed = config.PUBLIC_INGEST_ENABLED or x_admin_token == config.ADMIN_TOKEN
+        if body.auto_publish and not allowed:
+            body = body.model_copy(update={"auto_publish": False})
         return get_store().ingest_start(body)
 
 
@@ -52,23 +57,23 @@ def ingest_events(job_id: str):
 @router.post(
     "/ingest/{job_id}/publish",
     response_model=PublishResult,
-    dependencies=[Depends(require_admin)],
+    dependencies=[Depends(require_ingest_access)],
 )
 def ingest_publish(job_id: str, approve: bool = False):
     return get_store().ingest_publish(job_id, approve)
 
 
-@router.post("/ingest/{job_id}/reject", dependencies=[Depends(require_admin)])
+@router.post("/ingest/{job_id}/reject", dependencies=[Depends(require_ingest_access)])
 def ingest_reject(job_id: str):
     return get_store().ingest_reject(job_id)
 
 
-@router.post("/ingest/{job_id}/rejudge", dependencies=[Depends(require_admin)])
+@router.post("/ingest/{job_id}/rejudge", dependencies=[Depends(require_ingest_access)])
 def ingest_rejudge(job_id: str):
     return get_store().ingest_rejudge(job_id)
 
 
-@router.post("/ingest/{job_id}/edit", dependencies=[Depends(require_admin)])
+@router.post("/ingest/{job_id}/edit", dependencies=[Depends(require_ingest_access)])
 def ingest_edit(job_id: str, body: IngestEdit):
     return get_store().ingest_edit(job_id, body.rules)
 
@@ -76,7 +81,7 @@ def ingest_edit(job_id: str, body: IngestEdit):
 @router.post(
     "/ingest/extract-text",
     response_model=ExtractTextResponse,
-    dependencies=[Depends(require_admin)],
+    dependencies=[Depends(require_ingest_access)],
 )
 async def ingest_extract_text(request: Request, filename: str = ""):
     """Turn an uploaded PDF, DOCX or TXT into text. The browser then sends the text to /ingest."""
@@ -91,9 +96,14 @@ def subscribe(body: SubscriptionRequest):
     return get_store().subscribe(body)
 
 
+@router.get("/alerts/subscriptions/{token}", response_model=WatchStatus)
+def subscription_status(token: str):
+    return get_store().alert_status(token)
+
+
 @router.delete("/alerts/subscriptions/{token}")
 def unsubscribe(token: str):
-    return {"ok": True}
+    return get_store().unsubscribe(token)
 
 
 @router.get("/alerts/feed/{address_id}.atom")

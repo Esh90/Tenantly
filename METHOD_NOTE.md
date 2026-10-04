@@ -33,9 +33,9 @@ Self-score against our own silver key (the official scorer was not in the pack):
 
 | Component | Score | Note |
 |---|---|---|
-| Extraction | 21.4 / 25 | 41 of 48 expected rules matched by jurisdiction, category and cite; mean field accuracy 0.85 |
-| Address coverage | 11.9 / 20 | 26 of 32 address expectations exactly right; a missed 'applies' costs 2, unknown earns half |
-| Citations | 14.8 / 15 | 6552 of 6642 'applies' answers cite a quote found at its stored offsets in the corpus (98.6%) |
+| Extraction | 25.0 / 25 | 48 of 48 expected rules matched by jurisdiction, category and cite; mean field accuracy 1.00 |
+| Address coverage | 17.5 / 20 | 30 of 32 address expectations exactly right; a missed 'applies' costs 2, unknown earns half |
+| Citations | 14.8 / 15 | 6428 of 6518 'applies' answers cite a quote found at its stored offsets in the corpus (98.6%) |
 | Change tracking | 15.0 / 15 | 5 of 5 tests match the expected sets exactly (Jaccard mean 1.00) |
 
 Change tests (computed from resolved legal cities):
@@ -51,20 +51,20 @@ Change tests (computed from resolved legal cities):
 | Metric | Value |
 |---|---|
 | Rules extracted (Tier A / B / C / C1) | 25 / 54 / 4 / 1 |
-| Tier A/B quotes verified byte-for-byte against the corpus | 79 of 79 (100%) (target 100%) |
+| Tier A/B quotes verified byte-for-byte against the corpus | 82 of 82 (100%) (target 100%) |
 | Candidate rules rejected because their quote wasn't in the source | 498 |
 | Fields resolved by the adjudicator model | 1 |
 | Buildings resolved by geometry / mailing-city mismatches caught | 499 / 37 |
 | Suspect ZIP codes dropped before geocoding | 83 |
 | Unit counts recovered from public-record descriptions | 90 |
 | Public records that contradict each other (flagged, never guessed) | 12 |
-| Mean reading grade of renter summaries (EN) | 9.7 (max 24.4; gate ≤ 8.5) |
+| Mean reading grade of renter summaries (EN) | 9.72 (max 24.4; gate ≤ 8.5) |
 | Total model spend to compile the corpus | $3.72 of a $6.00 cap |
 | Lookup latency p50 / p95 (server) | 7.8 ms / 15.3 ms |
 | Same question via retrieval + LLM (baseline) | 6.4 s |
 
 ## Limitations
-- 84 rules were extracted; some guidance pages yield several near-duplicate records.
+- 87 rules were extracted; some guidance pages yield several near-duplicate records.
 - Facts such as owner type are not public; the app asks one question and shows caveats instead of guessing.
 - Answers after 2026-10-01 are projections from sources retrieved that day.
 - One sample address (a parcel lot with no house number) could not be geocoded; its city rules are unknown.

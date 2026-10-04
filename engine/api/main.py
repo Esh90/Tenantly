@@ -42,7 +42,12 @@ async def plumbing(request: Request, call_next):
     response.headers["X-Request-Id"] = request.state.request_id
     response.headers["Server-Timing"] = f"engine;dur={cell[0]:.2f}, total;dur={total:.2f}"
     response.headers["ETag"] = f'"{get_store().health()["data_version"]}"'
-    cacheable = request.method == "GET" and "/ingest" not in path and path != "/v1/health"
+    cacheable = (
+        request.method == "GET"
+        and "/ingest" not in path
+        and "/alerts/subscriptions/" not in path
+        and path != "/v1/health"
+    )
     if cacheable and response.status_code < 400:
         response.headers["Cache-Control"] = "public, max-age=300, stale-while-revalidate=86400"
     else:

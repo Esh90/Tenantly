@@ -1,6 +1,7 @@
 // Illustrative mock data shaped like the real API. Not legal information.
 // In-memory implementation of the /v1 endpoints, reached through client.request().
 import { ApiError } from "./errors";
+import { parseRuleQuery, ruleSearchText } from "./ruleQuery";
 import { ADDRESS_INDEX, ADDRESSES, ALL_JURISDICTIONS, CATEGORIES, COMPILED_AT, DATA_VERSION, DISCLAIMER, RANGE } from "./mock/data";
 import {
   CHANGES,
@@ -23,6 +24,7 @@ import {
 import type { Meta, ResolveResponse } from "./types";
 
 const latency = () => new Promise((r) => setTimeout(r, 120 + Math.random() * 180));
+const alertSubscriptions = new Map<string, Record<string, unknown>>();
 
 function forcedError(fn: string) {
   if (typeof window === "undefined") return;
@@ -99,14 +101,22 @@ export async function mockRequest<T>(fn: string, path: string, init?: RequestIni
       return g;
     }
     if (p === "/rules") {
-      const text = (q.get("q") ?? "").toLowerCase();
+      const { states, terms } = parseRuleQuery(q.get("q") ?? "");
       return listRuleDefs()
         .filter((r) => !q.get("state") || r.jur.state === q.get("state"))
+        .filter((r) => !states.size || states.has(r.jur.state))
         .filter((r) => !q.get("jurisdiction_id") || r.jur.id === q.get("jurisdiction_id"))
         .filter((r) => !q.get("category") || r.category === q.get("category"))
         .filter((r) => !q.get("status") || r.status === q.get("status"))
         .filter((r) => !q.get("tier") || r.citation.tier === q.get("tier"))
-        .filter((r) => !text || `${r.title} ${r.summary.en}`.toLowerCase().includes(text))
+        .filter((r) => {
+          if (!terms.length) return true;
+          const hay = ruleSearchText({
+            id: r.id, title: r.title, requirement: r.requirement, cite: r.citation.cite, jurName: r.jur.name,
+            jurLabel: r.jur.label, state: r.jur.state, category: r.category, extra: [r.summary.en, r.summary.es],
+          });
+          return terms.every((t) => hay.includes(t));
+        })
         .map(ruleDetail);
     }
     if ((m = p.match(/^\/rules\/([^/]+)$/))) {
@@ -143,9 +153,22 @@ export async function mockRequest<T>(fn: string, path: string, init?: RequestIni
     }
     if (p === "/alerts/subscriptions" && method === "POST") {
       const id = `sub_${Date.now().toString(36)}`;
-      return { subscription_id: id, unsubscribe_token: `tok_${id}`, feeds: { atom: `/v1/alerts/feed/${id}.atom`, ics: `/v1/alerts/calendar/${id}.ics` } };
+      const token = `tok_${id}`;
+      const requestBody = JSON.parse(String(init?.body ?? "{}")) as { address_id?: string };
+      const created = new Date().toISOString();
+      const value = { subscription_id: id, unsubscribe_token: token, address_id: requestBody.address_id ?? "A0016", created_at: created, active: true, created: true, notifications_configured: false, last_notification: null, feeds: { atom: `/v1/alerts/feed/${requestBody.address_id}.atom`, ics: `/v1/alerts/calendar/${requestBody.address_id}.ics` } };
+      alertSubscriptions.set(token, value);
+      return value;
     }
-    if ((m = p.match(/^\/alerts\/subscriptions\/([^/]+)$/)) && method === "DELETE") return { ok: true };
+    if ((m = p.match(/^\/alerts\/subscriptions\/([^/]+)$/)) && method === "GET") {
+      const sub = alertSubscriptions.get(m[1]!);
+      if (!sub) throw notFound("Watch");
+      return sub;
+    }
+    if ((m = p.match(/^\/alerts\/subscriptions\/([^/]+)$/)) && method === "DELETE") {
+      alertSubscriptions.delete(m[1]!);
+      return { ok: true };
+    }
     if (p === "/proof") return proof();
     if (p === "/audit") {
       const rid = q.get("rule_id");

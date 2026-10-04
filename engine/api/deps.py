@@ -19,8 +19,6 @@ engine_cell: contextvars.ContextVar[list[float]] = contextvars.ContextVar(
     "engine_cell",
     default=[0.0],  # noqa: B039
 )
-
-
 @lru_cache(maxsize=1)
 def get_store() -> FixtureStore:
     """The real store when compiled artifacts exist, else fixtures (or when forced for tests)."""
@@ -45,3 +43,11 @@ def engine_timer():
 def require_admin(x_admin_token: str | None = Header(default=None)) -> None:
     if not x_admin_token or x_admin_token != config.ADMIN_TOKEN:
         raise ApiError("UNAUTHORIZED", "A valid admin token is required.")
+
+
+def require_ingest_access(x_admin_token: str | None = Header(default=None)) -> None:
+    """Hackathon demo: extract, review and publish with no token when PUBLIC_INGEST_ENABLED."""
+    if x_admin_token and x_admin_token == config.ADMIN_TOKEN:
+        return
+    if not config.PUBLIC_INGEST_ENABLED:
+        raise ApiError("UNAUTHORIZED", "Public law ingestion is not enabled.")

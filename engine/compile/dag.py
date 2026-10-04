@@ -13,7 +13,7 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import UTC, datetime
 
 from engine import config
-from engine.compile import assemble, audit_predicates, discrepancy, gaps, link, tier_c
+from engine.compile import assemble, audit_predicates, discrepancy, gaps, link, repair, tier_c
 from engine.compile import explain as explain_stage
 from engine.compile.context import DocView, load_views
 from engine.compile.extract import Rejection, compile_document
@@ -66,11 +66,14 @@ def compile_all(llm: LLM, only: list[str] | None = None, workers: int = 4):
     all_raw = rules_raw + c_rules
     items = discrepancy.readme_items()
     final = assemble.finalize_rules(all_raw)
+    final = repair.repair_rules(final, views, links)
     final = audit_predicates.audit_all(llm, final)
     final, date_items = discrepancy.apply_alternative_dates(final, items)
 
     raw_rel = link.link_documents(llm, final, views)
     relations, rel_rejected = link.verify_relations(raw_rel, final, views)
+    relations, extra_rel_rej = repair.ensure_relations(relations, final, views)
+    rel_rejected = list(rel_rejected) + extra_rel_rej
 
     findings, gap_report = gaps.audit_gaps(llm, final, relations, views, links)
 

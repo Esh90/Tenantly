@@ -27,6 +27,7 @@ from engine.models import (
     SubscriptionCreated,
     TimelineResponse,
     UpcomingChange,
+    WatchStatus,
 )
 
 ADMIN = {"X-Admin-Token": config.ADMIN_TOKEN}
@@ -176,9 +177,34 @@ def test_submission_files(client, name):
     assert client.get(f"/v1/submission/{name}.json").status_code == 200
 
 
-def test_ingest_requires_admin(client):
+def test_ingest_public_demo_access(client):
     r = client.post("/v1/ingest", json={"title": "t", "text": "x"})
-    assert r.status_code == 401 and r.json()["error"]["code"] == "UNAUTHORIZED"
+    assert r.status_code == 202
+    IngestAccepted.model_validate(r.json())
+
+
+def test_ingest_publish_is_public_in_demo(client):
+    acc = client.post("/v1/ingest", json={"title": "t", "text": "ordinance text for staging"})
+    assert acc.status_code == 202
+    job_id = acc.json()["job_id"]
+    pub = client.post(f"/v1/ingest/{job_id}/publish")
+    assert pub.status_code == 200
+    PublishResult.model_validate(pub.json())
+
+
+def test_ingest_locked_requires_admin_token(client, monkeypatch):
+    monkeypatch.setattr(config, "PUBLIC_INGEST_ENABLED", False)
+    denied = client.post("/v1/ingest", json={"title": "t", "text": "x"})
+    assert denied.status_code == 401
+    assert denied.json()["error"]["code"] == "UNAUTHORIZED"
+    acc = client.post("/v1/ingest", json={"title": "t", "text": "x"}, headers=ADMIN)
+    assert acc.status_code == 202
+    job_id = acc.json()["job_id"]
+    denied_pub = client.post(f"/v1/ingest/{job_id}/publish")
+    assert denied_pub.status_code == 401
+    pub = client.post(f"/v1/ingest/{job_id}/publish", headers=ADMIN)
+    assert pub.status_code == 200
+    PublishResult.model_validate(pub.json())
 
 
 def test_ingest_flow(client):
@@ -197,9 +223,9 @@ def test_ingest_flow(client):
     assert client.get("/v1/ingest/job-nope").json()["error"]["code"] == "JOB_NOT_FOUND"
 
 
-def test_ingest_too_large(client):
+def test_ingest_has_no_document_character_cap(client):
     r = client.post("/v1/ingest", json={"title": "t", "text": "x" * 200_001}, headers=ADMIN)
-    assert r.status_code == 413 and r.json()["error"]["code"] == "DOCUMENT_TOO_LARGE"
+    assert r.status_code == 202
 
 
 def test_alerts(client):
@@ -208,10 +234,28 @@ def test_alerts(client):
         json={"email": "a@example.com", "address_id": "A0016", "lang": "en"},
     )
     assert r.status_code == 201
-    SubscriptionCreated.model_validate(r.json())
+    created = SubscriptionCreated.model_validate(r.json())
+    assert created.address_id == "A0016"
+    status_response = client.get(f"/v1/alerts/subscriptions/{created.unsubscribe_token}")
+    status = WatchStatus.model_validate(status_response.json())
+    assert status.active and status.last_notification is None
+    assert status_response.headers["Cache-Control"] == "no-store"
+    assert "email" not in client.get(
+        f"/v1/alerts/subscriptions/{created.unsubscribe_token}"
+    ).json()
     assert "<feed" in client.get("/v1/alerts/feed/A0016.atom").text
     assert "BEGIN:VCALENDAR" in client.get("/v1/alerts/calendar/A0016.ics").text
-    assert client.delete("/v1/alerts/subscriptions/tok").json() == {"ok": True}
+    assert client.delete(
+        f"/v1/alerts/subscriptions/{created.unsubscribe_token}"
+    ).json() == {"ok": True}
+
+
+def test_alert_email_validation(client):
+    r = client.post(
+        "/v1/alerts/subscriptions",
+        json={"email": "not-an-email", "address_id": "A0016", "lang": "en"},
+    )
+    assert r.status_code == 400 and r.json()["error"]["code"] == "BAD_REQUEST"
 
 
 def test_proof_and_audit(client):

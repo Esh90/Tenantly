@@ -11,6 +11,7 @@ from datetime import date
 from pathlib import Path
 
 from engine import config
+from engine.compile.repair import same_state_scope
 from engine.export.submission import validate_rules
 from engine.io import atomic_write_json
 from engine.ir import Rule, RuleSet
@@ -25,9 +26,16 @@ DEFAULT = date.fromisoformat(config.DEFAULT_AS_OF)
 
 
 def load_ruleset() -> RuleSet:
-    return RuleSet.model_validate(
-        json.loads((config.ARTIFACTS / "rules.compiled.json").read_text(encoding="utf-8"))
-    )
+    raw = json.loads((config.ARTIFACTS / "rules.compiled.json").read_text(encoding="utf-8"))
+    rs = RuleSet.model_validate(raw)
+    from engine.compile.context import load_views
+    from engine.compile.repair import repair_ruleset
+
+    views, links = load_views()
+    fixed = repair_ruleset(rs, views, links)
+    if fixed.model_dump(mode="json") != rs.model_dump(mode="json"):
+        atomic_write_json(config.ARTIFACTS / "rules.compiled.json", fixed.model_dump(mode="json"))
+    return fixed
 
 
 def load_records() -> dict[str, dict]:
@@ -57,11 +65,18 @@ def key_value_text(r: Rule) -> str | None:
 def rule_record(r: Rule, rs: RuleSet) -> dict:
     overrides: list[str] = []
     notes: list[str] = []
+    by_id = {x.rule_id: x for x in rs.rules}
     for rel in rs.relations:
         if rel.effect == "supersede":
+            source = by_id.get(rel.source_rule_id)
             targets = (
                 [rel.target_rule_id] if rel.target_rule_id
-                else [x.rule_id for x in rs.rules if x.rule_id != rel.source_rule_id and _scope(rel.target_scope, x)]
+                else [
+                    x.rule_id
+                    for x in rs.rules
+                    if x.rule_id != rel.source_rule_id
+                    and same_state_scope(rel.target_scope, x, source)
+                ]
             )  # fmt: skip
             if rel.source_rule_id == r.rule_id and targets:
                 overrides += targets
@@ -107,17 +122,6 @@ def rule_record(r: Rule, rs: RuleSet) -> dict:
         "conflict_note": " ".join(n for n in cnote if n) or None,
     }  # fmt: skip
     return rec
-
-
-def _scope(scope: dict | None, r: Rule) -> bool:
-    if not scope:
-        return False
-    j = r.jurisdiction
-    return (
-        scope.get("category", r.category) == r.category
-        and scope.get("level", j.level) == j.level
-        and scope.get("state", j.state) == j.state
-    )
 
 
 def build_rules_json(rs: RuleSet) -> dict:

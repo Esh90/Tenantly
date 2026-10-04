@@ -2,9 +2,10 @@
 
 from __future__ import annotations
 
+import re
 from typing import Literal
 
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 ISODate = str
 PartialDate = str  # YYYY | YYYY-MM | YYYY-MM-DD
@@ -499,6 +500,15 @@ class IngestPolicy(Model):
     reasons: list[str]
 
 
+class NotificationDispatch(Model):
+    matched_watchers: int
+    sent: int
+    failed: int
+    skipped_duplicate: int
+    configured: bool
+    error: str | None = None
+
+
 class ChangesSummary(Model):
     document: str
     rules_added: int
@@ -511,6 +521,7 @@ class ChangesSummary(Model):
     graph_nodes_added: int
     graph_edges_added: int
     change_id: str | None
+    notifications: NotificationDispatch | None = None
 
 
 class AuditEvent(Model):
@@ -752,6 +763,16 @@ class SubscriptionRequest(Model):
     address_id: str
     lang: Lang
 
+    @field_validator("email")
+    @classmethod
+    def valid_email(cls, value: str) -> str:
+        normalized = value.strip().lower()
+        if len(normalized) > 254 or not re.fullmatch(
+            r"[^@\s]+@[^@\s]+\.[^@\s]+", normalized
+        ):
+            raise ValueError("Enter a valid email address.")
+        return normalized
+
 
 class SubscriptionFeeds(Model):
     atom: str
@@ -761,7 +782,30 @@ class SubscriptionFeeds(Model):
 class SubscriptionCreated(Model):
     subscription_id: str
     unsubscribe_token: str
+    address_id: str
+    created_at: str
+    active: bool
+    created: bool
+    notifications_configured: bool
     feeds: SubscriptionFeeds
+
+
+class LastNotification(Model):
+    change_id: str
+    attempted_at: str
+    provider: Literal["resend"]
+    status: Literal["sent", "failed"]
+    provider_message_id: str | None
+    error_message: str | None
+
+
+class WatchStatus(Model):
+    subscription_id: str
+    address_id: str
+    created_at: str
+    active: bool
+    notifications_configured: bool
+    last_notification: LastNotification | None
 
 
 class AuditItem(Model):

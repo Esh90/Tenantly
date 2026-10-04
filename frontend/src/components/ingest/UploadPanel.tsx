@@ -10,11 +10,9 @@ import type { Jurisdiction } from "@/lib/api/types";
 import { useI18n } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
-export const LIMIT = 200_000;
 export const AUTO = "__auto__";
 
 export type UploadValues = {
-  token: string;
   title: string;
   jurisdiction: string;
   url: string;
@@ -72,7 +70,9 @@ export function UploadPanel({ values, onChange, jurisdictions, error, running, r
         <div>
           <div className="flex items-baseline justify-between">
             <Label htmlFor="txt" className="flex items-center gap-1.5"><ScrollText className="size-4" aria-hidden="true" />{tr("Or paste the legal text", "O pegue el texto legal")}</Label>
-            <span className={cn("text-xs tabular", values.text.length > LIMIT ? "text-destructive" : "text-graphite")}>{values.text.length.toLocaleString()} / 200,000</span>
+            <span className="text-xs tabular text-graphite">
+              {values.text.length.toLocaleString()} {tr("characters", "caracteres")}
+            </span>
           </div>
           <Textarea id="txt" value={values.text} onChange={(e) => onChange({ ...values, text: e.target.value, format: "text" })} className="mt-1.5 min-h-[260px] bg-sheet text-base" placeholder={tr("Section 1. No landlord shall…", "Sección 1. Ningún arrendador deberá…")} />
         </div>
@@ -97,11 +97,12 @@ export function UploadPanel({ values, onChange, jurisdictions, error, running, r
           <Label htmlFor="url">{tr("Source URL (optional)", "URL de la fuente (opcional)")}</Label>
           <Input id="url" type="url" value={values.url} onChange={(e) => set("url", e.target.value)} className="mt-1.5 h-11 bg-sheet" placeholder="https://" />
         </div>
-        <div>
-          <Label htmlFor="tok">{tr("Admin token", "Token de administrador")}</Label>
-          <Input id="tok" type="password" autoComplete="off" value={values.token} onChange={(e) => set("token", e.target.value)} className="mt-1.5 h-11 max-w-sm bg-sheet" />
-          <p className="mt-1 text-xs text-graphite">{tr("Kept in this browser tab only.", "Se guarda solo en esta pestaña.")}</p>
-        </div>
+        <p className="rounded-md border border-hairline bg-sheet p-3 text-sm text-graphite">
+          {tr(
+            "This hackathon demo is open: extract a pasted law, review the overlay, and publish it as live law. No login or token is required.",
+            "Esta demostración del hackathon es abierta: extraiga una ley pegada, revise la capa y publíquela como ley vigente. No se requiere inicio de sesión ni token.",
+          )}
+        </p>
         <div className="flex items-start gap-3 rounded-md border border-hairline bg-sheet p-3">
           <Switch id="auto" checked={values.autoPublish} onCheckedChange={(v) => set("autoPublish", v)} />
           <Label htmlFor="auto" className="text-base font-normal leading-snug">

@@ -24,7 +24,7 @@ from engine.api.errors import ApiError
 from engine.compile import assemble, extract, link
 from engine.compile import explain as explain_stage
 from engine.compile.context import DocView, cite_key, resolve_jurisdiction
-from engine.compile.llm import LLM, BudgetExceeded, Ledger
+from engine.compile.llm import LLM, BudgetExceeded, Ledger, ProviderUnavailable
 from engine.corpus import boilerplate, doctype, sectionizer, versions
 from engine.corpus.loader import Doc
 from engine.export.build import rule_record
@@ -35,7 +35,6 @@ from engine.rules.facts_env import AddressEnv
 
 log = logging.getLogger("tenantly.ingest")
 
-MAX_CHARS = 200_000
 STAGES = ["received", "parse", "sectionize", "triage", "extract", "verify", "crosscheck", "jurisdiction",
           "calendar", "link", "explain", "priority", "graph", "validate", "judge", "impact", "staged"]  # fmt: skip
 DEFAULT_DATE = date.fromisoformat(config.DEFAULT_AS_OF)
@@ -115,12 +114,6 @@ class IngestManager:
 
     # ---------------------------------------------------------------- API surface
     def start(self, req) -> dict:
-        if len(req.text) > MAX_CHARS:
-            raise ApiError(
-                "DOCUMENT_TOO_LARGE",
-                "Documents are limited to 200,000 characters.",
-                {"chars": len(req.text)},
-            )
         if len(req.text.strip()) < 40:
             raise ApiError("BAD_REQUEST", "Paste or upload the full text of the law.", {})
         hint = (req.jurisdiction_hint or "").strip()
@@ -158,10 +151,6 @@ class IngestManager:
                     "status": existing["status"],
                     "events_url": f"/v1/ingest/{job_id}/events",
                 }
-            if self.ledger.total >= self.ledger.cap:
-                raise ApiError(
-                    "BUDGET_EXCEEDED", "The ingest budget for this deployment is used up.", {}
-                )
             job = new_job(job_id)
             self.jobs[job_id] = job
             self.ctx[job_id] = Ctx(
@@ -320,6 +309,13 @@ class IngestManager:
             self._pipeline(job, ctx)
         except BudgetExceeded as exc:
             self._fail(job, "BUDGET_EXCEEDED", f"The ingest budget would be exceeded: {exc}")
+        except ProviderUnavailable:
+            self._fail(
+                job,
+                "PROVIDER_UNAVAILABLE",
+                "AI analysis could not continue: the primary provider failed and the Groq "
+                "backup was unavailable or also failed. No law was published. Try again later.",
+            )
         except ApiError as exc:
             self._fail(job, exc.code, exc.message)
         except Exception as exc:  # noqa: BLE001
@@ -638,7 +634,8 @@ class IngestManager:
         effs = [r.effective.lo for r in ctx.new_rules if r.effective.lo]
         on = max([DEFAULT_DATE] + effs)
         affected, conflicts, changed_existing = [], 0, set()
-        for aid, rec in self.store.records.items():
+        all_records = {**self.store.records, **self.store.geo_records}
+        for aid, rec in all_records.items():
             env = AddressEnv(rec)
             before = {o.rule_id: o for o in evaluate_address(base, rec, env, on).outcomes}
             after = {o.rule_id: o for o in evaluate_address(overlay, rec, env, on).outcomes}
@@ -682,6 +679,7 @@ class IngestManager:
             "existing_rules_changed": list(impact["_changed_existing"]), "affected_jurisdictions": places,
             "affected_properties": impact["affected_count"],
             "graph_nodes_added": res["graph"]["delta"]["nodes"], "graph_edges_added": res["graph"]["delta"]["edges"], "change_id": cid,
+            "notifications": self.store.notification_dispatches.get(cid),
         }  # fmt: skip
         job["status"], job["state"], job["stage"] = "published", "published", "published"
         self._audit(

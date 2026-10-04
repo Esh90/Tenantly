@@ -1,4 +1,4 @@
-import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { keepPreviousData, useMutation, useQueries, useQuery, useQueryClient } from "@tanstack/react-query";
 import * as api from "./api";
 import type { ISODate } from "./types";
 
@@ -18,6 +18,7 @@ export const keys = {
   changes: ["changes"] as const,
   change: (id: string) => ["change", id] as const,
   ingest: (id: string) => ["ingest", id] as const,
+  alertStatus: (token: string) => ["alert-status", token] as const,
   proof: ["proof"] as const,
   audit: (id?: string) => ["audit", id ?? "all"] as const,
 };
@@ -32,7 +33,7 @@ export const useTimeline = (id: string) =>
 export const useJurisdictionGeo = (id: string | null | undefined) =>
   useQuery({ queryKey: keys.geo(id ?? ""), queryFn: () => api.getJurisdictionGeo(id as string), staleTime: STALE, enabled: !!id });
 export const useRules = (f: api.RuleFilters = {}) =>
-  useQuery({ queryKey: keys.rules(f), queryFn: () => api.listRules(f), staleTime: STALE });
+  useQuery({ queryKey: keys.rules(f), queryFn: () => api.listRules(f), staleTime: STALE, placeholderData: keepPreviousData });
 export const useRule = (id: string) => useQuery({ queryKey: keys.rule(id), queryFn: () => api.getRule(id), staleTime: STALE });
 export const useFindings = (state?: api.RuleFilters["state"]) =>
   useQuery({ queryKey: keys.findings(state), queryFn: () => api.listFindings({ state }), staleTime: STALE });
@@ -42,6 +43,15 @@ export const useSource = (docId: string, ruleId?: string) =>
   useQuery({ queryKey: keys.source(docId, ruleId), queryFn: () => api.getSource(docId, ruleId), staleTime: STALE, enabled: !!docId });
 export const useChanges = () => useQuery({ queryKey: keys.changes, queryFn: api.listChanges, staleTime: STALE });
 export const useChange = (id: string) => useQuery({ queryKey: keys.change(id), queryFn: () => api.getChange(id), staleTime: STALE });
+/** The live list endpoint returns summaries without `affected`; fetch details for changes that reach addresses. */
+export const useChangeDetails = (enabled: boolean) => {
+  const list = useChanges();
+  const ids = enabled ? (list.data ?? []).filter((c) => c.affected_count > 0).map((c) => c.change_id) : [];
+  return useQueries({
+    queries: ids.map((id) => ({ queryKey: keys.change(id), queryFn: () => api.getChange(id), staleTime: STALE })),
+    combine: (rs) => rs.flatMap((r) => (r.data ? [r.data] : [])),
+  });
+};
 export const useIngest = (id: string) => useQuery({ queryKey: keys.ingest(id), queryFn: () => api.getIngest(id), enabled: !!id });
 export const useProof = () => useQuery({ queryKey: keys.proof, queryFn: api.getProof, staleTime: STALE });
 export const useAudit = (ruleId?: string) =>
@@ -50,24 +60,26 @@ export const useAudit = (ruleId?: string) =>
 export const useCustomLookup = () => useMutation({ mutationFn: api.postCustomLookup });
 export const useResolveAddress = () => useMutation({ mutationFn: api.resolveAddress });
 export const useSubscribeAlerts = () => useMutation({ mutationFn: api.subscribeAlerts });
+export const useAlertStatus = (token: string | undefined) =>
+  useQuery({ queryKey: keys.alertStatus(token ?? ""), queryFn: () => api.getAlertStatus(token!), enabled: !!token, refetchOnWindowFocus: true });
 export const useUnsubscribeAlerts = () => useMutation({ mutationFn: api.unsubscribeAlerts });
 export const useStartIngest = () =>
-  useMutation({ mutationFn: (v: { body: api.IngestBody; token: string }) => api.startIngest(v.body, v.token) });
+  useMutation({ mutationFn: (v: { body: api.IngestBody }) => api.startIngest(v.body) });
 const invalidateLive = (qc: ReturnType<typeof useQueryClient>) => {
   for (const k of ["changes", "change", "timeline", "lookup", "rules", "rule", "meta", "findings", "open-questions", "proof", "addresses", "source", "audit"]) qc.invalidateQueries({ queryKey: [k] });
 };
 export function usePublishIngest() {
   const qc = useQueryClient();
   return useMutation({
-    mutationFn: (v: { jobId: string; token: string; approve?: boolean }) => api.publishIngest(v.jobId, v.token, v.approve),
+    mutationFn: (v: { jobId: string; approve?: boolean }) => api.publishIngest(v.jobId, v.approve),
     onSuccess: () => invalidateLive(qc),
   });
 }
-export const useRejectIngest = () => useMutation({ mutationFn: (v: { jobId: string; token: string }) => api.rejectIngest(v.jobId, v.token) });
-export const useRejudgeIngest = () => useMutation({ mutationFn: (v: { jobId: string; token: string }) => api.rejudgeIngest(v.jobId, v.token) });
+export const useRejectIngest = () => useMutation({ mutationFn: (v: { jobId: string }) => api.rejectIngest(v.jobId) });
+export const useRejudgeIngest = () => useMutation({ mutationFn: (v: { jobId: string }) => api.rejudgeIngest(v.jobId) });
 export const useEditIngest = () =>
-  useMutation({ mutationFn: (v: { jobId: string; rules: Record<string, unknown>[]; token: string }) => api.editIngest(v.jobId, v.rules, v.token) });
-export const useExtractText = () => useMutation({ mutationFn: (v: { file: File; token: string }) => api.extractText(v.file, v.token) });
+  useMutation({ mutationFn: (v: { jobId: string; rules: Record<string, unknown>[] }) => api.editIngest(v.jobId, v.rules) });
+export const useExtractText = () => useMutation({ mutationFn: (v: { file: File }) => api.extractText(v.file) });
 export const useInvalidateLive = () => {
   const qc = useQueryClient();
   return () => invalidateLive(qc);

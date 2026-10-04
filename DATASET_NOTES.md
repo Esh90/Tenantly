@@ -69,6 +69,29 @@ Recorded when PLAN.md is silent (PLAN.md section 21).
    last version marker is attributed to the latest version, so quotes for dates before the
    marker use only the old clause plus the common prefix. The default query date (2026-10-01)
    is unaffected.
+5. **Watched-address persistence.** Alert subscriptions and delivery attempts use a small SQLite
+   file instead of duplicating the resolved-address dataset. The watch record stores only the
+   canonical address id, recipient and delivery metadata; impact remains the output of the live
+   publication diff. A Render deployment needs a persistent disk and `ALERT_DB_PATH` to retain
+   this file across deploys.
+6. **Same-state overrides.** A scope-based `yields_to` relation without an explicit `state` used
+   to match every city rule in that category, so Boston just-cause was exported as governing
+   over California just-cause. Export and the engine now require the target to share the source
+   rule's state.
+7. **Coverage honesty.** When a city rule's compiled coverage is `const: true` but a sibling
+   rule or that city's own source text states a certificate-of-occupancy or unit cutoff, the
+   cutoff is attached from the verified text. Missing year built or units then evaluate to
+   `unknown`, not `applies`.
+8. **Deterministic extraction repair.** Gap cells the model missed (Cambridge ch. 8.71, SF Fair
+   Chance, MA §15B fees, MA broker fee) are filled only when a quote verifies in the named
+   corpus file. San Diego §98.1103 is treated as enacted when the cite is a municipal section,
+   not a bill. NJ Fair Chance cites gain `P.L.2021, c.110` from the source URL. A 1947.12 cite
+   filed as a deposit rule is dropped. The CA rent cap yields to local rent control using
+   Civ. Code §1947.12(d)(3) from D024.
+9. **Ingest is open for the hackathon demo.** `PUBLIC_INGEST_ENABLED=true` (default) lets
+   judges extract, review and publish with no token. Spend is capped by `INGEST_BUDGET_USD`.
+   Set `PUBLIC_INGEST_ENABLED=false` after judging; then `X-Admin-Token: tenantly-demo`
+   (documented in the README) unlocks the same endpoints.
 
 ## Cuts
 Optional items cut to keep a phase on time.
