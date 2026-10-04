@@ -315,17 +315,6 @@ Re-runs are deterministic. Every compile stage is content-addressed; the same in
 
 ---
 
-## Limitations
-
-- **Coverage** — 3 states and 10 cities per challenge scope.
-- **Unsupplied texts** — Jersey City and Hoboken algorithmic bans, Santa Ana's ban, and some Newark/Hoboken municipal code pages were link-only. They appear as Tier C/C1 with explicit labels.
-- **Year-built proxy** — Year built stands in for certificate-of-occupancy date; buildings in a cutoff year are `unknown`.
-- **Owner facts** — Owner type and subsidy status are not public; exemptions that depend on them are shown as caveats or `unknown`.
-- **Retrieval date** — Sources retrieved October 1, 2026. Later dates are labeled as projections. Law Watch is how this stays current.
-- **Scoring** — Self-score uses our silver key, not the organizers' held-out key.
-
----
-
 ## Where this goes
 
 - **The thesis.** Housing law is a fast-changing, address-keyed dataset that nobody maintains as data. Tenantly compiles it once, verifies every claim, and keeps it current with a change feed that says *which buildings* each new law touches.
