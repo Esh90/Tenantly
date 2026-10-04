@@ -103,8 +103,8 @@ class AddressSummary(Model):
     postal_city: str
     zip: str | None
     state: StateCode
-    lat: float
-    lon: float
+    lat: float | None
+    lon: float | None
     legal_city: str | None
     is_sample: bool
 
@@ -301,8 +301,8 @@ class AddressIndexItem(Model):
     legal_city: str | None
     state: StateCode
     zip: str | None
-    lat: float
-    lon: float
+    lat: float | None
+    lon: float | None
 
 
 class ResolveResponse(Model):
@@ -402,8 +402,8 @@ class RuleIdResult(Model):
 class AffectedAddress(Model):
     address_id: str
     label: str
-    lat: float
-    lon: float
+    lat: float | None
+    lon: float | None
     legal_city: str | None
     before: list[RuleIdResult]
     after: list[RuleIdResult]
