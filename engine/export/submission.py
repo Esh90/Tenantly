@@ -3,11 +3,11 @@
 from __future__ import annotations
 
 import json
-from pathlib import Path
 
 from jsonschema import Draft202012Validator
 
 from engine import config
+from engine.io import atomic_write_json  # noqa: F401  (re-exported for callers)
 
 
 def load_schema() -> dict:
@@ -26,13 +26,3 @@ def validate_rules(doc: dict) -> list[str]:
             loc = "/".join(str(p) for p in err.path) or "<rule>"
             errors.append(f"rules[{i}].{loc}: {err.message}")
     return errors
-
-
-def atomic_write_json(path: Path, obj) -> None:
-    """Sorted keys, ensure_ascii=False, write to a temp file then rename."""
-    path.parent.mkdir(parents=True, exist_ok=True)
-    tmp = path.with_suffix(path.suffix + ".tmp")
-    tmp.write_text(
-        json.dumps(obj, indent=2, sort_keys=True, ensure_ascii=False) + "\n", encoding="utf-8"
-    )
-    tmp.replace(path)

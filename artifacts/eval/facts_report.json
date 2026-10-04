@@ -1,0 +1,36 @@
+{
+  "addresses": 500,
+  "derived_units": 90,
+  "missing_year_built": 212,
+  "property_types": {
+    "cooperative": 2,
+    "elderly_home": 1,
+    "mixed_use": 7,
+    "multifamily_5plus": 489,
+    "tic": 1
+  },
+  "record_conflict_ids": [
+    "A0028",
+    "A0041",
+    "A0076",
+    "A0129",
+    "A0146",
+    "A0227",
+    "A0249",
+    "A0307",
+    "A0331",
+    "A0358",
+    "A0398",
+    "A0476"
+  ],
+  "record_conflicts": 12,
+  "review_flags": {
+    "record_conflict_units": 12,
+    "review_elderly_home": 1
+  },
+  "subsidized_true": 27,
+  "units_exact_from_data": 258,
+  "units_unknown": 12,
+  "units_with_interval_only": 152,
+  "zip_suspect": 83
+}

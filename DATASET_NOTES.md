@@ -47,5 +47,28 @@ observations without an expectation are listed for reference.
 ## Decisions
 Recorded when PLAN.md is silent (PLAN.md section 21).
 
+1. **Signal score definition (Phase 1).** `score = kept lines of at least 40 characters containing
+   legal or housing vocabulary / kept non-empty lines`, where "kept" excludes boilerplate-masked
+   lines; below 0.15 is `low_signal`. The plan's "lines longer than 60 characters" scored the
+   wrapped PDF capture D068 as empty, so the length floor is 40. D036 (0.113) and D078 (0.055),
+   the two captures the atlas expects, are flagged. Four more menu-heavy captures are flagged by
+   the same rule: D011, D013, D045, D083 (scores 0.045 to 0.146). They are real content, only
+   short or surrounded by site chrome; the cost of the flag is a "Partial capture" badge and
+   -0.1 confidence. The vocabulary list was not tuned per document.
+2. **Record conflicts.** The deriver finds 12 empty intersections, not only the three the atlas
+   names: A0398, A0028, A0076 plus A0041, A0129, A0146, A0227, A0249, A0307, A0331, A0358, A0476.
+   Eleven are NJ MOD-IV descriptions whose `(\d+)U` token is below the 4C minimum of 5 units
+   (for example "3SF4UG"), A0041 is SF code A5 (5 to 14) against 15 units in the data, and A0227
+   is a data value of 2 against a description of 93 units. All follow the PLAN.md rule (intersect
+   the sources; an empty intersection makes the units unknown and sets `record_conflict`).
+3. **Quote offsets.** Offsets are indices into the UTF-8 decoded file with no newline
+   translation. Source pages hard-wrap lines and use non-breaking spaces (D069 s.6.b wraps
+   mid-sentence), so the Phase 2 verifier must match whitespace-normalized text and map the
+   match back to raw offsets (PLAN.md 11.6); it never accepts a fuzzy match.
+4. **Version scope.** For a page with several versions of one clause (D052), the text after the
+   last version marker is attributed to the latest version, so quotes for dates before the
+   marker use only the old clause plus the common prefix. The default query date (2026-10-01)
+   is unaffected.
+
 ## Cuts
 Optional items cut to keep a phase on time.

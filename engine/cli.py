@@ -17,6 +17,30 @@ def recon() -> None:
 
 
 @app.command()
+def corpus() -> None:
+    """Load, mask, classify and sectionize the corpus -> artifacts/corpus/*.jsonl."""
+    from engine.corpus.build import write
+
+    docs, sections = write()
+    typer.echo(f"corpus: {docs} documents, {sections} sections")
+
+
+@app.command()
+def facts() -> None:
+    """Derive building facts for all addresses -> artifacts/eval/facts_report.json."""
+    from engine import config
+    from engine.facts.derive import derive_all, facts_report
+    from engine.io import atomic_write_json
+
+    report = facts_report(derive_all())
+    atomic_write_json(config.ARTIFACTS / "eval" / "facts_report.json", report)
+    typer.echo(
+        f"facts: {report['addresses']} addresses, {report['record_conflicts']} record conflicts, "
+        f"{report['zip_suspect']} suspect ZIPs, {report['missing_year_built']} missing year built"
+    )
+
+
+@app.command()
 def serve(port: int = 8000, reload: bool = False) -> None:
     """Run the API locally."""
     import uvicorn
